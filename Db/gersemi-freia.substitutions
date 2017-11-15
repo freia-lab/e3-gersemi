@@ -1,0 +1,627 @@
+#Gersemi
+
+file "DI.template" { pattern
+
+#PSL SUBS?
+{SUBS,	DEV,       OFFS,   OFFS2}
+{RHtr,	LS80,      84,	    84}
+{SHe,	TS370,     86,      86}
+{RHtr,	TS580,     88,	    88}
+{LN2,	TS700,     90,	    90}
+{LN2,	TS740,     92,	    92}
+{LN2,	TS744,     94,	    94}
+{LN2,	TS748,     96,	    96}
+{LN2,	TS760,     98,	    98}
+{LN2,	TS762,     100,	    100}
+{Ctrl,	LiqIns,    102,	    102}
+{Ctrl,	VacIns,    104,	    104}
+{Ctrl,	MagIns,    106,	    106}
+}
+
+file "AI.template" { pattern
+
+#unsure about units..
+{SUBS,	DEV,       OFFS,   OFFS2, LOPR, HOPR, EGU}
+{SHe,	TT350,   130,	   130,	  0,	500,   K}
+{SHe,	TT351,   140,	   136,	  0,	500,   K}
+{SHe,   TT354,   150,     142,   0,    500,   K}
+{SHe,   TT370,   170,     154,   0,    500,   K}
+{SHe,   TT380,   170,     154,   0,    500,   K}
+{SHe,   TT381,   180,     160,   0,    500,   K}
+{RHtr,  TT580,   190,     166,   0,    500,   K}
+{RHtr,  TT590,   200,     172,   0,    500,   K}
+{LHe,   TT600A,  210,     178,   0,    500,   K}
+{LHe,   TT600B,  210,     178,   0,    500,   K}
+{LHe,   TT600C,  210,     178,   0,    500,   K}
+{LHe,   TT600D,  210,     178,   0,    500,   K}
+{LHe,   TT601,   220,     184,   0,    500,   K}
+{LHe,   TT640A,   240,     196,   0,    500,   K}
+{LHe,   TT640B,   240,     196,   0,    500,   K}
+{LHe,   TT640C,   240,     196,   0,    500,   K}
+{LHe,   TT640D,   240,     196,   0,    500,   K}
+{LHe,   TT640E,   240,     196,   0,    500,   K}
+{LHe,   TT640F,   240,     196,   0,    500,   K}
+{LHe,   TT641A,   240,     196,   0,    500,   K}
+{LHe,   TT641B,   240,     196,   0,    500,   K}
+{LHe,   TT641C,   240,     196,   0,    500,   K}
+{LHe,   TT650,    250,     202,   0,    500,   K}
+{LHe,   TT651,    250,     202,   0,    500,   K}
+{LHe,   TT652,    250,     202,   0,    500,   K}
+{LHe,   TT653,    250,     202,   0,    500,   K}
+{LHe,   TT654,    250,     202,   0,    500,   K}
+{LHe,   TT655,    250,     202,   0,    500,   K}
+{LHe,   TT656,    250,     202,   0,    500,   K}
+{LHe,   TT657,    250,     202,   0,    500,   K}
+{LHe,   TT653,    250,     202,   0,    500,   K}
+{LHe,   TT660A,   250,     202,   0,    500,   K}
+{LHe,   TT660B,   250,     202,   0,    500,   K}
+{LHe,   TT660C,   250,     202,   0,    500,   K}
+{LHe,   TT661A,   250,     202,   0,    500,   K}
+{LHe,   TT661B,   250,     202,   0,    500,   K}
+{LHe,   TT661C,   250,     202,   0,    500,   K}
+{LHe,   TT670A,   250,     202,   0,    500,   K}
+{LHe,   TT670B,   250,     202,   0,    500,   K}
+{LHe,   TT670C,   250,     202,   0,    500,   K}
+{LHe,   TT671,    250,     202,   0,    500,   K}
+{LHe,   TT680,    250,     202,   0,    500,   K}
+{LHe,   TT681A,   250,     202,   0,    500,   K}
+{LHe,   TT681B,   250,     202,   0,    500,   K}
+{LHe,   TT681C,   250,     202,   0,    500,   K}
+{LHe,   TT682A,   250,     202,   0,    500,   K}
+{LHe,   TT682B,   250,     202,   0,    500,   K}
+{LHe,   TT682C,   250,     202,   0,    500,   K}
+{LHe,   TT689A,   250,     202,   0,    500,   K}
+{LHe,   TT689B,   250,     202,   0,    500,   K}
+{LHe,   TT689C,   250,     202,   0,    500,   K}
+{LN2,   TT700,    250,     202,   0,    500,   K}
+{LN2,   TT701A,   250,     202,   0,    500,   K}
+{LN2,   TT701B,   250,     202,   0,    500,   K}
+{LN2,   TT702A,   250,     202,   0,    500,   K}
+{LN2,   TT702B,   250,     202,   0,    500,   K}
+{LN2,   TT703A,   250,     202,   0,    500,   K}
+{LN2,   TT703B,   250,     202,   0,    500,   K}
+{LN2,   TT703C,   250,     202,   0,    500,   K}
+{LN2,   TT704,    250,     202,   0,    500,   K}
+{LN2,   TT705,    250,     202,   0,    500,   K}
+{LN2,   TT706,    250,     202,   0,    500,   K}
+{LN2,   TT707,    250,     202,   0,    500,   K}
+{LN2,   TT740,    250,     202,   0,    500,   K}
+{LN2,   TT741A,   250,     202,   0,    500,   K}
+{LN2,   TT741B,   250,     202,   0,    500,   K}
+{LN2,   TT741C,   250,     202,   0,    500,   K}
+{LN2,   TT742A,   250,     202,   0,    500,   K}
+{LN2,   TT742B,   250,     202,   0,    500,   K}
+{LN2,   TT742C,   250,     202,   0,    500,   K}
+{LN2,   TT743A,   250,     202,   0,    500,   K}
+{LN2,   TT743B,   250,     202,   0,    500,   K}
+{LN2,   TT743C,   250,     202,   0,    500,   K}
+{LN2,   TT743D,   250,     202,   0,    500,   K}
+{LN2,   TT743E,   250,     202,   0,    500,   K}
+{LN2,   TT743F,   250,     202,   0,    500,   K}
+{LN2,   TT744,    250,     202,   0,    500,   K}
+{LN2,   TT745,    250,     202,   0,    500,   K}
+{LN2,   TT746,    250,     202,   0,    500,   K}
+{LN2,   TT747,    250,     202,   0,    500,   K}
+{LN2,   TT748,    250,     202,   0,    500,   K}
+{LN2,   TT749,    250,     202,   0,    500,   K}
+{LN2,   TT750,    250,     202,   0,    500,   K}
+{LN2,   TT751,    250,     202,   0,    500,   K}
+{LN2,   TT752,    250,     202,   0,    500,   K}
+{LN2,   TT753,    250,     202,   0,    500,   K}
+{LN2,   TT754,    250,     202,   0,    500,   K}
+{LN2,   TT755,    250,     202,   0,    500,   K}
+{LN2,   TT760,    250,     202,   0,    500,   K}
+{LN2,   TT761A,   250,     202,   0,    500,   K}
+{LN2,   TT761B,   250,     202,   0,    500,   K}
+{LN2,   TT761C,   250,     202,   0,    500,   K}
+{LN2,   TT762,    250,     202,   0,    500,   K}
+{LN2,   TT763A,   250,     202,   0,    500,   K}
+{LN2,   TT763B,   250,     202,   0,    500,   K}
+{LN2,   TT763C,   250,     202,   0,    500,   K}
+{LN2,   TT763D,   250,     202,   0,    500,   K}
+{LN2,   TT763E,   250,     202,   0,    500,   K}
+{LN2,   TT763F,   250,     202,   0,    500,   K}
+{LN2,   TT764,    250,     202,   0,    500,   K}
+{LN2,   TT765A,   250,     202,   0,    500,   K}
+{LN2,   TT765B,   250,     202,   0,    500,   K}
+{LN2,   TT765C,   250,     202,   0,    500,   K}
+{LN2,   TT766,    250,     202,   0,    500,   K}
+{LN2,   TT767,    250,     202,   0,    500,   K}
+{RHtr,  TC580,    250,     202,   0,    500,   K}
+{Vac,   PT050,    250,     202,   0,    1100,  mbar}
+{Vac,   PT050,    250,     202,   0,    1100,  mbar}
+{Vac,   PT051,    250,     202,   0,    1100,  mbar}
+{Vac,   PT090,    250,     202,   0,    1100,  mbar}
+{SHe,   PT380,   1970,    1234,   0,    3000,  mbar}
+{SHe,   PT381,   1970,    1234,   0,    3000,  mbar}
+{RHtr,  PT580,   1970,    1234,   0,    1100,  mbar}
+{RHtr,  PT581,   1970,    1234,   0,    1100,  mbar}
+{RHtr,  PT582,   1970,    1234,   0,    1100,  mbar}
+{RHtr,  PT583,   1970,    1234,   0,    1100,  mbar}
+{RHtr,  PT584,   1970,    1234,   0,    1100,  mbar}
+{RHtr,  PT585,   1970,    1234,   0,    1100,  mbar}
+{RHtr,  PT586,   1970,    1234,   0,    1100,  mbar}
+{RHtr,  PT590,   1970,    1234,   0,    1100,  mbar}
+{LHe,   PT600,   1970,    1234,   0,    1100,  mbar}
+{LHe,   PT660L   1970,    1234,   0,    1100,  mbar}
+{LHe,   PT660M   1970,    1234,   0,    1100,  mbar}
+{LHe,   PT660V   1970,    1234,   0,    1100,  mbar}
+{LHe,   PT661L   1970,    1234,   0,    1100,  mbar}
+{LHe,   PT661M   1970,    1234,   0,    1100,  mbar}
+{LHe,   PT661V   1970,    1234,   0,    1100,  mbar}
+{LHe,   PT680,   1970,    1234,   0,    1100,  mbar}
+{LHe,   PT681,   1970,    1234,   0,    1100,  mbar}
+{LN2,   PT700,   1970,    1234,   0,    1100,  mbar}
+{RHtr,  LI580,    780,     520,   0,    3,     m}
+{EDwr,  LT590,    780,     520,   0,    3,     m}
+{LHe,   LT600,    780,     520,   0,    5,     m}
+{LHe,   LT601,    780,     520,   0,    5,     m}
+{LHe,   LT660,    780,     520,   0,    5,     m}
+{LHe,   LT661,    780,     520,   0,    5,     m}
+{LHe,   LT670,    780,     520,   0,    5,     m}
+{LHe,   LT671,    780,     520,   0,    5,     m}
+{LHe,   LT680,    780,     520,   0,    5,     m}
+{LHe,   LT681,    780,     520,   0,    5,     m}
+{LHe,   LT682,    780,     520,   0,    5,     m}
+{LHe,   LT683,    780,     520,   0,    5,     m}
+{SHe,   FT380,    800,     532,   0,    500,   m3/h}
+{RHtr,  FT580,    800,     532,   0,    500,   m3/h}
+{RHtr,  FT581,    800,     532,   0,    500,   m3/h}
+{RHtr,  FT583,    800,     532,   0,    500,   m3/h}
+{LHe,   FT650,    800,     532,   0,    500,   m3/h}
+{LHe,   FT651,    800,     532,   0,    500,   m3/h}
+{LHe,   FT652,    800,     532,   0,    500,   m3/h}
+{LHe,   FT653,    800,     532,   0,    500,   m3/h}
+{LN2,   FT700,    800,     532,   0,    500,   m3/h}
+{LN2,   FT740,    800,     532,   0,    500,   m3/h}
+{LN2,   FT760,    800,     532,   0,    500,   m3/h}
+{LHe,   LI660,    780,     520,   0,    5,     m}
+{LHe,   LI670,    780,     520,   0,    5,     m}
+{LHe,   LI680,    780,     520,   0,    5,     m}
+{SHe,   TT352,    570,     394,   0,    500,   K}
+{SHe,   TT353,    580,     400,   0,    500,   K}
+{SHe,   TT355,    590,     406,   0,    500,   K}
+{SHe,   TT371,    600,     412,   0,    500,   K}
+{SHe,   TT372,    610,     418,   0,    500,   K}
+{SHe,   TT373,    620,     424,   0,    500,   K}
+{LHe,   TT602,   1090,     706,   0,    500,   K}
+{LHe,   TT603,   1090,     706,   0,    500,   K}
+{LHe,   TT604,   1090,     706,   0,    500,   K}
+{LHe,   TT605,   1090,     706,   0,    500,   K}
+{LHe,   TT606,   1090,     706,   0,    500,   K}
+{LHe,   TT607,   1090,     706,   0,    500,   K}
+{LHe,   TT608,   1090,     706,   0,    500,   K}
+{LHe,   TT609,   1090,     706,   0,    500,   K}
+{LHe,   TT610,   1090,     706,   0,    500,   K}
+{LHe,   TT611,   1090,     706,   0,    500,   K}
+{LHe,   TT612,   1090,     706,   0,    500,   K}
+{LHe,   TT613,   1090,     706,   0,    500,   K}
+{LHe,   TT614,   1090,     706,   0,    500,   K}
+{LHe,   TT615,   1090,     706,   0,    500,   K}
+{LHe,   TT616,   1090,     706,   0,    500,   K}
+{LHe,   TT617,   1090,     706,   0,    500,   K}
+{LHe,   TT618,   1090,     706,   0,    500,   K}
+{LHe,   TT642,   1090,     706,   0,    500,   K}
+{LHe,   TT643,   1090,     706,   0,    500,   K}
+{LHe,   TT644,   1090,     706,   0,    500,   K}
+{LHe,   TT645,   1090,     706,   0,    500,   K}
+{LHe,   TT646,   1090,     706,   0,    500,   K}
+{LHe,   TT647,   1090,     706,   0,    500,   K}
+{LHe,   TT662L,  1090,     706,   0,    500,   K}
+{LHe,   TT662M,  1090,     706,   0,    500,   K}
+{LHe,   TT662V,  1090,     706,   0,    500,   K}
+{LHe,   TT663L,  1090,     706,   0,    500,   K}
+{LHe,   TT663M,  1090,     706,   0,    500,   K}
+{LHe,   TT663V,  1090,     706,   0,    500,   K}
+{LHe,   TT664L,  1090,     706,   0,    500,   K}
+{LHe,   TT664M,  1090,     706,   0,    500,   K}
+{LHe,   TT664V,  1090,     706,   0,    500,   K}
+{LHe,   TT665L,  1090,     706,   0,    500,   K}
+{LHe,   TT665M,  1090,     706,   0,    500,   K}
+{LHe,   TT665V,  1090,     706,   0,    500,   K}
+{LHe,   TT666L,  1090,     706,   0,    500,   K}
+{LHe,   TT666M,  1090,     706,   0,    500,   K}
+{LHe,   TT666V,  1090,     706,   0,    500,   K}
+{LHe,   TT667L,  1090,     706,   0,    500,   K}
+{LHe,   TT667M,  1090,     706,   0,    500,   K}
+{LHe,   TT667V,  1090,     706,   0,    500,   K}
+{LHe,   TT668L,  1090,     706,   0,    500,   K}
+{LHe,   TT668M,  1090,     706,   0,    500,   K}
+{LHe,   TT668V,  1090,     706,   0,    500,   K}
+{LHe,   TT669L,  1090,     706,   0,    500,   K}
+{LHe,   TT669M,  1090,     706,   0,    500,   K}
+{LHe,   TT669V,  1090,     706,   0,    500,   K}
+{LHe,   TT672L,  1090,     706,   0,    500,   K}
+{LHe,   TT672M,  1090,     706,   0,    500,   K}
+{LHe,   TT672V,  1090,     706,   0,    500,   K}
+{LHe,   TT673L,  1090,     706,   0,    500,   K}
+{LHe,   TT673M,  1090,     706,   0,    500,   K}
+{LHe,   TT673V,  1090,     706,   0,    500,   K}
+{LHe,   TT674L,  1090,     706,   0,    500,   K}
+{LHe,   TT674M,  1090,     706,   0,    500,   K}
+{LHe,   TT674V,  1090,     706,   0,    500,   K}
+{LHe,   TT675L,  1090,     706,   0,    500,   K}
+{LHe,   TT675M,  1090,     706,   0,    500,   K}
+{LHe,   TT675V,  1090,     706,   0,    500,   K}
+{LHe,   TT676L,  1090,     706,   0,    500,   K}
+{LHe,   TT676M,  1090,     706,   0,    500,   K}
+{LHe,   TT676V,  1090,     706,   0,    500,   K}
+{LHe,   TT677L,  1090,     706,   0,    500,   K}
+{LHe,   TT677M,  1090,     706,   0,    500,   K}
+{LHe,   TT677V,  1090,     706,   0,    500,   K}
+{LHe,   TT678L,  1090,     706,   0,    500,   K}
+{LHe,   TT678M,  1090,     706,   0,    500,   K}
+{LHe,   TT678V,  1090,     706,   0,    500,   K}
+{LHe,   TT679L,  1090,     706,   0,    500,   K}
+{LHe,   TT679M,  1090,     706,   0,    500,   K}
+{LHe,   TT679V,  1090,     706,   0,    500,   K}
+{LHe,   TT683,   1090,     706,   0,    500,   K}
+{LHe,   TT684,   1090,     706,   0,    500,   K}
+{LHe,   TT685,   1090,     706,   0,    500,   K}
+{LHe,   TT686,   1090,     706,   0,    500,   K}
+{LHe,   TT687,   1090,     706,   0,    500,   K}
+{LHe,   TT688,   1090,     706,   0,    500,   K}
+{LHe,   TT690,   1090,     706,   0,    500,   K}
+{LHe,   TT691,   1090,     706,   0,    500,   K}
+{LHe,   TT691,   1090,     706,   0,    500,   K}
+{LHe,   TT693,   1090,     706,   0,    500,   K}
+{LHe,   TT694L,  1090,     706,   0,    500,   K}
+{LHe,   TT694M,  1090,     706,   0,    500,   K}
+{LHe,   TT694V,  1090,     706,   0,    500,   K}
+{LHe,   TT695L,  1090,     706,   0,    500,   K}
+{LHe,   TT695M,  1090,     706,   0,    500,   K}
+{LHe,   TT695V,  1090,     706,   0,    500,   K}
+{LHe,   TT696L,  1090,     706,   0,    500,   K}
+{LHe,   TT696M,  1090,     706,   0,    500,   K}
+{LHe,   TT696V,  1090,     706,   0,    500,   K}
+{LHe,   TT697L,  1090,     706,   0,    500,   K}
+{LHe,   TT697M,  1090,     706,   0,    500,   K}
+{LHe,   TT697V,  1090,     706,   0,    500,   K}
+{LHe,   TT698L,  1090,     706,   0,    500,   K}
+{LHe,   TT698M,  1090,     706,   0,    500,   K}
+{LHe,   TT698V,  1090,     706,   0,    500,   K}
+{LHe,   TT699L,  1090,     706,   0,    500,   K}
+{LHe,   TT699M,  1090,     706,   0,    500,   K}
+{LHe,   TT699V,  1090,     706,   0,    500,   K}
+{Vac,   PT060,    250,     202,   0,    1100,  mbar}
+{Vac,   PT061,    250,     202,   0,    1100,  mbar}
+{Vac,   PT070,    250,     202,   0,    1100,  mbar}
+{Vac,   PT071,    250,     202,   0,    1100,  mbar}
+{Vac,   PT080,    250,     202,   0,    1100,  mbar}
+{Vac,   PT081,    250,     202,   0,    1100,  mbar}
+}
+
+file "Evalves.template" { pattern
+{SUBS,	DEV,       OFFS,   OFFS2}
+{LN2,	EV700,     2230,    1390}
+{LN2,	EV740,     2232,    1392}
+{LN2,	EV744,     2232,    1392}
+{LN2,	EV748,     2232,    1392}
+{LN2,	EV760,     2232,    1392}
+{LN2,	EV762,     2232,    1392}
+}
+ 
+
+file "Valves.template" { pattern
+{SUBS,	DEV,       OFFS,   OFFS2}
+{Vac,	FV050,     2278,    1438}
+{Vac,	FV060,     2280,    1440}
+{Vac,	FV070,     2282,    1442}
+{Vac,	FV080,     2284,    1444}
+{Vac,	FV090,     2286,    1446}
+{Vac,	FV091,     2286,    1446}
+{Vac,	FV092,     2286,    1446}
+{SHe,	FV380,     2294,    1454}
+{SHe,	FV381,     2294,    1454}
+{SHe,	FV382,     2294,    1454}
+{SHe,	FV383,     2294,    1454}
+{RHtr,  FV580,     2310,    1470}
+{RHtr,  FV581,     2310,    1470}
+{RHtr,  FV582,     2310,    1470}
+{RHtr,  FV583,     2310,    1470}
+{RHtr,  FV584,     2310,    1470}
+{RHtr,  FV585,     2310,    1470}
+{RHtr,  FV586,     2310,    1470}
+{RHtr,  FV587,     2310,    1470}
+{LHe,	FV600,     2288,    1448}
+{LHe,	FV601,     2288,    1448}
+{LHe,	FV602,     2288,    1448}
+{LHe,	FV640,     2288,    1448}
+{LHe,	FV641,     2288,    1448}
+{LHe,	FV642,     2288,    1448}
+{LHe,	FV643,     2288,    1448}
+{LHe,	FV660,     2288,    1448}
+{LHe,	FV680,     2288,    1448}
+{LHe,	FV681,     2288,    1448}
+{LN2,	FV740,     2292,    1452}
+}
+
+file "AValves.template" { pattern
+{SUBS,	DEV,       OFFS,   OFFS2, LOPR, HOPR, EGU}
+{SHe,	CV380,   2446,	   1570,   0,	100,  percent}
+{RHtr,	CV580,   2456,	   1576,   0,	100,  percent}
+{RHtr,	CV581,   2456,	   1576,   0,	100,  percent}
+{RHtr,	CV582,   2456,	   1576,   0,	100,  percent}
+{RHtr,	CV583,   2456,	   1576,   0,	100,  percent}
+{EDwr,	CV590,   2456,	   1576,   0,	100,  percent}
+{EDwr,	CV591,   2456,	   1576,   0,	100,  percent}
+{LHe,	CV600,   2356,	   1516,   0,	100,  percent}
+{LHe,	CV601,   2356,	   1516,   0,	100,  percent}
+{LHe,	CV602,   2356,	   1516,   0,	100,  percent}
+{LHe,	CV603,   2356,	   1516,   0,	100,  percent}
+{LHe,	CV650,   2356,	   1516,   0,	100,  percent}
+{LHe,	CV651,   2356,	   1516,   0,	100,  percent}
+{LHe,	CV652,   2356,	   1516,   0,	100,  percent}
+{LHe,	CV653,   2356,	   1516,   0,	100,  percent}
+{LHe,	CV680,   2356,	   1516,   0,	100,  percent}
+{LN2,	CV700,   2356,	   1516,   0,	100,  percent}
+{LN2,	CV740,   2356,	   1516,   0,	100,  percent}
+{Cryo,	UY5201,  2356,	   1516,   0,	100,  percent}
+}
+
+file "PID.template" { pattern
+{SUBS,   DEV,     OFFS,   OFFS2,    EGU}
+{LN2,    TIC200,  2696,   1720,    unknown}
+{LN2,    FIC200,  2718,   1730,    unknown}
+{LN2,    TIC201,  2740,   1740,    unknown}
+{LN2,    FIC201,  2762,   1750,    unknown}
+{SHe,    TIC301,  2784,   1760,    unknown}
+{SHe,    FIC301,  2806,   1770,    unknown}
+{SHe,    TIC302,  2828,   1780,    unknown}
+{SHe,    FIC302,  2850,   1790,    unknown}
+{LHe,    TIC101,  2872,   1800,    unknown}
+{MKS,    MKS1,    2894,   1810,    "%"}
+{MKS,    MKS2,    2916,   1820,    "%"}
+{MKS,    MKS3,    2938,   1830,    "%"}
+{LHe,    LIC100,  2960,   1840,    unknown}
+{LHe,    LIC101A, 2982,   1850,    unknown}
+{LHe,    LIC101B, 3004,   1860,    unknown}
+}
+
+file "Heater1.template" { pattern
+{SUBS,	DEV,       OFFS,   OFFS2}
+{LHe,	EH100,     3422,    2050}
+{LHe,	EH101,     3432,    2060}
+{LHe,	EH102,     3442,    2070}
+{LHe,	EH103,     3452,    2080}
+{LHe,	EH104,     3462,    2090}
+{LHe,	EH105,     3472,    2100}
+{LHe,	EH106,     3482,    2110}
+{LHe,	EH107,     3492,    2120}
+{LHe,	EH108,     3502,    2130}
+{LN2,	EH200,     3512,    2140}
+{LN2,	EH201,     3522,    2150}
+{LN2,	EH202,     3532,    2160}
+{LN2,	EH203,     3542,    2170}
+{LN2,	EH204,     3552,    2180}
+{LN2,	EH205,     3562,    2190}
+{LN2,	EH206,     3572,    2200}
+{LN2,	EH207,     3582,    2210}
+{LN2,	EH208,     3592,    2220}
+{SHe,	EH300,     3602,    2230}
+{SHe,	EH301,     3612,    2240}
+{SHe,	EH302,     3622,    2250}
+{SHe,	EH303,     3632,    2260}
+{IBoxN2,EH400,     3642,    2270}
+{IBoxN2,EH401,     3652,    2280}
+{RHtr,  EH131,     3662,    2290}
+}
+
+file "Heater2.template" { pattern
+{SUBS,	DEV,       OFFS,   OFFS2}
+{RHtr,	EH550,     3872,    2500}
+}
+
+file "SQbinary.template" { pattern
+{SUBS, OFFS2, OFFS, ONST, TWST, THST, FRST, FVST, SXST, SVST}
+{SQ0,   2808, 4180, "SQ1 mustn't be running", "SQ2 mustn't be running", "", "", "", "", ""}
+{SQ1,   2892, 4282, "SQ0 mustn't be running", "SQ2 mustn't be running", "", "", "", "", ""}
+{SQ2,   2976, 4384, "SQ0 mustn't be running", "SQ1 mustn't be running", "", "", "", "", ""}
+{SQ3A,  3060, 4486, "", "", "", "", "", "", ""}
+{SQ3B,  3144, 4588, "SQ3A must be running", "", "", "", "", "", ""}
+{SQ4,   3228, 4690, "SQ3A must be running", "SQ3B must be running", "", "", "", "", ""}
+{SQ5,   3312, 4792, "", "", "", "", "", "", ""}
+{SQ6,   3396, 4894, "", "", "", "", "", "", ""}
+{SQ7,   3480, 4996, "SQ5 must be running", "", "", "", "", "", ""}
+{SQ8,   3564, 5098, "SQ5 must be running", "SQ9 mustn't be running", "", "", "", "", ""}
+{SQ9,   3648, 5200, "SQ5 must be running", "SQ8 mustn't be running", "", "", "", "", ""}
+{SQ10,  3732, 5302, "", "", "", "", "", "", ""}
+{SQ11,  3816, 5404, "SQ5 must be running", "", "", "", "", "", ""}
+{SQ12A, 3900, 5506, "SQ3A mustn't be running", "SQ3B mustn't be running","SQ4 mustn't be running", "SQ5 mustn't be running","SQ7 mustn't be running", "SQ8 mustn't be running","SQ9 mustn't be running"}
+{SQ12B, 3984, 5608, "SQ3A mustn't be running", "SQ3B mustn't be running","SQ4 mustn't be running", "SQ5 mustn't be running","SQ7 mustn't be running", "SQ8 mustn't be running","SQ9 mustn't be running"}
+{SQ13,  4068, 5710, "", "", "", "", "", "", ""}
+{SQ20,  4152, 5812, "", "", "", "", "", "", ""}
+}
+
+file "SQanalog.template" { pattern
+{SUBS,	 SIG,          OFFS2, TYPE, SIG2,	OFFS, EGU}
+{SQ0,	cNcycle,       2810, INT16, sNcycle, 4200, ""}
+{SQ0,	cVacRate,      2812, INT16, sVacRate, 4202,	"s"}
+{SQ0,	cPressRate,    2814, INT16, sPressRate, 4204,	"s"}
+{SQ0,	cVacRateAlrm,  2816, INT16, sVacRateAlrm, 4206,	"s"}
+{SQ0,	cPresRateAlrm, 2818, INT16, sPresRateAlrm, 4208,"s"}
+{SQ0,	cVac,          2828, FLOAT, sVac, 4218,	   "mbar"}
+{SQ0,	cVacFlt,       2832, FLOAT, sVacFlt, 4222, "mbar"}
+{SQ0,	cPressEOF,     2836, FLOAT, sPressEOF, 4226, "mbar"}
+{SQ0,	cPressFlt,     2840, FLOAT, sPressFlt, 4230, "mbar"}
+{SQ1,	cNcycle,       2894, INT16, sNcycle, 4302,   ""}
+{SQ1,	cVacRate,      2896, INT16, sVacRate, 4304,  "s"}
+{SQ1,	cPressRate,    2898, INT16, sPressRate, 4306,	"s"}
+{SQ1,	cVacRateAlrm,  2900, INT16, sVacRateAlrm, 4308,	"s"}
+{SQ1,	cPresRateAlrm, 2902, INT16, sPresRateAlrm, 4310,	"s"}
+{SQ1,	cVac,          2912, FLOAT, sVac, 4320,	   "mbar"}
+{SQ1,	cVacFlt,       2916, FLOAT, sVacFlt, 4324,	   "mbar"}
+{SQ1,	cPressEOF,     2920, FLOAT, sPressEOF, 4328,	   "mbar"}
+{SQ1,	cPressFlt,     2924, FLOAT, sPressFlt, 4332,	   "mbar"}
+{SQ1,	cP_CV100,      2928, FLOAT, sP_CV100, 4336,   ""}
+{SQ1,	cP_CV101,      2932, FLOAT, sP_CV101, 4340,   ""}
+{SQ1,	cP_CV102,      2936, FLOAT, sP_CV102, 4344,   ""}
+{SQ1,	cP_CV103,      2940, FLOAT, sP_CV103, 4348,   ""}
+{SQ1,	cP_CV104,      2944, FLOAT, sP_CV104, 4352,   ""}
+{SQ1,	cP_CV105,      2948, FLOAT, sP_CV105, 4356,   ""}
+{SQ1,	cP_CV550,      2952, FLOAT, sP_CV550, 4360,   ""}
+{SQ1,	cP_CV551,      2956, FLOAT, sP_CV551, 4364,   ""}
+{SQ1,	cP_CV552,      2960, FLOAT, sP_CV552, 4368,   ""}
+{SQ2,	cNcycle,       2978, INT16, sNcycle, 4404,   ""}
+{SQ2,	cVacRate,      2980, INT16, sVacRate, 4406	"s"}
+{SQ2,	cPressRate,    2982, INT16, sPressRate, 4408	"s"}
+{SQ2,	cVacRateAlrm,  2984, INT16, sVacRateAlrm, 4410	"s"}
+{SQ2,	cPresRateAlrm, 2986, INT16, sPresRateAlrm, 4412	"s"}
+{SQ2,	cVac,          2996, FLOAT, sVac, 4422	"mbar"}
+{SQ2,	cVacFlt,       3000, FLOAT, sVacFlt, 4426	"mbar"}
+{SQ2,	cPressEOF,     3004, FLOAT, sPressEOF, 4430	"mbar"}
+{SQ2,	cPressFlt,     3008, FLOAT, sPressFlt, 4434	"mbar"}
+{SQ2,	cP_CV301,      3012, FLOAT, sP_CV301, 4438	""}
+{SQ2,	cP_CV302,      3016, FLOAT, sP_CV302, 4442	""}
+{SQ3A,	cP_Tt,         3080, FLOAT, sP_Tt, 4524	""}
+{SQ3A,	cP_Low_Tt,     3084, FLOAT, sP_Low_Tt, 4528	""}
+{SQ3A,	cP_High_Tt,    3088, FLOAT, sP_High_Tt, 4532	""}
+{SQ3B,	cP_Tt,         3164, FLOAT, sP_Tt, 4626	""}
+{SQ3B,	cP_Low_Tt,     3168, FLOAT, sP_Low_Tt, 4630	""}
+{SQ3B,	cP_High_Tt,    3172, FLOAT, sP_High_Tt, 4634	""}
+{SQ4,	cP_CV200_Tt,   3248, FLOAT, sP_CV200_Tt, 4728	""}
+{SQ4,	cP_CV200_Ft,   3252, FLOAT, sP_CV200_Ft, 4732	""}
+{SQ4,	cP_CV201_Tt,   3256, FLOAT, sP_CV201_Tt, 4736	""}
+{SQ4,	cP_CV201_Ft,   3260, FLOAT, sP_CV201_Ft, 4740	""}
+{SQ5,	cP_PT,         3332,  FLOAT, sP_PT,      4830	""}
+{SQ5,	cP_FT,         3336,  FLOAT, sP_FT,      4834	""}
+{SQ5,	cP_CV550,      3340,  FLOAT, sP_CV550,   4838	""}
+{SQ5,	cP_LowLt,      3344,  FLOAT, sP_LowLt,   4842	""}
+{SQ5,	cP_CoolD_Tt,   3348,  FLOAT, sP_CoolD_Tt,4846	""}
+{SQ5,	cP_HighLt,     3352,  FLOAT, sP_HighLt,  4850	""}
+{SQ5,	cP_CV100,      3356,  FLOAT, sP_CV100,   4854	""}
+{SQ5,	cP_SP_LIC100,  3360,  FLOAT, sP_SP_LIC100,4858	""}
+{SQ6,	cP_Tt,         3416,  FLOAT, sP_Tt,      4932	""}
+{SQ6,	cP_Lt,         3420,  FLOAT, sP_Lt,      4936	""}
+{SQ7,	cP_PT,         3500,  FLOAT, sP_PT,      5034	""}
+{SQ7,	cP_FT550,      3504,  FLOAT, sP_FT550,   5038	""}
+{SQ7,	cP_Tt_Cold,    3508,  FLOAT, sP_Tt_Cold, 5042	""}
+{SQ7,	cP_SP_Tt,      3512,  FLOAT, sP_SP_Tt,   5046	""}
+{SQ7,	cP_CV550,      3516,  FLOAT, sP_CV550,   5050	""}
+{SQ7,	cP_CV551,      3520,  FLOAT, sP_CV551,   5054	""}
+{SQ7,	cP_FT552,      3524,  FLOAT, sP_FT552,   5058	""}
+{SQ7,	cP_HighLt,     3528,  FLOAT, sP_HighLt,  5062	""}
+{SQ7,	cP_LowLt,      3532,  FLOAT, sP_LowLt,   5066	""}
+{SQ7,	cP_CV552,      3536,  FLOAT, sP_CV552,   5070	""}
+{SQ7,	cP_CV101,      3540,  FLOAT, sP_CV101,   5074	""}
+{SQ7,	cP_CV102,      3544,  FLOAT, sP_CV102,   5078	""}
+{SQ7,	cP_CV103,      3548,  FLOAT, sP_CV103,   5082	""}
+{SQ7,	cP_CV104,      3552,  FLOAT, sP_CV104,   5086	""}
+{SQ8,	cP_CV550,      3584,  FLOAT, sP_CV550,   5136	""}
+{SQ8,	cP_LowLt,      3588,  FLOAT, sP_LowLt,   5140	""}
+{SQ8,	cP_HighLt,     3592,  FLOAT, sP_HighLt,  5144	""}
+{SQ8,	cP_Pt,         3596,  FLOAT, sP_Pt,      5148	""}
+{SQ8,	cP_SP_Tt,      3600,  FLOAT, sP_SP_Tt,   5152	""}
+{SQ8,	cP_CV551,      3604,  FLOAT, sP_CV551,   5156	""}
+{SQ8,	cP_CV552,      3608,  FLOAT, sP_CV552,   5160	""}
+{SQ8,	cP_CV104,      3612,  FLOAT, sP_CV104,   5164	""}
+{SQ8,	cP_SP_LIC101,  3616,  FLOAT, sP_SP_LIC101,5168	""}
+{SQ9,	cP_CV550,      3668,  FLOAT, sP_CV550,   5238	""}
+{SQ9,	cP_LowLt,      3672,  FLOAT, sP_LowLt,   5242	""}
+{SQ9,	cP_HighLt,     3676,  FLOAT, sP_HighLt,  5246	""}
+{SQ9,	cP_Pt,         3680,  FLOAT, sP_Pt,      5250	""}
+{SQ9,	cP_SP_Tt,      3684,  FLOAT, sP_SP_Tt,   5254	""}
+{SQ9,	cP_CV105,      3688,  FLOAT, sP_CV105,   5258	""}
+{SQ9,	cP_CV551_Reg,  3692,  FLOAT, sP_CV551_Reg,5262	""}
+{SQ9,	cP_Final_Pt,   3696,  FLOAT, sP_Final_Pt,5266	""}
+{SQ9,	cP_SP_LIC101,  3700,  FLOAT, sP_SP_LIC101,5270	""}
+{SQ9,	cP_CV551_Pt00, 4740,  FLOAT, sP_CV551_Pt00,6526	""}
+{SQ9,	cP_CV551_Pt01, 4744,  FLOAT, sP_CV551_Pt01,6530	""}
+{SQ9,	cP_CV551_Pt02, 4748,  FLOAT, sP_CV551_Pt02,6534	""}
+{SQ9,	cP_CV551_Pt03, 4752,  FLOAT, sP_CV551_Pt03,6538	""}
+{SQ9,	cP_CV551_Pt04, 4756,  FLOAT, sP_CV551_Pt04,6542	""}
+{SQ9,	cP_CV551_Pt05, 4760,  FLOAT, sP_CV551_Pt05,6546	""}
+{SQ9,	cP_CV551_Pt06, 4764,  FLOAT, sP_CV551_Pt06,6550	""}
+{SQ9,	cP_CV551_Pt07, 4768,  FLOAT, sP_CV551_Pt07,6554	""}
+{SQ9,	cP_CV551_Pt08, 4772,  FLOAT, sP_CV551_Pt08,6558	""}
+{SQ9,	cP_CV551_Pt09, 4776,  FLOAT, sP_CV551_Pt09,6562	""}
+{SQ9,	cP_CV551_Pt10, 4780,  FLOAT, sP_CV551_Pt10,6566	""}
+{SQ9,	cP_CV551_Pt11, 4784,  FLOAT, sP_CV551_Pt11,6570	""}
+{SQ9,	cP_CV551_Pt12, 4788,  FLOAT, sP_CV551_Pt12,6574	""}
+{SQ9,	cP_CV551_Csg00, 4804,  FLOAT, sP_CV551_Csg00,6590	""}
+{SQ9,	cP_CV551_Csg01, 4808,  FLOAT, sP_CV551_Csg01,6594	""}
+{SQ9,	cP_CV551_Csg02, 4812,  FLOAT, sP_CV551_Csg02,6598	""}
+{SQ9,	cP_CV551_Csg03, 4816,  FLOAT, sP_CV551_Csg03,6602	""}
+{SQ9,	cP_CV551_Csg04, 4820,  FLOAT, sP_CV551_Csg04,6606	""}
+{SQ9,	cP_CV551_Csg05, 4824,  FLOAT, sP_CV551_Csg05,6610	""}
+{SQ9,	cP_CV551_Csg06, 4828,  FLOAT, sP_CV551_Csg06,6614	""}
+{SQ9,	cP_CV551_Csg07, 4832,  FLOAT, sP_CV551_Csg07,6618	""}
+{SQ9,	cP_CV551_Csg08, 4836,  FLOAT, sP_CV551_Csg08,6622	""}
+{SQ9,	cP_CV551_Csg09, 4840,  FLOAT, sP_CV551_Csg09,6626	""}
+{SQ9,	cP_CV551_Csg10, 4844,  FLOAT, sP_CV551_Csg10,6630	""}
+{SQ9,	cP_CV551_Csg11, 4848,  FLOAT, sP_CV551_Csg11,6634	""}
+{SQ9,	cP_CV551_Csg12, 4852,  FLOAT, sP_CV551_Csg12,6638	""}
+{SQ10,	cP_CV301_Tt,   3752,  FLOAT, sP_CV301_Tt,5340	""}
+{SQ10,	cP_CV301_Ft,   3756,  FLOAT, sP_CV301_Ft,5344	""}
+{SQ10,	cP_CV302_Tt,   3760,  FLOAT, sP_CV302_Tt,5348	""}
+{SQ10,	cP_CV302_Ft,   3764,  FLOAT, sP_CV302_Ft,5352	""}
+{SQ11,	cP_CV550,      3836,  FLOAT, sP_CV550,   5442	""}
+{SQ11,	cP_Tt,         3840,  FLOAT, sP_Tt,      5446	""}
+{SQ11,	cP_Pt,         3844,  FLOAT, sP_Pt, 	 5450	""}
+{SQ11,	cP_SP_Tt,      3848,  FLOAT, sP_SP_Tt,   5454	""}
+{SQ11,	cP_CV551,      3852,  FLOAT, sP_CV551,   5458	""}
+{SQ11,	cP_CV552,      3856,  FLOAT, sP_CV552,   5462	""}
+{SQ11,	cP_CV104,      3860,  FLOAT, sP_CV104,   5466	""}
+{SQ12A,	cP_WarmUp,     3920,  FLOAT, sP_WarmUp,  5544	""}
+{SQ12B,	cP_WarmUp,     4004,  FLOAT, sP_WarmUp,  5646	""}
+{SQ12B,	cP_CV550,      4008,  FLOAT, sP_CV550,   5650	""}
+{SQ12B,	cP_CV551,      4012,  FLOAT, sP_CV551,   5654	""}
+{SQ12B,	cP_CV552,      4016,  FLOAT, sP_CV552,   5658	""}
+{SQ12B,	cP_CV100,      4020,  FLOAT, sP_CV100,   5662	""}
+{SQ12B,	cP_CV101,      4024,  FLOAT, sP_CV101,   5666	""}
+{SQ12B,	cP_CV102,      4028,  FLOAT, sP_CV102,   5670	""}
+{SQ12B,	cP_CV103,      4032,  FLOAT, sP_CV103,   5674	""}
+{SQ12B,	cP_CV104,      4036,  FLOAT, sP_CV104,   5678	""}
+{SQ12B,	cP_CV105,      4040,  FLOAT, sP_CV105,   5682	""}
+{SQ12B,	cP_CV200,      4044,  FLOAT, sP_CV200,   5686	""}
+{SQ12B,	cP_CV201,      4048,  FLOAT, sP_CV201,   5690	""}
+{SQ12B,	cP_CV302,      4052,  FLOAT, sP_CV302,   5694	""}
+{SQ12B,	cP_CV301,      4056,  FLOAT, sP_CV301,   5698	""}
+{SQ13,	cP_Al_SHe,     4088,  FLOAT, sP_Al_SHe,  5748	""}
+{SQ13,	cP_Al_He,      4092,  FLOAT, sP_Al_He,   5752	""}
+{SQ13,	cP_SHe,        4096,  FLOAT, sP_SHe,   	 5756	""}
+{SQ13,	cP_He,         4100,  FLOAT, sP_He,   	 5760	""}
+{SQ20,	cP_Op,         4154,  INT16, sP_Op,   	 5832	""}
+}
+
+file "SQbinPar.template" { pattern
+{SUBS,	 SIG,          OFFS2, BIT2, OFFS, BIT}
+{SQ4,	 P_C1,          3229, 0,    4708, 0}
+{SQ4,	 P_C2,          3229, 1,    4708, 1}
+{SQ4,	 P_Tt,          3229, 2,    4708, 2}
+{SQ4,	 P_Ft,          3229, 3,    4708, 3}
+{SQ5,	 P_LIC100,      3313, 0,    4810, 0}
+{SQ7,	 P_C1,          3481, 0,    5014, 0}
+{SQ7,	 P_C2,          3481, 1,    5014, 1}
+{SQ7,	 P_Tbl,         3481, 2,    5014, 2}
+{SQ7,	 P_MS,          3481, 3,    5014, 3}
+{SQ8,	 P_MS,          3565, 0,    5116, 0}
+{SQ8,	 P_Tbl,         3565, 1,    5116, 1}
+{SQ8,	 P_LIC101,      3565, 2,    5116, 2}
+{SQ9,	 P_MS,          3649, 0,    5218, 0}
+{SQ9,	 P_Tbl,         3649, 1,    5218, 1}
+{SQ9,	 P_LIC101,      3649, 2,    5218, 2}
+{SQ10,	 P_C1,          3733, 0,    5320, 0}
+{SQ10,	 P_C2,          3733, 1,    5320, 1}
+{SQ10,	 P_Tt,          3733, 2,    5320, 2}
+{SQ10,	 P_Ft,          3733, 3,    5320, 3}
+{SQ11,	 P_MS,          3817, 0,    5422, 0}
+{SQ11,	 P_Tbl,         3817, 1,    5422, 1}
+{SQ11,	 P_C1,          3817, 2,    5422, 2}
+{SQ11,	 P_C2,          3817, 3,    5422, 3}
+{SQ13,	 P_Isolated,    4069, 0,    5728, 0}
+{SQ20,	 P_CondCryo,    4153, 0,    5830, 0}
+{SQ20,	 P_CondCoupl,   4153, 1,    5830, 1}
+{SQ20,	 P_CDCryo,      4153, 2,    5830, 2}
+{SQ20,	 P_SHe,         4153, 3,    5830, 3}
+{SQ20,	 P_WarmUp,      4153, 4,    5830, 4}
+{SQ20,	 P_Isolated,    4153, 5,    5830, 5}
+{SQ20,	 P_StopSeq,     4153, 6,    5830, 6}
+}
+
+file "SQ0_1_2.template" { pattern
+{SUBS, OFFS}
+{SQ0, 4181}
+{SQ1, 4283}
+{SQ2, 4385}
+}

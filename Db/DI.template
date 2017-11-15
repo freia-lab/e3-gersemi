@@ -1,0 +1,70 @@
+record(bi, "CstatV-$(SUBS):$(DEV):sForced")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=0")
+  field(OSV, "MAJOR")
+  field(ONAM, "Forced")
+  field(ZNAM, "Normal")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-$(SUBS):$(DEV):sInp")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=1")
+  field(OSV, "MAJOR")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-$(SUBS):$(DEV):sProcInp")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=2")
+  field(OSV, "MAJOR")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdNorm") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=0")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdNorm")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdForced") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=1")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdForced")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdSet") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=2")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdSet")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdRst") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=3")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdRst")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+

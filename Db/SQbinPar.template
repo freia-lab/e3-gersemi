@@ -1,0 +1,43 @@
+record(bo, "CstatV-Ctrl:$(SUBS):c$(SIG):cmdSetParam-link") {
+  field(DOL, "1")
+  field(OMSL, "closed_loop")
+  field(ONAM, "ON")
+  field(ZNAM, "OFF")
+  field(OUT, "CstatV-Ctrl:$(SUBS):cmdSetParam PP")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-Ctrl:$(SUBS):c$(SIG)") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=$(BIT2)")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+#  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+  field(FLNK, "CstatV-Ctrl:$(SUBS):c$(SIG):cmdSetParam-link")
+}
+
+record(calcout, "CstatV-Ctrl:$(SUBS):s$(SIG)-c$(SIG)-link") {
+  field(INPA, "CstatV-Ctrl:$(SUBS):s$(SIG) NPP")
+  field(INPB, "CstatV-Ctrl:opMode:sLocal PP")
+  field(CALC, "(B=0)?VAL:A")
+  field(OOPT, "On Change")
+  field(OUT, "CstatV-Ctrl:$(SUBS):c$(SIG) PP")
+}
+
+record(calcout, "CstatV-Ctrl:$(SUBS):s$(SIG)-c$(SIG)-remInitLink") {
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+  field(INPA, "CstatV-Ctrl:$(SUBS):s$(SIG).VAL PP")
+  field(CALC, "A")
+  field(OOPT, "On Change")
+  field(PINI, "YES")
+  field(OUT, "CstatV-Ctrl:$(SUBS):c$(SIG) PP")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):s$(SIG)") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=$(BIT)")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+  field(FLNK, "CstatV-Ctrl:$(SUBS):s$(SIG)-c$(SIG)-link")
+}

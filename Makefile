@@ -1,0 +1,22 @@
+
+#EXCLUDE_VERSIONS = 3.15.2
+
+include ${EPICS_ENV_PATH}/module.Makefile
+
+EXCLUDE_ARCHS += eldk
+
+#PROJECT = xxxx
+#EPICSVERSION = 3.14.15.2
+#EPICS_VERSION = 3.14.15.2
+
+SOURCES = -none-
+
+#STARTUPS = $(wildcard startup/*.cmd)
+
+OPIS= boy
+
+# The line below id the fix needed in environment <= 1.7.0
+#vpath %.req ../../src/main/ioc
+
+MISCS += misc/ioc-gersemi-freia.req
+

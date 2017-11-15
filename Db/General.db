@@ -1,0 +1,302 @@
+
+record (bi, "CstatV-Ctrl:s7-status") {
+  field (DTYP, "S7plc stat")
+  field (INP,  "@PLC:GERSEMI")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "disconnected")
+  field (ONAM, "connected")
+  field (ZSV,  "MAJOR")
+  field (FLNK, "CstatV-Ctrl:s7-status-counter")
+}
+
+record (bo, "CstatV-Ctrl:opMode:cmdLocal") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/1 T=BYTE B=0")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdLocal")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+}
+
+record (bi, "CstatV-Ctrl:opMode:sLocal") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/0 T=BYTE B=0")
+  field (PINI, "YES")
+  field (PHAS, "0")
+  field (ONAM,  "Local")
+  field (ZNAM,  "Remote")
+  field (SCAN, "I/O Intr")
+}
+
+record (bi, "CstatV-RHtr:opMode:s2KHeBaloon") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/0 T=BYTE B=1")
+  field (PINI, "YES")
+  field (PHAS, "0")
+  field (ONAM,  "To Baloon")
+  field (ZNAM,  "To Compressor")
+  field (SCAN, "I/O Intr")
+}
+
+record (bi, "CstatV-RHtr:opMode:s4KHeBaloon") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/0 T=BYTE B=2")
+  field (PINI, "YES")
+  field (PHAS, "0")
+  field (ONAM,  "To Baloon")
+  field (ZNAM,  "To Compressor")
+  field (SCAN, "I/O Intr")
+}
+
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB1") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6654 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB2") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6655 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB3") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6656 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB4") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6657 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB5") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6658 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB6") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6659 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB7") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6660 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB8") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6661 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB9") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6662 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+record (longin, "CstatV-Ctrl:Alarms:sAlarmB10") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/6663 T=UINT8")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+
+record (calc, "CstatV-Ctrl:Alarms:sGeneral") {
+  field(SCAN, "1 second")
+  field(INPA, "CstatV-Ctrl:Alarms:sAlarmB1")
+  field(INPB, "CstatV-Ctrl:Alarms:sAlarmB10")
+  field(INPC, "0x1F")
+  field(INPD, "0xFC")
+  field(PREC, "10")
+  field(CALC, "(A&C)+((B&D)<<8)")
+}
+
+record (calc, "CstatV-Ctrl:Alarms:sMKS1") {
+  field(SCAN, "1 second")
+  field(INPA, "CstatV-Ctrl:Alarms:sAlarmB1")
+  field(INPB, "CstatV-Ctrl:Alarms:sAlarmB2")
+  field(INPC, "CstatV-Ctrl:Alarms:sAlarmB3")
+  field(INPD, "CstatV-Ctrl:Alarms:sAlarmB4")
+  field(INPE, "0x0F")
+  field(PREC, "10")
+  field(CALC, "(A>>5)+(B<<5)+(C<<13)+((D&E)<<21)")
+}
+record (calc, "CstatV-Ctrl:Alarms:sMKS2") {
+  field(SCAN, "1 second")
+  field(INPA, "CstatV-Ctrl:Alarms:sAlarmB4")
+  field(INPB, "CstatV-Ctrl:Alarms:sAlarmB5")
+  field(INPC, "CstatV-Ctrl:Alarms:sAlarmB6")
+  field(INPD, "CstatV-Ctrl:Alarms:sAlarmB7")
+  field(INPE, "0x07")
+  field(PREC, "10")
+  field(CALC, "(A>>4)+(B<<4)+(C<<12)+((D&E)<<20)")
+}
+record (calc, "CstatV-Ctrl:Alarms:sMKS3") {
+  field(SCAN, "1 second")
+  field(INPA, "CstatV-Ctrl:Alarms:sAlarmB7")
+  field(INPB, "CstatV-Ctrl:Alarms:sAlarmB8")
+  field(INPC, "CstatV-Ctrl:Alarms:sAlarmB9")
+  field(INPD, "CstatV-Ctrl:Alarms:sAlarmB10")
+  field(INPE, "0x03")
+  field(PREC, "10")
+  field(CALC, "(A>>3)+(B<<3)+(C<<11)+((D&E)<<19)")
+}
+
+record (bo, "CstatV-Ctrl:opMode:cmdSetParam") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=0")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSetParam")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+}
+
+record (bo, "CstatV-Ctrl:opMode:cmdSetAck") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=1")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSetAck")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+}
+
+record (bo, "CstatV-RHtr:opMode:cmdSet2KtoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=2")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSet2KtoBaloon")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+record (bo, "CstatV-RHtr:opMode:cmdRst2KtoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=3")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSet2KtoCompr")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+record (bo, "CstatV-RHtr:opMode:cmdSet4KtoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=4")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSet4KtoBaloon")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+record (bo, "CstatV-RHtr:opMode:cmdRst4KtoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=5")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSet4KtoCompr")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+
+#record (bo, "CstatV-Ctrl:opMode:cmdRemote") {
+#  field (DTYP, "S7plc")
+#  field (OUT, "@PLC:GERSEMI/1 T=BYTE B=1")
+#  field (ZNAM, "Iddle")
+#  field (ONAM, "CmdRemote")
+#  field (PINI, "NO")
+#  field (HIGH, "0.5")
+#}
+
+record (calc, "CstatV-Ctrl:s7-status-counter")
+{
+   field (INPA, "CstatV-Ctrl:s7-status-counter")
+   field (CALC, "A+1")
+   field (FLNK, "CstatV-Ctrl:s7-disconnect-counter")
+}
+
+record (calc, "CstatV-Ctrl:s7-disconnect-counter")
+{
+   field (INPA, "CstatV-Ctrl:s7-status")
+   field (INPB, "CstatV-Ctrl:s7-disconnect-counter.LA")
+   field (INPC, "CstatV-Ctrl:s7-disconnect-counter")
+   field (CALC, "(A=0&&B=1)?C+1:C")
+}
+
+# Heart-bit to the PLC
+
+record(calc, "CstatV-Ctrl:HeartBeat:counter") {
+  field(INPA, "CstatV-Ctrl:HeartBeat:counter")
+  field(CALC, "A+1")
+#  field(OUT, "CstatV-Ctrl:HeartBeat:HBcounter")
+}
+
+record(ao, CstatV-Ctrl:HeartBeat:HBcounter) {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/2 T=INT16")
+  field(SCAN, "10 second")
+  field(DOL, "CstatV-Ctrl:HeartBeat:counter PP")
+  field(OMSL, "closed_loop")
+}
+
+# Records with data from the Cryosystem
+
+record(ao, CstatV-Cryo:LHe:LI5200-PercOut) {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/20 T=FLOAT")
+  field(PINI, "NO")
+  field(SCAN, "10 second")
+  field(DOL, "Cryo-Dwr:LHe:LI5200-PercOut CA")
+  field(PREC, "2")
+  field(OMSL, "closed_loop")
+}
+
+record(ao, CstatV-Cryo:LN2:LI3685-PercOut) {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/24 T=FLOAT")
+  field(PINI, "NO")
+  field(SCAN, "10 second")
+  field(DOL, "Cryo-CBox:LN2:LI3685-PercOut CA")
+  field(PREC, "2")
+  field(OMSL, "closed_loop")
+}
+
+record(ao, CstatV-Cryo:Dwr:UY5202-PercOut) {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/28 T=FLOAT")
+  field(PINI, "NO")
+  field(SCAN, "10 second")
+  field(DOL, "Cryo-Dwr:V:UY5202-PercOut CA")
+  field(PREC, "2")
+  field(OMSL, "closed_loop")
+}
+
+record(ao, CstatV-2Kpumps:AllPumps:sFreq) {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/32 T=FLOAT")
+  field(PINI, "NO")
+  field(SCAN, "10 second")
+  field(DOL, "CstatV-2Kpumps:AllPumps:sFreq-calc CA")
+  field(PREC, "1")
+  field(OMSL, "closed_loop")
+}
+
+record(bo, CstatV-Cryo:Dwr:CV5202_Slctd) {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/1 T=BYTE B=0")
+  field(PINI, "NO")
+  field(SCAN, "10 second")
+  field (ONAM,  "Open")
+  field (ZNAM,  "Closed")
+  field(DOL, "Cryo-Dwr:Dwr:StCV5202_Slctd CA")
+  field(OMSL, "closed_loop")
+}
+

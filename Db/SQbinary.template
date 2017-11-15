@@ -1,0 +1,171 @@
+record(bo, "CstatV-Ctrl:$(SUBS):cmdStart") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=0")
+  field(HIGH, "0.5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdStart")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-Ctrl:$(SUBS):cmdStop") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=1")
+  field(HIGH, "0.5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdStop")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+
+record(bo, "CstatV-Ctrl:$(SUBS):cmdReset") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=4")
+  field(HIGH, "0.5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdReset")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-Ctrl:$(SUBS):cmdAccept") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=5")
+  field(HIGH, "0.5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdAccept")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-Ctrl:$(SUBS):cmdSetParam") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=6")
+  field(HIGH, "0.5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdSetParam")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(ai, "CstatV-Ctrl:$(SUBS):sStep") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+4 T=INT16")
+  field(PREC, "6")
+  field(SCAN, "I/O Intr")
+}
+
+record(ai, "CstatV-Ctrl:$(SUBS):sInitCond") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+38 T=INT16")
+  field(PREC, "6")
+  field(SCAN, "I/O Intr")
+}
+
+record(mbbi, "CstatV-Ctrl:$(SUBS):sInitCondS") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+38 T=INT16")
+  field(NOBT, "16")
+  field(ZRVL, "0")
+  field(ZRST, " ")
+  field(ONVL, "1")
+  field(ONST, "$(ONST)")
+  field(TWVL, "2")
+  field(TWST, "$(TWST)")
+  field(THVL, "3")
+  field(THST, "$(THST)")
+  field(FRVL, "4")
+  field(FRST, "$(FRST)")
+  field(FVVL, "5")
+  field(FVST, "$(FVST)")
+  field(SXVL, "6")
+  field(SXST, "$(SXST)")
+  field(SVVL, "7")
+  field(SVST, "$(SVST)")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sActivate") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=0")
+  field(ZNAM, "False")
+  field(SCAN, "I/O Intr")
+  field(ONAM, "True")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sRun") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=1")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sPause") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=2")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sFault") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=3")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sStop") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=4")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sStopping") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=5")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sCIok") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=6")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sCSok") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=7")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sMsgDispl") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+1 T=BYTE B=0")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sChkParam") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+2 T=BYTE B=6")
+  field(ZNAM, "OK")
+  field(ONAM, "Fault")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sChkEquip") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+2 T=BYTE B=7")
+  field(ZNAM, "OK")
+  field(ONAM, "Fault")
+  field(SCAN, "I/O Intr")
+}
+

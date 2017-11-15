@@ -1,0 +1,197 @@
+
+record(bi, "CstatV-$(SUBS):$(DEV):sAuto")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=0")
+  field(ZSV, "MINOR")
+  field(ONAM, "Auto")
+  field(ZNAM, "Manual")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-$(SUBS):$(DEV):sTsw")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=1")
+  field(OSV, "MAJOR")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-$(SUBS):$(DEV):sCmd")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=2")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-$(SUBS):$(DEV):sCmdAuto")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=3")
+  field(ONAM, "True")
+  field(ZNAM, "False")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-$(SUBS):$(DEV):sHtrOn")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=4")
+  field(ONAM, "On")
+  field(ZNAM, "Off")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(ai, "CstatV-$(SUBS):$(DEV):sHL") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+2 T=FLOAT")
+  field(PREC, "6")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):sHL-cHL-link")
+}
+
+record(calcout, "CstatV-$(SUBS):$(DEV):sHL-cHL-link") {
+  field(INPA, "CstatV-$(SUBS):$(DEV):sHL.VAL NPP")
+  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
+  field(CALC, "(B=0&&C=0)?VAL:A")
+  field(OOPT, "On Change")
+  field(OUT, "CstatV-$(SUBS):$(DEV):cHL PP")
+}
+
+record(calcout, "CstatV-$(SUBS):$(DEV):sHL-cHL-remInitLink") {
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+  field(INPA, "CstatV-$(SUBS):$(DEV):sHL.VAL PP")
+  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+  field(CALC, "(B=0)?A:VAL")
+  field(OOPT, "On Change")
+  field(PINI, "YES")
+  field(OUT, "CstatV-$(SUBS):$(DEV):cHL PP")
+}
+
+record(ai, "CstatV-$(SUBS):$(DEV):sLL") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+6 T=FLOAT")
+  field(PREC, "6")
+  field(SCAN, "I/O Intr")
+  field(PINI, "YES")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):sLL-cHL-link")
+}
+
+record(calcout, "CstatV-$(SUBS):$(DEV):sLL-cHL-link") {
+  field(INPA, "CstatV-$(SUBS):$(DEV):sLL.VAL NPP")
+  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
+  field(CALC, "(B=0&&C=0)?VAL:A")
+  field(OOPT, "On Change")
+  field(OUT, "CstatV-$(SUBS):$(DEV):cLL PP")
+}
+
+record(calcout, "CstatV-$(SUBS):$(DEV):sLL-cHL-remInitLink") {
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+  field(INPA, "CstatV-$(SUBS):$(DEV):sLL.VAL PP")
+  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+  field(CALC, "(B=0)?A:VAL")
+  field(OOPT, "On Change")
+  field(PINI, "YES")
+  field(OUT, "CstatV-$(SUBS):$(DEV):cLL PP")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdAuto") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=0")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdAuto")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdMan") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=1")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdMan")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdSet") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=2")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdSet")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdRst") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=3")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdRst")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdHL") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=4")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdHL")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdLL") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdLL")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdHL-link") {
+  field(DOL, "1")
+  field(OMSL, "closed_loop")
+  field(ONAM, "ON")
+  field(ZNAM, "OFF")
+  field(OUT, "CstatV-$(SUBS):$(DEV):cmdHL.VAL PP NMS")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdLL-link") {
+  field(DOL, "1")
+  field(OMSL, "closed_loop")
+  field(ONAM, "ON")
+  field(ZNAM, "OFF")
+  field(OUT, "CstatV-$(SUBS):$(DEV):cmdLL.VAL PP NMS")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(ao, "CstatV-$(SUBS):$(DEV):cHL") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2)+2 T=FLOAT")
+  field(PINI, "NO")
+  field(PREC, "6")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):cmdHL-link")
+}
+
+record(ao, "CstatV-$(SUBS):$(DEV):cLL") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2)+6 T=FLOAT")
+  field(PINI, "NO")
+  field(PREC, "6")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):cmdLL-link")
+}
