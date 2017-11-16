@@ -291,146 +291,146 @@ file "AI.template" { pattern
 
 file "Evalves.template" { pattern
 {SUBS,	DEV,       OFFS,   OFFS2}
-{LN2,	EV700,     2230,    1390}
-{LN2,	EV740,     2232,    1392}
-{LN2,	EV744,     2232,    1392}
-{LN2,	EV748,     2232,    1392}
-{LN2,	EV760,     2232,    1392}
-{LN2,	EV762,     2232,    1392}
+{LN2,	EV700,     3340,    2064}
+{LN2,	EV740,     3342,    2066}
+{LN2,	EV744,     3344,    2068}
+{LN2,	EV748,     3346,    2070}
+{LN2,	EV760,     3348,    2072}
+{LN2,	EV762,     3350,    2074}
 }
  
 
 file "Valves.template" { pattern
 {SUBS,	DEV,       OFFS,   OFFS2}
-{Vac,	FV050,     2278,    1438}
-{Vac,	FV060,     2280,    1440}
-{Vac,	FV070,     2282,    1442}
-{Vac,	FV080,     2284,    1444}
-{Vac,	FV090,     2286,    1446}
-{Vac,	FV091,     2286,    1446}
-{Vac,	FV092,     2286,    1446}
-{SHe,	FV380,     2294,    1454}
-{SHe,	FV381,     2294,    1454}
-{SHe,	FV382,     2294,    1454}
-{SHe,	FV383,     2294,    1454}
-{RHtr,  FV580,     2310,    1470}
-{RHtr,  FV581,     2310,    1470}
-{RHtr,  FV582,     2310,    1470}
-{RHtr,  FV583,     2310,    1470}
-{RHtr,  FV584,     2310,    1470}
-{RHtr,  FV585,     2310,    1470}
-{RHtr,  FV586,     2310,    1470}
-{RHtr,  FV587,     2310,    1470}
-{LHe,	FV600,     2288,    1448}
-{LHe,	FV601,     2288,    1448}
-{LHe,	FV602,     2288,    1448}
-{LHe,	FV640,     2288,    1448}
-{LHe,	FV641,     2288,    1448}
-{LHe,	FV642,     2288,    1448}
-{LHe,	FV643,     2288,    1448}
-{LHe,	FV660,     2288,    1448}
-{LHe,	FV680,     2288,    1448}
-{LHe,	FV681,     2288,    1448}
-{LN2,	FV740,     2292,    1452}
+{Vac,	FV050,     3394,    2118}
+{Vac,	FV060,     3396,    2120}
+{Vac,	FV070,     3398,    2122}
+{Vac,	FV080,     3400,    2124}
+{Vac,	FV090,     3402,    2126}
+{Vac,	FV091,     3404,    2128}
+{Vac,	FV092,     3406,    2130}
+{SHe,	FV380,     3408,    2132}
+{SHe,	FV381,     3410,    2134}
+{SHe,	FV382,     3412,    2136}
+{SHe,	FV383,     3414,    2138}
+{RHtr,  FV580,     3416,    2140}
+{RHtr,  FV581,     3418,    2142}
+{RHtr,  FV582,     3420,    2144}
+{RHtr,  FV583,     3422,    2146}
+{RHtr,  FV584,     3424,    2148}
+{RHtr,  FV585,     3426,    2150}
+{RHtr,  FV586,     3428,    2152}
+{RHtr,  FV587,     3430,    2154}
+{LHe,	FV600,     3432,    2156}
+{LHe,	FV601,     3434,    2158}
+{LHe,	FV602,     3436,    2160}
+{LHe,	FV640,     3438,    2162}
+{LHe,	FV641,     3440,    2164}
+{LHe,	FV642,     3442,    2166}
+{LHe,	FV643,     3444,    2168}
+{LHe,	FV660,     3446,    2170}
+{LHe,	FV680,     3448,    2172}
+{LHe,	FV681,     3450,    2174}
+{LN2,	FV740,     3452,    2176}
 }
 
 file "AValves.template" { pattern
 {SUBS,	DEV,       OFFS,   OFFS2, LOPR, HOPR, EGU}
-{SHe,	CV380,   2446,	   1570,   0,	100,  percent}
-{RHtr,	CV580,   2456,	   1576,   0,	100,  percent}
-{RHtr,	CV581,   2456,	   1576,   0,	100,  percent}
-{RHtr,	CV582,   2456,	   1576,   0,	100,  percent}
-{RHtr,	CV583,   2456,	   1576,   0,	100,  percent}
-{EDwr,	CV590,   2456,	   1576,   0,	100,  percent}
-{EDwr,	CV591,   2456,	   1576,   0,	100,  percent}
-{LHe,	CV600,   2356,	   1516,   0,	100,  percent}
-{LHe,	CV601,   2356,	   1516,   0,	100,  percent}
-{LHe,	CV602,   2356,	   1516,   0,	100,  percent}
-{LHe,	CV603,   2356,	   1516,   0,	100,  percent}
-{LHe,	CV650,   2356,	   1516,   0,	100,  percent}
-{LHe,	CV651,   2356,	   1516,   0,	100,  percent}
-{LHe,	CV652,   2356,	   1516,   0,	100,  percent}
-{LHe,	CV653,   2356,	   1516,   0,	100,  percent}
-{LHe,	CV680,   2356,	   1516,   0,	100,  percent}
-{LN2,	CV700,   2356,	   1516,   0,	100,  percent}
-{LN2,	CV740,   2356,	   1516,   0,	100,  percent}
-{Cryo,	UY5201,  2356,	   1516,   0,	100,  percent}
+{SHe,	CV380,   3482,	   2206,   0,	100,  percent}
+{RHtr,	CV580,   3492,	   2212,   0,	100,  percent}
+{RHtr,	CV581,   3502,	   2218,   0,	100,  percent}
+{RHtr,	CV582,   3512,	   2224,   0,	100,  percent}
+{RHtr,	CV583,   3522,	   2230,   0,	100,  percent}
+{EDwr,	CV590,   3532,	   2236,   0,	100,  percent}
+{EDwr,	CV591,   3542,	   2242,   0,	100,  percent}
+{LHe,	CV600,   3552,	   2248,   0,	100,  percent}
+{LHe,	CV601,   3562,	   2254,   0,	100,  percent}
+{LHe,	CV602,   3572,	   2260,   0,	100,  percent}
+{LHe,	CV603,   3582,	   2266,   0,	100,  percent}
+{LHe,	CV650,   3592,	   2272,   0,	100,  percent}
+{LHe,	CV651,   3602,	   2278,   0,	100,  percent}
+{LHe,	CV652,   3612,	   2284,   0,	100,  percent}
+{LHe,	CV653,   3622,	   2290,   0,	100,  percent}
+{LHe,	CV680,   3632,	   2296,   0,	100,  percent}
+{LN2,	CV700,   3642,	   2302,   0,	100,  percent}
+{LN2,	CV740,   3652,	   2308,   0,	100,  percent}
+{Cryo,	UY5201,  3662,	   2314,   0,	100,  percent}
 }
 
 file "PID.template" { pattern
 {SUBS,   DEV,     OFFS,   OFFS2,    EGU}
-{LHe,    LIC600,  2960,   1840,    unknown}
-{LHe,    LIC660,  2982,   1850,    unknown}
-{LHe,    PIC600,  3004,   1860,    unknown}
-{LHe,    PIC660,  2696,   1720,    unknown}
-{LHe,    LIC670,  2982,   1850,    unknown}
-{SHe,    FIC380,  2718,   1730,    unknown}
-{SHe,    TIC371,  2718,   1730,    unknown}
-{SHe,    TIC372,  2718,   1730,    unknown}
-{LHe,    PIC660A, 3004,   1860,    unknown}
-{LHe,    LIC660A, 3004,   1860,    unknown}
-{LHe,    LIC670A, 3004,   1860,    unknown}
-{LHe,    LIC682,  3004,   1860,    unknown}
-{LHe,    PIC681,  2696,   1720,    unknown}
-{LHe,    LIC683,  3004,   1860,    unknown}
-{LHe,    TIC690,  3004,   1860,    unknown}
-{LHe,    TIC691,  3004,   1860,    unknown}
-{LHe,    TIC692,  3004,   1860,    unknown}
-{LHe,    TIC693,  3004,   1860,    unknown}
-{LHe,    FIC650,  3004,   1860,    unknown}
-{LHe,    FIC651,  3004,   1860,    unknown}
-{LHe,    FIC652,  3004,   1860,    unknown}
-{LHe,    FIC653,  3004,   1860,    unknown}
-{EDwr,   PIC590,  3004,   1860,    unknown}
-{RHtr,   FIC583,  3004,   1860,    unknown}
-{RHtr,   FIC581,  3004,   1860,    unknown}
+{LHe,    LIC600,  3882,   2446,    unknown}
+{LHe,    LIC660,  3904,   2456,    unknown}
+{LHe,    PIC600,  3926,   2466,    unknown}
+{LHe,    PIC660,  3948,   2476,    unknown}
+{LHe,    LIC670,  3970,   2486,    unknown}
+{SHe,    FIC380,  3992,   2496,    unknown}
+{SHe,    TIC371,  4014,   2506,    unknown}
+{SHe,    TIC372,  4036,   2516,    unknown}
+{LHe,    PIC660A, 4058,   2526,    unknown}
+{LHe,    LIC660A, 4080,   2536,    unknown}
+{LHe,    LIC670A, 4102,   2546,    unknown}
+{LHe,    LIC682,  4124,   2556,    unknown}
+{LHe,    PIC681,  4146,   2566,    unknown}
+{LHe,    LIC683,  4168,   2576,    unknown}
+{LHe,    TIC690,  4190,   2586,    unknown}
+{LHe,    TIC691,  4112,   2596,    unknown}
+{LHe,    TIC692,  4234,   2606,    unknown}
+{LHe,    TIC693,  4256,   2616,    unknown}
+{LHe,    FIC650,  4278,   2626,    unknown}
+{LHe,    FIC651,  4300,   2636,    unknown}
+{LHe,    FIC652,  4322,   2646,    unknown}
+{LHe,    FIC653,  4344,   2656,    unknown}
+{EDwr,   PIC590,  4366,   2666,    unknown}
+{RHtr,   FIC583,  4388,   2676,    unknown}
+{RHtr,   FIC581,  4410,   2686,    unknown}
 }
 
 file "Heater1.template" { pattern
 {SUBS,	DEV,       OFFS,   OFFS2}
-{SHe,	EH350,     3602,    2230}
-{SHe,	EH354,     3602,    2230}
-{SHe,	EH370,     3602,    2230}
-{EDwr,	EH590,     3602,    2230}
-{LHe,	EH600,     3422,    2050}
-{LHe,	EH601,     3432,    2060}
-{LHe,	EH640,     3442,    2070}
-{LHe,	EH641,     3452,    2080}
-{LHe,	EH650,     3462,    2090}
-{LHe,	EH651,     3462,    2090}
-{LHe,	EH652,     3462,    2090}
-{LHe,	EH653,     3462,    2090}
-{LHe,	EH654,     3462,    2090}
-{LHe,	EH655,     3462,    2090}
-{LHe,	EH656,     3462,    2090}
-{LHe,	EH657,     3462,    2090}
-{LHe,	EH660,     3462,    2090}
-{LHe,	EH661,     3462,    2090}
-{LHe,	EH670,     3462,    2090}
-{LHe,	EH680,     3462,    2090}
-{LHe,	EH681,     3462,    2090}
-{LHe,	EH682,     3462,    2090}
-{LHe,	EH689,     3462,    2090}
-{LN2,	EH700,     3462,    2090}
-{LN2,	EH701,     3462,    2090}
-{LN2,	EH702,     3462,    2090}
-{LN2,	EH703,     3462,    2090}
-{LN2,	EH740,     3462,    2090}
-{LN2,	EH741,     3462,    2090}
-{LN2,	EH742,     3462,    2090}
-{LN2,	EH743,     3462,    2090}
-{LN2,	EH744,     3462,    2090}
-{LN2,	EH748,     3462,    2090}
-{LN2,	EH760,     3462,    2090}
-{LN2,	EH761,     3462,    2090}
-{LN2,	EH762,     3462,    2090}
-{LN2,	EH763,     3462,    2090}
-{LN2,	EH765,     3462,    2090}
+{SHe,	EH350,     4828,    2876}
+{SHe,	EH354,     4838,    2886}
+{SHe,	EH370,     4848,    2896}
+{EDwr,	EH590,     4858,    2906}
+{LHe,	EH600,     4868,    2916}
+{LHe,	EH601,     4878,    2926}
+{LHe,	EH640,     4888,    2936}
+{LHe,	EH641,     4898,    2946}
+{LHe,	EH650,     4908,    2956}
+{LHe,	EH651,     4918,    2966}
+{LHe,	EH652,     4928,    2976}
+{LHe,	EH653,     4938,    2986}
+{LHe,	EH654,     4948,    2996}
+{LHe,	EH655,     4958,    3006}
+{LHe,	EH656,     4968,    3016}
+{LHe,	EH657,     4978,    3026}
+{LHe,	EH660,     4988,    3036}
+{LHe,	EH661,     4998,    3046}
+{LHe,	EH670,     5008,    3056}
+{LHe,	EH680,     5018,    3066}
+{LHe,	EH681,     5028,    3076}
+{LHe,	EH682,     5038,    3086}
+{LHe,	EH689,     5048,    3096}
+{LN2,	EH700,     5058,    3106}
+{LN2,	EH701,     5068,    3116}
+{LN2,	EH702,     5078,    3126}
+{LN2,	EH703,     5088,    3136}
+{LN2,	EH740,     5098,    3146}
+{LN2,	EH741,     5108,    3156}
+{LN2,	EH742,     5118,    3166}
+{LN2,	EH743,     5128,    3176}
+{LN2,	EH744,     5138,    3186}
+{LN2,	EH748,     5148,    3196}
+{LN2,	EH760,     5158,    3206}
+{LN2,	EH761,     5168,    3216}
+{LN2,	EH762,     5178,    3226}
+{LN2,	EH763,     5188,    3236}
+{LN2,	EH765,     5198,    3246}
 }
 
 file "Heater2.template" { pattern
 {SUBS,	DEV,       OFFS,   OFFS2}
-{RHtr,	EH580,     3872,    2500}
+{RHtr,	EH580,     5418,    3466}
 }
 
 file "SQbinary.template" { pattern
