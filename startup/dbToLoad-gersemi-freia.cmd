@@ -2,6 +2,6 @@
 ## DB loading                              ##
 #############################################
 
-dbLoadRecords("General.db")
+dbLoadRecords("gersemi-General.db")
 #dbLoadTemplate("gersemi-freia.substitutions")
 dbLoadRecords("gersemi-freia.db")

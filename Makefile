@@ -1,5 +1,6 @@
 
 #EXCLUDE_VERSIONS = 3.15.2
+EXCLUDE_VERSIONS = 3.14
 
 include ${EPICS_ENV_PATH}/module.Makefile
 
@@ -19,4 +20,6 @@ OPIS= boy
 #vpath %.req ../../src/main/ioc
 
 MISCS += misc/ioc-gersemi-freia.req
+DOC = doc
+TESTS = test/server-vc.tcl
 

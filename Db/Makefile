@@ -11,19 +11,19 @@ include $(TOP)/configure/CONFIG
 # Create and install (or just install)
 # databases, templates, substitutions like this
 
-DB += General.db
-DB += AI.template
-DB += AValves.template
-DB += DI.template
-DB += Evalves.template
-DB += SQ0_1_2.template
-DB += SQanalog.template
-DB += SQbinary.template
-DB += SQbinPar.template
-DB += Heater1.template
-DB += Heater2.template
-DB += PID.template
-DB += Valves.template
+DB += gersemi-General.db
+DB += gersemi-AI.template
+DB += gersemi-AValves.template
+DB += gersemi-DI.template
+DB += gersemi-Evalves.template
+DB += gersemi-SQ0_1_2.template
+DB += gersemi-SQanalog.template
+DB += gersemi-SQbinary.template
+DB += gersemi-SQbinPar.template
+DB += gersemi-Heater1.template
+DB += gersemi-Heater2.template
+DB += gersemi-PID.template
+DB += gersemi-Valves.template
 DB += gersemi-freia.substitutions
 
 #----------------------------------------------------
