@@ -4,7 +4,7 @@ file "gersemi-DI.template" { pattern
 
 #PSL SUBS?
 {SUBS,	DEV,       OFFS,   OFFS2}
-{RHtr,	LS80,      84,	    84}
+{RHtr,	LS580,     84,	    84}
 {SHe,	TS370,     86,      86}
 {RHtr,	TS580,     88,	    88}
 {LN2,	TS700,     90,	    90}
@@ -29,7 +29,7 @@ file "gersemi-AI.template" { pattern
 {SHe,   TT380,    190,     174,   0,    500,   K}
 {SHe,   TT381,    200,     180,   0,    500,   K}
 {RHtr,  TT580,    210,     186,   0,    500,   K}
-{RHtr,  TT590,    220,     192,   0,    500,   K}
+{EDwr,  TT590,    220,     192,   0,    500,   K}
 {LHe,   TT600A,   230,     198,   0,    500,   K}
 {LHe,   TT600B,   240,     204,   0,    500,   K}
 {LHe,   TT600C,   250,     210,   0,    500,   K}
@@ -139,7 +139,7 @@ file "gersemi-AI.template" { pattern
 {RHtr,  PT584,    1290,    834,   0,    1100,  mbar}
 {RHtr,  PT585,    1300,    840,   0,    1100,  mbar}
 {RHtr,  PT586,    1310,    846,   0,    1100,  mbar}
-{RHtr,  PT590,    1320,    852,   0,    1100,  mbar}
+{EDwr,  PT590,    1320,    852,   0,    1100,  mbar}
 {LHe,   PT600,    1330,    858,   0,    1100,  mbar}
 {LHe,   PT660L    1340,    864,   0,    1100,  mbar}
 {LHe,   PT660M    1350,    870,   0,    1100,  mbar}
