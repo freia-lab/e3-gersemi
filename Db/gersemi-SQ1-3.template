@@ -1,0 +1,38 @@
+record(ai, "CstatV-Ctrl:$(SUBS):sCptNbCycle") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+9 T=INT16")
+  field(PREC, "6")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sFltVac") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=0")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sFltHIVac") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=1")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sFltPre") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=2")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-Ctrl:$(SUBS):sFltLOPre") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=3")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}

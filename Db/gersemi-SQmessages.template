@@ -1,0 +1,37 @@
+record(bi, "CstatV-Ctrl:$(SUBS):sMsgDispl") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+1 T=BYTE B=0")
+  field(ZNAM, "False")
+  field(ONAM, "True")
+  field(SCAN, "I/O Intr")
+}
+
+record(ai, "CstatV-Ctrl:$(SUBS):sMsgNo") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+8 T=INT16")
+  field(PREC, "6")
+  field(SCAN, "I/O Intr")
+}
+
+record(mbbi, "CstatV-Ctrl:$(SUBS):sMsgS") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+8 T=INT16")
+  field(NOBT, "16")
+  field(ZRVL, "0")
+  field(ZRST, " ")
+  field(ONVL, "1")
+  field(ONST, "$(ONST)")
+  field(TWVL, "2")
+  field(TWST, "$(TWST)")
+  field(THVL, "3")
+  field(THST, "$(THST)")
+  field(FRVL, "4")
+  field(FRST, "$(FRST)")
+  field(FVVL, "5")
+  field(FVST, "$(FVST)")
+  field(SXVL, "6")
+  field(SXST, "$(SXST)")
+  field(SVVL, "7")
+  field(SVST, "$(SVST)")
+  field(SCAN, "I/O Intr")
+}

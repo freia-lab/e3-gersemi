@@ -435,32 +435,35 @@ file "gersemi-Heater2.template" { pattern
 
 file "gersemi-SQbinary.template" { pattern
 {SUBS, OFFS2, OFFS, ONST, TWST, THST, FRST, FVST, SXST, SVST}
-{SQ0,   3774, 5726, "SQ1 mustn't be running", "SQ2 mustn't be running", "", "", "", "", ""}
-{SQ1,   3860, 5830, "SQ0 mustn't be running", "SQ2 mustn't be running", "", "", "", "", ""}
-{SQ2,   3946, 5934, "SQ0 mustn't be running", "SQ1 mustn't be running", "", "", "", "", ""}
-{SQ3,   4032, 6038, "SQ3A must be running", "", "", "", "", "", ""}
-{SQ4,   4118, 6142, "SQ3A must be running", "SQ3B must be running", "", "", "", "", ""}
-{SQ5,   4204, 6246, "", "", "", "", "", "", ""}
-{SQ6,   4290, 6350, "", "", "", "", "", "", ""}
-{SQ7,   4376, 6454, "SQ5 must be running", "", "", "", "", "", ""}
-{SQ8,   4462, 6558, "SQ5 must be running", "SQ9 mustn't be running", "", "", "", "", ""}
-{SQ9,   4548, 6662, "SQ5 must be running", "SQ8 mustn't be running", "", "", "", "", ""}
-{SQ10,  4634, 6766, "", "", "", "", "", "", ""}
-{SQ11,  4720, 6870, "SQ5 must be running", "", "", "", "", "", ""}
-{SQ12,  4806, 6974, "SQ3A mustn't be running", "SQ3B mustn't be running","SQ4 mustn't be running", "SQ5 mustn't be running","SQ7 mustn't be running", "SQ8 mustn't be running","SQ9 mustn't be running"}
-{SQ13,  4892, 7078, "", "", "", "", "", "", ""}
-{SQ14,  4978, 7182, "", "", "", "", "", "", ""}
-{SQ15,  5064, 7286, "", "", "", "", "", "", ""}
-{SQ16,  5150, 7390, "", "", "", "", "", "", ""}
-{SQ17,  5236, 7494, "", "", "", "", "", "", ""}
-{SQ18,  5322, 7598, "", "", "", "", "", "", ""}
-{SQ19,  5408, 7702, "", "", "", "", "", "", ""}
-{SQ20,  5494, 7806, "", "", "", "", "", "", ""}
-{SQ21,  5580, 7910, "", "", "", "", "", "", ""}
-{SQ22,  5666, 8014, "", "", "", "", "", "", ""}
-{SQ23,  5752, 8118, "", "", "", "", "", "", ""}
-{SQ24,  5838, 8222, "", "", "", "", "", "", ""}
-{SQ25,  5924, 8326, "", "", "", "", "", "", ""}
+{SQ1,   3860, 5830, "No insert", "", "", "", "", "", ""}
+{SQ2,   3946, 5934, "No insert", "", "", "", "", "", ""}
+{SQ3,   4032, 6038, "No insert", "", "", "", "", "", ""}
+{SQ4,   4118, 6142, "No insert", "", "", "", "", "", ""}
+{SQ5,   4204, 6246, "No insert", "", "", "", "", "", ""}
+{SQ6,   4290, 6350, "No insert", "", "", "", "", "", ""}
+{SQ7,   4376, 6454, "Wrong insert", "", "", "", "", "", ""}
+{SQ8,   4462, 6558, "No insert", "", "", "", "", "", ""}
+{SQ9,   4548, 6662, "No insert", "", "", "", "", "", ""}
+{SQ10,  4634, 6766, "Wrong insert", "", "", "", "", "", ""}
+{SQ11,  4720, 6870, "No insert", "", "", "", "", "", ""}
+{SQ12,  4806, 6974, "Wrong insert", "","", "","", "",""}
+{SQ13,  4892, 7078, "Wrong insert", "HNOSS Communication fault", "SQ10 or SQ12 is running", "Reheater valves used by HNOSS", "", "", ""}
+{SQ14,  4978, 7182, "Wrong insert", "", "", "", "", "", ""}
+{SQ15,  5064, 7286, "Wrong insert", "", "", "", "", "", ""}
+{SQ16,  5150, 7390, "Wrong insert", "", "", "", "", "", ""}
+{SQ17,  5236, 7494, "Wrong insert", "HNOSS Communication fault", "SQ15 or SQ16 is running", "Reheater valves used by HNOSS", "", "", ""}
+{SQ18,  5322, 7598, "Wrong insert", "", "", "", "", "", ""}
+{SQ19,  5408, 7702, "Wrong insert", "", "", "", "", "", ""}
+{SQ20,  5494, 7806, "Wrong insert", "", "", "", "", "", ""}
+{SQ21,  5580, 7910, "No insert", "", "", "", "", "", ""}
+{SQ22,  5666, 8014, "No insert", "", "", "", "", "", ""}
+{SQ23,  5752, 8118, "No insert", "", "", "", "", "", ""}
+{SQ24,  5838, 8222, "No insert", "", "", "", "", "", ""}
+{SQ25,  5924, 8326, "No insert", "", "", "", "", "", ""}
+}
+
+file "gersemi-SQmessages.template" { pattern
+{SUBS, OFFS, ONST, TWST, THST, FRST, FVST, SXST, SVST}
 }
 
 file "gersemi-SQanalog.template" { pattern
@@ -649,9 +652,9 @@ file "gersemi-SQbinPar.template" { pattern
 {SQ20,	 P_StopSeq,     4153, 6,    5830, 6}
 }
 
-file "gersemi-SQ0_1_2.template" { pattern
+file "gersemi-SQ1-3.template" { pattern
 {SUBS, OFFS}
-{SQ0, 4181}
-{SQ1, 4283}
-{SQ2, 4385}
+{SQ1, 5831}
+{SQ2, 5935}
+{SQ3, 6039}
 }
