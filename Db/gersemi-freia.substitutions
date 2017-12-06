@@ -467,63 +467,102 @@ file "gersemi-SQmessages.template" { pattern
 }
 
 file "gersemi-SQanalog.template" { pattern
-{SUBS,	 SIG,          OFFS2, TYPE, SIG2,	OFFS, EGU}
-{SQ0,	cNcycle,       2810, INT16, sNcycle, 4200, ""}
-{SQ0,	cVacRate,      2812, INT16, sVacRate, 4202,	"s"}
-{SQ0,	cPressRate,    2814, INT16, sPressRate, 4204,	"s"}
-{SQ0,	cVacRateAlrm,  2816, INT16, sVacRateAlrm, 4206,	"s"}
-{SQ0,	cPresRateAlrm, 2818, INT16, sPresRateAlrm, 4208,"s"}
-{SQ0,	cVac,          2828, FLOAT, sVac, 4218,	   "mbar"}
-{SQ0,	cVacFlt,       2832, FLOAT, sVacFlt, 4222, "mbar"}
-{SQ0,	cPressEOF,     2836, FLOAT, sPressEOF, 4226, "mbar"}
-{SQ0,	cPressFlt,     2840, FLOAT, sPressFlt, 4230, "mbar"}
-{SQ1,	cNcycle,       2894, INT16, sNcycle, 4302,   ""}
-{SQ1,	cVacRate,      2896, INT16, sVacRate, 4304,  "s"}
-{SQ1,	cPressRate,    2898, INT16, sPressRate, 4306,	"s"}
-{SQ1,	cVacRateAlrm,  2900, INT16, sVacRateAlrm, 4308,	"s"}
-{SQ1,	cPresRateAlrm, 2902, INT16, sPresRateAlrm, 4310,	"s"}
-{SQ1,	cVac,          2912, FLOAT, sVac, 4320,	   "mbar"}
-{SQ1,	cVacFlt,       2916, FLOAT, sVacFlt, 4324,	   "mbar"}
-{SQ1,	cPressEOF,     2920, FLOAT, sPressEOF, 4328,	   "mbar"}
-{SQ1,	cPressFlt,     2924, FLOAT, sPressFlt, 4332,	   "mbar"}
-{SQ1,	cP_CV100,      2928, FLOAT, sP_CV100, 4336,   ""}
-{SQ1,	cP_CV101,      2932, FLOAT, sP_CV101, 4340,   ""}
-{SQ1,	cP_CV102,      2936, FLOAT, sP_CV102, 4344,   ""}
-{SQ1,	cP_CV103,      2940, FLOAT, sP_CV103, 4348,   ""}
-{SQ1,	cP_CV104,      2944, FLOAT, sP_CV104, 4352,   ""}
-{SQ1,	cP_CV105,      2948, FLOAT, sP_CV105, 4356,   ""}
-{SQ1,	cP_CV550,      2952, FLOAT, sP_CV550, 4360,   ""}
-{SQ1,	cP_CV551,      2956, FLOAT, sP_CV551, 4364,   ""}
-{SQ1,	cP_CV552,      2960, FLOAT, sP_CV552, 4368,   ""}
-{SQ2,	cNcycle,       2978, INT16, sNcycle, 4404,   ""}
-{SQ2,	cVacRate,      2980, INT16, sVacRate, 4406	"s"}
-{SQ2,	cPressRate,    2982, INT16, sPressRate, 4408	"s"}
-{SQ2,	cVacRateAlrm,  2984, INT16, sVacRateAlrm, 4410	"s"}
-{SQ2,	cPresRateAlrm, 2986, INT16, sPresRateAlrm, 4412	"s"}
-{SQ2,	cVac,          2996, FLOAT, sVac, 4422	"mbar"}
-{SQ2,	cVacFlt,       3000, FLOAT, sVacFlt, 4426	"mbar"}
-{SQ2,	cPressEOF,     3004, FLOAT, sPressEOF, 4430	"mbar"}
-{SQ2,	cPressFlt,     3008, FLOAT, sPressFlt, 4434	"mbar"}
-{SQ2,	cP_CV301,      3012, FLOAT, sP_CV301, 4438	""}
-{SQ2,	cP_CV302,      3016, FLOAT, sP_CV302, 4442	""}
-{SQ3A,	cP_Tt,         3080, FLOAT, sP_Tt, 4524	""}
-{SQ3A,	cP_Low_Tt,     3084, FLOAT, sP_Low_Tt, 4528	""}
-{SQ3A,	cP_High_Tt,    3088, FLOAT, sP_High_Tt, 4532	""}
-{SQ3B,	cP_Tt,         3164, FLOAT, sP_Tt, 4626	""}
-{SQ3B,	cP_Low_Tt,     3168, FLOAT, sP_Low_Tt, 4630	""}
-{SQ3B,	cP_High_Tt,    3172, FLOAT, sP_High_Tt, 4634	""}
-{SQ4,	cP_CV200_Tt,   3248, FLOAT, sP_CV200_Tt, 4728	""}
-{SQ4,	cP_CV200_Ft,   3252, FLOAT, sP_CV200_Ft, 4732	""}
+{SUBS,	 SIG,          OFFS2, TYPE, SIG2,	OFFS,   EGU}
+{SQ1,	cNcycle,       3864, INT16, sNcycle,    5852,    ""}
+{SQ1,	cStartDly,     3866, INT16, sStartDly,  5854,    "s"}
+{SQ1,	cVacRateAlrm,  3868, INT16, sVacRateAlrm, 5856,	 "s"}
+{SQ1,	cVacRate,      3870, INT16, sVacRate,   5858,    "s"}
+{SQ1,	cPresRateAlrm, 3872, INT16, sPresRateAlrm, 5860, "s"}
+{SQ1,	cPressRate,    3874, INT16, sPressRate, 5862,	 "s"}
+{SQ1,	cVac,          3882, FLOAT, sVac, 	5870,	 "mbar"}
+{SQ1,	cVacFlt,       3886, FLOAT, sVacFlt,    5874,	 "mbar"}
+{SQ1,	cPressEOF,     3890, FLOAT, sPressEOF,  5878,	 "mbar"}
+{SQ1,	cPressFlt,     3894, FLOAT, sPressFlt,  5882,	 "mbar"}
+{SQ1,	cP_CV600,      3898, FLOAT, sP_CV600,   5886,    "%"}
+{SQ1,	cP_CV601,      3902, FLOAT, sP_CV601,   5890,    "%"}
+{SQ1,	cP_CV602,      3906, FLOAT, sP_CV602,   5894,    "%"}
+{SQ1,	cP_CV603,      3910, FLOAT, sP_CV603,   5898,    "%"}
+{SQ1,	cP_CV580,      3914, FLOAT, sP_CV580,   5902,    "%"}
+
+{SQ2,	cNcycle,       3950, INT16, sNcycle,    5956,    ""}
+{SQ2,	cStartDly,     3852, INT16, sStartDly,  5958,    "s"}
+{SQ2,	cVacRateAlrm,  3854, INT16, sVacRateAlrm, 5960,	 "s"}
+{SQ2,	cVacRate,      3856, INT16, sVacRate,   5962,    "s"}
+{SQ2,	cPresRateAlrm, 3858, INT16, sPresRateAlrm, 5964, "s"}
+{SQ2,	cPressRate,    3860, INT16, sPressRate, 5966,	 "s"}
+{SQ2,	cVac,          3968, FLOAT, sVac, 	5974,	 "mbar"}
+{SQ2,	cVacFlt,       3972, FLOAT, sVacFlt,    5978,	 "mbar"}
+{SQ2,	cPressEOF,     3976, FLOAT, sPressEOF,  5982,	 "mbar"}
+{SQ2,	cPressFlt,     3980, FLOAT, sPressFlt,  5986,	 "mbar"}
+{SQ2,	cP_CV581,      3984, FLOAT, sP_CV581,   5990,    "%"}
+{SQ2,	cP_CV582,      3988, FLOAT, sP_CV582,   5994,    "%"}
+{SQ2,	cP_CV583,      3992, FLOAT, sP_CV583,   5998,    "%"}
+{SQ2,	cP_CV680,      3996, FLOAT, sP_CV680,   6002,    "%"}
+{SQ2,	cP_CV650,      4000, FLOAT, sP_CV650,   6006,    "%"}
+{SQ2,	cP_CV651,      4004, FLOAT, sP_CV651,   6010,    "%"}
+{SQ2,	cP_CV652,      4008, FLOAT, sP_CV652,   6014,    "%"}
+{SQ2,	cP_CV653,      4012, FLOAT, sP_CV653,   6018,    "%"}
+
+{SQ3,	cNcycle,       4036, INT16, sNcycle,    6060,    ""}
+{SQ3,	cStartDly,     4038, INT16, sStartDly,  6062,    "s"}
+{SQ3,	cVacRateAlrm,  4040, INT16, sVacRateAlrm, 6064,	 "s"}
+{SQ3,	cVacRate,      4042, INT16, sVacRate,   6066,    "s"}
+{SQ3,	cPresRateAlrm, 4044, INT16, sPresRateAlrm, 6068, "s"}
+{SQ3,	cPressRate,    4046, INT16, sPressRate, 6070,	 "s"}
+{SQ3,	cVac,          4054, FLOAT, sVac, 	6078,	 "mbar"}
+{SQ3,	cVacFlt,       4058, FLOAT, sVacFlt,    6082,	 "mbar"}
+{SQ3,	cPressEOF,     4062, FLOAT, sPressEOF,  6086,	 "mbar"}
+{SQ3,	cPressFlt,     4066, FLOAT, sPressFlt,  6090,	 "mbar"}
+{SQ3,	cP_CV380,      4070, FLOAT, sP_CV380,   6094,    "%"}
+
+{SQ5,	cP_Tt,         4226, FLOAT, sP_Tt, 6286	"K"}
+{SQ5,	cP_Low_Tt,     4230, FLOAT, sP_Low_Tt, 6290,	"K"}
+{SQ5,	cP_High_Tt,    4234, FLOAT, sP_High_Tt, 6294,	"K"}
+{SQ5,	cP_CV700,      4238, FLOAT, sP_CV700,   6298,    "%"}
+{SQ5,	cP_CV770_Warm_Tt, 4242, FLOAT, sP_CV770_Warm_Tt, 6302,	"K"}
+{SQ5,	cP_CV770_Cold_Tt, 4246, FLOAT, sP_CV770_Cold_Tt, 6306,	"K"}
+
+{SQ8,	cP_Low_LT600_Tt,  4484, FLOAT, sP_Low_LT600_Tt,  6598	"K"}
+{SQ8,	cP_High_LT600_Tt, 4488, FLOAT, sP_High_LT600_Tt, 6602,	"K"}
+{SQ8,	cP_Low_LI660_Tt,  4492, FLOAT, sP_Low_LI660_Tt,  6606	"K"}
+{SQ8,	cP_High_LI660_Tt, 4496, FLOAT, sP_High_LI660_Tt, 6610,	"K"}
+{SQ8,	cP_Low_LI670_Tt,  4500, FLOAT, sP_Low_LI670_Tt,  6614	"K"}
+{SQ8,	cP_High_LI670_Tt, 4504, FLOAT, sP_High_LI670_Tt, 6618,	"K"}
+{SQ8,	cP_Low_LI680_Tt,  4508, FLOAT, sP_Low_LI680_Tt,  6622	"K"}
+{SQ8,	cP_High_LI680_Tt, 4512, FLOAT, sP_High_LI680_Tt, 6626,	"K"}
+{SQ8,	cP_Low_LT682_Tt,  4516, FLOAT, sP_Low_LT682_Tt,  6630	"K"}
+{SQ8,	cP_High_LT682_Tt, 4520, FLOAT, sP_High_LT682_Tt, 6634,	"K"}
+{SQ8,	cP_Low_LT683_Tt,  4524, FLOAT, sP_Low_LT683_Tt,  6638	"K"}
+{SQ8,	cP_High_LT683_Tt, 4528, FLOAT, sP_High_LT683_Tt, 6642,	"K"}
+{SQ8,	cP_Sec_LT600,     4532, FLOAT, sP_Sec_LT600,   	 6646,  "%"}
+{SQ8,	cP_Sec_LI660,     4536, FLOAT, sP_Sec_LI660,   	 6650,  "%"}
+{SQ8,	cP_Sec_LI670,     4540, FLOAT, sP_Sec_LI670,   	 6654,  "%"}
+{SQ8,	cP_Sec_LI680,     4544, FLOAT, sP_Sec_LI680,   	 6658,  "%"}
+
+{SQ9,	cP_CV600,       4570, FLOAT, sP_CV600,     6702, "%"}
+{SQ9,	cP_CV580,   	4574, FLOAT, sP_CV580, 	   6706, "%"}
+{SQ9,	cP_CV_He_Liq,   4578, FLOAT, sP_CV_He_Liq, 6710, "%"}
+{SQ9,	cP_CV590,   	4582, FLOAT, sP_CV590, 	   6714, "%"}
+{SQ9,	cP_LT600_min,   4586, FLOAT, sP_LT600_min, 6718, "%"}
+{SQ9,	cP_LT600_max,   4590, FLOAT, sP_LT600_max, 6722, "%"}
+{SQ9,	cP_SP_LIC600,   4594, FLOAT, sP_SP_LIC600, 6726, "%"}
+{SQ9,	cP_Warn_FT580,  4598, FLOAT, sP_Warn_FT580,6730, "m3/h"}
+{SQ9,	cP_SP_PIC600,   4602, FLOAT, sP_SP_PIC600, 6734, "mbar"}
+{SQ9,	cP_CoolD_Tt,   	4606, FLOAT, sP_CoolD_Tt,  6738, "K"}
+
+{SQ10,	cP_LI670_max,   4656, FLOAT, sP_LI670_max, 6806, "%"}
+{SQ10,	cP_LI670_min,   4660, FLOAT, sP_LI670_min, 6810, "%"}
+{SQ10,	cP_SP_LIC670,   4664, FLOAT, sP_SP_LIC670, 6814, "%"}
+{SQ10,	cP_LI660_max,   4668, FLOAT, sP_LI660_max, 6818, "%"}
+{SQ10,	cP_LI660_min,   4672, FLOAT, sP_LI660_min, 6822, "%"}
+{SQ10,	cP_SP_LIC660,   4676, FLOAT, sP_SP_LIC660, 6826, "%"}
+{SQ10,	cP_SP_PIC660,   4680, FLOAT, sP_SP_PIC660, 6830, "mbar"}
+{SQ10,	cP_SP_FIC581,   4684, FLOAT, sP_SP_FIC581, 6834, "m3/h"}
+{SQ10,	cP_CV601,       4688, FLOAT, sP_CV601,     6838, "%"}
+{SQ10,	cP_CV602,       4692, FLOAT, sP_CV602,     6842, "%"}
+
 {SQ4,	cP_CV201_Tt,   3256, FLOAT, sP_CV201_Tt, 4736	""}
 {SQ4,	cP_CV201_Ft,   3260, FLOAT, sP_CV201_Ft, 4740	""}
-{SQ5,	cP_PT,         3332,  FLOAT, sP_PT,      4830	""}
-{SQ5,	cP_FT,         3336,  FLOAT, sP_FT,      4834	""}
-{SQ5,	cP_CV550,      3340,  FLOAT, sP_CV550,   4838	""}
-{SQ5,	cP_LowLt,      3344,  FLOAT, sP_LowLt,   4842	""}
-{SQ5,	cP_CoolD_Tt,   3348,  FLOAT, sP_CoolD_Tt,4846	""}
-{SQ5,	cP_HighLt,     3352,  FLOAT, sP_HighLt,  4850	""}
-{SQ5,	cP_CV100,      3356,  FLOAT, sP_CV100,   4854	""}
-{SQ5,	cP_SP_LIC100,  3360,  FLOAT, sP_SP_LIC100,4858	""}
 {SQ6,	cP_Tt,         3416,  FLOAT, sP_Tt,      4932	""}
 {SQ6,	cP_Lt,         3420,  FLOAT, sP_Lt,      4936	""}
 {SQ7,	cP_PT,         3500,  FLOAT, sP_PT,      5034	""}
