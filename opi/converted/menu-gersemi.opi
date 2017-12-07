@@ -1,0 +1,3449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0.0">
+  <actions hook="false" hook_all="false" />
+  <auto_scale_widgets>
+    <auto_scale_widgets>false</auto_scale_widgets>
+    <min_width>-1</min_width>
+    <min_height>-1</min_height>
+  </auto_scale_widgets>
+  <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
+  <background_color>
+    <color red="187" green="187" blue="187" />
+  </background_color>
+  <boy_version>5.1.0.201708071144</boy_version>
+  <foreground_color>
+    <color red="255" green="255" blue="255" />
+  </foreground_color>
+  <grid_space>5</grid_space>
+  <height>609</height>
+  <macros>
+    <include_parent_macros>true</include_parent_macros>
+    <CSTAT>CstatV</CSTAT>
+  </macros>
+  <name>menu-gersemi</name>
+  <rules />
+  <scripts />
+  <show_close_button>true</show_close_button>
+  <show_edit_range>true</show_edit_range>
+  <show_grid>false</show_grid>
+  <show_ruler>true</show_ruler>
+  <snap_to_geometry>false</snap_to_geometry>
+  <widget_type>Display</widget_type>
+  <width>453</width>
+  <wuid>-29112b8f:160306ed9c4:-7fff</wuid>
+  <x>714</x>
+  <y>120</y>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>CV600</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV600</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>CV601</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV601</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>CV602</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV602</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>CV603</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV603</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>CV650</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV650</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>CV651</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV651</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>CV700</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV700</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>CV740</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV740</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>CV380</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV380</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>EDwr</SUBS>
+          <DEV>CV590</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV590</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>CV580</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV580</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>CV581</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV581</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>CV582</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>CV582</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="89" green="126" blue="225" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <height>30</height>
+    <label>Analog Valves</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>158</width>
+    <wuid>-29112b8f:160306ed9c4:-7ffe</wuid>
+    <x>41</x>
+    <y>103</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>LS580</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LS580</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>TS580</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TS580</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TS370</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TS370</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>TS700</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TS700</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>TS740</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TS740</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>TS744</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TS744</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>TS748</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TS748</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>TS760</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TS760</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Ctrl</SUBS>
+          <DEV>LiqIns</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LiqIns</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Ctrl</SUBS>
+          <DEV>VacIns</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>VacIns</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroDI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Ctrl</SUBS>
+          <DEV>MagIns</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>MagIns</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="26" green="115" blue="9" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <height>26</height>
+    <label>Digital Input</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>160</width>
+    <wuid>-29112b8f:160306ed9c4:-7ffd</wuid>
+    <x>40</x>
+    <y>72</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="70" green="70" blue="70" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Cantarell" height="11" style="0" pixels="false" />
+    </font>
+    <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="218" green="218" blue="218" />
+    </foreground_color>
+    <format_type>4</format_type>
+    <height>20</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Text Update</name>
+    <precision>0</precision>
+    <precision_from_pv>true</precision_from_pv>
+    <pv_name>$(CSTAT)-Ctrl:s7-status</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>false</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>134</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-29112b8f:160306ed9c4:-7ffc</wuid>
+    <x>10</x>
+    <y>18</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="70" green="70" blue="70" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Cantarell" height="11" style="0" pixels="false" />
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="216" blue="0" />
+    </foreground_color>
+    <format_type>1</format_type>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Text Update</name>
+    <precision>0</precision>
+    <precision_from_pv>true</precision_from_pv>
+    <pv_name>$(CSTAT)-Ctrl:s7-status-counter</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>false</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>69</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-29112b8f:160306ed9c4:-7ffb</wuid>
+    <x>146</x>
+    <y>18</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="70" green="70" blue="70" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Cantarell" height="11" style="0" pixels="false" />
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="216" blue="0" />
+    </foreground_color>
+    <format_type>1</format_type>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Text Update</name>
+    <precision>0</precision>
+    <precision_from_pv>true</precision_from_pv>
+    <pv_name>$(CSTAT)-Ctrl:s7-disconnect-counter</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>false</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>69</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-29112b8f:160306ed9c4:-7ffa</wuid>
+    <x>132</x>
+    <y>39</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <fontdata fontName="Cantarell" height="11" style="0" pixels="false" />
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>disconnects:</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>119</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-29112b8f:160306ed9c4:-7ff9</wuid>
+    <x>12</x>
+    <y>40</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>FV050</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV050</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>FV060</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV060</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>FV070</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV070</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>FV080</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV080</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>FV090</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV090</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>FV091</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV091</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>FV092</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV092</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV600</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV600</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV601</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV601</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV602</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV602</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV640</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV640</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV641</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV641</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV642</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV642</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV643</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV643</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV660</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV660</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV680</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV680</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="253" green="0" blue="0" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>32</height>
+    <label>Valves 1</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>156</width>
+    <wuid>-29112b8f:160306ed9c4:-7ff8</wuid>
+    <x>43</x>
+    <y>137</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroEvalves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EV700</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EV700</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroEvalves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EV740</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EV740</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroEvalves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EV744</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EV744</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroEvalves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EV748</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EV748</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroEvalves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EV760</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EV760</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroEvalves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EV762</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EV762</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="249" green="218" blue="60" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>26</height>
+    <label>Electrovalves</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>156</width>
+    <wuid>-29112b8f:160306ed9c4:-7ff7</wuid>
+    <x>43</x>
+    <y>221</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(CSTAT)-Ctrl:opMode:cmdLocal</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="249" green="218" blue="60" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>24</height>
+    <image></image>
+    <name>Action Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>$(CSTAT)-Ctrl:opMode:cmdLocal</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>Local</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>50</width>
+    <wuid>-29112b8f:160306ed9c4:-7ff6</wuid>
+    <x>64</x>
+    <y>467</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(CSTAT)-Ctrl:opMode:cmdRemote</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="205" green="97" blue="0" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>24</height>
+    <image></image>
+    <name>Action Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>$(CSTAT)-Ctrl:opMode:cmdRemote</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>Remote</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>57</width>
+    <wuid>-29112b8f:160306ed9c4:-7ff5</wuid>
+    <x>118</x>
+    <y>467</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <auto_size>false</auto_size>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <format_type>1</format_type>
+    <height>24</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Text Update</name>
+    <precision>0</precision>
+    <precision_from_pv>true</precision_from_pv>
+    <pv_name>$(CSTAT)-Ctrl:opMode:sLocal</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_units>false</show_units>
+    <text>######</text>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Text Update</widget_type>
+    <width>74</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-29112b8f:160306ed9c4:-7ff4</wuid>
+    <x>64</x>
+    <y>434</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_alarm_sensitive>true</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <color_fillbackground>
+      <color red="192" green="192" blue="192" />
+    </color_fillbackground>
+    <color_hi>
+      <color red="255" green="128" blue="0" />
+    </color_hi>
+    <color_hihi>
+      <color red="255" green="0" blue="0" />
+    </color_hihi>
+    <color_lo>
+      <color red="255" green="128" blue="0" />
+    </color_lo>
+    <color_lolo>
+      <color red="255" green="0" blue="0" />
+    </color_lolo>
+    <effect_3d>true</effect_3d>
+    <enabled>true</enabled>
+    <fill_color>
+      <color red="0" green="0" blue="255" />
+    </fill_color>
+    <fillcolor_alarm_sensitive>false</fillcolor_alarm_sensitive>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>19</height>
+    <level_hi>80.0</level_hi>
+    <level_hihi>90.0</level_hihi>
+    <level_lo>20.0</level_lo>
+    <level_lolo>10.0</level_lolo>
+    <limits_from_pv>true</limits_from_pv>
+    <log_scale>false</log_scale>
+    <major_tick_step_hint>50</major_tick_step_hint>
+    <maximum>100.0</maximum>
+    <minimum>0.0</minimum>
+    <name>Tank</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </scale_font>
+    <scale_format></scale_format>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_hi>true</show_hi>
+    <show_hihi>true</show_hihi>
+    <show_lo>true</show_lo>
+    <show_lolo>true</show_lolo>
+    <show_markers>false</show_markers>
+    <show_minor_ticks>true</show_minor_ticks>
+    <show_scale>false</show_scale>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent_background>true</transparent_background>
+    <visible>true</visible>
+    <widget_type>Tank</widget_type>
+    <width>16</width>
+    <wuid>-29112b8f:160306ed9c4:-7ff3</wuid>
+    <x>146</x>
+    <y>434</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LIC600</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LIC600</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LIC660</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LIC660</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>PIC600</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PIC600</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>PIC660</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PIC660</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LIC670</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LIC670</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>FIC380</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FIC380</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TIC371</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TIC371</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TIC372</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TIC372</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>PIC660A</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PIC660A</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LIC660A</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LIC660A</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LIC670A</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LIC670A</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LIC682</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LIC682</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>PIC681</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PIC681</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LIC683</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LIC683</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TIC690</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TIC690</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FIC581</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FIC581</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="174" green="174" blue="174" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="115" green="255" blue="107" />
+    </foreground_color>
+    <height>26</height>
+    <label>PID 1</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>70</width>
+    <wuid>-29112b8f:160306ed9c4:-7ff2</wuid>
+    <x>43</x>
+    <y>256</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH600</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH600</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH601</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH601</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH640</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH640</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH641</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH641</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH650</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH650</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH651</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH651</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH652</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH652</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH653</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH653</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH654</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH654</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH700</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH700</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH701</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH701</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH702</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH702</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>EDwr</SUBS>
+          <DEV>EH590</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH590</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH762</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH762</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH763</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH763</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH765</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH765</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="130" green="4" blue="0" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <height>26</height>
+    <label>Heater1 #1</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>156</width>
+    <wuid>-29112b8f:160306ed9c4:-7ff1</wuid>
+    <x>43</x>
+    <y>291</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater2.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>EH580</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH580</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="88" green="52" blue="15" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="251" green="243" blue="74" />
+    </foreground_color>
+    <height>26</height>
+    <label>Heater2</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>156</width>
+    <wuid>-29112b8f:160306ed9c4:-7ff0</wuid>
+    <x>44</x>
+    <y>358</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroSQ.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SQ0</SUBS>
+        </macros>
+        <mode>0</mode>
+        <description>SQ0</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="97" green="10" blue="117" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="115" green="255" blue="107" />
+    </foreground_color>
+    <height>26</height>
+    <label>Sequences</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>156</width>
+    <wuid>-29112b8f:160306ed9c4:-7fef</wuid>
+    <x>44</x>
+    <y>393</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(CSTAT)-Ctrl:opMode:cmdSetParam</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>24</height>
+    <image></image>
+    <name>Action Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>$(CSTAT)-Ctrl:opMode:cmdSetParam</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>SetParam</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>70</width>
+    <wuid>-29112b8f:160306ed9c4:-7fee</wuid>
+    <x>83</x>
+    <y>502</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="WRITE_PV">
+        <pv_name>$(CSTAT)-Ctrl:opMode:cmdSetAck</pv_name>
+        <value>1</value>
+        <timeout>10</timeout>
+        <confirm_message></confirm_message>
+        <description></description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>24</height>
+    <image></image>
+    <name>Action Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name>$(CSTAT)-Ctrl:opMode:cmdSetAck</pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>SetAck</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>70</width>
+    <wuid>-29112b8f:160306ed9c4:-7fed</wuid>
+    <x>84</x>
+    <y>536</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT352</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT352</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT353</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT353</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT355</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT355</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT371</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT371</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT372</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT372</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT373</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT373</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT602</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT602</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT603</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT603</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT604</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT604</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT605</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT605</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT607</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT606</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT607</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT607</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT608</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT608</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT609</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT609</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT610</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT610</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT611</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT611</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="10" green="0" blue="184" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="253" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <label>Analog input: Cernox 1</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>205</width>
+    <wuid>-29112b8f:160306ed9c4:-7fec</wuid>
+    <x>234</x>
+    <y>194</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>FT380</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT380</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FT580</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT580</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FT581</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT581</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FT650</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT650</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FT651</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT651</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FT652</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT652</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FT653</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT653</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>FT700</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT700</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>FT740</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT740</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>FT760</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT760</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LI660</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LI660</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LI670</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LI670</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LI680</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LI680</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="10" green="0" blue="184" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="253" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <label>Analog input: FT and LI</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>205</width>
+    <wuid>-29112b8f:160306ed9c4:-7feb</wuid>
+    <x>234</x>
+    <y>223</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>EDwr</SUBS>
+          <DEV>LT590</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT590</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT600</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT600</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT601</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT601</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT660</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT660</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT661</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT661</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT670</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT670</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT671</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT671</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT680</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT680</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT681</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT681</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT682</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT682</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>LT683</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>LT683</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="10" green="0" blue="184" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="253" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <label>Analog input: LT</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>205</width>
+    <wuid>-29112b8f:160306ed9c4:-7fea</wuid>
+    <x>234</x>
+    <y>251</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT351</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT351</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT354</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT354</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT370</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT370</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT380</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT380</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>TT381</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT381</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>TT580</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT580</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>EDwr</SUBS>
+          <DEV>TT590</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT590</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT651</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT651</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT652</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT652</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT653</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT653</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT654</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT654</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT655</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT655</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT656</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT656</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT657</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT657</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="10" green="0" blue="184" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="253" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <label>Analog input: Pt100 1</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>205</width>
+    <wuid>-29112b8f:160306ed9c4:-7fe9</wuid>
+    <x>234</x>
+    <y>105</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>TT550</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT550</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FT550</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT550</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FT551</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT551</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FT552</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FT552</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>PT551</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT551</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>PT552</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT552</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>PT550</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT550</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="10" green="0" blue="184" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="253" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <label>Analog input: RHtr</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>205</width>
+    <wuid>-29112b8f:160306ed9c4:-7fe8</wuid>
+    <x>234</x>
+    <y>411</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>PT050</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT050</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>PT051</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT051</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>PT060</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT060</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>PT061</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT061</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>PT070</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT070</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>PT071</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT071</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>PT080</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT080</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>Vac</SUBS>
+          <DEV>PT081</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PT081</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="10" green="0" blue="184" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="253" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <label>Analog input: Vac</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>205</width>
+    <wuid>-29112b8f:160306ed9c4:-7fe7</wuid>
+    <x>234</x>
+    <y>74</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>FV380</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV380</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>FV381</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV381</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>FV382</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV382</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>FV383</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV383</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FV580</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV580</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FV581</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV581</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FV582</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV582</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FV583</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV583</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FV584</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV584</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FV585</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV585</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FV586</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV586</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FV587</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV587</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FV681</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV681</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroValves.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>FV740</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FV740</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="253" green="0" blue="0" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>32</height>
+    <label>Valves 2</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>156</width>
+    <wuid>-29112b8f:160306ed9c4:-7fe6</wuid>
+    <x>42</x>
+    <y>177</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH703</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH703</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH740</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH740</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH741</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH741</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH742</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH742</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH743</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH743</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH744</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH744</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LN2</SUBS>
+          <DEV>EH748</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH748</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>EH354</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH354</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>SHe</SUBS>
+          <DEV>EH370</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH370</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH655</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH655</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH655</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH656</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH657</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH657</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH660</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH660</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH661</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH661</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH661</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH670</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroHeater1.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>EH661</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>EH680</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="130" green="4" blue="0" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="255" blue="255" />
+    </foreground_color>
+    <height>26</height>
+    <label>Heater1 #2</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>156</width>
+    <wuid>-29112b8f:160306ed9c4:-7fe5</wuid>
+    <x>44</x>
+    <y>325</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TIC691</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TIC691</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TIC692</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TIC692</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TIC693</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TIC693</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FIC650</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FIC650</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FIC651</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FIC651</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FIC652</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FIC652</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>FIC653</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FIC653</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>EDwr</SUBS>
+          <DEV>PIC590</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>PIC590</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FIC583</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FIC583</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroPID.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>RHtr</SUBS>
+          <DEV>FIC581</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>FIC581</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="174" green="174" blue="174" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="115" green="255" blue="107" />
+    </foreground_color>
+    <height>26</height>
+    <label>PID 2</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>70</width>
+    <wuid>-29112b8f:160306ed9c4:-7fe4</wuid>
+    <x>127</x>
+    <y>256</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.MenuButton" version="1.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT600A</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT600A</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT600B</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT600B</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT600C</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT600C</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT600D</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT600D</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT601</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT601</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT640A</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT640A</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT640B</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT640B</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT640C</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT640C</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT640D</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT640D</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT640E</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT640E</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT640F</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT640F</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT641A</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT641A</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT641B</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT641B</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT641C</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT641C</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>macroAI.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <SUBS>LHe</SUBS>
+          <DEV>TT650</DEV>
+        </macros>
+        <mode>0</mode>
+        <description>TT650</description>
+      </action>
+    </actions>
+    <actions_from_pv>false</actions_from_pv>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="10" green="0" blue="184" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="253" green="0" blue="0" />
+    </foreground_color>
+    <height>23</height>
+    <label>Analog input: Pt100 2</label>
+    <name>Menu Button</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_down_arrow>false</show_down_arrow>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Menu Button</widget_type>
+    <width>205</width>
+    <wuid>-29112b8f:160306ed9c4:-7fe3</wuid>
+    <x>235</x>
+    <y>135</y>
+  </widget>
+</display>

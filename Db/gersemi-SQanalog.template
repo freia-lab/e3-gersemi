@@ -1,4 +1,4 @@
-record(bo, "CstatV-Ctrl:$(SUBS):$(SIG):cmdSetParam-link") {
+record(bo, "CstatV-Ctrl:$(SUBS):$(SIG):cmdSetParam-ln") {
   field(DOL, "1")
   field(OMSL, "closed_loop")
   field(ONAM, "ON")
@@ -12,10 +12,10 @@ record(ao, "CstatV-Ctrl:$(SUBS):$(SIG)") {
   field(OUT, "@PLC:GERSEMI/$(OFFS2) T=$(TYPE)")
   field(PREC, "1")
   field(EGU, "$(EGU)")
-  field(FLNK, "CstatV-Ctrl:$(SUBS):$(SIG):cmdSetParam-link")
+  field(FLNK, "CstatV-Ctrl:$(SUBS):$(SIG):cmdSetParam-ln")
 }
 
-record(calcout, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-link") {
+record(calcout, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-ln") {
   field(INPA, "CstatV-Ctrl:$(SUBS):$(SIG2) NPP")
   field(INPB, "CstatV-Ctrl:opMode:sLocal PP")
   field(CALC, "(B=0)?VAL:A")
@@ -23,7 +23,7 @@ record(calcout, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-link") {
   field(OUT, "CstatV-Ctrl:$(SUBS):$(SIG) PP")
 }
 
-record(calcout, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-remInitLink") {
+record(calcout, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-remIniLn") {
   field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
   field(INPA, "CstatV-Ctrl:$(SUBS):$(SIG2).VAL PP")
   field(CALC, "A")
@@ -38,5 +38,5 @@ record(ai, "CstatV-Ctrl:$(SUBS):$(SIG2)") {
   field(PREC, "1")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
-  field(FLNK, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-link")
+  field(FLNK, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-ln")
 }

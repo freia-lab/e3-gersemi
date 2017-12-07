@@ -1,8 +1,8 @@
 #!/bin/sh
 # the next line restarts using wish \
 exec wish "$0" "$@"
-set upsize 6910
-set downsize 9448
+set upsize 9448
+set downsize 6910
 set upsize_gui 80
 set downsize_gui 80
 
@@ -183,11 +183,11 @@ proc receiveHandler {sock} {
         return
     }
     puts "$l bytes data received"
-#    for {set i 0} {$i < $l} {incr i} {
-#        scan [string index $a $i] "%c" c
-#        puts -nonewline [format "%02x " $c]
-#    }
-#    puts ""
+    for {set i 0} {$i < 20} {incr i} {
+        scan [string index $a $i] "%c" c
+        puts -nonewline [format "%02x " $c]
+    }
+    puts ""
 }
 
 proc writeLoop {sock} {

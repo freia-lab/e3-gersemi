@@ -1,0 +1,7 @@
+record(bi, "CstatV-Ctrl:$(SUBS):s$(SIG)") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=$(BIT)")
+  field(ZNAM, "OK")
+  field(ONAM, "Fault")
+  field(SCAN, "I/O Intr")
+}
