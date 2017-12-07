@@ -464,11 +464,18 @@ file "gersemi-SQbinary.template" { pattern
 
 file "gersemi-SQmessages.template" { pattern
 {SUBS, OFFS, ONST, TWST, THST, FRST, FVST, SXST, SVST}
-{SQ1,  5408, "Stop the conditioning?", "Keep under vacuum?", "Stop the conditioning?", "Can not pressurize", "", "", ""}
-{SQ2,  5408, "Stop the conditioning?", "Keep under vacuum?", "Stop the conditioning?", "Can not pressurize", "", "", ""}
-{SQ3,  5408, "Stop the conditioning?", "Keep under vacuum?", "Stop the conditioning?", "Can not pressurize", "", "", ""}
-{SQ9,  5408, "Is recovery choosen?", "Close the dewarvalve?", "", "", "", "", ""}
-{SQ10,  5408,"Is recovery choosen?", "", "", "", "", "", ""}
+{SQ1,  5830, "Stop the conditioning?", "Keep under vacuum?", "Stop the conditioning?", "Can not pressurize", "", "", ""}
+{SQ2,  5934, "Stop the conditioning?", "Keep under vacuum?", "Stop the conditioning?", "Can not pressurize", "", "", ""}
+{SQ3,  6038, "Stop the conditioning?", "Keep under vacuum?", "Stop the conditioning?", "Can not pressurize", "", "", ""}
+{SQ9,  6662, "Is recovery choosen?", "Close the dewarvalve?", "", "", "", "", ""}
+{SQ10, 6766,"Is recovery choosen?", "", "", "", "", "", ""}
+{SQ13, 7078,"Is FV551 closed?", "2K tank empty! Continue?", "2K pumps stopped?", "", "", "", ""}
+{SQ15, 7286,"Is recovery choosen?", "", "", "", "", "", ""}
+{SQ17, 7494,"Is FV551 closed?", "HX683 empty! Continue?", "2K pumps stopped?", "", "", "", ""}
+{SQ20, 7806,"Is L021 connected?", "Stop the emptying?", "Cstat empty! Stop?", "Dewar full! Stop?", "Cstat empty! New level?", "Dewar full! New level?", ""}
+{SQ21, 7910,"Start the warm-up?", "SQ9-SQ20 stopped?", "SQ5 stopped?", "", "", "", ""}
+{SQ22, 8014,"Start the warm-up?", "SQ10-SQ20 stopped?", "SQ6 stopped?", "", "", "", ""}
+{SQ23, 8118,"Start the warm-up?", "SQ10-SQ20 stopped?", "SQ7 stopped?", "", "", "", ""}
 }
 
 file "gersemi-SQanalog.template" { pattern

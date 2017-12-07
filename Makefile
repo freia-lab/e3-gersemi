@@ -21,5 +21,5 @@ OPIS= boy
 
 MISCS += misc/ioc-gersemi-freia.req
 DOC = doc
-TESTS = test/server-vc.tcl
+TESTS = test/server-gersemi.tcl
 
