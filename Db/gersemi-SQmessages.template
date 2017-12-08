@@ -9,7 +9,7 @@ record(bi, "CstatV-Ctrl:$(SUBS):sMsgDispl") {
 record(ai, "CstatV-Ctrl:$(SUBS):sMsgNo") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS)+8 T=INT16")
-  field(PREC, "6")
+  field(PREC, "0")
   field(SCAN, "I/O Intr")
 }
 

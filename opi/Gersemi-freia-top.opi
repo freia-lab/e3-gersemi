@@ -10,7 +10,7 @@
   <background_color>
     <color name="IO Shape Fill" red="188" green="188" blue="188" />
   </background_color>
-  <boy_version>5.1.0.201710241501</boy_version>
+  <boy_version>5.1.0.201708071144</boy_version>
   <foreground_color>
     <color name="IO Grid" red="215" green="215" blue="215" />
   </foreground_color>
@@ -36,11 +36,11 @@
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq0.opi</path>
+        <path>helper-opi-files/Seq1.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ0</seq_no>
-          <seq_title>Seq. 0: Transfer Line L000 - Conditioning He circuits</seq_title>
+          <seq_no>SQ1</seq_no>
+          <seq_title>Seq. 1: Valve Box - Conditioning He circuits</seq_title>
           <step0>Not running</step0>
           <step1>Checking parameters</step1>
           <step2>Checking equipment</step2>
@@ -94,7 +94,7 @@
     <style>1</style>
     <text>Sequence 1</text>
     <toggle_button>false</toggle_button>
-    <tooltip>Transfer Line L000
+    <tooltip>Valve Box
 Conditioning He circuits</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
@@ -106,11 +106,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq1.opi</path>
+        <path>helper-opi-files/Seq2.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ1</seq_no>
-          <seq_title>Sequence 1: Cryostat, conditioning He circuits</seq_title>
+          <seq_no>SQ2</seq_no>
+          <seq_title>Sequence 2: Cryostat, conditioning He circuits</seq_title>
           <step0>Not running</step0>
           <step1>Checking parameters</step1>
           <step2>Checking equipment</step2>
@@ -166,11 +166,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq2.opi</path>
+        <path>helper-opi-files/Seq5.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ2</seq_no>
-          <seq_title>Sequence 2: Couplers, conditioning He circuit</seq_title>
+          <seq_no>SQ5</seq_no>
+          <seq_title>Sequence 5: Valve Box, thermal shield cooling</seq_title>
           <step0>Not running</step0>
           <step1>Checking parameters</step1>
           <step2>Checking equipment</step2>
@@ -215,7 +215,7 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 5</text>
     <toggle_button>false</toggle_button>
-    <tooltip>Couplers, conditioning He circuit</tooltip>
+    <tooltip>Valve Box, thermal shield cooling</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -226,11 +226,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq3A.opi</path>
+        <path>helper-opi-files/Seq8.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ3A</seq_no>
-          <seq_title>Sequence 3A: ICB, thermal shield cooling</seq_title>
+          <seq_no>SQ8</seq_no>
+          <seq_title>Sequence 8: LHe level measurement</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -272,7 +272,7 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 8</text>
     <toggle_button>false</toggle_button>
-    <tooltip>ICB, thermal shield cooling</tooltip>
+    <tooltip>LHe level measurement</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -283,11 +283,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq3B.opi</path>
+        <path>helper-opi-files/Seq9.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ3B</seq_no>
-          <seq_title>Sequence 3B: Cryostat, thermal shield cooling</seq_title>
+          <seq_no>SQ9</seq_no>
+          <seq_title>Seq. 9: VBox cooling &amp; 4K tank level control</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -328,7 +328,8 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 9</text>
     <toggle_button>false</toggle_button>
-    <tooltip>Cryostat, thermal shield cooling</tooltip>
+    <tooltip>Valve Box cooling and
+4K tank level control</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -339,11 +340,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq4.opi</path>
+        <path>helper-opi-files/Seq10.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ4</seq_no>
-          <seq_title>Sequence 4: Tesla couplers cooling</seq_title>
+          <seq_no>SQ10</seq_no>
+          <seq_title>Sequence 10: Cavity cooling</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -384,7 +385,7 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 10</text>
     <toggle_button>false</toggle_button>
-    <tooltip>Tesla couplers cooling</tooltip>
+    <tooltip>Cavity cooling</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -1044,7 +1045,7 @@ Conditioning He circuits</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>48</height>
+    <height>52</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_3</name>
     <rules />
@@ -1062,7 +1063,7 @@ sequences</text>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>93</width>
+    <width>90</width>
     <wrap_words>true</wrap_words>
     <wuid>-21b2ca35:148a7786110:3657</wuid>
     <x>30</x>
@@ -1925,7 +1926,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>94</width>
+          <width>93</width>
           <wrap_words>true</wrap_words>
           <wuid>-262d394c:148ea617cf1:-6520</wuid>
           <x>305</x>
@@ -2065,7 +2066,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>97</width>
+          <width>96</width>
           <wrap_words>true</wrap_words>
           <wuid>-262d394c:148ffbdd3df:522d</wuid>
           <x>60</x>
@@ -3595,6 +3596,203 @@ $(pv_value)</tooltip>
         <wuid>61d7868e:15693d0c5c8:-7049</wuid>
         <x>650</x>
         <y>230</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_color>
+          <color red="128" green="128" blue="128" />
+        </border_color>
+        <border_style>12</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <fc>false</fc>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <height>127</height>
+        <lock_children>false</lock_children>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <name>Rehater Output</name>
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_scrollbar>false</show_scrollbar>
+        <tooltip></tooltip>
+        <transparent>false</transparent>
+        <visible>true</visible>
+        <widget_type>Grouping Container</widget_type>
+        <width>237</width>
+        <wuid>285b9d1:16035c331a6:-7689</wuid>
+        <x>865</x>
+        <y>280</y>
+        <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+          <actions hook="false" hook_all="false" />
+          <alarm_pulsing>true</alarm_pulsing>
+          <auto_size>false</auto_size>
+          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+          <background_color>
+            <color red="255" green="255" blue="255" />
+          </background_color>
+          <border_alarm_sensitive>true</border_alarm_sensitive>
+          <border_color>
+            <color red="0" green="128" blue="255" />
+          </border_color>
+          <border_style>0</border_style>
+          <border_width>1</border_width>
+          <enabled>true</enabled>
+          <font>
+            <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+          </font>
+          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+          <foreground_color>
+            <color red="0" green="0" blue="0" />
+          </foreground_color>
+          <format_type>0</format_type>
+          <height>28</height>
+          <horizontal_alignment>0</horizontal_alignment>
+          <name>Text Update_5</name>
+          <precision>0</precision>
+          <precision_from_pv>true</precision_from_pv>
+          <pv_name>$(C)-RHtr:VBox:opMode</pv_name>
+          <pv_value />
+          <rotation_angle>0.0</rotation_angle>
+          <rules />
+          <scale_options>
+            <width_scalable>true</width_scalable>
+            <height_scalable>true</height_scalable>
+            <keep_wh_ratio>false</keep_wh_ratio>
+          </scale_options>
+          <scripts />
+          <show_units>false</show_units>
+          <text>######</text>
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+          <transparent>false</transparent>
+          <vertical_alignment>1</vertical_alignment>
+          <visible>true</visible>
+          <widget_type>Text Update</widget_type>
+          <width>233</width>
+          <wrap_words>false</wrap_words>
+          <wuid>285b9d1:16035c331a6:-7688</wuid>
+          <x>0</x>
+          <y>0</y>
+        </widget>
+        <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+          <actions hook="false" hook_all="false" />
+          <alarm_pulsing>true</alarm_pulsing>
+          <auto_size>false</auto_size>
+          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+          <background_color>
+            <color red="255" green="255" blue="255" />
+          </background_color>
+          <border_alarm_sensitive>true</border_alarm_sensitive>
+          <border_color>
+            <color red="0" green="128" blue="255" />
+          </border_color>
+          <border_style>0</border_style>
+          <border_width>1</border_width>
+          <enabled>true</enabled>
+          <font>
+            <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+          </font>
+          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+          <foreground_color>
+            <color red="0" green="0" blue="0" />
+          </foreground_color>
+          <format_type>0</format_type>
+          <height>28</height>
+          <horizontal_alignment>0</horizontal_alignment>
+          <name>Text Update_6</name>
+          <precision>0</precision>
+          <precision_from_pv>true</precision_from_pv>
+          <pv_name>$(C)-RHtr:Cstat4K:opMode</pv_name>
+          <pv_value />
+          <rotation_angle>0.0</rotation_angle>
+          <rules />
+          <scale_options>
+            <width_scalable>true</width_scalable>
+            <height_scalable>true</height_scalable>
+            <keep_wh_ratio>false</keep_wh_ratio>
+          </scale_options>
+          <scripts />
+          <show_units>false</show_units>
+          <text>######</text>
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+          <transparent>false</transparent>
+          <vertical_alignment>1</vertical_alignment>
+          <visible>true</visible>
+          <widget_type>Text Update</widget_type>
+          <width>234</width>
+          <wrap_words>false</wrap_words>
+          <wuid>285b9d1:16035c331a6:-7687</wuid>
+          <x>0</x>
+          <y>34</y>
+        </widget>
+        <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
+          <actions hook="false" hook_all="false" />
+          <alarm_pulsing>true</alarm_pulsing>
+          <auto_size>false</auto_size>
+          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+          <background_color>
+            <color red="255" green="255" blue="255" />
+          </background_color>
+          <border_alarm_sensitive>true</border_alarm_sensitive>
+          <border_color>
+            <color red="0" green="128" blue="255" />
+          </border_color>
+          <border_style>0</border_style>
+          <border_width>1</border_width>
+          <enabled>true</enabled>
+          <font>
+            <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+          </font>
+          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+          <foreground_color>
+            <color red="0" green="0" blue="0" />
+          </foreground_color>
+          <format_type>0</format_type>
+          <height>28</height>
+          <horizontal_alignment>0</horizontal_alignment>
+          <name>Text Update_7</name>
+          <precision>0</precision>
+          <precision_from_pv>true</precision_from_pv>
+          <pv_name>$(C)-RHtr:Mag4K:opMode</pv_name>
+          <pv_value />
+          <rotation_angle>0.0</rotation_angle>
+          <rules />
+          <scale_options>
+            <width_scalable>true</width_scalable>
+            <height_scalable>true</height_scalable>
+            <keep_wh_ratio>false</keep_wh_ratio>
+          </scale_options>
+          <scripts />
+          <show_units>false</show_units>
+          <text>######</text>
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+          <transparent>false</transparent>
+          <vertical_alignment>1</vertical_alignment>
+          <visible>true</visible>
+          <widget_type>Text Update</widget_type>
+          <width>234</width>
+          <wrap_words>false</wrap_words>
+          <wuid>285b9d1:16035c331a6:-7686</wuid>
+          <x>0</x>
+          <y>67</y>
+        </widget>
       </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -5963,7 +6161,7 @@ $(pv_value)</tooltip>
         <foreground_color>
           <color name="IO Text Fg" red="0" green="32" blue="92" />
         </foreground_color>
-        <height>24</height>
+        <height>26</height>
         <horizontal_alignment>0</horizontal_alignment>
         <name>Label Template</name>
         <rules />
@@ -5980,7 +6178,7 @@ $(pv_value)</tooltip>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>184</width>
+        <width>182</width>
         <wrap_words>true</wrap_words>
         <wuid>65090fd1:14ed4c84976:-5dd9</wuid>
         <x>900</x>
@@ -6102,7 +6300,7 @@ $(pv_value)</tooltip>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>132</width>
+        <width>129</width>
         <wrap_words>true</wrap_words>
         <wuid>-262d394c:149bd45c177:-1bea</wuid>
         <x>40</x>
@@ -6552,7 +6750,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>41</height>
+    <height>44</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_4</name>
     <rules />
@@ -6569,7 +6767,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>120</width>
+    <width>122</width>
     <wrap_words>true</wrap_words>
     <wuid>-21b2ca35:148a7786110:3b49</wuid>
     <x>30</x>

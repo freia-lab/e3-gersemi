@@ -65,21 +65,22 @@ record(bo, "CstatV-Ctrl:$(SUBS):cmdNo") {
 record(ai, "CstatV-Ctrl:$(SUBS):sStep") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS)+4 T=INT16")
-  field(PREC, "6")
+  field(PREC, "0")
   field(SCAN, "I/O Intr")
 }
 
 record(ai, "CstatV-Ctrl:$(SUBS):sStepTime") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS)+6 T=INT16")
-  field(PREC, "6")
+  field(PREC, "0")
+  field(EGU, "s")
   field(SCAN, "I/O Intr")
 }
 
 record(ai, "CstatV-Ctrl:$(SUBS):sInitCond") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS)+38 T=INT16")
-  field(PREC, "6")
+  field(PREC, "0")
   field(SCAN, "I/O Intr")
 }
 

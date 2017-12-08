@@ -28,6 +28,64 @@ record (bi, "CstatV-Ctrl:opMode:sLocal") {
   field (SCAN, "I/O Intr")
 }
 
+record (longin, "CstatV-Ctrl:HeartBeat:sHBcounter") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/2 T=INT16")
+  field (PINI, "YES")
+  field (SCAN, "I/O Intr")
+}
+
+record(mbbi, "CstatV-RHtr:VBox:opMode") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/4 T=INT16")
+  field(NOBT, "16")
+  field(ZRVL, "0")
+  field(ZRST, "Nothing")
+  field(ONVL, "1")
+  field(ONST, "To Kaeser")
+  field(TWVL, "2")
+  field(TWST, "To gas bag")
+  field(THVL, "3")
+  field(THST, "Switching to Kaeser")
+  field(FRVL, "4")
+  field(FRST, "Switching to gas bag")
+  field(SCAN, "I/O Intr")
+}
+
+record(mbbi, "CstatV-RHtr:Cstat4K:opMode") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/6 T=INT16")
+  field(NOBT, "16")
+  field(ZRVL, "0")
+  field(ZRST, "Nothing")
+  field(ONVL, "1")
+  field(ONST, "To Kaeser")
+  field(TWVL, "2")
+  field(TWST, "To gas bag")
+  field(THVL, "3")
+  field(THST, "Switching to Kaeser")
+  field(FRVL, "4")
+  field(FRST, "Switching to gas bag")
+  field(SCAN, "I/O Intr")
+}
+
+record(mbbi, "CstatV-RHtr:Mag4K:opMode") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/8 T=INT16")
+  field(NOBT, "16")
+  field(ZRVL, "0")
+  field(ZRST, "Nothing")
+  field(ONVL, "1")
+  field(ONST, "To Kaeser")
+  field(TWVL, "2")
+  field(TWST, "To gas bag")
+  field(THVL, "3")
+  field(THST, "Switching to Kaeser")
+  field(FRVL, "4")
+  field(FRST, "Switching to gas bag")
+  field(SCAN, "I/O Intr")
+}
+
 record (longin, "CstatV-Ctrl:Alarms:sAlarmB1") {
   field (DTYP, "S7plc")
   field (INP,  "@PLC:GERSEMI/9438 T=UINT8")
