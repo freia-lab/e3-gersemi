@@ -396,11 +396,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq10.opi</path>
+        <path>helper-opi-files/Seq24.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ10</seq_no>
-          <seq_title>Sequence 10: Supercritical circuits operation</seq_title>
+          <seq_no>SQ24</seq_no>
+          <seq_title>Sequence 24: Cyostat isolated or connected to He recovery</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -441,7 +441,7 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 24</text>
     <toggle_button>false</toggle_button>
-    <tooltip>Supercritical circuits operation</tooltip>
+    <tooltip>Cryostat isolated or connected to He recovery</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -452,11 +452,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq11.opi</path>
+        <path>helper-opi-files/Seq25.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ11</seq_no>
-          <seq_title>Sequence 11: Standby 40 K</seq_title>
+          <seq_no>SQ25</seq_no>
+          <seq_title>Sequence 25: Vale box isolated ot connected to He recovery</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -497,7 +497,8 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 25</text>
     <toggle_button>false</toggle_button>
-    <tooltip>Standby 40 K</tooltip>
+    <tooltip>Valve box isolated or
+connected to He recovery</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -618,11 +619,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq5.opi</path>
+        <path>helper-opi-files/Seq12.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ5</seq_no>
-          <seq_title>Sequence 5: Control level 4K vessel</seq_title>
+          <seq_no>SQ12</seq_no>
+          <seq_title>Sequence 12: Super critical He operation</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -674,7 +675,7 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 12</text>
     <toggle_button>false</toggle_button>
-    <tooltip>Control level 4K vessel</tooltip>
+    <tooltip>Super critical He operation</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -685,11 +686,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq6.opi</path>
+        <path>helper-opi-files/Seq14.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ6</seq_no>
-          <seq_title>Sequence 6: LHe level measurement</seq_title>
+          <seq_no>SQ14</seq_no>
+          <seq_title>Sequence 14: Cavity standby @ low temperature</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -729,7 +730,7 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 14</text>
     <toggle_button>false</toggle_button>
-    <tooltip>LHe level measurement</tooltip>
+    <tooltip>Cavity standby at low temperature</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -740,11 +741,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq7.opi</path>
+        <path>helper-opi-files/Seq21.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ7</seq_no>
-          <seq_title>Sequence 7: Cryostat, cool-down He circuits</seq_title>
+          <seq_no>SQ21</seq_no>
+          <seq_title>Sequence 21: Valve box warm-up</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -785,7 +786,7 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 21</text>
     <toggle_button>false</toggle_button>
-    <tooltip>Cryostat, cool-down He circuits</tooltip>
+    <tooltip>Valve box warm-up</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -796,11 +797,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq8.opi</path>
+        <path>helper-opi-files/Seq22.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ8</seq_no>
-          <seq_title>Sequence 8: 4K Operation</seq_title>
+          <seq_no>SQ22</seq_no>
+          <seq_title>Sequence 22: Cryostat warm-up</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -841,7 +842,7 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 22</text>
     <toggle_button>false</toggle_button>
-    <tooltip>4K Operation</tooltip>
+    <tooltip>Cryostat warm-up</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -967,11 +968,11 @@ Conditioning He circuits</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
     <actions hook="false" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq9.opi</path>
+        <path>helper-opi-files/Seq23.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ9</seq_no>
-          <seq_title>Sequence 9: 2K Operation</seq_title>
+          <seq_no>SQ23</seq_no>
+          <seq_title>Sequence 23: Insert warm-up</seq_title>
           <step0>Not running</step0>
           <step1>Checking equipment</step1>
           <step2>Checking parameters</step2>
@@ -1019,7 +1020,7 @@ Conditioning He circuits</tooltip>
     <style>1</style>
     <text>Sequence 23</text>
     <toggle_button>false</toggle_button>
-    <tooltip>2K Operation</tooltip>
+    <tooltip>Insert warm-up</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
     <width>120</width>
@@ -1260,7 +1261,7 @@ sequences</text>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
       <width>1464</width>
       <wuid>-21b2ca35:148a7786110:374a</wuid>
@@ -6218,7 +6219,7 @@ $(pv_value)</tooltip>
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
       <width>1464</width>
       <wuid>-262d394c:148ffbdd3df:-d5a</wuid>
@@ -6716,8 +6717,8 @@ $(pv_value)</tooltip>
         <height>25</height>
         <horizontal_alignment>0</horizontal_alignment>
         <limits_from_pv>false</limits_from_pv>
-        <maximum>Infinity</maximum>
-        <minimum>-Infinity</minimum>
+        <maximum>1.7976931348623157E308</maximum>
+        <minimum>-1.7976931348623157E308</minimum>
         <multiline_input>false</multiline_input>
         <name>Text Input</name>
         <precision>0</precision>
