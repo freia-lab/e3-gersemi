@@ -28,6 +28,26 @@ record (bi, "CstatV-Ctrl:opMode:sLocal") {
   field (SCAN, "I/O Intr")
 }
 
+record (bi, "CstatV-Ctrl:CV5201:cOpen") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/1 T=BYTE B=0")
+  field (PINI, "YES")
+  field (PHAS, "0")
+  field (ONAM,  "cmdOpen")
+  field (ZNAM,  "Iddle")
+  field (SCAN, "I/O Intr")
+}
+
+record (bi, "CstatV-Ctrl:CV5201:cClose") {
+  field (DTYP, "S7plc")
+  field (INP,  "@PLC:GERSEMI/1 T=BYTE B=1")
+  field (PINI, "YES")
+  field (PHAS, "0")
+  field (ONAM,  "cmdClose")
+  field (ZNAM,  "Iddle")
+  field (SCAN, "I/O Intr")
+}
+
 record (longin, "CstatV-Ctrl:HeartBeat:sHBcounter") {
   field (DTYP, "S7plc")
   field (INP,  "@PLC:GERSEMI/2 T=INT16")
@@ -148,15 +168,6 @@ record (longin, "CstatV-Ctrl:Alarms:sAlarmB10") {
   field (SCAN, "I/O Intr")
 }
 
-record (calc, "CstatV-Ctrl:Alarms:sGeneral") {
-  field(SCAN, "1 second")
-  field(INPA, "CstatV-Ctrl:Alarms:sAlarmB1")
-  field(INPB, "CstatV-Ctrl:Alarms:sAlarmB10")
-  field(INPC, "0x1F")
-  field(INPD, "0xFC")
-  field(PREC, "10")
-  field(CALC, "(A&C)+((B&D)<<8)")
-}
 
 record (bo, "CstatV-Ctrl:opMode:cmdSetParam") {
   field (DTYP, "S7plc")
@@ -199,74 +210,5 @@ record (calc, "CstatV-Ctrl:s7-disconnect-counter")
    field (INPB, "CstatV-Ctrl:s7-disconnect-counter.LA")
    field (INPC, "CstatV-Ctrl:s7-disconnect-counter")
    field (CALC, "(A=0&&B=1)?C+1:C")
-}
-
-# Heart-bit to the PLC
-
-record(calc, "CstatV-Ctrl:HeartBeat:counter") {
-  field(INPA, "CstatV-Ctrl:HeartBeat:counter")
-  field(CALC, "A+1")
-#  field(OUT, "CstatV-Ctrl:HeartBeat:HBcounter")
-}
-
-record(ao, CstatV-Ctrl:HeartBeat:HBcounter) {
-  field(DTYP, "S7plc")
-  field(OUT, "@PLC:GERSEMI/2 T=INT16")
-  field(SCAN, "10 second")
-  field(DOL, "CstatV-Ctrl:HeartBeat:counter PP")
-  field(OMSL, "closed_loop")
-}
-
-# Records with data from the Cryosystem
-
-record(ao, CstatV-Cryo:LHe:LI5200-PercOut) {
-  field(DTYP, "S7plc")
-  field(OUT, "@PLC:GERSEMI/20 T=FLOAT")
-  field(PINI, "NO")
-  field(SCAN, "10 second")
-  field(DOL, "Cryo-Dwr:LHe:LI5200-PercOut CA")
-  field(PREC, "2")
-  field(OMSL, "closed_loop")
-}
-
-record(ao, CstatV-Cryo:LN2:LI3685-PercOut) {
-  field(DTYP, "S7plc")
-  field(OUT, "@PLC:GERSEMI/24 T=FLOAT")
-  field(PINI, "NO")
-  field(SCAN, "10 second")
-  field(DOL, "Cryo-CBox:LN2:LI3685-PercOut CA")
-  field(PREC, "2")
-  field(OMSL, "closed_loop")
-}
-
-record(ao, CstatV-Cryo:Dwr:UY5201-PercOut) {
-  field(DTYP, "S7plc")
-  field(OUT, "@PLC:GERSEMI/28 T=FLOAT")
-  field(PINI, "NO")
-  field(SCAN, "10 second")
-  field(DOL, "Cryo-Dwr:V:UY5201-PercOut CA")
-  field(PREC, "2")
-  field(OMSL, "closed_loop")
-}
-
-record(ao, CstatV-2Kpumps:AllPumps:sFreq) {
-  field(DTYP, "S7plc")
-  field(OUT, "@PLC:GERSEMI/32 T=FLOAT")
-  field(PINI, "NO")
-  field(SCAN, "10 second")
-  field(DOL, "CstatH-2Kpumps:AllPumps:sFreq-calc CA")
-  field(PREC, "1")
-  field(OMSL, "closed_loop")
-}
-
-record(bo, CstatV-Cryo:Dwr:CV5201_Slctd) {
-  field(DTYP, "S7plc")
-  field(OUT, "@PLC:GERSEMI/1 T=BYTE B=3")
-  field(PINI, "NO")
-  field(SCAN, "10 second")
-  field (ONAM,  "Open")
-  field (ZNAM,  "Closed")
-  field(DOL, "Cryo-Dwr:Dwr:StCV5201_Slctd CA")
-  field(OMSL, "closed_loop")
 }
 
