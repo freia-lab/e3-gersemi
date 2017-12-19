@@ -27,7 +27,7 @@
   <show_edit_range>true</show_edit_range>
   <show_grid>true</show_grid>
   <show_ruler>true</show_ruler>
-  <snap_to_geometry>false</snap_to_geometry>
+  <snap_to_geometry>true</snap_to_geometry>
   <widget_type>Display</widget_type>
   <width>1650</width>
   <wuid>-14a921ec:134b2495e46:-7f53</wuid>
@@ -1267,66 +1267,6 @@ sequences</text>
       <wuid>-21b2ca35:148a7786110:374a</wuid>
       <x>1</x>
       <y>1</y>
-      <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <alarm_pulsing>false</alarm_pulsing>
-        <alpha>255</alpha>
-        <anti_alias>true</anti_alias>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color name="IO Background" red="255" green="255" blue="205" />
-        </background_color>
-        <bg_gradient_color>
-          <color name="IO Foreground" red="0" green="0" blue="0" />
-        </bg_gradient_color>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215" />
-        </border_color>
-        <border_style>0</border_style>
-        <border_width>2</border_width>
-        <corner_height>16</corner_height>
-        <corner_width>16</corner_width>
-        <enabled>true</enabled>
-        <fg_gradient_color>
-          <color name="IO Foreground" red="0" green="0" blue="0" />
-        </fg_gradient_color>
-        <fill_level>100.0</fill_level>
-        <font>
-          <opifont.name fontName="arial" height="10" style="0" pixels="false">IO Normal</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color name="IO Shape Fill" red="188" green="188" blue="188" />
-        </foreground_color>
-        <gradient>false</gradient>
-        <height>151</height>
-        <horizontal_fill>true</horizontal_fill>
-        <line_color>
-          <color name="IO Line" red="0" green="32" blue="92" />
-        </line_color>
-        <line_style>0</line_style>
-        <line_width>1</line_width>
-        <name>Rounded Rectangle Template</name>
-        <pv_name></pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <transparent>false</transparent>
-        <visible>true</visible>
-        <widget_type>Rounded Rectangle</widget_type>
-        <width>173</width>
-        <wuid>-262d394c:148ea617cf1:-6b3f</wuid>
-        <x>295</x>
-        <y>120</y>
-      </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
         <actions hook="false" hook_all="false" />
         <background_color>
@@ -1345,7 +1285,7 @@ $(pv_value)</tooltip>
         <foreground_color>
           <color red="192" green="192" blue="192" />
         </foreground_color>
-        <height>271</height>
+        <height>307</height>
         <lock_children>false</lock_children>
         <macros>
           <include_parent_macros>true</include_parent_macros>
@@ -1363,10 +1303,10 @@ $(pv_value)</tooltip>
         <transparent>true</transparent>
         <visible>true</visible>
         <widget_type>Grouping Container</widget_type>
-        <width>442</width>
+        <width>429</width>
         <wuid>-262d394c:148ea617cf1:-6c68</wuid>
-        <x>33</x>
-        <y>25</y>
+        <x>40</x>
+        <y>35</y>
         <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
           <actions hook="false" hook_all="false" />
           <auto_size>true</auto_size>
@@ -1405,8 +1345,8 @@ $(pv_value)</tooltip>
           <width>44</width>
           <wrap_words>true</wrap_words>
           <wuid>6b93b0ff:1487ecc077e:7a08</wuid>
-          <x>15</x>
-          <y>80</y>
+          <x>51</x>
+          <y>140</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
           <actions hook="false" hook_all="false" />
@@ -1494,8 +1434,8 @@ $(pv_value)</tooltip>
           <widget_type>Tank</widget_type>
           <width>100</width>
           <wuid>-7af67f41:1483b8f1cb4:-76e3</wuid>
-          <x>5</x>
-          <y>100</y>
+          <x>0</x>
+          <y>160</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
           <actions hook="false" hook_all="false" />
@@ -1535,8 +1475,8 @@ $(pv_value)</tooltip>
           <width>44</width>
           <wrap_words>true</wrap_words>
           <wuid>-21b2ca35:148a7786110:3bdf</wuid>
-          <x>105</x>
-          <y>80</y>
+          <x>100</x>
+          <y>140</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.tank" version="1.0.0">
           <actions hook="false" hook_all="false" />
@@ -1624,8 +1564,8 @@ $(pv_value)</tooltip>
           <widget_type>Tank</widget_type>
           <width>100</width>
           <wuid>6b93b0ff:1487ecc077e:79d8</wuid>
-          <x>105</x>
-          <y>100</y>
+          <x>100</x>
+          <y>160</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
           <actions hook="false" hook_all="false" />
@@ -1654,16 +1594,16 @@ $(pv_value)</tooltip>
           <foreground_color>
             <color name="IO Liquid Helium" red="51" green="102" blue="255" />
           </foreground_color>
-          <height>85</height>
+          <height>161</height>
           <horizontal_fill>true</horizontal_fill>
           <line_style>0</line_style>
           <line_width>2</line_width>
           <name>Polyline Template</name>
           <points>
-            <point x="56" y="94" />
-            <point x="56" y="10" />
-            <point x="338" y="10" />
-            <point x="338" y="94" />
+            <point x="25" y="160" />
+            <point x="25" y="0" />
+            <point x="333" y="0" />
+            <point x="333" y="154" />
           </points>
           <pv_name></pv_name>
           <pv_value />
@@ -1680,99 +1620,10 @@ $(pv_value)</tooltip>
           <transparent>false</transparent>
           <visible>true</visible>
           <widget_type>Polyline</widget_type>
-          <width>283</width>
+          <width>309</width>
           <wuid>-262d394c:148ea617cf1:-684b</wuid>
-          <x>56</x>
-          <y>10</y>
-        </widget>
-        <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
-          <actions hook="false" hook_all="false" />
-          <alarm_pulsing>false</alarm_pulsing>
-          <align_to_nearest_second>false</align_to_nearest_second>
-          <auto_size>false</auto_size>
-          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-          <background_color>
-            <color name="IO Background" red="255" green="255" blue="205" />
-          </background_color>
-          <bit>0</bit>
-          <boolean_label_position>5</boolean_label_position>
-          <border_alarm_sensitive>true</border_alarm_sensitive>
-          <border_color>
-            <color name="IO Border" red="215" green="215" blue="215" />
-          </border_color>
-          <border_style>0</border_style>
-          <border_width>2</border_width>
-          <crop_bottom>0</crop_bottom>
-          <crop_left>0</crop_left>
-          <crop_right>0</crop_right>
-          <crop_top>0</crop_top>
-          <data_type>0</data_type>
-          <degree>0</degree>
-          <enabled>true</enabled>
-          <flip_horizontal>false</flip_horizontal>
-          <flip_vertical>false</flip_vertical>
-          <font>
-            <opifont.name fontName="arial" height="10" style="0" pixels="false">IO Normal</opifont.name>
-          </font>
-          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-          <foreground_color>
-            <color name="IO InputPV Fg" red="0" green="32" blue="92" />
-          </foreground_color>
-          <height>46</height>
-          <image_file>../SymbolLibrary/SVG/Fluid/Valves/VC 2 way-Valves Control.svg</image_file>
-          <name>Boolean Symbol Image Monitor Template</name>
-          <no_animation>false</no_animation>
-          <off_color>
-            <color name="IO PV OFF" red="77" green="77" blue="77" />
-          </off_color>
-          <off_label>Closed</off_label>
-          <on_color>
-            <color name="IO Liquid Helium" red="51" green="102" blue="255" />
-          </on_color>
-          <on_label>Open</on_label>
-          <permutation_matrix>
-            <row>
-              <col>1.0</col>
-              <col>0.0</col>
-            </row>
-            <row>
-              <col>0.0</col>
-              <col>1.0</col>
-            </row>
-          </permutation_matrix>
-          <pv_name>Cryo-Dwr:Dwr:StCV5201_Slctd</pv_name>
-          <pv_value />
-          <rules>
-            <rule name="BorderRule" prop_id="border_style" out_exp="false">
-              <exp bool_exp="pv0==1">
-                <value>9</value>
-              </exp>
-              <pv trig="true">$(pv_name).SIMM</pv>
-            </rule>
-            <rule name="State" prop_id="pv_value" out_exp="true">
-              <exp bool_exp="pv0 &gt; 0">
-                <value>1</value>
-              </exp>
-              <pv trig="true">$(pv_name)</pv>
-            </rule>
-          </rules>
-          <scale_options>
-            <width_scalable>true</width_scalable>
-            <height_scalable>true</height_scalable>
-            <keep_wh_ratio>false</keep_wh_ratio>
-          </scale_options>
-          <scripts />
-          <show_boolean_label>true</show_boolean_label>
-          <stretch_to_fit>false</stretch_to_fit>
-          <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-          <transparency>true</transparency>
-          <visible>true</visible>
-          <widget_type>Boolean Symbol Image Monitor</widget_type>
-          <width>51</width>
-          <wuid>-262d394c:148ea617cf1:-669b</wuid>
-          <x>75</x>
-          <y>-10</y>
+          <x>25</x>
+          <y>0</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
           <actions hook="false" hook_all="false">
@@ -1798,7 +1649,7 @@ $(pv_value)</tooltip>
           <foreground_color>
             <color name="IO Foreground" red="0" green="0" blue="0" />
           </foreground_color>
-          <height>25</height>
+          <height>36</height>
           <image></image>
           <name>Button Template</name>
           <push_action_index>0</push_action_index>
@@ -1828,10 +1679,10 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
           <visible>true</visible>
           <widget_type>Action Button</widget_type>
-          <width>70</width>
+          <width>102</width>
           <wuid>-262d394c:148ffbdd3df:-306e</wuid>
-          <x>59</x>
-          <y>40</y>
+          <x>54</x>
+          <y>100</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
           <actions hook="false" hook_all="false" />
@@ -1889,8 +1740,68 @@ $(pv_value)</tooltip>
           <width>63</width>
           <wrap_words>false</wrap_words>
           <wuid>-262d394c:148ffbdd3df:-2f44</wuid>
-          <x>131</x>
-          <y>15</y>
+          <x>123</x>
+          <y>5</y>
+        </widget>
+        <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
+          <actions hook="false" hook_all="false" />
+          <alarm_pulsing>false</alarm_pulsing>
+          <alpha>255</alpha>
+          <anti_alias>true</anti_alias>
+          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+          <background_color>
+            <color name="IO Background" red="255" green="255" blue="205" />
+          </background_color>
+          <bg_gradient_color>
+            <color name="IO Foreground" red="0" green="0" blue="0" />
+          </bg_gradient_color>
+          <border_alarm_sensitive>false</border_alarm_sensitive>
+          <border_color>
+            <color name="IO Border" red="215" green="215" blue="215" />
+          </border_color>
+          <border_style>0</border_style>
+          <border_width>2</border_width>
+          <corner_height>16</corner_height>
+          <corner_width>16</corner_width>
+          <enabled>true</enabled>
+          <fg_gradient_color>
+            <color name="IO Foreground" red="0" green="0" blue="0" />
+          </fg_gradient_color>
+          <fill_level>100.0</fill_level>
+          <font>
+            <opifont.name fontName="arial" height="10" style="0" pixels="false">IO Normal</opifont.name>
+          </font>
+          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+          <foreground_color>
+            <color name="IO Shape Fill" red="188" green="188" blue="188" />
+          </foreground_color>
+          <gradient>false</gradient>
+          <height>151</height>
+          <horizontal_fill>true</horizontal_fill>
+          <line_color>
+            <color name="IO Line" red="0" green="32" blue="92" />
+          </line_color>
+          <line_style>0</line_style>
+          <line_width>1</line_width>
+          <name>Rounded Rectangle Template</name>
+          <pv_name></pv_name>
+          <pv_value />
+          <rules />
+          <scale_options>
+            <width_scalable>true</width_scalable>
+            <height_scalable>true</height_scalable>
+            <keep_wh_ratio>false</keep_wh_ratio>
+          </scale_options>
+          <scripts />
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+          <transparent>false</transparent>
+          <visible>true</visible>
+          <widget_type>Rounded Rectangle</widget_type>
+          <width>173</width>
+          <wuid>-262d394c:148ea617cf1:-6b3f</wuid>
+          <x>255</x>
+          <y>154</y>
         </widget>
         <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
           <actions hook="false" hook_all="false" />
@@ -1930,8 +1841,54 @@ $(pv_value)</tooltip>
           <width>94</width>
           <wrap_words>true</wrap_words>
           <wuid>-262d394c:148ea617cf1:-6520</wuid>
-          <x>305</x>
-          <y>105</y>
+          <x>300</x>
+          <y>165</y>
+        </widget>
+        <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
+          <actions hook="false" hook_all="false" />
+          <alarm_pulsing>false</alarm_pulsing>
+          <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+          <background_color>
+            <color red="240" green="240" blue="240" />
+          </background_color>
+          <border_alarm_sensitive>true</border_alarm_sensitive>
+          <border_color>
+            <color red="0" green="128" blue="255" />
+          </border_color>
+          <border_style>3</border_style>
+          <border_width>5</border_width>
+          <enabled>true</enabled>
+          <font>
+            <opifont.name fontName="Cantarell" height="11" style="1" pixels="false">Default Bold</opifont.name>
+          </font>
+          <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+          <foreground_color>
+            <color red="0" green="0" blue="0" />
+          </foreground_color>
+          <height>55</height>
+          <horizontal>false</horizontal>
+          <items_from_pv>true</items_from_pv>
+          <name>Choice Button</name>
+          <pv_name>Cryo-Dwr:CV-5201:OpenClsCmd.OMSL</pv_name>
+          <pv_value />
+          <rules />
+          <scale_options>
+            <width_scalable>true</width_scalable>
+            <height_scalable>true</height_scalable>
+            <keep_wh_ratio>false</keep_wh_ratio>
+          </scale_options>
+          <scripts />
+          <selected_color>
+            <color red="255" green="255" blue="255" />
+          </selected_color>
+          <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+          <visible>true</visible>
+          <widget_type>Choice Button</widget_type>
+          <width>125</width>
+          <wuid>-2e71eea6:160448bf73f:-3192</wuid>
+          <x>40</x>
+          <y>40</y>
         </widget>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
@@ -1961,16 +1918,16 @@ $(pv_value)</tooltip>
         <foreground_color>
           <color name="IO LN2 lines" red="255" green="153" blue="204" />
         </foreground_color>
-        <height>46</height>
+        <height>118</height>
         <horizontal_fill>true</horizontal_fill>
         <line_style>0</line_style>
         <line_width>2</line_width>
         <name>Polyline Template</name>
         <points>
-          <point x="170" y="120" />
-          <point x="170" y="75" />
+          <point x="210" y="192" />
+          <point x="210" y="75" />
           <point x="340" y="75" />
-          <point x="340" y="120" />
+          <point x="340" y="188" />
         </points>
         <pv_name></pv_name>
         <pv_value />
@@ -1987,9 +1944,9 @@ $(pv_value)</tooltip>
         <transparent>false</transparent>
         <visible>true</visible>
         <widget_type>Polyline</widget_type>
-        <width>171</width>
+        <width>131</width>
         <wuid>-262d394c:148ea617cf1:-6857</wuid>
-        <x>170</x>
+        <x>210</x>
         <y>75</y>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -3794,6 +3751,95 @@ $(pv_value)</tooltip>
           <x>0</x>
           <y>67</y>
         </widget>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <align_to_nearest_second>false</align_to_nearest_second>
+        <auto_size>false</auto_size>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205" />
+        </background_color>
+        <bit>0</bit>
+        <boolean_label_position>5</boolean_label_position>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>2</border_width>
+        <crop_bottom>0</crop_bottom>
+        <crop_left>0</crop_left>
+        <crop_right>0</crop_right>
+        <crop_top>0</crop_top>
+        <data_type>0</data_type>
+        <degree>0</degree>
+        <enabled>true</enabled>
+        <flip_horizontal>false</flip_horizontal>
+        <flip_vertical>false</flip_vertical>
+        <font>
+          <opifont.name fontName="arial" height="10" style="0" pixels="false">IO Normal</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color name="IO InputPV Fg" red="0" green="32" blue="92" />
+        </foreground_color>
+        <height>46</height>
+        <image_file>../SymbolLibrary/SVG/Fluid/Valves/VC 2 way-Valves Control.svg</image_file>
+        <name>Boolean Symbol Image Monitor Template</name>
+        <no_animation>false</no_animation>
+        <off_color>
+          <color name="IO PV OFF" red="77" green="77" blue="77" />
+        </off_color>
+        <off_label>Closed</off_label>
+        <on_color>
+          <color name="IO Liquid Helium" red="51" green="102" blue="255" />
+        </on_color>
+        <on_label>Open</on_label>
+        <permutation_matrix>
+          <row>
+            <col>1.0</col>
+            <col>0.0</col>
+          </row>
+          <row>
+            <col>0.0</col>
+            <col>1.0</col>
+          </row>
+        </permutation_matrix>
+        <pv_name>Cryo-Dwr:Dwr:StCV5201_Slctd</pv_name>
+        <pv_value />
+        <rules>
+          <rule name="BorderRule" prop_id="border_style" out_exp="false">
+            <exp bool_exp="pv0==1">
+              <value>9</value>
+            </exp>
+            <pv trig="true">$(pv_name).SIMM</pv>
+          </rule>
+          <rule name="State" prop_id="pv_value" out_exp="true">
+            <exp bool_exp="pv0 &gt; 0">
+              <value>1</value>
+            </exp>
+            <pv trig="true">$(pv_name)</pv>
+          </rule>
+        </rules>
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_boolean_label>true</show_boolean_label>
+        <stretch_to_fit>false</stretch_to_fit>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <transparency>true</transparency>
+        <visible>true</visible>
+        <widget_type>Boolean Symbol Image Monitor</widget_type>
+        <width>61</width>
+        <wuid>-262d394c:148ea617cf1:-669b</wuid>
+        <x>105</x>
+        <y>15</y>
       </widget>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -6869,6 +6915,655 @@ $(pv_value)</tooltip>
         <wuid>1271c214:1603736e797:-7cd7</wuid>
         <x>345</x>
         <y>125</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <bit>-1</bit>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <bulb_border>3</bulb_border>
+        <bulb_border_color>
+          <color red="150" green="150" blue="150" />
+        </bulb_border_color>
+        <data_type>0</data_type>
+        <effect_3d>true</effect_3d>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <height>35</height>
+        <name>LED</name>
+        <off_color>
+          <color red="0" green="100" blue="0" />
+        </off_color>
+        <off_label>OFF</off_label>
+        <on_color>
+          <color red="0" green="255" blue="0" />
+        </on_color>
+        <on_label>ON</on_label>
+        <pv_name>CV</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_boolean_label>false</show_boolean_label>
+        <square_led>false</square_led>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>LED</widget_type>
+        <width>35</width>
+        <wuid>-2e71eea6:160448bf73f:-6d2d</wuid>
+        <x>1060</x>
+        <y>234</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+        <actions hook="false" hook_all="false">
+          <action type="WRITE_PV">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <timeout>10</timeout>
+            <confirm_message></confirm_message>
+            <description></description>
+          </action>
+        </actions>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>40</height>
+        <image></image>
+        <name>Action Button</name>
+        <push_action_index>0</push_action_index>
+        <pv_name>CV</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <style>0</style>
+        <text>Close</text>
+        <toggle_button>false</toggle_button>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>Action Button</widget_type>
+        <width>105</width>
+        <wuid>-2e71eea6:160448bf73f:-6c19</wuid>
+        <x>940</x>
+        <y>232</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <bit>-1</bit>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <bulb_border>3</bulb_border>
+        <bulb_border_color>
+          <color red="150" green="150" blue="150" />
+        </bulb_border_color>
+        <data_type>0</data_type>
+        <effect_3d>true</effect_3d>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <height>35</height>
+        <name>LED</name>
+        <off_color>
+          <color red="0" green="100" blue="0" />
+        </off_color>
+        <off_label>OFF</off_label>
+        <on_color>
+          <color red="0" green="255" blue="0" />
+        </on_color>
+        <on_label>ON</on_label>
+        <pv_name>OV</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_boolean_label>false</show_boolean_label>
+        <square_led>false</square_led>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>LED</widget_type>
+        <width>35</width>
+        <wuid>-2e71eea6:160448bf73f:-6332</wuid>
+        <x>1060</x>
+        <y>277</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+        <actions hook="false" hook_all="false">
+          <action type="WRITE_PV">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <timeout>10</timeout>
+            <confirm_message></confirm_message>
+            <description></description>
+          </action>
+        </actions>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>40</height>
+        <image></image>
+        <name>Action Button</name>
+        <push_action_index>0</push_action_index>
+        <pv_name>OV</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <style>0</style>
+        <text>Open</text>
+        <toggle_button>false</toggle_button>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>Action Button</widget_type>
+        <width>105</width>
+        <wuid>-2e71eea6:160448bf73f:-6330</wuid>
+        <x>940</x>
+        <y>275</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <bit>-1</bit>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <bulb_border>3</bulb_border>
+        <bulb_border_color>
+          <color red="150" green="150" blue="150" />
+        </bulb_border_color>
+        <data_type>0</data_type>
+        <effect_3d>true</effect_3d>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <height>52</height>
+        <name>LED_4</name>
+        <off_color>
+          <color red="0" green="100" blue="0" />
+        </off_color>
+        <off_label>OFF</off_label>
+        <on_color>
+          <color red="0" green="255" blue="0" />
+        </on_color>
+        <on_label>ON</on_label>
+        <pv_name>OpenClsCmd</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_boolean_label>false</show_boolean_label>
+        <square_led>false</square_led>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>LED</widget_type>
+        <width>52</width>
+        <wuid>-2e71eea6:160448bf73f:-6171</wuid>
+        <x>1338</x>
+        <y>226</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>5</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>86</height>
+        <horizontal>false</horizontal>
+        <items_from_pv>true</items_from_pv>
+        <name>Choice Button</name>
+        <pv_name>OpenClsCmd.OMSL</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <selected_color>
+          <color red="255" green="255" blue="255" />
+        </selected_color>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>Choice Button</widget_type>
+        <width>150</width>
+        <wuid>-2e71eea6:160448bf73f:-6167</wuid>
+        <x>1289</x>
+        <y>311</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+        <actions hook="false" hook_all="false">
+          <action type="WRITE_PV">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <timeout>10</timeout>
+            <confirm_message>Are you sure?</confirm_message>
+            <description></description>
+          </action>
+        </actions>
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>51</height>
+        <image></image>
+        <name>Action Button_4</name>
+        <push_action_index>0</push_action_index>
+        <pv_name>OpenClsCmd</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <style>0</style>
+        <text>Toggle
+Open/Close</text>
+        <toggle_button>false</toggle_button>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>Action Button</widget_type>
+        <width>150</width>
+        <wuid>-2e71eea6:160448bf73f:-60da</wuid>
+        <x>1289</x>
+        <y>420</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <bit>-1</bit>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <bulb_border>3</bulb_border>
+        <bulb_border_color>
+          <color red="150" green="150" blue="150" />
+        </bulb_border_color>
+        <data_type>0</data_type>
+        <effect_3d>true</effect_3d>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <height>45</height>
+        <name>LED_5</name>
+        <off_color>
+          <color red="0" green="100" blue="0" />
+        </off_color>
+        <off_label>OFF</off_label>
+        <on_color>
+          <color red="0" green="255" blue="0" />
+        </on_color>
+        <on_label>ON</on_label>
+        <pv_name>OCcmd</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_boolean_label>false</show_boolean_label>
+        <square_led>false</square_led>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>LED</widget_type>
+        <width>45</width>
+        <wuid>-2e71eea6:160448bf73f:-5fc5</wuid>
+        <x>1220</x>
+        <y>423</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>66</height>
+        <horizontal>false</horizontal>
+        <items_from_pv>true</items_from_pv>
+        <name>Choice Button_2</name>
+        <pv_name>vopen</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <selected_color>
+          <color red="255" green="255" blue="255" />
+        </selected_color>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>Choice Button</widget_type>
+        <width>150</width>
+        <wuid>-2e71eea6:160448bf73f:-5ead</wuid>
+        <x>1289</x>
+        <y>140</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <bit>-1</bit>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <bulb_border>3</bulb_border>
+        <bulb_border_color>
+          <color red="150" green="150" blue="150" />
+        </bulb_border_color>
+        <data_type>0</data_type>
+        <effect_3d>true</effect_3d>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <height>35</height>
+        <name>LED_1</name>
+        <off_color>
+          <color red="0" green="100" blue="0" />
+        </off_color>
+        <off_label>OFF</off_label>
+        <on_color>
+          <color red="0" green="255" blue="0" />
+        </on_color>
+        <on_label>ON</on_label>
+        <pv_name>ackOpen</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_boolean_label>false</show_boolean_label>
+        <square_led>false</square_led>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>LED</widget_type>
+        <width>35</width>
+        <wuid>-2e71eea6:160448bf73f:-5d0d</wuid>
+        <x>1110</x>
+        <y>277</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <bit>-1</bit>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>0</border_style>
+        <border_width>1</border_width>
+        <bulb_border>3</bulb_border>
+        <bulb_border_color>
+          <color red="150" green="150" blue="150" />
+        </bulb_border_color>
+        <data_type>0</data_type>
+        <effect_3d>true</effect_3d>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="192" green="192" blue="192" />
+        </foreground_color>
+        <height>35</height>
+        <name>LED_1</name>
+        <off_color>
+          <color red="0" green="100" blue="0" />
+        </off_color>
+        <off_label>OFF</off_label>
+        <on_color>
+          <color red="0" green="255" blue="0" />
+        </on_color>
+        <on_label>ON</on_label>
+        <pv_name>ackClose</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>true</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <show_boolean_label>false</show_boolean_label>
+        <square_led>false</square_led>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>LED</widget_type>
+        <width>35</width>
+        <wuid>-2e71eea6:160448bf73f:-5b67</wuid>
+        <x>1110</x>
+        <y>234</y>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
+        <actions hook="false" hook_all="false" />
+        <alarm_pulsing>false</alarm_pulsing>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <background_color>
+          <color red="240" green="240" blue="240" />
+        </background_color>
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <border_color>
+          <color red="0" green="128" blue="255" />
+        </border_color>
+        <border_style>3</border_style>
+        <border_width>5</border_width>
+        <enabled>true</enabled>
+        <font>
+          <opifont.name fontName="Cantarell" height="11" style="1" pixels="false">Default Bold</opifont.name>
+        </font>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <foreground_color>
+          <color red="0" green="0" blue="0" />
+        </foreground_color>
+        <height>55</height>
+        <horizontal>false</horizontal>
+        <items_from_pv>true</items_from_pv>
+        <name>Choice Button</name>
+        <pv_name>Cryo-Dwr:CV-5201:OpenClsCmd.OMSL</pv_name>
+        <pv_value />
+        <rules />
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <scripts />
+        <selected_color>
+          <color red="255" green="255" blue="255" />
+        </selected_color>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <visible>true</visible>
+        <widget_type>Choice Button</widget_type>
+        <width>125</width>
+        <wuid>-2e71eea6:160448bf73f:-31ad</wuid>
+        <x>1289</x>
+        <y>490</y>
       </widget>
     </widget>
   </widget>

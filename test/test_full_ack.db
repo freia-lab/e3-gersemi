@@ -1,0 +1,87 @@
+record (bo, "CV") {
+       field (ZNAM, "Idle")
+       field (ONAM, "cmdClose")
+       field (HIGH, "10.0")
+       field (FLNK, "OCcmd")
+       field (PINI, "YES")
+}
+record (bo, "OV") {
+       field (ZNAM, "Idle")
+       field (ONAM, "cmdOpen")
+       field (HIGH, "10.0")
+       field (FLNK, "OCcmd")
+       field (PINI, "YES")
+}
+
+record (calc, "OCcmd") {
+       field (INPA, "CV")
+       field (INPB, "OV")
+       field (INPC, "vopen")
+       field (CALC, "(!C)&&B||(C&&A)")
+       field (FLNK, "OpenClsCmd")
+}
+
+record (calcout, "ack1") {
+       field (INPA, "vopen")
+       field (INPB, "OV")
+       field (CALC, "A&&B")
+       field (SDIS, "OpenClsCmd.OMSL")
+       field (DISV, "0")
+       field (OOPT, "Transition To Non-zero")
+       field (FLNK, "ack2")
+       field (PINI, "YES")
+       field (OUT, "ackO-x.PROC")
+}
+
+record (calcout, "ack2") {
+       field (INPA, "vopen")
+       field (INPB, "CV")
+       field (CALC, "(!A)&&B")
+       field (SDIS, "OpenClsCmd.OMSL")
+       field (DISV, "0")
+       field (OOPT, "Transition To Non-zero")
+       field (PINI, "YES")
+       field (OUT, "ackC-x.PROC")
+}
+
+record (bo, "OpenClsCmd") {
+       field (ZNAM, "Idle")
+       field (ONAM, "Toggle")
+       field (HIGH, "0.5")
+       field (DOL, "OCcmd")
+       field (PINI, "YES")
+}
+
+# Help records to produce the pulsed bo
+
+record (bo, "ackO-x") {
+       field (DOL, "1")
+       field (OMSL, "closed_loop")
+       field (OUT, "ackOpen.VAL PP NMS")
+}
+record (bo, "ackC-x") {
+       field (DOL, "1")
+       field (OMSL, "closed_loop")
+       field (OUT, "ackClose.VAL PP NMS")
+}
+
+
+record (bo, "ackOpen") {
+       field (HIGH, "0.5")
+}
+record (bo, "ackClose") {
+       field (HIGH, "0.5")
+}
+
+# status from Linde PLC
+
+record (bi, "vopen") {
+       field (ZNAM, "closed")
+       field (ONAM, "open")
+       field (PINI, "YES")
+       field (FLNK, "ack1")
+}
+
+# Cryo-Dwr:CV-5201:OpenClsCmd
+# Cryo-Dwr:Dwr:StCV5201_Slctd
+# Cryo-Dwr:V:UY5201-PercOut
