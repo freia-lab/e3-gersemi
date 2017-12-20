@@ -491,6 +491,20 @@ file "gersemi-SQmessages.template" { pattern
 {SQ25, 8326,"", "", "", "", "", "", ""}
 }
 
+file "gersemi-SQchoice.template" { pattern
+{SUBS, SIG,      OFFS2,  OFFS, TYPE,  ONST, TWST, THST}
+{SQ9,  LHeSrc,	 4552,   6684, INT16, "Liquifier", "Dewar", ""}
+{SQ9,  RegMode,	 4554,   6686, INT16, "Intermittent", "PID", ""}
+{SQ10, RegMode,	 4638,   6788, INT16, "Intermittent", "PID", ""}
+{SQ11, RegVar,	 4728,   6896, INT16, "Inlet T", "Outlet T", "Flow"}
+{SQ12, RegMode,	 4810,   6996, INT16, "Intermittent", "PID", ""}
+{SQ13, RegMode,	 4896,   7100, INT16, "Intermittent", "PID", ""}
+{SQ19, RegCV650, 5418,   7730, INT16, "Flow", "Temperature", ""}
+{SQ19, RegCV651, 5420,   7732, INT16, "Flow", "Temperature", ""}
+{SQ19, RegCV652, 5422,   7734, INT16, "Flow", "Temperature", ""}
+{SQ19, RegCV653, 5424,   7736, INT16, "Flow", "Temperature", ""}
+}
+
 file "gersemi-SQanalog.template" { pattern
 {SUBS,	 SIG,          OFFS2, TYPE, SIG2,	OFFS,   EGU}
 {SQ1,	cNcycle,       3864, INT16, sNcycle,    5852,    ""}
@@ -589,7 +603,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ10,	cP_CV602,       4692, FLOAT, sP_CV602,     6842, "%"}
 
 {SQ12	cP_CV602,       4828, FLOAT, sP_CV602,     7014, "%"}
-{SQ12,	cP_SP_FIC581,   4836, FLOAT, sP_SP_FIC581, 7022, "m3/h"}
+{SQ12,	cP_SP_FT581,    4836, FLOAT, sP_SP_FT581,  7022, "m3/h"}
 {SQ12,	cP_SP_PIC660,   4840, FLOAT, sP_SP_PIC660, 7026, "mbar"}
 {SQ12,	cP_SP_LIC660,   4844, FLOAT, sP_SP_LIC660, 7030, "%"}
 {SQ12,	cP_SP_LIC670,   4848, FLOAT, sP_SP_LIC670, 7034, "%"}
@@ -604,7 +618,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ14,	cP_TT665_max,   5012, FLOAT, sP_TT665_max, 7234, "%"}
 {SQ14,	cP_TT665_min,   5016, FLOAT, sP_TT665_min, 7238, "%"}
 {SQ14,	cP_SP_PIC660,   5020, FLOAT, sP_SP_PIC660, 7242, "mbar"}
-{SQ14,	cP_SP_FIC581,   5024, FLOAT, sP_SP_FIC581, 7246, "m3/h"}
+{SQ14,	cP_SP_FT581,    5024, FLOAT, sP_SP_FT581,  7246, "m3/h"}
 {SQ14,	cP_LI660_min,   5028, FLOAT, sP_LI660_min, 7250, "%"}
 {SQ14,	cP_LI670_min,   5032, FLOAT, sP_LI670_min, 7254, "%"}
 
@@ -615,7 +629,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ22,	cP_CV583,       5692, FLOAT, sP_CV583,     8058, "%"}
 {SQ22,	cP_CV740,       5696, FLOAT, sP_CV740,     8062, "%"}
 {SQ22,	cP_LI670_min,   5700, FLOAT, sP_LI670_min, 8066, "%"}
-{SQ22,	cP_LT680_min,   5704, FLOAT, sP_LT680_min, 8070, "%"}
+{SQ22,	cP_LI680_min,   5704, FLOAT, sP_LI680_min, 8070, "%"}
 
 {SQ23,	cP_CV581,       5774, FLOAT, sP_CV581,     8158, "%"}
 {SQ23,	cP_CV583,       5778, FLOAT, sP_CV583,     8162, "%"}

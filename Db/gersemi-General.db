@@ -278,3 +278,23 @@ record (calc, "CstatV-Ctrl:s7-disconnect-counter")
    field (CALC, "(A=0&&B=1)?C+1:C")
 }
 
+# Commands specific for given sequences
+
+record(bo, "CstatV-Ctrl:SQ9:cmdStopLiq") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/4549 T=BYTE B=1")
+  field(HIGH, "0.5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdStopLiq")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-Ctrl:SQ9:cmdStopDwr") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/4549 T=BYTE B=2")
+  field(HIGH, "0.5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "CmdStopLiq")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+

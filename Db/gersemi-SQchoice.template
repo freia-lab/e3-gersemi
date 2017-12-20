@@ -1,0 +1,49 @@
+record(bo, "CstatV-Ctrl:$(SUBS):cP_$(SIG):cmdSetParam-ln") {
+  field(DOL, "1")
+  field(OMSL, "closed_loop")
+  field(ONAM, "ON")
+  field(ZNAM, "OFF")
+  field(OUT, "CstatV-Ctrl:$(SUBS):cmdSetParam PP")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(mbbo, "CstatV-Ctrl:$(SUBS):cP_$(SIG)") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=$(TYPE)")
+  field(FLNK, "CstatV-Ctrl:$(SUBS):cP_$(SIG):cmdSetParam-ln")
+  field(NOBT, "16")
+  field(ZRVL, "0")
+  field(ZRST, "Not selected")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ONST, "$(ONST)")
+  field(TWST, "$(TWST)")
+  field(THST, "$(THST)")
+}
+
+record(calcout, "CstatV-Ctrl:$(SUBS):sP_$(SIG)-cP_$(SIG)-ln") {
+  field(INPA, "CstatV-Ctrl:$(SUBS):sP_$(SIG) NPP")
+  field(INPB, "CstatV-Ctrl:opMode:sLocal PP")
+  field(CALC, "(B=0)?VAL:A")
+  field(OOPT, "On Change")
+  field(OUT, "CstatV-Ctrl:$(SUBS):cP_$(SIG) PP")
+}
+
+record(calcout, "CstatV-Ctrl:$(SUBS):sP_$(SIG)-cP_$(SIG)-remIniLn") {
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+  field(INPA, "CstatV-Ctrl:$(SUBS):sP_$(SIG).VAL PP")
+  field(CALC, "A")
+  field(OOPT, "On Change")
+  field(PINI, "YES")
+  field(OUT, "CstatV-Ctrl:$(SUBS):cP_$(SIG) PP")
+}
+
+record(ai, "CstatV-Ctrl:$(SUBS):sP_$(SIG)") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=$(TYPE)")
+  field(PREC, "0")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+  field(FLNK, "CstatV-Ctrl:$(SUBS):sP_$(SIG)-cP_$(SIG)-ln")
+}
