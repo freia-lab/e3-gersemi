@@ -554,12 +554,37 @@ file "gersemi-SQanalog.template" { pattern
 {SQ3,	cPressFlt,     4066, FLOAT, sPressFlt,  6090,	 "mbar"}
 {SQ3,	cP_CV380,      4070, FLOAT, sP_CV380,   6094,    "%"}
 
-{SQ5,	cP_Tt,         4226, FLOAT, sP_Tt,      6286	"K"}
-{SQ5,	cP_Lo_Tt,      4230, FLOAT, sP_Lo_Tt,   6290,	"K"}
-{SQ5,	cP_Hi_Tt,      4234, FLOAT, sP_Hi_Tt,   6294,	"K"}
-{SQ5,	cP_CV700,      4238, FLOAT, sP_CV700,   6298,    "%"}
+{SQ5,	cP_Tt,         4226, FLOAT, sP_Tt,        6286	"K"}
+{SQ5,	cP_TT705low,   4230, FLOAT, sP_TT705low,  6290,	"K"}
+{SQ5,	cP_TT705high,  4234, FLOAT, sP_TT705high, 6294,	"K"}
+{SQ5,	cP_CV700,      4238, FLOAT, sP_CV700,     6298  "%"}
 {SQ5,	cP_TT700warm,  4242, FLOAT, sP_TT700warm, 6302,	"K"}
 {SQ5,	cP_TT700cold,  4246, FLOAT, sP_TT700cold, 6306,	"K"}
+
+{SQ6,	cP_Tt,         4312, FLOAT, sP_Tt,        6390	"K"}
+{SQ6,	cP_TT745low,   4316, FLOAT, sP_TT745low,  6394,	"K"}
+{SQ6,	cP_TT745high,  4320, FLOAT, sP_TT745high, 6398,	"K"}
+{SQ6,	cP_TT747low,   4324, FLOAT, sP_TT747low,  6402,	"K"}
+{SQ6,	cP_TT747high,  4328, FLOAT, sP_TT747high, 6406,	"K"}
+{SQ6,	cP_TT750low,   4332, FLOAT, sP_TT750low,  6410,	"K"}
+{SQ6,	cP_TT750high,  4336, FLOAT, sP_TT750high, 6414,	"K"}
+{SQ6,	cP_CV740,      4340, FLOAT, sP_CV740,     6418, "%"}
+{SQ6,	cP_TT740warm,  4344, FLOAT, sP_TT740warm, 6422,	"K"}
+{SQ6,	cP_TT740cold,  4348, FLOAT, sP_TT740cold, 6426,	"K"}
+{SQ6,	cP_TT744warm,  4352, FLOAT, sP_TT744warm, 6430,	"K"}
+{SQ6,	cP_TT744cold,  4356, FLOAT, sP_TT744cold, 6434,	"K"}
+{SQ6,	cP_TT748warm,  4360, FLOAT, sP_TT748warm, 6438,	"K"}
+{SQ6,	cP_TT748cold,  4364, FLOAT, sP_TT748cold, 6442,	"K"}
+
+{SQ7,	cP_Tt,         4398, FLOAT, sP_Tt,        6494	"K"}
+{SQ7,	cP_TT766low,   4402, FLOAT, sP_TT766low,  6498,	"K"}
+{SQ7,	cP_TT766high,  4406, FLOAT, sP_TT766high, 6502,	"K"}
+{SQ7,	cP_TT767low,   4410, FLOAT, sP_TT767low,  6506,	"K"}
+{SQ7,	cP_TT767high,  4414, FLOAT, sP_TT767high, 6510,	"K"}
+{SQ7,	cP_TT760warm,  4418, FLOAT, sP_TT760warm, 6514,	"K"}
+{SQ7,	cP_TT760cold,  4422, FLOAT, sP_TT760cold, 6518,	"K"}
+{SQ7,	cP_TT762warm,  4426, FLOAT, sP_TT762warm, 6522,	"K"}
+{SQ7,	cP_TT762cold,  4430, FLOAT, sP_TT762cold, 6526,	"K"}
 
 {SQ8,	cP_Lo_LT600_Tt,  4484, FLOAT, sP_Lo_LT600_Tt,  6598	"K"}
 {SQ8,	cP_Hi_LT600_Tt, 4488, FLOAT, sP_Hi_LT600_Tt, 6602,	"K"}
@@ -635,7 +660,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ23,	cP_CV583,       5778, FLOAT, sP_CV583,     8162, "%"}
 {SQ23,	cP_LI660_min,   5782, FLOAT, sP_LI660_min, 8166, "%"}
 {SQ23,	cP_LI670_min,   5786, FLOAT, sP_LI670_min, 8170, "%"}
-{SQ23,	cP_LT680_min,   5790, FLOAT, sP_LT680_min, 8174, "%"}
+{SQ23,	cP_LI680_min,   5790, FLOAT, sP_LI680_min, 8174, "%"}
 
 {SQ24,	cP_CV581,       5860, FLOAT, sP_CV581,     8262, "%"}
 {SQ24,	cP_CV583,       5864, FLOAT, sP_CV583,     8266, "%"}

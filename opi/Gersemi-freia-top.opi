@@ -10,7 +10,7 @@
   <background_color>
     <color name="IO Shape Fill" red="188" green="188" blue="188" />
   </background_color>
-  <boy_version>5.1.0.201708071144</boy_version>
+  <boy_version>5.1.0.201710241501</boy_version>
   <foreground_color>
     <color name="IO Grid" red="215" green="215" blue="215" />
   </foreground_color>
@@ -33,1001 +33,6 @@
   <wuid>-14a921ec:134b2495e46:-7f53</wuid>
   <x>0</x>
   <y>0</y>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq1.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ1</seq_no>
-          <seq_title>Seq. 1: Valve Box - Conditioning He circuits</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking parameters</step1>
-          <step2>Checking equipment</step2>
-          <step4>Pumping down</step4>
-          <step6>Keeping vacuum</step6>
-          <step8>Filling up with GHe</step8>
-          <step10>Keeping overpressure</step10>
-          <step12>Vacuum leak - waiting for Ack </step12>
-          <step14>Overpressure leak -waiting for Ack</step14>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ1:sRun</pv_name>
-    <pv_value />
-    <rules>
-      <rule name="Background" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>
-            <color name="IO PV ON" red="0" green="0" blue="225" />
-          </value>
-        </exp>
-        <pv trig="true">$(pv_name)</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 1</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Valve Box
-Conditioning He circuits</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-7af67f41:1483b8f1cb4:-7ad2</wuid>
-    <x>20</x>
-    <y>135</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq2.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ2</seq_no>
-          <seq_title>Sequence 2: Cryostat, conditioning He circuits</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking parameters</step1>
-          <step2>Checking equipment</step2>
-          <step4>Pumping down</step4>
-          <step6>Keeping vacuum</step6>
-          <step8>Filling up with GHe</step8>
-          <step10>Keeping overpressure</step10>
-          <step12>Vacuum leak - waiting for Ack </step12>
-          <step14>Overpressure leak -waiting for Ack</step14>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_3</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ2:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 2</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Cryostat, conditioning He circuits</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>6b93b0ff:1486a33577e:-5764</wuid>
-    <x>20</x>
-    <y>170</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq5.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ5</seq_no>
-          <seq_title>Sequence 5: Valve Box, thermal shield cooling</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking parameters</step1>
-          <step2>Checking equipment</step2>
-          <step4>Pumping down</step4>
-          <step6>Keeping vacuum</step6>
-          <step8>Filling up with GHe</step8>
-          <step10>Keeping overpressure</step10>
-          <step12>Vacuum leak - waiting for Ack </step12>
-          <step14>Overpressure leak -waiting for Ack</step14>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_4</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ5:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 5</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Valve Box, thermal shield cooling</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>6b93b0ff:1487ecc077e:50c5</wuid>
-    <x>20</x>
-    <y>205</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq8.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ8</seq_no>
-          <seq_title>Sequence 8: LHe level measurement</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Cooling down</step4>
-          <step6>Keeping cooled - LN2 flow on</step6>
-          <step8>Keeping cooled - LN2 flow off</step8>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_5</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ8:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 8</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>LHe level measurement</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>6b93b0ff:1487ecc077e:791e</wuid>
-    <x>20</x>
-    <y>240</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq9.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ9</seq_no>
-          <seq_title>Seq. 9: VBox cooling &amp; 4K tank level control</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Cooling down</step4>
-          <step6>Keeping cooled</step6>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_6</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ9:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 9</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Valve Box cooling and
-4K tank level control</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>6b93b0ff:1487ecc077e:7c66</wuid>
-    <x>20</x>
-    <y>275</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq10.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ10</seq_no>
-          <seq_title>Sequence 10: Cavity cooling</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Cooling down</step4>
-          <step6>Keeping cooled</step6>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_7</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ10:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 10</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Cavity cooling</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>6b93b0ff:1487ecc077e:7e00</wuid>
-    <x>20</x>
-    <y>310</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq24.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ24</seq_no>
-          <seq_title>Sequence 24: Cyostat isolated or connected to He recovery</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Waiting for selection of part to be cooled</step4>
-          <step6>Keeping cooled</step6>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_8</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ24:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 24</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Cryostat isolated or connected to He recovery</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:-7f3c</wuid>
-    <x>20</x>
-    <y>520</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq25.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ25</seq_no>
-          <seq_title>Sequence 25: Vale box isolated ot connected to He recovery</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Waiting for selection of part(s)</step4>
-          <step6>Keeping at Set point temperature</step6>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_9</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ25:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 25</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Valve box isolated or
-connected to He recovery</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:-79f6</wuid>
-    <x>20</x>
-    <y>555</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq12A.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ12A</seq_no>
-          <seq_title>Sequence 12A: ICB Warm-up</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Warming up</step4>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_10</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ3:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 3</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>ICB Warm-up</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:-792f</wuid>
-    <x>20</x>
-    <y>590</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq12B.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ12B</seq_no>
-          <seq_title>Sequence 12B: Cryostat Warm-up</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Warming up</step4>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_11</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ4:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 4</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Cryostat Warm-up</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:-78e3</wuid>
-    <x>20</x>
-    <y>625</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq12.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ12</seq_no>
-          <seq_title>Sequence 12: Super critical He operation</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Waiting for filling to Low level</step4>
-          <step6>Waiting for achieving Filling temp.</step6>
-          <step8>LHe filling or kept at set point</step8>
-          <step10>Waiting to go below Low level</step10>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_12</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ12:sRun</pv_name>
-    <pv_value />
-    <rules>
-      <rule name="Background" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>
-            <color name="IO PV ON" red="0" green="0" blue="225" />
-          </value>
-        </exp>
-        <pv trig="true">$(pv_name)</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 12</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Super critical He operation</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:-69cb</wuid>
-    <x>20</x>
-    <y>345</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq14.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ14</seq_no>
-          <seq_title>Sequence 14: Cavity standby @ low temperature</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Doing measurements</step4>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_13</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ14:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 14</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Cavity standby at low temperature</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:-68fd</wuid>
-    <x>20</x>
-    <y>380</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq21.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ21</seq_no>
-          <seq_title>Sequence 21: Valve box warm-up</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Waiting for selection of part to be cooled</step4>
-          <step6>Cooling...</step6>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_14</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ21:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 21</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Valve box warm-up</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:-6656</wuid>
-    <x>20</x>
-    <y>415</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq22.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ22</seq_no>
-          <seq_title>Sequence 22: Cryostat warm-up</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step6>Keeping cooled</step6>
-          <step20>4K operation in stopped state</step20>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_15</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ22:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 22</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Cryostat warm-up</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:-6636</wuid>
-    <x>20</x>
-    <y>450</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq13.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ13</seq_no>
-          <seq_title>Sequence 13: Cryostat, isolated</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Isolated - checking alarm levels and checkbox</step4>
-          <step6>Waiting for pressures to go below settings</step6>
-          <step8>Waiting for pressures to go below settings</step8>
-          <step10>Waiting for the checkbox</step10>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_16</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ6:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 6</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Cryostat, isolated</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:-6457</wuid>
-    <x>20</x>
-    <y>660</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq20.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ20</seq_no>
-          <seq_title>Sequence 20: Semi-automatic sequences</seq_title>
-          <step0>Not running</step0>
-          <step2>Waiting for SQ3A state &gt;= 4</step2>
-          <step4>Isolated - checking alarm levels and checkbox</step4>
-          <step6>Step 6</step6>
-          <step8>Step 8</step8>
-          <step10>Step 10</step10>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_17</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ7:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 7</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Semi-automatic sequences</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:2cc3</wuid>
-    <x>20</x>
-    <y>695</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>helper-opi-files/Seq23.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <seq_no>SQ23</seq_no>
-          <seq_title>Sequence 23: Insert warm-up</seq_title>
-          <step0>Not running</step0>
-          <step1>Checking equipment</step1>
-          <step2>Checking parameters</step2>
-          <step4>Waiting for switching to 2K exhaust to Kaeser</step4>
-          <step6>Waiting 2K pumps running. Press Accept to go on.</step6>
-          <step8>Waiting 10 s for closing CV552 and FV552.</step8>
-          <step12>Keeping cold</step12>
-          <step14>Stopping - waiting for PT101 to rise</step14>
-          <step16>Stopping - waiting 10s</step16>
-          <step18>Waiting for stopping 2K pumps. Press Accept to go on.</step18>
-          <step20>Stopping - step 20</step20>
-          <step30>Stopping - step 30</step30>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>Action Button Template_18</name>
-    <push_action_index>0</push_action_index>
-    <pv_name>$(C)-Ctrl:SQ23:sRun</pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>Sequence 23</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>Insert warm-up</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>120</width>
-    <wuid>-21b2ca35:148a7786110:35f8</wuid>
-    <x>20</x>
-    <y>485</y>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <auto_size>true</auto_size>
@@ -7823,12 +6828,12 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>595</height>
-    <lock_children>false</lock_children>
+    <height>596</height>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
-    <name>Panel 2</name>
+    <name>Panel_Sequence_btns</name>
     <rules />
     <scale_options>
       <width_scalable>true</width_scalable>
@@ -7841,10 +6846,10 @@ $(pv_value)</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>20</width>
+    <width>80</width>
     <wuid>-36f7e384:15b157b58f1:-58e8</wuid>
-    <x>140</x>
-    <y>133</y>
+    <x>10</x>
+    <y>135</y>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
       <actions hook="false" hook_all="false" />
       <alarm_pulsing>false</alarm_pulsing>
@@ -7907,7 +6912,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1a4a</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>15</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -7972,7 +6977,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1a3c</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>225</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8037,7 +7042,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-19f6</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>85</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8102,7 +7107,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1991</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>50</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8167,7 +7172,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-198a</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>120</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8232,7 +7237,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1983</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>155</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8297,7 +7302,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-197c</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>190</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8362,7 +7367,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1975</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>260</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8427,7 +7432,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-196e</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>295</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8492,7 +7497,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1967</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>330</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8557,7 +7562,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1960</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>365</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8622,7 +7627,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1959</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>400</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8687,7 +7692,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1952</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>435</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8752,7 +7757,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-194b</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>470</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8817,7 +7822,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-19fd</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>505</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8882,7 +7887,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-193d</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>540</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -8947,7 +7952,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-262d394c:148ffbdd3df:-1944</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>575</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9012,7 +8017,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-61a3</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>0</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9077,7 +8082,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-61a2</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>210</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9142,7 +8147,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-61a1</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>70</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9207,7 +8212,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-61a0</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>35</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9272,7 +8277,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-619f</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>105</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9337,7 +8342,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-619e</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>140</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9402,7 +8407,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-619d</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>175</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9467,7 +8472,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-619c</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>245</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9532,7 +8537,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-619b</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>280</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9597,7 +8602,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-619a</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>315</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9662,7 +8667,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-6199</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>350</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9727,7 +8732,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-6198</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>385</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9792,7 +8797,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-6197</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>420</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9857,7 +8862,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-6196</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>455</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9922,7 +8927,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-6195</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>490</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -9987,7 +8992,7 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-6194</wuid>
-      <x>0</x>
+      <x>59</x>
       <y>525</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
@@ -10052,8 +9057,1004 @@ $(pv_value)</tooltip>
       <widget_type>LED</widget_type>
       <width>20</width>
       <wuid>-36f7e384:15b157b58f1:-6193</wuid>
+      <x>59</x>
+      <y>560</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq1.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ1</seq_no>
+            <seq_title>Seq. 1: Valve Box - Conditioning He circuits</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking parameters</step1>
+            <step2>Checking equipment</step2>
+            <step4>Pumping down</step4>
+            <step6>Keeping vacuum</step6>
+            <step8>Filling up with GHe</step8>
+            <step10>Keeping overpressure</step10>
+            <step12>Vacuum leak - waiting for Ack </step12>
+            <step14>Overpressure leak -waiting for Ack</step14>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ1:sRun</pv_name>
+      <pv_value />
+      <rules>
+        <rule name="Background" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="IO PV ON" red="0" green="0" blue="225" />
+            </value>
+          </exp>
+          <pv trig="true">$(pv_name)</pv>
+        </rule>
+      </rules>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ1</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Valve Box
+Conditioning He circuits</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-7af67f41:1483b8f1cb4:-7ad2</wuid>
+      <x>0</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq2.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ2</seq_no>
+            <seq_title>Sequence 2: Cryostat, conditioning He circuits</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking parameters</step1>
+            <step2>Checking equipment</step2>
+            <step4>Pumping down</step4>
+            <step6>Keeping vacuum</step6>
+            <step8>Filling up with GHe</step8>
+            <step10>Keeping overpressure</step10>
+            <step12>Vacuum leak - waiting for Ack </step12>
+            <step14>Overpressure leak -waiting for Ack</step14>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_3</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ2:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ2</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Cryostat, conditioning He circuits</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>6b93b0ff:1486a33577e:-5764</wuid>
+      <x>0</x>
+      <y>35</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq5.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ5</seq_no>
+            <seq_title>Sequence 5: Valve Box, thermal shield cooling</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking parameters</step1>
+            <step2>Checking equipment</step2>
+            <step4>Pumping down</step4>
+            <step6>Keeping vacuum</step6>
+            <step8>Filling up with GHe</step8>
+            <step10>Keeping overpressure</step10>
+            <step12>Vacuum leak - waiting for Ack </step12>
+            <step14>Overpressure leak -waiting for Ack</step14>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_4</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ5:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ5</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Valve Box, thermal shield cooling</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>6b93b0ff:1487ecc077e:50c5</wuid>
+      <x>0</x>
+      <y>70</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq8.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ8</seq_no>
+            <seq_title>Sequence 8: LHe level measurement</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Cooling down</step4>
+            <step6>Keeping cooled - LN2 flow on</step6>
+            <step8>Keeping cooled - LN2 flow off</step8>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_5</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ8:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ8</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>LHe level measurement</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>6b93b0ff:1487ecc077e:791e</wuid>
+      <x>0</x>
+      <y>105</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq9.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ9</seq_no>
+            <seq_title>Seq. 9: VBox cooling &amp; 4K tank level control</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Cooling down</step4>
+            <step6>Keeping cooled</step6>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_6</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ9:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ9</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Valve Box cooling and
+4K tank level control</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>6b93b0ff:1487ecc077e:7c66</wuid>
+      <x>0</x>
+      <y>140</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq10.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ10</seq_no>
+            <seq_title>Sequence 10: Cavity cooling</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Cooling down</step4>
+            <step6>Keeping cooled</step6>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_7</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ10:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ10</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Cavity cooling</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>6b93b0ff:1487ecc077e:7e00</wuid>
+      <x>0</x>
+      <y>175</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq24.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ24</seq_no>
+            <seq_title>Cyostat isolated or connected to He recovery</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Waiting for selection of part to be cooled</step4>
+            <step6>Keeping cooled</step6>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_8</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ24:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ24</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Cryostat isolated or connected to He recovery</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:-7f3c</wuid>
+      <x>0</x>
+      <y>385</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq25.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ25</seq_no>
+            <seq_title>Valve box isolated ot connected to He recovery</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Waiting for selection of part(s)</step4>
+            <step6>Keeping at Set point temperature</step6>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_9</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ25:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ25</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Valve box isolated or
+connected to He recovery</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:-79f6</wuid>
+      <x>0</x>
+      <y>420</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq3.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ3</seq_no>
+            <seq_title>Sequence 3: SCHe, conditioning He circuits</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Warming up</step4>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_10</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ3:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ3</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Super-critical helium
+Conditioning He circuits</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:-792f</wuid>
+      <x>0</x>
+      <y>455</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq4.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ4</seq_no>
+            <seq_title>Sequence 4: High voltage insulation tests</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Warming up</step4>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_11</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ4:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ4</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>High voltage insulation tests</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:-78e3</wuid>
+      <x>0</x>
+      <y>490</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq12.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ12</seq_no>
+            <seq_title>Sequence 12: Super critical He operation</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Waiting for filling to Low level</step4>
+            <step6>Waiting for achieving Filling temp.</step6>
+            <step8>LHe filling or kept at set point</step8>
+            <step10>Waiting to go below Low level</step10>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_12</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ12:sRun</pv_name>
+      <pv_value />
+      <rules>
+        <rule name="Background" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>
+              <color name="IO PV ON" red="0" green="0" blue="225" />
+            </value>
+          </exp>
+          <pv trig="true">$(pv_name)</pv>
+        </rule>
+      </rules>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ12</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Super critical He operation</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:-69cb</wuid>
+      <x>0</x>
+      <y>210</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq14.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ14</seq_no>
+            <seq_title>Sequence 14: Cavity standby @ low temperature</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Doing measurements</step4>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_13</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ14:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ14</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Cavity standby at low temperature</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:-68fd</wuid>
+      <x>0</x>
+      <y>245</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq21.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ21</seq_no>
+            <seq_title>Sequence 21: Valve box warm-up</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Waiting for selection of part to be cooled</step4>
+            <step6>Cooling...</step6>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_14</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ21:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ21</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Valve box warm-up</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:-6656</wuid>
+      <x>0</x>
+      <y>280</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq22.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ22</seq_no>
+            <seq_title>Sequence 22: Cryostat warm-up</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step6>Keeping cooled</step6>
+            <step20>4K operation in stopped state</step20>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_15</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ22:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ22</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Cryostat warm-up</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:-6636</wuid>
+      <x>0</x>
+      <y>315</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq6.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ6</seq_no>
+            <seq_title>Sequence 6: Cryostat thermal shield cooling</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Isolated - checking alarm levels and checkbox</step4>
+            <step6>Waiting for pressures to go below settings</step6>
+            <step8>Waiting for pressures to go below settings</step8>
+            <step10>Waiting for the checkbox</step10>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_16</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ6:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ6</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Cryostat, isolated</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:-6457</wuid>
+      <x>0</x>
+      <y>525</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq7.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ7</seq_no>
+            <seq_title>Sequence 7: Vacuum insert thermal shield cooling</seq_title>
+            <step0>Not running</step0>
+            <step2>Waiting for SQ3A state &gt;= 4</step2>
+            <step4>Isolated - checking alarm levels and checkbox</step4>
+            <step6>Step 6</step6>
+            <step8>Step 8</step8>
+            <step10>Step 10</step10>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_17</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ7:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ7</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Semi-automatic sequences</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:2cc3</wuid>
       <x>0</x>
       <y>560</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>helper-opi-files/Seq23.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <seq_no>SQ23</seq_no>
+            <seq_title>Sequence 23: Insert warm-up</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step2>Checking parameters</step2>
+            <step4>Waiting for switching to 2K exhaust to Kaeser</step4>
+            <step6>Waiting 2K pumps running. Press Accept to go on.</step6>
+            <step8>Waiting 10 s for closing CV552 and FV552.</step8>
+            <step12>Keeping cold</step12>
+            <step14>Stopping - waiting for PT101 to rise</step14>
+            <step16>Stopping - waiting 10s</step16>
+            <step18>Waiting for stopping 2K pumps. Press Accept to go on.</step18>
+            <step20>Stopping - step 20</step20>
+            <step30>Stopping - step 30</step30>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name>Action Button Template_18</name>
+      <push_action_index>0</push_action_index>
+      <pv_name>$(C)-Ctrl:SQ23:sRun</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>SQ23</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>Insert warm-up</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-21b2ca35:148a7786110:35f8</wuid>
+      <x>0</x>
+      <y>350</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
