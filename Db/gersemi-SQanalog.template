@@ -37,6 +37,7 @@ record(ai, "CstatV-Ctrl:$(SUBS):$(SIG2)") {
   field(INP, "@PLC:GERSEMI/$(OFFS) T=$(TYPE)")
   field(PREC, "1")
   field(PINI, "YES")
+  field(EGU, "$(EGU)")
   field(SCAN, "I/O Intr")
   field(FLNK, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-ln")
 }
