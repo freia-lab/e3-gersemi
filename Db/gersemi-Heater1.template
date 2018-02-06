@@ -1,5 +1,5 @@
 
-record(bi, "CstatV-$(SUBS):$(DEV):sAuto")  {
+record(bi, "CstatV-$(SUBS):$(DEV):sAuto") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=0")
   field(ZSV, "MINOR")
@@ -9,7 +9,7 @@ record(bi, "CstatV-$(SUBS):$(DEV):sAuto")  {
   field(SCAN, "I/O Intr")
 }
 
-record(bi, "CstatV-$(SUBS):$(DEV):sTsw")  {
+record(bi, "CstatV-$(SUBS):$(DEV):sTsw") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=1")
   field(OSV, "MAJOR")
@@ -19,7 +19,7 @@ record(bi, "CstatV-$(SUBS):$(DEV):sTsw")  {
   field(SCAN, "I/O Intr")
 }
 
-record(bi, "CstatV-$(SUBS):$(DEV):sCmd")  {
+record(bi, "CstatV-$(SUBS):$(DEV):sCmd") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=2")
   field(ONAM, "True")
@@ -28,7 +28,7 @@ record(bi, "CstatV-$(SUBS):$(DEV):sCmd")  {
   field(SCAN, "I/O Intr")
 }
 
-record(bi, "CstatV-$(SUBS):$(DEV):sCmdAuto")  {
+record(bi, "CstatV-$(SUBS):$(DEV):sCmdAuto") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=3")
   field(ONAM, "True")
@@ -37,7 +37,7 @@ record(bi, "CstatV-$(SUBS):$(DEV):sCmdAuto")  {
   field(SCAN, "I/O Intr")
 }
 
-record(bi, "CstatV-$(SUBS):$(DEV):sHtrOn")  {
+record(bi, "CstatV-$(SUBS):$(DEV):sHtrOn") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=4")
   field(ONAM, "On")
@@ -57,20 +57,23 @@ record(ai, "CstatV-$(SUBS):$(DEV):sHL") {
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sHL-cHL-link") {
   field(INPA, "CstatV-$(SUBS):$(DEV):sHL.VAL NPP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
-  field(CALC, "(B=0&&C=0)?VAL:A")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+#  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
+  field(CALC, "A")
   field(OOPT, "On Change")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cHL PP")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sHL-cHL-remInitLink") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+#  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
   field(INPA, "CstatV-$(SUBS):$(DEV):sHL.VAL PP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(CALC, "(B=0)?A:VAL")
-  field(OOPT, "On Change")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+#  field(CALC, "(B=0)?A:VAL")
+  field(CALC, "A")
+#  field(OOPT, "On Change")
   field(PINI, "YES")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cHL PP")
 }
 
@@ -80,25 +83,27 @@ record(ai, "CstatV-$(SUBS):$(DEV):sLL") {
   field(PREC, "6")
   field(SCAN, "I/O Intr")
   field(PINI, "YES")
-  field(FLNK, "CstatV-$(SUBS):$(DEV):sLL-cHL-link")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):sLL-cLL-link")
 }
 
-record(calcout, "CstatV-$(SUBS):$(DEV):sLL-cHL-link") {
+record(calcout, "CstatV-$(SUBS):$(DEV):sLL-cLL-link") {
   field(INPA, "CstatV-$(SUBS):$(DEV):sLL.VAL NPP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
-  field(CALC, "(B=0&&C=0)?VAL:A")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+#  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
+  field(CALC, "A")
   field(OOPT, "On Change")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cLL PP")
 }
 
-record(calcout, "CstatV-$(SUBS):$(DEV):sLL-cHL-remInitLink") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+record(calcout, "CstatV-$(SUBS):$(DEV):sLL-cLL-remInitLink") {
+#  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
   field(INPA, "CstatV-$(SUBS):$(DEV):sLL.VAL PP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(CALC, "(B=0)?A:VAL")
-  field(OOPT, "On Change")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+  field(CALC, "A")
+#  field(OOPT, "On Change")
   field(PINI, "YES")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cLL PP")
 }
 
@@ -188,6 +193,7 @@ record(ao, "CstatV-$(SUBS):$(DEV):cHL") {
   field(FLNK, "CstatV-$(SUBS):$(DEV):cmdHL-link")
 }
 
+
 record(ao, "CstatV-$(SUBS):$(DEV):cLL") {
   field(DTYP, "S7plc")
   field(OUT, "@PLC:GERSEMI/$(OFFS2)+6 T=FLOAT")
@@ -195,3 +201,4 @@ record(ao, "CstatV-$(SUBS):$(DEV):cLL") {
   field(PREC, "6")
   field(FLNK, "CstatV-$(SUBS):$(DEV):cmdLL-link")
 }
+

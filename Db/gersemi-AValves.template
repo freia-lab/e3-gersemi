@@ -6,6 +6,22 @@ record(bi, "CstatV-$(SUBS):$(DEV):sAuto") {
   field(ZNAM, "Manual")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-manInitLink")
+}
+
+record(calcout, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-manInitLink") {
+  field(INPA, "CstatV-$(SUBS):$(DEV):sAuto.VAL")
+  field(CALC, "A")
+  field(OOPT, "Transition To Zero")
+  field(OUT, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-remInitLink.PROC")
+}
+
+record(calcout, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-remInitLink") {
+  field(INPA, "CstatV-$(SUBS):$(DEV):sRdV.VAL PP")
+  field(CALC, "A")
+  field(PINI, "YES")
+  field(PHAS, "1")
+  field(OUT, "CstatV-$(SUBS):$(DEV):cSetV PP")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-link") {
@@ -14,16 +30,7 @@ record(calcout, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-link") {
   field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
   field(CALC, "(B=0&&C=0)?VAL:A")
   field(OOPT, "On Change")
-  field(OUT, "CstatV-$(SUBS):$(DEV):cSetV PP")
-}
-
-record(calcout, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-remInitLink") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
-  field(INPA, "CstatV-$(SUBS):$(DEV):sRdV.VAL PP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(CALC, "(B=0)?A:VAL")
-  field(OOPT, "On Change")
-  field(PINI, "YES")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cSetV PP")
 }
 

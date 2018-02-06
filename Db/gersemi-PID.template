@@ -6,6 +6,7 @@ record(bi, "CstatV-$(SUBS):$(DEV):sAuto") {
   field(ZNAM, "Manual")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):sSetP-cSetP-manInitLink")
 }
 
 record(bi, "CstatV-$(SUBS):$(DEV):sRegOn") {
@@ -14,6 +15,7 @@ record(bi, "CstatV-$(SUBS):$(DEV):sRegOn") {
   field(ONAM, "RegulatorOn")
   field(ZNAM, "RegulatorOff")
   field(SCAN, "I/O Intr")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):sOutV-cOutput-manInitLink")
 }
 
 record(ai, "CstatV-$(SUBS):$(DEV):sSetP") {
@@ -22,7 +24,7 @@ record(ai, "CstatV-$(SUBS):$(DEV):sSetP") {
   field(PREC, "6")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
-  field(EGU, "$(EGU)")
+  field(EGU, "$(EGU_SP)")
   field(FLNK, "CstatV-$(SUBS):$(DEV):sSetP-cSetP-link")
 }
 
@@ -32,7 +34,7 @@ record(ai, "CstatV-$(SUBS):$(DEV):sOutV") {
   field(PREC, "6")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
-  field(EGU, "$(EGU)")
+  field(EGU, "$(EGU_OUT)")
   field(FLNK, "CstatV-$(SUBS):$(DEV):sOutV-cOutput-link")
 }
 
@@ -41,7 +43,6 @@ record(ai, "CstatV-$(SUBS):$(DEV):sKp") {
   field(INP, "@PLC:GERSEMI/$(OFFS)+10 T=FLOAT")
   field(PREC, "6")
   field(SCAN, "I/O Intr")
-  field(EGU, "$(EGU)")
 }
 
 record(ai, "CstatV-$(SUBS):$(DEV):sTi") {
@@ -49,7 +50,7 @@ record(ai, "CstatV-$(SUBS):$(DEV):sTi") {
   field(INP, "@PLC:GERSEMI/$(OFFS)+14 T=FLOAT")
   field(PREC, "6")
   field(SCAN, "I/O Intr")
-  field(EGU, "$(EGU)")
+  field(EGU, "s")
 }
 
 record(ai, "CstatV-$(SUBS):$(DEV):sTd") {
@@ -57,43 +58,55 @@ record(ai, "CstatV-$(SUBS):$(DEV):sTd") {
   field(INP, "@PLC:GERSEMI/$(OFFS)+18 T=FLOAT")
   field(PREC, "6")
   field(SCAN, "I/O Intr")
-  field(EGU, "$(EGU)")
+  field(EGU, "s")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sSetP-cSetP-link") {
   field(INPA, "CstatV-$(SUBS):$(DEV):sSetP.VAL NPP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto NPP")
   field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
   field(CALC, "(B=0&&C=0)?VAL:A")
   field(OOPT, "On Change")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cSetP PP")
 }
 
+record(calcout, "CstatV-$(SUBS):$(DEV):sSetP-cSetP-manInitLink") {
+  field(INPA, "CstatV-$(SUBS):$(DEV):sAuto.VAL")
+  field(CALC, "A")
+  field(OOPT, "Transition To Zero")
+  field(OUT, "CstatV-$(SUBS):$(DEV):sSetP-cSetP-remInitLink.PROC")
+}
+
 record(calcout, "CstatV-$(SUBS):$(DEV):sSetP-cSetP-remInitLink") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
   field(INPA, "CstatV-$(SUBS):$(DEV):sSetP.VAL PP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(CALC, "(B=0)?A:VAL")
-  field(OOPT, "When Non-zero")
+  field(CALC, "A")
+  field(PHAS, "1")
   field(PINI, "YES")
   field(OUT, "CstatV-$(SUBS):$(DEV):cSetP PP")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sOutV-cOutput-link") {
   field(INPA, "CstatV-$(SUBS):$(DEV):sOutV.VAL NPP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto NPP")
   field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
   field(CALC, "(B=0&&C=0)?VAL:A")
   field(OOPT, "On Change")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cOutput PP")
 }
 
+record(calcout, "CstatV-$(SUBS):$(DEV):sOutV-cOutput-manInitLink") {
+  field(INPA, "CstatV-$(SUBS):$(DEV):sRegOn.VAL")
+  field(CALC, "A")
+  field(OOPT, "Transition To Zero")
+  field(OUT, "CstatV-$(SUBS):$(DEV):sOutV-cOutput-remInitLink.PROC")
+}
+
 record(calcout, "CstatV-$(SUBS):$(DEV):sOutV-cOutput-remInitLink") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
   field(INPA, "CstatV-$(SUBS):$(DEV):sOutV.VAL PP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(CALC, "(B=0)?A:VAL")
-  field(OOPT, "When Non-zero")
+  field(CALC, "A")
+  field(PHAS, "1")
   field(PINI, "YES")
   field(OUT, "CstatV-$(SUBS):$(DEV):cOutput PP")
 }
@@ -172,7 +185,7 @@ record(ao, "CstatV-$(SUBS):$(DEV):cSetP") {
   field(OUT, "@PLC:GERSEMI/$(OFFS2)+2 T=FLOAT")
   field(PINI, "YES")
   field(PREC, "6")
-  field(EGU, "$(EGU)")
+  field(EGU, "$(EGU_SP)")
   field(FLNK, "CstatV-$(SUBS):$(DEV):cmdSetP-link")
 }
 
@@ -190,7 +203,7 @@ record(ao, "CstatV-$(SUBS):$(DEV):cOutput") {
   field(OUT, "@PLC:GERSEMI/$(OFFS2)+6 T=FLOAT")
   field(PINI, "YES")
   field(PREC, "6")
-  field(EGU, "$(EGU)")
+  field(EGU, "$(EGU_OUT)")
   field(FLNK, "CstatV-$(SUBS):$(DEV):cmdOutput-link")
 }
 

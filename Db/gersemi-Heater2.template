@@ -99,20 +99,24 @@ record(ai, "CstatV-$(SUBS):$(DEV):sL1") {
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sL1-cL1-link") {
   field(INPA, "CstatV-$(SUBS):$(DEV):sL1.VAL NPP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
-  field(CALC, "(B=0&&C=0)?VAL:A")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+#  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
+#  field(CALC, "(B=0&&C=0)?VAL:A")
+  field(CALC, "A")
   field(OOPT, "On Change")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cL1 PP")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sL1-cL1-remInitLink") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+#  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
   field(INPA, "CstatV-$(SUBS):$(DEV):sL1.VAL PP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(CALC, "(B=0)?A:VAL")
-  field(OOPT, "On Change")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+#  field(CALC, "(B=0)?A:VAL")
+  field(CALC, "A")
+#  field(OOPT, "On Change")
   field(PINI, "YES")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cL1 PP")
 }
 
@@ -127,20 +131,24 @@ record(ai, "CstatV-$(SUBS):$(DEV):sL2") {
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sL2-cL2-link") {
   field(INPA, "CstatV-$(SUBS):$(DEV):sL2.VAL NPP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
-  field(CALC, "(B=0&&C=0)?VAL:A")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+#  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
+#  field(CALC, "(B=0&&C=0)?VAL:A")
+  field(CALC, "A")
   field(OOPT, "On Change")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cL2 PP")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sL2-cL2-remInitLink") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+#  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
   field(INPA, "CstatV-$(SUBS):$(DEV):sL2.VAL PP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(CALC, "(B=0)?A:VAL")
-  field(OOPT, "On Change")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+#  field(CALC, "(B=0)?A:VAL")
+  field(CALC, "A")
+#  field(OOPT, "On Change")
   field(PINI, "YES")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cL2 PP")
 }
 
@@ -155,20 +163,24 @@ record(ai, "CstatV-$(SUBS):$(DEV):sL3") {
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sL3-cL3-link") {
   field(INPA, "CstatV-$(SUBS):$(DEV):sL3.VAL NPP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
-  field(CALC, "(B=0&&C=0)?VAL:A")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+#  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
+#  field(CALC, "(B=0&&C=0)?VAL:A")
+  field(CALC, "A")
   field(OOPT, "On Change")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cL3 PP")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sL3-cL3-remInitLink") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+#  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
   field(INPA, "CstatV-$(SUBS):$(DEV):sL3.VAL PP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
-  field(CALC, "(B=0)?A:VAL")
-  field(OOPT, "On Change")
+#  field(INPB, "CstatV-$(SUBS):$(DEV):sAuto PP")
+#  field(CALC, "(B=0)?A:VAL")
+  field(CALC, "A")
+#  field(OOPT, "On Change")
   field(PINI, "YES")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cL3 PP")
 }
 

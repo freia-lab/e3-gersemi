@@ -20,15 +20,16 @@ record(calcout, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-ln") {
   field(INPB, "CstatV-Ctrl:opMode:sLocal PP")
   field(CALC, "(B=0)?VAL:A")
   field(OOPT, "On Change")
+  field(PHAS, "1")
   field(OUT, "CstatV-Ctrl:$(SUBS):$(SIG) PP")
 }
 
-record(calcout, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-remIniLn") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
+record(calcout, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-remInitLn") {
   field(INPA, "CstatV-Ctrl:$(SUBS):$(SIG2).VAL PP")
   field(CALC, "A")
-  field(OOPT, "On Change")
+#  field(OOPT, "On Change")
   field(PINI, "YES")
+  field(PHAS, "1")
   field(OUT, "CstatV-Ctrl:$(SUBS):$(SIG) PP")
 }
 
@@ -37,7 +38,6 @@ record(ai, "CstatV-Ctrl:$(SUBS):$(SIG2)") {
   field(INP, "@PLC:GERSEMI/$(OFFS) T=$(TYPE)")
   field(PREC, "1")
   field(PINI, "YES")
-  field(EGU, "$(EGU)")
   field(SCAN, "I/O Intr")
   field(FLNK, "CstatV-Ctrl:$(SUBS):$(SIG2)-$(SIG)-ln")
 }

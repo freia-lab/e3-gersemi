@@ -4,9 +4,25 @@ record(bi, "CstatV-$(SUBS):$(DEV):sForced")  {
   field(OSV, "MAJOR")
   field(ONAM, "Forced")
   field(ZNAM, "Normal")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-tranLink")
+}
+
+record(mbbi, "CstatV-$(SUBS):$(DEV):sRdV-stat")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE")
+  field(NOBT, "2")
+  field(SHFT, "1")
+  field(ZRVL, "0")
+  field(ZRST, "InRange")
+  field(ZRSV, "NO_ALARM")
+  field(ONVL, "1")
+  field(ONST, "OVR")
+  field(ONSV, "INVALID")
+  field(TWVL, "2")
+  field(TWST, "UNDR")
+  field(TWSV, "INVALID")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
-  field(FLNK, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-tranLink")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-link") {
@@ -15,26 +31,22 @@ record(calcout, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-link") {
   field(CALC, "(B=1)?A:VAL")
   field(OOPT, "On Change")
   field(OUT, "CstatV-$(SUBS):$(DEV):cSetV PP")
-  field(DISV, "0")
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+  field(PHAS, "1")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-tranLink") {
-  field(SDIS, "CstatV-$(SUBS):$(DEV):sForced")
-  field(DISV, "0")
-  field(INPA, "CstatV-$(SUBS):$(DEV):sRdV.VAL NPP")
+  field(INPA, "CstatV-$(SUBS):$(DEV):sForced.VAL NPP")
   field(CALC, "A")
-  field(OOPT, "On Change")
-  field(OUT, "CstatV-$(SUBS):$(DEV):cSetV PP")
+  field(PHAS, "1")
+  field(OOPT, "Transition To Non-zero")
+  field(OUT, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-initLink.PROC")
 }
 
 record(calcout, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-initLink") {
-  field(INPA, "CstatV-$(SUBS):$(DEV):sRdV.VAL PP")
-  field(INPB, "CstatV-$(SUBS):$(DEV):sForced PP")
-  field(INPC, "CstatV-Ctrl:opMode:sLocal PP")
-  field(CALC, "(C=1&&B=1)?VAL:A")
-  field(OOPT, "On Change")
+  field(INPA, "CstatV-$(SUBS):$(DEV):sRdV-raw.VAL PP")
+  field(CALC, "A")
   field(PINI, "YES")
+  field(PHAS, "1")
   field(OUT, "CstatV-$(SUBS):$(DEV):cSetV PP")  
 }
 
@@ -81,26 +93,46 @@ record(ao, "CstatV-$(SUBS):$(DEV):cSetV") {
   field(OUT, "@PLC:GERSEMI/$(OFFS2)+2 T=FLOAT")
   field(LOPR, "$(LOPR)")
   field(HOPR, "$(HOPR)")
+  field(DRVL, "$(LOPR)")
+  field(DRVH, "$(HOPR)")
   field(PINI, "NO")
-  field(PREC, "6")
+  field(PREC, "$(PREC)")
   field(FLNK, "CstatV-$(SUBS):$(DEV):cmdSet-link")
   field(EGU, "$(EGU)")
 }
 
+record(ai, "CstatV-$(SUBS):$(DEV):sRdV-raw") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS)+2 T=FLOAT")
+  field(PREC, "$(PREC)")
+  field(PINI, "YES")
+  field(FLNK, "CstatV-$(SUBS):$(DEV):sForced")
+  field(SCAN, "I/O Intr")
+  field(EGU, "$(EGU)")
+  field(SDIS, "CstatV-$(SUBS):$(DEV):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+}
 record(ai, "CstatV-$(SUBS):$(DEV):sRdV") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS)+2 T=FLOAT")
-  field(PREC, "6")
+  field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
   field(EGU, "$(EGU)")
   field(FLNK, "CstatV-$(SUBS):$(DEV):sRdV-cSetV-link")
+  field(SDIS, "CstatV-$(SUBS):$(DEV):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SIMS, "INVALID")
+  field(SIML, "CstatV-$(SUBS):$(DEV):sForced")
+  field(SIOL, "CstatV-$(SUBS):$(DEV):sRdV-raw")
 }
 record(ai, "CstatV-$(SUBS):$(DEV):sRealRdV") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS)+6 T=FLOAT")
-  field(PREC, "6")
+  field(PREC, "$(PREC)")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
   field(EGU, "$(EGU)")
+  field(SDIS, "CstatV-$(SUBS):$(DEV):sRdV-stat.VAL NPP MS")
+  field(DISV, "-1") # Will never disable, but will propagate severity
 }

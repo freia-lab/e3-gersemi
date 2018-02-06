@@ -27,15 +27,15 @@ record(calcout, "CstatV-Ctrl:$(SUBS):sP_$(SIG)-cP_$(SIG)-ln") {
   field(INPB, "CstatV-Ctrl:opMode:sLocal PP")
   field(CALC, "(B=0)?VAL:A")
   field(OOPT, "On Change")
+  field(PHAS, "1")
   field(OUT, "CstatV-Ctrl:$(SUBS):cP_$(SIG) PP")
 }
 
 record(calcout, "CstatV-Ctrl:$(SUBS):sP_$(SIG)-cP_$(SIG)-remIniLn") {
-  field(SDIS, "CstatV-Ctrl:opMode:sLocal PP")
   field(INPA, "CstatV-Ctrl:$(SUBS):sP_$(SIG).VAL PP")
   field(CALC, "A")
-  field(OOPT, "On Change")
   field(PINI, "YES")
+  field(PHAS, "1")
   field(OUT, "CstatV-Ctrl:$(SUBS):cP_$(SIG) PP")
 }
 

@@ -7,6 +7,7 @@ epicsEnvSet("AUTOSAVE_SYSM_PV_PREFIX","gersemi:")
 #############################################
 
 requireSnippet(userPreDriverConf-gersemi-freia.cmd, IP_ADDR=$(PLC_IPADDR))
+sleep 2
 requireSnippet(dbToLoad-gersemi-freia.cmd)
 #requireSnippet(gersemi-freia-preSaveRestore.cmd)
 
