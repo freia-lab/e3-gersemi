@@ -10,7 +10,7 @@
   <background_color>
     <color name="IO Shape Fill" red="188" green="188" blue="188" />
   </background_color>
-  <boy_version>5.1.0.201710241501</boy_version>
+  <boy_version>5.1.0</boy_version>
   <foreground_color>
     <color name="IO Grid" red="215" green="215" blue="215" />
   </foreground_color>
@@ -51,7 +51,7 @@
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>52</height>
+    <height>48</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_3</name>
     <rules />
@@ -69,7 +69,7 @@ sequences</text>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>90</width>
+    <width>93</width>
     <wrap_words>true</wrap_words>
     <wuid>-21b2ca35:148a7786110:3657</wuid>
     <x>30</x>
@@ -370,13 +370,13 @@ sequences</text>
             <color name="IO PV OFF" red="77" green="77" blue="77" />
           </color_fillbackground>
           <color_hi>
-            <color name="Minor" red="255" green="128" blue="0" />
+            <color name="Minor" red="255" green="255" blue="0" />
           </color_hi>
           <color_hihi>
             <color name="Major" red="255" green="0" blue="0" />
           </color_hihi>
           <color_lo>
-            <color name="Minor" red="255" green="128" blue="0" />
+            <color name="Minor" red="255" green="255" blue="0" />
           </color_lo>
           <color_lolo>
             <color name="Major" red="255" green="0" blue="0" />
@@ -500,13 +500,13 @@ $(pv_value)</tooltip>
             <color name="IO PV OFF" red="77" green="77" blue="77" />
           </color_fillbackground>
           <color_hi>
-            <color name="Minor" red="255" green="128" blue="0" />
+            <color name="Minor" red="255" green="255" blue="0" />
           </color_hi>
           <color_hihi>
             <color name="Major" red="255" green="0" blue="0" />
           </color_hihi>
           <color_lo>
-            <color name="Minor" red="255" green="128" blue="0" />
+            <color name="Minor" red="255" green="255" blue="0" />
           </color_lo>
           <color_lolo>
             <color name="Major" red="255" green="0" blue="0" />
@@ -836,7 +836,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>93</width>
+          <width>94</width>
           <wrap_words>true</wrap_words>
           <wuid>-262d394c:148ea617cf1:-6520</wuid>
           <x>300</x>
@@ -1022,7 +1022,7 @@ $(pv_value)</tooltip>
           <vertical_alignment>1</vertical_alignment>
           <visible>true</visible>
           <widget_type>Label</widget_type>
-          <width>96</width>
+          <width>97</width>
           <wrap_words>true</wrap_words>
           <wuid>-262d394c:148ffbdd3df:522d</wuid>
           <x>60</x>
@@ -2082,7 +2082,7 @@ $(pv_value)</tooltip>
             </exp>
             <exp bool_exp="pv1==0">
               <value>
-                <color name="Minor" red="255" green="128" blue="0" />
+                <color name="Minor" red="255" green="255" blue="0" />
               </value>
             </exp>
             <pv trig="true">$(pv_name).SIMM</pv>
@@ -2189,7 +2189,7 @@ $(pv_value)</tooltip>
             </exp>
             <exp bool_exp="pv1==0">
               <value>
-                <color name="Minor" red="255" green="128" blue="0" />
+                <color name="Minor" red="255" green="255" blue="0" />
               </value>
             </exp>
             <pv trig="true">$(pv_name).SIMM</pv>
@@ -2377,7 +2377,7 @@ $(pv_value)</tooltip>
               </exp>
               <exp bool_exp="pv1==0">
                 <value>
-                  <color name="Minor" red="255" green="128" blue="0" />
+                  <color name="Minor" red="255" green="255" blue="0" />
                 </value>
               </exp>
               <pv trig="true">$(pv_name).SIMM</pv>
@@ -5443,7 +5443,7 @@ $(pv_value)</tooltip>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>129</width>
+        <width>132</width>
         <wrap_words>true</wrap_words>
         <wuid>-262d394c:149bd45c177:-1bea</wuid>
         <x>40</x>
@@ -5515,13 +5515,13 @@ $(pv_value)</tooltip>
         <border_style>12</border_style>
         <border_width>2</border_width>
         <color_hi>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_hi>
         <color_hihi>
           <color name="Major" red="255" green="0" blue="0" />
         </color_hihi>
         <color_lo>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_lo>
         <color_lolo>
           <color name="Major" red="255" green="0" blue="0" />
@@ -5605,13 +5605,13 @@ $(pv_value)</tooltip>
           <color name="IO PV OFF" red="77" green="77" blue="77" />
         </color_fillbackground>
         <color_hi>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_hi>
         <color_hihi>
           <color name="Major" red="255" green="0" blue="0" />
         </color_hihi>
         <color_lo>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_lo>
         <color_lolo>
           <color name="Major" red="255" green="0" blue="0" />
@@ -5700,13 +5700,13 @@ $(pv_value)</tooltip>
           <color name="IO PV OFF" red="77" green="77" blue="77" />
         </color_fillbackground>
         <color_hi>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_hi>
         <color_hihi>
           <color name="Major" red="255" green="0" blue="0" />
         </color_hihi>
         <color_lo>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_lo>
         <color_lolo>
           <color name="Major" red="255" green="0" blue="0" />
@@ -5795,13 +5795,13 @@ $(pv_value)</tooltip>
           <color name="IO PV OFF" red="77" green="77" blue="77" />
         </color_fillbackground>
         <color_hi>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_hi>
         <color_hihi>
           <color name="Major" red="255" green="0" blue="0" />
         </color_hihi>
         <color_lo>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_lo>
         <color_lolo>
           <color name="Major" red="255" green="0" blue="0" />
@@ -6009,7 +6009,7 @@ $(pv_value)</tooltip>
         </font>
         <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
         <foreground_color>
-          <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+          <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
         </foreground_color>
         <format_type>0</format_type>
         <height>25</height>
@@ -6722,7 +6722,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>44</height>
+    <height>41</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_4</name>
     <rules />
@@ -6739,7 +6739,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>122</width>
+    <width>120</width>
     <wrap_words>true</wrap_words>
     <wuid>-21b2ca35:148a7786110:3b49</wuid>
     <x>30</x>
@@ -7071,18 +7071,9 @@ $(pv_value)</tooltip>
       <image></image>
       <name>Action Button Template</name>
       <push_action_index>0</push_action_index>
-      <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+      <pv_name></pv_name>
       <pv_value />
-      <rules>
-        <rule name="Background" prop_id="background_color" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>
-              <color name="IO PV ON" red="0" green="0" blue="225" />
-            </value>
-          </exp>
-          <pv trig="true">$(pv_name)</pv>
-        </rule>
-      </rules>
+      <rules />
       <scale_options>
         <width_scalable>true</width_scalable>
         <height_scalable>true</height_scalable>
@@ -7120,7 +7111,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>35</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -7306,7 +7297,7 @@ $(pv_value)</tooltip>
       <image></image>
       <name>Action Button Template_13</name>
       <push_action_index>0</push_action_index>
-      <pv_name>$(C)-Ctrl:SQ14:sRun</pv_name>
+      <pv_name></pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -7578,18 +7569,9 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
-        <rules>
-          <rule name="Background" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="IO PV ON" red="0" green="0" blue="225" />
-              </value>
-            </exp>
-            <pv trig="true">$(pv_name)</pv>
-          </rule>
-        </rules>
+        <rules />
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
@@ -7819,18 +7801,9 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
-        <rules>
-          <rule name="Background" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="IO PV ON" red="0" green="0" blue="225" />
-              </value>
-            </exp>
-            <pv trig="true">$(pv_name)</pv>
-          </rule>
-        </rules>
+        <rules />
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
@@ -8060,18 +8033,9 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
-        <rules>
-          <rule name="Background" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="IO PV ON" red="0" green="0" blue="225" />
-              </value>
-            </exp>
-            <pv trig="true">$(pv_name)</pv>
-          </rule>
-        </rules>
+        <rules />
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
@@ -8301,18 +8265,9 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
-        <rules>
-          <rule name="Background" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="IO PV ON" red="0" green="0" blue="225" />
-              </value>
-            </exp>
-            <pv trig="true">$(pv_name)</pv>
-          </rule>
-        </rules>
+        <rules />
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
@@ -8543,18 +8498,9 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
-        <rules>
-          <rule name="Background" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="IO PV ON" red="0" green="0" blue="225" />
-              </value>
-            </exp>
-            <pv trig="true">$(pv_name)</pv>
-          </rule>
-        </rules>
+        <rules />
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
@@ -8779,7 +8725,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_11</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ4:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -9047,7 +8993,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_8</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ24:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -9274,7 +9220,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_9</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ25:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -9543,7 +9489,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_14</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ21:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -9770,7 +9716,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_15</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ22:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -10004,7 +9950,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_18</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ23:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -10276,7 +10222,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_4</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ5:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -10505,7 +10451,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_16</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ6:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -10733,7 +10679,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_17</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ7:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -10815,7 +10761,7 @@ shield cooling</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>36</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <nr>11</nr>
@@ -11007,18 +10953,9 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
-        <rules>
-          <rule name="Background" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="IO PV ON" red="0" green="0" blue="225" />
-              </value>
-            </exp>
-            <pv trig="true">$(pv_name)</pv>
-          </rule>
-        </rules>
+        <rules />
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
@@ -11056,7 +10993,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>36</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <nr>13</nr>
@@ -11248,18 +11185,9 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
-        <rules>
-          <rule name="Background" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="IO PV ON" red="0" green="0" blue="225" />
-              </value>
-            </exp>
-            <pv trig="true">$(pv_name)</pv>
-          </rule>
-        </rules>
+        <rules />
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
@@ -11486,7 +11414,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_5</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ8:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -11713,7 +11641,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_6</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ9:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -11941,7 +11869,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_7</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ10:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -12170,18 +12098,9 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_12</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ12:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
-        <rules>
-          <rule name="Background" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="IO PV ON" red="0" green="0" blue="225" />
-              </value>
-            </exp>
-            <pv trig="true">$(pv_name)</pv>
-          </rule>
-        </rules>
+        <rules />
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
@@ -12446,7 +12365,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_10</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ3:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -12678,18 +12597,9 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ1:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
-        <rules>
-          <rule name="Background" prop_id="background_color" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>
-                <color name="IO PV ON" red="0" green="0" blue="225" />
-              </value>
-            </exp>
-            <pv trig="true">$(pv_name)</pv>
-          </rule>
-        </rules>
+        <rules />
         <scale_options>
           <width_scalable>true</width_scalable>
           <height_scalable>true</height_scalable>
@@ -12919,7 +12829,7 @@ $(pv_value)</tooltip>
         <image></image>
         <name>Action Button Template_3</name>
         <push_action_index>0</push_action_index>
-        <pv_name>$(C)-Ctrl:SQ2:sRun</pv_name>
+        <pv_name></pv_name>
         <pv_value />
         <rules />
         <scale_options>
