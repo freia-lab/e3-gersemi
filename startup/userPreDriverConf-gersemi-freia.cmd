@@ -23,4 +23,4 @@
 #<sendIntervall> : time to wait before sending new data to PLC [ms]
 
 #s7plcConfigure PLC:GERSEMI,192.168.1.20,2000,9448,6910,1,1000,500
-s7plcConfigure PLC:GERSEMI,$(IP_ADDR),2000,9448,6910,1,1500,500
+s7plcConfigure PLC:GERSEMI,$(IP_ADDR),2000,9448,6910,1,1000,500

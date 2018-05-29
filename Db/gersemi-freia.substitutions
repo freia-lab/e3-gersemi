@@ -16,6 +16,12 @@ file "gersemi-DI.template" { pattern
 {Ctrl,	LiqIns,    102,	    102}
 {Ctrl,	VacIns,    104,	    104}
 {Ctrl,	MagIns,    106,	    106}
+{Vac,	P090-sOn,  108,	    108}
+{Vac,	P090-sCmdOn, 110,   110}
+{SHe,	Comp-sOn,  112,	    112}
+{SHe,	Comp-sCmdOn,114,    114}
+{Mag,	sQuench,   116,	    116}
+{Mag,	sNormal,   118,	    118}
 }
 
 file "gersemi-AI.template" { pattern
@@ -281,6 +287,9 @@ file "gersemi-AI.template" { pattern
 {LHe,   TT699L,   2920,    1812,   0,    500,   K,  "2"}
 {LHe,   TT699M,   2930,    1818,   0,    500,   K,  "2"}
 {LHe,   TT699V,   2940,    1824,   0,    500,   K,  "2"}
+{LHe,   TT671L,   2950,    1830,   0,    500,   K,  "2"}
+{LHe,   TT671M,   2960,    1836,   0,    500,   K,  "2"}
+{LHe,   TT671V,   2970,    1842,   0,    500,   K,  "2"}
 {Vac,   PT060,    3070,    1902,   0,    1100,  mbar,   "1"}
 {Vac,   PT061,    3080,    1908,   0,    1100,  mbar,   "1"}
 {Vac,   PT070,    3090,    1914,   0,    1100,  mbar,   "1"}
@@ -754,8 +763,8 @@ file "gersemi-SQanalog.template" { pattern
 
 {SQ18,	cP_LI680_max,   5344, FLOAT, sP_LI680_max, 7638, "%"}
 {SQ18,	cP_LT682_min,   5348, FLOAT, sP_LT682_min, 7642, "%"}
-{SQ18,	cP_SP_PT681,   	5352, FLOAT, sP_SP_PT681   7646, "mbar"}
-{SQ18,	cP_SP_LIC682,   5356, FLOAT, sP_SP_LIC682, 7650, "%"}
+{SQ18,	cP_SP_LIC682,   5352, FLOAT, sP_SP_LIC682, 7646, "%"}
+{SQ18,	cP_SP_PT681,   	5356, FLOAT, sP_SP_PT681   7650, "mbar"}
 {SQ18,	cP_SP_LIC683,   5360, FLOAT, sP_SP_LIC683, 7654, "%"}
 {SQ18,	cP_CV583,       5364, FLOAT, sP_CV583,     7658, "%"}
 {SQ18,	cP_CV602,       5368, FLOAT, sP_CV602,     7662, "%"}
