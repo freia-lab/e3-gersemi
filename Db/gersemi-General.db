@@ -298,3 +298,10 @@ record(bo, "CstatV-Ctrl:SQ9:cmdStopDwr") {
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
+record(bo, "CstatV-Ctrl:Archiving:On") {
+  field(DESC, "Turn CstatV archiving on or off")
+  field(ZNAM, "Archiving off")
+  field(ONAM, "Archiving on")
+  field(ZSV, "MINOR")
+}
+

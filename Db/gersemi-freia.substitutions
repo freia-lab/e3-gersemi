@@ -469,6 +469,7 @@ file "gersemi-SQbinary.template" { pattern
 {SQ23,  5752, 8118, "No insert", "", "", "", "", "", ""}
 {SQ24,  5838, 8222, "No insert", "", "", "", "", "", ""}
 {SQ25,  5924, 8326, "No insert", "", "", "", "", "", ""}
+{SQ13A, 6010, 8430, "No insert", "", "", "", "", "", ""}
 }
 
 file "gersemi-SQmessages.template" { pattern
@@ -498,6 +499,7 @@ file "gersemi-SQmessages.template" { pattern
 {SQ23, 8118,"Start the warm-up?", "SQ10-SQ20 stopped?", "SQ7 stopped?", "", "", "", ""}
 {SQ24, 8222,"", "", "", "", "", "", ""}
 {SQ25, 8326,"", "", "", "", "", "", ""}
+{SQ13A, 8430,"", "", "", "", "", "", ""}
 }
 
 file "gersemi-SQchoice.template" { pattern
@@ -811,100 +813,6 @@ file "gersemi-SQanalog.template" { pattern
 {SQ25,	cP_P_max,       5950, FLOAT, sP_P_max,     8370, "%"}
 
 }
-
-#{SQ4,	cP_CV201_Tt,   3256, FLOAT, sP_CV201_Tt, 4736	""}
-#{SQ4,	cP_CV201_Ft,   3260, FLOAT, sP_CV201_Ft, 4740	""}
-#{SQ6,	cP_Tt,         3416,  FLOAT, sP_Tt,      4932	""}
-#{SQ6,	cP_Lt,         3420,  FLOAT, sP_Lt,      4936	""}
-#{SQ7,	cP_PT,         3500,  FLOAT, sP_PT,      5034	""}
-#{SQ7,	cP_FT550,      3504,  FLOAT, sP_FT550,   5038	""}
-#{SQ7,	cP_Tt_Cold,    3508,  FLOAT, sP_Tt_Cold, 5042	""}
-#{SQ7,	cP_SP_Tt,      3512,  FLOAT, sP_SP_Tt,   5046	""}
-#{SQ7,	cP_CV550,      3516,  FLOAT, sP_CV550,   5050	""}
-#{SQ7,	cP_CV551,      3520,  FLOAT, sP_CV551,   5054	""}
-#{SQ7,	cP_FT552,      3524,  FLOAT, sP_FT552,   5058	""}
-#{SQ7,	cP_HiLt,     3528,  FLOAT, sP_HiLt,  5062	""}
-#{SQ7,	cP_LoLt,      3532,  FLOAT, sP_LoLt,   5066	""}
-#{SQ7,	cP_CV552,      3536,  FLOAT, sP_CV552,   5070	""}
-#{SQ7,	cP_CV101,      3540,  FLOAT, sP_CV101,   5074	""}
-#{SQ7,	cP_CV102,      3544,  FLOAT, sP_CV102,   5078	""}
-#{SQ7,	cP_CV103,      3548,  FLOAT, sP_CV103,   5082	""}
-#{SQ7,	cP_CV104,      3552,  FLOAT, sP_CV104,   5086	""}
-#{SQ8,	cP_CV550,      3584,  FLOAT, sP_CV550,   5136	""}
-#{SQ8,	cP_LoLt,      3588,  FLOAT, sP_LoLt,   5140	""}
-#{SQ8,	cP_HiLt,     3592,  FLOAT, sP_HiLt,  5144	""}
-#{SQ8,	cP_Pt,         3596,  FLOAT, sP_Pt,      5148	""}
-#{SQ8,	cP_SP_Tt,      3600,  FLOAT, sP_SP_Tt,   5152	""}
-#{SQ8,	cP_CV551,      3604,  FLOAT, sP_CV551,   5156	""}
-#{SQ8,	cP_CV552,      3608,  FLOAT, sP_CV552,   5160	""}
-#{SQ8,	cP_CV104,      3612,  FLOAT, sP_CV104,   5164	""}
-#{SQ8,	cP_SP_LIC101,  3616,  FLOAT, sP_SP_LIC101,5168	""}
-#{SQ9,	cP_CV550,      3668,  FLOAT, sP_CV550,   5238	""}
-#{SQ9,	cP_LoLt,      3672,  FLOAT, sP_LoLt,   5242	""}
-#{SQ9,	cP_HiLt,     3676,  FLOAT, sP_HiLt,  5246	""}
-#{SQ9,	cP_Pt,         3680,  FLOAT, sP_Pt,      5250	""}
-#{SQ9,	cP_SP_Tt,      3684,  FLOAT, sP_SP_Tt,   5254	""}
-#{SQ9,	cP_CV105,      3688,  FLOAT, sP_CV105,   5258	""}
-#{SQ9,	cP_CV551_Reg,  3692,  FLOAT, sP_CV551_Reg,5262	""}
-#{SQ9,	cP_Final_Pt,   3696,  FLOAT, sP_Final_Pt,5266	""}
-#{SQ9,	cP_SP_LIC101,  3700,  FLOAT, sP_SP_LIC101,5270	""}
-#{SQ9,	cP_CV551_Pt00, 4740,  FLOAT, sP_CV551_Pt00,6526	""}
-#{SQ9,	cP_CV551_Pt01, 4744,  FLOAT, sP_CV551_Pt01,6530	""}
-#{SQ9,	cP_CV551_Pt02, 4748,  FLOAT, sP_CV551_Pt02,6534	""}
-#{SQ9,	cP_CV551_Pt03, 4752,  FLOAT, sP_CV551_Pt03,6538	""}
-#{SQ9,	cP_CV551_Pt04, 4756,  FLOAT, sP_CV551_Pt04,6542	""}
-#{SQ9,	cP_CV551_Pt05, 4760,  FLOAT, sP_CV551_Pt05,6546	""}
-#{SQ9,	cP_CV551_Pt06, 4764,  FLOAT, sP_CV551_Pt06,6550	""}
-#{SQ9,	cP_CV551_Pt07, 4768,  FLOAT, sP_CV551_Pt07,6554	""}
-#{SQ9,	cP_CV551_Pt08, 4772,  FLOAT, sP_CV551_Pt08,6558	""}
-#{SQ9,	cP_CV551_Pt09, 4776,  FLOAT, sP_CV551_Pt09,6562	""}
-#{SQ9,	cP_CV551_Pt10, 4780,  FLOAT, sP_CV551_Pt10,6566	""}
-#{SQ9,	cP_CV551_Pt11, 4784,  FLOAT, sP_CV551_Pt11,6570	""}
-#{SQ9,	cP_CV551_Pt12, 4788,  FLOAT, sP_CV551_Pt12,6574	""}
-#{SQ9,	cP_CV551_Csg00, 4804,  FLOAT, sP_CV551_Csg00,6590	""}
-#{SQ9,	cP_CV551_Csg01, 4808,  FLOAT, sP_CV551_Csg01,6594	""}
-#{SQ9,	cP_CV551_Csg02, 4812,  FLOAT, sP_CV551_Csg02,6598	""}
-#{SQ9,	cP_CV551_Csg03, 4816,  FLOAT, sP_CV551_Csg03,6602	""}
-#{SQ9,	cP_CV551_Csg04, 4820,  FLOAT, sP_CV551_Csg04,6606	""}
-#{SQ9,	cP_CV551_Csg05, 4824,  FLOAT, sP_CV551_Csg05,6610	""}
-#{SQ9,	cP_CV551_Csg06, 4828,  FLOAT, sP_CV551_Csg06,6614	""}
-#{SQ9,	cP_CV551_Csg07, 4832,  FLOAT, sP_CV551_Csg07,6618	""}
-#{SQ9,	cP_CV551_Csg08, 4836,  FLOAT, sP_CV551_Csg08,6622	""}
-#{SQ9,	cP_CV551_Csg09, 4840,  FLOAT, sP_CV551_Csg09,6626	""}
-#{SQ9,	cP_CV551_Csg10, 4844,  FLOAT, sP_CV551_Csg10,6630	""}
-#{SQ9,	cP_CV551_Csg11, 4848,  FLOAT, sP_CV551_Csg11,6634	""}
-#{SQ9,	cP_CV551_Csg12, 4852,  FLOAT, sP_CV551_Csg12,6638	""}
-#{SQ10,	cP_CV301_Tt,   3752,  FLOAT, sP_CV301_Tt,5340	""}
-#{SQ10,	cP_CV301_Ft,   3756,  FLOAT, sP_CV301_Ft,5344	""}
-#{SQ10,	cP_CV302_Tt,   3760,  FLOAT, sP_CV302_Tt,5348	""}
-#{SQ10,	cP_CV302_Ft,   3764,  FLOAT, sP_CV302_Ft,5352	""}
-#{SQ11,	cP_CV550,      3836,  FLOAT, sP_CV550,   5442	""}
-#{SQ11,	cP_Tt,         3840,  FLOAT, sP_Tt,      5446	""}
-#{SQ11,	cP_Pt,         3844,  FLOAT, sP_Pt, 	 5450	""}
-#{SQ11,	cP_SP_Tt,      3848,  FLOAT, sP_SP_Tt,   5454	""}
-#{SQ11,	cP_CV551,      3852,  FLOAT, sP_CV551,   5458	""}
-#{SQ11,	cP_CV552,      3856,  FLOAT, sP_CV552,   5462	""}
-#{SQ11,	cP_CV104,      3860,  FLOAT, sP_CV104,   5466	""}
-#{SQ12A,	cP_WarmUp,     3920,  FLOAT, sP_WarmUp,  5544	""}
-#{SQ12B,	cP_WarmUp,     4004,  FLOAT, sP_WarmUp,  5646	""}
-#{SQ12B,	cP_CV550,      4008,  FLOAT, sP_CV550,   5650	""}
-#{SQ12B,	cP_CV551,      4012,  FLOAT, sP_CV551,   5654	""}
-#{SQ12B,	cP_CV552,      4016,  FLOAT, sP_CV552,   5658	""}
-#{SQ12B,	cP_CV100,      4020,  FLOAT, sP_CV100,   5662	""}
-#{SQ12B,	cP_CV101,      4024,  FLOAT, sP_CV101,   5666	""}
-#{SQ12B,	cP_CV102,      4028,  FLOAT, sP_CV102,   5670	""}
-#{SQ12B,	cP_CV103,      4032,  FLOAT, sP_CV103,   5674	""}
-#{SQ12B,	cP_CV104,      4036,  FLOAT, sP_CV104,   5678	""}
-#{SQ12B,	cP_CV105,      4040,  FLOAT, sP_CV105,   5682	""}
-#{SQ12B,	cP_CV200,      4044,  FLOAT, sP_CV200,   5686	""}
-#{SQ12B,	cP_CV201,      4048,  FLOAT, sP_CV201,   5690	""}
-#{SQ12B,	cP_CV302,      4052,  FLOAT, sP_CV302,   5694	""}
-#{SQ12B,	cP_CV301,      4056,  FLOAT, sP_CV301,   5698	""}
-#{SQ13,	cP_Al_SHe,     4088,  FLOAT, sP_Al_SHe,  5748	""}
-#{SQ13,	cP_Al_He,      4092,  FLOAT, sP_Al_He,   5752	""}
-#{SQ13,	cP_SHe,        4096,  FLOAT, sP_SHe,   	 5756	""}
-#{SQ13,	cP_He,         4100,  FLOAT, sP_He,   	 5760	""}
-#{SQ20,	cP_Op,         4154,  INT16, sP_Op,   	 5832	""}
 
 
 file "gersemi-SQbinPar.template" { pattern
