@@ -10,7 +10,7 @@
   <background_color>
     <color name="IO Border" red="215" green="215" blue="215" />
   </background_color>
-  <boy_version>5.1.0.201710241501</boy_version>
+  <boy_version>5.1.0</boy_version>
   <foreground_color>
     <color name="IO Grid" red="215" green="215" blue="215" />
   </foreground_color>
@@ -256,7 +256,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>42</width>
+    <width>44</width>
     <wrap_words>true</wrap_words>
     <wuid>7227629f:14836633357:-7931</wuid>
     <x>20</x>
@@ -297,7 +297,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>101</width>
+    <width>104</width>
     <wrap_words>true</wrap_words>
     <wuid>7227629f:14836633357:-7921</wuid>
     <x>320</x>
@@ -372,6 +372,45 @@ $(pv_value)</tooltip>
         <exp bool_exp="pv0== 14">
           <value>$(step14)</value>
         </exp>
+        <exp bool_exp="pv0==16">
+          <value>$(step16)</value>
+        </exp>
+        <exp bool_exp="pv0==18">
+          <value>$(step18)</value>
+        </exp>
+        <exp bool_exp="pv0==20">
+          <value>$(step20)</value>
+        </exp>
+        <exp bool_exp="pv0==22">
+          <value>$(step22)</value>
+        </exp>
+        <exp bool_exp="pv0==24">
+          <value>$(step24)</value>
+        </exp>
+        <exp bool_exp="pv0==26">
+          <value>$(step26)</value>
+        </exp>
+        <exp bool_exp="pv0==28">
+          <value>$(step28)</value>
+        </exp>
+        <exp bool_exp="pv0==30">
+          <value>$(step30)</value>
+        </exp>
+        <exp bool_exp="pv0==32">
+          <value>$(step32)</value>
+        </exp>
+        <exp bool_exp="pv0==34">
+          <value>$(step34)</value>
+        </exp>
+        <exp bool_exp="pv0==36">
+          <value>$(step36)</value>
+        </exp>
+        <exp bool_exp="pv0==38">
+          <value>$(step38)</value>
+        </exp>
+        <exp bool_exp="pv0==40">
+          <value>$(step40)</value>
+        </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
     </rules>
@@ -430,7 +469,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>133</width>
+    <width>137</width>
     <wrap_words>true</wrap_words>
     <wuid>7227629f:14836633357:-7783</wuid>
     <x>31</x>
@@ -471,7 +510,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>104</width>
+    <width>106</width>
     <wrap_words>true</wrap_words>
     <wuid>7227629f:14836633357:-7773</wuid>
     <x>320</x>
@@ -497,7 +536,7 @@ $(pv_value)</tooltip>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
-      <color name="IO OutputPV Fg" red="255" green="255" blue="255" />
+      <color name="IO OutputPV Fg" red="0" green="0" blue="0" />
     </foreground_color>
     <format>0</format>
     <height>26</height>
