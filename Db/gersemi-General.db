@@ -28,57 +28,57 @@ record (bi, "CstatV-Ctrl:opMode:sLocal") {
   field (SCAN, "I/O Intr")
 }
 
-record (bi, "CstatV-Ctrl:CV5201:cOpen") {
+record (bi, "CstatV-Ctrl:CV5203:cOpen") {
   field (DTYP, "S7plc")
   field (INP,  "@PLC:GERSEMI/1 T=BYTE B=0")
   field (PINI, "YES")
   field (PHAS, "0")
   field (ONAM,  "cmdOpen")
   field (ZNAM,  "Iddle")
-  field (FLNK, "CstatV-Ctrl:CV5201:OCcmd")
+  field (FLNK, "CstatV-Ctrl:CV5203:OCcmd")
   field (SCAN, "I/O Intr")
 }
 
-record (bi, "CstatV-Ctrl:CV5201:cClose") {
+record (bi, "CstatV-Ctrl:CV5203:cClose") {
   field (DTYP, "S7plc")
   field (INP,  "@PLC:GERSEMI/1 T=BYTE B=1")
   field (PINI, "YES")
   field (PHAS, "0")
   field (ONAM,  "cmdClose")
   field (ZNAM,  "Iddle")
-  field (FLNK, "CstatV-Ctrl:CV5201:OCcmd")
+  field (FLNK, "CstatV-Ctrl:CV5203:OCcmd")
   field (SCAN, "I/O Intr")
 }
 
-record (calc, "CstatV-Ctrl:CV5201:OCcmd") {
-       field (INPA, "CstatV-Ctrl:CV5201:cClose")
-       field (INPB, "CstatV-Ctrl:CV5201:cOpen")
-       field (INPC, "Cryo-Dwr:Dwr:StCV5201_Slctd CA")
+record (calc, "CstatV-Ctrl:CV5203:OCcmd") {
+       field (INPA, "CstatV-Ctrl:CV5203:cClose")
+       field (INPB, "CstatV-Ctrl:CV5203:cOpen")
+       field (INPC, "Cryo-Dwr:Dwr:StCV5203_Slctd CA")
        field (CALC, "(!C)&&B||(C&&A)")
-       field (FLNK, "Cryo-Dwr:CV-5201:OpenClsCmd.PROC CA")
+       field (FLNK, "Cryo-Dwr:CV-5203:OpenClsCmd.PROC CA")
 }
 
-record (calcout, "CstatV-Ctrl:CV5201:OCcmd-ackO") {
-       field (INPA, "Cryo-Dwr:CV-5201:OpenClsCmd")
-       field (INPB, "CstatV-Ctrl:CV5201:cOpen")
+record (calcout, "CstatV-Ctrl:CV5203:OCcmd-ackO") {
+       field (INPA, "Cryo-Dwr:CV-5203:OpenClsCmd")
+       field (INPB, "CstatV-Ctrl:CV5203:cOpen")
        field (CALC, "A&&B")
-       field (SDIS, "Cryo-Dwr:CV-5201:OpenClsCmd.OMSL")
+       field (SDIS, "Cryo-Dwr:CV-5203:OpenClsCmd.OMSL")
        field (DISV, "0")
        field (OOPT, "Transition To Non-zero")
-       field (FLNK, "CstatV-Ctrl:CV5201:OCcmd-ackC")
+       field (FLNK, "CstatV-Ctrl:CV5203:OCcmd-ackC")
        field (PINI, "YES")
-       field (OUT, "CstatV-Ctrl:CV5201:ackO-x.PROC")
+       field (OUT, "CstatV-Ctrl:CV5203:ackO-x.PROC")
 }
 
-record (calcout, "CstatV-Ctrl:CV5201:OCcmd-ackC") {
-       field (INPA, "Cryo-Dwr:CV-5201:OpenClsCmd")
-       field (INPB, "CstatV-Ctrl:CV5201:cClose")
+record (calcout, "CstatV-Ctrl:CV5203:OCcmd-ackC") {
+       field (INPA, "Cryo-Dwr:CV-5203:OpenClsCmd")
+       field (INPB, "CstatV-Ctrl:CV5203:cClose")
        field (CALC, "A&&B")
-       field (SDIS, "Cryo-Dwr:CV-5201:OpenClsCmd.OMSL")
+       field (SDIS, "Cryo-Dwr:CV-5203:OpenClsCmd.OMSL")
        field (DISV, "0")
        field (OOPT, "Transition To Non-zero")
        field (PINI, "YES")
-       field (OUT, "CstatV-Ctrl:CV5201:ackC-x.PROC")
+       field (OUT, "CstatV-Ctrl:CV5203:ackC-x.PROC")
 }
 
 # Help records to produce the pulsed bo
@@ -86,17 +86,17 @@ record (calcout, "CstatV-Ctrl:CV5201:OCcmd-ackC") {
 record (bo, "ackO-x") {
        field (DOL, "1")
        field (OMSL, "closed_loop")
-       field (OUT, "CstatV-Ctrl:CV5201:ackOpen.VAL PP NMS")
+       field (OUT, "CstatV-Ctrl:CV5203:ackOpen.VAL PP NMS")
 }
 record (bo, "ackC-x") {
        field (DOL, "1")
        field (OMSL, "closed_loop")
-       field (OUT, "CstatV-Ctrl:CV5201:ackClose.VAL PP NMS")
+       field (OUT, "CstatV-Ctrl:CV5203:ackClose.VAL PP NMS")
 }
 
-# Acknowledge bits for the open/close CV5201 commands
+# Acknowledge bits for the open/close CV5203 commands
 
-record (bo, "CstatV-Ctrl:CV5201:ackOpen") {
+record (bo, "CstatV-Ctrl:CV5203:ackOpen") {
   field (DTYP, "S7plc")
   field (OUT, "@PLC:GERSEMI/1 T=BYTE B=0")
   field (ZNAM, "Iddle")
@@ -104,7 +104,7 @@ record (bo, "CstatV-Ctrl:CV5201:ackOpen") {
   field (PINI, "NO")
   field (HIGH, "0.5")
 }
-record (bo, "CstatV-Ctrl:CV5201:ackClose") {
+record (bo, "CstatV-Ctrl:CV5203:ackClose") {
   field (DTYP, "S7plc")
   field (OUT, "@PLC:GERSEMI/1 T=BYTE B=1")
   field (ZNAM, "Iddle")

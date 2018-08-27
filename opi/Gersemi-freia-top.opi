@@ -370,13 +370,13 @@ sequences</text>
             <color name="IO PV OFF" red="77" green="77" blue="77" />
           </color_fillbackground>
           <color_hi>
-            <color name="Minor" red="255" green="128" blue="0" />
+            <color name="Minor" red="255" green="255" blue="0" />
           </color_hi>
           <color_hihi>
             <color name="Major" red="255" green="0" blue="0" />
           </color_hihi>
           <color_lo>
-            <color name="Minor" red="255" green="128" blue="0" />
+            <color name="Minor" red="255" green="255" blue="0" />
           </color_lo>
           <color_lolo>
             <color name="Major" red="255" green="0" blue="0" />
@@ -500,13 +500,13 @@ $(pv_value)</tooltip>
             <color name="IO PV OFF" red="77" green="77" blue="77" />
           </color_fillbackground>
           <color_hi>
-            <color name="Minor" red="255" green="128" blue="0" />
+            <color name="Minor" red="255" green="255" blue="0" />
           </color_hi>
           <color_hihi>
             <color name="Major" red="255" green="0" blue="0" />
           </color_hihi>
           <color_lo>
-            <color name="Minor" red="255" green="128" blue="0" />
+            <color name="Minor" red="255" green="255" blue="0" />
           </color_lo>
           <color_lolo>
             <color name="Major" red="255" green="0" blue="0" />
@@ -651,7 +651,7 @@ $(pv_value)</tooltip>
           <image></image>
           <name>Button Template</name>
           <push_action_index>0</push_action_index>
-          <pv_name>Cryo-Dwr:CV-5201:OpenClsCmd</pv_name>
+          <pv_name>Cryo-Dwr:CV-5203:OpenClsCmd</pv_name>
           <pv_value />
           <rules>
             <rule name="ButtonTxt" prop_id="text" out_exp="false">
@@ -710,7 +710,7 @@ $(pv_value)</tooltip>
           <name>Text Update Template</name>
           <precision>0</precision>
           <precision_from_pv>false</precision_from_pv>
-          <pv_name>Cryo-Dwr:V:UY5201-PercOut</pv_name>
+          <pv_name>Cryo-Dwr:V:UY5203-PercOut</pv_name>
           <pv_value />
           <rotation_angle>0.0</rotation_angle>
           <rules>
@@ -867,7 +867,7 @@ $(pv_value)</tooltip>
           <horizontal>false</horizontal>
           <items_from_pv>true</items_from_pv>
           <name>Choice Button</name>
-          <pv_name>Cryo-Dwr:CV-5201:OpenClsCmd.OMSL</pv_name>
+          <pv_name>Cryo-Dwr:CV-5203:OpenClsCmd.OMSL</pv_name>
           <pv_value />
           <rules />
           <scale_options>
@@ -2082,7 +2082,7 @@ $(pv_value)</tooltip>
             </exp>
             <exp bool_exp="pv1==0">
               <value>
-                <color name="Minor" red="255" green="128" blue="0" />
+                <color name="Minor" red="255" green="255" blue="0" />
               </value>
             </exp>
             <pv trig="true">$(pv_name).SIMM</pv>
@@ -2189,7 +2189,7 @@ $(pv_value)</tooltip>
             </exp>
             <exp bool_exp="pv1==0">
               <value>
-                <color name="Minor" red="255" green="128" blue="0" />
+                <color name="Minor" red="255" green="255" blue="0" />
               </value>
             </exp>
             <pv trig="true">$(pv_name).SIMM</pv>
@@ -2377,7 +2377,7 @@ $(pv_value)</tooltip>
               </exp>
               <exp bool_exp="pv1==0">
                 <value>
-                  <color name="Minor" red="255" green="128" blue="0" />
+                  <color name="Minor" red="255" green="255" blue="0" />
                 </value>
               </exp>
               <pv trig="true">$(pv_name).SIMM</pv>
@@ -2805,7 +2805,7 @@ $(pv_value)</tooltip>
             <col>1.0</col>
           </row>
         </permutation_matrix>
-        <pv_name>Cryo-Dwr:Dwr:StCV5201_Slctd</pv_name>
+        <pv_name>Cryo-Dwr:Dwr:StCV5203_Slctd</pv_name>
         <pv_value />
         <rules>
           <rule name="BorderRule" prop_id="border_style" out_exp="false">
@@ -2877,7 +2877,7 @@ $(pv_value)</tooltip>
           <color red="0" green="255" blue="0" />
         </on_color>
         <on_label>OK</on_label>
-        <pv_name>Cryo-ICn:LP:US5205</pv_name>
+        <pv_name>Cryo-ICn:LP:US5207</pv_name>
         <pv_value />
         <rules />
         <scale_options>
@@ -5515,13 +5515,13 @@ $(pv_value)</tooltip>
         <border_style>12</border_style>
         <border_width>2</border_width>
         <color_hi>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_hi>
         <color_hihi>
           <color name="Major" red="255" green="0" blue="0" />
         </color_hihi>
         <color_lo>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_lo>
         <color_lolo>
           <color name="Major" red="255" green="0" blue="0" />
@@ -5605,13 +5605,13 @@ $(pv_value)</tooltip>
           <color name="IO PV OFF" red="77" green="77" blue="77" />
         </color_fillbackground>
         <color_hi>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_hi>
         <color_hihi>
           <color name="Major" red="255" green="0" blue="0" />
         </color_hihi>
         <color_lo>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_lo>
         <color_lolo>
           <color name="Major" red="255" green="0" blue="0" />
@@ -5700,13 +5700,13 @@ $(pv_value)</tooltip>
           <color name="IO PV OFF" red="77" green="77" blue="77" />
         </color_fillbackground>
         <color_hi>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_hi>
         <color_hihi>
           <color name="Major" red="255" green="0" blue="0" />
         </color_hihi>
         <color_lo>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_lo>
         <color_lolo>
           <color name="Major" red="255" green="0" blue="0" />
@@ -5795,13 +5795,13 @@ $(pv_value)</tooltip>
           <color name="IO PV OFF" red="77" green="77" blue="77" />
         </color_fillbackground>
         <color_hi>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_hi>
         <color_hihi>
           <color name="Major" red="255" green="0" blue="0" />
         </color_hihi>
         <color_lo>
-          <color name="Minor" red="255" green="128" blue="0" />
+          <color name="Minor" red="255" green="255" blue="0" />
         </color_lo>
         <color_lolo>
           <color name="Major" red="255" green="0" blue="0" />
@@ -6655,52 +6655,6 @@ $(pv_value)</tooltip>
         <wuid>-2e71eea6:160448bf73f:-5b67</wuid>
         <x>1110</x>
         <y>234</y>
-      </widget>
-      <widget typeId="org.csstudio.opibuilder.widgets.choiceButton" version="1.0.0">
-        <actions hook="false" hook_all="false" />
-        <alarm_pulsing>false</alarm_pulsing>
-        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-        <background_color>
-          <color red="240" green="240" blue="240" />
-        </background_color>
-        <border_alarm_sensitive>true</border_alarm_sensitive>
-        <border_color>
-          <color red="0" green="128" blue="255" />
-        </border_color>
-        <border_style>3</border_style>
-        <border_width>5</border_width>
-        <enabled>true</enabled>
-        <font>
-          <opifont.name fontName="Cantarell" height="11" style="1" pixels="false">Default Bold</opifont.name>
-        </font>
-        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-        <foreground_color>
-          <color red="0" green="0" blue="0" />
-        </foreground_color>
-        <height>55</height>
-        <horizontal>false</horizontal>
-        <items_from_pv>true</items_from_pv>
-        <name>Choice Button</name>
-        <pv_name>Cryo-Dwr:CV-5201:OpenClsCmd.OMSL</pv_name>
-        <pv_value />
-        <rules />
-        <scale_options>
-          <width_scalable>true</width_scalable>
-          <height_scalable>true</height_scalable>
-          <keep_wh_ratio>false</keep_wh_ratio>
-        </scale_options>
-        <scripts />
-        <selected_color>
-          <color red="255" green="255" blue="255" />
-        </selected_color>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-        <visible>true</visible>
-        <widget_type>Choice Button</widget_type>
-        <width>125</width>
-        <wuid>-2e71eea6:160448bf73f:-31ad</wuid>
-        <x>1289</x>
-        <y>490</y>
       </widget>
     </widget>
   </widget>
