@@ -8776,7 +8776,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>false</visible>
+        <visible>true</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>65090fd1:14e6909c5fc:-25d</wuid>
@@ -8800,13 +8800,14 @@ $(pv_value)</tooltip>
             <color name="IO Foreground" red="0" green="0" blue="0" />
           </foreground_color>
           <group_name></group_name>
-          <height>656</height>
+          <height>967</height>
           <macros>
             <include_parent_macros>true</include_parent_macros>
+            <P>CstatV</P>
           </macros>
           <name>Linking Container Template</name>
-          <opi_file></opi_file>
-          <resize_behaviour>0</resize_behaviour>
+          <opi_file>helper-opi-files/ReheatSys.opi</opi_file>
+          <resize_behaviour>2</resize_behaviour>
           <rules />
           <scale_options>
             <width_scalable>true</width_scalable>
@@ -8817,10 +8818,10 @@ $(pv_value)</tooltip>
           <tooltip></tooltip>
           <visible>true</visible>
           <widget_type>Linking Container</widget_type>
-          <width>1251</width>
+          <width>1594</width>
           <wuid>65090fd1:14e6909c5fc:-b</wuid>
-          <x>90</x>
-          <y>85</y>
+          <x>0</x>
+          <y>0</y>
         </widget>
       </widget>
       <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -8857,7 +8858,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>true</visible>
+        <visible>false</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>65090fd1:14e6909c5fc:2e51</wuid>
@@ -9124,12 +9125,12 @@ $(pv_value)</tooltip>
             <color name="IO Foreground" red="0" green="0" blue="0" />
           </foreground_color>
           <group_name></group_name>
-          <height>908</height>
+          <height>967</height>
           <macros>
             <include_parent_macros>true</include_parent_macros>
           </macros>
           <name>Linking Container Template</name>
-          <opi_file></opi_file>
+          <opi_file>helper-opi-files/LiquidN2.opi</opi_file>
           <resize_behaviour>2</resize_behaviour>
           <rules />
           <scale_options>
@@ -9141,7 +9142,7 @@ $(pv_value)</tooltip>
           <tooltip></tooltip>
           <visible>true</visible>
           <widget_type>Linking Container</widget_type>
-          <width>1439</width>
+          <width>1594</width>
           <wuid>65090fd1:14ed4c84976:-79cc</wuid>
           <x>0</x>
           <y>0</y>
