@@ -39,6 +39,62 @@
     <alpha>255</alpha>
     <anti_alias>true</anti_alias>
     <arrow_length>20</arrow_length>
+    <arrows>0</arrows>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fill_arrow>true</fill_arrow>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <height>67</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_style>0</line_style>
+    <line_width>2</line_width>
+    <name>Polyline_5</name>
+    <points>
+      <point x="1108" y="169" />
+      <point x="1108" y="103" />
+    </points>
+    <pv_name></pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Polyline</widget_type>
+    <width>1</width>
+    <wuid>-ac92004:165e7a7854d:-7dd1</wuid>
+    <x>1108</x>
+    <y>103</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <arrow_length>20</arrow_length>
     <arrows>2</arrows>
     <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
     <background_color>
@@ -128,7 +184,7 @@ $(pv_value)</tooltip>
       <point x="643" y="153" />
       <point x="783" y="153" />
       <point x="783" y="213" />
-      <point x="1313" y="213" />
+      <point x="1380" y="213" />
     </points>
     <pv_name></pv_name>
     <pv_value />
@@ -145,7 +201,7 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Polyline</widget_type>
-    <width>671</width>
+    <width>738</width>
     <wuid>-ac92004:165a3a72ef8:449</wuid>
     <x>643</x>
     <y>153</y>
@@ -3820,7 +3876,7 @@ $(pv_value)</tooltip>
     <wrap_words>true</wrap_words>
     <wuid>-2e82a095:14e62aaf961:7493</wuid>
     <x>971</x>
-    <y>15</y>
+    <y>5</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3849,13 +3905,13 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Liquid Helium" red="51" green="102" blue="255" />
     </foreground_color>
-    <height>54</height>
+    <height>64</height>
     <horizontal_fill>true</horizontal_fill>
     <line_style>0</line_style>
     <line_width>2</line_width>
     <name>Polyline Template_18</name>
     <points>
-      <point x="1053" y="15" />
+      <point x="1053" y="5" />
       <point x="1053" y="68" />
     </points>
     <pv_name></pv_name>
@@ -3876,7 +3932,7 @@ $(pv_value)</tooltip>
     <width>1</width>
     <wuid>-2e82a095:14e62aaf961:7516</wuid>
     <x>1053</x>
-    <y>15</y>
+    <y>5</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
     <actions hook="true" hook_all="false">
@@ -4201,13 +4257,13 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Liquid Helium" red="51" green="102" blue="255" />
     </foreground_color>
-    <height>54</height>
+    <height>64</height>
     <horizontal_fill>true</horizontal_fill>
     <line_style>0</line_style>
     <line_width>2</line_width>
     <name>Polyline Template_19</name>
     <points>
-      <point x="1108" y="15" />
+      <point x="1108" y="5" />
       <point x="1108" y="68" />
     </points>
     <pv_name></pv_name>
@@ -4228,7 +4284,7 @@ $(pv_value)</tooltip>
     <width>1</width>
     <wuid>-2e82a095:14e62aaf961:75cd</wuid>
     <x>1108</x>
-    <y>15</y>
+    <y>5</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -4268,8 +4324,8 @@ $(pv_value)</tooltip>
     <width>106</width>
     <wrap_words>true</wrap_words>
     <wuid>-2e82a095:14e62aaf961:75df</wuid>
-    <x>1123</x>
-    <y>10</y>
+    <x>1114</x>
+    <y>5</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -4372,7 +4428,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>45</height>
     <image_file>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</image_file>
-    <name>CstatV-RHtr:FV581</name>
+    <name>CstatV-RHtr:FV584</name>
     <no_animation>false</no_animation>
     <off_color>
       <color name="IO Default" red="255" green="0" blue="0" />
@@ -4463,7 +4519,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <text>FV581</text>
+    <text>FV584</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -4472,7 +4528,7 @@ $(pv_value)</tooltip>
     <width>32</width>
     <wrap_words>true</wrap_words>
     <wuid>-2e82a095:14e62aaf961:77fe</wuid>
-    <x>1112</x>
+    <x>1071</x>
     <y>79</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -4708,7 +4764,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Liquid Helium" red="51" green="102" blue="255" />
     </foreground_color>
-    <height>69</height>
+    <height>66</height>
     <horizontal_fill>true</horizontal_fill>
     <line_style>0</line_style>
     <line_width>2</line_width>
@@ -4717,7 +4773,6 @@ $(pv_value)</tooltip>
       <point x="905" y="104" />
       <point x="905" y="169" />
       <point x="1108" y="169" />
-      <point x="1108" y="101" />
     </points>
     <pv_name></pv_name>
     <pv_value />
@@ -4737,7 +4792,7 @@ $(pv_value)</tooltip>
     <width>204</width>
     <wuid>-2e82a095:14e62aaf961:7b23</wuid>
     <x>905</x>
-    <y>101</y>
+    <y>104</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
     <actions hook="true" hook_all="false">
@@ -4784,7 +4839,7 @@ $(pv_value)</tooltip>
     </foreground_color>
     <height>45</height>
     <image_file>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</image_file>
-    <name>CstatV-RHtr:FV584</name>
+    <name>CstatV-RHtr:FV582</name>
     <no_animation>false</no_animation>
     <off_color>
       <color name="IO Default" red="255" green="0" blue="0" />
@@ -4843,8 +4898,8 @@ $(pv_value)</tooltip>
     <widget_type>Boolean Symbol Monitor</widget_type>
     <width>45</width>
     <wuid>-2e82a095:14e62aaf961:7b39</wuid>
-    <x>1085</x>
-    <y>113</y>
+    <x>1086</x>
+    <y>114</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -4875,7 +4930,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <text>FV584</text>
+    <text>FV582</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -4884,8 +4939,8 @@ $(pv_value)</tooltip>
     <width>32</width>
     <wrap_words>true</wrap_words>
     <wuid>-2e82a095:14e62aaf961:7b3a</wuid>
-    <x>1112</x>
-    <y>129</y>
+    <x>1067</x>
+    <y>128</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
     <actions hook="true" hook_all="false" />
@@ -5038,16 +5093,16 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Liquid Helium" red="51" green="102" blue="255" />
     </foreground_color>
-    <height>113</height>
+    <height>128</height>
     <horizontal_fill>true</horizontal_fill>
     <line_style>0</line_style>
     <line_width>2</line_width>
     <name>Polyline Template_22</name>
     <points>
       <point x="1108" y="169" />
-      <point x="1167" y="169" />
-      <point x="1167" y="57" />
-      <point x="1312" y="58" />
+      <point x="1229" y="170" />
+      <point x="1229" y="44" />
+      <point x="1383" y="43" />
     </points>
     <pv_name></pv_name>
     <pv_value />
@@ -5064,10 +5119,10 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Polyline</widget_type>
-    <width>205</width>
+    <width>276</width>
     <wuid>-2e82a095:14e680ba254:-7fe4</wuid>
     <x>1108</x>
-    <y>57</y>
+    <y>43</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
     <actions hook="true" hook_all="false">
@@ -5173,7 +5228,7 @@ $(pv_value)</tooltip>
     <widget_type>Boolean Symbol Monitor</widget_type>
     <width>46</width>
     <wuid>-2e82a095:14e680ba254:-7fbe</wuid>
-    <x>1116</x>
+    <x>1144</x>
     <y>146</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -5205,7 +5260,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <scripts />
     <show_scrollbar>false</show_scrollbar>
-    <text>FV582</text>
+    <text>FV581</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
@@ -5214,13 +5269,13 @@ $(pv_value)</tooltip>
     <width>32</width>
     <wrap_words>true</wrap_words>
     <wuid>-2e82a095:14e680ba254:-7fbd</wuid>
-    <x>1122</x>
-    <y>152</y>
+    <x>1151</x>
+    <y>144</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>../CmdPanels/CstatV-Valve.opi</path>
+        <path>../CmdPanels/CstatH-Valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <v_name>$(name)</v_name>
@@ -5321,8 +5376,8 @@ $(pv_value)</tooltip>
     <widget_type>Boolean Symbol Monitor</widget_type>
     <width>45</width>
     <wuid>-2e82a095:14e680ba254:-7e20</wuid>
-    <x>1144</x>
-    <y>51</y>
+    <x>1206</x>
+    <y>46</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -5362,8 +5417,8 @@ $(pv_value)</tooltip>
     <width>32</width>
     <wrap_words>true</wrap_words>
     <wuid>-2e82a095:14e680ba254:-7e06</wuid>
-    <x>1132</x>
-    <y>52</y>
+    <x>1188</x>
+    <y>60</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -5392,15 +5447,15 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Liquid Helium" red="51" green="102" blue="255" />
     </foreground_color>
-    <height>113</height>
+    <height>126</height>
     <horizontal_fill>true</horizontal_fill>
     <line_style>0</line_style>
     <line_width>2</line_width>
     <name>Polyline Template_23</name>
     <points>
-      <point x="1165" y="169" />
-      <point x="1216" y="169" />
-      <point x="1216" y="57" />
+      <point x="1227" y="170" />
+      <point x="1278" y="170" />
+      <point x="1278" y="45" />
     </points>
     <pv_name></pv_name>
     <pv_value />
@@ -5419,13 +5474,13 @@ $(pv_value)</tooltip>
     <widget_type>Polyline</widget_type>
     <width>52</width>
     <wuid>-2e82a095:14e680ba254:-7843</wuid>
-    <x>1165</x>
-    <y>57</y>
+    <x>1227</x>
+    <y>45</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>../CmdPanels/CstatV-Valve.opi</path>
+        <path>../CmdPanels/CstatH-Valve.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <v_name>$(name)</v_name>
@@ -5526,8 +5581,8 @@ $(pv_value)</tooltip>
     <widget_type>Boolean Symbol Monitor</widget_type>
     <width>45</width>
     <wuid>-2e82a095:14e680ba254:-7831</wuid>
-    <x>1193</x>
-    <y>100</y>
+    <x>1255</x>
+    <y>95</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -5567,8 +5622,8 @@ $(pv_value)</tooltip>
     <width>32</width>
     <wrap_words>true</wrap_words>
     <wuid>-2e82a095:14e680ba254:-7817</wuid>
-    <x>1220</x>
-    <y>116</y>
+    <x>1282</x>
+    <y>111</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -5608,8 +5663,8 @@ $(pv_value)</tooltip>
     <width>37</width>
     <wrap_words>true</wrap_words>
     <wuid>-2e82a095:14e680ba254:-77e8</wuid>
-    <x>1240</x>
-    <y>34</y>
+    <x>1302</x>
+    <y>29</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -6041,8 +6096,8 @@ $(pv_value)</tooltip>
     <widget_type>Rounded Rectangle</widget_type>
     <width>49</width>
     <wuid>-2e82a095:14e680ba254:-7ea5</wuid>
-    <x>1151</x>
-    <y>101</y>
+    <x>1213</x>
+    <y>96</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.RoundedRectangle" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -7026,8 +7081,8 @@ $(pv_value)</tooltip>
     <width>70</width>
     <wrap_words>false</wrap_words>
     <wuid>-2e82a095:14e680ba254:-77e9</wuid>
-    <x>1222</x>
-    <y>49</y>
+    <x>1284</x>
+    <y>44</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -8460,8 +8515,8 @@ $(pv_value)</tooltip>
     <widget_type>Action Button</widget_type>
     <width>51</width>
     <wuid>182a39ad:15eb87c07ee:1628</wuid>
-    <x>1150</x>
-    <y>101</y>
+    <x>1212</x>
+    <y>96</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextUpdate" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -8512,8 +8567,8 @@ $(pv_value)</tooltip>
     <width>86</width>
     <wrap_words>false</wrap_words>
     <wuid>7113813e:160209231b3:-7ded</wuid>
-    <x>1222</x>
-    <y>75</y>
+    <x>1284</x>
+    <y>70</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -9612,7 +9667,7 @@ $(pv_value)</tooltip>
     <width>106</width>
     <wrap_words>true</wrap_words>
     <wuid>-ac92004:165a3a72ef8:7a6</wuid>
-    <x>1240</x>
+    <x>1307</x>
     <y>187</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
@@ -9650,7 +9705,7 @@ $(pv_value)</tooltip>
     <points>
       <point x="1060" y="214" />
       <point x="1060" y="264" />
-      <point x="1312" y="264" />
+      <point x="1380" y="264" />
     </points>
     <pv_name></pv_name>
     <pv_value />
@@ -9667,7 +9722,7 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Polyline</widget_type>
-    <width>253</width>
+    <width>321</width>
     <wuid>-ac92004:165a3a72ef8:9d3</wuid>
     <x>1060</x>
     <y>214</y>
@@ -9958,7 +10013,7 @@ $(pv_value)</tooltip>
     <width>72</width>
     <wrap_words>true</wrap_words>
     <wuid>-ac92004:165a3a72ef8:bb0</wuid>
-    <x>1243</x>
+    <x>1312</x>
     <y>234</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -10160,64 +10215,6 @@ $(pv_value)</tooltip>
     <wuid>-ac92004:165a3a72ef8:da3</wuid>
     <x>1063</x>
     <y>28</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <arrow_length>20</arrow_length>
-    <arrows>0</arrows>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color name="IO Liquid Helium" red="51" green="102" blue="255" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fill_arrow>true</fill_arrow>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <height>95</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_style>0</line_style>
-    <line_width>2</line_width>
-    <name>Polyline_3</name>
-    <points>
-      <point x="1108" y="170" />
-      <point x="1108" y="264" />
-      <point x="1108" y="264" />
-      <point x="1108" y="264" />
-    </points>
-    <pv_name></pv_name>
-    <pv_value />
-    <rotation_angle>0.0</rotation_angle>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Polyline</widget_type>
-    <width>1</width>
-    <wuid>-ac92004:165a3a72ef8:10fa</wuid>
-    <x>1108</x>
-    <y>170</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -13375,7 +13372,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>43</height>
+    <height>40</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_150</name>
     <rules />
@@ -13393,7 +13390,7 @@ Insert</text>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>39</width>
+    <width>37</width>
     <wrap_words>true</wrap_words>
     <wuid>-ac92004:165a3a72ef8:2d0b</wuid>
     <x>731</x>
@@ -13498,5 +13495,46 @@ $(pv_value)</tooltip>
     <wuid>-ac92004:165a3a72ef8:3a6a</wuid>
     <x>1048</x>
     <y>323</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>true</auto_size>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205" />
+    </background_color>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>2</border_width>
+    <enabled>false</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label Template_152</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <text>To Gas Bag</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>72</width>
+    <wrap_words>true</wrap_words>
+    <wuid>-ac92004:165e7a7854d:-7dc7</wuid>
+    <x>1353</x>
+    <y>13</y>
   </widget>
 </display>
