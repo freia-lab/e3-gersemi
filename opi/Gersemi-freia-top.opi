@@ -3564,12 +3564,9 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step4>Started LN2 flow</step4>
+              <step6>LN2 circulation</step6>
+              <step8>Waiting for CV700 to close</step8>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -3795,10 +3792,9 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Isolated - checking alarm levels and checkbox</step4>
-              <step6>Waiting for pressures to go below settings</step6>
-              <step8>Waiting for pressures to go below settings</step8>
-              <step10>Waiting for the checkbox</step10>
+              <step4>Started LN2 flow</step4>
+              <step6>LN2 circulation</step6>
+              <step8>Waiting for CV740 to close</step8>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -4022,11 +4018,11 @@ $(pv_value)</tooltip>
               <seq_no>SQ7</seq_no>
               <seq_title>Seq. 7: Vacuum insert thermal shield cooling</seq_title>
               <step0>Not running</step0>
-              <step2>Waiting for SQ3A state &gt;= 4</step2>
-              <step4>Isolated - checking alarm levels and checkbox</step4>
-              <step6>Step 6</step6>
-              <step8>Step 8</step8>
-              <step10>Step 10</step10>
+              <step1>Checking equipment</step1>
+              <step2>Checking parameters</step2>
+              <step4>Started LN2 flow</step4>
+              <step6>LN2 circulation</step6>
+              <step8>Waiting for CV700 to close</step8>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -4295,12 +4291,11 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step4>Delaying for Time open circ.</step4>
+              <step6>Starting compressor</step6>
+              <step8>Regulation</step8>
+              <step10>Stop SCHe cooling</step10>
+              <step12>Wait for CV380 to be closed </step12>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -4527,12 +4522,19 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step4>Waiting for Yes/No</step4>
+              <step6>Waiting for Yes/No</step6>
+              <step8>Waiting for CV581 to be set</step8>
+              <step10>Waiting for FV581 and FV584 to close</step10>
+              <step12>Starting the pumps - waiting for Yes</step12>
+              <step14>Waiting for CV581 to close</step14>
+              <step16>Waiting for FV581 and FV584 to close</step16>
+              <step18>Pumping 2K tank</step18>
+              <step20>2K tank pressure regulated</step20>
+              <step22>Stop pumping</step22>
+              <step24>Pressure control</step24>
+              <step26>Wait for PT584 to go above limit</step26>
+              <step28>Stop filling</step28>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -4759,9 +4761,7 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Cooling down</step4>
-              <step6>Keeping cooled - LN2 flow on</step6>
-              <step8>Keeping cooled - LN2 flow off</step8>
+              <step4>Doing measurements</step4>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -4987,8 +4987,29 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Cooling down</step4>
-              <step6>Keeping cooled</step6>
+              <step4>Select LHe source then press Yes</step4>
+              <step6>Waiting for local Ackn</step6>
+              <step8>Prepare to regulate (dewar)</step8>
+              <step10>Regulation mode</step10>
+              <step12>Waiting for FV602 to close</step12>
+              <step14>Waiting for FV602 to open</step14>
+              <step16>Cool down TL010</step16>
+              <step18>4K tank filling</step18>
+              <step20>End of filling</step20>
+              <step22>Waiting for FV602 to close</step22>
+              <step24>Waiting for Yes/No</step24>
+              <step26>Waiting for CV590 to close</step26>
+              <step28>Waiting for CV600 to close</step28>
+              <step30>4K tank outgasing</step30>
+              <step32>Preparation to regulate</step32>
+              <step34>Regulation mode</step34>
+              <step36>Liquifier valve closing</step36>
+              <step38>Waiting for CV600 to close</step38>
+              <step40>4K tank outgasing</step40>
+              <step42>Cool down TL010</step42>
+              <step44>4K tank filling</step44>
+              <step46>End of filling</step46>
+              <step48>Waiting for closing CV5203</step48>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -5215,8 +5236,15 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Cooling down</step4>
-              <step6>Keeping cooled</step6>
+              <step4>Waiting for Yes</step4>
+              <step6>Waiting for local Ackn or Stop</step6>
+              <step8>Cooling cavity</step8>
+              <step10>End of cool-down</step10>
+              <step12>Prepare to regulate</step12>
+              <step14>Regulating (intermittent mode)</step14>
+              <step16>Cryostat filling</step16>
+              <step18>End of filling</step18>
+              <step20>Stop: waiting for CV602 to be closed</step20>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -5442,10 +5470,11 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Waiting for filling to Low level</step4>
-              <step6>Waiting for achieving Filling temp.</step6>
-              <step8>LHe filling or kept at set point</step8>
-              <step10>Waiting to go below Low level</step10>
+              <step4>Ready to fill</step4>
+              <step6>Regulation (PID)</step6>
+              <step8>Start filling</step8>
+              <step10>End of filling</step10>
+              <step12>Stop</step12>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -5510,7 +5539,7 @@ $(pv_value)</tooltip>
       <color red="0" green="0" blue="0" />
     </foreground_color>
     <height>75</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -5710,9 +5739,27 @@ $(pv_value)</tooltip>
               <seq_no>SQ3</seq_no>
               <seq_title>Sequence 3: SCHe, conditioning He circuits</seq_title>
               <step0>Not running</step0>
-              <step1>Checking equipment</step1>
-              <step2>Checking parameters</step2>
-              <step4>Warming up</step4>
+              <step1>Checking parameters</step1>
+              <step2>Checking equipment</step2>
+              <step4>Prepare for purging</step4>
+              <step6>Start the pumping</step6>
+              <step8>Pumping</step8>
+              <step10>Leak test at low pressure</step10>
+              <step12>Flashing with GHe</step12>
+              <step14>Leak test at high pressure</step14>
+              <step16>Waiting for FV380 to close</step16>
+              <step18>He conditioning stopped</step18>
+              <step20>Waiting for P090 to stop</step20>
+              <step22>Test failed - press Ackn</step22>
+              <step24>Test failed - press Ackn</step24>
+              <step26>Waiting for Yes/No</step26>
+              <step28>Waiting for Yes/No</step28>
+              <step30>Waiting for FV090 to close</step30>
+              <step32>Flushing with GHe</step32>
+              <step34>Waiting for Yes</step34>
+              <step36>Pressure alarm - press Ackn</step36>
+              <step38>Vacuum alarm - press Ackn</step38>
+              <step40>Waiting for Yes/No</step40>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -5939,12 +5986,25 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step4>Prepare for purging</step4>
+              <step6>Start the pumping</step6>
+              <step8>Pumping</step8>
+              <step10>Leak test at low pressure</step10>
+              <step12>Flashing with GHe</step12>
+              <step14>Leak test at high pressure</step14>
+              <step16>Waiting for FV600 to close</step16>
+              <step18>He conditioning stopped</step18>
+              <step20>Pump stopped</step20>
+              <step22>Test failed - press Ackn</step22>
+              <step24>Test failed - press Ackn</step24>
+              <step26>Waiting for Yes/No</step26>
+              <step28>Waiting for Yes/No</step28>
+              <step30>Waiting for FV090 to close</step30>
+              <step32>Flushing with GHe</step32>
+              <step34>Waiting for Yes</step34>
+              <step36>Pressure alarm - press Ackn</step36>
+              <step38>Vacuum alarm - press Ackn</step38>
+              <step40>Waiting for Yes/No</step40>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -6009,7 +6069,7 @@ Conditioning He circuits</tooltip>
         <color red="0" green="0" blue="0" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -6171,12 +6231,25 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step4>Prepare for purging</step4>
+              <step6>Start the pumping</step6>
+              <step8>Pumping</step8>
+              <step10>Leak test at low pressure</step10>
+              <step12>Flashing with GHe</step12>
+              <step14>Leak test at high pressure</step14>
+              <step16>Waiting for FV600 to close</step16>
+              <step18>He conditioning stopped</step18>
+              <step20>Waiting for P090 to stop</step20>
+              <step22>Test failed - press Ackn</step22>
+              <step24>Test failed - press Ackn</step24>
+              <step26>Waiting for Yes/No</step26>
+              <step28>Waiting for Yes/No</step28>
+              <step30>Waiting for FV090 to close</step30>
+              <step32>Flushing with GHe</step32>
+              <step34>Waiting for Yes</step34>
+              <step36>Pressure alarm - press Ackn</step36>
+              <step38>Vacuum alarm - press Ackn</step38>
+              <step40>Waiting for Yes/No</step40>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -6711,7 +6784,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>false</visible>
+        <visible>true</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>-21b2ca35:148a7786110:374a</wuid>
@@ -8939,7 +9012,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>true</visible>
+        <visible>false</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>65090fd1:14ecf9f9c18:-4a14</wuid>

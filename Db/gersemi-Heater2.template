@@ -21,7 +21,6 @@ record(bi, "CstatV-$(SUBS):$(DEV):sTsw")  {
 record(bi, "CstatV-$(SUBS):$(DEV):sCmd1")  {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=2")
-  field(OSV, "MAJOR")
   field(ONAM, "True")
   field(ZNAM, "False")
   field(PINI, "YES")
@@ -31,7 +30,6 @@ record(bi, "CstatV-$(SUBS):$(DEV):sCmd1")  {
 record(bi, "CstatV-$(SUBS):$(DEV):sCmd2")  {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=3")
-  field(OSV, "MAJOR")
   field(ONAM, "True")
   field(ZNAM, "False")
   field(PINI, "YES")
@@ -41,7 +39,6 @@ record(bi, "CstatV-$(SUBS):$(DEV):sCmd2")  {
 record(bi, "CstatV-$(SUBS):$(DEV):sCmd3")  {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=4")
-  field(OSV, "MAJOR")
   field(ONAM, "True")
   field(ZNAM, "False")
   field(PINI, "YES")
@@ -61,7 +58,6 @@ record(bi, "CstatV-$(SUBS):$(DEV):sLs")  {
 record(bi, "CstatV-$(SUBS):$(DEV):sHtrOn")  {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=6")
-  field(OSV, "MAJOR")
   field(ONAM, "True")
   field(ZNAM, "False")
   field(PINI, "YES")
