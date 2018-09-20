@@ -1436,7 +1436,7 @@ $(pv_value)</tooltip>
   <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
     <actions hook="true" hook_all="false">
       <action type="OPEN_DISPLAY">
-        <path>CmdPanels/LocBinaryOnOff.opi</path>
+        <path>../CmdPanels/LocBinaryOnOff.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <P>CstatH-SHe:FV309</P>
@@ -1950,47 +1950,6 @@ $(pv_value)</tooltip>
     <wuid>-ac92004:165a3a72ef8:-4b5d</wuid>
     <x>455</x>
     <y>199</y>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <auto_size>true</auto_size>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205" />
-      </background_color>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>2</border_width>
-      <enabled>true</enabled>
-      <font>
-        <fontdata fontName="Sans" height="8" style="0" pixels="false" />
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92" />
-      </foreground_color>
-      <height>15</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>Label Template_43</name>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <show_scrollbar>false</show_scrollbar>
-      <text>FV050</text>
-      <tooltip></tooltip>
-      <transparent>true</transparent>
-      <vertical_alignment>1</vertical_alignment>
-      <visible>true</visible>
-      <widget_type>Label</widget_type>
-      <width>32</width>
-      <wrap_words>true</wrap_words>
-      <wuid>-ac92004:165a3a72ef8:-4b5c</wuid>
-      <x>7</x>
-      <y>0</y>
-    </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
       <actions hook="true" hook_all="false">
         <action type="OPEN_DISPLAY">
@@ -2097,6 +2056,47 @@ $(pv_value)</tooltip>
       <wuid>-ac92004:165a3a72ef8:-4b5b</wuid>
       <x>0</x>
       <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <auto_size>true</auto_size>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205" />
+      </background_color>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <fontdata fontName="Sans" height="8" style="0" pixels="false" />
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92" />
+      </foreground_color>
+      <height>15</height>
+      <horizontal_alignment>0</horizontal_alignment>
+      <name>Label Template_43</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_scrollbar>false</show_scrollbar>
+      <text>FV050</text>
+      <tooltip></tooltip>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Label</widget_type>
+      <width>32</width>
+      <wrap_words>true</wrap_words>
+      <wuid>-ac92004:165a3a72ef8:-4b5c</wuid>
+      <x>7</x>
+      <y>4</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -3136,47 +3136,6 @@ $(pv_value)</tooltip>
     <wuid>-ac92004:165a3a72ef8:-4b44</wuid>
     <x>1014</x>
     <y>497</y>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <auto_size>true</auto_size>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205" />
-      </background_color>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215" />
-      </border_color>
-      <border_style>0</border_style>
-      <border_width>2</border_width>
-      <enabled>true</enabled>
-      <font>
-        <fontdata fontName="Sans" height="8" style="0" pixels="false" />
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92" />
-      </foreground_color>
-      <height>15</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>Label Template_43</name>
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <show_scrollbar>false</show_scrollbar>
-      <text>FV060</text>
-      <tooltip></tooltip>
-      <transparent>true</transparent>
-      <vertical_alignment>1</vertical_alignment>
-      <visible>true</visible>
-      <widget_type>Label</widget_type>
-      <width>32</width>
-      <wrap_words>true</wrap_words>
-      <wuid>-ac92004:165a3a72ef8:-4b43</wuid>
-      <x>7</x>
-      <y>0</y>
-    </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.symbol.bool.BoolMonitorWidget" version="1.0.0">
       <actions hook="true" hook_all="false">
         <action type="OPEN_DISPLAY">
@@ -3283,6 +3242,47 @@ $(pv_value)</tooltip>
       <wuid>-ac92004:165a3a72ef8:-4b42</wuid>
       <x>0</x>
       <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <auto_size>true</auto_size>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205" />
+      </background_color>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <fontdata fontName="Sans" height="8" style="0" pixels="false" />
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92" />
+      </foreground_color>
+      <height>15</height>
+      <horizontal_alignment>0</horizontal_alignment>
+      <name>Label Template_43</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_scrollbar>false</show_scrollbar>
+      <text>FV060</text>
+      <tooltip></tooltip>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Label</widget_type>
+      <width>32</width>
+      <wrap_words>true</wrap_words>
+      <wuid>-ac92004:165a3a72ef8:-4b43</wuid>
+      <x>7</x>
+      <y>5</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">

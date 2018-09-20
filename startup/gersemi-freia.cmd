@@ -9,7 +9,7 @@ epicsEnvSet("AUTOSAVE_SYSM_PV_PREFIX","gersemi:")
 requireSnippet(userPreDriverConf-gersemi-freia.cmd, IP_ADDR=$(PLC_IPADDR))
 sleep 2
 requireSnippet(dbToLoad-gersemi-freia.cmd)
-#requireSnippet(gersemi-freia-preSaveRestore.cmd)
+requireSnippet(gersemi-freia-preSaveRestore.cmd)
 
 #############################################
 ## IOC initialization                      ##
@@ -17,6 +17,6 @@ requireSnippet(dbToLoad-gersemi-freia.cmd)
 
 iocInit
 
-#requireSnippet(gersemi-freia-postSaveRestore.cmd)
+requireSnippet(gersemi-freia-postSaveRestore.cmd)
 requireSnippet(userPostDriverConf-gersemi-freia.cmd)
 
