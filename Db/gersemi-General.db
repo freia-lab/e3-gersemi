@@ -305,3 +305,61 @@ record(bo, "CstatV-Ctrl:Archiving:On") {
   field(ZSV, "MINOR")
 }
 
+# Return He2 gas path switching Compressor/Gas Bag
+
+record (bo, "CstatV-RHtr:opMode:cmdSetVBtoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=2")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSetVBtoBaloon")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+record (bo, "CstatV-RHtr:opMode:cmdRstVBtoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=3")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSetVBtoCompr")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record (bo, "CstatV-RHtr:opMode:cmdSetCStoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=4")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSetCStoBaloon")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+record (bo, "CstatV-RHtr:opMode:cmdRstCStoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=5")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSetCStoCompr")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record (bo, "CstatV-RHtr:opMode:cmdSetM4KtoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=6")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSetM4KtoBaloon")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+record (bo, "CstatV-RHtr:opMode:cmdRstM4KtoBaloon") {
+  field (DTYP, "S7plc")
+  field (OUT, "@PLC:GERSEMI/0 T=BYTE B=7")
+  field (ZNAM, "Iddle")
+  field (ONAM, "CmdSetM4KtoCompr")
+  field (PINI, "NO")
+  field (HIGH, "0.5")
+  field (SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
