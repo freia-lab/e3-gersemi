@@ -644,7 +644,10 @@ $(pv_value)</tooltip>
             <step0>Not running</step0>
             <step1>Checking equipment</step1>
             <step2>Checking parameters</step2>
-            <step4>Doing measurements</step4>
+            <step4>Conditioning</step4>
+            <step6>Cool down</step6>
+            <step8>Standing by</step8>
+            <step10>Stop - waiting for FV641/FV640 to close</step10>
           </macros>
           <mode>6</mode>
           <description></description>
@@ -911,12 +914,12 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step4>Waiting for Yes</step4>
+              <step6>Cooling HX680 and HX683</step6>
+              <step8>Stop cooling</step8>
+              <step10>Wait for CV602 to close</step10>
+              <step12>Regulation</step12>
+              <step14>Stop - waiting for FV642 and FV680 to close</step14>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -1143,12 +1146,8 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step4>Regulation</step4>
+              <step6>Stop - waiting for CV602 and CV680 to close</step6>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -2339,8 +2338,9 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Waiting for selection of part to be cooled</step4>
-              <step6>Keeping cooled</step6>
+              <step4>Not isolated</step4>
+              <step6>Isolated</step6>
+              <step8>Pressure alarm - waiting for Ackn</step8>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -2566,8 +2566,9 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Waiting for selection of part(s)</step4>
-              <step6>Keeping at Set point temperature</step6>
+              <step4>Not isolated</step4>
+              <step6>Isolated</step6>
+              <step8>Pressure alarm - waiting for Ackn</step8>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -2835,8 +2836,13 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Waiting for selection of part to be cooled</step4>
-              <step6>Cooling...</step6>
+              <step4>Waiting for Yes/No</step4>
+              <step6>Waiting for stopping SQ9-SQ21</step6>
+              <step8>Waiting for stopping SQ5</step8>
+              <step10>Waiting for starting EH703</step10>
+              <step12>Waiting for LT600 to go below min.</step12>
+              <step14>Waiting for starting EH600</step14>
+              <step16>Stopping</step16>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -3062,8 +3068,13 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step6>Keeping cooled</step6>
-              <step20>4K operation in stopped state</step20>
+              <step4>Waiting for Yes/No</step4>
+              <step6>Waiting for stopping SQ10-SQ20</step6>
+              <step8>Waiting for stopping SQ6</step8>
+              <step10>Waiting for starting EH473</step10>
+              <step12>Waiting for LT600 to go below min.</step12>
+              <step14>Waiting for starting EH600</step14>
+              <step16>Stopping</step16>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -3289,15 +3300,12 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Waiting for switching to 2K exhaust to Kaeser</step4>
-              <step6>Waiting 2K pumps running. Press Accept to go on.</step6>
-              <step8>Waiting 10 s for closing CV552 and FV552.</step8>
-              <step12>Keeping cold</step12>
-              <step14>Stopping - waiting for PT101 to rise</step14>
-              <step16>Stopping - waiting 10s</step16>
-              <step18>Waiting for stopping 2K pumps. Press Accept to go on.</step18>
-              <step20>Stopping - step 20</step20>
-              <step30>Stopping - step 30</step30>
+              <step4>Waiting for Yes/No</step4>
+              <step6>Waiting for stopping S10-SQ20</step6>
+              <step8>Waiting for stopping SQ7</step8>
+              <step10>Waiting for starting EH765</step10>
+              <step12>Waiting for LI660/LI670/LI680 to go below min.</step12>
+              <step14>Stopping</step14>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -3564,7 +3572,7 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step2>Checking equipment</step2>
-              <step4>Started LN2 flow</step4>
+              <step4>Started LN2 flow. Waiting for TT704 or TT706 to go below Cool down temp.</step4>
               <step6>LN2 circulation</step6>
               <step8>Waiting for CV700 to close</step8>
             </macros>
@@ -3792,7 +3800,7 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Started LN2 flow</step4>
+              <step4>Started LN2 flow.  Waiting for TT752 or TT749 to go below Cool down temp.</step4>
               <step6>LN2 circulation</step6>
               <step8>Waiting for CV740 to close</step8>
             </macros>
@@ -5236,11 +5244,12 @@ $(pv_value)</tooltip>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
               <step4>Waiting for Yes</step4>
-              <step6>Waiting for local Ackn or Stop</step6>
+              <step6>Waiting for Accept or Stop</step6>
               <step8>Cooling cavity</step8>
               <step10>End of cool-down</step10>
               <step12>Prepare to regulate</step12>
               <step14>Regulating (intermittent mode)</step14>
+              <step15>New step</step15>
               <step16>Cryostat filling</step16>
               <step18>End of filling</step18>
               <step20>Stop: waiting for CV602 to be closed</step20>
@@ -6237,7 +6246,7 @@ $(pv_value)</tooltip>
               <step12>Flashing with GHe</step12>
               <step14>Leak test at high pressure</step14>
               <step16>Waiting for FV600 to close</step16>
-              <step18>He conditioning stopped</step18>
+              <step18>He conditioning stopped - waiting for CV582 to close</step18>
               <step20>Waiting for P090 to stop</step20>
               <step22>Test failed - press Ackn</step22>
               <step24>Test failed - press Ackn</step24>
@@ -6783,7 +6792,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>false</visible>
+        <visible>true</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>-21b2ca35:148a7786110:374a</wuid>
@@ -6864,7 +6873,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>true</visible>
+        <visible>false</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>-21b2ca35:148a7786110:3c6e</wuid>
