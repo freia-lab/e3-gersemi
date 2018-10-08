@@ -56,6 +56,7 @@ record (calc, "CstatV-Ctrl:CV5203:OCcmd") {
        field (INPC, "Cryo-Dwr:Dwr:StCV5203_Slctd CA")
        field (CALC, "(!C)&&B||(C&&A)")
        field (FLNK, "Cryo-Dwr:CV-5203:OpenClsCmd.PROC CA")
+       field (SDIS, "Cryo-Dwr:CV-5203:OpenClsCmd.VAL CA NMS") # to avoid locking it at 1 
 }
 
 record (calcout, "CstatV-Ctrl:CV5203:OCcmd-ackO") {
