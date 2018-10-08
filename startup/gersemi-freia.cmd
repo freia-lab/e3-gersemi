@@ -1,4 +1,4 @@
-#require autosave
+require autosave,5.7+
 
 epicsEnvSet("AUTOSAVE_SYSM_PV_PREFIX","gersemi:")
 
