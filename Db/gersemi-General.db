@@ -50,13 +50,21 @@ record (bi, "CstatV-Ctrl:CV5203:cClose") {
   field (SCAN, "I/O Intr")
 }
 
-record (calc, "CstatV-Ctrl:CV5203:OCcmd") {
+record (calcout, "CstatV-Ctrl:CV5203:OCcmd") {
        field (INPA, "CstatV-Ctrl:CV5203:cClose")
        field (INPB, "CstatV-Ctrl:CV5203:cOpen")
        field (INPC, "Cryo-Dwr:Dwr:StCV5203_Slctd CA")
        field (CALC, "(!C)&&B||(C&&A)")
-       field (FLNK, "Cryo-Dwr:CV-5203:OpenClsCmd.PROC CA")
-       field (SDIS, "Cryo-Dwr:CV-5203:OpenClsCmd.VAL CA NMS") # to avoid locking it at 1 
+       field (OOPT, "On Change")
+#       field (FLNK, "Cryo-Dwr:CV-5203:OpenClsCmd.PROC CA")
+       field (OUT, "Cryo-Dwr:CV-5203:OpenClsCmd.PROC CA")
+#       field (SDIS, "Cryo-Dwr:CV-5203:OpenClsCmd.VAL CA NMS") # to avoid locking it at 1 
+}
+
+record(fanout, CstatV-Ctrl:CV5203:OCcmd-ackFO) {
+       field (DESC, "Started by Cryo-Dwr:CV-5203:OpenClsCmd")
+       field (LNK1, "CstatV-Ctrl:CV5203:OCcmd-ackO")
+       field (LNK2, "CstatV-Ctrl:CV5203:OCcmd-ackC")
 }
 
 record (calcout, "CstatV-Ctrl:CV5203:OCcmd-ackO") {
@@ -84,12 +92,12 @@ record (calcout, "CstatV-Ctrl:CV5203:OCcmd-ackC") {
 
 # Help records to produce the pulsed bo
 
-record (bo, "ackO-x") {
+record (bo, "CstatV-Ctrl:CV5203:ackO-x") {
        field (DOL, "1")
        field (OMSL, "closed_loop")
        field (OUT, "CstatV-Ctrl:CV5203:ackOpen.VAL PP NMS")
 }
-record (bo, "ackC-x") {
+record (bo, "CstatV-Ctrl:CV5203:ackC-x") {
        field (DOL, "1")
        field (OMSL, "closed_loop")
        field (OUT, "CstatV-Ctrl:CV5203:ackClose.VAL PP NMS")
