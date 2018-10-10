@@ -28,6 +28,9 @@ record (bi, "CstatV-Ctrl:opMode:sLocal") {
   field (SCAN, "I/O Intr")
 }
 
+###############################################
+# Operation of dewar valve from Gersemi
+#
 record (bi, "CstatV-Ctrl:CV5203:cOpen") {
   field (DTYP, "S7plc")
   field (INP,  "@PLC:GERSEMI/1 T=BYTE B=0")
@@ -55,39 +58,24 @@ record (calcout, "CstatV-Ctrl:CV5203:OCcmd") {
        field (INPB, "CstatV-Ctrl:CV5203:cOpen")
        field (INPC, "Cryo-Dwr:Dwr:StCV5203_Slctd CA")
        field (CALC, "(!C)&&B||(C&&A)")
-       field (OOPT, "On Change")
-#       field (FLNK, "Cryo-Dwr:CV-5203:OpenClsCmd.PROC CA")
-       field (OUT, "Cryo-Dwr:CV-5203:OpenClsCmd.PROC CA")
-#       field (SDIS, "Cryo-Dwr:CV-5203:OpenClsCmd.VAL CA NMS") # to avoid locking it at 1 
+       field (OOPT, "Transition To Non-zero")
+       field (FLNK, "CstatV-Ctrl:CV5203:NoActAck")
+       field (OUT, "Cryo-Dwr:CV-5203:OpenClsCmd-DOL.PROC CA")
+}
+# Send ackn in case there was a command sent that did not required any action
+record (calcout, "CstatV-Ctrl:CV5203:NoActAck") {
+       field (INPA, "CstatV-Ctrl:CV5203:cClose")
+       field (INPB, "CstatV-Ctrl:CV5203:cOpen")
+       field (INPC, "Cryo-Dwr:Dwr:StCV5203_Slctd CA")
+       field (CALC, "(C&&B)||((!C)&&A)")
+       field (OOPT, "Transition To Non-zero")
+       field (OUT, "CstatV-Ctrl:CV5203:OCcmd-ackFO.PROC")
 }
 
 record(fanout, CstatV-Ctrl:CV5203:OCcmd-ackFO) {
        field (DESC, "Started by Cryo-Dwr:CV-5203:OpenClsCmd")
-       field (LNK1, "CstatV-Ctrl:CV5203:OCcmd-ackO")
-       field (LNK2, "CstatV-Ctrl:CV5203:OCcmd-ackC")
-}
-
-record (calcout, "CstatV-Ctrl:CV5203:OCcmd-ackO") {
-       field (INPA, "Cryo-Dwr:CV-5203:OpenClsCmd")
-       field (INPB, "CstatV-Ctrl:CV5203:cOpen")
-       field (CALC, "A&&B")
-       field (SDIS, "Cryo-Dwr:CV-5203:OpenClsCmd.OMSL")
-       field (DISV, "0")
-       field (OOPT, "Transition To Non-zero")
-       field (FLNK, "CstatV-Ctrl:CV5203:OCcmd-ackC")
-       field (PINI, "YES")
-       field (OUT, "CstatV-Ctrl:CV5203:ackO-x.PROC")
-}
-
-record (calcout, "CstatV-Ctrl:CV5203:OCcmd-ackC") {
-       field (INPA, "Cryo-Dwr:CV-5203:OpenClsCmd")
-       field (INPB, "CstatV-Ctrl:CV5203:cClose")
-       field (CALC, "A&&B")
-       field (SDIS, "Cryo-Dwr:CV-5203:OpenClsCmd.OMSL")
-       field (DISV, "0")
-       field (OOPT, "Transition To Non-zero")
-       field (PINI, "YES")
-       field (OUT, "CstatV-Ctrl:CV5203:ackC-x.PROC")
+       field (LNK1, "CstatV-Ctrl:CV5203:ackO-x")
+       field (LNK2, "CstatV-Ctrl:CV5203:ackC-x")
 }
 
 # Help records to produce the pulsed bo
@@ -121,7 +109,8 @@ record (bo, "CstatV-Ctrl:CV5203:ackClose") {
   field (PINI, "NO")
   field (HIGH, "0.5")
 }
-
+# End of CV5203 related records
+#################################################################
 
 record (longin, "CstatV-Ctrl:HeartBeat:sHBcounter") {
   field (DTYP, "S7plc")
