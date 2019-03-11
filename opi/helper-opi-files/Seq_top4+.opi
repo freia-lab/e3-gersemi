@@ -10,7 +10,7 @@
   <background_color>
     <color name="IO Border" red="215" green="215" blue="215" />
   </background_color>
-  <boy_version>5.1.0.201710241501</boy_version>
+  <boy_version>5.1.0</boy_version>
   <foreground_color>
     <color name="IO Grid" red="215" green="215" blue="215" />
   </foreground_color>
@@ -129,7 +129,7 @@ $(pv_value)</tooltip>
         <pv_name>$(pv_name)</pv_name>
         <value>1</value>
         <timeout>10</timeout>
-        <confirm_message></confirm_message>
+        <confirm_message>$(STOP_MSG)</confirm_message>
         <description>Stop the sequence</description>
       </action>
     </actions>
@@ -239,7 +239,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>19</height>
+    <height>15</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_1</name>
     <rules />
@@ -256,7 +256,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>42</width>
+    <width>35</width>
     <wrap_words>true</wrap_words>
     <wuid>7227629f:14836633357:-7931</wuid>
     <x>20</x>
@@ -280,7 +280,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>19</height>
+    <height>15</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_2</name>
     <rules />
@@ -297,7 +297,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>101</width>
+    <width>81</width>
     <wrap_words>true</wrap_words>
     <wuid>7227629f:14836633357:-7921</wuid>
     <x>320</x>

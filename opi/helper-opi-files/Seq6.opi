@@ -53,6 +53,7 @@
     <height>188</height>
     <macros>
       <include_parent_macros>true</include_parent_macros>
+      <STOP_MSG>!  !  !  !  !  Don't forget to CLOSE LN2 inlet valve !  !  !  !  ! </STOP_MSG>
     </macros>
     <name>Linking Container Template</name>
     <opi_file>Seq_top4+.opi</opi_file>
@@ -90,7 +91,7 @@
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>24</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_11</name>
     <rules />
@@ -107,7 +108,7 @@
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>223</width>
+    <width>178</width>
     <wrap_words>true</wrap_words>
     <wuid>285b9d1:16035c331a6:-75bb</wuid>
     <x>60</x>
@@ -297,7 +298,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_7</name>
       <rules />
@@ -314,7 +315,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>129</width>
+      <width>101</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-5181</wuid>
       <x>0</x>
@@ -338,7 +339,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_8</name>
       <rules />
@@ -355,7 +356,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>237</width>
+      <width>190</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-5180</wuid>
       <x>1</x>
@@ -379,7 +380,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_9</name>
       <rules />
@@ -396,7 +397,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>233</width>
+      <width>186</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-517f</wuid>
       <x>0</x>
@@ -792,7 +793,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_12</name>
       <rules />
@@ -809,7 +810,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>118</width>
+      <width>93</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-5178</wuid>
       <x>0</x>
@@ -1000,7 +1001,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_7</name>
       <rules />
@@ -1017,7 +1018,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>129</width>
+      <width>101</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-4f43</wuid>
       <x>0</x>
@@ -1041,7 +1042,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_8</name>
       <rules />
@@ -1058,7 +1059,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>237</width>
+      <width>190</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-4f42</wuid>
       <x>1</x>
@@ -1082,7 +1083,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_9</name>
       <rules />
@@ -1099,7 +1100,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>233</width>
+      <width>186</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-4f41</wuid>
       <x>0</x>
@@ -1495,7 +1496,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_12</name>
       <rules />
@@ -1512,7 +1513,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>118</width>
+      <width>93</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-4f3a</wuid>
       <x>0</x>
@@ -1703,7 +1704,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_7</name>
       <rules />
@@ -1720,7 +1721,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>129</width>
+      <width>101</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-4f0c</wuid>
       <x>0</x>
@@ -1744,7 +1745,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_8</name>
       <rules />
@@ -1761,7 +1762,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>237</width>
+      <width>190</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-4f0b</wuid>
       <x>1</x>
@@ -1785,7 +1786,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_9</name>
       <rules />
@@ -1802,7 +1803,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>233</width>
+      <width>186</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-4f0a</wuid>
       <x>0</x>
@@ -2198,7 +2199,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Text Fg" red="0" green="32" blue="92" />
       </foreground_color>
-      <height>24</height>
+      <height>20</height>
       <horizontal_alignment>0</horizontal_alignment>
       <name>Label Template_12</name>
       <rules />
@@ -2215,7 +2216,7 @@ $(pv_value)</tooltip>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>118</width>
+      <width>93</width>
       <wrap_words>true</wrap_words>
       <wuid>-65cbc3bc:16073585ee5:-4f03</wuid>
       <x>0</x>
@@ -2364,7 +2365,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>24</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_1</name>
     <rules />
@@ -2381,7 +2382,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>86</width>
+    <width>66</width>
     <wrap_words>true</wrap_words>
     <wuid>-124c9ca7:16396352503:-7538</wuid>
     <x>60</x>
