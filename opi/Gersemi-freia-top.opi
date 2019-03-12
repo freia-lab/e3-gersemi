@@ -4096,7 +4096,7 @@ shield cooling</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>110</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -4833,7 +4833,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -4997,26 +4997,31 @@ $(pv_value)</tooltip>
               <step2>Checking parameters</step2>
               <step4>Select LHe recovery path then press Yes</step4>
               <step6>Select LHe source then press Accept</step6>
+              <step7>Waiting for Yes</step7>
               <step8>Prepare to regulate (dewar)</step8>
-              <step10>Regulation mode</step10>
+              <step10>Regulation mode (dewar)</step10>
+              <step11>Intermittent mode - wait for CV600 to close and LT600&lt;LT600 Min</step11>
               <step12>Waiting for FV602 to close</step12>
+              <step13>Waiting for LT600 &lt; LT600 Min</step13>
               <step14>Waiting for FV602 to open</step14>
-              <step16>Cool down TL010</step16>
-              <step18>4K tank filling</step18>
-              <step20>End of filling</step20>
+              <step16>Cool down TL010 - waiting for TT602 or TT614 to be below TT Cool-down</step16>
+              <step18>4K tank filling until LT600 &gt; LT600 Max</step18>
+              <step20>End of filling - waiting for LT600 &lt; LT600 Min</step20>
               <step22>Waiting for FV602 to close</step22>
               <step24>Waiting for Yes/No</step24>
               <step26>Waiting for CV590 to close</step26>
               <step28>Waiting for CV600 to close</step28>
               <step30>4K tank outgasing</step30>
-              <step32>Preparation to regulate</step32>
+              <step32>Preparation to regulate - waiting for CV580 to reach P_CV580 and CV5203 to open</step32>
               <step34>Regulation mode</step34>
-              <step36>Liquifier valve closing</step36>
+              <step35>Wait for CV600 to close and LT600 &lt; LT600 Min</step35>
+              <step36>Liquifier valve closing - waiting for CV5203 to close</step36>
               <step38>Waiting for CV600 to close</step38>
               <step40>4K tank outgasing</step40>
-              <step42>Cool down TL010</step42>
-              <step44>4K tank filling</step44>
-              <step46>End of filling</step46>
+              <step41>Wait for LT600 &lt; LT600 Min</step41>
+              <step42>Cool down TL010 - wait until TT602 or TT614 to be below TT Cool-down and CV5203 open 100%</step42>
+              <step44>4K tank filling - wait until LT600 &gt; LT600 Max</step44>
+              <step46>End of filling - waiting for LT600 &lt; LT600 Min</step46>
               <step48>Waiting for closing CV5203</step48>
             </macros>
             <mode>6</mode>
@@ -6793,7 +6798,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>true</visible>
+        <visible>false</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>-21b2ca35:148a7786110:374a</wuid>
@@ -6955,7 +6960,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>false</visible>
+        <visible>true</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>-2e82a095:14e62aaf961:-df5</wuid>
