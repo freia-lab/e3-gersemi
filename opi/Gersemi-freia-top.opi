@@ -251,7 +251,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>36</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <nr>20</nr>
@@ -414,12 +414,18 @@ $(pv_value)</tooltip>
             <step0>Not running</step0>
             <step1>Checking parameters</step1>
             <step2>Checking equipment</step2>
-            <step4>Pumping down</step4>
-            <step6>Keeping vacuum</step6>
-            <step8>Filling up with GHe</step8>
-            <step10>Keeping overpressure</step10>
-            <step12>Vacuum leak - waiting for Ack </step12>
-            <step14>Overpressure leak -waiting for Ack</step14>
+            <step4>Waiting for FV602 to close</step4>
+            <step6>Waiting for Yes/No</step6>
+            <step8>Waiting for Yes/No</step8>
+            <step10>Isolate VB tank - waiting for CV601 to close</step10>
+            <step12>Cool down L021 - waiting for TT645 or TT590 &lt;  P_SP_TT645</step12>
+            <step14>LHe transfer - waiting for LT590 &gt; P_SP_LT590 or LI670/680 &lt; P_SP_LI670/680</step14>
+            <step16>LHe transfer - waiting for LI670/680 &lt; P_SP_LI670/680 or LT590 &gt; P_SP_LT590</step16>
+            <step18>Cryostat empty - Waiting for decision if to change the P_SP_LI670/680 level or finish</step18>
+            <step20>Dewar full - waiting for decision if to change the P_SP_LI670/680 level or stop</step20>
+            <step22>Waiting for setting new level and confirmation by pressing Yes</step22>
+            <step24>Waiting for setting new level and confirmation by pressing Yes</step24>
+            <step26>Stopping - waiting for FV641 to close</step26>
           </macros>
           <mode>6</mode>
           <description></description>
@@ -2635,7 +2641,7 @@ connected to He recovery</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>74</height>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -2675,7 +2681,7 @@ connected to He recovery</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -2837,9 +2843,6 @@ $(pv_value)</tooltip>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
-              <step4>Waiting for Yes/No</step4>
-              <step6>Waiting for stopping SQ9-SQ21</step6>
-              <step8>Waiting for stopping SQ5</step8>
               <step10>Waiting for starting EH703</step10>
               <step12>Waiting for LT600 to go below min.</step12>
               <step14>Waiting for starting EH600</step14>
@@ -4532,17 +4535,17 @@ $(pv_value)</tooltip>
               <step2>Checking equipment</step2>
               <step4>Waiting for Yes/No</step4>
               <step6>Waiting for Yes/No</step6>
-              <step8>Waiting for CV581 to be set</step8>
-              <step10>Waiting for FV581 and FV584 to close</step10>
-              <step12>Starting the pumps - waiting for Yes</step12>
+              <step8>Waiting for CV581 to be &gt;= P_CV581</step8>
+              <step10>Waiting for FV554 to close and FV555 to open</step10>
+              <step12>Waiting for the 2K pumps to be ready (should be running &gt; 15 min at full speed)</step12>
               <step14>Waiting for CV581 to close</step14>
               <step16>Waiting for FV581 and FV584 to close</step16>
               <step18>Pumping 2K tank</step18>
               <step20>2K tank pressure regulated</step20>
-              <step22>Stop pumping</step22>
-              <step24>Pressure control</step24>
-              <step26>Wait for PT584 to go above limit</step26>
-              <step28>Stop filling</step28>
+              <step22>Stop pumping - waiting for FV582 to close</step22>
+              <step24>Waiting for 2K pumps to stop</step24>
+              <step26>Ventilating 2K pumps - waiting for PT584 to go above limit (around atmospheric pressure)</step26>
+              <step28>Stopping - waiting for FV556 to close, for CV581 &gt; P_CV581 and SQ13 mini seq to be in state 2</step28>
             </macros>
             <mode>6</mode>
             <description></description>
@@ -5087,7 +5090,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -5250,14 +5253,13 @@ $(pv_value)</tooltip>
               <step1>Checking equipment</step1>
               <step2>Checking parameters</step2>
               <step4>Waiting for Yes</step4>
-              <step6>Waiting for Accept or Stop</step6>
-              <step8>Cooling cavity</step8>
-              <step10>End of cool-down</step10>
-              <step12>Prepare to regulate</step12>
-              <step14>Regulating (intermittent mode)</step14>
-              <step15>New step</step15>
-              <step16>Cryostat filling</step16>
-              <step18>End of filling</step18>
+              <step8>Cooling cavity - wait for reaching LI660/LI670 Max</step8>
+              <step10>End of cool-down - wait for CV601 to close</step10>
+              <step12>Intermittent mode - wait for reaching LI660/LI670 Min</step12>
+              <step14>Regulating (PID mode)</step14>
+              <step15>Go to step 14</step15>
+              <step16>Cryostat filling - wait for reaching LI660/LI670 Max</step16>
+              <step18>Intermittent mode - wait for reaching LI660/LI670 Min</step18>
               <step20>Stop: waiting for CV602 to be closed</step20>
             </macros>
             <mode>6</mode>
@@ -5322,7 +5324,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -5486,9 +5488,10 @@ $(pv_value)</tooltip>
               <step2>Checking parameters</step2>
               <step4>Ready to fill</step4>
               <step6>Regulation (PID)</step6>
-              <step8>Start filling</step8>
-              <step10>End of filling</step10>
-              <step12>Stop</step12>
+              <step7>Intermittent mode - waiting for reaching LI660/670 Min</step7>
+              <step8>Filling - waiting for reaching LI660/670 Max</step8>
+              <step10>Intermittent mode - waiting for reaching LI660/670 Min</step10>
+              <step12>Stopping - waiting for FV642/643 and CV602 to close</step12>
             </macros>
             <mode>6</mode>
             <description></description>
