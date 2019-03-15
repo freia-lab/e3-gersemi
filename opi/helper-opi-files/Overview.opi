@@ -2653,7 +2653,7 @@ $(pv_value)</tooltip>
     <name>Text Update Template</name>
     <precision>1</precision>
     <precision_from_pv>false</precision_from_pv>
-    <pv_name>CstatH-Vac:PT016:sRdV</pv_name>
+    <pv_name>CstatV-Vac:PT040:sRdV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
@@ -2712,7 +2712,7 @@ $(pv_value)</tooltip>
     <name>Text Update Template</name>
     <precision>1</precision>
     <precision_from_pv>false</precision_from_pv>
-    <pv_name>CstatH-Vac:PT014:sRdV</pv_name>
+    <pv_name>CstatV-Vac:PT041:sRdV</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
@@ -2769,7 +2769,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <value>pvStr0</value>
         </exp>
-        <pv trig="true">CstatH-Vac:PT014:sRdV.NAME</pv>
+        <pv trig="true">CstatV-Vac:PT041:sRdV.NAME</pv>
       </rule>
     </rules>
     <scale_options>
@@ -2817,7 +2817,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <value>pvStr0</value>
         </exp>
-        <pv trig="true">CstatH-Vac:PT016:sRdV.NAME</pv>
+        <pv trig="true">CstatV-Vac:PT040:sRdV.NAME</pv>
       </rule>
     </rules>
     <scale_options>
