@@ -10,7 +10,7 @@
   <background_color>
     <color name="IO Border" red="215" green="215" blue="215" />
   </background_color>
-  <boy_version>5.1.0.201710241501</boy_version>
+  <boy_version>5.1.0</boy_version>
   <foreground_color>
     <color red="150" green="150" blue="150" />
   </foreground_color>
@@ -90,7 +90,7 @@
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_15</name>
     <rules />
@@ -107,7 +107,7 @@
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>88</width>
+    <width>65</width>
     <wrap_words>true</wrap_words>
     <wuid>-2e71eea6:160448bf73f:-7b45</wuid>
     <x>30</x>
@@ -205,7 +205,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_13</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_LI680_max</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -255,7 +255,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_18</name>
     <rules />
@@ -272,7 +272,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>84</width>
+    <width>61</width>
     <wrap_words>true</wrap_words>
     <wuid>-2e71eea6:160448bf73f:-7b28</wuid>
     <x>30</x>
@@ -370,7 +370,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_16</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_PT660</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -420,7 +420,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_26</name>
     <rules />
@@ -437,7 +437,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>94</width>
+    <width>70</width>
     <wrap_words>true</wrap_words>
     <wuid>-65cbc3bc:16073585ee5:-6363</wuid>
     <x>30</x>
@@ -535,7 +535,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_31</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_TT685_max</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -585,7 +585,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_28</name>
     <rules />
@@ -602,7 +602,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>95</width>
+    <width>70</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5c77</wuid>
     <x>30</x>
@@ -700,7 +700,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_33</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_PT660_max</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -750,7 +750,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_29</name>
     <rules />
@@ -767,7 +767,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>95</width>
+    <width>70</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5c5f</wuid>
     <x>30</x>
@@ -865,7 +865,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_34</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_PT681_max</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -915,7 +915,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_30</name>
     <rules />
@@ -932,7 +932,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>59</width>
+    <width>42</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5c47</wuid>
     <x>30</x>
@@ -1030,7 +1030,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_35</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV601</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -1080,7 +1080,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_31</name>
     <rules />
@@ -1097,7 +1097,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>59</width>
+    <width>42</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5c2f</wuid>
     <x>30</x>
@@ -1195,7 +1195,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_36</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV602</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -1245,7 +1245,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_32</name>
     <rules />
@@ -1262,7 +1262,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>59</width>
+    <width>42</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5c24</wuid>
     <x>30</x>
@@ -1360,7 +1360,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_37</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV581</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -1410,7 +1410,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_33</name>
     <rules />
@@ -1427,7 +1427,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>59</width>
+    <width>42</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5c19</wuid>
     <x>30</x>
@@ -1525,7 +1525,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_38</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV583</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -1575,7 +1575,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_34</name>
     <rules />
@@ -1592,7 +1592,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>59</width>
+    <width>42</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5c0e</wuid>
     <x>30</x>
@@ -1690,7 +1690,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_39</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV680</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -1740,7 +1740,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_35</name>
     <rules />
@@ -1757,7 +1757,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>84</width>
+    <width>61</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5b63</wuid>
     <x>30</x>
@@ -1855,7 +1855,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_40</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_PT681</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -1905,7 +1905,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_36</name>
     <rules />
@@ -1922,7 +1922,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>83</width>
+    <width>61</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5b47</wuid>
     <x>30</x>
@@ -2020,7 +2020,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_41</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_FT581</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -2070,7 +2070,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_37</name>
     <rules />
@@ -2087,7 +2087,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>83</width>
+    <width>61</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5b2b</wuid>
     <x>30</x>
@@ -2185,7 +2185,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_42</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_FT583</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -2235,7 +2235,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_38</name>
     <rules />
@@ -2252,7 +2252,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>83</width>
+    <width>61</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5b0f</wuid>
     <x>365</x>
@@ -2350,7 +2350,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_43</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_TT680</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -2400,7 +2400,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_39</name>
     <rules />
@@ -2417,7 +2417,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>52</width>
+    <width>41</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5afb</wuid>
     <x>30</x>
@@ -2515,7 +2515,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_44</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_DeltaL</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -2565,7 +2565,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_40</name>
     <rules />
@@ -2582,7 +2582,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>83</width>
+    <width>66</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5ae3</wuid>
     <x>30</x>
@@ -2680,7 +2680,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_45</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_dT_o_dL_max</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -2730,7 +2730,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_41</name>
     <rules />
@@ -2747,7 +2747,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>81</width>
+    <width>64</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5ad8</wuid>
     <x>30</x>
@@ -2845,7 +2845,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_46</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_dT_o_dt_max</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -2895,7 +2895,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_42</name>
     <rules />
@@ -2912,7 +2912,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>82</width>
+    <width>60</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5ab4</wuid>
     <x>365</x>
@@ -3010,7 +3010,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_47</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_LT683</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
@@ -3060,7 +3060,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color name="IO Text Fg" red="0" green="32" blue="92" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label Template_43</name>
     <rules />
@@ -3077,7 +3077,7 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>82</width>
+    <width>60</width>
     <wrap_words>true</wrap_words>
     <wuid>559cd155:160b66a58c2:-5a9c</wuid>
     <x>365</x>
@@ -3175,7 +3175,7 @@ $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Text Update Template_48</name>
     <precision>0</precision>
-    <precision_from_pv>false</precision_from_pv>
+    <precision_from_pv>true</precision_from_pv>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_LT682</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
