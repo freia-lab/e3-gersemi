@@ -251,7 +251,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>36</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <nr>20</nr>
@@ -308,7 +308,7 @@ $(pv_value)</tooltip>
       </off_color>
       <off_label></off_label>
       <on_color>
-        <color name="IO PV ON" red="0" green="0" blue="225" />
+        <color name="IO 6-100K line" red="255" green="153" blue="0" />
       </on_color>
       <on_label></on_label>
       <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
@@ -373,7 +373,7 @@ $(pv_value)</tooltip>
       </off_color>
       <off_label></off_label>
       <on_color>
-        <color name="IO PV ON" red="0" green="0" blue="225" />
+        <color name="IO OK" red="0" green="255" blue="0" />
       </on_color>
       <on_label></on_label>
       <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
@@ -489,7 +489,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>35</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -545,7 +545,7 @@ $(pv_value)</tooltip>
       </off_color>
       <off_label></off_label>
       <on_color>
-        <color name="IO PV ON" red="0" green="0" blue="225" />
+        <color name="IO 6-100K line" red="255" green="153" blue="0" />
       </on_color>
       <on_label></on_label>
       <pv_name>$(C)-Ctrl:SQ14:sStopping</pv_name>
@@ -610,7 +610,7 @@ $(pv_value)</tooltip>
       </off_color>
       <off_label></off_label>
       <on_color>
-        <color name="IO PV ON" red="0" green="0" blue="225" />
+        <color name="IO OK" red="0" green="255" blue="0" />
       </on_color>
       <on_label></on_label>
       <pv_name>$(C)-Ctrl:SQ14:sRun</pv_name>
@@ -758,7 +758,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>36</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <nr>15</nr>
@@ -815,7 +815,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
@@ -880,7 +880,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
@@ -990,7 +990,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>36</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <nr>16</nr>
@@ -1047,7 +1047,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
@@ -1112,7 +1112,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
@@ -1218,7 +1218,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>36</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <nr>17</nr>
@@ -1275,7 +1275,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
@@ -1340,7 +1340,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
@@ -1450,7 +1450,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>36</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <nr>18</nr>
@@ -1507,7 +1507,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
@@ -1572,7 +1572,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
@@ -1683,7 +1683,7 @@ level and pressure at 2 K</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>36</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <nr>19</nr>
@@ -1740,7 +1740,7 @@ level and pressure at 2 K</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
@@ -1805,7 +1805,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
@@ -1916,7 +1916,7 @@ cooling</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -1972,7 +1972,7 @@ cooling</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ4:sStopping</pv_name>
@@ -2037,7 +2037,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ4:sRun</pv_name>
@@ -2143,7 +2143,7 @@ $(pv_value)</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>40</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -2239,7 +2239,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ24:sStopping</pv_name>
@@ -2304,7 +2304,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ24:sRun</pv_name>
@@ -2467,7 +2467,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ25:sStopping</pv_name>
@@ -2532,7 +2532,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ25:sRun</pv_name>
@@ -2641,7 +2641,7 @@ connected to He recovery</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>74</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -2737,7 +2737,7 @@ connected to He recovery</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ21:sStopping</pv_name>
@@ -2802,7 +2802,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ21:sRun</pv_name>
@@ -2910,7 +2910,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -2966,7 +2966,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ22:sStopping</pv_name>
@@ -3031,7 +3031,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ22:sRun</pv_name>
@@ -3142,7 +3142,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -3198,7 +3198,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ23:sStopping</pv_name>
@@ -3263,7 +3263,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ23:sRun</pv_name>
@@ -3414,7 +3414,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -3470,7 +3470,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ5:sStopping</pv_name>
@@ -3535,7 +3535,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ5:sRun</pv_name>
@@ -3642,7 +3642,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -3698,7 +3698,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ6:sStopping</pv_name>
@@ -3763,7 +3763,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ6:sRun</pv_name>
@@ -3870,7 +3870,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -3926,7 +3926,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ7:sStopping</pv_name>
@@ -3991,7 +3991,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ7:sRun</pv_name>
@@ -4099,7 +4099,7 @@ shield cooling</tooltip>
       <color red="192" green="192" blue="192" />
     </foreground_color>
     <height>110</height>
-    <lock_children>false</lock_children>
+    <lock_children>true</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
     </macros>
@@ -4196,7 +4196,7 @@ shield cooling</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
@@ -4261,7 +4261,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
@@ -4427,7 +4427,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
@@ -4492,7 +4492,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
@@ -4610,7 +4610,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -4666,7 +4666,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ8:sStopping</pv_name>
@@ -4731,7 +4731,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ8:sRun</pv_name>
@@ -4892,7 +4892,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ9:sStopping</pv_name>
@@ -4957,7 +4957,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ9:sRun</pv_name>
@@ -5146,7 +5146,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ10:sStopping</pv_name>
@@ -5211,7 +5211,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ10:sRun</pv_name>
@@ -5380,7 +5380,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ12:sStopping</pv_name>
@@ -5445,7 +5445,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ12:sRun</pv_name>
@@ -5596,7 +5596,7 @@ $(pv_value)</tooltip>
         <color red="0" green="0" blue="0" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -5652,7 +5652,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ3:sStopping</pv_name>
@@ -5717,7 +5717,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ3:sRun</pv_name>
@@ -5841,7 +5841,7 @@ Conditioning He circuits</tooltip>
         <color red="0" green="0" blue="0" />
       </foreground_color>
       <height>35</height>
-      <lock_children>true</lock_children>
+      <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
       </macros>
@@ -5897,7 +5897,7 @@ Conditioning He circuits</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ1:sStopping</pv_name>
@@ -5962,7 +5962,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ1:sRun</pv_name>
@@ -6142,7 +6142,7 @@ Conditioning He circuits</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO 6-100K line" red="255" green="153" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ2:sStopping</pv_name>
@@ -6207,7 +6207,7 @@ $(pv_value)</tooltip>
         </off_color>
         <off_label></off_label>
         <on_color>
-          <color name="IO PV ON" red="0" green="0" blue="225" />
+          <color name="IO OK" red="0" green="255" blue="0" />
         </on_color>
         <on_label></on_label>
         <pv_name>$(C)-Ctrl:SQ2:sRun</pv_name>
@@ -6801,7 +6801,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>false</visible>
+        <visible>true</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>-21b2ca35:148a7786110:374a</wuid>
@@ -6963,7 +6963,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>true</visible>
+        <visible>false</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1594</width>
         <wuid>-2e82a095:14e62aaf961:-df5</wuid>
