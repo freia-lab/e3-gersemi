@@ -1486,138 +1486,6 @@ $(pv_value)</tooltip>
     <x>621</x>
     <y>108</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>../CmdPanels/CstatV-PID.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <PID>$(name)</PID>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>CstatV-SHe:TIC371</name>
-    <push_action_index>0</push_action_index>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules>
-      <rule name="Border color" prop_id="border_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>
-            <color name="Minor" red="255" green="255" blue="0" />
-          </value>
-        </exp>
-        <pv trig="true">$(name):sAuto</pv>
-      </rule>
-      <rule name="Border style" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>1</value>
-        </exp>
-        <pv trig="true">$(name):sAuto</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>TIC371</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>70</width>
-    <wuid>65090fd1:14e6909c5fc:272a</wuid>
-    <x>659</x>
-    <y>393</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>../CmdPanels/CstatV-PID.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <PID>$(name)</PID>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>CstatV-SHe:TIC372</name>
-    <push_action_index>0</push_action_index>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules>
-      <rule name="Border color" prop_id="border_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>
-            <color name="Minor" red="255" green="255" blue="0" />
-          </value>
-        </exp>
-        <pv trig="true">$(name):sAuto</pv>
-      </rule>
-      <rule name="Border style" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>1</value>
-        </exp>
-        <pv trig="true">$(name):sAuto</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>TIC372</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>70</width>
-    <wuid>65090fd1:14e6909c5fc:275a</wuid>
-    <x>659</x>
-    <y>332</y>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <alarm_pulsing>false</alarm_pulsing>
@@ -1651,7 +1519,7 @@ $(pv_value)</tooltip>
     <line_width>1</line_width>
     <name>Polyline Template_6</name>
     <points>
-      <point x="657" y="405" />
+      <point x="670" y="405" />
       <point x="641" y="405" />
       <point x="641" y="457" />
       <point x="840" y="457" />
@@ -1675,72 +1543,6 @@ $(pv_value)</tooltip>
     <wuid>65090fd1:14e6909c5fc:2a42</wuid>
     <x>641</x>
     <y>405</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-    <actions hook="false" hook_all="false">
-      <action type="OPEN_DISPLAY">
-        <path>../CmdPanels/CstatV-PID.opi</path>
-        <macros>
-          <include_parent_macros>true</include_parent_macros>
-          <PID>$(name)</PID>
-        </macros>
-        <mode>6</mode>
-        <description></description>
-      </action>
-    </actions>
-    <border_alarm_sensitive>true</border_alarm_sensitive>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215" />
-    </border_color>
-    <border_style>6</border_style>
-    <border_width>2</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>30</height>
-    <image></image>
-    <name>CstatV-SHe:FIC380</name>
-    <push_action_index>0</push_action_index>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules>
-      <rule name="Border color" prop_id="border_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>
-            <color name="Minor" red="255" green="255" blue="0" />
-          </value>
-        </exp>
-        <pv trig="true">$(name):sAuto</pv>
-      </rule>
-      <rule name="Border style" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>1</value>
-        </exp>
-        <pv trig="true">$(name):sAuto</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <style>1</style>
-    <text>FIC380</text>
-    <toggle_button>false</toggle_button>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <visible>true</visible>
-    <widget_type>Action Button</widget_type>
-    <width>70</width>
-    <wuid>65090fd1:14e6909c5fc:2d19</wuid>
-    <x>659</x>
-    <y>213</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -1777,7 +1579,7 @@ $(pv_value)</tooltip>
     <points>
       <point x="641" y="148" />
       <point x="641" y="225" />
-      <point x="659" y="225" />
+      <point x="680" y="225" />
     </points>
     <pv_name></pv_name>
     <pv_value />
@@ -1794,7 +1596,7 @@ $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Polyline</widget_type>
-    <width>19</width>
+    <width>40</width>
     <wuid>65090fd1:14e6909c5fc:2de8</wuid>
     <x>641</x>
     <y>148</y>
@@ -4176,7 +3978,7 @@ $(pv_value)</tooltip>
     <line_width>1</line_width>
     <name>Polyline Template_13</name>
     <points>
-      <point x="659" y="343" />
+      <point x="670" y="343" />
       <point x="628" y="343" />
       <point x="628" y="675" />
       <point x="840" y="675" />
@@ -4610,6 +4412,507 @@ $(pv_value)</tooltip>
       <wrap_words>true</wrap_words>
       <wuid>-ac92004:165a3a72ef8:5592</wuid>
       <x>56</x>
+      <y>0</y>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fc>false</fc>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>30</height>
+    <lock_children>true</lock_children>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <L>FIC380</L>
+      <name>$(P)-SHe:$(L)</name>
+    </macros>
+    <name>_2</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <visible>true</visible>
+    <widget_type>Grouping Container</widget_type>
+    <width>70</width>
+    <wuid>-61ecf83f:16e022dd4b9:-4445</wuid>
+    <x>659</x>
+    <y>210</y>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>../CmdPanels/CstatV-PID.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <PID>$(name)</PID>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <fontdata fontName="Sans" height="8" style="1" pixels="false" />
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name></name>
+      <push_action_index>0</push_action_index>
+      <pv_name></pv_name>
+      <pv_value />
+      <rules>
+        <rule name="Border color" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="Minor" red="255" green="255" blue="0" />
+            </value>
+          </exp>
+          <pv trig="true">$(name):sAuto</pv>
+        </rule>
+        <rule name="Border style" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>1</value>
+          </exp>
+          <pv trig="true">$(name):sAuto</pv>
+        </rule>
+      </rules>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>$(L)</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-61ecf83f:16e022dd4b9:-4444</wuid>
+      <x>10</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <bit>-1</bit>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>0</border_width>
+      <bulb_border>0</bulb_border>
+      <bulb_border_color>
+        <color red="150" green="150" blue="150" />
+      </bulb_border_color>
+      <data_type>0</data_type>
+      <effect_3d>false</effect_3d>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <height>9</height>
+      <name>LED</name>
+      <off_color>
+        <color red="0" green="100" blue="0" />
+      </off_color>
+      <off_label>OFF</off_label>
+      <on_color>
+        <color red="0" green="255" blue="0" />
+      </on_color>
+      <on_label>ON</on_label>
+      <pv_name>$(name):sRegOn</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_boolean_label>false</show_boolean_label>
+      <square_led>true</square_led>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>LED</widget_type>
+      <width>10</width>
+      <wuid>-61ecf83f:16e022dd4b9:-4443</wuid>
+      <x>0</x>
+      <y>0</y>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fc>false</fc>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>30</height>
+    <lock_children>true</lock_children>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <L>TIC372</L>
+      <name>$(P)-SHe:$(L)</name>
+    </macros>
+    <name>_1</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <visible>true</visible>
+    <widget_type>Grouping Container</widget_type>
+    <width>70</width>
+    <wuid>-61ecf83f:16e022dd4b9:-442d</wuid>
+    <x>659</x>
+    <y>328</y>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>../CmdPanels/CstatV-PID.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <PID>$(name)</PID>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <fontdata fontName="Sans" height="8" style="1" pixels="false" />
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name></name>
+      <push_action_index>0</push_action_index>
+      <pv_name></pv_name>
+      <pv_value />
+      <rules>
+        <rule name="Border color" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="Minor" red="255" green="255" blue="0" />
+            </value>
+          </exp>
+          <pv trig="true">$(name):sAuto</pv>
+        </rule>
+        <rule name="Border style" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>1</value>
+          </exp>
+          <pv trig="true">$(name):sAuto</pv>
+        </rule>
+      </rules>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>$(L)</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-61ecf83f:16e022dd4b9:-442c</wuid>
+      <x>10</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <bit>-1</bit>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>0</border_width>
+      <bulb_border>0</bulb_border>
+      <bulb_border_color>
+        <color red="150" green="150" blue="150" />
+      </bulb_border_color>
+      <data_type>0</data_type>
+      <effect_3d>false</effect_3d>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <height>10</height>
+      <name>LED</name>
+      <off_color>
+        <color red="0" green="100" blue="0" />
+      </off_color>
+      <off_label>OFF</off_label>
+      <on_color>
+        <color red="0" green="255" blue="0" />
+      </on_color>
+      <on_label>ON</on_label>
+      <pv_name>$(name):sRegOn</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_boolean_label>false</show_boolean_label>
+      <square_led>true</square_led>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>LED</widget_type>
+      <width>10</width>
+      <wuid>-61ecf83f:16e022dd4b9:-442b</wuid>
+      <x>0</x>
+      <y>0</y>
+    </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <background_color>
+      <color red="240" green="240" blue="240" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fc>false</fc>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="192" green="192" blue="192" />
+    </foreground_color>
+    <height>30</height>
+    <lock_children>true</lock_children>
+    <macros>
+      <include_parent_macros>true</include_parent_macros>
+      <L>TIC371</L>
+      <name>$(P)-SHe:$(L)</name>
+    </macros>
+    <name>_2</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <show_scrollbar>false</show_scrollbar>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <visible>true</visible>
+    <widget_type>Grouping Container</widget_type>
+    <width>70</width>
+    <wuid>-61ecf83f:16e022dd4b9:-4415</wuid>
+    <x>659</x>
+    <y>390</y>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="false">
+        <action type="OPEN_DISPLAY">
+          <path>../CmdPanels/CstatV-PID.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <PID>$(name)</PID>
+          </macros>
+          <mode>6</mode>
+          <description></description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>6</border_style>
+      <border_width>2</border_width>
+      <enabled>true</enabled>
+      <font>
+        <fontdata fontName="Sans" height="8" style="1" pixels="false" />
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0" />
+      </foreground_color>
+      <height>30</height>
+      <image></image>
+      <name></name>
+      <push_action_index>0</push_action_index>
+      <pv_name></pv_name>
+      <pv_value />
+      <rules>
+        <rule name="Border color" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>
+              <color name="Minor" red="255" green="255" blue="0" />
+            </value>
+          </exp>
+          <pv trig="true">$(name):sAuto</pv>
+        </rule>
+        <rule name="Border style" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>1</value>
+          </exp>
+          <pv trig="true">$(name):sAuto</pv>
+        </rule>
+      </rules>
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <style>1</style>
+      <text>$(L)</text>
+      <toggle_button>false</toggle_button>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>Action Button</widget_type>
+      <width>60</width>
+      <wuid>-61ecf83f:16e022dd4b9:-4414</wuid>
+      <x>10</x>
+      <y>0</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.LED" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <alarm_pulsing>false</alarm_pulsing>
+      <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+      <background_color>
+        <color red="240" green="240" blue="240" />
+      </background_color>
+      <bit>-1</bit>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color red="0" green="128" blue="255" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>0</border_width>
+      <bulb_border>0</bulb_border>
+      <bulb_border_color>
+        <color red="150" green="150" blue="150" />
+      </bulb_border_color>
+      <data_type>0</data_type>
+      <effect_3d>false</effect_3d>
+      <enabled>true</enabled>
+      <font>
+        <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+      </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+      <foreground_color>
+        <color red="192" green="192" blue="192" />
+      </foreground_color>
+      <height>10</height>
+      <name>LED</name>
+      <off_color>
+        <color red="0" green="100" blue="0" />
+      </off_color>
+      <off_label>OFF</off_label>
+      <on_color>
+        <color red="0" green="255" blue="0" />
+      </on_color>
+      <on_label>ON</on_label>
+      <pv_name>$(name):sRegOn</pv_name>
+      <pv_value />
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>true</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_boolean_label>false</show_boolean_label>
+      <square_led>true</square_led>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      <visible>true</visible>
+      <widget_type>LED</widget_type>
+      <width>10</width>
+      <wuid>-61ecf83f:16e022dd4b9:-4413</wuid>
+      <x>0</x>
       <y>0</y>
     </widget>
   </widget>
