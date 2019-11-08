@@ -6801,7 +6801,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>false</visible>
+        <visible>true</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1644</width>
         <wuid>-21b2ca35:148a7786110:374a</wuid>
@@ -6963,7 +6963,7 @@ $(pv_value)</tooltip>
         <show_scrollbar>true</show_scrollbar>
         <tooltip></tooltip>
         <transparent>true</transparent>
-        <visible>true</visible>
+        <visible>false</visible>
         <widget_type>Grouping Container</widget_type>
         <width>1644</width>
         <wuid>-2e82a095:14e62aaf961:-df5</wuid>
@@ -8941,5 +8941,56 @@ $(pv_value)</tooltip>
         </widget>
       </widget>
     </widget>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>CmdPanels/CstatV-AI-sim-top.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+        </macros>
+        <mode>8</mode>
+        <description>Simulate Analog Input</description>
+      </action>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>2</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>50</height>
+    <image></image>
+    <name>Action Button</name>
+    <push_action_index>0</push_action_index>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>1</style>
+    <text>Simulate
+Analog Input</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>146</width>
+    <wuid>62ae4853:16e35e62a55:-684b</wuid>
+    <x>15</x>
+    <y>955</y>
   </widget>
 </display>
