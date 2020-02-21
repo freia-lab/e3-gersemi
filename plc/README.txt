@@ -11,3 +11,6 @@ GERSEMI_PLC_2019_10_21_End - AJ, 2019-10-21, Changed FC313, FC404, FC556, DB313.
 GERSEMI_PLC_2019_11_08 - KG, Added new blocks DB132 and FC132 for preparing data fro MAGLPC PLC. Communication tested
 		and works ok. The HeartBeat functionality works, the logic for all boolean variables is missing - there
 		is only a placeholder prepared for each bit.
+
+GERSEMI_PLC_2020_02_20 - KG, Added initials conditions in blocks FC205-FC207, FC209, FC210, FC212-FC223.
+
