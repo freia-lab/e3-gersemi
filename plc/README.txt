@@ -18,4 +18,16 @@ GERSEMI_PLC_2020_02_21 - KG, Removed Network 3 in FC361 that zeroed R_Ohm depend
 		This bit is not correctly set anyway - check if it's used at other places!!!!!
 		Commented out all calls to FC361 in INST_ANA_CERNOX for the sensors in the vacuum insert.
 
+GERSEMI_PLC_2020_02_27 - KG, Created a backup directory Backup20200221 before doing any changes. 
+		Renamed EH650-653 to EH650A-653A and EH654-657 to EH650B-653B. Changed the control thermometer 
+		for EH650B-6503B from TT654-TT657 to TT650-653 (common for heaters A and B).
+		Added 4 new PT100 thermometers TT654x-657x (spares for TT654-657). Updated Epics buffers for the new 
+		thermometers and changed names of existing devices. The following block has been modified:
+		DB100, DB101 - compiled from sources
+		SymbolTable, DB304, DB313, DB400, DB401
+		FC140, FC142, FC404, FC413, FC563
+	
+
+
+
 
