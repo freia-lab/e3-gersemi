@@ -27,6 +27,9 @@ GERSEMI_PLC_2020_02_27 - KG, Created a backup directory Backup20200221 before do
 		SymbolTable, DB304, DB313, DB400, DB401
 		FC140, FC142, FC404, FC413, FC563
 	
+GERSEMI_PLC_2020_02_28 - KG, Changed UDT304 - set the XH to TRUE and reinitialized DB304. All analog inputs will be in Normal 
+		mode (not Simulated) when this block is loaded to the PLC. Chhecked the consistency of all blocks. 
+		Downloaded to the PLC the blocks that has been recompiled: DB304, FC303, FC304, FC371, FC404 and FC470.
 
 
 
