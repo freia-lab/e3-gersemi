@@ -31,6 +31,10 @@ GERSEMI_PLC_2020_02_28 - KG, Changed UDT304 - set the XH to TRUE and reinitializ
 		mode (not Simulated) when this block is loaded to the PLC. Chhecked the consistency of all blocks. 
 		Downloaded to the PLC the blocks that has been recompiled: DB304, FC303, FC304, FC371, FC404 and FC470.
 
+GERSEMI_PLC_2020_03_04 - KG, Renamed TIC690-TIC693 to TIC654-TIC657 accordingly. Changed the regulated temperature sensors
+		from TT690-TT693 to TT654-657. Updated Sysmbol table, DB100 and DB101 in the source files and compiled them,
+		DB312, FC123, FC411, FC557 and FC562.
+
 
 
 
