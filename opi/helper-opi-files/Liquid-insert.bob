@@ -1,0 +1,4766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <macros>
+    <system>CstatV-LHe</system>
+  </macros>
+  <width>1590</width>
+  <height>960</height>
+  <background_color>
+    <color name="IO Shape Fill" red="188" green="188" blue="188">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template_1</name>
+    <x>535</x>
+    <y>410</y>
+    <width>383</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="382.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_10</name>
+    <text>TT618</text>
+    <x>471</x>
+    <y>590</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template</name>
+    <x>550</x>
+    <y>760</y>
+    <width>497</width>
+    <height>41</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <points>
+      <point x="0.0" y="40.0">
+      </point>
+      <point x="245.0" y="40.0">
+      </point>
+      <point x="496.0" y="40.0">
+      </point>
+      <point x="496.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_16</name>
+    <text>To Valve Box</text>
+    <x>947</x>
+    <y>49</y>
+    <width>65</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_17</name>
+    <text>TT604</text>
+    <x>123</x>
+    <y>303</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template_15</name>
+    <x>1139</x>
+    <y>157</y>
+    <width>1</width>
+    <height>23</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="22.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_38</name>
+    <text>TT617</text>
+    <x>251</x>
+    <y>259</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_61</name>
+    <text>TT645</text>
+    <x>360</x>
+    <y>307</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_69</name>
+    <text>L016</text>
+    <x>990</x>
+    <y>121</y>
+    <width>25</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_70</name>
+    <text>TT640A</text>
+    <x>880</x>
+    <y>470</y>
+    <width>38</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_10</name>
+    <pv_name>$(system):TT618:sRdV</pv_name>
+    <x>462</x>
+    <y>607</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_51</name>
+    <pv_name>$(system):TT640A:sRdV</pv_name>
+    <x>871</x>
+    <y>487</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_52</name>
+    <pv_name>CstatV-LHe:TT645:sRdV</pv_name>
+    <x>362</x>
+    <y>326</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_36</name>
+    <pv_name>$(system):TT617:sRdV</pv_name>
+    <x>241</x>
+    <y>276</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Shape Fill" red="188" green="188" blue="188">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_16</name>
+    <pv_name>$(system):TT604:sRdV</pv_name>
+    <x>108</x>
+    <y>318</y>
+    <width>66</width>
+    <height>16</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_2</name>
+    <text>TT647</text>
+    <x>1058</x>
+    <y>760</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_1</name>
+    <text>TT644</text>
+    <x>979</x>
+    <y>760</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_2</name>
+    <text>TT609</text>
+    <x>390</x>
+    <y>590</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_6</name>
+    <pv_name>$(system):TT609:sRdV</pv_name>
+    <x>381</x>
+    <y>607</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_5</name>
+    <pv_name>$(system):TT644:sRdV</pv_name>
+    <x>970</x>
+    <y>776</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_4</name>
+    <pv_name>$(system):TT647:sRdV</pv_name>
+    <x>1060</x>
+    <y>777</y>
+    <width>66</width>
+    <height>16</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_122</name>
+    <text>TT606</text>
+    <x>378</x>
+    <y>471</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_126</name>
+    <pv_name>$(system):TT606:sRdV</pv_name>
+    <x>373</x>
+    <y>487</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Shape Fill" red="188" green="188" blue="188">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_123</name>
+    <text>TT616</text>
+    <x>378</x>
+    <y>508</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_127</name>
+    <pv_name>$(system):TT616:sRdV</pv_name>
+    <x>373</x>
+    <y>527</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Shape Fill" red="188" green="188" blue="188">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_128</name>
+    <pv_name>$(system):TT607:sRdV</pv_name>
+    <x>242</x>
+    <y>307</y>
+    <width>66</width>
+    <height>16</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_124</name>
+    <text>TT607</text>
+    <x>307</x>
+    <y>307</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button Template_3</name>
+    <actions>
+      <action type="execute">
+        <script file="EmbeddedJs">
+          <text><![CDATA[importPackage(Packages.org.csstudio.opibuilder.scriptUtil);
+
+display.getWidget("tabcontainer").setActiveTabIndex(3);]]></text>
+        </script>
+      </action>
+    </actions>
+    <text>To purging unit</text>
+    <x>1197</x>
+    <y>46</y>
+    <width>130</width>
+    <height>21</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Foreground" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Button" red="178" green="178" blue="178">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container</name>
+    <x>917</x>
+    <y>180</y>
+    <width>500</width>
+    <height>581</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon</name>
+      <width>499</width>
+      <height>580</height>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </background_color>
+      <points>
+        <point x="85.0" y="0.0">
+        </point>
+        <point x="498.0" y="0.0">
+        </point>
+        <point x="498.0" y="261.0">
+        </point>
+        <point x="448.0" y="259.0">
+        </point>
+        <point x="448.0" y="579.0">
+        </point>
+        <point x="48.0" y="579.0">
+        </point>
+        <point x="48.0" y="261.0">
+        </point>
+        <point x="0.0" y="261.0">
+        </point>
+        <point x="0.0" y="160.0">
+        </point>
+        <point x="0.0" y="84.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Tank</name>
+      <pv_name>$(system):LI670:sRdV</pv_name>
+      <x>50</x>
+      <y>250</y>
+      <width>396</width>
+      <height>330</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_64</name>
+      <text></text>
+      <x>30</x>
+      <y>258</y>
+      <width>0</width>
+      <height>12</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_48</name>
+      <pv_name>CstatV-LHe:TT669L:sRdV</pv_name>
+      <x>117</x>
+      <y>263</y>
+      <width>96</width>
+      <height>17</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_129</name>
+      <pv_name>CstatV-LHe:TT666L:sRdV</pv_name>
+      <x>117</x>
+      <y>481</y>
+      <width>96</width>
+      <height>17</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_126</name>
+      <text>TT666L</text>
+      <x>60</x>
+      <y>479</y>
+      <width>37</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_126</name>
+      <text>TT662L</text>
+      <x>60</x>
+      <y>531</y>
+      <width>37</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_2</name>
+      <pv_name>CstatV-LHe:TT667L:sRdV</pv_name>
+      <x>117</x>
+      <y>315</y>
+      <width>96</width>
+      <height>17</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_129</name>
+      <pv_name>CstatV-LHe:TT662L:sRdV</pv_name>
+      <x>117</x>
+      <y>533</y>
+      <width>96</width>
+      <height>17</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_63</name>
+      <text>TT669L</text>
+      <x>60</x>
+      <y>261</y>
+      <width>37</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_129</name>
+      <pv_name>CstatV-LHe:TT671L:sRdV</pv_name>
+      <x>117</x>
+      <y>507</y>
+      <width>96</width>
+      <height>17</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_1</name>
+      <text>TT668L</text>
+      <x>60</x>
+      <y>287</y>
+      <width>37</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_126</name>
+      <text>TT671L</text>
+      <x>60</x>
+      <y>505</y>
+      <width>37</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_2</name>
+      <text>TT667L</text>
+      <x>60</x>
+      <y>313</y>
+      <width>37</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_1</name>
+      <pv_name>CstatV-LHe:TT668L:sRdV</pv_name>
+      <x>117</x>
+      <y>289</y>
+      <width>96</width>
+      <height>17</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container</name>
+      <x>145</x>
+      <y>282</y>
+      <width>284</width>
+      <height>172</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="ellipse" version="2.0.0">
+        <name>Ellipse Template</name>
+        <x>31</x>
+        <width>171</width>
+        <height>171</height>
+        <line_width>1</line_width>
+        <line_color>
+          <color name="IO Line" red="0" green="32" blue="92">
+          </color>
+        </line_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template</name>
+        <text>Cavity</text>
+        <x>80</x>
+        <y>76</y>
+        <width>50</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="symbol" version="2.0.0">
+        <name>$(system):EH661</name>
+        <pv_name>$(name):sHtrOn</pv_name>
+        <symbols>
+          <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+          <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+        </symbols>
+        <x>117</x>
+        <y>34</y>
+        <width>115</width>
+        <height>93</height>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <actions>
+          <action type="open_display">
+            <file>../CmdPanels/CstatV-Heater1.opi</file>
+            <macros>
+              <Heater1>$(name)</Heater1>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <rules>
+          <rule name="bordercolor" prop_id="border_color" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+            </exp>
+            <pv_name>$(name):sAuto</pv_name>
+          </rule>
+          <rule name="BorderRule" prop_id="border_style" out_exp="false">
+            <exp bool_exp="pv0">
+              <value>9</value>
+            </exp>
+            <exp bool_exp="pv1==0">
+              <value>1</value>
+            </exp>
+            <pv_name>$(pv_name).SIMM</pv_name>
+            <pv_name>$(name):sAuto</pv_name>
+          </rule>
+        </rules>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_107</name>
+        <text>EH661AC</text>
+        <x>137</x>
+        <y>49</y>
+        <width>47</width>
+        <height>13</height>
+        <font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_11</name>
+        <text>TT664L</text>
+        <x>11</x>
+        <y>56</y>
+        <width>37</width>
+        <height>13</height>
+        <font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_11</name>
+        <pv_name>$(system):TT664L:sRdV</pv_name>
+        <x>2</x>
+        <y>73</y>
+        <width>66</width>
+        <height>16</height>
+        <font>
+          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <rules>
+          <rule name="BorderRule" prop_id="border_style" out_exp="false">
+            <exp bool_exp="pv0==1">
+              <value>9</value>
+            </exp>
+            <pv_name>$(pv_name).SIMM</pv_name>
+          </rule>
+        </rules>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_91</name>
+        <text>TT665L</text>
+        <x>91</x>
+        <y>10</y>
+        <width>37</width>
+        <height>13</height>
+        <font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_92</name>
+        <text>TT663L</text>
+        <x>91</x>
+        <y>118</y>
+        <width>37</width>
+        <height>13</height>
+        <font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_67</name>
+        <pv_name>$(system):TT665L:sRdV</pv_name>
+        <x>82</x>
+        <y>27</y>
+        <width>66</width>
+        <height>17</height>
+        <font>
+          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <rules>
+          <rule name="BorderRule" prop_id="border_style" out_exp="false">
+            <exp bool_exp="pv0==1">
+              <value>9</value>
+            </exp>
+            <pv_name>$(pv_name).SIMM</pv_name>
+          </rule>
+        </rules>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_68</name>
+        <pv_name>$(system):TT663L:sRdV</pv_name>
+        <x>82</x>
+        <y>135</y>
+        <width>66</width>
+        <height>17</height>
+        <font>
+          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <rules>
+          <rule name="BorderRule" prop_id="border_style" out_exp="false">
+            <exp bool_exp="pv0==1">
+              <value>9</value>
+            </exp>
+            <pv_name>$(pv_name).SIMM</pv_name>
+          </rule>
+        </rules>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="group" version="2.0.0">
+        <name>Grouping Container</name>
+        <x>215</x>
+        <y>19</y>
+        <width>70</width>
+        <height>117</height>
+        <style>3</style>
+        <foreground_color>
+          <color red="0" green="128" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color red="240" green="240" blue="240">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <actions>
+        </actions>
+        <widget type="label" version="2.0.0">
+          <name>Label Template_170</name>
+          <text>TT661A</text>
+          <x>11</x>
+          <width>38</width>
+          <height>12</height>
+          <font>
+            <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="IO Text Fg" red="0" green="32" blue="92">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="IO Background" red="255" green="255" blue="205">
+            </color>
+          </background_color>
+          <vertical_alignment>1</vertical_alignment>
+          <auto_size>true</auto_size>
+          <actions>
+          </actions>
+          <border_color>
+            <color name="IO Border" red="215" green="215" blue="215">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update Template_174</name>
+          <pv_name>$(system):TT661A:sRdV</pv_name>
+          <x>2</x>
+          <y>17</y>
+          <width>66</width>
+          <height>17</height>
+          <font>
+            <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="IO InputPV Fg" red="0" green="32" blue="92">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="IO InputPV Bg" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <transparent>true</transparent>
+          <precision>2</precision>
+          <wrap_words>false</wrap_words>
+          <actions>
+          </actions>
+          <rules>
+            <rule name="BorderRule" prop_id="border_style" out_exp="false">
+              <exp bool_exp="pv0==1">
+                <value>9</value>
+              </exp>
+              <pv_name>$(pv_name).SIMM</pv_name>
+            </rule>
+          </rules>
+          <border_width>2</border_width>
+          <border_color>
+            <color name="IO Border" red="215" green="215" blue="215">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>Label Template_171</name>
+          <text>TT661B</text>
+          <x>12</x>
+          <y>42</y>
+          <width>38</width>
+          <height>12</height>
+          <font>
+            <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="IO Text Fg" red="0" green="32" blue="92">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="IO Background" red="255" green="255" blue="205">
+            </color>
+          </background_color>
+          <vertical_alignment>1</vertical_alignment>
+          <auto_size>true</auto_size>
+          <actions>
+          </actions>
+          <border_color>
+            <color name="IO Border" red="215" green="215" blue="215">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update Template_175</name>
+          <pv_name>$(system):TT661B:sRdV</pv_name>
+          <x>2</x>
+          <y>58</y>
+          <width>66</width>
+          <height>17</height>
+          <font>
+            <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="IO InputPV Fg" red="0" green="32" blue="92">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="IO InputPV Bg" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <transparent>true</transparent>
+          <precision>2</precision>
+          <wrap_words>false</wrap_words>
+          <actions>
+          </actions>
+          <rules>
+            <rule name="BorderRule" prop_id="border_style" out_exp="false">
+              <exp bool_exp="pv0==1">
+                <value>9</value>
+              </exp>
+              <pv_name>$(pv_name).SIMM</pv_name>
+            </rule>
+          </rules>
+          <border_width>2</border_width>
+          <border_color>
+            <color name="IO Border" red="215" green="215" blue="215">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="label" version="2.0.0">
+          <name>Label Template_172</name>
+          <text>TT661C</text>
+          <x>11</x>
+          <y>81</y>
+          <width>38</width>
+          <height>12</height>
+          <font>
+            <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="IO Text Fg" red="0" green="32" blue="92">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="IO Background" red="255" green="255" blue="205">
+            </color>
+          </background_color>
+          <vertical_alignment>1</vertical_alignment>
+          <auto_size>true</auto_size>
+          <actions>
+          </actions>
+          <border_color>
+            <color name="IO Border" red="215" green="215" blue="215">
+            </color>
+          </border_color>
+        </widget>
+        <widget type="textupdate" version="2.0.0">
+          <name>Text Update Template_176</name>
+          <pv_name>$(system):TT661C:sRdV</pv_name>
+          <x>2</x>
+          <y>98</y>
+          <width>66</width>
+          <height>17</height>
+          <font>
+            <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+            </font>
+          </font>
+          <foreground_color>
+            <color name="IO InputPV Fg" red="0" green="32" blue="92">
+            </color>
+          </foreground_color>
+          <background_color>
+            <color name="IO InputPV Bg" red="255" green="255" blue="255">
+            </color>
+          </background_color>
+          <transparent>true</transparent>
+          <precision>2</precision>
+          <wrap_words>false</wrap_words>
+          <actions>
+          </actions>
+          <rules>
+            <rule name="BorderRule" prop_id="border_style" out_exp="false">
+              <exp bool_exp="pv0==1">
+                <value>9</value>
+              </exp>
+              <pv_name>$(pv_name).SIMM</pv_name>
+            </rule>
+          </rules>
+          <border_width>2</border_width>
+          <border_color>
+            <color name="IO Border" red="215" green="215" blue="215">
+            </color>
+          </border_color>
+        </widget>
+      </widget>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>$(system):EH670</name>
+      <pv_name>$(name):sHtrOn</pv_name>
+      <symbols>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+      </symbols>
+      <x>301</x>
+      <y>87</y>
+      <width>115</width>
+      <height>93</height>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <macros>
+            <Heater1>$(name)</Heater1>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <rules>
+        <rule name="bordercolor" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+          </exp>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0">
+            <value>9</value>
+          </exp>
+          <exp bool_exp="pv1==0">
+            <value>1</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+      </rules>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>$(system):EH640</name>
+      <pv_name>$(name):sHtrOn</pv_name>
+      <symbols>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+      </symbols>
+      <x>30</x>
+      <y>360</y>
+      <width>115</width>
+      <height>93</height>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <macros>
+            <Heater1>$(name)</Heater1>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <rules>
+        <rule name="bordercolor" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+          </exp>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0">
+            <value>9</value>
+          </exp>
+          <exp bool_exp="pv1==0">
+            <value>1</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+      </rules>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_146</name>
+      <text>LT670</text>
+      <x>456</x>
+      <y>264</y>
+      <width>31</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_155</name>
+      <pv_name>$(system):LT670:sRdV</pv_name>
+      <x>458</x>
+      <y>282</y>
+      <width>39</width>
+      <height>16</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text>EH670AC</text>
+      <x>335</x>
+      <y>175</y>
+      <width>47</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_148</name>
+      <text>EH640AF</text>
+      <x>30</x>
+      <y>360</y>
+      <width>46</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_149</name>
+      <text>EH660AC</text>
+      <x>277</x>
+      <y>460</y>
+      <width>47</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_150</name>
+      <text>EH641AC</text>
+      <x>221</x>
+      <y>551</y>
+      <width>47</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_1</name>
+      <x>277</x>
+      <y>454</y>
+      <width>143</width>
+      <height>117</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="symbol" version="2.0.0">
+        <name>$(system):EH660</name>
+        <pv_name>$(name):sHtrOn</pv_name>
+        <symbols>
+          <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+          <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+        </symbols>
+        <y>23</y>
+        <width>115</width>
+        <height>93</height>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <actions>
+          <action type="open_display">
+            <file>../CmdPanels/CstatV-Heater1.opi</file>
+            <macros>
+              <Heater1>$(name)</Heater1>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <rules>
+          <rule name="bordercolor" prop_id="border_color" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+            </exp>
+            <pv_name>$(name):sAuto</pv_name>
+          </rule>
+          <rule name="BorderRule" prop_id="border_style" out_exp="false">
+            <exp bool_exp="pv0">
+              <value>9</value>
+            </exp>
+            <exp bool_exp="pv1==0">
+              <value>1</value>
+            </exp>
+            <pv_name>$(pv_name).SIMM</pv_name>
+            <pv_name>$(name):sAuto</pv_name>
+          </rule>
+        </rules>
+        <auto_size>true</auto_size>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_170</name>
+        <text>TT660A</text>
+        <x>84</x>
+        <width>38</width>
+        <height>13</height>
+        <font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_174</name>
+        <pv_name>$(system):TT660A:sRdV</pv_name>
+        <x>75</x>
+        <y>17</y>
+        <width>66</width>
+        <height>17</height>
+        <font>
+          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <rules>
+          <rule name="BorderRule" prop_id="border_style" out_exp="false">
+            <exp bool_exp="pv0==1">
+              <value>9</value>
+            </exp>
+            <pv_name>$(pv_name).SIMM</pv_name>
+          </rule>
+        </rules>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_171</name>
+        <text>TT660B</text>
+        <x>85</x>
+        <y>42</y>
+        <width>38</width>
+        <height>13</height>
+        <font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_175</name>
+        <pv_name>$(system):TT660B:sRdV</pv_name>
+        <x>75</x>
+        <y>58</y>
+        <width>66</width>
+        <height>17</height>
+        <font>
+          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <rules>
+          <rule name="BorderRule" prop_id="border_style" out_exp="false">
+            <exp bool_exp="pv0==1">
+              <value>9</value>
+            </exp>
+            <pv_name>$(pv_name).SIMM</pv_name>
+          </rule>
+        </rules>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_172</name>
+        <text>TT660C</text>
+        <x>84</x>
+        <y>81</y>
+        <width>38</width>
+        <height>13</height>
+        <font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_176</name>
+        <pv_name>$(system):TT660C:sRdV</pv_name>
+        <x>75</x>
+        <y>98</y>
+        <width>66</width>
+        <height>17</height>
+        <font>
+          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <transparent>true</transparent>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <rules>
+          <rule name="BorderRule" prop_id="border_style" out_exp="false">
+            <exp bool_exp="pv0==1">
+              <value>9</value>
+            </exp>
+            <pv_name>$(pv_name).SIMM</pv_name>
+          </rule>
+        </rules>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_171</name>
+      <text>LT671</text>
+      <x>452</x>
+      <y>533</y>
+      <width>31</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_175</name>
+      <pv_name>$(system):LT671:sRdV</pv_name>
+      <x>458</x>
+      <y>551</y>
+      <width>39</width>
+      <height>16</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_170</name>
+      <text>LI670</text>
+      <x>450</x>
+      <y>215</y>
+      <width>28</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_155</name>
+      <pv_name>$(system):LI670:sRdV</pv_name>
+      <x>452</x>
+      <y>233</y>
+      <width>39</width>
+      <height>16</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>2</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_4</name>
+    <x>1261</x>
+    <y>67</y>
+    <width>1</width>
+    <height>114</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO 300K GHe" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <points>
+      <point x="0.0" y="113.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_148</name>
+    <text>TT642</text>
+    <x>741</x>
+    <y>371</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_157</name>
+    <pv_name>CstatV-LHe:TT642:sRdV</pv_name>
+    <x>743</x>
+    <y>387</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_149</name>
+    <text>TT646</text>
+    <x>823</x>
+    <y>371</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_158</name>
+    <pv_name>CstatV-LHe:TT646:sRdV</pv_name>
+    <x>825</x>
+    <y>387</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template_11</name>
+    <x>522</x>
+    <y>355</y>
+    <width>396</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="395.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template_12</name>
+    <x>650</x>
+    <y>195</y>
+    <width>264</width>
+    <height>3</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <points>
+      <point x="263.0" y="0.0">
+      </point>
+      <point x="0.0" y="2.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_6</name>
+    <x>535</x>
+    <y>311</y>
+    <width>383</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO 6-100K line" red="255" green="153" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="382.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_139</name>
+    <text>TT752</text>
+    <x>822</x>
+    <y>272</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_90</name>
+    <pv_name>CstatV-LN2:TT752:sRdV</pv_name>
+    <x>812</x>
+    <y>288</y>
+    <width>66</width>
+    <height>16</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_1</name>
+    <x>535</x>
+    <y>287</y>
+    <width>81</width>
+    <height>49</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-LN2:CV700</name>
+      <pv_name>$(name):sRdV</pv_name>
+      <symbols>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control.png</symbol>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control.png</symbol>
+      </symbols>
+      <width>47</width>
+      <height>36</height>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Cvalve.opi</file>
+          <macros>
+            <Cvalve>$(name)</Cvalve>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <exp bool_exp="pv1==0">
+            <value>1</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+        <rule name="bordercolor" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+          </exp>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+      </rules>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_56</name>
+      <text>CV700</text>
+      <x>11</x>
+      <y>2</y>
+      <width>27</width>
+      <height>10</height>
+      <font>
+        <font family="Sans" style="REGULAR" size="7.920792079207921">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_17</name>
+      <pv_name>CstatV-LN2:CV700:sRdV</pv_name>
+      <x>11</x>
+      <y>29</y>
+      <width>70</width>
+      <font>
+        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0==1">
+            <value>9</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_159</name>
+    <pv_name>CstatV-LHe:PT660L:sRdV</pv_name>
+    <x>1094</x>
+    <y>104</y>
+    <width>87</width>
+    <height>16</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_152</name>
+    <text>PT661L</text>
+    <x>1116</x>
+    <y>121</y>
+    <width>37</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_160</name>
+    <pv_name>CstatV-LHe:PT661L:sRdV</pv_name>
+    <x>1096</x>
+    <y>140</y>
+    <width>87</width>
+    <height>16</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_151</name>
+    <text>PT660L</text>
+    <x>1115</x>
+    <y>88</y>
+    <width>37</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_156</name>
+    <text>TT372</text>
+    <x>826</x>
+    <y>316</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_62</name>
+    <text>TT371</text>
+    <x>744</x>
+    <y>155</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_46</name>
+    <pv_name>CstatV-SHe:TT372:sRdV</pv_name>
+    <x>817</x>
+    <y>333</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_47</name>
+    <pv_name>CstatV-SHe:TT371:sRdV</pv_name>
+    <x>735</x>
+    <y>172</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_158</name>
+    <text>TT373</text>
+    <x>822</x>
+    <y>155</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_87</name>
+    <pv_name>CstatV-SHe:TT373:sRdV</pv_name>
+    <x>813</x>
+    <y>172</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_7</name>
+    <x>535</x>
+    <y>266</y>
+    <width>383</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO 6-100K line" red="255" green="153" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <points>
+      <point x="382.0" y="0.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_159</name>
+    <text>EV748</text>
+    <x>773</x>
+    <y>244</y>
+    <width>26</width>
+    <height>10</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>CstatV-LN2:EV748</name>
+    <pv_name>$(name):sCmd</pv_name>
+    <symbols>
+      <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+      <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+    </symbols>
+    <x>766</x>
+    <y>244</y>
+    <width>36</width>
+    <height>36</height>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <actions>
+      <action type="open_display">
+        <file>../CmdPanels/CstatV-Evalve.opi</file>
+        <macros>
+          <Evalve>$(name)</Evalve>
+        </macros>
+        <target>tab</target>
+        <description>Valve control</description>
+      </action>
+    </actions>
+    <rules>
+      <rule name="Bordercolor" prop_id="border_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+        </exp>
+        <pv_name>$(name):sAuto</pv_name>
+      </rule>
+      <rule name="borderstyle" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
+        </exp>
+        <pv_name>$(name):sAuto</pv_name>
+      </rule>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_160</name>
+    <text>FT740</text>
+    <x>679</x>
+    <y>228</y>
+    <width>31</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_1</name>
+    <pv_name>CstatV-LN2:FT740:sRdV</pv_name>
+    <x>669</x>
+    <y>244</y>
+    <width>66</width>
+    <height>16</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Shape Fill" red="188" green="188" blue="188">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_8</name>
+    <x>985</x>
+    <y>67</y>
+    <width>1</width>
+    <height>114</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <points>
+      <point x="0.0" y="113.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_161</name>
+    <text>L012</text>
+    <x>607</x>
+    <y>214</y>
+    <width>25</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>570</x>
+    <y>242</y>
+    <width>102</width>
+    <height>581</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="IO Foreground" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_162</name>
+    <text>TT640B</text>
+    <x>879</x>
+    <y>515</y>
+    <width>38</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_166</name>
+    <pv_name>$(system):TT640B:sRdV</pv_name>
+    <x>870</x>
+    <y>532</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_163</name>
+    <text>TT640C</text>
+    <x>878</x>
+    <y>555</y>
+    <width>38</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_167</name>
+    <pv_name>$(system):TT640C:sRdV</pv_name>
+    <x>869</x>
+    <y>572</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_164</name>
+    <text>TT640D</text>
+    <x>879</x>
+    <y>600</y>
+    <width>39</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_168</name>
+    <pv_name>$(system):TT640D:sRdV</pv_name>
+    <x>870</x>
+    <y>617</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_165</name>
+    <text>TT640E</text>
+    <x>877</x>
+    <y>645</y>
+    <width>38</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_169</name>
+    <pv_name>$(system):TT640E:sRdV</pv_name>
+    <x>868</x>
+    <y>662</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_166</name>
+    <text>TT640F</text>
+    <x>876</x>
+    <y>690</y>
+    <width>37</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_170</name>
+    <pv_name>$(system):TT640F:sRdV</pv_name>
+    <x>867</x>
+    <y>707</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>$(system):EH641</name>
+    <pv_name>$(name):sHtrOn</pv_name>
+    <symbols>
+      <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+      <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
+    </symbols>
+    <x>1135</x>
+    <y>731</y>
+    <width>115</width>
+    <height>93</height>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <actions>
+      <action type="open_display">
+        <file>../CmdPanels/CstatV-Heater1.opi</file>
+        <macros>
+          <Heater1>$(name)</Heater1>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <rules>
+      <rule name="bordercolor" prop_id="border_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+        </exp>
+        <pv_name>$(name):sAuto</pv_name>
+      </rule>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0">
+          <value>9</value>
+        </exp>
+        <exp bool_exp="pv1==0">
+          <value>1</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+        <pv_name>$(name):sAuto</pv_name>
+      </rule>
+    </rules>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_167</name>
+    <text>TT641A</text>
+    <x>1216</x>
+    <y>759</y>
+    <width>38</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_171</name>
+    <pv_name>$(system):TT641A:sRdV</pv_name>
+    <x>1207</x>
+    <y>776</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_168</name>
+    <text>TT641B</text>
+    <x>1217</x>
+    <y>801</y>
+    <width>38</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_172</name>
+    <pv_name>$(system):TT641B:sRdV</pv_name>
+    <x>1207</x>
+    <y>817</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_169</name>
+    <text>TT641C</text>
+    <x>1216</x>
+    <y>840</y>
+    <width>38</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_173</name>
+    <pv_name>$(system):TT641C:sRdV</pv_name>
+    <x>1207</x>
+    <y>857</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_22</name>
+    <macros>
+      <pv>$(system):FV640</pv>
+    </macros>
+    <x>830</x>
+    <y>780</y>
+    <width>50</width>
+    <height>41</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-SHe:FV382_1</name>
+      <pv_name>$(pv):sOn</pv_name>
+      <symbols>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+      </symbols>
+      <x>5</x>
+      <width>36</width>
+      <height>36</height>
+      <background_color>
+        <color name="IO Shape Fill" red="188" green="188" blue="188">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Valve.opi</file>
+          <macros>
+            <v_name>$(pv)</v_name>
+          </macros>
+          <target>tab</target>
+          <description>Valve control</description>
+        </action>
+      </actions>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <y>20</y>
+      <width>14</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="13.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_1</name>
+      <x>37</x>
+      <y>20</y>
+      <width>12</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="11.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_23</name>
+    <macros>
+      <pv>$(system):FV642</pv>
+    </macros>
+    <x>671</x>
+    <y>390</y>
+    <width>50</width>
+    <height>41</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-SHe:FV382_1</name>
+      <pv_name>$(pv):sOn</pv_name>
+      <symbols>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+      </symbols>
+      <x>5</x>
+      <width>36</width>
+      <height>36</height>
+      <background_color>
+        <color name="IO Shape Fill" red="188" green="188" blue="188">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Valve.opi</file>
+          <macros>
+            <v_name>$(pv)</v_name>
+          </macros>
+          <target>tab</target>
+          <description>Valve control</description>
+        </action>
+      </actions>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <y>20</y>
+      <width>14</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="13.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_1</name>
+      <x>37</x>
+      <y>20</y>
+      <width>12</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="11.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_155</name>
+    <text>FV642</text>
+    <x>679</x>
+    <y>388</y>
+    <width>26</width>
+    <height>10</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_4</name>
+    <macros>
+      <pv>CstatV-SHe:FV381</pv>
+    </macros>
+    <x>521</x>
+    <y>335</y>
+    <width>50</width>
+    <height>41</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-SHe:FV382_1</name>
+      <pv_name>$(pv):sOn</pv_name>
+      <symbols>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+      </symbols>
+      <x>5</x>
+      <width>36</width>
+      <height>36</height>
+      <background_color>
+        <color name="IO Shape Fill" red="188" green="188" blue="188">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Valve.opi</file>
+          <macros>
+            <v_name>$(pv)</v_name>
+          </macros>
+          <target>tab</target>
+          <description>Valve control</description>
+        </action>
+      </actions>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <y>20</y>
+      <width>14</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="206" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="13.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_1</name>
+      <x>37</x>
+      <y>20</y>
+      <width>12</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="206" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="11.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_82</name>
+    <text>FV381</text>
+    <x>529</x>
+    <y>334</y>
+    <width>26</width>
+    <height>10</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_25</name>
+    <macros>
+      <pv>CstatV-SHe:FV382</pv>
+    </macros>
+    <x>673</x>
+    <y>177</y>
+    <width>50</width>
+    <height>41</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-SHe:FV382_1</name>
+      <pv_name>$(pv):sOn</pv_name>
+      <symbols>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+      </symbols>
+      <x>5</x>
+      <width>36</width>
+      <height>36</height>
+      <background_color>
+        <color name="IO Shape Fill" red="188" green="188" blue="188">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Valve.opi</file>
+          <macros>
+            <v_name>$(pv)</v_name>
+          </macros>
+          <target>tab</target>
+          <description>Valve control</description>
+        </action>
+      </actions>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <y>20</y>
+      <width>14</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="206" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="13.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_1</name>
+      <x>37</x>
+      <y>20</y>
+      <width>12</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="206" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="11.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_89</name>
+    <text>FV382</text>
+    <x>682</x>
+    <y>177</y>
+    <width>26</width>
+    <height>10</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_146</name>
+    <text>FV640</text>
+    <x>838</x>
+    <y>780</y>
+    <width>26</width>
+    <height>10</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_12</name>
+    <macros>
+      <pv>CstatV-LHe:FV660</pv>
+    </macros>
+    <x>1241</x>
+    <y>118</y>
+    <width>40</width>
+    <height>52</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-SHe:FV382_1</name>
+      <pv_name>$(pv):sOn</pv_name>
+      <symbols>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+      </symbols>
+      <y>7</y>
+      <width>36</width>
+      <height>36</height>
+      <background_color>
+        <color name="IO Shape Fill" red="188" green="188" blue="188">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Valve.opi</file>
+          <macros>
+            <v_name>$(pv)</v_name>
+          </macros>
+          <target>tab</target>
+          <description>Valve control</description>
+        </action>
+      </actions>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <x>20</x>
+      <y>38</y>
+      <width>1</width>
+      <height>13</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="12.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_1</name>
+      <x>20</x>
+      <width>1</width>
+      <height>16</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="IO 300K GHe" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="15.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_147</name>
+    <text>FV660</text>
+    <x>1266</x>
+    <y>140</y>
+    <width>26</width>
+    <height>10</height>
+    <font>
+      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+</display>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <width>50</width>
+  <height>40</height>
+  <background_color>
+    <color name="IO Shape Fill" red="188" green="188" blue="188">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="symbol" version="2.0.0">
+    <name>Boolean Symbol Image Monitor Template</name>
+    <pv_name>$(Cvalve):sRdV</pv_name>
+    <symbols>
+      <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control.png</symbol>
+      <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control.png</symbol>
+    </symbols>
+    <x>5</x>
+    <width>51</width>
+    <height>31</height>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <actions>
+      <action type="open_display">
+        <file>helper-opi-files/CstatH-Cvalve.opi</file>
+        <macros>
+          <Cvalve>$(Cvalve)</Cvalve>
+        </macros>
+        <target>tab</target>
+      </action>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv0==1">
+          <value>9</value>
+        </exp>
+        <pv_name>$(pv_name).SIMM</pv_name>
+      </rule>
+      <rule name="State" prop_id="pv_value" out_exp="true">
+        <exp bool_exp="pv0 &gt; 0">
+          <expression>1</expression>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template_1</name>
+    <x>40</x>
+    <y>20</y>
+    <width>21</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="15.0" y="0.0">
+      </point>
+      <point x="20.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template_1</name>
+    <y>20</y>
+    <width>21</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="20.0" y="0.0">
+      </point>
+      <point x="20.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+</display>

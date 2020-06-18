@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <width>300</width>
+  <height>300</height>
+  <background_color>
+    <color name="IO Shape Fill" red="188" green="188" blue="188">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input</name>
+    <pv_name>loc://GersemiAIdevNam</pv_name>
+    <x>25</x>
+    <y>1</y>
+    <width>271</width>
+    <height>25</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>Enter Device Name
+Process Variable name without 
+the last part after the colon.
+Example:
+PV Name:        CstatV-LHe:LI680:sRdV
+Device Name: CstatV-LHe:LI680</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Linking Container</name>
+    <file>CstatV-AI-sim.opi</file>
+    <y>30</y>
+    <width>296</width>
+    <height>231</height>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="ClearOpiRule" prop_id="opi_file" out_exp="false">
+        <exp bool_exp="true">
+          <value>opi_file?</value>
+        </exp>
+        <exp bool_exp="false">
+          <value>opi_file?</value>
+        </exp>
+        <pv_name>loc://GersemiAIdevNam</pv_name>
+      </rule>
+      <rule name="SetOpiRule" prop_id="opi_file" out_exp="false">
+        <exp bool_exp="true">
+          <value>CstatV-AI-sim.opi</value>
+        </exp>
+        <pv_name>loc://GersemiAIdevNam</pv_name>
+      </rule>
+    </rules>
+    <scripts>
+      <script file="../scripts/PVname2Macro.js">
+        <pv_name>loc://GersemiAIdevNam</pv_name>
+      </script>
+    </scripts>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <y>13</y>
+    <width>26</width>
+    <height>1</height>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="30" green="144" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="25.0" y="0.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>Enter Device Name
+Process Variable name without 
+the last part after the colon.
+Example:
+PV Name:        CstatV-LHe:LI680:sRdV
+Device Name: CstatV-LHe:LI680</tooltip>
+  </widget>
+</display>

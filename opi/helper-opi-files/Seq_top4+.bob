@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <macros>
+    <W>freia.physics.uu.se</W>
+  </macros>
+  <width>550</width>
+  <height>195</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <text>$(seq_title)</text>
+    <x>10</x>
+    <y>4</y>
+    <width>493</width>
+    <height>32</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button Template</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Start the sequence</description>
+      </action>
+    </actions>
+    <pv_name>$(C)-Ctrl:$(seq_no):cmdStart</pv_name>
+    <text>Start</text>
+    <x>20</x>
+    <y>40</y>
+    <width>80</width>
+    <height>31</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button Template_1</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Stop the sequence</description>
+      </action>
+    </actions>
+    <pv_name>$(C)-Ctrl:$(seq_no):cmdStop</pv_name>
+    <text>Stop</text>
+    <x>120</x>
+    <y>40</y>
+    <width>80</width>
+    <height>31</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button Template_2</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Reset the sequence</description>
+      </action>
+    </actions>
+    <pv_name>$(C)-Ctrl:$(seq_no):cmdReset</pv_name>
+    <text>Reset</text>
+    <x>225</x>
+    <y>40</y>
+    <width>80</width>
+    <height>31</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_1</name>
+    <text>State:</text>
+    <x>14</x>
+    <y>154</y>
+    <width>65</width>
+    <height>12</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_2</name>
+    <text>Timer grafcet:</text>
+    <x>327</x>
+    <y>154</y>
+    <width>102</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_2</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
+    <x>86</x>
+    <y>144</y>
+    <width>228</width>
+    <height>45</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="TextRule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>$(step0)</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>$(step1)</value>
+        </exp>
+        <exp bool_exp="pv0==2">
+          <value>$(step2)</value>
+        </exp>
+        <exp bool_exp="pv0==3">
+          <value>$(step3)</value>
+        </exp>
+        <exp bool_exp="pv0==4">
+          <value>$(step4)</value>
+        </exp>
+        <exp bool_exp="pv0== 6">
+          <value>$(step6)</value>
+        </exp>
+        <exp bool_exp="pv0== 8">
+          <value>$(step8)</value>
+        </exp>
+        <exp bool_exp="pv0== 10">
+          <value>$(step10)</value>
+        </exp>
+        <exp bool_exp="pv0== 12">
+          <value>$(step12)</value>
+        </exp>
+        <exp bool_exp="pv0== 14">
+          <value>$(step14)</value>
+        </exp>
+        <exp bool_exp="pv0== 16">
+          <value>$(step16)</value>
+        </exp>
+        <exp bool_exp="pv0== 18">
+          <value>$(step18)</value>
+        </exp>
+        <exp bool_exp="pv0== 20">
+          <value>$(step20)</value>
+        </exp>
+        <exp bool_exp="pv0== 22">
+          <value>$(step22)</value>
+        </exp>
+        <exp bool_exp="pv0== 24">
+          <value>$(step24)</value>
+        </exp>
+        <exp bool_exp="pv0== 26">
+          <value>$(step26)</value>
+        </exp>
+        <exp bool_exp="pv0== 28">
+          <value>$(step28)</value>
+        </exp>
+        <exp bool_exp="pv0== 30">
+          <value>$(step30)</value>
+        </exp>
+        <exp bool_exp="pv0== 32">
+          <value>$(step32)</value>
+        </exp>
+        <exp bool_exp="pv0== 34">
+          <value>$(step34)</value>
+        </exp>
+        <exp bool_exp="pv0== 36">
+          <value>$(step36)</value>
+        </exp>
+        <exp bool_exp="pv0== 38">
+          <value>$(step38)</value>
+        </exp>
+        <exp bool_exp="pv0== 40">
+          <value>$(step40)</value>
+        </exp>
+        <exp bool_exp="pv0== 42">
+          <value>$(step42)</value>
+        </exp>
+        <exp bool_exp="pv0== 44">
+          <value>$(step44)</value>
+        </exp>
+        <exp bool_exp="pv0== 46">
+          <value>$(step46)</value>
+        </exp>
+        <exp bool_exp="pv0== 48">
+          <value>$(step48)</value>
+        </exp>
+        <exp bool_exp="pv0== 7">
+          <value>$(step7)</value>
+        </exp>
+        <exp bool_exp="pv0== 11">
+          <value>$(step11)</value>
+        </exp>
+        <exp bool_exp="pv0== 13">
+          <value>$(step13)</value>
+        </exp>
+        <exp bool_exp="pv0== 15">
+          <value>$(step15)</value>
+        </exp>
+        <exp bool_exp="pv0== 35">
+          <value>$(step35)</value>
+        </exp>
+        <exp bool_exp="pv0== 41">
+          <value>$(step41)</value>
+        </exp>
+        <pv_name>$(pv_name)</pv_name>
+      </rule>
+    </rules>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):cmdSetParam</pv_name>
+    <bit>0</bit>
+    <x>517</x>
+    <y>11</y>
+    <width>16</width>
+    <height>16</height>
+    <off_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Panel 2</name>
+    <x>320</x>
+    <y>40</y>
+    <width>216</width>
+    <height>55</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_3</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Accept the nonstandard conditions</description>
+        </action>
+      </actions>
+      <pv_name>$(C)-Ctrl:$(seq_no):cmdAccept</pv_name>
+      <text>Accept</text>
+      <x>130</x>
+      <y>15</y>
+      <width>80</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_1</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sChkParam</pv_name>
+      <bit>0</bit>
+      <x>7</x>
+      <y>7</y>
+      <width>112</width>
+      <off_label>Parameters OK</off_label>
+      <off_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </off_color>
+      <on_label>Wrong parameters</on_label>
+      <on_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_2</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sChkEquip</pv_name>
+      <bit>0</bit>
+      <x>7</x>
+      <y>27</y>
+      <width>112</width>
+      <off_label>Equipment OK</off_label>
+      <off_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </off_color>
+      <on_label>Equip. in man. mode</on_label>
+      <on_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>InitCond</name>
+    <x>484</x>
+    <y>142</y>
+    <width>60</width>
+    <height>49</height>
+    <style>1</style>
+    <font>
+      <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_14</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sInitCond</pv_name>
+      <x>3</x>
+      <y>7</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
+    <x>56</x>
+    <y>157</y>
+    <width>21</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <scripts>
+      <script file="EmbeddedPy">
+        <text><![CDATA[from org.csstudio.opibuilder.scriptUtil import PVUtil
+]]></text>
+        <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
+      </script>
+    </scripts>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_1</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):sStepTime</pv_name>
+    <x>422</x>
+    <y>155</y>
+    <width>52</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_17</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):sInitCondS</pv_name>
+    <x>17</x>
+    <y>78</y>
+    <width>199</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="RED" red="252" green="13" blue="27">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button Template_3</name>
+    <actions>
+      <action type="open_webpage">
+        <url>http://$(W)/CSS/pdf/Gersemi/G7_$(seq_no).pdf</url>
+        <description>Show grafcet</description>
+      </action>
+    </actions>
+    <text>Help</text>
+    <x>225</x>
+    <y>75</y>
+    <width>80</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <tooltip>Opens Grafcet diagram
+in the web browser</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_1</name>
+    <x>12</x>
+    <y>110</y>
+    <width>524</width>
+    <height>30</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>Text Update_13</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sMsgDispl</pv_name>
+      <x>2</x>
+      <y>4</y>
+      <width>21</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_14</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sMsgNo</pv_name>
+      <x>56</x>
+      <y>5</y>
+      <width>33</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sMsgS</pv_name>
+      <x>98</x>
+      <y>5</y>
+      <width>222</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sMsgQuery</pv_name>
+      <x>24</x>
+      <y>4</y>
+      <width>21</width>
+      <height>21</height>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="0" green="216" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_4</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(C)-Ctrl:$(seq_no):cmdYes</pv_name>
+      <text>Yes</text>
+      <x>328</x>
+      <width>55</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(C)-Ctrl:$(seq_no):cmdNo</pv_name>
+      <text>No</text>
+      <x>389</x>
+      <width>55</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_4</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Accept the nonstandard conditions</description>
+        </action>
+      </actions>
+      <pv_name>$(C)-Ctrl:opMode:cmdSetAck</pv_name>
+      <text>Ackn</text>
+      <x>449</x>
+      <width>75</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+  </widget>
+</display>

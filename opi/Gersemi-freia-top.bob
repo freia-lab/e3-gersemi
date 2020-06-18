@@ -1,0 +1,3873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <macros>
+    <C>CstatV</C>
+    <STOP_MSG></STOP_MSG>
+  </macros>
+  <width>1840</width>
+  <height>1065</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_3</name>
+    <text>Automatic 
+sequences</text>
+    <x>41</x>
+    <y>87</y>
+    <width>72</width>
+    <height>39</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="15.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_4</name>
+    <text>Gersemi</text>
+    <x>14</x>
+    <y>2</y>
+    <width>130</width>
+    <height>47</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template</name>
+    <pv_name>$(C)-Ctrl:opMode:sLocal</pv_name>
+    <bit>0</bit>
+    <x>12</x>
+    <y>56</y>
+    <width>136</width>
+    <height>32</height>
+    <off_label>Remote / Epics</off_label>
+    <off_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </off_color>
+    <on_label>Local / WinCC</on_label>
+    <on_color>
+      <color name="RED" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <square>true</square>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_7</name>
+    <macros>
+      <nr>20</nr>
+    </macros>
+    <x>2</x>
+    <y>600</y>
+    <width>80</width>
+    <height>36</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_1</name>
+      <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
+      <bit>0</bit>
+      <x>61</x>
+      <y>17</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_19</name>
+      <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+      <bit>0</bit>
+      <x>61</x>
+      <y>2</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template</name>
+      <actions>
+        <action type="open_display">
+          <file>helper-opi-files/Seq$(nr).opi</file>
+          <macros>
+            <seq_no>SQ$(nr)</seq_no>
+            <seq_title>Seq 20: Emptying the cryostat</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking parameters</step1>
+            <step10>Isolate VB tank - waiting for CV601 to close</step10>
+            <step12>Cool down L021 - waiting for TT645 or TT590 &lt;  P_SP_TT645</step12>
+            <step14>LHe transfer - waiting for LT590 &gt; P_SP_LT590 or LI670/680 &lt; P_SP_LI670/680</step14>
+            <step16>LHe transfer - waiting for LI670/680 &lt; P_SP_LI670/680 or LT590 &gt; P_SP_LT590</step16>
+            <step18>Cryostat empty - Waiting for decision if to change the P_SP_LI670/680 level or finish</step18>
+            <step2>Checking equipment</step2>
+            <step20>Dewar full - waiting for decision if to change the P_SP_LI670/680 level or stop</step20>
+            <step22>Waiting for setting new level and confirmation by pressing Yes</step22>
+            <step24>Waiting for setting new level and confirmation by pressing Yes</step24>
+            <step26>Stopping - waiting for FV641 to close</step26>
+            <step4>Waiting for FV602 to close</step4>
+            <step6>Waiting for Yes/No</step6>
+            <step8>Waiting for Yes/No</step8>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>SQ$(nr)</text>
+      <width>60</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <tooltip>Emptying the cryostat</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_16</name>
+    <x>2</x>
+    <y>440</y>
+    <width>79</width>
+    <height>35</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_9</name>
+      <pv_name>$(C)-Ctrl:SQ14:sStopping</pv_name>
+      <bit>0</bit>
+      <x>61</x>
+      <y>17</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template_26</name>
+      <pv_name>$(C)-Ctrl:SQ14:sRun</pv_name>
+      <bit>0</bit>
+      <x>61</x>
+      <y>2</y>
+      <width>16</width>
+      <height>16</height>
+      <off_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_13</name>
+      <actions>
+        <action type="open_display">
+          <file>helper-opi-files/Seq14.opi</file>
+          <macros>
+            <seq_no>SQ14</seq_no>
+            <seq_title>Sequence 14: Cavity standby @ low temperature</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking equipment</step1>
+            <step10>Stop - waiting for FV641/FV640 to close</step10>
+            <step2>Checking parameters</step2>
+            <step4>Conditioning</step4>
+            <step6>Cool down</step6>
+            <step8>Standing by</step8>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <text>SQ14</text>
+      <width>60</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <tooltip>Cavity standby at low temperature</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_28</name>
+    <x>2</x>
+    <y>480</y>
+    <width>165</width>
+    <height>111</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_2</name>
+      <macros>
+        <nr>15</nr>
+      </macros>
+      <x>80</x>
+      <width>80</width>
+      <height>36</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_1</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_19</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq$(nr).opi</file>
+            <macros>
+              <seq_no>SQ$(nr)</seq_no>
+              <seq_title>Seq. 15: Magnet - cooling down</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step10>Wait for CV602 to close</step10>
+              <step12>Regulation</step12>
+              <step14>Stop - waiting for FV642 and FV680 to close</step14>
+              <step2>Checking equipment</step2>
+              <step4>Waiting for Yes</step4>
+              <step6>Cooling HX680 and HX683</step6>
+              <step8>Stop cooling</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ$(nr)</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Magnet - cooling down</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_3</name>
+      <macros>
+        <nr>16</nr>
+      </macros>
+      <y>35</y>
+      <width>80</width>
+      <height>36</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_1</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_19</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="IO PV OFF" red="77" green="77" blue="77">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="IO OK" red="0" green="255" blue="0">
+          </color>
+        </on_color>
+        <font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color red="150" green="150" blue="150">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq$(nr).opi</file>
+            <macros>
+              <seq_no>SQ$(nr)</seq_no>
+              <seq_title>Seq. 16: Magnet - operation at 4.2.K</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step2>Checking equipment</step2>
+              <step4>Regulation</step4>
+              <step6>Stop - waiting for CV602 and CV680 to close</step6>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ$(nr)</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Magnet - operation at 4.2 K</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_4</name>
+      <macros>
+        <nr>17</nr>
+      </macros>
+      <x>79</x>
+      <y>35</y>
+      <width>80</width>
+      <height>36</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_1</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_19</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq$(nr).opi</file>
+            <macros>
+              <seq_no>SQ$(nr)</seq_no>
+              <seq_title>Seq. 17: Magnet - operation at 2.K</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step10>Keeping overpressure</step10>
+              <step12>Vacuum leak - waiting for Ack </step12>
+              <step14>Overpressure leak -waiting for Ack</step14>
+              <step2>Checking equipment</step2>
+              <step4>Pumping down</step4>
+              <step6>Keeping vacuum</step6>
+              <step8>Filling up with GHe</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ$(nr)</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Magnet - operation at 2 K</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_5</name>
+      <macros>
+        <nr>18</nr>
+      </macros>
+      <y>70</y>
+      <width>80</width>
+      <height>36</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_1</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_19</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq$(nr).opi</file>
+            <macros>
+              <seq_no>SQ$(nr)</seq_no>
+              <seq_title>Magnet - control of level and pressure at 2 K</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step10>Keeping overpressure</step10>
+              <step12>Vacuum leak - waiting for Ack </step12>
+              <step14>Overpressure leak -waiting for Ack</step14>
+              <step2>Checking equipment</step2>
+              <step4>Pumping down</step4>
+              <step6>Keeping vacuum</step6>
+              <step8>Filling up with GHe</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ$(nr)</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Magnet - contol of LHe
+level and pressure at 2 K</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_6</name>
+      <macros>
+        <nr>19</nr>
+      </macros>
+      <x>79</x>
+      <y>70</y>
+      <width>80</width>
+      <height>36</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_1</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_19</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq$(nr).opi</file>
+            <macros>
+              <seq_no>SQ$(nr)</seq_no>
+              <seq_title>Seq 19: Magnet - current leads cooling</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step10>Keeping overpressure</step10>
+              <step12>Vacuum leak - waiting for Ack </step12>
+              <step14>Overpressure leak -waiting for Ack</step14>
+              <step2>Checking equipment</step2>
+              <step4>Pumping down</step4>
+              <step6>Keeping vacuum</step6>
+              <step8>Filling up with GHe</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ$(nr)</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Magnet - current leads
+cooling</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_22</name>
+      <x>1</x>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_3</name>
+        <pv_name>$(C)-Ctrl:SQ4:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_33</name>
+        <pv_name>$(C)-Ctrl:SQ4:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_11</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq4.opi</file>
+            <macros>
+              <seq_no>SQ4</seq_no>
+              <seq_title>Sequence 4: High voltage insulation tests</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step2>Checking parameters</step2>
+              <step4>Warming up</step4>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ4</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>High voltage insulation tests</tooltip>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_29</name>
+    <x>2</x>
+    <y>720</y>
+    <width>165</width>
+    <height>40</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_20</name>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_13</name>
+        <pv_name>$(C)-Ctrl:SQ24:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_30</name>
+        <pv_name>$(C)-Ctrl:SQ24:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_8</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq24.opi</file>
+            <macros>
+              <seq_no>SQ24</seq_no>
+              <seq_title>Cyostat isolated or connected to He recovery</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step2>Checking parameters</step2>
+              <step4>Not isolated</step4>
+              <step6>Isolated</step6>
+              <step8>Pressure alarm - waiting for Ackn or Stop</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ24</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Cryostat isolated or connected to He recovery</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_21</name>
+      <x>81</x>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_14</name>
+        <pv_name>$(C)-Ctrl:SQ25:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_31</name>
+        <pv_name>$(C)-Ctrl:SQ25:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_9</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq25.opi</file>
+            <macros>
+              <seq_no>SQ25</seq_no>
+              <seq_title>Valve box isolated or connected to He recovery</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step2>Checking parameters</step2>
+              <step4>Not isolated</step4>
+              <step6>Isolated</step6>
+              <step8>Pressure alarm - waiting for Ackn or Stop</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ25</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Valve box isolated or
+connected to He recovery</tooltip>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_30</name>
+    <x>2</x>
+    <y>635</y>
+    <width>164</width>
+    <height>74</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_17</name>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_10</name>
+        <pv_name>$(C)-Ctrl:SQ21:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_27</name>
+        <pv_name>$(C)-Ctrl:SQ21:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_14</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq21.opi</file>
+            <macros>
+              <seq_no>SQ21</seq_no>
+              <seq_title>Sequence 21: Valve box warm-up</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step10>Waiting for starting EH703</step10>
+              <step12>Waiting for LT600 to go below min.</step12>
+              <step14>Waiting for starting EH600</step14>
+              <step16>Warming-up and waiting for stop.</step16>
+              <step2>Checking parameters</step2>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ21</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Valve box warm-up</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_18</name>
+      <x>80</x>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_11</name>
+        <pv_name>$(C)-Ctrl:SQ22:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_28</name>
+        <pv_name>$(C)-Ctrl:SQ22:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_15</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq22.opi</file>
+            <macros>
+              <seq_no>SQ22</seq_no>
+              <seq_title>Sequence 22: Cryostat warm-up</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step10>Waiting for starting EH473</step10>
+              <step12>Waiting for LT600 to go below min.</step12>
+              <step14>Waiting for starting EH600</step14>
+              <step16>Stopping</step16>
+              <step2>Checking parameters</step2>
+              <step4>Waiting for Yes/No</step4>
+              <step6>Waiting for stopping SQ10-SQ20</step6>
+              <step8>Waiting for stopping SQ6</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ22</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Cryostat warm-up</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_19</name>
+      <y>34</y>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_12</name>
+        <pv_name>$(C)-Ctrl:SQ23:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_29</name>
+        <pv_name>$(C)-Ctrl:SQ23:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_18</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq23.opi</file>
+            <macros>
+              <seq_no>SQ23</seq_no>
+              <seq_title>Sequence 23: Insert warm-up</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step10>Waiting for starting EH765</step10>
+              <step12>Waiting for LI660/LI670/LI680 to go below min.</step12>
+              <step14>Stopping</step14>
+              <step2>Checking parameters</step2>
+              <step4>Waiting for Yes/No</step4>
+              <step6>Waiting for stopping S10-SQ20</step6>
+              <step8>Waiting for stopping SQ7</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ23</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Insert warm-up</tooltip>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_31</name>
+    <x>2</x>
+    <y>235</y>
+    <width>166</width>
+    <height>74</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_11</name>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_4</name>
+        <pv_name>$(C)-Ctrl:SQ5:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_21</name>
+        <pv_name>$(C)-Ctrl:SQ5:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_4</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq5.opi</file>
+            <macros>
+              <seq_no>SQ5</seq_no>
+              <seq_title>Sequence 5: Valve Box, thermal shield cooling</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step2>Checking equipment</step2>
+              <step4>Started LN2 flow. Waiting for TT704 or TT706 to go below Cool down temp.</step4>
+              <step6>LN2 circulation</step6>
+              <step8>Waiting for CV700 to close</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ5</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Valve Box, thermal shield cooling</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_23</name>
+      <x>82</x>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_17</name>
+        <pv_name>$(C)-Ctrl:SQ6:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_34</name>
+        <pv_name>$(C)-Ctrl:SQ6:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_16</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq6.opi</file>
+            <macros>
+              <seq_no>SQ6</seq_no>
+              <seq_title>Sequence 6: Cryostat thermal shield cooling</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step2>Checking parameters</step2>
+              <step4>Started LN2 flow.  Waiting for TT752 or TT749 to go below Cool down temp.</step4>
+              <step6>LN2 circulation</step6>
+              <step8>Waiting for CV740 to close</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ6</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Cryostat, thermal shield cooling</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_24</name>
+      <y>34</y>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_16</name>
+        <pv_name>$(C)-Ctrl:SQ7:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_35</name>
+        <pv_name>$(C)-Ctrl:SQ7:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_17</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq7.opi</file>
+            <macros>
+              <seq_no>SQ7</seq_no>
+              <seq_title>Seq. 7: Vacuum insert thermal shield cooling</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step2>Checking parameters</step2>
+              <step4>Started LN2 flow</step4>
+              <step6>LN2 circulation</step6>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ7</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Vacuum insert thermal
+shield cooling</tooltip>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_32</name>
+    <x>1</x>
+    <y>315</y>
+    <width>167</width>
+    <height>110</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container</name>
+      <macros>
+        <nr>11</nr>
+      </macros>
+      <x>82</x>
+      <y>34</y>
+      <width>80</width>
+      <height>36</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_1</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_19</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq$(nr).opi</file>
+            <macros>
+              <seq_no>SQ$(nr)</seq_no>
+              <seq_title>Seq. 11: Super-critical helium operation</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step10>Stop SCHe cooling</step10>
+              <step12>Wait for CV380 to be closed </step12>
+              <step2>Checking equipment</step2>
+              <step4>Delaying for Time open circ.</step4>
+              <step6>Starting compressor</step6>
+              <step8>Regulation</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ$(nr)</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Super-critical helium operation</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_1</name>
+      <macros>
+        <nr>13</nr>
+      </macros>
+      <x>81</x>
+      <y>69</y>
+      <width>80</width>
+      <height>36</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_1</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_19</name>
+        <pv_name>$(C)-Ctrl:SQ$(nr):sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq$(nr).opi</file>
+            <macros>
+              <seq_no>SQ$(nr)</seq_no>
+              <seq_title>Seq. 13: 2K operation (not magnet insert)</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step10>Waiting for FV554 to close and FV555 to open</step10>
+              <step12>Waiting for the 2K pumps to be ready (should be running &gt; 15 min at full speed)</step12>
+              <step14>Waiting for CV581 to close</step14>
+              <step16>Waiting for FV581 and FV584 to close</step16>
+              <step18>Pumping 2K tank</step18>
+              <step2>Checking equipment</step2>
+              <step20>2K tank pressure regulated</step20>
+              <step22>Stop pumping - waiting for FV582 to close</step22>
+              <step24>Waiting for 2K pumps to stop</step24>
+              <step26>Ventilating 2K pumps - waiting for PT584 to go above limit (around atmospheric pressure)</step26>
+              <step28>Stopping - waiting for FV556 to close, for CV581 &gt; P_CV581 and SQ13 mini seq to be in state 2</step28>
+              <step4>Waiting for Yes/No</step4>
+              <step6>Waiting for Yes/No</step6>
+              <step8>Waiting for CV581 to be &gt;= P_CV581</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ$(nr)</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>2K operation
+(no magnet insert)</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_12</name>
+      <x>2</x>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_6</name>
+        <pv_name>$(C)-Ctrl:SQ8:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_23</name>
+        <pv_name>$(C)-Ctrl:SQ8:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_5</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq8.opi</file>
+            <macros>
+              <seq_no>SQ8</seq_no>
+              <seq_title>Sequence 8: LHe level measurement</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step2>Checking parameters</step2>
+              <step4>Doing measurements</step4>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ8</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>LHe level measurement</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_13</name>
+      <x>82</x>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_7</name>
+        <pv_name>$(C)-Ctrl:SQ9:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_24</name>
+        <pv_name>$(C)-Ctrl:SQ9:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_6</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq9.opi</file>
+            <macros>
+              <seq_no>SQ9</seq_no>
+              <seq_title>Seq. 9: VBox cooling &amp; 4K tank level control</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step10>Regulation mode (dewar)</step10>
+              <step11>Intermittent mode - wait for CV600 to close and LT600&lt;LT600 Min</step11>
+              <step12>Waiting for FV602 to close</step12>
+              <step13>Waiting for LT600 &lt; LT600 Min</step13>
+              <step14>Waiting for FV602 to open</step14>
+              <step16>Cool down TL010 - waiting for TT602 or TT614 to be below TT Cool-down</step16>
+              <step18>4K tank filling until LT600 &gt; LT600 Max</step18>
+              <step2>Checking parameters</step2>
+              <step20>End of filling - waiting for LT600 &lt; LT600 Min</step20>
+              <step22>Waiting for FV602 to close</step22>
+              <step24>Waiting for Yes/No</step24>
+              <step26>Waiting for CV590 to close</step26>
+              <step28>Waiting for CV600 to close</step28>
+              <step30>4K tank outgasing</step30>
+              <step32>Preparation to regulate - waiting for CV580 to reach P_CV580 and CV5203 to open</step32>
+              <step34>Regulation mode</step34>
+              <step35>Wait for CV600 to close and LT600 &lt; LT600 Min</step35>
+              <step36>Liquifier valve closing - waiting for CV5203 to close</step36>
+              <step38>Waiting for CV600 to close</step38>
+              <step4>Select LHe recovery path then press Yes</step4>
+              <step40>4K tank outgasing</step40>
+              <step41>Wait for LT600 &lt; LT600 Min</step41>
+              <step42>Cool down TL010 - wait until TT602 or TT614 to be below TT Cool-down and CV5203 open 100%</step42>
+              <step44>4K tank filling - wait until LT600 &gt; LT600 Max</step44>
+              <step46>End of filling - waiting for LT600 &lt; LT600 Min</step46>
+              <step48>Waiting for closing CV5203</step48>
+              <step6>Select LHe source then press Accept</step6>
+              <step7>Waiting for Yes</step7>
+              <step8>Prepare to regulate (dewar)</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ9</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Valve Box cooling and
+4K tank level control</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_14</name>
+      <x>2</x>
+      <y>34</y>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_8</name>
+        <pv_name>$(C)-Ctrl:SQ10:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_25</name>
+        <pv_name>$(C)-Ctrl:SQ10:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_7</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq10.opi</file>
+            <macros>
+              <seq_no>SQ10</seq_no>
+              <seq_title>Sequence 10: Cavity cooling</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step10>End of cool-down - wait for CV601 to close</step10>
+              <step12>Intermittent mode - wait for reaching LI660/LI670 Min</step12>
+              <step14>Regulating (PID mode)</step14>
+              <step15>Go to step 14</step15>
+              <step16>Cryostat filling - wait for reaching LI660/LI670 Max</step16>
+              <step18>Intermittent mode - wait for reaching LI660/LI670 Min</step18>
+              <step2>Checking parameters</step2>
+              <step20>Stop: waiting for CV602 to be closed</step20>
+              <step4>Waiting for Yes</step4>
+              <step8>Cooling cavity - wait for reaching LI660/LI670 Max</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ10</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Cavity cooling</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_15</name>
+      <y>69</y>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_2</name>
+        <pv_name>$(C)-Ctrl:SQ12:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_20</name>
+        <pv_name>$(C)-Ctrl:SQ12:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_12</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq12.opi</file>
+            <macros>
+              <seq_no>SQ12</seq_no>
+              <seq_title>Sequence 12: Cavity operation at 4 K</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking equipment</step1>
+              <step10>Intermittent mode - waiting for reaching LI660/670 Min</step10>
+              <step12>Stopping - waiting for FV642/643 and CV602 to close</step12>
+              <step2>Checking parameters</step2>
+              <step4>Ready to fill</step4>
+              <step6>Regulation (PID)</step6>
+              <step7>Intermittent mode - waiting for reaching LI660/670 Min</step7>
+              <step8>Filling - waiting for reaching LI660/670 Max</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ12</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Cavity operation at 4 K</tooltip>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Circuits conditioning</name>
+    <x>4</x>
+    <y>140</y>
+    <width>164</width>
+    <height>75</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_2</name>
+      <x>80</x>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_15</name>
+        <pv_name>$(C)-Ctrl:SQ3:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_32</name>
+        <pv_name>$(C)-Ctrl:SQ3:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_10</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq3.opi</file>
+            <macros>
+              <seq_no>SQ3</seq_no>
+              <seq_title>Sequence 3: SCHe, conditioning He circuits</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step10>Leak test at low pressure</step10>
+              <step12>Flashing with GHe</step12>
+              <step14>Leak test at high pressure</step14>
+              <step16>Waiting for FV380 to close</step16>
+              <step18>He conditioning stopped</step18>
+              <step2>Checking equipment</step2>
+              <step20>Waiting for P090 to stop</step20>
+              <step22>Test failed - press Ackn</step22>
+              <step24>Test failed - press Ackn</step24>
+              <step26>Waiting for Yes/No</step26>
+              <step28>Waiting for Yes/No</step28>
+              <step30>Waiting for FV090 to close</step30>
+              <step32>Flushing with GHe</step32>
+              <step34>Waiting for Yes</step34>
+              <step36>Pressure alarm - press Ackn</step36>
+              <step38>Vacuum alarm - press Ackn</step38>
+              <step4>Prepare for purging</step4>
+              <step40>Waiting for Yes/No</step40>
+              <step6>Start the pumping</step6>
+              <step8>Pumping</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ3</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Super-critical helium
+Conditioning He circuits</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container</name>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_1</name>
+        <pv_name>$(C)-Ctrl:SQ1:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_19</name>
+        <pv_name>$(C)-Ctrl:SQ1:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq1.opi</file>
+            <macros>
+              <seq_no>SQ1</seq_no>
+              <seq_title>Seq. 1: Valve Box - Conditioning He circuits</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step10>Leak test at low pressure</step10>
+              <step12>Flashing with GHe</step12>
+              <step14>Leak test at high pressure</step14>
+              <step16>Waiting for FV600 to close</step16>
+              <step18>He conditioning stopped</step18>
+              <step2>Checking equipment</step2>
+              <step20>Pump stopped</step20>
+              <step22>Test failed - press Ackn</step22>
+              <step24>Test failed - press Ackn</step24>
+              <step26>Waiting for Yes/No</step26>
+              <step28>Waiting for Yes/No</step28>
+              <step30>Waiting for FV090 to close</step30>
+              <step32>Flushing with GHe</step32>
+              <step34>Waiting for Yes</step34>
+              <step36>Pressure alarm - press Ackn</step36>
+              <step38>Vacuum alarm - press Ackn</step38>
+              <step4>Prepare for purging</step4>
+              <step40>Waiting for Yes/No</step40>
+              <step6>Start the pumping</step6>
+              <step8>Pumping</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ1</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Valve Box
+Conditioning He circuits</tooltip>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_1</name>
+      <y>35</y>
+      <width>79</width>
+      <height>35</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_3</name>
+        <pv_name>$(C)-Ctrl:SQ2:sStopping</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>17</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_22</name>
+        <pv_name>$(C)-Ctrl:SQ2:sRun</pv_name>
+        <bit>0</bit>
+        <x>61</x>
+        <y>2</y>
+        <width>16</width>
+        <height>16</height>
+        <off_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template_3</name>
+        <actions>
+          <action type="open_display">
+            <file>helper-opi-files/Seq2.opi</file>
+            <macros>
+              <seq_no>SQ2</seq_no>
+              <seq_title>Sequence 2: Cryostat, conditioning He circuits</seq_title>
+              <step0>Not running</step0>
+              <step1>Checking parameters</step1>
+              <step10>Leak test at low pressure</step10>
+              <step12>Flashing with GHe</step12>
+              <step14>Leak test at high pressure</step14>
+              <step16>Waiting for FV600 to close</step16>
+              <step18>He conditioning stopped - waiting for CV582 to close</step18>
+              <step2>Checking equipment</step2>
+              <step20>Waiting for P090 to stop</step20>
+              <step22>Test failed - press Ackn</step22>
+              <step24>Test failed - press Ackn</step24>
+              <step26>Waiting for Yes/No</step26>
+              <step28>Waiting for Yes/No</step28>
+              <step30>Waiting for FV090 to close</step30>
+              <step32>Flushing with GHe</step32>
+              <step34>Waiting for Yes</step34>
+              <step36>Pressure alarm - press Ackn</step36>
+              <step38>Vacuum alarm - press Ackn</step38>
+              <step4>Prepare for purging</step4>
+              <step40>Waiting for Yes/No</step40>
+              <step6>Start the pumping</step6>
+              <step8>Pumping</step8>
+            </macros>
+            <target>tab</target>
+          </action>
+        </actions>
+        <text>SQ2</text>
+        <width>60</width>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Cryostat, conditioning He circuits</tooltip>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Detected insert:</text>
+    <x>8</x>
+    <y>775</y>
+    <width>162</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container</name>
+    <x>8</x>
+    <y>800</y>
+    <width>153</width>
+    <height>20</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(C)-Ctrl:VacIns:sInp</pv_name>
+      <width>150</width>
+      <visible>false</visible>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0">
+            <value>true</value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(C)-Ctrl:LiqIns:sInp</pv_name>
+      <width>150</width>
+      <visible>false</visible>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0">
+            <value>true</value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>$(C)-Ctrl:MagIns:sInp</pv_name>
+      <width>150</width>
+      <visible>false</visible>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="Rule" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0">
+            <value>true</value>
+          </exp>
+          <pv_name>$(pv_name)</pv_name>
+        </rule>
+      </rules>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_34</name>
+    <x>170</x>
+    <y>10</y>
+    <width>1600</width>
+    <height>1000</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="188" green="188" blue="188">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="tabs" version="2.0.0">
+      <name>tabcontainer</name>
+      <tabs>
+        <tab>
+          <name>Overview</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container</name>
+              <file>helper-opi-files/Overview.bob</file>
+              <width>1594</width>
+              <height>967</height>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>2K Pumps</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container</name>
+              <file>helper-opi-files/2Kpumps.bob</file>
+              <width>1594</width>
+              <height>967</height>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Global Operation View</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container Template</name>
+              <file>helper-opi-files/GlobOpView.bob</file>
+              <macros>
+                <P>$(C)</P>
+              </macros>
+              <width>1594</width>
+              <height>967</height>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="64" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Purging system</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container Template</name>
+              <file>helper-opi-files/PurgSys.bob</file>
+              <width>1594</width>
+              <height>967</height>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="64" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Helium Pumping and Reheating</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container Template</name>
+              <file>helper-opi-files/ReheatSys.bob</file>
+              <macros>
+                <P>CstatV</P>
+              </macros>
+              <width>1594</width>
+              <height>967</height>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="64" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Supercritical Helium</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container Template</name>
+              <file>helper-opi-files/ScHeSystem.bob</file>
+              <macros>
+                <P>$(C)</P>
+              </macros>
+              <width>1594</width>
+              <height>967</height>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="64" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Liquid Insert</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container Template</name>
+              <file>helper-opi-files/Liquid-insert.bob</file>
+              <width>1594</width>
+              <height>967</height>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="64" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Magnet Insert</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container Template</name>
+              <file>helper-opi-files/Magnet-insert.bob</file>
+              <width>1594</width>
+              <height>967</height>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="64" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Liquid Nitrogen</name>
+          <children>
+            <widget type="embedded" version="2.0.0">
+              <name>Linking Container Template</name>
+              <file>helper-opi-files/LiquidN2.bob</file>
+              <width>1594</width>
+              <height>967</height>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="64" blue="255">
+                </color>
+              </border_color>
+            </widget>
+          </children>
+        </tab>
+        <tab>
+          <name>Test</name>
+          <children>
+            <widget type="label" version="2.0.0">
+              <name>Label Template</name>
+              <text># od disconnects:</text>
+              <x>40</x>
+              <y>30</y>
+              <width>90</width>
+              <height>12</height>
+              <font>
+                <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+                </font>
+              </font>
+              <foreground_color>
+                <color name="IO Text Fg" red="0" green="32" blue="92">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color name="IO Background" red="255" green="255" blue="205">
+                </color>
+              </background_color>
+              <vertical_alignment>1</vertical_alignment>
+              <auto_size>true</auto_size>
+              <actions>
+              </actions>
+              <border_color>
+                <color name="IO Border" red="215" green="215" blue="215">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="textupdate" version="2.0.0">
+              <name>Text Update Template</name>
+              <pv_name>$(C)-Ctrl:s7-disconnect-counter</pv_name>
+              <x>131</x>
+              <y>28</y>
+              <width>96</width>
+              <height>17</height>
+              <font>
+                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                </font>
+              </font>
+              <foreground_color>
+                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                </color>
+              </background_color>
+              <actions>
+              </actions>
+              <border_alarm_sensitive>false</border_alarm_sensitive>
+              <border_width>2</border_width>
+            </widget>
+            <widget type="meter" version="2.0.0">
+              <name>LP:PI2240</name>
+              <pv_name>Cryo-Cmp:LP:PI2240</pv_name>
+              <skin>0</skin>
+              <knob_position>3</knob_position>
+              <x>24</x>
+              <y>70</y>
+              <width>136</width>
+              <height>136</height>
+              <background_color>
+                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                </color>
+              </background_color>
+              <foreground_color>
+                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                </color>
+              </foreground_color>
+              <transparent>false</transparent>
+              <level_hihi>1.8</level_hihi>
+              <level_high>1.5</level_high>
+              <level_low>0.0</level_low>
+              <level_lolo>0.0</level_lolo>
+              <actions>
+              </actions>
+              <rules>
+                <rule name="BorderRule" prop_id="border_style" out_exp="false">
+                  <exp bool_exp="pv0==1">
+                    <value>9</value>
+                  </exp>
+                  <pv_name>$(pv_name).SIMM</pv_name>
+                </rule>
+              </rules>
+              <maximum>2.0</maximum>
+              <limits_from_pv>false</limits_from_pv>
+              <highligh_zones>false</highligh_zones>
+              <lcd_visible>false</lcd_visible>
+              <needle_color>
+                <color name="IO Stick" red="0" green="32" blue="92">
+                </color>
+              </needle_color>
+            </widget>
+            <widget type="progressbar" version="2.0.0">
+              <name>HP:UY2160</name>
+              <pv_name>Cryo-Cmp:HP:UY2160-PercOut</pv_name>
+              <x>223</x>
+              <y>211</y>
+              <width>200</width>
+              <height>82</height>
+              <fill_color>
+                <color name="IO PV ON" red="0" green="0" blue="225">
+                </color>
+              </fill_color>
+              <actions>
+              </actions>
+              <rules>
+                <rule name="BorderRule" prop_id="border_style" out_exp="false">
+                  <exp bool_exp="pv0==1">
+                    <value>9</value>
+                  </exp>
+                  <pv_name>$(pv_name).SIMM</pv_name>
+                </rule>
+              </rules>
+              <limits_from_pv>false</limits_from_pv>
+            </widget>
+            <widget type="progressbar" version="2.0.0">
+              <name>HP:UY2150</name>
+              <pv_name>Cryo-Cmp:HP:UY2150-PercOut</pv_name>
+              <x>23</x>
+              <y>211</y>
+              <width>200</width>
+              <height>82</height>
+              <fill_color>
+                <color name="IO PV ON" red="0" green="0" blue="225">
+                </color>
+              </fill_color>
+              <actions>
+              </actions>
+              <rules>
+                <rule name="BorderRule" prop_id="border_style" out_exp="false">
+                  <exp bool_exp="pv0==1">
+                    <value>9</value>
+                  </exp>
+                  <pv_name>$(pv_name).SIMM</pv_name>
+                </rule>
+              </rules>
+              <limits_from_pv>false</limits_from_pv>
+            </widget>
+            <widget type="progressbar" version="2.0.0">
+              <name>LP:UY2250</name>
+              <pv_name>Cryo-Cmp:LP:UY2250-PercOut</pv_name>
+              <x>23</x>
+              <y>292</y>
+              <width>200</width>
+              <height>82</height>
+              <fill_color>
+                <color name="IO PV ON" red="0" green="0" blue="225">
+                </color>
+              </fill_color>
+              <actions>
+              </actions>
+              <rules>
+                <rule name="BorderRule" prop_id="border_style" out_exp="false">
+                  <exp bool_exp="pv0==1">
+                    <value>9</value>
+                  </exp>
+                  <pv_name>$(pv_name).SIMM</pv_name>
+                </rule>
+              </rules>
+              <limits_from_pv>false</limits_from_pv>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Input</name>
+              <pv_name>$(C)-Ctrl:SQ1:cVacFlt</pv_name>
+              <x>341</x>
+              <y>80</y>
+              <height>25</height>
+              <foreground_color>
+                <color red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color red="255" green="255" blue="255">
+                </color>
+              </background_color>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Input Template</name>
+              <pv_name>$(C)-Ctrl:SQ1:cVacFlt</pv_name>
+              <x>425</x>
+              <y>125</y>
+              <width>79</width>
+              <height>38</height>
+              <foreground_color>
+                <color red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color red="255" green="255" blue="255">
+                </color>
+              </background_color>
+              <show_units>false</show_units>
+              <actions>
+              </actions>
+              <border_color>
+                <color red="0" green="128" blue="255">
+                </color>
+              </border_color>
+            </widget>
+            <widget type="textentry" version="3.0.0">
+              <name>Text Input Template</name>
+              <pv_name>$(C)-Ctrl:SQ1:cVacFlt</pv_name>
+              <x>347</x>
+              <y>127</y>
+              <width>52</width>
+              <height>21</height>
+              <font>
+                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                </font>
+              </font>
+              <foreground_color>
+                <color name="IO OutputPV Fg" red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color red="0" green="0" blue="0">
+                </color>
+              </background_color>
+              <show_units>false</show_units>
+              <actions>
+              </actions>
+              <rules>
+                <rule name="BorderRule" prop_id="border_style" out_exp="false">
+                  <exp bool_exp="pv0==1">
+                    <value>9</value>
+                  </exp>
+                  <pv_name>$(pv_name).SIMM</pv_name>
+                </rule>
+              </rules>
+              <border_width>2</border_width>
+            </widget>
+            <widget type="led" version="2.0.0">
+              <name>LED</name>
+              <pv_name>CV</pv_name>
+              <x>1062</x>
+              <y>236</y>
+              <width>31</width>
+              <height>31</height>
+              <off_color>
+                <color red="0" green="100" blue="0">
+                </color>
+              </off_color>
+              <on_color>
+                <color red="0" green="255" blue="0">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color red="192" green="192" blue="192">
+                </color>
+              </foreground_color>
+              <line_color>
+                <color red="150" green="150" blue="150">
+                </color>
+              </line_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button</name>
+              <actions>
+                <action type="write_pv">
+                  <pv_name>$(pv_name)</pv_name>
+                  <value>1</value>
+                </action>
+              </actions>
+              <pv_name>CV</pv_name>
+              <text>Close</text>
+              <x>940</x>
+              <y>232</y>
+              <width>105</width>
+              <height>40</height>
+              <foreground_color>
+                <color red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color red="240" green="240" blue="240">
+                </color>
+              </background_color>
+            </widget>
+            <widget type="led" version="2.0.0">
+              <name>LED</name>
+              <pv_name>OV</pv_name>
+              <x>1062</x>
+              <y>279</y>
+              <width>31</width>
+              <height>31</height>
+              <off_color>
+                <color red="0" green="100" blue="0">
+                </color>
+              </off_color>
+              <on_color>
+                <color red="0" green="255" blue="0">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color red="192" green="192" blue="192">
+                </color>
+              </foreground_color>
+              <line_color>
+                <color red="150" green="150" blue="150">
+                </color>
+              </line_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button</name>
+              <actions>
+                <action type="write_pv">
+                  <pv_name>$(pv_name)</pv_name>
+                  <value>1</value>
+                </action>
+              </actions>
+              <pv_name>OV</pv_name>
+              <text>Open</text>
+              <x>940</x>
+              <y>275</y>
+              <width>105</width>
+              <height>40</height>
+              <foreground_color>
+                <color red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color red="240" green="240" blue="240">
+                </color>
+              </background_color>
+            </widget>
+            <widget type="led" version="2.0.0">
+              <name>LED_4</name>
+              <pv_name>OpenClsCmd</pv_name>
+              <x>1340</x>
+              <y>228</y>
+              <width>48</width>
+              <height>48</height>
+              <off_color>
+                <color red="0" green="100" blue="0">
+                </color>
+              </off_color>
+              <on_color>
+                <color red="0" green="255" blue="0">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color red="192" green="192" blue="192">
+                </color>
+              </foreground_color>
+              <line_color>
+                <color red="150" green="150" blue="150">
+                </color>
+              </line_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="radio" version="2.0.0">
+              <name>Choice Button</name>
+              <pv_name>OpenClsCmd.OMSL</pv_name>
+              <x>1289</x>
+              <y>311</y>
+              <width>150</width>
+              <height>86</height>
+              <font>
+                <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+                </font>
+              </font>
+              <foreground_color>
+                <color red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <horizontal>false</horizontal>
+              <actions>
+              </actions>
+              <items>
+                <item>Item 1</item>
+                <item>Item 2</item>
+              </items>
+            </widget>
+            <widget type="action_button" version="3.0.0">
+              <name>Action Button_4</name>
+              <actions>
+                <action type="write_pv">
+                  <pv_name>$(pv_name)</pv_name>
+                  <value>1</value>
+                </action>
+              </actions>
+              <pv_name>OpenClsCmd</pv_name>
+              <text>Toggle
+Open/Close</text>
+              <x>1289</x>
+              <y>420</y>
+              <width>150</width>
+              <height>51</height>
+              <foreground_color>
+                <color red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <background_color>
+                <color red="240" green="240" blue="240">
+                </color>
+              </background_color>
+            </widget>
+            <widget type="led" version="2.0.0">
+              <name>LED_5</name>
+              <pv_name>OCcmd</pv_name>
+              <x>1222</x>
+              <y>425</y>
+              <width>41</width>
+              <height>41</height>
+              <off_color>
+                <color red="0" green="100" blue="0">
+                </color>
+              </off_color>
+              <on_color>
+                <color red="0" green="255" blue="0">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color red="192" green="192" blue="192">
+                </color>
+              </foreground_color>
+              <line_color>
+                <color red="150" green="150" blue="150">
+                </color>
+              </line_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="radio" version="2.0.0">
+              <name>Choice Button_2</name>
+              <pv_name>vopen</pv_name>
+              <x>1289</x>
+              <y>140</y>
+              <width>150</width>
+              <height>66</height>
+              <foreground_color>
+                <color red="0" green="0" blue="0">
+                </color>
+              </foreground_color>
+              <horizontal>false</horizontal>
+              <actions>
+              </actions>
+              <items>
+                <item>Item 1</item>
+                <item>Item 2</item>
+              </items>
+            </widget>
+            <widget type="led" version="2.0.0">
+              <name>LED_1</name>
+              <pv_name>ackOpen</pv_name>
+              <x>1112</x>
+              <y>279</y>
+              <width>31</width>
+              <height>31</height>
+              <off_color>
+                <color red="0" green="100" blue="0">
+                </color>
+              </off_color>
+              <on_color>
+                <color red="0" green="255" blue="0">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color red="192" green="192" blue="192">
+                </color>
+              </foreground_color>
+              <line_color>
+                <color red="150" green="150" blue="150">
+                </color>
+              </line_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="led" version="2.0.0">
+              <name>LED_1</name>
+              <pv_name>ackClose</pv_name>
+              <x>1112</x>
+              <y>236</y>
+              <width>31</width>
+              <height>31</height>
+              <off_color>
+                <color red="0" green="100" blue="0">
+                </color>
+              </off_color>
+              <on_color>
+                <color red="0" green="255" blue="0">
+                </color>
+              </on_color>
+              <foreground_color>
+                <color red="192" green="192" blue="192">
+                </color>
+              </foreground_color>
+              <line_color>
+                <color red="150" green="150" blue="150">
+                </color>
+              </line_color>
+              <actions>
+              </actions>
+            </widget>
+            <widget type="symbol" version="2.0.0">
+              <name>Boolean Symbol Monitor_1</name>
+              <pv_name>CstatH-RHtr:CV551:sRdV</pv_name>
+              <symbols>
+                <symbol>../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control Butterfly Construction.png</symbol>
+                <symbol>../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control Butterfly Construction.png</symbol>
+              </symbols>
+              <x>700</x>
+              <y>405</y>
+              <width>47</width>
+              <height>36</height>
+              <background_color>
+                <color red="240" green="240" blue="240">
+                </color>
+              </background_color>
+              <actions>
+              </actions>
+              <auto_size>true</auto_size>
+            </widget>
+            <widget type="symbol" version="2.0.0">
+              <name>Boolean Symbol Monitor</name>
+              <pv_name>CstatH-RHtr:CV552:sRdV</pv_name>
+              <symbols>
+                <symbol>../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control Butterfly Construction.png</symbol>
+                <symbol>../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control Butterfly Construction.png</symbol>
+              </symbols>
+              <x>773</x>
+              <y>405</y>
+              <width>47</width>
+              <height>36</height>
+              <background_color>
+                <color red="240" green="240" blue="240">
+                </color>
+              </background_color>
+              <actions>
+              </actions>
+              <auto_size>true</auto_size>
+            </widget>
+          </children>
+        </tab>
+      </tabs>
+      <width>1650</width>
+      <height>1050</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <tab_height>10</tab_height>
+      <actions>
+      </actions>
+      <tooltip>Overview</tooltip>
+    </widget>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_display">
+        <file>CmdPanels/CstatV-AI-sim-top.opi</file>
+        <target>standalone</target>
+        <description>Simulate Analog Input</description>
+      </action>
+    </actions>
+    <text>Simulate
+Analog Input</text>
+    <x>15</x>
+    <y>955</y>
+    <width>146</width>
+    <height>50</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button Template_19</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Acknowledge pending alarms</description>
+      </action>
+    </actions>
+    <pv_name>$(C)-Ctrl:opMode:cmdSetAck</pv_name>
+    <text>Acknowledge 
+Alarms</text>
+    <x>15</x>
+    <y>885</y>
+    <width>146</width>
+    <height>56</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <tooltip></tooltip>
+  </widget>
+</display>

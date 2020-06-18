@@ -1,0 +1,2637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>menu-gersemi</name>
+  <macros>
+    <CSTAT>CstatV</CSTAT>
+  </macros>
+  <x>714</x>
+  <y>120</y>
+  <width>500</width>
+  <height>800</height>
+  <background_color>
+    <color red="187" green="187" blue="187">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV600</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV600</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV601</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV601</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV602</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV602</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV603</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV603</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV650</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV650</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV651</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV651</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV700</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV700</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV740</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV740</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV380</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV380</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV590</DEV>
+          <SUBS>EDwr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV590</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV580</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV580</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV581</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV581</description>
+      </action>
+      <action type="open_display">
+        <file>macroAValves.opi</file>
+        <macros>
+          <DEV>CV582</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>CV582</description>
+      </action>
+    </actions>
+    <text>Analog Valves</text>
+    <x>41</x>
+    <y>103</y>
+    <width>158</width>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="89" green="126" blue="225">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>LS580</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LS580</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>TS580</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TS580</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>TS370</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TS370</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>TS700</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TS700</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>TS740</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TS740</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>TS744</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TS744</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>TS748</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TS748</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>TS760</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TS760</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>LiqIns</DEV>
+          <SUBS>Ctrl</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LiqIns</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>VacIns</DEV>
+          <SUBS>Ctrl</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>VacIns</description>
+      </action>
+      <action type="open_display">
+        <file>macroDI.opi</file>
+        <macros>
+          <DEV>MagIns</DEV>
+          <SUBS>Ctrl</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>MagIns</description>
+      </action>
+    </actions>
+    <text>Digital Input</text>
+    <x>40</x>
+    <y>72</y>
+    <width>160</width>
+    <height>26</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="26" green="115" blue="9">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(CSTAT)-Ctrl:s7-status</pv_name>
+    <x>10</x>
+    <y>18</y>
+    <width>134</width>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="218" green="218" blue="218">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>6</format>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(CSTAT)-Ctrl:s7-status-counter</pv_name>
+    <x>146</x>
+    <y>18</y>
+    <width>69</width>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(CSTAT)-Ctrl:s7-disconnect-counter</pv_name>
+    <x>146</x>
+    <y>40</y>
+    <width>69</width>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="216" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="70" green="70" blue="70">
+      </color>
+    </background_color>
+    <format>1</format>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>disconnects:</text>
+    <x>12</x>
+    <y>40</y>
+    <width>119</width>
+    <font>
+      <font family="Cantarell" style="REGULAR" size="10.891089108910892">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV050</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV050</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV060</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV060</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV070</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV070</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV080</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV080</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV090</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV090</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV091</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV091</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV092</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV092</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV600</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV600</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV601</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV601</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV602</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV602</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV640</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV640</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV641</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV641</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV642</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV642</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV643</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV643</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV660</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV660</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV680</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV680</description>
+      </action>
+    </actions>
+    <text>Valves 1</text>
+    <x>43</x>
+    <y>137</y>
+    <width>156</width>
+    <height>32</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroEvalves.opi</file>
+        <macros>
+          <DEV>EV700</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EV700</description>
+      </action>
+      <action type="open_display">
+        <file>macroEvalves.opi</file>
+        <macros>
+          <DEV>EV740</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EV740</description>
+      </action>
+      <action type="open_display">
+        <file>macroEvalves.opi</file>
+        <macros>
+          <DEV>EV744</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EV744</description>
+      </action>
+      <action type="open_display">
+        <file>macroEvalves.opi</file>
+        <macros>
+          <DEV>EV748</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EV748</description>
+      </action>
+      <action type="open_display">
+        <file>macroEvalves.opi</file>
+        <macros>
+          <DEV>EV760</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EV760</description>
+      </action>
+      <action type="open_display">
+        <file>macroEvalves.opi</file>
+        <macros>
+          <DEV>EV762</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EV762</description>
+      </action>
+    </actions>
+    <text>Electrovalves</text>
+    <x>43</x>
+    <y>221</y>
+    <width>156</width>
+    <height>26</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(CSTAT)-Ctrl:opMode:cmdLocal</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(CSTAT)-Ctrl:opMode:cmdLocal</pv_name>
+    <text>Local</text>
+    <x>47</x>
+    <y>467</y>
+    <width>126</width>
+    <height>24</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="249" green="218" blue="60">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(CSTAT)-Ctrl:opMode:cmdRemote</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(CSTAT)-Ctrl:opMode:cmdRemote</pv_name>
+    <text>Remote</text>
+    <x>192</x>
+    <y>465</y>
+    <width>130</width>
+    <height>24</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="205" green="97" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(CSTAT)-Ctrl:opMode:sLocal</pv_name>
+    <x>46</x>
+    <y>434</y>
+    <width>105</width>
+    <height>28</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>LIC600</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LIC600</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>LIC660</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LIC660</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>PIC600</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PIC600</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>PIC660</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PIC660</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>LIC670</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LIC670</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>FIC380</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FIC380</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>TIC371</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TIC371</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>TIC372</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TIC372</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>PIC660A</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PIC660A</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>LIC660A</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LIC660A</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>LIC670A</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LIC670A</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>LIC682</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LIC682</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>PIC681</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PIC681</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>LIC683</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LIC683</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>TIC690</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TIC690</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>FIC581</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FIC581</description>
+      </action>
+    </actions>
+    <text>PID 1</text>
+    <x>43</x>
+    <y>256</y>
+    <width>70</width>
+    <height>26</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH600</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH600</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH601</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH601</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH640</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH640</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH641</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH641</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH650</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH650</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH651</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH651</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH652</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH652</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH653</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH653</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH654</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH654</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH700</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH700</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH701</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH701</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH702</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH702</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH590</DEV>
+          <SUBS>EDwr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH590</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH762</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH762</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH763</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH763</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH765</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH765</description>
+      </action>
+    </actions>
+    <text>Heater1 #1</text>
+    <x>43</x>
+    <y>291</y>
+    <width>156</width>
+    <height>26</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroHeater2.opi</file>
+        <macros>
+          <DEV>EH580</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH580</description>
+      </action>
+    </actions>
+    <text>Heater2</text>
+    <x>44</x>
+    <y>358</y>
+    <width>156</width>
+    <height>26</height>
+    <foreground_color>
+      <color red="251" green="243" blue="74">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="88" green="52" blue="15">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ1</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ1</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ2</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ5</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ5</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ8</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ8</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ9</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ9</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ10</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ10</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ12</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ12</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ14</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ14</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ21</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ21</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ22</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ22</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ23</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ23</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ24</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ24</description>
+      </action>
+      <action type="open_display">
+        <file>macroSQ.opi</file>
+        <macros>
+          <SUBS>SQ25</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>SQ25</description>
+      </action>
+    </actions>
+    <text>Sequences</text>
+    <x>44</x>
+    <y>393</y>
+    <width>156</width>
+    <height>26</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="97" green="10" blue="117">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(CSTAT)-Ctrl:opMode:cmdSetParam</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(CSTAT)-Ctrl:opMode:cmdSetParam</pv_name>
+    <text>SetParam</text>
+    <x>46</x>
+    <y>502</y>
+    <width>130</width>
+    <height>24</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(CSTAT)-Ctrl:opMode:cmdSetAck</pv_name>
+        <value>1</value>
+      </action>
+    </actions>
+    <pv_name>$(CSTAT)-Ctrl:opMode:cmdSetAck</pv_name>
+    <text>SetAck</text>
+    <x>48</x>
+    <y>536</y>
+    <width>126</width>
+    <height>24</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT352</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT352</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT353</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT353</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT355</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT355</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT371</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT371</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT372</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT372</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT373</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT373</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT602</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT602</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT603</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT603</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT604</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT604</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT605</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT605</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT607</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT606</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT607</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT607</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT608</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT608</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT609</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT609</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT610</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT610</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT611</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT611</description>
+      </action>
+    </actions>
+    <text>Analog input: Cernox 1</text>
+    <x>234</x>
+    <y>194</y>
+    <width>205</width>
+    <height>23</height>
+    <foreground_color>
+      <color red="253" green="253" blue="253">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT380</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT380</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT580</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT580</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT581</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT581</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT650</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT650</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT651</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT651</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT652</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT652</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT653</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT653</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT700</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT700</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT740</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT740</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT760</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT760</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LI660</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LI660</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LI670</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LI670</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LI680</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LI680</description>
+      </action>
+    </actions>
+    <text>Analog input: FT and LI</text>
+    <x>234</x>
+    <y>223</y>
+    <width>205</width>
+    <height>23</height>
+    <foreground_color>
+      <color red="253" green="253" blue="253">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT590</DEV>
+          <SUBS>EDwr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT590</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT600</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT600</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT601</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT601</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT660</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT660</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT661</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT661</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT670</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT670</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT671</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT671</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT680</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT680</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT681</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT681</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT682</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT682</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>LT683</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>LT683</description>
+      </action>
+    </actions>
+    <text>Analog input: LT</text>
+    <x>234</x>
+    <y>251</y>
+    <width>205</width>
+    <height>23</height>
+    <foreground_color>
+      <color red="253" green="253" blue="253">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT351</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT351</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT354</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT354</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT370</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT370</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT380</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT380</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT381</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT381</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT580</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT580</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT590</DEV>
+          <SUBS>EDwr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT590</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT651</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT651</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT652</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT652</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT653</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT653</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT654</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT654</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT655</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT655</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT656</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT656</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT657</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT657</description>
+      </action>
+    </actions>
+    <text>Analog input: Pt100 1</text>
+    <x>234</x>
+    <y>105</y>
+    <width>205</width>
+    <height>23</height>
+    <foreground_color>
+      <color red="253" green="253" blue="253">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT550</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT550</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT550</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT550</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT551</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT551</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>FT552</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FT552</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT551</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT551</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT552</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT552</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT550</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT550</description>
+      </action>
+    </actions>
+    <text>Analog input: RHtr</text>
+    <x>234</x>
+    <y>411</y>
+    <width>205</width>
+    <height>23</height>
+    <foreground_color>
+      <color red="253" green="253" blue="253">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT050</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT050</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT051</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT051</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT060</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT060</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT061</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT061</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT070</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT070</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT071</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT071</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT080</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT080</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>PT081</DEV>
+          <SUBS>Vac</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PT081</description>
+      </action>
+    </actions>
+    <text>Analog input: Vac</text>
+    <x>234</x>
+    <y>74</y>
+    <width>205</width>
+    <height>23</height>
+    <foreground_color>
+      <color red="253" green="253" blue="253">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV380</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV380</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV381</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV381</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV382</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV382</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV383</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV383</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV580</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV580</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV581</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV581</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV582</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV582</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV583</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV583</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV584</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV584</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV585</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV585</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV586</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV586</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV587</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV587</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV681</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV681</description>
+      </action>
+      <action type="open_display">
+        <file>macroValves.opi</file>
+        <macros>
+          <DEV>FV740</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FV740</description>
+      </action>
+    </actions>
+    <text>Valves 2</text>
+    <x>42</x>
+    <y>177</y>
+    <width>156</width>
+    <height>32</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="253" green="0" blue="0">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH703</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH703</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH740</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH740</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH741</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH741</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH742</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH742</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH743</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH743</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH744</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH744</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH748</DEV>
+          <SUBS>LN2</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH748</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH354</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH354</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH370</DEV>
+          <SUBS>SHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH370</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH655</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH655</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH655</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH656</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH657</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH657</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH660</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH660</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH661</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH661</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH661</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH670</description>
+      </action>
+      <action type="open_display">
+        <file>macroHeater1.opi</file>
+        <macros>
+          <DEV>EH661</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>EH680</description>
+      </action>
+    </actions>
+    <text>Heater1 #2</text>
+    <x>44</x>
+    <y>325</y>
+    <width>156</width>
+    <height>26</height>
+    <foreground_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="130" green="4" blue="0">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>TIC691</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TIC691</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>TIC692</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TIC692</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>TIC693</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TIC693</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>FIC650</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FIC650</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>FIC651</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FIC651</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>FIC652</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FIC652</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>FIC653</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FIC653</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>PIC590</DEV>
+          <SUBS>EDwr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>PIC590</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>FIC583</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FIC583</description>
+      </action>
+      <action type="open_display">
+        <file>macroPID.opi</file>
+        <macros>
+          <DEV>FIC581</DEV>
+          <SUBS>RHtr</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>FIC581</description>
+      </action>
+    </actions>
+    <text>PID 2</text>
+    <x>127</x>
+    <y>256</y>
+    <width>70</width>
+    <height>26</height>
+    <foreground_color>
+      <color red="115" green="255" blue="107">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="174" green="174" blue="174">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Menu Button</name>
+    <actions>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT600A</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT600A</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT600B</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT600B</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT600C</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT600C</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT600D</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT600D</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT601</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT601</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT640A</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT640A</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT640B</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT640B</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT640C</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT640C</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT640D</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT640D</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT640E</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT640E</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT640F</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT640F</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT641A</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT641A</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT641B</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT641B</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT641C</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT641C</description>
+      </action>
+      <action type="open_display">
+        <file>macroAI.opi</file>
+        <macros>
+          <DEV>TT650</DEV>
+          <SUBS>LHe</SUBS>
+        </macros>
+        <target>replace</target>
+        <description>TT650</description>
+      </action>
+    </actions>
+    <text>Analog input: Pt100 2</text>
+    <x>235</x>
+    <y>135</y>
+    <width>205</width>
+    <height>23</height>
+    <foreground_color>
+      <color red="253" green="253" blue="253">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="10" green="0" blue="184">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_4</name>
+    <pv_name>$(CSTAT)-Ctrl:HeartBeat:sHBcounter</pv_name>
+    <x>255</x>
+    <y>20</y>
+    <width>105</width>
+    <height>28</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Rehater Output</name>
+    <x>203</x>
+    <y>525</y>
+    <width>237</width>
+    <height>127</height>
+    <style>1</style>
+    <foreground_color>
+      <color red="128" green="128" blue="128">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>$(CSTAT)-RHtr:VBox:opMode</pv_name>
+      <width>233</width>
+      <height>28</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_6</name>
+      <pv_name>$(CSTAT)-RHtr:Cstat4K:opMode</pv_name>
+      <y>34</y>
+      <width>234</width>
+      <height>28</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_7</name>
+      <pv_name>$(CSTAT)-RHtr:Mag4K:opMode</pv_name>
+      <y>67</y>
+      <width>234</width>
+      <height>28</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+</display>
