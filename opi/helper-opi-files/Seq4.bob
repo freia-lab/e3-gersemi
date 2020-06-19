@@ -557,4 +557,29 @@
     </rules>
     <border_width>2</border_width>
   </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED (Multi State)</name>
+    <x>550</x>
+    <y>530</y>
+    <width>0</width>
+    <height>0</height>
+    <states>
+      <state>
+        <value>0</value>
+        <label>State 1</label>
+        <color>
+          <color name="Off" red="90" green="110" blue="90">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1</value>
+        <label>State 2</label>
+        <color>
+          <color name="On" red="70" green="255" blue="70">
+          </color>
+        </color>
+      </state>
+    </states>
+  </widget>
 </display>
