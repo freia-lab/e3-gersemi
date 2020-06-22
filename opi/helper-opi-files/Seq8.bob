@@ -3,18 +3,19 @@
   <width>590</width>
   <height>720</height>
   <background_color>
-    <color name="IO Border" red="215" green="215" blue="215">
+    <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
   </background_color>
   <actions>
   </actions>
+  <grid_visible>false</grid_visible>
   <widget type="embedded" version="2.0.0">
     <name>Linking Container Template</name>
     <file>Seq_top4+.opi</file>
-    <x>50</x>
-    <width>535</width>
-    <height>187</height>
-    <resize>2</resize>
+    <x>29</x>
+    <width>550</width>
+    <height>195</height>
+    <resize>1</resize>
     <actions>
     </actions>
     <border_color>
@@ -30,11 +31,11 @@
     <width>52</width>
     <height>21</height>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -55,15 +56,15 @@
     <width>56</width>
     <height>25</height>
     <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <show_units>false</show_units>
@@ -90,30 +91,26 @@
     <width>67</width>
     <height>18</height>
     <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_11</name>
@@ -123,11 +120,11 @@
     <width>52</width>
     <height>21</height>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -148,15 +145,15 @@
     <width>56</width>
     <height>25</height>
     <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <show_units>false</show_units>
@@ -183,30 +180,26 @@
     <width>67</width>
     <height>18</height>
     <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_13</name>
@@ -216,11 +209,11 @@
     <width>125</width>
     <height>21</height>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -245,15 +238,15 @@ LT600 can be switched off.
     <width>56</width>
     <height>25</height>
     <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <show_units>false</show_units>
@@ -280,30 +273,26 @@ LT600 can be switched off.
     <width>67</width>
     <height>18</height>
     <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Grouping Container_3</name>
@@ -327,11 +316,11 @@ LT600 can be switched off.
       <text>TT603</text>
       <width>71</width>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
@@ -351,15 +340,15 @@ LT600 can be switched off.
       <width>67</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <precision>1</precision>
@@ -367,15 +356,11 @@ LT600 can be switched off.
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_15</name>
@@ -383,11 +368,11 @@ LT600 can be switched off.
       <x>90</x>
       <width>71</width>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
@@ -407,15 +392,15 @@ LT600 can be switched off.
       <width>67</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <precision>1</precision>
@@ -423,15 +408,11 @@ LT600 can be switched off.
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -456,11 +437,11 @@ LT600 can be switched off.
       <text>LT600</text>
       <width>71</width>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
@@ -480,15 +461,15 @@ LT600 can be switched off.
       <width>67</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <precision>1</precision>
@@ -496,15 +477,11 @@ LT600 can be switched off.
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
   </widget>
   <widget type="tabs" version="2.0.0">
@@ -545,11 +522,11 @@ LT600 can be switched off.
               <width>120</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -584,11 +561,11 @@ LT600 can be switched off.
                 <text>$(LI)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -608,15 +585,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -624,15 +601,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textentry" version="3.0.0">
@@ -643,28 +616,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -692,11 +657,11 @@ LT600 can be switched off.
                 <text>$(T1)$(I1)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -716,15 +681,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -732,15 +697,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
               <widget type="label" version="2.0.0">
                 <name>Label Template_15</name>
@@ -748,11 +709,11 @@ LT600 can be switched off.
                 <x>90</x>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -772,15 +733,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -788,15 +749,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textupdate" version="2.0.0">
@@ -807,29 +764,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="label" version="2.0.0">
               <name>Label Template_23</name>
@@ -838,11 +791,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -862,11 +815,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -886,28 +839,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -921,28 +866,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -956,29 +893,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="textupdate" version="2.0.0">
               <name>Text Update Template_21</name>
@@ -988,29 +921,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
           </widget>
           <widget type="group" version="2.0.0">
@@ -1045,11 +974,11 @@ LT600 can be switched off.
               <width>125</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -1084,11 +1013,11 @@ LT600 can be switched off.
                 <text>$(LI)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -1108,15 +1037,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -1124,15 +1053,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textentry" version="3.0.0">
@@ -1143,28 +1068,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -1192,11 +1109,11 @@ LT600 can be switched off.
                 <text>$(T1)$(I1)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -1216,15 +1133,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -1232,15 +1149,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
               <widget type="label" version="2.0.0">
                 <name>Label Template_15</name>
@@ -1248,11 +1161,11 @@ LT600 can be switched off.
                 <x>90</x>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -1272,15 +1185,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -1288,15 +1201,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textupdate" version="2.0.0">
@@ -1307,29 +1216,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="label" version="2.0.0">
               <name>Label Template_23</name>
@@ -1338,11 +1243,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -1362,11 +1267,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -1386,28 +1291,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -1421,28 +1318,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -1456,29 +1345,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="textupdate" version="2.0.0">
               <name>Text Update Template_21</name>
@@ -1488,29 +1373,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
           </widget>
           <widget type="group" version="2.0.0">
@@ -1545,11 +1426,11 @@ LT600 can be switched off.
               <width>125</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -1584,11 +1465,11 @@ LT600 can be switched off.
                 <text>$(LI)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -1608,15 +1489,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -1624,15 +1505,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textentry" version="3.0.0">
@@ -1643,28 +1520,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -1692,11 +1561,11 @@ LT600 can be switched off.
                 <text>$(T1)$(I1)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -1716,15 +1585,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -1732,15 +1601,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
               <widget type="label" version="2.0.0">
                 <name>Label Template_15</name>
@@ -1748,11 +1613,11 @@ LT600 can be switched off.
                 <x>90</x>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -1772,15 +1637,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -1788,15 +1653,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textupdate" version="2.0.0">
@@ -1807,29 +1668,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="label" version="2.0.0">
               <name>Label Template_23</name>
@@ -1838,11 +1695,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -1862,11 +1719,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -1886,28 +1743,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -1921,28 +1770,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -1956,29 +1797,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="textupdate" version="2.0.0">
               <name>Text Update Template_21</name>
@@ -1988,29 +1825,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
           </widget>
         </children>
@@ -2049,11 +1882,11 @@ LT600 can be switched off.
               <width>120</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -2088,11 +1921,11 @@ LT600 can be switched off.
                 <text>$(LI)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -2112,15 +1945,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -2128,15 +1961,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textentry" version="3.0.0">
@@ -2147,28 +1976,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -2196,11 +2017,11 @@ LT600 can be switched off.
                 <text>$(T1)$(I)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -2220,15 +2041,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -2236,15 +2057,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
               <widget type="label" version="2.0.0">
                 <name>Label Template_15</name>
@@ -2252,11 +2069,11 @@ LT600 can be switched off.
                 <x>90</x>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -2276,15 +2093,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -2292,15 +2109,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textupdate" version="2.0.0">
@@ -2311,29 +2124,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="label" version="2.0.0">
               <name>Label Template_23</name>
@@ -2342,11 +2151,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -2366,11 +2175,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -2390,28 +2199,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -2425,28 +2226,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -2460,29 +2253,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="textupdate" version="2.0.0">
               <name>Text Update Template_21</name>
@@ -2492,29 +2281,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
           </widget>
         </children>
@@ -2553,11 +2338,11 @@ LT600 can be switched off.
               <width>120</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -2592,11 +2377,11 @@ LT600 can be switched off.
                 <text>$(LI)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -2616,15 +2401,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -2632,15 +2417,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textentry" version="3.0.0">
@@ -2651,28 +2432,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -2700,11 +2473,11 @@ LT600 can be switched off.
                 <text>$(T1)$(I)</text>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -2724,15 +2497,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -2740,15 +2513,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
               <widget type="label" version="2.0.0">
                 <name>Label Template_15</name>
@@ -2756,11 +2525,11 @@ LT600 can be switched off.
                 <x>90</x>
                 <width>71</width>
                 <foreground_color>
-                  <color name="IO Text Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO Background" red="255" green="255" blue="205">
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
                   </color>
                 </background_color>
                 <horizontal_alignment>1</horizontal_alignment>
@@ -2780,15 +2549,15 @@ LT600 can be switched off.
                 <width>67</width>
                 <height>18</height>
                 <font>
-                  <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
                   </font>
                 </font>
                 <foreground_color>
-                  <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                  <color name="BLACK" red="0" green="0" blue="0">
                   </color>
                 </foreground_color>
                 <background_color>
-                  <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                  <color name="WHITE" red="255" green="255" blue="255">
                   </color>
                 </background_color>
                 <precision>1</precision>
@@ -2796,15 +2565,11 @@ LT600 can be switched off.
                 <wrap_words>false</wrap_words>
                 <actions>
                 </actions>
-                <rules>
-                  <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                    <exp bool_exp="pv0==1">
-                      <value>9</value>
-                    </exp>
-                    <pv_name>$(pv_name).SIMM</pv_name>
-                  </rule>
-                </rules>
                 <border_width>2</border_width>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
               </widget>
             </widget>
             <widget type="textupdate" version="2.0.0">
@@ -2815,29 +2580,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="label" version="2.0.0">
               <name>Label Template_23</name>
@@ -2846,11 +2607,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -2870,11 +2631,11 @@ LT600 can be switched off.
               <width>52</width>
               <height>21</height>
               <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
+                <color name="BACKGROUND" red="220" green="225" blue="221">
                 </color>
               </background_color>
               <vertical_alignment>1</vertical_alignment>
@@ -2894,28 +2655,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -2929,28 +2682,20 @@ LT600 can be switched off.
               <width>56</width>
               <height>25</height>
               <font>
-                <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color red="0" green="0" blue="0">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_color>
                 <color name="IO Border" red="215" green="215" blue="215">
                 </color>
@@ -2964,29 +2709,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
             <widget type="textupdate" version="2.0.0">
               <name>Text Update Template_21</name>
@@ -2996,29 +2737,25 @@ LT600 can be switched off.
               <width>67</width>
               <height>18</height>
               <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+                <font family="Source Sans Pro" style="BOLD" size="13.0">
                 </font>
               </font>
               <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
+                <color name="BLACK" red="0" green="0" blue="0">
                 </color>
               </foreground_color>
               <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                <color name="WHITE" red="255" green="255" blue="255">
                 </color>
               </background_color>
               <wrap_words>false</wrap_words>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
+              <border_color>
+                <color name="BLACK" red="0" green="0" blue="0">
+                </color>
+              </border_color>
             </widget>
           </widget>
         </children>
@@ -3029,9 +2766,10 @@ LT600 can be switched off.
     <width>570</width>
     <height>385</height>
     <background_color>
-      <color name="IO Grid" red="215" green="215" blue="215">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
+    <active_tab>1</active_tab>
     <tab_height>10</tab_height>
     <actions>
     </actions>

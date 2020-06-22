@@ -2,11 +2,12 @@
 <display version="2.0.0">
   <width>575</width>
   <background_color>
-    <color name="IO Border" red="215" green="215" blue="215">
+    <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
   </background_color>
   <actions>
   </actions>
+  <grid_visible>false</grid_visible>
   <widget type="embedded" version="2.0.0">
     <name>Linking Container Template</name>
     <file>Seq_top4+.opi</file>
@@ -14,9 +15,8 @@
       <STOP_MSG>!  !  !  !  !  Don't forget to CLOSE LN2 inlet valve !  !  !  !  ! </STOP_MSG>
     </macros>
     <x>15</x>
-    <width>535</width>
-    <height>187</height>
-    <resize>2</resize>
+    <width>550</width>
+    <height>195</height>
     <actions>
     </actions>
     <border_color>
@@ -32,11 +32,11 @@
     <width>186</width>
     <height>21</height>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -56,28 +56,20 @@
     <width>56</width>
     <height>25</height>
     <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -91,29 +83,25 @@
     <width>67</width>
     <height>18</height>
     <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Grouping Container_1</name>
@@ -144,11 +132,11 @@
       <width>109</width>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -167,11 +155,11 @@
       <width>198</width>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -190,11 +178,11 @@
       <width>195</width>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -215,28 +203,20 @@
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -250,28 +230,20 @@
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -284,28 +256,20 @@
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -319,29 +283,25 @@
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_6</name>
@@ -351,29 +311,25 @@
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_7</name>
@@ -383,29 +339,25 @@
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_12</name>
@@ -413,11 +365,11 @@
       <y>75</y>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -437,28 +389,20 @@
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -472,29 +416,25 @@
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Grouping Container_4</name>
@@ -518,11 +458,11 @@
         <text>$(T1)</text>
         <width>71</width>
         <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO Background" red="255" green="255" blue="205">
+          <color name="BACKGROUND" red="220" green="225" blue="221">
           </color>
         </background_color>
         <horizontal_alignment>1</horizontal_alignment>
@@ -542,15 +482,15 @@
         <width>67</width>
         <height>18</height>
         <font>
-          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
           </font>
         </font>
         <foreground_color>
-          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          <color name="WHITE" red="255" green="255" blue="255">
           </color>
         </background_color>
         <precision>1</precision>
@@ -558,15 +498,11 @@
         <wrap_words>false</wrap_words>
         <actions>
         </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-          </rule>
-        </rules>
         <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -591,11 +527,11 @@
         <text>$(T2)</text>
         <width>71</width>
         <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO Background" red="255" green="255" blue="205">
+          <color name="BACKGROUND" red="220" green="225" blue="221">
           </color>
         </background_color>
         <horizontal_alignment>1</horizontal_alignment>
@@ -615,15 +551,15 @@
         <width>67</width>
         <height>18</height>
         <font>
-          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
           </font>
         </font>
         <foreground_color>
-          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          <color name="WHITE" red="255" green="255" blue="255">
           </color>
         </background_color>
         <precision>1</precision>
@@ -631,31 +567,27 @@
         <wrap_words>false</wrap_words>
         <actions>
         </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-          </rule>
-        </rules>
         <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
       </widget>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_1</name>
-    <text>CV740 [%]</text>
+    <text>CV740 [%]:</text>
     <x>20</x>
     <y>195</y>
-    <width>68</width>
+    <width>72</width>
     <height>21</height>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -675,28 +607,20 @@
     <width>56</width>
     <height>25</height>
     <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -710,29 +634,25 @@
     <width>67</width>
     <height>18</height>
     <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Grouping Container_3</name>
@@ -756,11 +676,11 @@
       <text>TT749</text>
       <width>71</width>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
@@ -780,15 +700,15 @@
       <width>67</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <precision>1</precision>
@@ -796,15 +716,11 @@
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_15</name>
@@ -812,11 +728,11 @@
       <x>90</x>
       <width>71</width>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <horizontal_alignment>1</horizontal_alignment>
@@ -836,15 +752,15 @@
       <width>67</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <precision>1</precision>
@@ -852,15 +768,11 @@
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline</name>
@@ -916,11 +828,11 @@ $(pv_value)</tooltip>
       <width>109</width>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -939,11 +851,11 @@ $(pv_value)</tooltip>
       <width>198</width>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -962,11 +874,11 @@ $(pv_value)</tooltip>
       <width>195</width>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -987,28 +899,20 @@ $(pv_value)</tooltip>
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -1022,28 +926,20 @@ $(pv_value)</tooltip>
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -1056,28 +952,20 @@ $(pv_value)</tooltip>
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -1091,29 +979,25 @@ $(pv_value)</tooltip>
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_6</name>
@@ -1123,29 +1007,25 @@ $(pv_value)</tooltip>
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_7</name>
@@ -1155,29 +1035,25 @@ $(pv_value)</tooltip>
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_12</name>
@@ -1185,11 +1061,11 @@ $(pv_value)</tooltip>
       <y>75</y>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -1209,28 +1085,20 @@ $(pv_value)</tooltip>
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -1244,29 +1112,25 @@ $(pv_value)</tooltip>
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Grouping Container_4</name>
@@ -1290,11 +1154,11 @@ $(pv_value)</tooltip>
         <text>$(T1)</text>
         <width>71</width>
         <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO Background" red="255" green="255" blue="205">
+          <color name="BACKGROUND" red="220" green="225" blue="221">
           </color>
         </background_color>
         <horizontal_alignment>1</horizontal_alignment>
@@ -1314,15 +1178,15 @@ $(pv_value)</tooltip>
         <width>67</width>
         <height>18</height>
         <font>
-          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
           </font>
         </font>
         <foreground_color>
-          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          <color name="WHITE" red="255" green="255" blue="255">
           </color>
         </background_color>
         <precision>1</precision>
@@ -1330,15 +1194,11 @@ $(pv_value)</tooltip>
         <wrap_words>false</wrap_words>
         <actions>
         </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-          </rule>
-        </rules>
         <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -1363,11 +1223,11 @@ $(pv_value)</tooltip>
         <text>$(T2)</text>
         <width>71</width>
         <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO Background" red="255" green="255" blue="205">
+          <color name="BACKGROUND" red="220" green="225" blue="221">
           </color>
         </background_color>
         <horizontal_alignment>1</horizontal_alignment>
@@ -1387,15 +1247,15 @@ $(pv_value)</tooltip>
         <width>67</width>
         <height>18</height>
         <font>
-          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
           </font>
         </font>
         <foreground_color>
-          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          <color name="WHITE" red="255" green="255" blue="255">
           </color>
         </background_color>
         <precision>1</precision>
@@ -1403,15 +1263,11 @@ $(pv_value)</tooltip>
         <wrap_words>false</wrap_words>
         <actions>
         </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-          </rule>
-        </rules>
         <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
       </widget>
     </widget>
   </widget>
@@ -1444,11 +1300,11 @@ $(pv_value)</tooltip>
       <width>109</width>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -1467,11 +1323,11 @@ $(pv_value)</tooltip>
       <width>198</width>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -1490,11 +1346,11 @@ $(pv_value)</tooltip>
       <width>195</width>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -1515,28 +1371,20 @@ $(pv_value)</tooltip>
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -1550,28 +1398,20 @@ $(pv_value)</tooltip>
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -1584,28 +1424,20 @@ $(pv_value)</tooltip>
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -1619,29 +1451,25 @@ $(pv_value)</tooltip>
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_6</name>
@@ -1651,29 +1479,25 @@ $(pv_value)</tooltip>
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_7</name>
@@ -1683,29 +1507,25 @@ $(pv_value)</tooltip>
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_12</name>
@@ -1713,11 +1533,11 @@ $(pv_value)</tooltip>
       <y>75</y>
       <height>21</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -1737,28 +1557,20 @@ $(pv_value)</tooltip>
       <width>55</width>
       <height>25</height>
       <font>
-        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
@@ -1772,29 +1584,25 @@ $(pv_value)</tooltip>
       <width>66</width>
       <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Grouping Container_4</name>
@@ -1818,11 +1626,11 @@ $(pv_value)</tooltip>
         <text>$(T1)</text>
         <width>71</width>
         <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO Background" red="255" green="255" blue="205">
+          <color name="BACKGROUND" red="220" green="225" blue="221">
           </color>
         </background_color>
         <horizontal_alignment>1</horizontal_alignment>
@@ -1842,15 +1650,15 @@ $(pv_value)</tooltip>
         <width>67</width>
         <height>18</height>
         <font>
-          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
           </font>
         </font>
         <foreground_color>
-          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          <color name="WHITE" red="255" green="255" blue="255">
           </color>
         </background_color>
         <precision>1</precision>
@@ -1858,15 +1666,11 @@ $(pv_value)</tooltip>
         <wrap_words>false</wrap_words>
         <actions>
         </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-          </rule>
-        </rules>
         <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -1891,11 +1695,11 @@ $(pv_value)</tooltip>
         <text>$(T2)</text>
         <width>71</width>
         <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO Background" red="255" green="255" blue="205">
+          <color name="BACKGROUND" red="220" green="225" blue="221">
           </color>
         </background_color>
         <horizontal_alignment>1</horizontal_alignment>
@@ -1915,15 +1719,15 @@ $(pv_value)</tooltip>
         <width>67</width>
         <height>18</height>
         <font>
-          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
           </font>
         </font>
         <foreground_color>
-          <color name="IO InputPV Fg" red="0" green="32" blue="92">
+          <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
         <background_color>
-          <color name="IO InputPV Bg" red="255" green="255" blue="255">
+          <color name="WHITE" red="255" green="255" blue="255">
           </color>
         </background_color>
         <precision>1</precision>
@@ -1931,15 +1735,11 @@ $(pv_value)</tooltip>
         <wrap_words>false</wrap_words>
         <actions>
         </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-          </rule>
-        </rules>
         <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
       </widget>
     </widget>
   </widget>
