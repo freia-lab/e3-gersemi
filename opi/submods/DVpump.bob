@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <width>85</width>
+  <height>45</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <text>  $(pump)</text>
+    <x>31</x>
+    <y>15</y>
+    <width>52</width>
+    <height>13</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template</name>
+    <x>19</x>
+    <width>1</width>
+    <height>56</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="47.0">
+      </point>
+    </points>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="symbol" version="2.0.0">
+    <name>Boolean Symbol Image Monitor Template</name>
+    <pv_name>CstatH-2Kpumps:$(pump):sOn</pv_name>
+    <symbols>
+      <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
+      <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+    </symbols>
+    <y>2</y>
+    <width>40</width>
+    <height>40</height>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <rotation>90.0</rotation>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="BorderRule" prop_id="border_style" out_exp="false">
+        <exp bool_exp="pv1==0">
+          <value>1</value>
+        </exp>
+        <pv_name>CstatH-2Kpumps:$(pump):sOK</pv_name>
+      </rule>
+      <rule name="BorderColor" prop_id="border_color" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
+        </exp>
+        <pv_name>CstatH-2Kpumps:$(pump):sOK</pv_name>
+      </rule>
+    </rules>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>
