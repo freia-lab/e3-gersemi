@@ -169,138 +169,6 @@
       </color>
     </border_color>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_2</name>
-    <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
-    <x>86</x>
-    <y>144</y>
-    <width>228</width>
-    <height>45</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="TextRule" prop_id="text" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>$(step0)</value>
-        </exp>
-        <exp bool_exp="pv0==1">
-          <value>$(step1)</value>
-        </exp>
-        <exp bool_exp="pv0==2">
-          <value>$(step2)</value>
-        </exp>
-        <exp bool_exp="pv0==3">
-          <value>$(step3)</value>
-        </exp>
-        <exp bool_exp="pv0==4">
-          <value>$(step4)</value>
-        </exp>
-        <exp bool_exp="pv0== 6">
-          <value>$(step6)</value>
-        </exp>
-        <exp bool_exp="pv0== 8">
-          <value>$(step8)</value>
-        </exp>
-        <exp bool_exp="pv0== 10">
-          <value>$(step10)</value>
-        </exp>
-        <exp bool_exp="pv0== 12">
-          <value>$(step12)</value>
-        </exp>
-        <exp bool_exp="pv0== 14">
-          <value>$(step14)</value>
-        </exp>
-        <exp bool_exp="pv0== 16">
-          <value>$(step16)</value>
-        </exp>
-        <exp bool_exp="pv0== 18">
-          <value>$(step18)</value>
-        </exp>
-        <exp bool_exp="pv0== 20">
-          <value>$(step20)</value>
-        </exp>
-        <exp bool_exp="pv0== 22">
-          <value>$(step22)</value>
-        </exp>
-        <exp bool_exp="pv0== 24">
-          <value>$(step24)</value>
-        </exp>
-        <exp bool_exp="pv0== 26">
-          <value>$(step26)</value>
-        </exp>
-        <exp bool_exp="pv0== 28">
-          <value>$(step28)</value>
-        </exp>
-        <exp bool_exp="pv0== 30">
-          <value>$(step30)</value>
-        </exp>
-        <exp bool_exp="pv0== 32">
-          <value>$(step32)</value>
-        </exp>
-        <exp bool_exp="pv0== 34">
-          <value>$(step34)</value>
-        </exp>
-        <exp bool_exp="pv0== 36">
-          <value>$(step36)</value>
-        </exp>
-        <exp bool_exp="pv0== 38">
-          <value>$(step38)</value>
-        </exp>
-        <exp bool_exp="pv0== 40">
-          <value>$(step40)</value>
-        </exp>
-        <exp bool_exp="pv0== 42">
-          <value>$(step42)</value>
-        </exp>
-        <exp bool_exp="pv0== 44">
-          <value>$(step44)</value>
-        </exp>
-        <exp bool_exp="pv0== 46">
-          <value>$(step46)</value>
-        </exp>
-        <exp bool_exp="pv0== 48">
-          <value>$(step48)</value>
-        </exp>
-        <exp bool_exp="pv0== 7">
-          <value>$(step7)</value>
-        </exp>
-        <exp bool_exp="pv0== 11">
-          <value>$(step11)</value>
-        </exp>
-        <exp bool_exp="pv0== 13">
-          <value>$(step13)</value>
-        </exp>
-        <exp bool_exp="pv0== 15">
-          <value>$(step15)</value>
-        </exp>
-        <exp bool_exp="pv0== 35">
-          <value>$(step35)</value>
-        </exp>
-        <exp bool_exp="pv0== 41">
-          <value>$(step41)</value>
-        </exp>
-        <pv_name>$(pv_name)</pv_name>
-      </rule>
-    </rules>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cmdSetParam</pv_name>
@@ -779,5 +647,139 @@ in the web browser</tooltip>
         </color>
       </foreground_color>
     </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>####</text>
+    <x>84</x>
+    <y>145</y>
+    <width>228</width>
+    <height>45</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="TextRule" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>$(step0)</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>$(step1)</value>
+        </exp>
+        <exp bool_exp="pv0==2">
+          <value>$(step2)</value>
+        </exp>
+        <exp bool_exp="pv0==3">
+          <value>$(step3)</value>
+        </exp>
+        <exp bool_exp="pv0==4">
+          <value>$(step4)</value>
+        </exp>
+        <exp bool_exp="pv0== 6">
+          <value>$(step6)</value>
+        </exp>
+        <exp bool_exp="pv0== 8">
+          <value>$(step8)</value>
+        </exp>
+        <exp bool_exp="pv0== 10">
+          <value>$(step10)</value>
+        </exp>
+        <exp bool_exp="pv0== 12">
+          <value>$(step12)</value>
+        </exp>
+        <exp bool_exp="pv0== 14">
+          <value>$(step14)</value>
+        </exp>
+        <exp bool_exp="pv0== 16">
+          <value>$(step16)</value>
+        </exp>
+        <exp bool_exp="pv0== 18">
+          <value>$(step18)</value>
+        </exp>
+        <exp bool_exp="pv0== 20">
+          <value>$(step20)</value>
+        </exp>
+        <exp bool_exp="pv0== 22">
+          <value>$(step22)</value>
+        </exp>
+        <exp bool_exp="pv0== 24">
+          <value>$(step24)</value>
+        </exp>
+        <exp bool_exp="pv0== 26">
+          <value>$(step26)</value>
+        </exp>
+        <exp bool_exp="pv0== 28">
+          <value>$(step28)</value>
+        </exp>
+        <exp bool_exp="pv0== 30">
+          <value>$(step30)</value>
+        </exp>
+        <exp bool_exp="pv0== 32">
+          <value>$(step32)</value>
+        </exp>
+        <exp bool_exp="pv0== 34">
+          <value>$(step34)</value>
+        </exp>
+        <exp bool_exp="pv0== 36">
+          <value>$(step36)</value>
+        </exp>
+        <exp bool_exp="pv0== 38">
+          <value>$(step38)</value>
+        </exp>
+        <exp bool_exp="pv0== 40">
+          <value>$(step40)</value>
+        </exp>
+        <exp bool_exp="pv0== 42">
+          <value>$(step42)</value>
+        </exp>
+        <exp bool_exp="pv0== 44">
+          <value>$(step44)</value>
+        </exp>
+        <exp bool_exp="pv0== 46">
+          <value>$(step46)</value>
+        </exp>
+        <exp bool_exp="pv0== 48">
+          <value>$(step48)</value>
+        </exp>
+        <exp bool_exp="pv0== 7">
+          <value>$(step7)</value>
+        </exp>
+        <exp bool_exp="pv0== 11">
+          <value>$(step11)</value>
+        </exp>
+        <exp bool_exp="pv0== 13">
+          <value>$(step13)</value>
+        </exp>
+        <exp bool_exp="pv0== 15">
+          <value>$(step15)</value>
+        </exp>
+        <exp bool_exp="pv0== 35">
+          <value>$(step35)</value>
+        </exp>
+        <exp bool_exp="pv0== 41">
+          <value>$(step41)</value>
+        </exp>
+        <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
 </display>

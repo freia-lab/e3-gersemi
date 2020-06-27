@@ -48,7 +48,7 @@ sequences</text>
     <x>14</x>
     <y>2</y>
     <width>130</width>
-    <height>47</height>
+    <height>50</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
       </font>
@@ -183,7 +183,7 @@ sequences</text>
       <name>Action Button Template</name>
       <actions>
         <action type="open_display">
-          <file>helper-opi-files/Seq$(nr).opi</file>
+          <file>helper-opi-files/Seq$(nr).bob</file>
           <macros>
             <seq_no>SQ$(nr)</seq_no>
             <seq_title>Seq 20: Emptying the cryostat</seq_title>
@@ -203,7 +203,7 @@ sequences</text>
             <step6>Waiting for Yes/No</step6>
             <step8>Waiting for Yes/No</step8>
           </macros>
-          <target>tab</target>
+          <target>standalone</target>
         </action>
       </actions>
       <text>SQ$(nr)</text>
@@ -295,7 +295,7 @@ sequences</text>
       <name>Action Button Template_13</name>
       <actions>
         <action type="open_display">
-          <file>helper-opi-files/Seq14.opi</file>
+          <file>helper-opi-files/Seq14.bob</file>
           <macros>
             <seq_no>SQ14</seq_no>
             <seq_title>Sequence 14: Cavity standby @ low temperature</seq_title>
@@ -307,7 +307,7 @@ sequences</text>
             <step6>Cool down</step6>
             <step8>Standing by</step8>
           </macros>
-          <target>tab</target>
+          <target>standalone</target>
         </action>
       </actions>
       <text>SQ14</text>
@@ -419,7 +419,7 @@ sequences</text>
         <name>Action Button Template</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq$(nr).opi</file>
+            <file>helper-opi-files/Seq$(nr).bob</file>
             <macros>
               <seq_no>SQ$(nr)</seq_no>
               <seq_title>Seq. 15: Magnet - cooling down</seq_title>
@@ -433,7 +433,7 @@ sequences</text>
               <step6>Cooling HX680 and HX683</step6>
               <step8>Stop cooling</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
@@ -531,7 +531,7 @@ sequences</text>
         <name>Action Button Template</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq$(nr).opi</file>
+            <file>helper-opi-files/Seq$(nr).bob</file>
             <macros>
               <seq_no>SQ$(nr)</seq_no>
               <seq_title>Seq. 16: Magnet - operation at 4.2.K</seq_title>
@@ -541,7 +541,7 @@ sequences</text>
               <step4>Regulation</step4>
               <step6>Stop - waiting for CV602 and CV680 to close</step6>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
@@ -636,21 +636,21 @@ sequences</text>
         <name>Action Button Template</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq$(nr).opi</file>
+            <file>helper-opi-files/Seq$(nr).bob</file>
             <macros>
               <seq_no>SQ$(nr)</seq_no>
               <seq_title>Seq. 17: Magnet - operation at 2.K</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
+              <step12>Vacuum leak - waiting for Ack</step12>
               <step14>Overpressure leak -waiting for Ack</step14>
               <step2>Checking equipment</step2>
               <step4>Pumping down</step4>
               <step6>Keeping vacuum</step6>
               <step8>Filling up with GHe</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
@@ -744,21 +744,21 @@ sequences</text>
         <name>Action Button Template</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq$(nr).opi</file>
+            <file>helper-opi-files/Seq$(nr).bob</file>
             <macros>
               <seq_no>SQ$(nr)</seq_no>
               <seq_title>Magnet - control of level and pressure at 2 K</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
+              <step12>Vacuum leak - waiting for Ack</step12>
               <step14>Overpressure leak -waiting for Ack</step14>
               <step2>Checking equipment</step2>
               <step4>Pumping down</step4>
               <step6>Keeping vacuum</step6>
               <step8>Filling up with GHe</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
@@ -854,21 +854,21 @@ level and pressure at 2 K</tooltip>
         <name>Action Button Template</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq$(nr).opi</file>
+            <file>helper-opi-files/Seq$(nr).bob</file>
             <macros>
               <seq_no>SQ$(nr)</seq_no>
               <seq_title>Seq 19: Magnet - current leads cooling</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack </step12>
+              <step12>Vacuum leak - waiting for Ack</step12>
               <step14>Overpressure leak -waiting for Ack</step14>
               <step2>Checking equipment</step2>
               <step4>Pumping down</step4>
               <step6>Keeping vacuum</step6>
               <step8>Filling up with GHe</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
@@ -960,7 +960,7 @@ cooling</tooltip>
         <name>Action Button Template_11</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq4.opi</file>
+            <file>helper-opi-files/Seq4.bob</file>
             <macros>
               <seq_no>SQ4</seq_no>
               <seq_title>Sequence 4: High voltage insulation tests</seq_title>
@@ -969,7 +969,7 @@ cooling</tooltip>
               <step2>Checking parameters</step2>
               <step4>Warming up</step4>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ4</text>
@@ -1078,7 +1078,7 @@ cooling</tooltip>
         <name>Action Button Template_8</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq24.opi</file>
+            <file>helper-opi-files/Seq24.bob</file>
             <macros>
               <seq_no>SQ24</seq_no>
               <seq_title>Cyostat isolated or connected to He recovery</seq_title>
@@ -1089,7 +1089,7 @@ cooling</tooltip>
               <step6>Isolated</step6>
               <step8>Pressure alarm - waiting for Ackn or Stop</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ24</text>
@@ -1180,7 +1180,7 @@ cooling</tooltip>
         <name>Action Button Template_9</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq25.opi</file>
+            <file>helper-opi-files/Seq25.bob</file>
             <macros>
               <seq_no>SQ25</seq_no>
               <seq_title>Valve box isolated or connected to He recovery</seq_title>
@@ -1191,7 +1191,7 @@ cooling</tooltip>
               <step6>Isolated</step6>
               <step8>Pressure alarm - waiting for Ackn or Stop</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ25</text>
@@ -1301,7 +1301,7 @@ connected to He recovery</tooltip>
         <name>Action Button Template_14</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq21.opi</file>
+            <file>helper-opi-files/Seq21.bob</file>
             <macros>
               <seq_no>SQ21</seq_no>
               <seq_title>Sequence 21: Valve box warm-up</seq_title>
@@ -1313,7 +1313,7 @@ connected to He recovery</tooltip>
               <step16>Warming-up and waiting for stop.</step16>
               <step2>Checking parameters</step2>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ21</text>
@@ -1404,7 +1404,7 @@ connected to He recovery</tooltip>
         <name>Action Button Template_15</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq22.opi</file>
+            <file>helper-opi-files/Seq22.bob</file>
             <macros>
               <seq_no>SQ22</seq_no>
               <seq_title>Sequence 22: Cryostat warm-up</seq_title>
@@ -1419,7 +1419,7 @@ connected to He recovery</tooltip>
               <step6>Waiting for stopping SQ10-SQ20</step6>
               <step8>Waiting for stopping SQ6</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ22</text>
@@ -1510,7 +1510,7 @@ connected to He recovery</tooltip>
         <name>Action Button Template_18</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq23.opi</file>
+            <file>helper-opi-files/Seq23.bob</file>
             <macros>
               <seq_no>SQ23</seq_no>
               <seq_title>Sequence 23: Insert warm-up</seq_title>
@@ -1524,7 +1524,7 @@ connected to He recovery</tooltip>
               <step6>Waiting for stopping S10-SQ20</step6>
               <step8>Waiting for stopping SQ7</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ23</text>
@@ -1633,7 +1633,7 @@ connected to He recovery</tooltip>
         <name>Action Button Template_4</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq5.opi</file>
+            <file>helper-opi-files/Seq5.bob</file>
             <macros>
               <seq_no>SQ5</seq_no>
               <seq_title>Sequence 5: Valve Box, thermal shield cooling</seq_title>
@@ -1644,7 +1644,7 @@ connected to He recovery</tooltip>
               <step6>LN2 circulation</step6>
               <step8>Waiting for CV700 to close</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ5</text>
@@ -1735,7 +1735,7 @@ connected to He recovery</tooltip>
         <name>Action Button Template_16</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq6.opi</file>
+            <file>helper-opi-files/Seq6.bob</file>
             <macros>
               <seq_no>SQ6</seq_no>
               <seq_title>Sequence 6: Cryostat thermal shield cooling</seq_title>
@@ -1746,7 +1746,7 @@ connected to He recovery</tooltip>
               <step6>LN2 circulation</step6>
               <step8>Waiting for CV740 to close</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ6</text>
@@ -1837,7 +1837,7 @@ connected to He recovery</tooltip>
         <name>Action Button Template_17</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq7.opi</file>
+            <file>helper-opi-files/Seq7.bob</file>
             <macros>
               <seq_no>SQ7</seq_no>
               <seq_title>Seq. 7: Vacuum insert thermal shield cooling</seq_title>
@@ -1847,7 +1847,7 @@ connected to He recovery</tooltip>
               <step4>Started LN2 flow</step4>
               <step6>LN2 circulation</step6>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ7</text>
@@ -1962,20 +1962,20 @@ shield cooling</tooltip>
         <name>Action Button Template</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq$(nr).opi</file>
+            <file>helper-opi-files/Seq$(nr).bob</file>
             <macros>
               <seq_no>SQ$(nr)</seq_no>
               <seq_title>Seq. 11: Super-critical helium operation</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step10>Stop SCHe cooling</step10>
-              <step12>Wait for CV380 to be closed </step12>
+              <step12>Wait for CV380 to be closed</step12>
               <step2>Checking equipment</step2>
               <step4>Delaying for Time open circ.</step4>
               <step6>Starting compressor</step6>
               <step8>Regulation</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
@@ -2070,7 +2070,7 @@ shield cooling</tooltip>
         <name>Action Button Template</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq$(nr).opi</file>
+            <file>helper-opi-files/Seq$(nr).bob</file>
             <macros>
               <seq_no>SQ$(nr)</seq_no>
               <seq_title>Seq. 13: 2K operation (not magnet insert)</seq_title>
@@ -2091,7 +2091,7 @@ shield cooling</tooltip>
               <step6>Waiting for Yes/No</step6>
               <step8>Waiting for CV581 to be &gt;= P_CV581</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
@@ -2183,7 +2183,7 @@ shield cooling</tooltip>
         <name>Action Button Template_5</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq8.opi</file>
+            <file>helper-opi-files/Seq8.bob</file>
             <macros>
               <seq_no>SQ8</seq_no>
               <seq_title>Sequence 8: LHe level measurement</seq_title>
@@ -2192,7 +2192,7 @@ shield cooling</tooltip>
               <step2>Checking parameters</step2>
               <step4>Doing measurements</step4>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ8</text>
@@ -2283,7 +2283,7 @@ shield cooling</tooltip>
         <name>Action Button Template_6</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq9.opi</file>
+            <file>helper-opi-files/Seq9.bob</file>
             <macros>
               <seq_no>SQ9</seq_no>
               <seq_title>Seq. 9: VBox cooling &amp; 4K tank level control</seq_title>
@@ -2319,7 +2319,7 @@ shield cooling</tooltip>
               <step7>Waiting for Yes</step7>
               <step8>Prepare to regulate (dewar)</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ9</text>
@@ -2412,7 +2412,7 @@ shield cooling</tooltip>
         <name>Action Button Template_7</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq10.opi</file>
+            <file>helper-opi-files/Seq10.bob</file>
             <macros>
               <seq_no>SQ10</seq_no>
               <seq_title>Sequence 10: Cavity cooling</seq_title>
@@ -2429,7 +2429,7 @@ shield cooling</tooltip>
               <step4>Waiting for Yes</step4>
               <step8>Cooling cavity - wait for reaching LI660/LI670 Max</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ10</text>
@@ -2520,7 +2520,7 @@ shield cooling</tooltip>
         <name>Action Button Template_12</name>
         <actions>
           <action type="open_display">
-            <file>helper-opi-files/Seq12.opi</file>
+            <file>helper-opi-files/Seq12.bob</file>
             <macros>
               <seq_no>SQ12</seq_no>
               <seq_title>Sequence 12: Cavity operation at 4 K</seq_title>
@@ -2534,7 +2534,7 @@ shield cooling</tooltip>
               <step7>Intermittent mode - waiting for reaching LI660/670 Min</step7>
               <step8>Filling - waiting for reaching LI660/670 Max</step8>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>SQ12</text>
@@ -2640,53 +2640,6 @@ shield cooling</tooltip>
         <actions>
         </actions>
       </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button Template_10</name>
-        <actions>
-          <action type="open_display">
-            <file>helper-opi-files/Seq3.opi</file>
-            <macros>
-              <seq_no>SQ3</seq_no>
-              <seq_title>Sequence 3: SCHe, conditioning He circuits</seq_title>
-              <step0>Not running</step0>
-              <step1>Checking parameters</step1>
-              <step10>Leak test at low pressure</step10>
-              <step12>Flashing with GHe</step12>
-              <step14>Leak test at high pressure</step14>
-              <step16>Waiting for FV380 to close</step16>
-              <step18>He conditioning stopped</step18>
-              <step2>Checking equipment</step2>
-              <step20>Waiting for P090 to stop</step20>
-              <step22>Test failed - press Ackn</step22>
-              <step24>Test failed - press Ackn</step24>
-              <step26>Waiting for Yes/No</step26>
-              <step28>Waiting for Yes/No</step28>
-              <step30>Waiting for FV090 to close</step30>
-              <step32>Flushing with GHe</step32>
-              <step34>Waiting for Yes</step34>
-              <step36>Pressure alarm - press Ackn</step36>
-              <step38>Vacuum alarm - press Ackn</step38>
-              <step4>Prepare for purging</step4>
-              <step40>Waiting for Yes/No</step40>
-              <step6>Start the pumping</step6>
-              <step8>Pumping</step8>
-            </macros>
-            <target>tab</target>
-          </action>
-        </actions>
-        <text>SQ3</text>
-        <width>60</width>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <tooltip>Super-critical helium
-Conditioning He circuits</tooltip>
-      </widget>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Grouping Container</name>
@@ -2757,53 +2710,6 @@ Conditioning He circuits</tooltip>
         </line_color>
         <actions>
         </actions>
-      </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button Template</name>
-        <actions>
-          <action type="open_display">
-            <file>helper-opi-files/Seq1.opi</file>
-            <macros>
-              <seq_no>SQ1</seq_no>
-              <seq_title>Seq. 1: Valve Box - Conditioning He circuits</seq_title>
-              <step0>Not running</step0>
-              <step1>Checking parameters</step1>
-              <step10>Leak test at low pressure</step10>
-              <step12>Flashing with GHe</step12>
-              <step14>Leak test at high pressure</step14>
-              <step16>Waiting for FV600 to close</step16>
-              <step18>He conditioning stopped</step18>
-              <step2>Checking equipment</step2>
-              <step20>Pump stopped</step20>
-              <step22>Test failed - press Ackn</step22>
-              <step24>Test failed - press Ackn</step24>
-              <step26>Waiting for Yes/No</step26>
-              <step28>Waiting for Yes/No</step28>
-              <step30>Waiting for FV090 to close</step30>
-              <step32>Flushing with GHe</step32>
-              <step34>Waiting for Yes</step34>
-              <step36>Pressure alarm - press Ackn</step36>
-              <step38>Vacuum alarm - press Ackn</step38>
-              <step4>Prepare for purging</step4>
-              <step40>Waiting for Yes/No</step40>
-              <step6>Start the pumping</step6>
-              <step8>Pumping</step8>
-            </macros>
-            <target>tab</target>
-          </action>
-        </actions>
-        <text>SQ1</text>
-        <width>60</width>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <tooltip>Valve Box
-Conditioning He circuits</tooltip>
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
@@ -2877,52 +2783,150 @@ Conditioning He circuits</tooltip>
         <actions>
         </actions>
       </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button Template_3</name>
-        <actions>
-          <action type="open_display">
-            <file>helper-opi-files/Seq2.opi</file>
-            <macros>
-              <seq_no>SQ2</seq_no>
-              <seq_title>Sequence 2: Cryostat, conditioning He circuits</seq_title>
-              <step0>Not running</step0>
-              <step1>Checking parameters</step1>
-              <step10>Leak test at low pressure</step10>
-              <step12>Flashing with GHe</step12>
-              <step14>Leak test at high pressure</step14>
-              <step16>Waiting for FV600 to close</step16>
-              <step18>He conditioning stopped - waiting for CV582 to close</step18>
-              <step2>Checking equipment</step2>
-              <step20>Waiting for P090 to stop</step20>
-              <step22>Test failed - press Ackn</step22>
-              <step24>Test failed - press Ackn</step24>
-              <step26>Waiting for Yes/No</step26>
-              <step28>Waiting for Yes/No</step28>
-              <step30>Waiting for FV090 to close</step30>
-              <step32>Flushing with GHe</step32>
-              <step34>Waiting for Yes</step34>
-              <step36>Pressure alarm - press Ackn</step36>
-              <step38>Vacuum alarm - press Ackn</step38>
-              <step4>Prepare for purging</step4>
-              <step40>Waiting for Yes/No</step40>
-              <step6>Start the pumping</step6>
-              <step8>Pumping</step8>
-            </macros>
-            <target>tab</target>
-          </action>
-        </actions>
-        <text>SQ2</text>
-        <width>60</width>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template</name>
+      <actions>
+        <action type="open_display">
+          <file>helper-opi-files/Seq1.bob</file>
+          <macros>
+            <seq_no>SQ1</seq_no>
+            <seq_title>Seq. 1: Valve Box - Conditioning He circuits</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking parameters</step1>
+            <step10>Leak test at low pressure</step10>
+            <step12>Flashing with GHe</step12>
+            <step14>Leak test at high pressure</step14>
+            <step16>Waiting for FV600 to close</step16>
+            <step18>He conditioning stopped</step18>
+            <step2>Checking equipment</step2>
+            <step20>Pump stopped</step20>
+            <step22>Test failed - press Ackn</step22>
+            <step24>Test failed - press Ackn</step24>
+            <step26>Waiting for Yes/No</step26>
+            <step28>Waiting for Yes/No</step28>
+            <step30>Waiting for FV090 to close</step30>
+            <step32>Flushing with GHe</step32>
+            <step34>Waiting for Yes</step34>
+            <step36>Pressure alarm - press Ackn</step36>
+            <step38>Vacuum alarm - press Ackn</step38>
+            <step4>Prepare for purging</step4>
+            <step40>Waiting for Yes/No</step40>
+            <step6>Start the pumping</step6>
+            <step8>Pumping</step8>
+          </macros>
+          <target>standalone</target>
+        </action>
+      </actions>
+      <text>SQ1</text>
+      <y>2</y>
+      <width>60</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <tooltip>Cryostat, conditioning He circuits</tooltip>
-      </widget>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <tooltip>Valve Box
+Conditioning He circuits</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_10</name>
+      <actions>
+        <action type="open_display">
+          <file>helper-opi-files/Seq3.bob</file>
+          <macros>
+            <seq_no>SQ3</seq_no>
+            <seq_title>Sequence 3: SCHe, conditioning He circuits</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking parameters</step1>
+            <step10>Leak test at low pressure</step10>
+            <step12>Flashing with GHe</step12>
+            <step14>Leak test at high pressure</step14>
+            <step16>Waiting for FV600 to close</step16>
+            <step18>He conditioning stopped</step18>
+            <step2>Checking equipment</step2>
+            <step20>Pump stopped</step20>
+            <step22>Test failed - press Ackn</step22>
+            <step24>Test failed - press Ackn</step24>
+            <step26>Waiting for Yes/No</step26>
+            <step28>Waiting for Yes/No</step28>
+            <step30>Waiting for FV090 to close</step30>
+            <step32>Flushing with GHe</step32>
+            <step34>Waiting for Yes</step34>
+            <step36>Pressure alarm - press Ackn</step36>
+            <step38>Vacuum alarm - press Ackn</step38>
+            <step4>Prepare for purging</step4>
+            <step40>Waiting for Yes/No</step40>
+            <step6>Start the pumping</step6>
+            <step8>Pumping</step8>
+          </macros>
+          <target>standalone</target>
+        </action>
+      </actions>
+      <text>SQ3</text>
+      <x>80</x>
+      <y>2</y>
+      <width>60</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <tooltip>Super-critical helium
+Conditioning He circuits</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_3</name>
+      <actions>
+        <action type="open_display">
+          <file>helper-opi-files/Seq2.bob</file>
+          <macros>
+            <seq_no>SQ2</seq_no>
+            <seq_title>Sequence 2: Cryostat, conditioning He circuits</seq_title>
+            <step0>Not running</step0>
+            <step1>Checking parameters</step1>
+            <step10>Leak test at low pressure</step10>
+            <step12>Flashing with GHe</step12>
+            <step14>Leak test at high pressure</step14>
+            <step16>Waiting for FV600 to close</step16>
+            <step18>He conditioning stopped</step18>
+            <step2>Checking equipment</step2>
+            <step20>Pump stopped</step20>
+            <step22>Test failed - press Ackn</step22>
+            <step24>Test failed - press Ackn</step24>
+            <step26>Waiting for Yes/No</step26>
+            <step28>Waiting for Yes/No</step28>
+            <step30>Waiting for FV090 to close</step30>
+            <step32>Flushing with GHe</step32>
+            <step34>Waiting for Yes</step34>
+            <step36>Pressure alarm - press Ackn</step36>
+            <step38>Vacuum alarm - press Ackn</step38>
+            <step4>Prepare for purging</step4>
+            <step40>Waiting for Yes/No</step40>
+            <step6>Start the pumping</step6>
+            <step8>Pumping</step8>
+          </macros>
+          <target>standalone</target>
+        </action>
+      </actions>
+      <text>SQ2</text>
+      <y>37</y>
+      <width>60</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <tooltip>Cryostat, conditioning He circuits</tooltip>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
@@ -3266,7 +3270,7 @@ Conditioning He circuits</tooltip>
               <x>40</x>
               <y>30</y>
               <width>90</width>
-              <height>12</height>
+              <height>13</height>
               <font>
                 <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
                 </font>
@@ -3813,7 +3817,6 @@ Open/Close</text>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
-      <active_tab>1</active_tab>
       <tab_height>10</tab_height>
       <actions>
       </actions>

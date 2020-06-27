@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <width>245</width>
-  <height>245</height>
+  <name>$(Cvalve)</name>
+  <width>300</width>
+  <height>300</height>
   <background_color>
-    <color name="IO Shape Fill" red="188" green="188" blue="188">
+    <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
   </background_color>
   <actions>
   </actions>
+  <grid_visible>false</grid_visible>
   <widget type="label" version="2.0.0">
-    <name>Label Template</name>
+    <name>$(Cvalve)</name>
     <text>$(Cvalve)</text>
-    <x>10</x>
     <y>3</y>
-    <width>219</width>
+    <width>245</width>
     <height>23</height>
     <font>
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="22.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <horizontal_alignment>1</horizontal_alignment>
@@ -57,17 +58,13 @@
     <y>53</y>
     <height>26</height>
     <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color>
-      <color name="IO Button" red="178" green="178" blue="178">
-      </color>
-    </background_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_5</name>
@@ -111,18 +108,18 @@
     <text>Auto position [%]:</text>
     <x>30</x>
     <y>154</y>
-    <width>89</width>
-    <height>12</height>
+    <width>105</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -142,15 +139,15 @@
     <width>44</width>
     <height>17</height>
     <font>
-      <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO OutputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+      <color name="GRAY" red="169" green="169" blue="169">
       </color>
     </background_color>
     <precision>1</precision>
@@ -158,12 +155,6 @@
     <actions>
     </actions>
     <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
       <rule name="Visibility rule" prop_id="visible" out_exp="false">
         <exp bool_exp="pv0">
           <value>false</value>
@@ -172,24 +163,28 @@
       </rule>
     </rules>
     <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_12</name>
     <text>Position input [%]:</text>
     <x>30</x>
     <y>92</y>
-    <width>92</width>
-    <height>12</height>
+    <width>109</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -214,18 +209,18 @@
     <text>Position [%]:</text>
     <x>30</x>
     <y>123</y>
-    <width>63</width>
-    <height>12</height>
+    <width>75</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -245,15 +240,15 @@
     <width>44</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <precision>1</precision>
@@ -261,15 +256,11 @@
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_2</name>
@@ -279,15 +270,15 @@
     <width>44</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <precision>1</precision>
@@ -295,14 +286,10 @@
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
 </display>
