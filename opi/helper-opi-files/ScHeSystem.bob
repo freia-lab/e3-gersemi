@@ -3,11 +3,12 @@
   <width>1100</width>
   <height>840</height>
   <background_color>
-    <color name="IO Shape Fill" red="166" green="166" blue="166">
+    <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
   </background_color>
   <actions>
   </actions>
+  <grid_visible>false</grid_visible>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template</name>
     <x>109</x>
@@ -16,7 +17,7 @@
     <height>228</height>
     <line_width>2</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="GREEN" red="61" green="216" blue="61">
       </color>
     </line_color>
     <arrows>2</arrows>
@@ -55,13 +56,13 @@ $(pv_value)</tooltip>
     </actions>
     <widget type="polyline" version="2.0.0">
       <name>Polyline Template_12</name>
-      <x>31</x>
-      <y>170</y>
+      <x>29</x>
+      <y>172</y>
       <width>142</width>
       <height>109</height>
       <line_width>2</line_width>
       <line_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </line_color>
       <arrows>3</arrows>
@@ -84,11 +85,11 @@ $(pv_value)</tooltip>
       <height>171</height>
       <line_width>1</line_width>
       <line_color>
-        <color name="IO Line" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </line_color>
       <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
         </color>
       </background_color>
       <corner_width>16</corner_width>
@@ -105,13 +106,13 @@ $(pv_value)</tooltip>
       <x>17</x>
       <y>69</y>
       <width>137</width>
-      <height>42</height>
+      <height>43</height>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -131,7 +132,7 @@ $(pv_value)</tooltip>
       <height>1</height>
       <line_width>2</line_width>
       <line_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </line_color>
       <arrows>1</arrows>
@@ -154,11 +155,11 @@ $(pv_value)</tooltip>
       <height>19</height>
       <line_width>1</line_width>
       <line_color>
-        <color name="IO Line" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </line_color>
       <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
         </color>
       </background_color>
       <corner_width>16</corner_width>
@@ -171,24 +172,23 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_34</name>
       <text>GHe 3.5 bars</text>
-      <x>173</x>
-      <y>193</y>
-      <width>65</width>
-      <height>13</height>
+      <x>175</x>
+      <y>192</y>
+      <width>74</width>
+      <height>19</height>
       <font>
-        <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
       <actions>
       </actions>
       <border_color>
@@ -200,23 +200,22 @@ $(pv_value)</tooltip>
       <name>Label Template_114</name>
       <text>Purging system</text>
       <x>181</x>
-      <y>270</y>
-      <width>77</width>
-      <height>13</height>
+      <y>269</y>
+      <width>90</width>
+      <height>18</height>
       <font>
-        <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
       <actions>
       </actions>
       <border_color>
@@ -225,7 +224,7 @@ $(pv_value)</tooltip>
       </border_color>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>Grouping Container_6</name>
+      <name>$(pv)</name>
       <macros>
         <pv>CstatV-SHe:FV383</pv>
       </macros>
@@ -246,17 +245,18 @@ $(pv_value)</tooltip>
       <actions>
       </actions>
       <widget type="symbol" version="2.0.0">
-        <name>CstatV-SHe:FV382_1</name>
+        <name>$(pv)</name>
         <pv_name>$(pv):sOn</pv_name>
         <symbols>
-          <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
-          <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+          <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+          <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
         </symbols>
-        <x>5</x>
-        <width>36</width>
-        <height>36</height>
+        <x>13</x>
+        <y>13</y>
+        <width>19</width>
+        <height>13</height>
         <background_color>
-          <color name="IO Shape Fill" red="166" green="166" blue="166">
+          <color name="BACKGROUND" red="220" green="225" blue="221">
           </color>
         </background_color>
         <actions>
@@ -269,50 +269,26 @@ $(pv_value)</tooltip>
             <description>Valve control</description>
           </action>
         </actions>
-        <auto_size>true</auto_size>
       </widget>
-      <widget type="polyline" version="2.0.0">
-        <name>Polyline</name>
-        <y>20</y>
-        <width>14</width>
-        <height>1</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="IO Link" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <points>
-          <point x="13.0" y="0.0">
-          </point>
-          <point x="0.0" y="0.0">
-          </point>
-        </points>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_51</name>
         <actions>
+          <action type="open_display">
+            <file>../CmdPanels/CstatV-Valve.bob</file>
+            <macros>
+              <v_name>$(pv)</v_name>
+            </macros>
+            <target>standalone</target>
+            <description>Valve Control</description>
+          </action>
         </actions>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      </widget>
-      <widget type="polyline" version="2.0.0">
-        <name>Polyline_1</name>
-        <x>37</x>
-        <y>20</y>
-        <width>12</width>
-        <height>1</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="IO Link" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <points>
-          <point x="11.0" y="0.0">
-          </point>
-          <point x="0.0" y="0.0">
-          </point>
-        </points>
-        <actions>
-        </actions>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+        <text></text>
+        <x>9</x>
+        <y>10</y>
+        <width>30</width>
+        <height>20</height>
+        <transparent>true</transparent>
+        <tooltip>$(pv)</tooltip>
       </widget>
     </widget>
     <widget type="label" version="2.0.0">
@@ -320,22 +296,21 @@ $(pv_value)</tooltip>
       <text>FV383</text>
       <x>98</x>
       <y>201</y>
-      <width>26</width>
-      <height>10</height>
+      <width>28</width>
+      <height>15</height>
       <font>
-        <font family="Sans" style="REGULAR" size="7.920792079207921">
+        <font family="Source Sans Pro" style="REGULAR" size="11.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
       <actions>
       </actions>
       <border_color>
@@ -344,7 +319,7 @@ $(pv_value)</tooltip>
       </border_color>
     </widget>
     <widget type="group" version="2.0.0">
-      <name>Grouping Container_5</name>
+      <name>$(pv)</name>
       <macros>
         <pv>CstatV-SHe:FV380</pv>
       </macros>
@@ -365,17 +340,18 @@ $(pv_value)</tooltip>
       <actions>
       </actions>
       <widget type="symbol" version="2.0.0">
-        <name>CstatV-SHe:FV382_1</name>
+        <name>$(pv)</name>
         <pv_name>$(pv):sOn</pv_name>
         <symbols>
-          <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
-          <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+          <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+          <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
         </symbols>
-        <x>5</x>
-        <width>36</width>
-        <height>36</height>
+        <x>12</x>
+        <y>15</y>
+        <width>19</width>
+        <height>13</height>
         <background_color>
-          <color name="IO Shape Fill" red="166" green="166" blue="166">
+          <color name="BACKGROUND" red="220" green="225" blue="221">
           </color>
         </background_color>
         <actions>
@@ -388,50 +364,26 @@ $(pv_value)</tooltip>
             <description>Valve control</description>
           </action>
         </actions>
-        <auto_size>true</auto_size>
       </widget>
-      <widget type="polyline" version="2.0.0">
-        <name>Polyline</name>
-        <y>20</y>
-        <width>14</width>
-        <height>1</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="IO Link" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <points>
-          <point x="13.0" y="0.0">
-          </point>
-          <point x="0.0" y="0.0">
-          </point>
-        </points>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_52</name>
         <actions>
+          <action type="open_display">
+            <file>../CmdPanels/CstatV-Valve.bob</file>
+            <macros>
+              <v_name>$(pv)</v_name>
+            </macros>
+            <target>standalone</target>
+            <description>Valve Control</description>
+          </action>
         </actions>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-      </widget>
-      <widget type="polyline" version="2.0.0">
-        <name>Polyline_1</name>
-        <x>37</x>
-        <y>20</y>
-        <width>12</width>
-        <height>1</height>
-        <line_width>2</line_width>
-        <line_color>
-          <color name="IO Link" red="0" green="0" blue="0">
-          </color>
-        </line_color>
-        <points>
-          <point x="11.0" y="0.0">
-          </point>
-          <point x="0.0" y="0.0">
-          </point>
-        </points>
-        <actions>
-        </actions>
-        <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+        <text></text>
+        <x>7</x>
+        <y>13</y>
+        <width>30</width>
+        <height>20</height>
+        <transparent>true</transparent>
+        <tooltip>$(pv)</tooltip>
       </widget>
     </widget>
     <widget type="label" version="2.0.0">
@@ -439,22 +391,21 @@ $(pv_value)</tooltip>
       <text>FV380</text>
       <x>98</x>
       <y>259</y>
-      <width>26</width>
-      <height>10</height>
+      <width>28</width>
+      <height>14</height>
       <font>
-        <font family="Sans" style="REGULAR" size="7.920792079207921">
+        <font family="Source Sans Pro" style="REGULAR" size="11.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
       <actions>
       </actions>
       <border_color>
@@ -465,13 +416,13 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_2</name>
-    <x>80</x>
-    <y>368</y>
+    <x>82</x>
+    <y>369</y>
     <width>30</width>
     <height>45</height>
     <line_width>2</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="GREEN" red="61" green="216" blue="61">
       </color>
     </line_color>
     <points>
@@ -504,18 +455,18 @@ $(pv_value)</tooltip>
     <text>TT381</text>
     <x>821</x>
     <y>99</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -532,18 +483,18 @@ $(pv_value)</tooltip>
     <text>TT372</text>
     <x>851</x>
     <y>647</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>18</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -560,18 +511,18 @@ $(pv_value)</tooltip>
     <text>TT371</text>
     <x>851</x>
     <y>430</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -586,20 +537,20 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_90</name>
     <text>TT351</text>
-    <x>78</x>
+    <x>80</x>
     <y>325</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -613,17 +564,17 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle Template_1</name>
-    <x>160</x>
+    <x>161</x>
     <y>185</y>
     <width>11</width>
     <height>41</height>
     <line_width>1</line_width>
     <line_color>
-      <color name="IO Line" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
       </color>
     </background_color>
     <actions>
@@ -631,71 +582,26 @@ $(pv_value)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
   </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>CstatV-SHe:EH350</name>
-    <pv_name>$(name):sHtrOn</pv_name>
-    <symbols>
-      <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
-      <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
-    </symbols>
-    <x>103</x>
-    <y>225</y>
-    <width>115</width>
-    <height>93</height>
-    <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
-      </color>
-    </background_color>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatV-Heater1.opi</file>
-        <macros>
-          <Heater1>$(name)</Heater1>
-        </macros>
-        <target>tab</target>
-      </action>
-    </actions>
-    <rules>
-      <rule name="bordercolor" prop_id="border_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-        </exp>
-        <pv_name>$(name):sAuto</pv_name>
-      </rule>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0">
-          <value>9</value>
-        </exp>
-        <exp bool_exp="pv1==0">
-          <value>1</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-        <pv_name>$(name):sAuto</pv_name>
-      </rule>
-    </rules>
-    <auto_size>true</auto_size>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_74</name>
     <text>EH350</text>
-    <x>188</x>
-    <y>269</y>
-    <width>33</width>
-    <height>13</height>
+    <x>189</x>
+    <y>254</y>
+    <width>38</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
@@ -706,20 +612,20 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_85</name>
     <text>TT380</text>
-    <x>248</x>
+    <x>250</x>
     <y>95</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -734,20 +640,20 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_86</name>
     <text>PT380</text>
-    <x>253</x>
-    <y>145</y>
-    <width>31</width>
-    <height>13</height>
+    <x>255</x>
+    <y>149</y>
+    <width>37</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -763,19 +669,19 @@ $(pv_value)</tooltip>
     <name>Label Template_87</name>
     <text>FT380</text>
     <x>621</x>
-    <y>108</y>
-    <width>31</width>
-    <height>13</height>
+    <y>111</y>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -795,7 +701,7 @@ $(pv_value)</tooltip>
     <height>53</height>
     <line_width>1</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <line_style>1</line_style>
@@ -822,7 +728,7 @@ $(pv_value)</tooltip>
     <height>78</height>
     <line_width>1</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <line_style>1</line_style>
@@ -847,7 +753,7 @@ $(pv_value)</tooltip>
     <height>85</height>
     <line_width>1</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <line_style>1</line_style>
@@ -869,18 +775,18 @@ $(pv_value)</tooltip>
     <text>Supercritical Helium system</text>
     <x>354</x>
     <y>5</y>
-    <width>252</width>
+    <width>264</width>
     <height>28</height>
     <font>
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="22.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -900,32 +806,24 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Shape Fill" red="166" green="166" blue="166">
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
       </color>
     </background_color>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -937,33 +835,24 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <transparent>true</transparent>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -975,15 +864,15 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -991,17 +880,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1013,15 +894,15 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -1029,17 +910,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1051,15 +924,15 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -1067,17 +940,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1089,15 +954,15 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>16</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -1106,17 +971,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1128,15 +985,15 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>16</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -1145,17 +1002,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1167,15 +1016,15 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>16</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -1184,17 +1033,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1206,33 +1047,24 @@ $(pv_value)</tooltip>
     <width>92</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <transparent>true</transparent>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1244,7 +1076,7 @@ $(pv_value)</tooltip>
     <height>317</height>
     <line_width>2</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="GREEN" red="61" green="216" blue="61">
       </color>
     </line_color>
     <arrows>2</arrows>
@@ -1268,20 +1100,20 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_112</name>
     <text>TT350</text>
-    <x>248</x>
+    <x>250</x>
     <y>255</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -1301,53 +1133,44 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <transparent>true</transparent>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_113</name>
     <text>TT352</text>
-    <x>105</x>
+    <x>107</x>
     <y>422</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -1367,33 +1190,24 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <transparent>true</transparent>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1421,11 +1235,11 @@ $(pv_value)</tooltip>
       <height>51</height>
       <line_width>1</line_width>
       <line_color>
-        <color name="IO Line" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </line_color>
       <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
         </color>
       </background_color>
       <corner_width>16</corner_width>
@@ -1440,18 +1254,18 @@ $(pv_value)</tooltip>
       <text>HX350</text>
       <x>48</x>
       <y>18</y>
-      <width>34</width>
-      <height>13</height>
+      <width>38</width>
+      <height>18</height>
       <font>
-        <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <vertical_alignment>1</vertical_alignment>
@@ -1464,67 +1278,23 @@ $(pv_value)</tooltip>
       </border_color>
     </widget>
   </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>CstatV-SHe:EH354</name>
-    <pv_name>$(name):sHtrOn</pv_name>
-    <symbols>
-      <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
-      <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
-    </symbols>
-    <x>135</x>
-    <y>469</y>
-    <width>115</width>
-    <height>93</height>
-    <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
-      </color>
-    </background_color>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatV-Heater1.opi</file>
-        <macros>
-          <Heater1>$(name)</Heater1>
-        </macros>
-        <target>tab</target>
-      </action>
-    </actions>
-    <rules>
-      <rule name="bordercolor" prop_id="border_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-        </exp>
-        <pv_name>$(name):sAuto</pv_name>
-      </rule>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0">
-          <value>9</value>
-        </exp>
-        <exp bool_exp="pv1==0">
-          <value>1</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-        <pv_name>$(name):sAuto</pv_name>
-      </rule>
-    </rules>
-    <auto_size>true</auto_size>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_115</name>
     <text>TT354</text>
-    <x>276</x>
+    <x>278</x>
     <y>494</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -1544,53 +1314,44 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <transparent>true</transparent>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_72</name>
     <text>TT355</text>
-    <x>140</x>
+    <x>129</x>
     <y>627</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>18</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -1605,20 +1366,20 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_75</name>
     <text>TT353</text>
-    <x>140</x>
+    <x>129</x>
     <y>578</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -1633,88 +1394,70 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_55</name>
     <pv_name>CstatV-SHe:TT353:sRdV</pv_name>
-    <x>133</x>
+    <x>129</x>
     <y>595</y>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <transparent>true</transparent>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_53</name>
     <pv_name>CstatV-SHe:TT355:sRdV</pv_name>
-    <x>133</x>
+    <x>129</x>
     <y>644</y>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <transparent>true</transparent>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_12</name>
-    <x>505</x>
+    <x>507</x>
     <y>141</y>
     <width>411</width>
     <height>417</height>
     <line_width>2</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="GREEN" red="61" green="216" blue="61">
       </color>
     </line_color>
     <arrows>2</arrows>
@@ -1736,18 +1479,14 @@ $(pv_value)</tooltip>
     <text>Insert</text>
     <x>895</x>
     <y>587</y>
-    <width>29</width>
-    <height>13</height>
-    <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
-      </font>
-    </font>
+    <width>39</width>
+    <height>21</height>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -1763,36 +1502,28 @@ $(pv_value)</tooltip>
     <name>Text Update Template_63</name>
     <pv_name>CstatV-SHe:FT380:sRdV</pv_name>
     <x>613</x>
-    <y>130</y>
+    <y>129</y>
     <width>97</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Shape Fill" red="166" green="166" blue="166">
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
       </color>
     </background_color>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1800,19 +1531,19 @@ $(pv_value)</tooltip>
     <name>Label Template_119</name>
     <text>PT381</text>
     <x>821</x>
-    <y>148</y>
-    <width>31</width>
-    <height>13</height>
+    <y>152</y>
+    <width>37</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -1832,15 +1563,15 @@ $(pv_value)</tooltip>
     <width>92</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -1848,33 +1579,25 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle Template_1</name>
-    <x>909</x>
+    <x>911</x>
     <y>283</y>
     <width>11</width>
     <height>41</height>
     <line_width>1</line_width>
     <line_color>
-      <color name="IO Line" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
       </color>
     </background_color>
     <actions>
@@ -1890,15 +1613,15 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -1906,17 +1629,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1925,18 +1640,18 @@ $(pv_value)</tooltip>
     <text>TT370</text>
     <x>821</x>
     <y>322</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -1951,20 +1666,20 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_123</name>
     <text>EH354</text>
-    <x>221</x>
-    <y>512</y>
-    <width>33</width>
-    <height>13</height>
+    <x>208</x>
+    <y>509</y>
+    <width>38</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -1981,18 +1696,18 @@ $(pv_value)</tooltip>
     <text>TT373</text>
     <x>851</x>
     <y>481</y>
-    <width>31</width>
-    <height>13</height>
+    <width>36</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -2012,15 +1727,15 @@ $(pv_value)</tooltip>
     <width>66</width>
     <height>17</height>
     <font>
-      <font name="IO Input 1" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <transparent>true</transparent>
@@ -2028,81 +1743,29 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="0" green="0" blue="0">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
-  </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>CstatV-SHe:CV380</name>
-    <pv_name>$(name):sRdV</pv_name>
-    <symbols>
-      <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control.png</symbol>
-      <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VC 2 way-Valves Control.png</symbol>
-    </symbols>
-    <x>715</x>
-    <y>118</y>
-    <width>47</width>
-    <height>36</height>
-    <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
-      </color>
-    </background_color>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatV-Cvalve.opi</file>
-        <macros>
-          <Cvalve>$(name)</Cvalve>
-        </macros>
-        <target>tab</target>
-      </action>
-    </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <exp bool_exp="pv1==0">
-          <value>1</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-        <pv_name>$(name):sAuto</pv_name>
-      </rule>
-      <rule name="bordercolor" prop_id="border_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-        </exp>
-        <pv_name>$(name):sAuto</pv_name>
-      </rule>
-    </rules>
-    <auto_size>true</auto_size>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_88</name>
     <text>CV380</text>
-    <x>727</x>
-    <y>99</y>
-    <width>27</width>
-    <height>10</height>
+    <x>730</x>
+    <y>119</y>
+    <width>29</width>
+    <height>15</height>
     <font>
-      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      <font family="Source Sans Pro" style="REGULAR" size="11.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -2117,15 +1780,15 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_64</name>
     <pv_name>CstatV-SHe:CV380:sRdV</pv_name>
-    <x>715</x>
-    <y>115</y>
+    <x>720</x>
+    <y>145</y>
     <width>57</width>
     <font>
       <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
@@ -2139,14 +1802,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_color>
       <color name="IO Border" red="0" green="0" blue="0">
       </color>
@@ -2160,7 +1815,7 @@ $(pv_value)</tooltip>
     <height>333</height>
     <line_width>1</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <line_style>1</line_style>
@@ -2187,7 +1842,7 @@ $(pv_value)</tooltip>
     <height>119</height>
     <line_width>1</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <line_style>1</line_style>
@@ -2212,7 +1867,7 @@ $(pv_value)</tooltip>
     <height>63</height>
     <line_width>1</line_width>
     <line_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <line_style>1</line_style>
@@ -2228,161 +1883,6 @@ $(pv_value)</tooltip>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Heater_1_w_TS</name>
-    <macros>
-      <HTR_NO>370</HTR_NO>
-      <SYSTEM>CstatV-SHe</SYSTEM>
-    </macros>
-    <x>884</x>
-    <y>329</y>
-    <width>95</width>
-    <height>61</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="led" version="2.0.0">
-      <name>TS370</name>
-      <pv_name>$(SYSTEM):TS$(HTR_NO):sProcInp</pv_name>
-      <x>57</x>
-      <y>14</y>
-      <width>36</width>
-      <height>16</height>
-      <off_color>
-        <color name="Major" red="250" green="12" blue="14">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-DI.opi</file>
-          <macros>
-            <DI>CstatV-SHe:TS370</DI>
-          </macros>
-          <target>tab</target>
-        </action>
-      </actions>
-    </widget>
-    <widget type="symbol" version="2.0.0">
-      <name>$(SYSTEM):EH$(HTR_NO)</name>
-      <pv_name>$(name):sHtrOn</pv_name>
-      <symbols>
-        <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
-        <symbol>../../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX General A.png</symbol>
-      </symbols>
-      <y>3</y>
-      <width>115</width>
-      <height>93</height>
-      <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
-        </color>
-      </background_color>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
-          <macros>
-            <Heater1>$(name)</Heater1>
-          </macros>
-          <target>tab</target>
-        </action>
-      </actions>
-      <rules>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0">
-            <value>9</value>
-          </exp>
-          <exp bool_exp="pv1==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
-      <auto_size>true</auto_size>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_84</name>
-      <text>EH$(HTR_NO)</text>
-      <x>55</x>
-      <y>38</y>
-      <width>33</width>
-      <height>13</height>
-      <font>
-        <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_127</name>
-      <text>TS$(HTR_NO)</text>
-      <x>56</x>
-      <width>32</width>
-      <height>13</height>
-      <font>
-        <font name="IO Normal" family="DejaVu Sans Mono" style="REGULAR" size="11.881188118811881">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="235" green="235" blue="235">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>_2</name>
@@ -2409,22 +1909,22 @@ $(pv_value)</tooltip>
     <widget type="action_button" version="3.0.0">
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.opi</file>
+          <file>../CmdPanels/CstatV-PID.bob</file>
           <macros>
             <PID>$(name)</PID>
           </macros>
-          <target>tab</target>
+          <target>standalone</target>
         </action>
       </actions>
       <text>$(L)</text>
       <x>10</x>
       <width>60</width>
       <font>
-        <font family="Sans" style="BOLD" size="7.920792079207921">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <rules>
@@ -2495,22 +1995,22 @@ $(pv_value)</tooltip>
     <widget type="action_button" version="3.0.0">
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.opi</file>
+          <file>../CmdPanels/CstatV-PID.bob</file>
           <macros>
             <PID>$(name)</PID>
           </macros>
-          <target>tab</target>
+          <target>standalone</target>
         </action>
       </actions>
       <text>$(L)</text>
       <x>10</x>
       <width>60</width>
       <font>
-        <font family="Sans" style="BOLD" size="7.920792079207921">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <rules>
@@ -2581,22 +2081,22 @@ $(pv_value)</tooltip>
     <widget type="action_button" version="3.0.0">
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.opi</file>
+          <file>../CmdPanels/CstatV-PID.bob</file>
           <macros>
             <PID>$(name)</PID>
           </macros>
-          <target>tab</target>
+          <target>standalone</target>
         </action>
       </actions>
       <text>$(L)</text>
       <x>10</x>
       <width>60</width>
       <font>
-        <font family="Sans" style="BOLD" size="7.920792079207921">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
       <rules>
@@ -2643,7 +2143,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_3</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-SHe:FV382</pv>
     </macros>
@@ -2667,16 +2167,18 @@ $(pv_value)</tooltip>
       <name>CstatV-SHe:FV382_1</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
-        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
-        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+        <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+        <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
       </symbols>
-      <y>7</y>
-      <width>36</width>
-      <height>36</height>
+      <x>12</x>
+      <y>19</y>
+      <width>19</width>
+      <height>13</height>
       <background_color>
-        <color name="IO Shape Fill" red="166" green="166" blue="166">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
+      <rotation>90.0</rotation>
       <actions>
         <action type="open_display">
           <file>../CmdPanels/CstatV-Valve.opi</file>
@@ -2687,69 +2189,44 @@ $(pv_value)</tooltip>
           <description>Valve control</description>
         </action>
       </actions>
-      <auto_size>true</auto_size>
     </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline</name>
-      <x>20</x>
-      <y>38</y>
-      <width>1</width>
-      <height>13</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color red="0" green="206" blue="0">
-        </color>
-      </line_color>
-      <points>
-        <point x="0.0" y="0.0">
-        </point>
-        <point x="0.0" y="12.0">
-        </point>
-      </points>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_54</name>
       <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Valve.bob</file>
+          <macros>
+            <v_name>$(pv)</v_name>
+          </macros>
+          <target>standalone</target>
+          <description>Valve Control</description>
+        </action>
       </actions>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_1</name>
-      <x>20</x>
-      <width>1</width>
-      <height>16</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color red="0" green="206" blue="0">
-        </color>
-      </line_color>
-      <points>
-        <point x="0.0" y="0.0">
-        </point>
-        <point x="0.0" y="15.0">
-        </point>
-      </points>
-      <actions>
-      </actions>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+      <text></text>
+      <x>11</x>
+      <y>9</y>
+      <width>20</width>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_89</name>
     <text>FV382</text>
-    <x>874</x>
-    <y>220</y>
-    <width>26</width>
-    <height>10</height>
+    <x>881</x>
+    <y>219</y>
+    <width>28</width>
+    <height>14</height>
     <font>
-      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      <font family="Source Sans Pro" style="REGULAR" size="11.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -2762,7 +2239,7 @@ $(pv_value)</tooltip>
     </border_color>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_4</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-SHe:FV381</pv>
     </macros>
@@ -2783,17 +2260,18 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
-        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
-        <symbol>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</symbol>
+        <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
+        <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
       </symbols>
-      <x>5</x>
-      <width>36</width>
-      <height>36</height>
+      <x>12</x>
+      <y>13</y>
+      <width>19</width>
+      <height>13</height>
       <background_color>
-        <color name="IO Shape Fill" red="166" green="166" blue="166">
+        <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
       <actions>
@@ -2806,50 +2284,26 @@ $(pv_value)</tooltip>
           <description>Valve control</description>
         </action>
       </actions>
-      <auto_size>true</auto_size>
     </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline</name>
-      <y>20</y>
-      <width>14</width>
-      <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color red="0" green="206" blue="0">
-        </color>
-      </line_color>
-      <points>
-        <point x="13.0" y="0.0">
-        </point>
-        <point x="0.0" y="0.0">
-        </point>
-      </points>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_48</name>
       <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Valve.bob</file>
+          <macros>
+            <v_name>$(pv)</v_name>
+          </macros>
+          <target>standalone</target>
+          <description>Valve Control</description>
+        </action>
       </actions>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_1</name>
-      <x>37</x>
-      <y>20</y>
-      <width>12</width>
-      <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color red="0" green="206" blue="0">
-        </color>
-      </line_color>
-      <points>
-        <point x="11.0" y="0.0">
-        </point>
-        <point x="0.0" y="0.0">
-        </point>
-      </points>
-      <actions>
-      </actions>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+      <text></text>
+      <x>8</x>
+      <y>10</y>
+      <width>30</width>
+      <height>20</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
@@ -2857,27 +2311,425 @@ $(pv_value)</tooltip>
     <text>FV381</text>
     <x>181</x>
     <y>117</y>
-    <width>26</width>
-    <height>10</height>
+    <width>28</width>
+    <height>15</height>
     <font>
-      <font family="Sans" style="REGULAR" size="7.920792079207921">
+      <font family="Source Sans Pro" style="REGULAR" size="11.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="235" green="235" blue="235">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
       <color name="IO Border" red="0" green="0" blue="0">
       </color>
     </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(pv)</name>
+    <macros>
+      <pv>CstatV-SHe:EH350</pv>
+    </macros>
+    <x>119</x>
+    <y>226</y>
+    <width>92</width>
+    <height>75</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-SHe:EH350</name>
+      <pv_name>$(name):sHtrOn</pv_name>
+      <symbols>
+        <symbol>../../../freia-symbols/cryogenics/HX_General_BLACK.svg</symbol>
+        <symbol>../../../freia-symbols/cryogenics/HX_General_GREEN.svg</symbol>
+      </symbols>
+      <width>92</width>
+      <height>75</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <macros>
+            <Heater1>$(name)</Heater1>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <rules>
+        <rule name="bordercolor" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+          </exp>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+      </rules>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_49</name>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Heater1.bob</file>
+          <macros>
+            <Heater1>$(pv)</Heater1>
+          </macros>
+          <target>standalone</target>
+          <description>Heater 1 Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>27</x>
+      <y>19</y>
+      <width>40</width>
+      <height>40</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(pv)</name>
+    <macros>
+      <pv>CstatV-SHe:EH354</pv>
+    </macros>
+    <x>136</x>
+    <y>480</y>
+    <width>92</width>
+    <height>75</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-SHe:EH354</name>
+      <pv_name>$(name):sHtrOn</pv_name>
+      <symbols>
+        <symbol>../../../freia-symbols/cryogenics/HX_General_BLACK.svg</symbol>
+        <symbol>../../../freia-symbols/cryogenics/HX_General_GREEN.svg</symbol>
+      </symbols>
+      <width>92</width>
+      <height>75</height>
+      <background_color>
+        <color name="IO Background" red="235" green="235" blue="235">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <macros>
+            <Heater1>$(name)</Heater1>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <rules>
+        <rule name="bordercolor" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+          </exp>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0">
+            <value>9</value>
+          </exp>
+          <exp bool_exp="pv1==0">
+            <value>1</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+      </rules>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_50</name>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Heater1.bob</file>
+          <macros>
+            <Heater1>$(pv)</Heater1>
+          </macros>
+          <target>standalone</target>
+          <description>Heater 1 Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>28</x>
+      <y>19</y>
+      <width>40</width>
+      <height>40</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(pv)</name>
+    <macros>
+      <pv>CstatV-SHe:CV380</pv>
+    </macros>
+    <x>724</x>
+    <y>128</y>
+    <width>41</width>
+    <height>27</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-SHe:CV380</name>
+      <pv_name>$(name):sRdV</pv_name>
+      <symbols>
+        <symbol>../../../freia-symbols/cryogenics/valve_control_RED.svg</symbol>
+        <symbol>../../../freia-symbols/cryogenics/valve_control_GREEN.svg</symbol>
+      </symbols>
+      <width>41</width>
+      <height>27</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Cvalve.opi</file>
+          <macros>
+            <Cvalve>$(name)</Cvalve>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <rules>
+        <rule name="bordercolor" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+          </exp>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_53</name>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Cvalve.bob</file>
+          <macros>
+            <Cvalve>$(pv)</Cvalve>
+          </macros>
+          <target>standalone</target>
+          <description>Valve Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>5</x>
+      <y>3</y>
+      <width>35</width>
+      <height>20</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Heater_1_w_TS</name>
+    <macros>
+      <HTR_NO>370</HTR_NO>
+      <SYSTEM>CstatV-SHe</SYSTEM>
+      <pv>$(SYSTEM):EH$(HTR_NO)</pv>
+    </macros>
+    <x>869</x>
+    <y>323</y>
+    <width>130</width>
+    <height>100</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="led" version="2.0.0">
+      <name>TS370</name>
+      <pv_name>$(SYSTEM):TS$(HTR_NO):sProcInp</pv_name>
+      <x>90</x>
+      <y>18</y>
+      <width>36</width>
+      <height>16</height>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-DI.opi</file>
+          <macros>
+            <DI>CstatV-SHe:TS370</DI>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_84</name>
+      <text>EH$(HTR_NO)</text>
+      <x>72</x>
+      <y>38</y>
+      <width>38</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>$(pv)</name>
+      <pv_name>$(name):sHtrOn</pv_name>
+      <symbols>
+        <symbol>../../../freia-symbols/cryogenics/HX_General_BLACK.svg</symbol>
+        <symbol>../../../freia-symbols/cryogenics/HX_General_GREEN.svg</symbol>
+      </symbols>
+      <x>1</x>
+      <y>7</y>
+      <width>92</width>
+      <height>75</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <macros>
+            <Heater1>$(name)</Heater1>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <rules>
+        <rule name="bordercolor" prop_id="border_color" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
+          </exp>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+        <rule name="BorderRule" prop_id="border_style" out_exp="false">
+          <exp bool_exp="pv0">
+            <value>9</value>
+          </exp>
+          <exp bool_exp="pv1==0">
+            <value>1</value>
+          </exp>
+          <pv_name>$(pv_name).SIMM</pv_name>
+          <pv_name>$(name):sAuto</pv_name>
+        </rule>
+      </rules>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_56</name>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-Heater1.bob</file>
+          <macros>
+            <Heater1>$(pv)</Heater1>
+          </macros>
+          <target>standalone</target>
+          <description>Heater 1 Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>30</x>
+      <y>26</y>
+      <width>40</width>
+      <height>40</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_57</name>
+      <actions>
+        <action type="open_display">
+          <file>../CmdPanels/CstatV-DI.bob</file>
+          <macros>
+            <DI>CstatV-SHe:TS370</DI>
+          </macros>
+          <target>standalone</target>
+          <description>DI Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>91</x>
+      <y>19</y>
+      <width>36</width>
+      <height>15</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_127</name>
+      <text>TS$(HTR_NO)</text>
+      <x>89</x>
+      <y>1</y>
+      <width>36</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
   </widget>
 </display>

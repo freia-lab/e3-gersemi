@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
+  <name>$(DI)</name>
   <width>300</width>
   <height>300</height>
   <background_color>
-    <color name="IO Shape Fill" red="188" green="188" blue="188">
+    <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
   </background_color>
   <actions>
   </actions>
+  <grid_visible>false</grid_visible>
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
     <text>$(DI)</text>
@@ -16,15 +18,15 @@
     <width>279</width>
     <height>23</height>
     <font>
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="22.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <horizontal_alignment>1</horizontal_alignment>
@@ -73,20 +75,20 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_5</name>
     <text>Controlled from WinCC! </text>
-    <x>25</x>
+    <x>63</x>
     <y>25</y>
     <width>185</width>
     <height>23</height>
     <font>
-      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="16.0">
       </font>
     </font>
     <foreground_color>
-      <color name="Major" red="255" green="0" blue="0">
+      <color name="RED" red="252" green="13" blue="27">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <horizontal_alignment>1</horizontal_alignment>
@@ -115,11 +117,11 @@
     <width>96</width>
     <height>21</height>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -139,11 +141,11 @@
     <width>96</width>
     <height>21</height>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -163,25 +165,17 @@
     <width>60</width>
     <height>30</height>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <horizontal_alignment>1</horizontal_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -195,25 +189,17 @@
     <width>60</width>
     <height>30</height>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <horizontal_alignment>1</horizontal_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -294,11 +280,11 @@
     <width>114</width>
     <height>21</height>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -330,7 +316,7 @@
       </color>
     </foreground_color>
     <line_color>
-      <color red="150" green="150" blue="150">
+      <color name="GRAY" red="169" green="169" blue="169">
       </color>
     </line_color>
     <actions>
@@ -356,7 +342,7 @@
       </color>
     </foreground_color>
     <line_color>
-      <color red="150" green="150" blue="150">
+      <color name="GRAY" red="169" green="169" blue="169">
       </color>
     </line_color>
     <actions>
