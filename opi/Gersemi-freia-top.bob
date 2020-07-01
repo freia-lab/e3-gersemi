@@ -3817,7 +3817,7 @@ Open/Close</text>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
-      <active_tab>5</active_tab>
+      <active_tab>2</active_tab>
       <tab_height>10</tab_height>
       <actions>
       </actions>
@@ -3828,7 +3828,7 @@ Open/Close</text>
     <name>Action Button</name>
     <actions>
       <action type="open_display">
-        <file>CmdPanels/CstatV-AI-sim-top.opi</file>
+        <file>CmdPanels/CstatV-AI-sim-top.bob</file>
         <target>standalone</target>
         <description>Simulate Analog Input</description>
       </action>
@@ -3873,6 +3873,6 @@ Alarms</text>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <tooltip></tooltip>
+    <tooltip>$(actions)</tooltip>
   </widget>
 </display>

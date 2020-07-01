@@ -4,11 +4,12 @@
   <width>550</width>
   <height>520</height>
   <background_color>
-    <color name="IO Shape Fill" red="188" green="188" blue="188">
+    <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
   </background_color>
   <actions>
   </actions>
+  <grid_visible>false</grid_visible>
   <widget type="group" version="2.0.0">
     <name>Pump Controls</name>
     <x>16</x>
@@ -29,79 +30,57 @@
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button Template</name>
       <pv_name>$(P):cRemote</pv_name>
+      <y>8</y>
       <width>116</width>
       <height>40</height>
       <off_label>Local  </off_label>
       <off_color>
-        <color name="IO PV OFF" red="77" green="77" blue="77">
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
         </color>
       </off_color>
       <on_label>Remote   </on_label>
       <on_color>
-        <color name="IO PV ON" red="0" green="0" blue="225">
+        <color red="0" green="0" blue="255">
         </color>
       </on_color>
       <font>
-        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <background_color>
-        <color name="IO Button" red="178" green="178" blue="178">
-        </color>
-      </background_color>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button Template_1</name>
       <pv_name>$(P):cOn</pv_name>
       <x>120</x>
+      <y>8</y>
       <width>110</width>
       <height>40</height>
       <off_label>OFF</off_label>
       <off_color>
-        <color name="IO Default" red="255" green="0" blue="0">
+        <color name="RED" red="252" green="13" blue="27">
         </color>
       </off_color>
       <on_label>ON</on_label>
       <on_color>
-        <color name="IO OK" red="0" green="255" blue="0">
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
         </color>
       </on_color>
       <font>
-        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <background_color>
-        <color name="IO Button" red="178" green="178" blue="178">
-        </color>
-      </background_color>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <show_confirm_dialog>1</show_confirm_dialog>
     </widget>
     <widget type="action_button" version="3.0.0">
@@ -114,15 +93,15 @@
         </action>
       </actions>
       <pv_name>$(P):cmdReset</pv_name>
-      <y>50</y>
+      <y>58</y>
       <width>116</width>
       <height>40</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
     </widget>
@@ -137,28 +116,22 @@
     <width>138</width>
     <height>138</height>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent>false</transparent>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <highligh_zones>false</highligh_zones>
+    <major_tick_space>100.0</major_tick_space>
+    <minor_tick_space>10.0</minor_tick_space>
     <lcd_visible>false</lcd_visible>
     <needle_color>
-      <color name="IO Stick" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </needle_color>
   </widget>
@@ -167,22 +140,21 @@
     <text>Speed</text>
     <x>80</x>
     <y>229</y>
-    <width>32</width>
-    <height>12</height>
+    <width>37</width>
+    <height>18</height>
     <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
@@ -200,19 +172,19 @@
     <numBits>16</numBits>
     <horizontal>false</horizontal>
     <off_color>
-      <color name="IO PV OFF" red="77" green="77" blue="77">
+      <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
       </color>
     </off_color>
     <on_color>
-      <color name="IO PV ON" red="0" green="0" blue="225">
+      <color red="0" green="0" blue="255">
       </color>
     </on_color>
     <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <labels>
@@ -235,36 +207,27 @@
     </labels>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
     <text>Pump Status:</text>
     <x>380</x>
     <y>59</y>
-    <width>67</width>
-    <height>12</height>
+    <width>79</width>
+    <height>19</height>
     <font>
-      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Text Fg" red="0" green="32" blue="92">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO Background" red="255" green="255" blue="205">
+      <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
     <actions>
     </actions>
     <border_color>
@@ -280,7 +243,7 @@
     <width>520</width>
     <height>41</height>
     <font>
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="35.0">
       </font>
     </font>
     <foreground_color>
