@@ -74,7 +74,7 @@
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Menu Button Template</name>
-    <actions execute_as_one="true">
+    <actions>
       <action type="write_pv">
         <pv_name>$(v_name):cmdAuto</pv_name>
         <value>1</value>
@@ -99,10 +99,6 @@
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color>
-      <color name="GRAY" red="169" green="169" blue="169">
-      </color>
-    </background_color>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template</name>
@@ -232,7 +228,7 @@
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Combo_1</name>
-    <actions execute_as_one="true">
+    <actions>
       <action type="write_pv">
         <pv_name>$(pv_name)</pv_name>
         <value>1</value>
@@ -342,7 +338,7 @@
     <x>110</x>
     <y>27</y>
     <width>175</width>
-    <height>23</height>
+    <height>22</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="17.0">
       </font>
@@ -591,7 +587,7 @@
       <x>2</x>
       <y>10</y>
       <width>105</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>

@@ -2956,7 +2956,7 @@ Conditioning He circuits</tooltip>
   <widget type="group" version="2.0.0">
     <name>Grouping Container</name>
     <x>8</x>
-    <y>800</y>
+    <y>801</y>
     <width>153</width>
     <height>20</height>
     <style>3</style>
@@ -3340,14 +3340,6 @@ Conditioning He circuits</tooltip>
               <level_lolo>0.0</level_lolo>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <maximum>2.0</maximum>
               <limits_from_pv>false</limits_from_pv>
               <highligh_zones>false</highligh_zones>
@@ -3370,14 +3362,6 @@ Conditioning He circuits</tooltip>
               </fill_color>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <limits_from_pv>false</limits_from_pv>
             </widget>
             <widget type="progressbar" version="2.0.0">
@@ -3393,14 +3377,6 @@ Conditioning He circuits</tooltip>
               </fill_color>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <limits_from_pv>false</limits_from_pv>
             </widget>
             <widget type="progressbar" version="2.0.0">
@@ -3416,14 +3392,6 @@ Conditioning He circuits</tooltip>
               </fill_color>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <limits_from_pv>false</limits_from_pv>
             </widget>
             <widget type="textentry" version="3.0.0">
@@ -3492,14 +3460,6 @@ Conditioning He circuits</tooltip>
               <show_units>false</show_units>
               <actions>
               </actions>
-              <rules>
-                <rule name="BorderRule" prop_id="border_style" out_exp="false">
-                  <exp bool_exp="pv0==1">
-                    <value>9</value>
-                  </exp>
-                  <pv_name>$(pv_name).SIMM</pv_name>
-                </rule>
-              </rules>
               <border_width>2</border_width>
             </widget>
             <widget type="led" version="2.0.0">
@@ -3817,7 +3777,7 @@ Open/Close</text>
         <color name="BACKGROUND" red="220" green="225" blue="221">
         </color>
       </background_color>
-      <active_tab>2</active_tab>
+      <active_tab>9</active_tab>
       <tab_height>10</tab_height>
       <actions>
       </actions>

@@ -14,8 +14,8 @@
     <text>Controlled from WinCC! </text>
     <x>25</x>
     <y>11</y>
-    <width>225</width>
-    <height>24</height>
+    <width>196</width>
+    <height>25</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
       </font>
@@ -74,7 +74,7 @@
     </scripts>
     <widget type="action_button" version="3.0.0">
       <name>Menu Button Template</name>
-      <actions execute_as_one="true">
+      <actions>
         <action type="write_pv">
           <pv_name>$(AI2Macro):cmdNorm</pv_name>
           <value>1</value>

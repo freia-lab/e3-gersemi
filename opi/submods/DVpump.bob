@@ -74,20 +74,6 @@ $(pv_value)</tooltip>
     <rotation>90.0</rotation>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv1==0">
-          <value>1</value>
-        </exp>
-        <pv_name>CstatH-2Kpumps:$(pump):sOK</pv_name>
-      </rule>
-      <rule name="BorderColor" prop_id="border_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
-        </exp>
-        <pv_name>CstatH-2Kpumps:$(pump):sOK</pv_name>
-      </rule>
-    </rules>
     <border_alarm_sensitive>false</border_alarm_sensitive>
   </widget>
 </display>

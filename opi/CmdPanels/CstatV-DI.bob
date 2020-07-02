@@ -41,7 +41,7 @@
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Menu Button Template</name>
-    <actions execute_as_one="true">
+    <actions>
       <action type="write_pv">
         <pv_name>$(DI):cmdNorm</pv_name>
         <value>1</value>
@@ -60,25 +60,21 @@
     <width>120</width>
     <height>26</height>
     <font>
-      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <background_color>
-      <color name="IO Button" red="178" green="178" blue="178">
-      </color>
-    </background_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_5</name>
     <text>Controlled from WinCC! </text>
     <x>63</x>
     <y>25</y>
-    <width>185</width>
-    <height>23</height>
+    <width>165</width>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="16.0">
       </font>

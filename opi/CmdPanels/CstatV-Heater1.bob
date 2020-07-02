@@ -40,7 +40,7 @@
   </widget>
   <widget type="action_button" version="3.0.0">
     <name>Menu Button Template</name>
-    <actions execute_as_one="true">
+    <actions>
       <action type="write_pv">
         <pv_name>$(Heater1):cmdAuto</pv_name>
         <value>1</value>
@@ -71,8 +71,8 @@
     <text>Controlled from WinCC! </text>
     <x>62</x>
     <y>27</y>
-    <width>185</width>
-    <height>24</height>
+    <width>175</width>
+    <height>23</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="17.0">
       </font>
@@ -156,8 +156,8 @@
     <text>Lower limit [K]:</text>
     <x>17</x>
     <y>258</y>
-    <width>105</width>
-    <height>13</height>
+    <width>89</width>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -365,8 +365,8 @@
     <text>Upper limit [K]:</text>
     <x>17</x>
     <y>228</y>
-    <width>105</width>
-    <height>13</height>
+    <width>89</width>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -593,7 +593,6 @@ $(pv_value)</tooltip>
       <x>3</x>
       <y>15</y>
       <width>53</width>
-      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="15.0">
         </font>

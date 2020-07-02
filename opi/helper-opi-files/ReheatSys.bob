@@ -440,7 +440,7 @@ $(pv_value)</tooltip>
     <x>561</x>
     <y>156</y>
     <width>36</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -532,7 +532,7 @@ System</text>
     <x>1032</x>
     <y>435</y>
     <width>36</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -717,14 +717,6 @@ circuit</text>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
       <color name="GRAY-BORDER" red="121" green="121" blue="121">
@@ -1094,7 +1086,7 @@ circuit</text>
     <x>421</x>
     <y>139</y>
     <width>37</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1462,7 +1454,7 @@ $(pv_value)</tooltip>
     <x>564</x>
     <y>59</y>
     <width>36</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1540,7 +1532,7 @@ $(pv_value)</tooltip>
       <x>72</x>
       <y>30</y>
       <width>36</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1675,25 +1667,6 @@ $(pv_value)</tooltip>
             <target>tab</target>
           </action>
         </actions>
-        <rules>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==1">
-              <value>9</value>
-            </exp>
-            <exp bool_exp="pv1==0">
-              <value>1</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-          <rule name="bordercolor" prop_id="border_color" out_exp="false">
-            <exp bool_exp="pv0==0">
-              <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-        </rules>
-        <auto_size>true</auto_size>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_28</name>
@@ -2039,7 +2012,7 @@ $(pv_value)</tooltip>
     <x>420</x>
     <y>36</y>
     <width>37</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2096,7 +2069,7 @@ $(pv_value)</tooltip>
     <x>421</x>
     <y>182</y>
     <width>37</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2153,7 +2126,7 @@ $(pv_value)</tooltip>
     <x>421</x>
     <y>291</y>
     <width>37</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2263,7 +2236,7 @@ $(pv_value)</tooltip>
     <x>567</x>
     <y>310</y>
     <width>36</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3573,7 +3546,7 @@ $(pv_value)</tooltip>
     <x>827</x>
     <y>143</y>
     <width>37</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3631,7 +3604,7 @@ $(pv_value)</tooltip>
     <x>849</x>
     <y>744</y>
     <width>37</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3783,14 +3756,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_39</name>
@@ -3917,20 +3882,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv1==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_128</name>
@@ -4058,14 +4009,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_128</name>
@@ -4193,14 +4136,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_128</name>
@@ -4328,20 +4263,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv1==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_128</name>
@@ -4469,14 +4390,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_128</name>
@@ -4603,15 +4516,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
-      <auto_size>true</auto_size>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_128</name>
@@ -4739,20 +4643,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv1==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_18</name>
@@ -5128,7 +5018,7 @@ $(pv_value)</tooltip>
     <x>880</x>
     <y>356</y>
     <width>37</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -5551,20 +5441,6 @@ $(pv_value)</tooltip>
         <color name="IO Foreground" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5637,20 +5513,6 @@ $(pv_value)</tooltip>
         <color name="IO Foreground" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5723,20 +5585,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5809,20 +5657,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5895,20 +5729,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5981,20 +5801,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -6067,20 +5873,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -6153,20 +5945,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -6239,20 +6017,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -6325,20 +6089,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -6411,20 +6161,6 @@ $(pv_value)</tooltip>
         <color name="IO Foreground" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -6497,20 +6233,6 @@ $(pv_value)</tooltip>
         <color name="IO Foreground" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -6583,20 +6305,6 @@ $(pv_value)</tooltip>
         <color name="IO Foreground" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">

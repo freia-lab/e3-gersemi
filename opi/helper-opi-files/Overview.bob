@@ -12,50 +12,6 @@
   <actions>
   </actions>
   <grid_visible>false</grid_visible>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle</name>
-    <x>15</x>
-    <y>378</y>
-    <width>198</width>
-    <height>85</height>
-    <line_width>0</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>Boolean Symbol Image Control Template_1</name>
-    <pv_name>CstatV-Vac:TP060:sOn</pv_name>
-    <symbols>
-      <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
-      <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
-    </symbols>
-    <x>1006</x>
-    <y>521</y>
-    <width>30</width>
-    <height>30</height>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <actions execute_as_one="true">
-      <action type="open_display">
-        <file>TP_TD20.opi</file>
-        <macros>
-          <P>CstatV-Vac:TP060</P>
-        </macros>
-        <target>tab</target>
-      </action>
-    </actions>
-    <tooltip>$(pv_name)
-Click for details</tooltip>
-    <preserve_ratio>false</preserve_ratio>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_1</name>
     <x>916</x>
@@ -176,34 +132,6 @@ $(pv_value)</tooltip>
       </actions>
       <limits_from_pv>false</limits_from_pv>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_1</name>
-      <text>LN2</text>
-      <x>152</x>
-      <y>135</y>
-      <width>35</width>
-      <height>27</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="20.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
     <widget type="tank" version="2.0.0">
       <name>Tank Template_1</name>
       <pv_name>Cryo-CBox:LN2:LI3685-PercOut</pv_name>
@@ -234,6 +162,34 @@ $(pv_value)</tooltip>
       <actions>
       </actions>
       <limits_from_pv>false</limits_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_1</name>
+      <text>LN2</text>
+      <x>152</x>
+      <y>135</y>
+      <width>35</width>
+      <height>27</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline Template</name>
@@ -452,33 +408,107 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline Template</name>
-    <x>185</x>
-    <y>102</y>
-    <width>131</width>
-    <height>118</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color red="255" green="153" blue="184">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <points>
-      <point x="-30.0" y="225.0">
-      </point>
-      <point x="-30.0" y="0.0">
-      </point>
-      <point x="130.0" y="0.0">
-      </point>
-      <point x="130.0" y="113.0">
-      </point>
-    </points>
-    <actions>
-    </actions>
-    <tooltip>$(pv_name)
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template</name>
+      <x>170</x>
+      <y>40</y>
+      <width>131</width>
+      <height>118</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="255" green="153" blue="184">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <points>
+        <point x="-30.0" y="225.0">
+        </point>
+        <point x="-30.0" y="0.0">
+        </point>
+        <point x="130.0" y="0.0">
+        </point>
+        <point x="130.0" y="113.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
 $(pv_value)</tooltip>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>CryoButtons</name>
+      <x>8</x>
+      <y>54</y>
+      <width>223</width>
+      <height>50</height>
+      <style>2</style>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <widget type="radio" version="2.0.0">
+        <name>Choice Button</name>
+        <pv_name>Cryo-Dwr:CV-5203:OpenClsCmd.OMSL</pv_name>
+        <x>4</x>
+        <y>6</y>
+        <width>117</width>
+        <height>38</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="11.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <horizontal>false</horizontal>
+        <actions>
+        </actions>
+        <items>
+          <item>Item 1</item>
+          <item>Item 2</item>
+        </items>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Button Template</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+            <description>Open/Close the valve</description>
+          </action>
+        </actions>
+        <pv_name>Cryo-Dwr:CV-5203:OpenClsCmd</pv_name>
+        <text>Open/close</text>
+        <x>110</x>
+        <y>6</y>
+        <width>102</width>
+        <height>36</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <rules>
+          <rule name="ButtonTxt" prop_id="text" out_exp="false">
+            <exp bool_exp="pv0==0">
+              <value>Open</value>
+            </exp>
+            <exp bool_exp="pv0==1">
+              <value>Close</value>
+            </exp>
+            <pv_name>Cryo-Dwr:Dwr:StCV5203_Slctd</pv_name>
+          </rule>
+        </rules>
+      </widget>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>2K Pumps</name>
@@ -609,14 +639,6 @@ $(pv_value)</tooltip>
       </background_color>
       <actions>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv_name>$(pv_name).SIMM</pv_name>
-        </rule>
-      </rules>
       <preserve_ratio>false</preserve_ratio>
     </widget>
   </widget>
@@ -811,25 +833,6 @@ $(pv_value)</tooltip>
         <description>Valve control</description>
       </action>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_color" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>&lt;color blue="255" green="128" red="0"/&gt;</value>
-        </exp>
-        <exp bool_exp="pv1==0">
-          <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-        </exp>
-        <pv_name>CstatH-SHe:FV301:sAuto</pv_name>
-      </rule>
-      <rule name="BorderRule2" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>1</value>
-        </exp>
-        <pv_name>CstatH-SHe:FV301:sAuto</pv_name>
-      </rule>
-    </rules>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <auto_size>true</auto_size>
   </widget>
   <widget type="symbol" version="2.0.0">
     <name>Image Boolean Indicator Template_2</name>
@@ -856,25 +859,6 @@ $(pv_value)</tooltip>
         <description>Valve control</description>
       </action>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_color" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>&lt;color blue="255" green="128" red="0"/&gt;</value>
-        </exp>
-        <exp bool_exp="pv1==0">
-          <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-        </exp>
-        <pv_name>CstatH-SHe:FV302:sAuto</pv_name>
-      </rule>
-      <rule name="BorderRule2" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>1</value>
-        </exp>
-        <pv_name>CstatH-SHe:FV302:sAuto</pv_name>
-      </rule>
-    </rules>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <auto_size>true</auto_size>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Rehater Output</name>
@@ -1139,7 +1123,7 @@ $(pv_value)</tooltip>
         <exp bool_exp="true">
           <expression>pvStr0</expression>
         </exp>
-        <pv_name>CstatV-Vac:PT041:sRdV.NAME</pv_name>
+        <pv_name>CstatV-Vac:PT040:sRdV.NAME</pv_name>
       </rule>
     </rules>
     <tooltip>###</tooltip>
@@ -1416,6 +1400,91 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_29</name>
+      <text>$(LI)</text>
+      <x>69</x>
+      <y>109</y>
+      <width>32</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_30</name>
+      <pv_name>$(system):$(LI):sRdV</pv_name>
+      <x>67</x>
+      <y>128</y>
+      <width>67</width>
+      <height>16</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_29</name>
+      <text>$(TT)</text>
+      <x>26</x>
+      <y>216</y>
+      <width>43</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Grouping Container_3</name>
@@ -1542,34 +1611,91 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
-  </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>Boolean Symbol Image Control Template_1</name>
-    <pv_name>CstatV-Vac:TP050:sOn</pv_name>
-    <symbols>
-      <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
-      <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
-    </symbols>
-    <x>532</x>
-    <y>226</y>
-    <width>30</width>
-    <height>30</height>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <actions execute_as_one="true">
-      <action type="open_display">
-        <file>TP_TD20.opi</file>
-        <macros>
-          <P>CstatV-Vac:TP050</P>
-        </macros>
-        <target>tab</target>
-      </action>
-    </actions>
-    <tooltip>$(pv_name)
-Click for details</tooltip>
-    <preserve_ratio>false</preserve_ratio>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_29</name>
+      <text>$(LI)</text>
+      <x>69</x>
+      <y>109</y>
+      <width>32</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_30</name>
+      <pv_name>$(system):$(LI):sRdV</pv_name>
+      <x>67</x>
+      <y>128</y>
+      <width>67</width>
+      <height>16</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_29</name>
+      <text>$(TT)</text>
+      <x>26</x>
+      <y>216</y>
+      <width>47</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_9</name>
@@ -1904,73 +2030,6 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>CryoButtons</name>
-    <x>15</x>
-    <y>378</y>
-    <width>198</width>
-    <height>85</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="action_button" version="3.0.0">
-      <name>Button Template</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Open/Close the valve</description>
-        </action>
-      </actions>
-      <pv_name>Cryo-Dwr:CV-5203:OpenClsCmd</pv_name>
-      <text>Open/close</text>
-      <x>4</x>
-      <y>45</y>
-      <width>102</width>
-      <height>36</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <rules>
-        <rule name="ButtonTxt" prop_id="text" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>Open</value>
-          </exp>
-          <exp bool_exp="pv0==1">
-            <value>Close</value>
-          </exp>
-          <pv_name>Cryo-Dwr:Dwr:StCV5203_Slctd</pv_name>
-        </rule>
-      </rules>
-    </widget>
-    <widget type="radio" version="2.0.0">
-      <name>Choice Button</name>
-      <pv_name>Cryo-Dwr:CV-5203:OpenClsCmd.OMSL</pv_name>
-      <x>4</x>
-      <y>4</y>
-      <width>117</width>
-      <height>45</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="11.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <horizontal>false</horizontal>
-      <actions>
-      </actions>
-      <items>
-        <item>Item 1</item>
-        <item>Item 2</item>
-      </items>
-    </widget>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_43</name>
     <text>FV050</text>
@@ -2079,14 +2138,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
@@ -2117,185 +2168,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <rules>
-      <rule name="BorderRule" prop_id="border_style" out_exp="false">
-        <exp bool_exp="pv0==1">
-          <value>9</value>
-        </exp>
-        <pv_name>$(pv_name).SIMM</pv_name>
-      </rule>
-    </rules>
     <border_width>2</border_width>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_29</name>
-    <text>$(LI)</text>
-    <x>674</x>
-    <y>658</y>
-    <width>26</width>
-    <height>19</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_29</name>
-    <text>$(LI)</text>
-    <x>836</x>
-    <y>658</y>
-    <width>26</width>
-    <height>19</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_30</name>
-    <pv_name>$(system):$(LI):sRdV</pv_name>
-    <x>672</x>
-    <y>677</y>
-    <width>67</width>
-    <height>16</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>2</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_30</name>
-    <pv_name>$(system):$(LI):sRdV</pv_name>
-    <x>834</x>
-    <y>677</y>
-    <width>67</width>
-    <height>16</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>2</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_29</name>
-    <text>$(TT)</text>
-    <x>631</x>
-    <y>765</y>
-    <width>31</width>
-    <height>19</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_29</name>
-    <text>$(TT)</text>
-    <x>793</x>
-    <y>765</y>
-    <width>31</width>
-    <height>19</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -2330,7 +2203,7 @@ $(pv_value)</tooltip>
     </border_color>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_16</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-Vac:FV050</pv>
     </macros>
@@ -2351,7 +2224,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -2396,7 +2269,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_17</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-Vac:FV060</pv>
     </macros>
@@ -2417,7 +2290,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -2441,13 +2314,12 @@ $(pv_value)</tooltip>
           <description>Valve control</description>
         </action>
       </actions>
-      <auto_size>true</auto_size>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_2</name>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-Cvalve.bob</file>
+          <file>../CmdPanels/CstatV-Valve.bob</file>
           <macros>
             <v_name>$(pv)</v_name>
           </macros>
@@ -2514,6 +2386,122 @@ $(pv_value)</tooltip>
           <pv_name>$(pv_name)</pv_name>
         </rule>
       </rules>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(pv)</name>
+    <macros>
+      <pv>CstatV-Vac:TP050</pv>
+    </macros>
+    <x>532</x>
+    <y>226</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>$(pv)</name>
+      <pv_name>CstatV-Vac:TP050:sOn</pv_name>
+      <symbols>
+        <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
+        <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+      </symbols>
+      <width>30</width>
+      <height>30</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions execute_as_one="true">
+        <action type="open_display">
+          <file>TP_TD20.opi</file>
+          <macros>
+            <P>CstatV-Vac:TP050</P>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <tooltip>$(pv_name)
+Click for details</tooltip>
+      <preserve_ratio>false</preserve_ratio>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_70</name>
+      <actions>
+        <action type="open_display">
+          <file>TP_TD20.bob</file>
+          <macros>
+            <P>$(pv)</P>
+          </macros>
+          <target>standalone</target>
+          <description>Pump Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>3</x>
+      <y>2</y>
+      <width>25</width>
+      <height>25</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>$(pv)</name>
+    <macros>
+      <pv>CstatV-Vac:TP060</pv>
+    </macros>
+    <x>1006</x>
+    <y>521</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>$(pv)</name>
+      <pv_name>CstatV-Vac:TP060:sOn</pv_name>
+      <symbols>
+        <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
+        <symbol>../../../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+      </symbols>
+      <width>30</width>
+      <height>30</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions execute_as_one="true">
+        <action type="open_display">
+          <file>TP_TD20.opi</file>
+          <macros>
+            <P>CstatV-Vac:TP060</P>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+      <tooltip>$(pv_name)
+Click for details</tooltip>
+      <preserve_ratio>false</preserve_ratio>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_71</name>
+      <actions>
+        <action type="open_display">
+          <file>TP_TD20.bob</file>
+          <macros>
+            <P>$(pv)</P>
+          </macros>
+          <target>standalone</target>
+          <description>Pump Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>3</x>
+      <y>3</y>
+      <width>25</width>
+      <height>25</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
     </widget>
   </widget>
 </display>

@@ -862,7 +862,7 @@ $(pv_value)</tooltip>
             <macros>
               <PID>$(name)</PID>
             </macros>
-            <target>tab</target>
+            <target>standalone</target>
           </action>
         </actions>
         <text>$(L)</text>
@@ -876,20 +876,6 @@ $(pv_value)</tooltip>
           <color name="BLACK" red="0" green="0" blue="0">
           </color>
         </foreground_color>
-        <rules>
-          <rule name="Border color" prop_id="border_color" out_exp="false">
-            <exp bool_exp="pv0==0">
-              <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-          <rule name="Border style" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0==0">
-              <value>1</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-        </rules>
         <tooltip>$(actions)</tooltip>
       </widget>
       <widget type="led" version="2.0.0">
@@ -952,24 +938,6 @@ $(pv_value)</tooltip>
             <target>tab</target>
           </action>
         </actions>
-        <rules>
-          <rule name="bordercolor" prop_id="border_color" out_exp="false">
-            <exp bool_exp="pv0==0">
-              <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv0">
-              <value>9</value>
-            </exp>
-            <exp bool_exp="pv1==0">
-              <value>1</value>
-            </exp>
-            <pv_name>$(pv_name).SIMM</pv_name>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-        </rules>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_28</name>
@@ -1076,7 +1044,7 @@ $(pv_value)</tooltip>
     <name>Label Template_15</name>
     <text>CV603</text>
     <x>572</x>
-    <y>531</y>
+    <y>530</y>
     <width>37</width>
     <height>19</height>
     <font>
@@ -1279,7 +1247,7 @@ $(pv_value)</tooltip>
     <name>Label Template_2</name>
     <text>CV601</text>
     <x>227</x>
-    <y>291</y>
+    <y>290</y>
     <width>37</width>
     <height>19</height>
     <font>
@@ -3114,8 +3082,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
+    <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -3142,8 +3111,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
+    <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -3170,8 +3140,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
+    <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -3198,8 +3169,9 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
+    <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -3340,7 +3312,7 @@ display.getWidget("tabcontainer").setActiveTabIndex(4);]]></text>
     <width>66</width>
     <height>17</height>
     <font>
-      <font family="Source Sans Pro" style="REGULAR" size="13.0">
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
     </font>
     <foreground_color>
@@ -4402,20 +4374,6 @@ $(pv_value)</tooltip>
               <target>tab</target>
             </action>
           </actions>
-          <rules>
-            <rule name="bordercolor" prop_id="border_color" out_exp="false">
-              <exp bool_exp="pv0==0">
-                <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-              </exp>
-              <pv_name>$(name):sAuto</pv_name>
-            </rule>
-            <rule name="BorderRule" prop_id="border_style" out_exp="false">
-              <exp bool_exp="pv1==0">
-                <value>1</value>
-              </exp>
-              <pv_name>$(name):sAuto</pv_name>
-            </rule>
-          </rules>
         </widget>
         <widget type="action_button" version="3.0.0">
           <name>Action Button_33</name>
@@ -4531,20 +4489,6 @@ $(pv_value)</tooltip>
             <target>tab</target>
           </action>
         </actions>
-        <rules>
-          <rule name="bordercolor" prop_id="border_color" out_exp="false">
-            <exp bool_exp="pv0==0">
-              <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv1==0">
-              <value>1</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-        </rules>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_31</name>
@@ -4600,20 +4544,6 @@ $(pv_value)</tooltip>
             <target>tab</target>
           </action>
         </actions>
-        <rules>
-          <rule name="bordercolor" prop_id="border_color" out_exp="false">
-            <exp bool_exp="pv0==0">
-              <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv1==0">
-              <value>1</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-        </rules>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_34</name>
@@ -4669,20 +4599,6 @@ $(pv_value)</tooltip>
             <target>tab</target>
           </action>
         </actions>
-        <rules>
-          <rule name="bordercolor" prop_id="border_color" out_exp="false">
-            <exp bool_exp="pv0==0">
-              <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv1==0">
-              <value>1</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-        </rules>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_35</name>
@@ -4738,20 +4654,6 @@ $(pv_value)</tooltip>
             <target>tab</target>
           </action>
         </actions>
-        <rules>
-          <rule name="bordercolor" prop_id="border_color" out_exp="false">
-            <exp bool_exp="pv0==0">
-              <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-          <rule name="BorderRule" prop_id="border_style" out_exp="false">
-            <exp bool_exp="pv1==0">
-              <value>1</value>
-            </exp>
-            <pv_name>$(name):sAuto</pv_name>
-          </rule>
-        </rules>
       </widget>
       <widget type="action_button" version="3.0.0">
         <name>Action Button_36</name>
@@ -5370,8 +5272,9 @@ Insert</text>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
+    <border_width>2</border_width>
     <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -5476,20 +5379,6 @@ Insert</text>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5562,20 +5451,6 @@ Insert</text>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5648,20 +5523,6 @@ Insert</text>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5734,20 +5595,6 @@ Insert</text>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5820,20 +5667,6 @@ Insert</text>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5906,20 +5739,6 @@ Insert</text>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <rules>
-        <rule name="Border color" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="Border style" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="led" version="2.0.0">
@@ -5950,7 +5769,7 @@ Insert</text>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_23</name>
+    <name>$(pv)</name>
     <macros>
       <pv>$(system):FV600</pv>
     </macros>
@@ -5971,7 +5790,7 @@ Insert</text>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6046,7 +5865,7 @@ Insert</text>
     </border_color>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_24</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-LHe:FV602</pv>
     </macros>
@@ -6067,7 +5886,7 @@ Insert</text>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6142,7 +5961,7 @@ Insert</text>
     </border_color>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_26</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-LHe:FV641</pv>
     </macros>
@@ -6163,7 +5982,7 @@ Insert</text>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6184,49 +6003,6 @@ Insert</text>
           <description>Valve control</description>
         </action>
       </actions>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline</name>
-      <x>20</x>
-      <y>38</y>
-      <width>1</width>
-      <height>13</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
-      <points>
-        <point x="0.0" y="0.0">
-        </point>
-        <point x="0.0" y="12.0">
-        </point>
-      </points>
-      <actions>
-      </actions>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_1</name>
-      <x>20</x>
-      <width>1</width>
-      <height>16</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="IO Liquid Helium" red="51" green="102" blue="255">
-        </color>
-      </line_color>
-      <points>
-        <point x="0.0" y="0.0">
-        </point>
-        <point x="0.0" y="15.0">
-        </point>
-      </points>
-      <actions>
-      </actions>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_27</name>
@@ -6249,7 +6025,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_27</name>
+    <name>$(pv)</name>
     <macros>
       <pv>$(system):FV640</pv>
     </macros>
@@ -6270,7 +6046,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6416,7 +6192,7 @@ $(pv_value)</tooltip>
     </border_color>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_28</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-RHtr:FV586</pv>
     </macros>
@@ -6437,7 +6213,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6462,7 +6238,6 @@ $(pv_value)</tooltip>
           <description>Valve control</description>
         </action>
       </actions>
-      <auto_size>true</auto_size>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_25</name>
@@ -6485,7 +6260,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_29</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-RHtr:FV581</pv>
     </macros>
@@ -6506,7 +6281,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6553,7 +6328,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_30</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatH-RHtr:FV555</pv>
     </macros>
@@ -6574,7 +6349,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6621,7 +6396,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_31</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatH-RHtr:FV554</pv>
     </macros>
@@ -6642,7 +6417,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6773,7 +6548,7 @@ $(pv_value)</tooltip>
     </border_color>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_32</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-RHtr:FV580</pv>
     </macros>
@@ -6794,7 +6569,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6841,7 +6616,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_33</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-RHtr:FV582</pv>
     </macros>
@@ -6862,7 +6637,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6909,7 +6684,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_34</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-RHtr:FV584</pv>
     </macros>
@@ -6930,7 +6705,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -6977,7 +6752,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_35</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-RHtr:FV583</pv>
     </macros>
@@ -6998,7 +6773,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -7045,7 +6820,7 @@ $(pv_value)</tooltip>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Grouping Container_36</name>
+    <name>$(pv)</name>
     <macros>
       <pv>CstatV-RHtr:FV585</pv>
     </macros>
@@ -7066,7 +6841,7 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
+      <name>$(pv)</name>
       <pv_name>$(pv):sOn</pv_name>
       <symbols>
         <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
@@ -7828,20 +7603,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv1==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_5</name>
@@ -7944,20 +7705,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv1==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_7</name>
@@ -8013,20 +7760,6 @@ $(pv_value)</tooltip>
           <target>standalone</target>
         </action>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv1==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_8</name>
@@ -8083,20 +7816,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv1==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_9</name>
@@ -8387,21 +8106,6 @@ $(pv_value)</tooltip>
           <target>tab</target>
         </action>
       </actions>
-      <rules>
-        <rule name="bordercolor" prop_id="border_color" out_exp="false">
-          <exp bool_exp="pv0==0">
-            <value>&lt;color blue="0" green="255" name="Minor" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv1==0">
-            <value>1</value>
-          </exp>
-          <pv_name>$(name):sAuto</pv_name>
-        </rule>
-      </rules>
-      <auto_size>true</auto_size>
     </widget>
     <widget type="action_button" version="3.0.0">
       <name>Action Button_29</name>
