@@ -39,39 +39,6 @@
       </color>
     </border_color>
   </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template</name>
-    <pv_name>$(v_name):sOn</pv_name>
-    <bit>0</bit>
-    <x>7</x>
-    <y>54</y>
-    <width>41</width>
-    <height>41</height>
-    <off_label>OFF</off_label>
-    <off_color>
-      <color name="RED" red="252" green="13" blue="27">
-      </color>
-    </off_color>
-    <on_label>ON</on_label>
-    <on_color>
-      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-      </color>
-    </on_color>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="IO InputPV Fg" red="0" green="32" blue="92">
-      </color>
-    </foreground_color>
-    <line_color>
-      <color red="150" green="150" blue="150">
-      </color>
-    </line_color>
-    <actions>
-    </actions>
-  </widget>
   <widget type="action_button" version="3.0.0">
     <name>Menu Button Template</name>
     <actions>
@@ -87,7 +54,7 @@
       </action>
     </actions>
     <pv_name>$(v_name):sAuto</pv_name>
-    <text>Menu</text>
+    <text>Ctrl Mode</text>
     <x>55</x>
     <y>62</y>
     <width>88</width>
@@ -334,8 +301,8 @@
     <text>Controlled from HNOSS WinCC! </text>
     <x>85</x>
     <y>27</y>
-    <width>255</width>
-    <height>24</height>
+    <width>230</width>
+    <height>22</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="17.0">
       </font>
@@ -631,5 +598,49 @@
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
     </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Auto</text>
+    <x>12</x>
+    <y>36</y>
+    <width>45</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_7</name>
+    <pv_name>$(v_name):sAuto</pv_name>
+    <bit>0</bit>
+    <x>7</x>
+    <y>57</y>
+    <width>41</width>
+    <height>41</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color name="MINOR" red="252" green="242" blue="17">
+      </color>
+    </off_color>
+    <on_label>ON</on_label>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
   </widget>
 </display>

@@ -41,7 +41,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED Template</name>
-    <pv_name>$(v_name):sOn</pv_name>
+    <pv_name>$(v_name):sAuto</pv_name>
     <bit>0</bit>
     <x>7</x>
     <y>54</y>
@@ -49,7 +49,7 @@
     <height>41</height>
     <off_label>OFF</off_label>
     <off_color>
-      <color name="RED" red="252" green="13" blue="27">
+      <color name="MINOR" red="252" green="242" blue="17">
       </color>
     </off_color>
     <on_label>ON</on_label>
@@ -87,7 +87,7 @@
       </action>
     </actions>
     <pv_name>$(v_name):sAuto</pv_name>
-    <text>Menu</text>
+    <text>Ctrl Mode</text>
     <x>55</x>
     <y>62</y>
     <width>88</width>
@@ -254,7 +254,7 @@
     <x>5</x>
     <y>153</y>
     <width>106</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -278,11 +278,11 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_2</name>
-    <text>Pos. Open Switch:</text>
+    <text>Pos. Closed Switch:</text>
     <x>6</x>
     <y>192</y>
-    <width>106</width>
-    <height>19</height>
+    <width>114</width>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -310,7 +310,7 @@
     <x>212</x>
     <y>116</y>
     <width>107</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -442,7 +442,7 @@
     <x>212</x>
     <y>153</y>
     <width>137</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -587,7 +587,7 @@
       <x>2</x>
       <y>10</y>
       <width>105</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -615,7 +615,7 @@
       <x>2</x>
       <y>48</y>
       <width>65</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -697,5 +697,16 @@
         </color>
       </foreground_color>
     </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Auto</text>
+    <x>12</x>
+    <y>33</y>
+    <width>45</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
   </widget>
 </display>
