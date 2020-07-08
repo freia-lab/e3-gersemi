@@ -1280,33 +1280,6 @@ $(pv_value)</tooltip>
         </border_color>
       </widget>
       <widget type="label" version="2.0.0">
-        <name>Label Template_107</name>
-        <text>EH661AC</text>
-        <x>137</x>
-        <y>49</y>
-        <width>53</width>
-        <height>19</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="label" version="2.0.0">
         <name>Label Template_11</name>
         <text>TT664L</text>
         <x>11</x>
@@ -1580,60 +1553,18 @@ $(pv_value)</tooltip>
           </border_color>
         </widget>
       </widget>
-      <widget type="group" version="2.0.0">
-        <name>$(pv)</name>
+      <widget type="embedded" version="2.0.0">
+        <name>Embedded Display_25</name>
+        <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
         <macros>
-          <pv>$(system):EH661</pv>
+          <P>CstatV</P>
+          <S>LHe</S>
+          <V>EH661</V>
         </macros>
-        <x>119</x>
-        <y>46</y>
-        <width>92</width>
-        <height>75</height>
-        <style>3</style>
-        <transparent>true</transparent>
-        <widget type="symbol" version="2.0.0">
-          <name>$(system):EH661</name>
-          <pv_name>$(name):sHtrOn</pv_name>
-          <symbols>
-            <symbol>../../../freia-symbols/cryogenics/HX_General_BLACK.svg</symbol>
-            <symbol>../../../freia-symbols/cryogenics/HX_General_GREEN.svg</symbol>
-          </symbols>
-          <width>92</width>
-          <height>75</height>
-          <background_color>
-            <color name="BACKGROUND" red="220" green="225" blue="221">
-            </color>
-          </background_color>
-          <actions>
-            <action type="open_display">
-              <file>../CmdPanels/CstatV-Heater1.opi</file>
-              <macros>
-                <Heater1>$(name)</Heater1>
-              </macros>
-              <target>tab</target>
-            </action>
-          </actions>
-        </widget>
-        <widget type="action_button" version="3.0.0">
-          <name>Action Button_58</name>
-          <actions>
-            <action type="open_display">
-              <file>../CmdPanels/CstatV-Heater1.bob</file>
-              <macros>
-                <Heater1>$(pv)</Heater1>
-              </macros>
-              <target>standalone</target>
-              <description>Heater 1 Control</description>
-            </action>
-          </actions>
-          <text></text>
-          <x>28</x>
-          <y>18</y>
-          <width>40</width>
-          <height>40</height>
-          <transparent>true</transparent>
-          <tooltip>$(pv)</tooltip>
-        </widget>
+        <x>120</x>
+        <y>32</y>
+        <width>95</width>
+        <height>95</height>
       </widget>
     </widget>
     <widget type="label" version="2.0.0">
@@ -1694,62 +1625,6 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template</name>
-      <text>EH670AC</text>
-      <x>335</x>
-      <y>153</y>
-      <width>53</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_148</name>
-      <text>EH640AF</text>
-      <x>76</x>
-      <y>366</y>
-      <width>52</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
     <widget type="group" version="2.0.0">
       <name>$(pv)</name>
       <macros>
@@ -1771,30 +1646,6 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <actions>
       </actions>
-      <widget type="symbol" version="2.0.0">
-        <name>$(system):EH660</name>
-        <pv_name>$(name):sHtrOn</pv_name>
-        <symbols>
-          <symbol>../../../freia-symbols/cryogenics/HX_General_BLACK.svg</symbol>
-          <symbol>../../../freia-symbols/cryogenics/HX_General_GREEN.svg</symbol>
-        </symbols>
-        <y>23</y>
-        <width>92</width>
-        <height>75</height>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <actions>
-          <action type="open_display">
-            <file>../CmdPanels/CstatV-Heater1.opi</file>
-            <macros>
-              <Heater1>$(name)</Heater1>
-            </macros>
-            <target>tab</target>
-          </action>
-        </actions>
-      </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update Template_174</name>
         <pv_name>$(system):TT660A:sRdV</pv_name>
@@ -1879,53 +1730,6 @@ $(pv_value)</tooltip>
         <border_width>2</border_width>
         <border_color>
           <color name="GRAY-BORDER" red="121" green="121" blue="121">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button_59</name>
-        <actions>
-          <action type="open_display">
-            <file>../CmdPanels/CstatV-Heater1.bob</file>
-            <macros>
-              <Heater1>$(pv)</Heater1>
-            </macros>
-            <target>standalone</target>
-            <description>Heater 1 Control</description>
-          </action>
-        </actions>
-        <text></text>
-        <x>26</x>
-        <y>41</y>
-        <width>40</width>
-        <height>40</height>
-        <transparent>true</transparent>
-        <tooltip>$(pv)</tooltip>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_149</name>
-        <text>EH660AC</text>
-        <x>15</x>
-        <y>24</y>
-        <width>53</width>
-        <height>19</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
           </color>
         </border_color>
       </widget>
@@ -2045,61 +1849,6 @@ $(pv_value)</tooltip>
         <color name="GRAY-BORDER" red="121" green="121" blue="121">
         </color>
       </border_color>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>$(pv)</name>
-      <macros>
-        <pv>$(system):EH670</pv>
-      </macros>
-      <x>313</x>
-      <y>95</y>
-      <width>92</width>
-      <height>75</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="symbol" version="2.0.0">
-        <name>$(system):EH670</name>
-        <pv_name>$(name):sHtrOn</pv_name>
-        <symbols>
-          <symbol>../../../freia-symbols/cryogenics/HX_General_BLACK.svg</symbol>
-          <symbol>../../../freia-symbols/cryogenics/HX_General_GREEN.svg</symbol>
-        </symbols>
-        <width>92</width>
-        <height>75</height>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <actions>
-          <action type="open_display">
-            <file>../CmdPanels/CstatV-Heater1.opi</file>
-            <macros>
-              <Heater1>$(name)</Heater1>
-            </macros>
-            <target>tab</target>
-          </action>
-        </actions>
-      </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button_55</name>
-        <actions>
-          <action type="open_display">
-            <file>../CmdPanels/CstatV-Heater1.bob</file>
-            <macros>
-              <Heater1>$(pv)</Heater1>
-            </macros>
-            <target>standalone</target>
-            <description>Heater 1 Control</description>
-          </action>
-        </actions>
-        <text></text>
-        <x>27</x>
-        <y>18</y>
-        <width>40</width>
-        <height>40</height>
-        <transparent>true</transparent>
-        <tooltip>$(pv)</tooltip>
-      </widget>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_170</name>
@@ -2269,60 +2018,44 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
-    <widget type="group" version="2.0.0">
-      <name>$(pv)</name>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_24</name>
+      <file>../../../freia-symbols/display-builder/CstatV-Heater1-ld-pv.bob</file>
       <macros>
-        <pv>$(system):EH640</pv>
+        <P>CstatV</P>
+        <S>LHe</S>
+        <V>EH670</V>
       </macros>
-      <x>27</x>
-      <y>364</y>
-      <width>92</width>
-      <height>75</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="symbol" version="2.0.0">
-        <name>$(system):EH640</name>
-        <pv_name>$(name):sHtrOn</pv_name>
-        <symbols>
-          <symbol>../../../freia-symbols/cryogenics/HX_General_BLACK.svg</symbol>
-          <symbol>../../../freia-symbols/cryogenics/HX_General_GREEN.svg</symbol>
-        </symbols>
-        <width>92</width>
-        <height>75</height>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <actions>
-          <action type="open_display">
-            <file>../CmdPanels/CstatV-Heater1.opi</file>
-            <macros>
-              <Heater1>$(name)</Heater1>
-            </macros>
-            <target>tab</target>
-          </action>
-        </actions>
-      </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button_56</name>
-        <actions>
-          <action type="open_display">
-            <file>../CmdPanels/CstatV-Heater1.bob</file>
-            <macros>
-              <Heater1>$(pv)</Heater1>
-            </macros>
-            <target>standalone</target>
-            <description>Heater 1 Control</description>
-          </action>
-        </actions>
-        <text></text>
-        <x>27</x>
-        <y>19</y>
-        <width>40</width>
-        <height>40</height>
-        <transparent>true</transparent>
-        <tooltip>$(pv)</tooltip>
-      </widget>
+      <x>302</x>
+      <y>86</y>
+      <width>95</width>
+      <height>95</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_27</name>
+      <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+      <macros>
+        <P>CstatV</P>
+        <S>LHe</S>
+        <V>EH660</V>
+      </macros>
+      <x>266</x>
+      <y>469</y>
+      <width>95</width>
+      <height>95</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_29</name>
+      <file>../../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
+      <macros>
+        <P>CstatV</P>
+        <S>LHe</S>
+        <V>EH640</V>
+      </macros>
+      <x>33</x>
+      <y>358</y>
+      <width>110</width>
+      <height>95</height>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -2588,130 +2321,6 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>$(pv)</name>
-    <macros>
-      <pv>CstatV-LN2:CV700</pv>
-    </macros>
-    <x>535</x>
-    <y>287</y>
-    <width>81</width>
-    <height>49</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>CstatV-LN2:CV700</name>
-      <pv_name>$(name):sRdV</pv_name>
-      <symbols>
-        <symbol>../../../freia-symbols/cryogenics/valve_control_RED.svg</symbol>
-        <symbol>../../../freia-symbols/cryogenics/valve_control_GREEN.svg</symbol>
-      </symbols>
-      <x>4</x>
-      <y>11</y>
-      <width>41</width>
-      <height>27</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Cvalve.opi</file>
-          <macros>
-            <Cvalve>$(name)</Cvalve>
-          </macros>
-          <target>tab</target>
-        </action>
-      </actions>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_56</name>
-      <text>CV700</text>
-      <x>11</x>
-      <y>2</y>
-      <width>29</width>
-      <height>14</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="11.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_17</name>
-      <pv_name>CstatV-LN2:CV700:sRdV</pv_name>
-      <x>11</x>
-      <y>29</y>
-      <width>70</width>
-      <font>
-        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-      <precision>1</precision>
-      <show_units>false</show_units>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_40</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Cvalve.bob</file>
-          <macros>
-            <Cvalve>$(pv)</Cvalve>
-          </macros>
-          <target>standalone</target>
-          <description>Valve Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>7</x>
-      <y>13</y>
-      <width>35</width>
-      <height>20</height>
-      <transparent>true</transparent>
-      <tooltip>$(pv)</tooltip>
-    </widget>
-  </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_159</name>
     <pv_name>CstatV-LHe:PT660L:sRdV</pv_name>
@@ -2747,7 +2356,7 @@ $(pv_value)</tooltip>
     <x>1116</x>
     <y>122</y>
     <width>44</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2804,7 +2413,7 @@ $(pv_value)</tooltip>
     <x>1115</x>
     <y>86</y>
     <width>44</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2832,7 +2441,7 @@ $(pv_value)</tooltip>
     <x>826</x>
     <y>316</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2860,7 +2469,7 @@ $(pv_value)</tooltip>
     <x>744</x>
     <y>155</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2946,7 +2555,7 @@ $(pv_value)</tooltip>
     <x>822</x>
     <y>155</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3019,34 +2628,6 @@ $(pv_value)</tooltip>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_159</name>
-    <text>EV748</text>
-    <x>769</x>
-    <y>244</y>
-    <width>28</width>
-    <height>14</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="11.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_160</name>
@@ -3623,540 +3204,6 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>$(pv)</name>
-    <macros>
-      <pv>$(system):FV640</pv>
-    </macros>
-    <x>830</x>
-    <y>780</y>
-    <width>50</width>
-    <height>41</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>CstatV-SHe:FV382_1</name>
-      <pv_name>$(pv):sOn</pv_name>
-      <symbols>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-      </symbols>
-      <x>12</x>
-      <y>13</y>
-      <width>19</width>
-      <height>13</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.opi</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>tab</target>
-          <description>Valve control</description>
-        </action>
-      </actions>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_146</name>
-      <text>FV640</text>
-      <x>7</x>
-      <width>28</width>
-      <height>15</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="11.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_62</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.bob</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>standalone</target>
-          <description>Valve Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>8</x>
-      <y>10</y>
-      <width>30</width>
-      <height>20</height>
-      <transparent>true</transparent>
-      <tooltip>$(pv)</tooltip>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>$(pv)</name>
-    <macros>
-      <pv>$(system):FV642</pv>
-    </macros>
-    <x>671</x>
-    <y>390</y>
-    <width>50</width>
-    <height>41</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>$(pv)</name>
-      <pv_name>$(pv):sOn</pv_name>
-      <symbols>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-      </symbols>
-      <x>14</x>
-      <y>13</y>
-      <width>19</width>
-      <height>13</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.opi</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>tab</target>
-          <description>Valve control</description>
-        </action>
-      </actions>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_50</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.bob</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>standalone</target>
-          <description>Valve Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>11</x>
-      <y>12</y>
-      <width>30</width>
-      <height>20</height>
-      <transparent>true</transparent>
-      <tooltip>$(pv)</tooltip>
-    </widget>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_155</name>
-    <text>FV642</text>
-    <x>679</x>
-    <y>388</y>
-    <width>28</width>
-    <height>14</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="11.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>$(pv)</name>
-    <macros>
-      <pv>CstatV-SHe:FV381</pv>
-    </macros>
-    <x>521</x>
-    <y>335</y>
-    <width>50</width>
-    <height>41</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>$(pv)</name>
-      <pv_name>$(pv):sOn</pv_name>
-      <symbols>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-      </symbols>
-      <x>12</x>
-      <y>13</y>
-      <width>19</width>
-      <height>13</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.opi</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>tab</target>
-          <description>Valve control</description>
-        </action>
-      </actions>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_51</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.bob</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>standalone</target>
-          <description>Valve Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>8</x>
-      <y>12</y>
-      <width>30</width>
-      <height>20</height>
-      <transparent>true</transparent>
-      <tooltip>$(pv)</tooltip>
-    </widget>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_82</name>
-    <text>FV381</text>
-    <x>529</x>
-    <y>334</y>
-    <width>28</width>
-    <height>14</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="11.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>$(pv)</name>
-    <macros>
-      <pv>CstatV-SHe:FV382</pv>
-    </macros>
-    <x>673</x>
-    <y>177</y>
-    <width>50</width>
-    <height>41</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>$(pv)</name>
-      <pv_name>$(pv):sOn</pv_name>
-      <symbols>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-      </symbols>
-      <x>13</x>
-      <y>13</y>
-      <width>19</width>
-      <height>13</height>
-      <background_color>
-        <color name="IO Shape Fill" red="188" green="188" blue="188">
-        </color>
-      </background_color>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.opi</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>tab</target>
-          <description>Valve control</description>
-        </action>
-      </actions>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_48</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.bob</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>standalone</target>
-          <description>Valve Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>9</x>
-      <y>12</y>
-      <width>30</width>
-      <height>20</height>
-      <transparent>true</transparent>
-      <tooltip>$(pv)</tooltip>
-    </widget>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_89</name>
-    <text>FV382</text>
-    <x>682</x>
-    <y>177</y>
-    <width>28</width>
-    <height>14</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="11.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>$(pv)</name>
-    <macros>
-      <pv>CstatV-LHe:FV660</pv>
-    </macros>
-    <x>1241</x>
-    <y>118</y>
-    <width>40</width>
-    <height>52</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="symbol" version="2.0.0">
-      <name>$(pv)</name>
-      <pv_name>$(pv):sOn</pv_name>
-      <symbols>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-      </symbols>
-      <x>10</x>
-      <y>21</y>
-      <width>19</width>
-      <height>13</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <rotation>90.0</rotation>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.opi</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>tab</target>
-          <description>Valve control</description>
-        </action>
-      </actions>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_52</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Valve.bob</file>
-          <macros>
-            <v_name>$(pv)</v_name>
-          </macros>
-          <target>standalone</target>
-          <description>Valve Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>10</x>
-      <y>13</y>
-      <width>20</width>
-      <transparent>true</transparent>
-      <tooltip>$(pv)</tooltip>
-    </widget>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_147</name>
-    <text>FV660</text>
-    <x>1269</x>
-    <y>139</y>
-    <width>28</width>
-    <height>14</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="11.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>$(pv)</name>
-    <macros>
-      <pv>CstatV-LN2:EV748</pv>
-    </macros>
-    <x>768</x>
-    <y>257</y>
-    <width>30</width>
-    <height>20</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="symbol" version="2.0.0">
-      <name>CstatV-LN2:EV748</name>
-      <pv_name>$(name):sCmd</pv_name>
-      <symbols>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-        <symbol>../../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-      </symbols>
-      <x>5</x>
-      <y>1</y>
-      <width>19</width>
-      <height>13</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Evalve.opi</file>
-          <macros>
-            <Evalve>$(name)</Evalve>
-          </macros>
-          <target>tab</target>
-          <description>Valve control</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_49</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Evalve.bob</file>
-          <macros>
-            <Evalve>$(pv)</Evalve>
-          </macros>
-          <target>standalone</target>
-          <description>E Valve Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <width>30</width>
-      <height>20</height>
-      <transparent>true</transparent>
-      <tooltip>$(pv)</tooltip>
-    </widget>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_19</name>
     <text>To Purging Unit</text>
@@ -4181,87 +3228,108 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>$(pv)</name>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_34</name>
+    <file>../../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
-      <pv>$(system):EH641</pv>
+      <P>CstatV</P>
+      <S>SHe</S>
+      <V>FV382</V>
     </macros>
-    <x>1118</x>
-    <y>721</y>
-    <width>92</width>
-    <height>75</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="symbol" version="2.0.0">
-      <name>$(system):EH641</name>
-      <pv_name>$(name):sHtrOn</pv_name>
-      <symbols>
-        <symbol>../../../freia-symbols/cryogenics/HX_General_BLACK.svg</symbol>
-        <symbol>../../../freia-symbols/cryogenics/HX_General_GREEN.svg</symbol>
-      </symbols>
-      <width>92</width>
-      <height>75</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
-          <macros>
-            <Heater1>$(name)</Heater1>
-          </macros>
-          <target>tab</target>
-        </action>
-      </actions>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_61</name>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.bob</file>
-          <macros>
-            <Heater1>$(pv)</Heater1>
-          </macros>
-          <target>standalone</target>
-          <description>Heater 1 Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>27</x>
-      <y>20</y>
-      <width>40</width>
-      <height>40</height>
-      <transparent>true</transparent>
-      <tooltip>$(pv)</tooltip>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_150</name>
-      <text>EH641AC</text>
-      <x>21</x>
-      <y>1</y>
-      <width>53</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
+    <x>684</x>
+    <y>174</y>
+    <width>35</width>
+    <height>35</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_35</name>
+    <file>../../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
+    <macros>
+      <P>CstatV</P>
+      <S>LN2</S>
+      <V>EV748</V>
+    </macros>
+    <x>761</x>
+    <y>243</y>
+    <width>35</width>
+    <height>35</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_36</name>
+    <file>../../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
+    <macros>
+      <P>CstatV</P>
+      <S>SHe</S>
+      <V>FV381</V>
+    </macros>
+    <x>530</x>
+    <y>344</y>
+    <width>35</width>
+    <height>35</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_37</name>
+    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <macros>
+      <P>CstatV</P>
+      <S>LN2</S>
+      <V>CV700</V>
+    </macros>
+    <x>532</x>
+    <y>288</y>
+    <width>50</width>
+    <height>55</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_38</name>
+    <file>../../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
+    <macros>
+      <P>CstatV</P>
+      <S>LHe</S>
+      <V>FV642</V>
+    </macros>
+    <x>678</x>
+    <y>388</y>
+    <width>35</width>
+    <height>35</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_39</name>
+    <file>../../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
+    <macros>
+      <P>CstatV</P>
+      <S>LHe</S>
+      <V>FV640</V>
+    </macros>
+    <x>834</x>
+    <y>778</y>
+    <width>35</width>
+    <height>35</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_40</name>
+    <file>../../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
+    <macros>
+      <P>CstatV</P>
+      <S>LHe</S>
+      <V>FV660</V>
+    </macros>
+    <x>1251</x>
+    <y>133</y>
+    <width>51</width>
+    <height>28</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_28</name>
+    <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+    <macros>
+      <P>CstatV</P>
+      <S>LHe</S>
+      <V>EH641</V>
+    </macros>
+    <x>1110</x>
+    <y>706</y>
+    <width>95</width>
+    <height>95</height>
   </widget>
 </display>

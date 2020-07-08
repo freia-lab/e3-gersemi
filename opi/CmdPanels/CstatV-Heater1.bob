@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>$(Heater1)</name>
-  <width>300</width>
+  <width>320</width>
   <height>345</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
@@ -53,9 +53,9 @@
       </action>
     </actions>
     <pv_name>$(Heater1):sAuto</pv_name>
-    <text>Menu</text>
-    <x>97</x>
-    <y>65</y>
+    <text>Ctrl Mode</text>
+    <x>53</x>
+    <y>82</y>
     <height>26</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -261,8 +261,8 @@
       </action>
     </actions>
     <pv_name>$(Heater1):cmdSet</pv_name>
-    <x>53</x>
-    <y>103</y>
+    <x>167</x>
+    <y>80</y>
     <width>70</width>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -291,8 +291,8 @@
       </action>
     </actions>
     <pv_name>$(Heater1):cmdRst</pv_name>
-    <x>183</x>
-    <y>103</y>
+    <x>243</x>
+    <y>80</y>
     <width>70</width>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -512,10 +512,30 @@
     </background_color>
     <actions>
     </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <x>3</x>
+      <y>37</y>
+      <width>50</width>
+      <height>30</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </background_color>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 != 1">
+            <value>false</value>
+          </exp>
+          <pv_name>$(Heater1):sHtrOn</pv_name>
+        </rule>
+      </rules>
+    </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline</name>
-      <x>2</x>
-      <y>45</y>
+      <x>3</x>
+      <y>43</y>
       <width>51</width>
       <height>21</height>
       <line_width>2</line_width>
@@ -549,14 +569,6 @@
       </points>
       <actions>
       </actions>
-      <rules>
-        <rule name="Bkg Color" prop_id="background_color" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>&lt;color blue="0" green="0" name="Major" red="255"/&gt;</value>
-          </exp>
-          <pv_name>$(pv_name)</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     </widget>
@@ -615,5 +627,49 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Auto</text>
+    <x>9</x>
+    <y>59</y>
+    <width>45</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_3</name>
+    <pv_name>$(Heater1):sAuto</pv_name>
+    <bit>0</bit>
+    <x>7</x>
+    <y>79</y>
+    <width>35</width>
+    <height>35</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color name="MINOR" red="252" green="242" blue="17">
+      </color>
+    </off_color>
+    <on_label>ON</on_label>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
   </widget>
 </display>

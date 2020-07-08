@@ -54,9 +54,9 @@
       </action>
     </actions>
     <pv_name>$(Heater2):sAuto</pv_name>
-    <text>Menu</text>
-    <x>15</x>
-    <y>75</y>
+    <text>Ctrl Mode</text>
+    <x>13</x>
+    <y>105</y>
     <width>126</width>
     <height>26</height>
     <font>
@@ -74,7 +74,7 @@
     <x>64</x>
     <y>32</y>
     <width>175</width>
-    <height>23</height>
+    <height>22</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="17.0">
       </font>
@@ -187,7 +187,7 @@
       <x>5</x>
       <y>50</y>
       <width>11</width>
-      <height>14</height>
+      <height>15</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="11.0">
         </font>
@@ -243,7 +243,7 @@ $(pv_value)</tooltip>
       <x>5</x>
       <y>73</y>
       <width>11</width>
-      <height>14</height>
+      <height>15</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="11.0">
         </font>
@@ -271,7 +271,7 @@ $(pv_value)</tooltip>
       <x>40</x>
       <y>85</y>
       <width>44</width>
-      <height>14</height>
+      <height>15</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="11.0">
         </font>
@@ -299,7 +299,7 @@ $(pv_value)</tooltip>
       <x>40</x>
       <y>40</y>
       <width>39</width>
-      <height>14</height>
+      <height>15</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="11.0">
         </font>
@@ -327,7 +327,7 @@ $(pv_value)</tooltip>
       <x>40</x>
       <y>61</y>
       <width>44</width>
-      <height>14</height>
+      <height>15</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="11.0">
         </font>
@@ -411,7 +411,7 @@ $(pv_value)</tooltip>
       <x>5</x>
       <y>30</y>
       <width>11</width>
-      <height>14</height>
+      <height>15</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="11.0">
         </font>
@@ -467,7 +467,7 @@ $(pv_value)</tooltip>
       <x>35</x>
       <y>10</y>
       <width>22</width>
-      <height>14</height>
+      <height>15</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="11.0">
         </font>
@@ -878,7 +878,7 @@ $(pv_value)</tooltip>
       <x>10</x>
       <y>72</y>
       <width>63</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -942,7 +942,7 @@ $(pv_value)</tooltip>
       <x>10</x>
       <y>12</y>
       <width>63</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1042,7 +1042,7 @@ $(pv_value)</tooltip>
       <x>10</x>
       <y>42</y>
       <width>63</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1380,5 +1380,49 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Auto:</text>
+    <x>25</x>
+    <y>69</y>
+    <width>45</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_8</name>
+    <pv_name>$(Heater2):sAuto</pv_name>
+    <bit>0</bit>
+    <x>63</x>
+    <y>62</y>
+    <width>35</width>
+    <height>35</height>
+    <off_label>OFF</off_label>
+    <off_color>
+      <color name="MINOR" red="252" green="242" blue="17">
+      </color>
+    </off_color>
+    <on_label>ON</on_label>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color red="150" green="150" blue="150">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
   </widget>
 </display>
