@@ -2452,9 +2452,9 @@
         </color>
       </border_color>
     </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_2</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
+    <widget type="label" version="2.0.0">
+      <name>Text Update Template_3</name>
+      <text>####</text>
       <x>112</x>
       <y>30</y>
       <width>202</width>
@@ -2471,9 +2471,40 @@
         <color name="WHITE" red="255" green="255" blue="255">
         </color>
       </background_color>
-      <precision>0</precision>
+      <transparent>false</transparent>
       <actions>
       </actions>
+      <rules>
+        <rule name="TextRule" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0==0">
+            <value>$(step0)</value>
+          </exp>
+          <exp bool_exp="pv0==2">
+            <value>$(step2)</value>
+          </exp>
+          <exp bool_exp="pv0==4">
+            <value>$(step4)</value>
+          </exp>
+          <exp bool_exp="pv0== 5">
+            <value>$(step5)</value>
+          </exp>
+          <exp bool_exp="pv0== 6">
+            <value>$(step6)</value>
+          </exp>
+          <exp bool_exp="pv0== 8">
+            <value>$(step8)</value>
+          </exp>
+          <exp bool_exp="pv0== 10">
+            <value>$(step10)</value>
+          </exp>
+          <exp bool_exp="pv0== 12">
+            <value>$(step12)</value>
+          </exp>
+          <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
+        </rule>
+      </rules>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
       <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">

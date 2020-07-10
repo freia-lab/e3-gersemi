@@ -1128,7 +1128,7 @@ circuit</text>
     </actions>
     <widget type="picture" version="2.0.0">
       <name>Image</name>
-      <file>../../../freia-symbols/cryogenics/valve_general_closed_RED.svg</file>
+      <file>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</file>
       <x>7</x>
       <y>14</y>
       <width>19</width>
@@ -1814,7 +1814,7 @@ $(pv_value)</tooltip>
         <name>Action Button_36</name>
         <actions>
           <action type="open_display">
-            <file>../CmdPanels/CstatV-DI.bob</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
             <macros>
               <DI>$(pv)</DI>
             </macros>
@@ -1877,7 +1877,7 @@ $(pv_value)</tooltip>
         <name>Action Button_37</name>
         <actions>
           <action type="open_display">
-            <file>../CmdPanels/CstatV-DI.bob</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
             <macros>
               <DI>$(pv)</DI>
             </macros>
@@ -1895,7 +1895,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_27</name>
-      <file>../../../freia-symbols/display-builder/CstatV-Heater2flip-lne-pv.bob</file>
+      <file>../../freia-symbols/display-builder/CstatV-Heater2flip-lne-pv.bob</file>
       <macros>
         <P>CstatV</P>
         <S>RHtr</S>
@@ -4291,9 +4291,9 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
   </widget>
-  <widget type="textupdate" version="2.0.0">
+  <widget type="label" version="2.0.0">
     <name>Text Update</name>
-    <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
+    <text>###</text>
     <x>1237</x>
     <y>534</y>
     <width>50</width>
@@ -4305,11 +4305,22 @@ $(pv_value)</tooltip>
       <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
+    <transparent>false</transparent>
     <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
+    <rules>
+      <rule name="Text" prop_id="text" out_exp="false">
+        <exp bool_exp="true">
+          <value>(200-pv0)/2.0</value>
+        </exp>
+        <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
+      </rule>
+    </rules>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
     <border_color>
       <color red="0" green="128" blue="255">
       </color>
@@ -6047,7 +6058,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_18</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6060,7 +6071,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_19</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6073,7 +6084,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_21</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6086,7 +6097,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_20</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6099,7 +6110,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_22</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -6112,7 +6123,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_23</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -6125,7 +6136,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_24</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -6138,7 +6149,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_25</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -6151,7 +6162,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_26</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6164,7 +6175,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_28</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6177,7 +6188,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_29</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6190,7 +6201,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_30</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6203,7 +6214,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_31</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6216,7 +6227,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_32</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6229,7 +6240,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_33</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6242,7 +6253,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_34</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -6255,7 +6266,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_35</name>
-    <file>../../../freia-symbols/display-builder/CstatHValve-v-lr-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatHValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatH</P>
       <S>RHtr</S>
@@ -6268,7 +6279,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_36</name>
-    <file>../../../freia-symbols/display-builder/CstatHValve-v-lr-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatHValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatH</P>
       <S>RHtr</S>
@@ -6281,7 +6292,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_37</name>
-    <file>../../../freia-symbols/display-builder/CstatHValve-v-lr-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatHValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatH</P>
       <S>RHtr</S>
@@ -6294,7 +6305,7 @@ related to the Gas Bag</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_39</name>
-    <file>../../../freia-symbols/display-builder/CstatHValve-v-ll-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatHValve-v-ll-pv.bob</file>
     <macros>
       <P>CstatH</P>
       <S>RHtr</S>
@@ -6304,5 +6315,36 @@ related to the Gas Bag</tooltip>
     <y>615</y>
     <width>51</width>
     <height>28</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
+    <x>1163</x>
+    <y>531</y>
+    <width>50</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse_2</name>
+    <x>1340</x>
+    <y>390</y>
+    <width>1</width>
+    <height>1</height>
   </widget>
 </display>

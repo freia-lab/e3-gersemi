@@ -99,6 +99,7 @@ $(pv_value)</tooltip>
         <color red="241" green="237" blue="233">
         </color>
       </empty_color>
+      <scale_visible>false</scale_visible>
       <actions>
       </actions>
       <limits_from_pv>false</limits_from_pv>
@@ -203,7 +204,7 @@ $(pv_value)</tooltip>
         <x>210</x>
         <y>229</y>
         <width>47</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -614,7 +615,7 @@ $(pv_value)</tooltip>
           <text>TT$(NR)A</text>
           <x>10</x>
           <width>44</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -671,7 +672,7 @@ $(pv_value)</tooltip>
           <x>10</x>
           <y>35</y>
           <width>45</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -728,7 +729,7 @@ $(pv_value)</tooltip>
           <x>10</x>
           <y>71</y>
           <width>44</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -782,7 +783,7 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Embedded Display_31</name>
-        <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+        <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
         <macros>
           <P>CstatV</P>
           <S>LHe</S>
@@ -795,7 +796,7 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Embedded Display_32</name>
-        <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+        <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
         <macros>
           <P>CstatV</P>
           <S>LHe</S>
@@ -1451,7 +1452,7 @@ $(pv_value)</tooltip>
         <x>14</x>
         <y>70</y>
         <width>44</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -1479,7 +1480,7 @@ $(pv_value)</tooltip>
         <x>81</x>
         <y>70</y>
         <width>45</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -1507,7 +1508,7 @@ $(pv_value)</tooltip>
         <x>162</x>
         <y>69</y>
         <width>44</width>
-        <height>18</height>
+        <height>19</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -1691,7 +1692,7 @@ $(pv_value)</tooltip>
       <x>228</x>
       <y>279</y>
       <width>47</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1719,7 +1720,7 @@ $(pv_value)</tooltip>
       <x>229</x>
       <y>300</y>
       <width>47</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1770,7 +1771,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_25</name>
-      <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
         <P>CstatV</P>
         <S>LHe</S>
@@ -1783,7 +1784,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_27</name>
-      <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
         <P>CstatV</P>
         <S>LHe</S>
@@ -1796,7 +1797,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_29</name>
-      <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
         <P>CstatV</P>
         <S>LHe</S>
@@ -1809,13 +1810,12 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_33</name>
-      <file>../../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
       <macros>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH640</V>
       </macros>
-      <x>23</x>
       <y>353</y>
       <width>110</width>
       <height>95</height>
@@ -2107,7 +2107,7 @@ $(pv_value)</tooltip>
       <x>39</x>
       <y>264</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2247,7 +2247,7 @@ $(pv_value)</tooltip>
       <x>95</x>
       <y>348</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2399,7 +2399,7 @@ $(pv_value)</tooltip>
       <widget type="action_button" version="3.0.0">
         <actions>
           <action type="open_display">
-            <file>../CmdPanels/CstatV-PID.bob</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-PID.bob</file>
             <macros>
               <PID>$(name)</PID>
             </macros>
@@ -2779,7 +2779,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_41</name>
-      <file>../../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
+      <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
       <macros>
         <P>CstatV</P>
         <S>LHe</S>
@@ -2792,7 +2792,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_42</name>
-      <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
+      <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
       <macros>
         <P>CstatV</P>
         <S>LHe</S>
@@ -2805,7 +2805,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_43</name>
-      <file>../../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
+      <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
       <macros>
         <P>CstatV</P>
         <S>LHe</S>
@@ -2818,7 +2818,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_28</name>
-      <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
         <P>CstatV</P>
         <S>LHe</S>
@@ -4866,7 +4866,7 @@ $(pv_value)</tooltip>
       <x>20</x>
       <y>69</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5736,7 +5736,7 @@ $(pv_value)</tooltip>
       <x>20</x>
       <y>69</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5873,7 +5873,7 @@ $(pv_value)</tooltip>
       <x>20</x>
       <y>69</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6793,66 +6793,6 @@ Gas Bag</text>
       </color>
     </border_color>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_16</name>
-    <text>To the 
-Reheater</text>
-    <x>771</x>
-    <y>209</y>
-    <width>54</width>
-    <height>37</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_16</name>
-    <text>To the 
-Valve Box</text>
-    <x>695</x>
-    <y>210</y>
-    <width>57</width>
-    <height>37</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
   <widget type="group" version="2.0.0">
     <name>Grouping Container_29</name>
     <macros>
@@ -6880,7 +6820,7 @@ Valve Box</text>
       <text>TT$(NR)A</text>
       <x>84</x>
       <width>44</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6938,7 +6878,7 @@ Valve Box</text>
       <x>85</x>
       <y>42</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6996,7 +6936,7 @@ Valve Box</text>
       <x>84</x>
       <y>81</y>
       <width>44</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -8681,7 +8621,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_34</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>SHe</S>
@@ -8694,7 +8634,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_35</name>
-    <file>../../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LN2</S>
@@ -8707,7 +8647,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_37</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LN2</S>
@@ -8720,7 +8660,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_38</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>SHe</S>
@@ -8733,7 +8673,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_39</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -8746,7 +8686,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_40</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -8759,7 +8699,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_44</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -8772,7 +8712,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_45</name>
-    <file>../../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
@@ -8785,7 +8725,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_47</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -8798,7 +8738,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_48</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -8811,7 +8751,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_49</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -8824,7 +8764,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_51</name>
-    <file>../../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -8837,7 +8777,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_24</name>
-    <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -8850,7 +8790,7 @@ Valve Box</text>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_30</name>
-    <file>../../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
@@ -8860,5 +8800,134 @@ Valve Box</text>
     <y>841</y>
     <width>95</width>
     <height>95</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>696</x>
+    <y>203</y>
+    <width>57</width>
+    <height>34</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_16</name>
+      <text>To the</text>
+      <x>8</x>
+      <width>38</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_17</name>
+      <text>Valve Box</text>
+      <y>15</y>
+      <width>57</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_1</name>
+    <x>771</x>
+    <y>203</y>
+    <width>57</width>
+    <height>34</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_18</name>
+      <text>To the</text>
+      <x>8</x>
+      <width>38</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_19</name>
+      <text>Reheater</text>
+      <x>1</x>
+      <y>15</y>
+      <width>54</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
   </widget>
 </display>
