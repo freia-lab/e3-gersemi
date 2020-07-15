@@ -505,9 +505,10 @@ $(pv_value)</tooltip>
       <text>Helium
 Pumping
 System</text>
-      <x>10</x>
+      <x>13</x>
+      <y>14</y>
       <width>61</width>
-      <height>65</height>
+      <height>63</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -561,7 +562,7 @@ HX600/HX350</text>
     <x>114</x>
     <y>146</y>
     <width>74</width>
-    <height>35</height>
+    <height>34</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="13.0">
       </font>
@@ -590,7 +591,7 @@ Insert</text>
     <x>114</x>
     <y>299</y>
     <width>32</width>
-    <height>35</height>
+    <height>34</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="13.0">
       </font>
@@ -853,7 +854,7 @@ circuit</text>
       <x>85</x>
       <y>1</y>
       <width>57</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -881,7 +882,7 @@ circuit</text>
       <x>87</x>
       <y>117</y>
       <width>68</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1028,7 +1029,7 @@ circuit</text>
       <x>87</x>
       <y>237</y>
       <width>62</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1313,7 +1314,7 @@ $(pv_value)</tooltip>
     <x>114</x>
     <y>50</y>
     <width>44</width>
-    <height>35</height>
+    <height>34</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="13.0">
       </font>
@@ -1584,7 +1585,7 @@ $(pv_value)</tooltip>
       <x>107</x>
       <y>266</y>
       <width>32</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1638,7 +1639,7 @@ $(pv_value)</tooltip>
         <wrap_words>false</wrap_words>
         <actions>
           <action type="open_display">
-            <file>../CmdPanels/CstatV-AI.opi</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.opi</file>
             <macros>
               <AI>$(P)-RHtr:TT580</AI>
             </macros>
@@ -1655,7 +1656,7 @@ $(pv_value)</tooltip>
         <name>Action Button_29</name>
         <actions>
           <action type="open_display">
-            <file>../CmdPanels/CstatV-AI.bob</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.bob</file>
             <macros>
               <AI>$(pv)</AI>
             </macros>
@@ -1702,7 +1703,7 @@ $(pv_value)</tooltip>
         <wrap_words>false</wrap_words>
         <actions>
           <action type="open_display">
-            <file>../CmdPanels/CstatV-AI.opi</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.opi</file>
             <macros>
               <AI>$(P)-RHtr:TT580</AI>
             </macros>
@@ -1719,7 +1720,7 @@ $(pv_value)</tooltip>
         <name>Action Button_33</name>
         <actions>
           <action type="open_display">
-            <file>../CmdPanels/CstatV-AI.bob</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.bob</file>
             <macros>
               <AI>$(pv)</AI>
             </macros>
@@ -1740,7 +1741,7 @@ $(pv_value)</tooltip>
       <x>11</x>
       <y>271</y>
       <width>36</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1799,7 +1800,7 @@ $(pv_value)</tooltip>
         <square>true</square>
         <actions>
           <action type="open_display">
-            <file>../CmdPanels/CstatV-DI.opi</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.opi</file>
             <macros>
               <DI>$(P)-RHtr:LS580</DI>
             </macros>
@@ -1830,6 +1831,20 @@ $(pv_value)</tooltip>
         <tooltip>$(pv) - Water Level Switch</tooltip>
       </widget>
     </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_27</name>
+      <file>../../freia-symbols/display-builder/CstatV-Heater2flip-lne-pv.bob</file>
+      <macros>
+        <MULTI_HTR>AC</MULTI_HTR>
+        <P>CstatV</P>
+        <S>RHtr</S>
+        <V>EH580</V>
+      </macros>
+      <x>39</x>
+      <y>76</y>
+      <width>110</width>
+      <height>95</height>
+    </widget>
     <widget type="group" version="2.0.0">
       <name>$(pv)</name>
       <macros>
@@ -1841,6 +1856,25 @@ $(pv_value)</tooltip>
       <height>16</height>
       <style>3</style>
       <transparent>true</transparent>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_37</name>
+        <actions>
+          <action type="open_display">
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
+            <macros>
+              <DI>$(pv)</DI>
+            </macros>
+            <target>standalone</target>
+            <description>DI Control</description>
+          </action>
+        </actions>
+        <text></text>
+        <y>1</y>
+        <width>36</width>
+        <height>15</height>
+        <transparent>true</transparent>
+        <tooltip>$(pv)</tooltip>
+      </widget>
       <widget type="led" version="2.0.0">
         <name>TS370</name>
         <pv_name>$(P)-RHtr:TS580:sProcInp</pv_name>
@@ -1865,7 +1899,7 @@ $(pv_value)</tooltip>
         <square>true</square>
         <actions>
           <action type="open_display">
-            <file>../CmdPanels/CstatV-DI.opi</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.opi</file>
             <macros>
               <DI>CstatV-SHe:TS370</DI>
             </macros>
@@ -1873,38 +1907,6 @@ $(pv_value)</tooltip>
           </action>
         </actions>
       </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Action Button_37</name>
-        <actions>
-          <action type="open_display">
-            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
-            <macros>
-              <DI>$(pv)</DI>
-            </macros>
-            <target>standalone</target>
-            <description>DI Control</description>
-          </action>
-        </actions>
-        <text></text>
-        <y>1</y>
-        <width>36</width>
-        <height>15</height>
-        <transparent>true</transparent>
-        <tooltip>$(pv)</tooltip>
-      </widget>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_27</name>
-      <file>../../freia-symbols/display-builder/CstatV-Heater2flip-lne-pv.bob</file>
-      <macros>
-        <P>CstatV</P>
-        <S>RHtr</S>
-        <V>EH580</V>
-      </macros>
-      <x>40</x>
-      <y>76</y>
-      <width>95</width>
-      <height>95</height>
     </widget>
   </widget>
   <widget type="textupdate" version="2.0.0">
@@ -2081,8 +2083,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_94</name>
     <text>PT600</text>
-    <x>39</x>
-    <y>84</y>
+    <x>41</x>
+    <y>85</y>
     <width>37</width>
     <height>19</height>
     <font>
@@ -2275,7 +2277,7 @@ $(pv_value)</tooltip>
     <name>Label Template_101</name>
     <text>PT681</text>
     <x>44</x>
-    <y>332</y>
+    <y>334</y>
     <width>37</width>
     <height>19</height>
     <font>
@@ -2329,8 +2331,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_148</name>
     <pv_name>$(P)-LHe:TIC657:sOutV</pv_name>
-    <x>493</x>
-    <y>836</y>
+    <x>496</x>
+    <y>837</y>
     <width>61</width>
     <height>16</height>
     <font>
@@ -2439,7 +2441,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_152</name>
     <pv_name>$(P)-LHe:FIC653:sOutV</pv_name>
-    <x>608</x>
+    <x>607</x>
     <y>836</y>
     <width>61</width>
     <height>16</height>
@@ -2554,7 +2556,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_148</name>
     <pv_name>$(P)-LHe:TIC656:sOutV</pv_name>
-    <x>493</x>
+    <x>498</x>
     <y>711</y>
     <width>61</width>
     <height>16</height>
@@ -2804,7 +2806,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_148</name>
     <pv_name>$(P)-LHe:TIC655:sOutV</pv_name>
-    <x>493</x>
+    <x>496</x>
     <y>584</y>
     <width>61</width>
     <height>16</height>
@@ -3055,7 +3057,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_148</name>
     <pv_name>$(P)-LHe:TIC654:sOutV</pv_name>
-    <x>493</x>
+    <x>496</x>
     <y>455</y>
     <width>61</width>
     <height>16</height>
@@ -3991,7 +3993,7 @@ $(pv_value)</tooltip>
     <name>Text Update Template_179</name>
     <pv_name>$(P)-LHe:PIC660:sOutV</pv_name>
     <x>552</x>
-    <y>229</y>
+    <y>230</y>
     <width>61</width>
     <height>16</height>
     <font>
@@ -4325,941 +4327,6 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <macros>
-      <L>FIC653</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>600</x>
-    <y>802</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_1</name>
-    <macros>
-      <L>TIC657</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>485</x>
-    <y>802</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_2</name>
-    <macros>
-      <L>PIC600</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>475</x>
-    <y>9</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_3</name>
-    <macros>
-      <L>FIC581</L>
-      <name>$(P)-RHtr:$(L)</name>
-    </macros>
-    <x>545</x>
-    <y>125</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_4</name>
-    <macros>
-      <L>PIC660</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>545</x>
-    <y>196</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_5</name>
-    <macros>
-      <L>PIC660A</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>396</x>
-    <y>229</y>
-    <width>80</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>70</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_6</name>
-    <macros>
-      <L>PIC681</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>420</x>
-    <y>347</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_7</name>
-    <macros>
-      <L>FIC650</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>605</x>
-    <y>419</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_8</name>
-    <macros>
-      <L>TIC654</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>489</x>
-    <y>419</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_9</name>
-    <macros>
-      <L>FIC651</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>605</x>
-    <y>548</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_10</name>
-    <macros>
-      <L>TIC655</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>489</x>
-    <y>548</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_11</name>
-    <macros>
-      <L>FIC652</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>605</x>
-    <y>675</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_12</name>
-    <macros>
-      <L>TIC656</L>
-      <name>$(P)-LHe:$(L)</name>
-    </macros>
-    <x>489</x>
-    <y>675</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_27</name>
@@ -5719,7 +4786,7 @@ related to the Gas Bag</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-AI.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.opi</file>
           <macros>
             <AI>$(P)-LHe:PT600</AI>
           </macros>
@@ -5736,7 +4803,7 @@ related to the Gas Bag</tooltip>
       <name>Action Button_12</name>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-AI.bob</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.bob</file>
           <macros>
             <AI>$(pv)</AI>
           </macros>
@@ -5785,7 +4852,7 @@ related to the Gas Bag</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-AI.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.opi</file>
           <macros>
             <AI>$(P)-RHtr:PT551</AI>
           </macros>
@@ -5802,7 +4869,7 @@ related to the Gas Bag</tooltip>
       <name>Action Button_13</name>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-AI.bob</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.bob</file>
           <macros>
             <AI>$(pv)</AI>
           </macros>
@@ -5876,7 +4943,7 @@ related to the Gas Bag</tooltip>
       <wrap_words>false</wrap_words>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-AI.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.opi</file>
           <macros>
             <AI>$(P)-RHtr:FT580</AI>
           </macros>
@@ -5893,7 +4960,7 @@ related to the Gas Bag</tooltip>
       <name>Action Button_38</name>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-AI.bob</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.bob</file>
           <macros>
             <AI>$(pv)</AI>
           </macros>
@@ -6346,5 +5413,161 @@ related to the Gas Bag</tooltip>
     <y>390</y>
     <width>1</width>
     <height>1</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>PIC600</L>
+      <S>LHe</S>
+    </macros>
+    <x>471</x>
+    <y>6</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>FIC581</L>
+      <S>RHtr</S>
+    </macros>
+    <x>543</x>
+    <y>120</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>PIC660</L>
+      <S>LHe</S>
+    </macros>
+    <x>540</x>
+    <y>194</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>PIC660A</L>
+      <S>LHe</S>
+    </macros>
+    <x>398</x>
+    <y>226</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_5</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>PIC681</L>
+      <S>LHe</S>
+    </macros>
+    <x>413</x>
+    <y>343</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_6</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>TIC654</L>
+      <S>LHe</S>
+    </macros>
+    <x>484</x>
+    <y>417</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_8</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>FIC650</L>
+      <S>LHe</S>
+    </macros>
+    <x>596</x>
+    <y>417</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_9</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>TIC655</L>
+      <S>LHe</S>
+    </macros>
+    <x>484</x>
+    <y>546</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_10</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>FIC651</L>
+      <S>LHe</S>
+    </macros>
+    <x>597</x>
+    <y>546</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_11</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>TIC656</L>
+      <S>LHe</S>
+    </macros>
+    <x>485</x>
+    <y>673</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_12</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>FIC652</L>
+      <S>LHe</S>
+    </macros>
+    <x>597</x>
+    <y>673</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_13</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>TIC657</L>
+      <S>LHe</S>
+    </macros>
+    <x>484</x>
+    <y>799</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_14</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>FIC653</L>
+      <S>LHe</S>
+    </macros>
+    <x>595</x>
+    <y>798</y>
+    <width>77</width>
+    <height>37</height>
   </widget>
 </display>

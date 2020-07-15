@@ -758,8 +758,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>CstatV-SHe:TIC372</name>
     <pv_name>CstatV-SHe:TIC372:sOutV</pv_name>
-    <x>659</x>
-    <y>362</y>
+    <x>665</x>
+    <y>359</y>
     <width>66</width>
     <height>16</height>
     <font>
@@ -789,7 +789,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>CstatV-SHe:TIC380</name>
     <pv_name>CstatV-SHe:FIC380:sOutV</pv_name>
-    <x>659</x>
+    <x>667</x>
     <y>243</y>
     <width>66</width>
     <height>16</height>
@@ -820,7 +820,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>CstatV-SHe:TIC302</name>
     <pv_name>CstatV-SHe:TIC371:sOutV</pv_name>
-    <x>659</x>
+    <x>666</x>
     <y>424</y>
     <width>66</width>
     <height>16</height>
@@ -931,35 +931,6 @@ $(pv_value)</tooltip>
     </actions>
     <border_color>
       <color name="IO Border" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_79</name>
-    <pv_name>CstatV-SHe:TT350:sRdV</pv_name>
-    <x>239</x>
-    <y>272</y>
-    <width>66</width>
-    <height>17</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <precision>2</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1112,35 +1083,6 @@ $(pv_value)</tooltip>
     </actions>
     <border_color>
       <color name="IO Border" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_81</name>
-    <pv_name>CstatV-SHe:TT354:sRdV</pv_name>
-    <x>267</x>
-    <y>511</y>
-    <width>66</width>
-    <height>17</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <precision>2</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
@@ -1608,222 +1550,6 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>_2</name>
-    <macros>
-      <L>FIC380</L>
-      <name>$(P)-SHe:$(L)</name>
-    </macros>
-    <x>659</x>
-    <y>210</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>9</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_1</name>
-    <macros>
-      <L>TIC372</L>
-      <name>$(P)-SHe:$(L)</name>
-    </macros>
-    <x>659</x>
-    <y>328</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>_2</name>
-    <macros>
-      <L>TIC371</L>
-      <name>$(P)-SHe:$(L)</name>
-    </macros>
-    <x>659</x>
-    <y>390</y>
-    <width>70</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="action_button" version="3.0.0">
-      <actions>
-        <action type="open_display">
-          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-PID.bob</file>
-          <macros>
-            <PID>$(name)</PID>
-          </macros>
-          <target>standalone</target>
-        </action>
-      </actions>
-      <text>$(L)</text>
-      <x>10</x>
-      <width>60</width>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(name):sRegOn</pv_name>
-      <width>10</width>
-      <height>10</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
     <name>Heater_1_w_TS</name>
     <macros>
       <HTR_NO>370</HTR_NO>
@@ -1846,59 +1572,19 @@ $(pv_value)</tooltip>
     <transparent>true</transparent>
     <actions>
     </actions>
-    <widget type="led" version="2.0.0">
-      <name>TS370</name>
-      <pv_name>$(SYSTEM):TS$(HTR_NO):sProcInp</pv_name>
-      <x>90</x>
-      <y>18</y>
-      <width>36</width>
-      <height>16</height>
-      <off_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-        <action type="open_display">
-          <file>../CmdPanels/CstatV-DI.opi</file>
-          <macros>
-            <DI>CstatV-SHe:TS370</DI>
-          </macros>
-          <target>tab</target>
-        </action>
-      </actions>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_57</name>
-      <actions>
-        <action type="open_display">
-          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
-          <macros>
-            <DI>CstatV-SHe:TS370</DI>
-          </macros>
-          <target>standalone</target>
-          <description>DI Control</description>
-        </action>
-      </actions>
-      <text></text>
-      <x>91</x>
-      <y>19</y>
-      <width>36</width>
-      <height>15</height>
-      <transparent>true</transparent>
-      <tooltip>$(pv)</tooltip>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_24</name>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
+      <macros>
+        <MULTI_HTR></MULTI_HTR>
+        <P>CstatV</P>
+        <S>SHe</S>
+        <V>EH370</V>
+      </macros>
+      <x>2</x>
+      <y>2</y>
+      <width>130</width>
+      <height>95</height>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_127</name>
@@ -1928,18 +1614,59 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_24</name>
-      <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
-      <macros>
-        <P>CstatV</P>
-        <S>SHe</S>
-        <V>EH370</V>
-      </macros>
-      <x>2</x>
-      <y>2</y>
-      <width>110</width>
-      <height>95</height>
+    <widget type="led" version="2.0.0">
+      <name>TS370</name>
+      <pv_name>$(SYSTEM):TS$(HTR_NO):sProcInp</pv_name>
+      <x>90</x>
+      <y>18</y>
+      <width>36</width>
+      <height>16</height>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="192" green="192" blue="192">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+        <action type="open_display">
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
+          <macros>
+            <DI>CstatV-SHe:TS370</DI>
+          </macros>
+          <target>tab</target>
+        </action>
+      </actions>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_57</name>
+      <actions>
+        <action type="open_display">
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
+          <macros>
+            <DI>CstatV-SHe:TS370</DI>
+          </macros>
+          <target>standalone</target>
+          <description>DI Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>91</x>
+      <y>19</y>
+      <width>36</width>
+      <height>15</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
     </widget>
   </widget>
   <widget type="embedded" version="2.0.0">
@@ -1985,26 +1712,122 @@ $(pv_value)</tooltip>
     <name>Embedded Display_22</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>SHe</S>
       <V>EH350</V>
     </macros>
     <x>119</x>
     <y>219</y>
-    <width>110</width>
+    <width>130</width>
     <height>95</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_23</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>SHe</S>
       <V>EH354</V>
     </macros>
     <x>144</x>
     <y>474</y>
-    <width>110</width>
+    <width>130</width>
     <height>95</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_30</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>FIC380</L>
+      <S>SHe</S>
+    </macros>
+    <x>656</x>
+    <y>205</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_31</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>TIC372</L>
+      <S>SHe</S>
+    </macros>
+    <x>656</x>
+    <y>322</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_32</name>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+    <macros>
+      <L>TIC371</L>
+      <S>SHe</S>
+    </macros>
+    <x>656</x>
+    <y>386</y>
+    <width>77</width>
+    <height>37</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_81</name>
+    <pv_name>CstatV-SHe:TT354:sRdV</pv_name>
+    <x>267</x>
+    <y>511</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_79</name>
+    <pv_name>CstatV-SHe:TT350:sRdV</pv_name>
+    <x>239</x>
+    <y>272</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
   </widget>
 </display>

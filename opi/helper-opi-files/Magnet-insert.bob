@@ -785,6 +785,7 @@ $(pv_value)</tooltip>
         <name>Embedded Display_31</name>
         <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
         <macros>
+          <MULTI_HTR>AC</MULTI_HTR>
           <P>CstatV</P>
           <S>LHe</S>
           <V>EH682</V>
@@ -798,6 +799,7 @@ $(pv_value)</tooltip>
         <name>Embedded Display_32</name>
         <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
         <macros>
+          <MULTI_HTR>AC</MULTI_HTR>
           <P>CstatV</P>
           <S>LHe</S>
           <V>EH681</V>
@@ -1773,6 +1775,7 @@ $(pv_value)</tooltip>
       <name>Embedded Display_25</name>
       <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
+        <MULTI_HTR>AC</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH661</V>
@@ -1786,6 +1789,7 @@ $(pv_value)</tooltip>
       <name>Embedded Display_27</name>
       <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
+        <MULTI_HTR>AC</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH660</V>
@@ -1799,6 +1803,7 @@ $(pv_value)</tooltip>
       <name>Embedded Display_29</name>
       <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
+        <MULTI_HTR>AC</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH689</V>
@@ -1812,12 +1817,13 @@ $(pv_value)</tooltip>
       <name>Embedded Display_33</name>
       <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
       <macros>
+        <MULTI_HTR>AF</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH640</V>
       </macros>
       <y>353</y>
-      <width>110</width>
+      <width>130</width>
       <height>95</height>
     </widget>
   </widget>
@@ -2132,7 +2138,7 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_179</name>
       <text>TT680</text>
-      <x>191</x>
+      <x>207</x>
       <y>127</y>
       <width>36</width>
       <height>18</height>
@@ -2324,7 +2330,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_182</name>
       <pv_name>$(system):LIC683:sOutV</pv_name>
-      <x>185</x>
+      <x>188</x>
       <y>279</y>
       <width>61</width>
       <height>16</height>
@@ -2373,78 +2379,6 @@ $(pv_value)</tooltip>
       </actions>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>_4</name>
-      <macros>
-        <L>LIC683</L>
-        <name>$(system):$(L)</name>
-      </macros>
-      <x>177</x>
-      <y>246</y>
-      <width>70</width>
-      <height>30</height>
-      <style>3</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-      <actions>
-      </actions>
-      <widget type="action_button" version="3.0.0">
-        <actions>
-          <action type="open_display">
-            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-PID.bob</file>
-            <macros>
-              <PID>$(name)</PID>
-            </macros>
-            <target>standalone</target>
-          </action>
-        </actions>
-        <text>$(L)</text>
-        <x>10</x>
-        <width>60</width>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <tooltip>$(actions)</tooltip>
-      </widget>
-      <widget type="led" version="2.0.0">
-        <name>LED</name>
-        <pv_name>$(name):sRegOn</pv_name>
-        <width>10</width>
-        <height>10</height>
-        <off_color>
-          <color red="0" green="100" blue="0">
-          </color>
-        </off_color>
-        <on_color>
-          <color red="0" green="255" blue="0">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color red="192" green="192" blue="192">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color red="150" green="150" blue="150">
-          </color>
-        </line_color>
-        <square>true</square>
-        <actions>
-        </actions>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_17</name>
@@ -2820,14 +2754,28 @@ $(pv_value)</tooltip>
       <name>Embedded Display_28</name>
       <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
+        <MULTI_HTR></MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH680</V>
       </macros>
-      <x>109</x>
+      <x>113</x>
       <y>111</y>
       <width>95</width>
       <height>95</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_36</name>
+      <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
+      <macros>
+        <L>LIC683</L>
+        <P>CstatV</P>
+        <S>LHe</S>
+      </macros>
+      <x>176</x>
+      <y>241</y>
+      <width>77</width>
+      <height>37</height>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -4450,7 +4398,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-Heater1.bob</file>
           <macros>
             <Heater1>$(system):EH$(HTR_NR)A</Heater1>
           </macros>
@@ -4537,7 +4485,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-Heater1.bob</file>
           <macros>
             <Heater1>$(system):EH$(HTR_NR)B</Heater1>
           </macros>
@@ -4933,7 +4881,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-Heater1.bob</file>
           <macros>
             <Heater1>$(system):EH$(HTR_NR)A</Heater1>
           </macros>
@@ -5040,7 +4988,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-Heater1.bob</file>
           <macros>
             <Heater1>$(system):EH$(HTR_NR)B</Heater1>
           </macros>
@@ -5412,7 +5360,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-Heater1.bob</file>
           <macros>
             <Heater1>$(system):EH$(HTR_NR)A</Heater1>
           </macros>
@@ -5515,7 +5463,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-Heater1.bob</file>
           <macros>
             <Heater1>$(system):EH$(HTR_NR)B</Heater1>
           </macros>
@@ -5940,7 +5888,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-Heater1.bob</file>
           <macros>
             <Heater1>$(system):EH$(HTR_NR)A</Heater1>
           </macros>
@@ -6042,7 +5990,7 @@ $(pv_value)</tooltip>
       <transparent>true</transparent>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-Heater1.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-Heater1.bob</file>
           <macros>
             <Heater1>$(system):EH$(HTR_NR)B</Heater1>
           </macros>
@@ -8779,11 +8727,12 @@ Gas Bag</text>
     <name>Embedded Display_24</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
     <macros>
+      <MULTI_HTR>AC</MULTI_HTR>
       <P>CstatV</P>
       <S>LHe</S>
       <V>EH670</V>
     </macros>
-    <x>1328</x>
+    <x>1324</x>
     <y>307</y>
     <width>95</width>
     <height>95</height>
@@ -8792,6 +8741,7 @@ Gas Bag</text>
     <name>Embedded Display_30</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
     <macros>
+      <MULTI_HTR>AC</MULTI_HTR>
       <P>CstatV</P>
       <S>LHe</S>
       <V>EH641</V>

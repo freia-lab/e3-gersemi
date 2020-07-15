@@ -4339,7 +4339,7 @@ $(pv_value)</tooltip>
   <widget type="group" version="2.0.0">
     <name>$(pv)</name>
     <macros>
-      <pv>CstatV-Vac:TP050:sOn</pv>
+      <pv>CstatV-Vac:TP050</pv>
     </macros>
     <x>213</x>
     <y>877</y>
@@ -4572,14 +4572,15 @@ Click for details</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_22</name>
-    <file>../../freia-symbols/display-builder/CstatV-Heater1-ll-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-Heater1-ld-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH700</V>
     </macros>
-    <x>119</x>
-    <y>113</y>
+    <x>147</x>
+    <y>105</y>
     <width>110</width>
     <height>95</height>
   </widget>
@@ -4587,19 +4588,21 @@ Click for details</tooltip>
     <name>Embedded Display_23</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH703</V>
     </macros>
     <x>96</x>
     <y>432</y>
-    <width>110</width>
+    <width>130</width>
     <height>95</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_24</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1flip-lne-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH701</V>
@@ -4613,6 +4616,7 @@ Click for details</tooltip>
     <name>Embedded Display_25</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1flip-lne-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH702</V>
@@ -4626,6 +4630,7 @@ Click for details</tooltip>
     <name>Embedded Display_26</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1flip-lsw-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH740</V>
@@ -4639,6 +4644,7 @@ Click for details</tooltip>
     <name>Embedded Display_27</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1flip-lsw-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH744</V>
@@ -4652,6 +4658,7 @@ Click for details</tooltip>
     <name>Embedded Display_28</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1flip-lsw-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH748</V>
@@ -4665,19 +4672,21 @@ Click for details</tooltip>
     <name>Embedded Display_29</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH743</V>
     </macros>
     <x>692</x>
     <y>496</y>
-    <width>110</width>
+    <width>130</width>
     <height>95</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_30</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1flip-lne-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH741</V>
@@ -4691,6 +4700,7 @@ Click for details</tooltip>
     <name>Embedded Display_31</name>
     <file>../../freia-symbols/display-builder/CstatV-Heater1flip-lne-pv.bob</file>
     <macros>
+      <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EH742</V>
@@ -4775,7 +4785,7 @@ Click for details</tooltip>
       <square>true</square>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-DI.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
           <macros>
             <DI>CstatV-LN2:TS700</DI>
           </macros>
@@ -4854,7 +4864,7 @@ Click for details</tooltip>
       <square>true</square>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-DI.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
           <macros>
             <DI>CstatV-LN2:TS740</DI>
           </macros>
@@ -4959,7 +4969,7 @@ Click for details</tooltip>
       <square>true</square>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-DI.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
           <macros>
             <DI>CstatV-LN2:TS740</DI>
           </macros>
@@ -5064,7 +5074,7 @@ Click for details</tooltip>
       <square>true</square>
       <actions>
         <action type="open_display">
-          <file>../CmdPanels/CstatV-DI.opi</file>
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
           <macros>
             <DI>CstatV-LN2:TS740</DI>
           </macros>
