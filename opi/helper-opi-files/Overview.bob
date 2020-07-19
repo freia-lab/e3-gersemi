@@ -1275,428 +1275,6 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>Grouping Container_2</name>
-    <macros>
-      <INSERT>Liquid Insert</INSERT>
-      <LI>LI670</LI>
-      <TT>TT663L</TT>
-    </macros>
-    <x>604</x>
-    <y>548</y>
-    <width>139</width>
-    <height>259</height>
-    <style>2</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <actions>
-    </actions>
-    <widget type="group" version="2.0.0">
-      <name>Grouping Container_2</name>
-      <x>25</x>
-      <y>218</y>
-      <width>90</width>
-      <height>34</height>
-      <style>3</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-      <actions>
-      </actions>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template_30</name>
-        <pv_name>$(system):$(TT):sRdV</pv_name>
-        <x>2</x>
-        <y>16</y>
-        <width>86</width>
-        <height>16</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <precision>2</precision>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_width>2</border_width>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_2</name>
-      <text>$(INSERT)</text>
-      <x>12</x>
-      <y>9</y>
-      <width>121</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_29</name>
-      <text>$(LI)</text>
-      <x>69</x>
-      <y>109</y>
-      <width>32</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_30</name>
-      <pv_name>$(system):$(LI):sRdV</pv_name>
-      <x>67</x>
-      <y>128</y>
-      <width>67</width>
-      <height>16</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>2</precision>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_29</name>
-      <text>$(TT)</text>
-      <x>26</x>
-      <y>216</y>
-      <width>43</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Tank</name>
-      <pv_name>$(system):$(LI):sRdV</pv_name>
-      <x>12</x>
-      <y>33</y>
-      <width>51</width>
-      <height>178</height>
-      <font>
-        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <fill_color>
-        <color red="0" green="64" blue="255">
-        </color>
-      </fill_color>
-      <empty_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </empty_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Grouping Container_3</name>
-    <macros>
-      <INSERT>Magnet Insert</INSERT>
-      <LI>LI680</LI>
-      <TT>TT663M</TT>
-    </macros>
-    <x>766</x>
-    <y>548</y>
-    <width>139</width>
-    <height>259</height>
-    <style>2</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <actions>
-    </actions>
-    <widget type="group" version="2.0.0">
-      <name>Grouping Container_2</name>
-      <x>25</x>
-      <y>218</y>
-      <width>90</width>
-      <height>34</height>
-      <style>3</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <transparent>true</transparent>
-      <actions>
-      </actions>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template_30</name>
-        <pv_name>$(system):$(TT):sRdV</pv_name>
-        <x>2</x>
-        <y>16</y>
-        <width>86</width>
-        <height>16</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="WHITE" red="255" green="255" blue="255">
-          </color>
-        </background_color>
-        <precision>2</precision>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_width>2</border_width>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_2</name>
-      <text>$(INSERT)</text>
-      <x>12</x>
-      <y>9</y>
-      <width>121</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_29</name>
-      <text>$(LI)</text>
-      <x>69</x>
-      <y>109</y>
-      <width>32</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_30</name>
-      <pv_name>$(system):$(LI):sRdV</pv_name>
-      <x>67</x>
-      <y>128</y>
-      <width>67</width>
-      <height>16</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>2</precision>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_29</name>
-      <text>$(TT)</text>
-      <x>26</x>
-      <y>216</y>
-      <width>47</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="tank" version="2.0.0">
-      <name>Tank</name>
-      <pv_name>$(system):$(LI):sRdV</pv_name>
-      <x>12</x>
-      <y>33</y>
-      <width>51</width>
-      <height>178</height>
-      <font>
-        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <fill_color>
-        <color red="0" green="64" blue="255">
-        </color>
-      </fill_color>
-      <empty_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </empty_color>
-      <actions>
-      </actions>
-      <limits_from_pv>false</limits_from_pv>
-    </widget>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_9</name>
     <x>998</x>
@@ -2348,5 +1926,427 @@ Click for details</tooltip>
     <y>515</y>
     <width>35</width>
     <height>35</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_2</name>
+    <macros>
+      <INSERT>Liquid Insert</INSERT>
+      <LI>LI670</LI>
+      <TT>TT663L</TT>
+    </macros>
+    <x>604</x>
+    <y>548</y>
+    <width>139</width>
+    <height>259</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_2</name>
+      <x>25</x>
+      <y>218</y>
+      <width>90</width>
+      <height>34</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_30</name>
+        <pv_name>$(system):$(TT):sRdV</pv_name>
+        <x>2</x>
+        <y>16</y>
+        <width>86</width>
+        <height>16</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="WHITE" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>$(INSERT)</text>
+      <x>12</x>
+      <y>9</y>
+      <width>121</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_29</name>
+      <text>$(LI)</text>
+      <x>69</x>
+      <y>109</y>
+      <width>32</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_30</name>
+      <pv_name>$(system):$(LI):sRdV</pv_name>
+      <x>67</x>
+      <y>128</y>
+      <width>67</width>
+      <height>16</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_29</name>
+      <text>$(TT)</text>
+      <x>26</x>
+      <y>216</y>
+      <width>43</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Tank</name>
+      <pv_name>$(system):$(LI):sRdV</pv_name>
+      <x>12</x>
+      <y>33</y>
+      <width>51</width>
+      <height>178</height>
+      <font>
+        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="0" green="64" blue="255">
+        </color>
+      </fill_color>
+      <empty_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </empty_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_3</name>
+    <macros>
+      <INSERT>Magnet Insert</INSERT>
+      <LI>LI680</LI>
+      <TT>TT663M</TT>
+    </macros>
+    <x>766</x>
+    <y>548</y>
+    <width>139</width>
+    <height>259</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_2</name>
+      <x>25</x>
+      <y>218</y>
+      <width>90</width>
+      <height>34</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_30</name>
+        <pv_name>$(system):$(TT):sRdV</pv_name>
+        <x>2</x>
+        <y>16</y>
+        <width>86</width>
+        <height>16</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="WHITE" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>$(INSERT)</text>
+      <x>12</x>
+      <y>9</y>
+      <width>121</width>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_29</name>
+      <text>$(LI)</text>
+      <x>69</x>
+      <y>109</y>
+      <width>32</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_30</name>
+      <pv_name>$(system):$(LI):sRdV</pv_name>
+      <x>67</x>
+      <y>128</y>
+      <width>67</width>
+      <height>16</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_29</name>
+      <text>$(TT)</text>
+      <x>26</x>
+      <y>216</y>
+      <width>47</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Tank</name>
+      <pv_name>$(system):$(LI):sRdV</pv_name>
+      <x>12</x>
+      <y>33</y>
+      <width>51</width>
+      <height>178</height>
+      <font>
+        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="0" green="64" blue="255">
+        </color>
+      </fill_color>
+      <empty_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </empty_color>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
   </widget>
 </display>
