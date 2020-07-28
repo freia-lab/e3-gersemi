@@ -1977,7 +1977,7 @@ $(pv_value)</tooltip>
     <x>591</x>
     <y>480</y>
     <width>44</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2034,7 +2034,7 @@ $(pv_value)</tooltip>
     <x>591</x>
     <y>515</y>
     <width>45</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2091,7 +2091,7 @@ $(pv_value)</tooltip>
     <x>591</x>
     <y>555</y>
     <width>44</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -4362,11 +4362,11 @@ $(pv_value)</tooltip>
       </background_color>
       <actions execute_as_one="true">
         <action type="open_display">
-          <file>TP_TD20.opi</file>
+          <file>TP_TD20.bob</file>
           <macros>
             <P>$(pv)</P>
           </macros>
-          <target>tab</target>
+          <target>standalone</target>
         </action>
       </actions>
       <tooltip>$(pv_name)
@@ -4421,11 +4421,11 @@ Click for details</tooltip>
       <rotation>180.0</rotation>
       <actions execute_as_one="true">
         <action type="open_display">
-          <file>TP_TD20.opi</file>
+          <file>TP_TD20.bob</file>
           <macros>
             <P>CstatV-Vac:TP060</P>
           </macros>
-          <target>tab</target>
+          <target>standalone</target>
         </action>
       </actions>
       <tooltip>$(pv_name)
