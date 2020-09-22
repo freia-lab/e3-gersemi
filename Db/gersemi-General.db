@@ -16,6 +16,7 @@ record (bi, "CstatV-Ctrl:s7-status") {
 #  field (ONAM, "CmdLocal")
 #  field (PINI, "NO")
 #  field (HIGH, "0.5")
+#  field(UDFS, "NO_ALARM")
 #}
 
 record (bi, "CstatV-Ctrl:opMode:sLocal") {
@@ -100,6 +101,7 @@ record (bo, "CstatV-Ctrl:CV5203:ackOpen") {
   field (ONAM, "CmdOpenAck")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
 }
 record (bo, "CstatV-Ctrl:CV5203:ackClose") {
   field (DTYP, "S7plc")
@@ -108,6 +110,7 @@ record (bo, "CstatV-Ctrl:CV5203:ackClose") {
   field (ONAM, "CmdCloseAck")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
 }
 # End of CV5203 related records
 #################################################################
@@ -240,6 +243,7 @@ record (bo, "CstatV-Ctrl:opMode:cmdSetParam") {
   field (ONAM, "CmdSetParam")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
 }
 
 record (bo, "CstatV-Ctrl:opMode:cmdSetAck") {
@@ -249,6 +253,7 @@ record (bo, "CstatV-Ctrl:opMode:cmdSetAck") {
   field (ONAM, "CmdSetAck")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
 }
 
 
@@ -259,6 +264,7 @@ record (bo, "CstatV-Ctrl:opMode:cmdSetAck") {
 #  field (ONAM, "CmdRemote")
 #  field (PINI, "NO")
 #  field (HIGH, "0.5")
+#  field (UDFS, "NO_ALARM")
 #}
 
 record (calc, "CstatV-Ctrl:s7-status-counter")
@@ -282,6 +288,7 @@ record(bo, "CstatV-Ctrl:SQ9:cmdStopLiq") {
   field(DTYP, "S7plc")
   field(OUT, "@PLC:GERSEMI/4549 T=BYTE B=1")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(ZNAM, "Iddle")
   field(ONAM, "CmdStopLiq")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
@@ -291,6 +298,7 @@ record(bo, "CstatV-Ctrl:SQ9:cmdStopDwr") {
   field(DTYP, "S7plc")
   field(OUT, "@PLC:GERSEMI/4549 T=BYTE B=2")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(ZNAM, "Iddle")
   field(ONAM, "CmdStopLiq")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
@@ -313,6 +321,7 @@ record (bo, "CstatV-RHtr:opMode:cmdSetVBtoBaloon") {
   field (ONAM, "CmdSetVBtoBaloon")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
   field (SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 record (bo, "CstatV-RHtr:opMode:cmdRstVBtoBaloon") {
@@ -322,6 +331,7 @@ record (bo, "CstatV-RHtr:opMode:cmdRstVBtoBaloon") {
   field (ONAM, "CmdSetVBtoCompr")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
   field (SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -332,6 +342,7 @@ record (bo, "CstatV-RHtr:opMode:cmdSetCStoBaloon") {
   field (ONAM, "CmdSetCStoBaloon")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
   field (SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 record (bo, "CstatV-RHtr:opMode:cmdRstCStoBaloon") {
@@ -341,6 +352,7 @@ record (bo, "CstatV-RHtr:opMode:cmdRstCStoBaloon") {
   field (ONAM, "CmdSetCStoCompr")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
   field (SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -351,6 +363,7 @@ record (bo, "CstatV-RHtr:opMode:cmdSetM4KtoBaloon") {
   field (ONAM, "CmdSetM4KtoBaloon")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
   field (SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 record (bo, "CstatV-RHtr:opMode:cmdRstM4KtoBaloon") {
@@ -360,5 +373,6 @@ record (bo, "CstatV-RHtr:opMode:cmdRstM4KtoBaloon") {
   field (ONAM, "CmdSetM4KtoCompr")
   field (PINI, "NO")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
   field (SDIS, "CstatV-Ctrl:opMode:sLocal")
 }

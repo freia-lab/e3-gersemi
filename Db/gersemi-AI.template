@@ -57,6 +57,7 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdNorm") {
   field(ONAM, "CmdNorm")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -67,6 +68,7 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdForced") {
   field(ONAM, "CmdForced")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -76,6 +78,7 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdSet") {
   field(ZNAM, "Iddle")
   field(ONAM, "CmdSet")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 

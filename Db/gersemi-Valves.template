@@ -128,6 +128,7 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdAuto") {
   field(ONAM, "CmdAuto")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -138,6 +139,7 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdMan") {
   field(ONAM, "CmdMan")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -148,6 +150,7 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdSet") {
   field(ONAM, "CmdOpen")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -158,6 +161,7 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdRst") {
   field(ONAM, "CmdClose")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -168,6 +172,7 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdAck") {
   field(ONAM, "CmdAck")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -178,6 +183,7 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdSimSet") {
   field(ONAM, "CmdSimSet")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
 
@@ -188,5 +194,6 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdSimRst") {
   field(ONAM, "CmdSimRst")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
