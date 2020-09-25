@@ -25,10 +25,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_10</name>
-    <text>Regulation mode</text>
+    <text>LT600 Regulation mode</text>
     <x>16</x>
     <y>203</y>
-    <width>115</width>
+    <width>159</width>
     <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -127,7 +127,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI680</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -208,7 +207,8 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI680</tooltip>
+    <tooltip>Used only in Intermittent mode.
+Ignored in PID mode.</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -370,7 +370,7 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT682</tooltip>
+    <tooltip>Lower limit in Intermittent mode</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -451,7 +451,7 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT600</tooltip>
+    <tooltip>Upper limit in Intermittent mode</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -532,7 +532,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -613,7 +612,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -694,7 +692,8 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
+    <tooltip>Threshold for opening CV600 and
+closing FV601</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -775,7 +774,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI660</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -800,6 +798,7 @@
       <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
+    <format>1</format>
     <precision>0</precision>
     <wrap_words>false</wrap_words>
     <actions>
@@ -829,7 +828,7 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI670</tooltip>
+    <tooltip>Percentage of opening controlled from Linde system</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -838,9 +837,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_24</name>
     <pv_name>Cryo-Dwr:V:UY5203-PercOut</pv_name>
-    <x>532</x>
+    <x>580</x>
     <y>378</y>
-    <width>67</width>
+    <width>40</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -858,6 +857,9 @@
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
+    <tooltip>Can be set only from  Linde WinCC
+$(pv_name)
+$(pv_value)</tooltip>
     <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -883,7 +885,7 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI670</tooltip>
+    <tooltip>Does not exist</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -919,9 +921,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_25</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV590</pv_name>
-    <x>533</x>
+    <x>580</x>
     <y>444</y>
-    <width>67</width>
+    <width>40</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -964,10 +966,11 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_27</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_RegMode</pv_name>
-    <x>312</x>
-    <y>207</y>
+    <x>510</x>
+    <y>210</y>
     <width>35</width>
     <height>18</height>
+    <visible>false</visible>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
       </font>
@@ -993,7 +996,7 @@
   <widget type="combo" version="2.0.0">
     <name>Menu Button_1</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_RegMode</pv_name>
-    <x>158</x>
+    <x>190</x>
     <y>201</y>
     <width>140</width>
     <foreground_color>
@@ -1333,9 +1336,9 @@ $(pv_value)</tooltip>
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>Cryo-Dwr:Dwr:StCV5203_Slctd</pv_name>
-    <x>431</x>
+    <x>510</x>
     <y>375</y>
-    <width>82</width>
+    <width>50</width>
     <height>23</height>
     <off_label>Closed</off_label>
     <off_color>
@@ -1483,6 +1486,9 @@ $(pv_value)</tooltip>
     <width>10</width>
     <height>10</height>
     <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_6</name>
@@ -1544,5 +1550,39 @@ $(pv_value)</tooltip>
     <y>570</y>
     <width>35</width>
     <height>35</height>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Button Template</name>
+    <actions>
+      <action type="write_pv">
+        <pv_name>$(pv_name)</pv_name>
+        <value>1</value>
+        <description>Open/Close the valve</description>
+      </action>
+    </actions>
+    <pv_name>Cryo-Dwr:CV-5203:OpenClsCmd</pv_name>
+    <text>Open/close</text>
+    <x>400</x>
+    <y>370</y>
+    <width>102</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <rules>
+      <rule name="ButtonTxt" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>Open</value>
+        </exp>
+        <exp bool_exp="pv0==1">
+          <value>Close</value>
+        </exp>
+        <pv_name>Cryo-Dwr:Dwr:StCV5203_Slctd</pv_name>
+      </rule>
+    </rules>
   </widget>
 </display>
