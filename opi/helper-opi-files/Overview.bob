@@ -18,17 +18,17 @@
     <y>537</y>
     <width>96</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="95.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -40,17 +40,17 @@ $(pv_value)</tooltip>
     <y>242</y>
     <width>96</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="95.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -196,12 +196,6 @@ $(pv_value)</tooltip>
       <x>32</x>
       <width>309</width>
       <height>161</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color red="0" green="64" blue="255">
-        </color>
-      </line_color>
-      <arrows>2</arrows>
       <points>
         <point x="0.0" y="250.0">
         </point>
@@ -212,6 +206,12 @@ $(pv_value)</tooltip>
         <point x="308.0" y="154.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="64" blue="255">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -298,7 +298,7 @@ $(pv_value)</tooltip>
       <x>305</x>
       <y>188</y>
       <width>37</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -356,7 +356,7 @@ $(pv_value)</tooltip>
       <x>305</x>
       <y>233</y>
       <width>37</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -414,12 +414,6 @@ $(pv_value)</tooltip>
       <y>106</y>
       <width>155</width>
       <height>142</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color red="255" green="153" blue="0">
-        </color>
-      </line_color>
-      <arrows>2</arrows>
       <points>
         <point x="0.0" y="142.95197740112997">
         </point>
@@ -430,6 +424,12 @@ $(pv_value)</tooltip>
         <point x="155.9832276099344" y="45.00847457627116">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="255" green="153" blue="0">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -648,17 +648,17 @@ $(pv_value)</tooltip>
     <y>211</y>
     <width>1</width>
     <height>32</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="31.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -688,75 +688,24 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_5</name>
-    <x>10</x>
-    <y>631</y>
-    <width>126</width>
-    <height>1</height>
+    <x>30</x>
+    <y>630</y>
+    <width>105</width>
+    <height>40</height>
+    <points>
+      <point x="105.0" y="1.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="40.0">
+      </point>
+    </points>
     <line_width>2</line_width>
     <line_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </line_color>
     <arrows>1</arrows>
-    <points>
-      <point x="125.0" y="0.0">
-      </point>
-      <point x="0.0" y="0.0">
-      </point>
-    </points>
-    <actions>
-    </actions>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>Boolean Symbol Image Monitor Template</name>
-    <pv_name>CstatH-SHe:FV309:cOn</pv_name>
-    <symbols>
-      <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-      <symbol>../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-    </symbols>
-    <x>51</x>
-    <y>624</y>
-    <width>20</width>
-    <height>13</height>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <transparent>false</transparent>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/LocBinaryOnOff.bob</file>
-        <macros>
-          <OFF_ACT>Close</OFF_ACT>
-          <ON_ACT>Open</ON_ACT>
-          <P>CstatH-SHe:FV309</P>
-        </macros>
-        <target>tab</target>
-        <description>Binary Cmd</description>
-      </action>
-    </actions>
-    <enabled>false</enabled>
-  </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline Template_6</name>
-    <x>270</x>
-    <y>620</y>
-    <width>180</width>
-    <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="LED-MAGENTA-ON" red="255" green="82" blue="218">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <points>
-      <point x="179.0" y="0.0">
-      </point>
-      <point x="0.0" y="0.0">
-      </point>
-    </points>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -768,18 +717,18 @@ $(pv_value)</tooltip>
     <y>593</y>
     <width>180</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color red="255" green="153" blue="184">
-      </color>
-    </line_color>
-    <arrows>1</arrows>
     <points>
       <point x="180.66666666666669" y="0.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="255" green="153" blue="184">
+      </color>
+    </line_color>
+    <arrows>1</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -791,74 +740,22 @@ $(pv_value)</tooltip>
     <y>647</y>
     <width>180</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="LED-MAGENTA-ON" red="255" green="82" blue="218">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
     <points>
       <point x="179.0" y="0.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="LED-MAGENTA-ON" red="255" green="82" blue="218">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-  </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>Image Boolean Indicator Template_2</name>
-    <pv_name>CstatH-SHe:FV301:sOn</pv_name>
-    <symbols>
-      <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-      <symbol>../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-    </symbols>
-    <x>304</x>
-    <y>613</y>
-    <width>19</width>
-    <height>13</height>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatV-Valve.bob</file>
-        <macros>
-          <v_name>CstatH-SHe:FV301</v_name>
-        </macros>
-        <target>window</target>
-        <description>Valve control</description>
-      </action>
-    </actions>
-  </widget>
-  <widget type="symbol" version="2.0.0">
-    <name>Image Boolean Indicator Template_2</name>
-    <pv_name>CstatH-SHe:FV302:sOn</pv_name>
-    <symbols>
-      <symbol>../../freia-symbols/cryogenics/valve_general_closed_RED.svg</symbol>
-      <symbol>../../freia-symbols/cryogenics/valve_general_GREEN.svg</symbol>
-    </symbols>
-    <x>304</x>
-    <y>640</y>
-    <width>19</width>
-    <height>13</height>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <actions>
-      <action type="open_display">
-        <file>../CmdPanels/CstatV-Valve.bob</file>
-        <macros>
-          <v_name>CstatH-SHe:FV302</v_name>
-        </macros>
-        <target>tab</target>
-        <description>Valve control</description>
-      </action>
-    </actions>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Rehater Output</name>
@@ -1011,7 +908,7 @@ $(pv_value)</tooltip>
     <x>560</x>
     <y>506</y>
     <width>69</width>
-    <height>24</height>
+    <height>23</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="18.0">
       </font>
@@ -1101,7 +998,7 @@ $(pv_value)</tooltip>
     <x>546</x>
     <y>170</y>
     <width>12</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1138,7 +1035,7 @@ $(pv_value)</tooltip>
     <x>546</x>
     <y>193</y>
     <width>15</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1206,7 +1103,7 @@ $(pv_value)</tooltip>
     <x>624</x>
     <y>255</y>
     <width>12</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1281,17 +1178,17 @@ $(pv_value)</tooltip>
     <y>504</y>
     <width>1</width>
     <height>32</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="31.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1365,7 +1262,7 @@ $(pv_value)</tooltip>
     <x>1036</x>
     <y>465</y>
     <width>12</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1402,7 +1299,7 @@ $(pv_value)</tooltip>
     <x>1036</x>
     <y>485</y>
     <width>15</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1470,7 +1367,7 @@ $(pv_value)</tooltip>
     <x>1126</x>
     <y>548</y>
     <width>12</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1507,15 +1404,6 @@ $(pv_value)</tooltip>
     <y>350</y>
     <width>96</width>
     <height>186</height>
-    <line_width>0</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-      </color>
-    </background_color>
     <points>
       <point x="59.0" y="185.0">
       </point>
@@ -1530,6 +1418,15 @@ $(pv_value)</tooltip>
       <point x="95.0" y="138.0">
       </point>
     </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1541,17 +1438,17 @@ $(pv_value)</tooltip>
     <y>350</y>
     <width>44</width>
     <height>139</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="IO Foreground" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="43.0" y="138.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="IO Foreground" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1563,17 +1460,17 @@ $(pv_value)</tooltip>
     <y>366</y>
     <width>55</width>
     <height>172</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="IO Foreground" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="54.0" y="171.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="IO Foreground" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1903,12 +1800,12 @@ Click for details</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>Vac</S>
       <V>FV050</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>455</x>
     <y>220</y>
     <width>35</width>
@@ -1916,12 +1813,12 @@ Click for details</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_1</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>Vac</S>
       <V>FV060</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>941</x>
     <y>515</y>
     <width>35</width>
@@ -2027,7 +1924,7 @@ Click for details</tooltip>
       <x>69</x>
       <y>109</y>
       <width>32</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2084,7 +1981,7 @@ Click for details</tooltip>
       <x>26</x>
       <y>216</y>
       <width>43</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2238,7 +2135,7 @@ Click for details</tooltip>
       <x>69</x>
       <y>109</y>
       <width>32</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2295,7 +2192,7 @@ Click for details</tooltip>
       <x>26</x>
       <y>216</y>
       <width>47</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2348,5 +2245,121 @@ Click for details</tooltip>
       </actions>
       <limits_from_pv>false</limits_from_pv>
     </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_34</name>
+    <macros>
+      <P>CstatV</P>
+      <S>SHe</S>
+      <V>FV383</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
+    <x>60</x>
+    <y>610</y>
+    <width>35</width>
+    <height>35</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_37</name>
+    <macros>
+      <P>CstatV</P>
+      <S>SHe</S>
+      <V>CV380</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <x>340</x>
+    <y>625</y>
+    <width>50</width>
+    <height>55</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_38</name>
+    <macros>
+      <P>CstatV</P>
+      <S>SHe</S>
+      <V>FV381</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
+    <x>350</x>
+    <y>570</y>
+    <width>35</width>
+    <height>35</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_2</name>
+    <text>SCHe Compressor</text>
+    <x>150</x>
+    <y>600</y>
+    <height>50</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rounded Rectangle Template_1</name>
+    <x>20</x>
+    <y>650</y>
+    <width>20</width>
+    <height>90</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>16</corner_width>
+    <corner_height>16</corner_height>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_34</name>
+    <text>GHe 3.5 bars</text>
+    <x>50</x>
+    <y>680</y>
+    <width>74</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
   </widget>
 </display>
