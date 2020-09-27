@@ -47,3 +47,18 @@ record(ai, "CstatV-Ctrl:$(SUBS):sP_$(SIG)") {
   field(SCAN, "I/O Intr")
   field(FLNK, "CstatV-Ctrl:$(SUBS):sP_$(SIG)-cP_$(SIG)-ln")
 }
+
+record(mbbi, "CstatV-Ctrl:$(SUBS):sP_$(SIG)S") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=$(TYPE)")
+  field(SCAN, "I/O Intr")
+  field(NOBT, "16")
+  field(ZRVL, "0")
+  field(ZRST, "NS")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ONST, "$(ONST1)")
+  field(TWST, "$(TWST1)")
+  field(THST, "$(THST1)")
+}

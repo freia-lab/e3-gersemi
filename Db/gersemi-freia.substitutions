@@ -507,17 +507,17 @@ file "gersemi-SQmessages.template" { pattern
 }
 
 file "gersemi-SQchoice.template" { pattern
-{SUBS, SIG,      OFFS2,  OFFS, TYPE,  ONST, TWST, THST}
-{SQ9,  LHeSrc,	 4552,   6684, INT16, "Liquifier", "Dewar", ""}
-{SQ9,  RegMode,	 4554,   6686, INT16, "Intermittent", "PID", ""}
-{SQ10, RegMode,	 4638,   6788, INT16, "Intermittent", "PID", ""}
-{SQ11, RegVar,	 4728,   6896, INT16, "Inlet T", "Outlet T", "Flow"}
-{SQ12, RegMode,	 4810,   6996, INT16, "Intermittent", "PID", ""}
-{SQ13, RegMode,	 4896,   7100, INT16, "Intermittent", "PID", ""}
-{SQ19, RegCV650, 5418,   7730, INT16, "Flow", "Temperature", ""}
-{SQ19, RegCV651, 5420,   7732, INT16, "Flow", "Temperature", ""}
-{SQ19, RegCV652, 5422,   7734, INT16, "Flow", "Temperature", ""}
-{SQ19, RegCV653, 5424,   7736, INT16, "Flow", "Temperature", ""}
+{SUBS, SIG,      OFFS2,  OFFS, TYPE,  ONST, TWST, THST, ONST1, TWST1, THST1}
+{SQ9,  LHeSrc,	 4552,   6684, INT16, "Liquifier", "Dewar", "", "Liq", "Dwr", ""}
+{SQ9,  RegMode,	 4554,   6686, INT16, "Intermittent", "PID", "", "Int", "PID", ""}
+{SQ10, RegMode,	 4638,   6788, INT16, "Intermittent", "PID", "", "Int", "PID", ""}
+{SQ11, RegVar,	 4728,   6896, INT16, "Inlet T", "Outlet T", "Flow", "InT", "OutT", "F"}
+{SQ12, RegMode,	 4810,   6996, INT16, "Intermittent", "PID", "", "Int", "PID", ""}
+{SQ13, RegMode,	 4896,   7100, INT16, "Intermittent", "PID", "", "Int", "PID", ""}
+{SQ19, RegCV650, 5418,   7730, INT16, "Flow", "Temperature", "", "F", "T", ""}
+{SQ19, RegCV651, 5420,   7732, INT16, "Flow", "Temperature", "", "F", "T", ""}
+{SQ19, RegCV652, 5422,   7734, INT16, "Flow", "Temperature", "", "F", "T", ""}
+{SQ19, RegCV653, 5424,   7736, INT16, "Flow", "Temperature", "", "F", "T", ""}
 }
 
 file "gersemi-SQanalog.template" { pattern
