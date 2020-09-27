@@ -18,13 +18,13 @@
     <y>316</y>
     <width>1</width>
     <height>25</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="25.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -36,15 +36,6 @@ $(pv_value)</tooltip>
     <y>340</y>
     <width>499</width>
     <height>420</height>
-    <line_width>0</line_width>
-    <line_color>
-      <color red="128" green="0" blue="255">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
-      </color>
-    </background_color>
     <points>
       <point x="87.0" y="0.0">
       </point>
@@ -69,6 +60,15 @@ $(pv_value)</tooltip>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+      </color>
+    </background_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -102,7 +102,6 @@ $(pv_value)</tooltip>
     <y>44</y>
     <width>122</width>
     <height>61</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="60.0">
       </point>
@@ -113,6 +112,7 @@ $(pv_value)</tooltip>
       <point x="121.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -124,8 +124,6 @@ $(pv_value)</tooltip>
     <y>268</y>
     <width>549</width>
     <height>407</height>
-    <line_width>2</line_width>
-    <arrows>2</arrows>
     <points>
       <point x="1.0" y="0.0">
       </point>
@@ -138,6 +136,8 @@ $(pv_value)</tooltip>
       <point x="548.0" y="140.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -149,8 +149,6 @@ $(pv_value)</tooltip>
     <y>153</y>
     <width>738</width>
     <height>61</height>
-    <line_width>2</line_width>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="0.0">
       </point>
@@ -161,6 +159,8 @@ $(pv_value)</tooltip>
       <point x="737.0" y="60.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -172,7 +172,6 @@ $(pv_value)</tooltip>
     <y>104</y>
     <width>420</width>
     <height>296</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="295.0">
       </point>
@@ -181,6 +180,7 @@ $(pv_value)</tooltip>
       <point x="419.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -214,7 +214,6 @@ $(pv_value)</tooltip>
     <y>131</y>
     <width>151</width>
     <height>407</height>
-    <line_width>2</line_width>
     <points>
       <point x="47.000000000000014" y="120.0">
       </point>
@@ -245,6 +244,7 @@ $(pv_value)</tooltip>
       <point x="47.000000000000014" y="176.00000000000003">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -691,13 +691,13 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_22</name>
-      <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
       <macros>
         <MULTI_HTR>AD</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH600</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
       <x>141</x>
       <y>27</y>
       <width>130</width>
@@ -705,11 +705,11 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_29</name>
-      <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
       <macros>
         <L>LIC600</L>
         <S>LHe</S>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
       <x>18</x>
       <y>40</y>
       <width>77</width>
@@ -866,8 +866,6 @@ $(pv_value)</tooltip>
     <y>283</y>
     <width>966</width>
     <height>518</height>
-    <line_width>2</line_width>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="0.0">
       </point>
@@ -878,6 +876,8 @@ $(pv_value)</tooltip>
       <point x="965.0" y="417.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -911,7 +911,6 @@ $(pv_value)</tooltip>
     <y>268</y>
     <width>151</width>
     <height>407</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="0.0">
       </point>
@@ -942,6 +941,7 @@ $(pv_value)</tooltip>
       <point x="0.0" y="406.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1009,7 +1009,6 @@ $(pv_value)</tooltip>
     <y>252</y>
     <width>81</width>
     <height>32</height>
-    <line_width>2</line_width>
     <points>
       <point x="80.0" y="16.0">
       </point>
@@ -1022,6 +1021,7 @@ $(pv_value)</tooltip>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1089,12 +1089,6 @@ $(pv_value)</tooltip>
     <y>306</y>
     <width>56</width>
     <height>37</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
     <points>
       <point x="0.0" y="36.0">
       </point>
@@ -1103,6 +1097,12 @@ $(pv_value)</tooltip>
       <point x="55.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1114,13 +1114,6 @@ $(pv_value)</tooltip>
     <y>32</y>
     <width>110</width>
     <height>99</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
-    <arrow_length>14</arrow_length>
     <points>
       <point x="109.0" y="98.0">
       </point>
@@ -1131,6 +1124,13 @@ $(pv_value)</tooltip>
       <point x="-0.5" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>14</arrow_length>
     <actions>
     </actions>
     <tooltip>To purging system</tooltip>
@@ -1169,15 +1169,14 @@ $(pv_value)</tooltip>
     <y>5</y>
     <width>1</width>
     <height>125</height>
-    <line_width>2</line_width>
-    <arrows>1</arrows>
-    <arrow_length>14</arrow_length>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="124.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrow_length>14</arrow_length>
     <actions>
     </actions>
     <tooltip>To interconnection box</tooltip>
@@ -1188,8 +1187,6 @@ $(pv_value)</tooltip>
     <y>442</y>
     <width>59</width>
     <height>139</height>
-    <line_width>2</line_width>
-    <arrows>1</arrows>
     <points>
       <point x="0.0" y="0.0">
       </point>
@@ -1200,6 +1197,8 @@ $(pv_value)</tooltip>
       <point x="58.0" y="117.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>1</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1211,7 +1210,6 @@ $(pv_value)</tooltip>
     <y>66</y>
     <width>662</width>
     <height>64</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="63.0">
       </point>
@@ -1220,6 +1218,7 @@ $(pv_value)</tooltip>
       <point x="661.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1231,13 +1230,13 @@ $(pv_value)</tooltip>
     <y>85</y>
     <width>115</width>
     <height>1</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="114.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1413,15 +1412,15 @@ $(pv_value)</tooltip>
     <y>4</y>
     <width>1</width>
     <height>64</height>
-    <line_width>2</line_width>
-    <arrows>1</arrows>
-    <arrow_length>14</arrow_length>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="63.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>1</arrows>
+    <arrow_length>14</arrow_length>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1433,15 +1432,15 @@ $(pv_value)</tooltip>
     <y>5</y>
     <width>1</width>
     <height>64</height>
-    <line_width>2</line_width>
-    <arrows>1</arrows>
-    <arrow_length>14</arrow_length>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="63.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>1</arrows>
+    <arrow_length>14</arrow_length>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1477,13 +1476,13 @@ $(pv_value)</tooltip>
     <y>68</y>
     <width>1</width>
     <height>37</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="36.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1523,7 +1522,6 @@ $(pv_value)</tooltip>
     <y>104</y>
     <width>204</width>
     <height>66</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="0.0">
       </point>
@@ -1532,6 +1530,7 @@ $(pv_value)</tooltip>
       <point x="203.0" y="65.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1543,9 +1542,6 @@ $(pv_value)</tooltip>
     <y>43</y>
     <width>276</width>
     <height>128</height>
-    <line_width>2</line_width>
-    <arrows>2</arrows>
-    <arrow_length>14</arrow_length>
     <points>
       <point x="0.0" y="126.0">
       </point>
@@ -1556,6 +1552,9 @@ $(pv_value)</tooltip>
       <point x="275.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
+    <arrow_length>14</arrow_length>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1567,7 +1566,6 @@ $(pv_value)</tooltip>
     <y>45</y>
     <width>52</width>
     <height>126</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="125.0">
       </point>
@@ -1576,6 +1574,7 @@ $(pv_value)</tooltip>
       <point x="51.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2757,12 +2756,6 @@ display.getWidget("tabcontainer").setActiveTabIndex(4);]]></text>
     <y>75</y>
     <width>34</width>
     <height>11</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
     <points>
       <point x="0.0" y="0.0">
       </point>
@@ -2775,6 +2768,12 @@ display.getWidget("tabcontainer").setActiveTabIndex(4);]]></text>
       <point x="33.0" y="10.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2786,12 +2785,6 @@ $(pv_value)</tooltip>
     <y>323</y>
     <width>46</width>
     <height>273</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
     <points>
       <point x="0.0" y="272.0">
       </point>
@@ -2802,6 +2795,12 @@ $(pv_value)</tooltip>
       <point x="45.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2906,18 +2905,18 @@ $(pv_value)</tooltip>
     <y>520</y>
     <width>10</width>
     <height>1</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="9.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2929,18 +2928,18 @@ $(pv_value)</tooltip>
     <y>446</y>
     <width>18</width>
     <height>1</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="17.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2981,7 +2980,7 @@ insert</text>
     <x>592</x>
     <y>128</y>
     <width>91</width>
-    <height>42</height>
+    <height>44</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -3086,8 +3085,6 @@ insert</text>
     <y>214</y>
     <width>321</width>
     <height>51</height>
-    <line_width>2</line_width>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="0.0">
       </point>
@@ -3096,6 +3093,8 @@ insert</text>
       <point x="320.0" y="50.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -3705,13 +3704,13 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Embedded Display_26</name>
-        <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
         <macros>
           <MULTI_HTR>AC</MULTI_HTR>
           <P>CstatV</P>
           <S>LHe</S>
           <V>EH661</V>
         </macros>
+        <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
         <x>118</x>
         <y>37</y>
         <width>95</width>
@@ -3779,13 +3778,13 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_24</name>
-      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
         <MULTI_HTR>AF</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH640</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <x>57</x>
       <y>192</y>
       <width>95</width>
@@ -3793,13 +3792,13 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_25</name>
-      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
         <MULTI_HTR>AC</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH670</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <x>301</x>
       <y>11</y>
       <width>95</width>
@@ -3812,13 +3811,13 @@ $(pv_value)</tooltip>
     <y>335</y>
     <width>1</width>
     <height>465</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="464.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -3830,12 +3829,6 @@ $(pv_value)</tooltip>
     <y>551</y>
     <width>71</width>
     <height>74</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
     <points>
       <point x="0.0" y="73.0">
       </point>
@@ -3846,6 +3839,12 @@ $(pv_value)</tooltip>
       <point x="70.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -3919,18 +3918,18 @@ $(pv_value)</tooltip>
     <y>551</y>
     <width>7</width>
     <height>1</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="6.0" y="0.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -4059,7 +4058,7 @@ Insert</text>
     <x>731</x>
     <y>515</y>
     <width>39</width>
-    <height>42</height>
+    <height>44</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -4307,15 +4306,14 @@ Insert</text>
     <y>5</y>
     <width>1</width>
     <height>82</height>
-    <line_width>2</line_width>
-    <arrows>1</arrows>
-    <arrow_length>14</arrow_length>
     <points>
       <point x="3.0" y="0.0">
       </point>
       <point x="3.0" y="81.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrow_length>14</arrow_length>
     <actions>
     </actions>
     <tooltip>To interconnection box</tooltip>
@@ -4442,7 +4440,6 @@ Insert</text>
     <y>108</y>
     <width>86</width>
     <height>38</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="40.0">
       </point>
@@ -4455,6 +4452,7 @@ Insert</text>
       <point x="85.0" y="20.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -4669,7 +4667,7 @@ $(pv_value)</tooltip>
     <x>1362</x>
     <y>402</y>
     <width>32</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -4725,7 +4723,7 @@ $(pv_value)</tooltip>
     <x>1184</x>
     <y>580</y>
     <width>43</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -4781,14 +4779,14 @@ $(pv_value)</tooltip>
     <y>315</y>
     <width>1</width>
     <height>25</height>
-    <line_width>2</line_width>
-    <line_style>2</line_style>
     <points>
       <point x="0.0" y="25.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_style>2</line_style>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -4846,12 +4844,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_1</name>
-    <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV600</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
     <x>128</x>
     <y>52</y>
     <width>51</width>
@@ -4859,12 +4857,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_2</name>
-    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV602</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <x>393</x>
     <y>44</y>
     <width>51</width>
@@ -4872,12 +4870,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_3</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV601</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <x>407</x>
     <y>74</y>
     <width>35</width>
@@ -4885,12 +4883,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_5</name>
-    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV641</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <x>805</x>
     <y>746</y>
     <width>51</width>
@@ -4898,12 +4896,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_6</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV640</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <x>856</x>
     <y>789</y>
     <width>35</width>
@@ -4911,12 +4909,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_7</name>
-    <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>FV586</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
     <x>1015</x>
     <y>24</y>
     <width>51</width>
@@ -4924,12 +4922,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_8</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>FV580</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <x>1055</x>
     <y>56</y>
     <width>35</width>
@@ -4944,12 +4942,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_9</name>
-    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>FV581</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <x>1098</x>
     <y>72</y>
     <width>51</width>
@@ -4957,12 +4955,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_10</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>FV584</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <x>1134</x>
     <y>93</y>
     <width>35</width>
@@ -4970,12 +4968,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_12</name>
-    <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
     <macros>
       <P>CstatH</P>
       <S>RHtr</S>
       <V>FV555</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
     <x>1191</x>
     <y>60</y>
     <width>51</width>
@@ -4983,12 +4981,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_13</name>
-    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatH</P>
       <S>RHtr</S>
       <V>FV554</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <x>1268</x>
     <y>104</y>
     <width>51</width>
@@ -4996,12 +4994,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_14</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>FV582</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>1067</x>
     <y>147</y>
     <width>35</width>
@@ -5009,12 +5007,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_15</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>FV583</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>1067</x>
     <y>191</y>
     <width>35</width>
@@ -5022,12 +5020,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_16</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>FV585</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>1067</x>
     <y>242</y>
     <width>35</width>
@@ -5035,12 +5033,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>CV600</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
     <x>318</x>
     <y>86</y>
     <width>55</width>
@@ -5048,12 +5046,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_4</name>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>CV601</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
     <x>201</x>
     <y>283</y>
     <width>55</width>
@@ -5061,12 +5059,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_11</name>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>CV602</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
     <x>359</x>
     <y>301</y>
     <width>55</width>
@@ -5074,12 +5072,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_17</name>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>CV603</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
     <x>546</x>
     <y>528</y>
     <width>55</width>
@@ -5087,12 +5085,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_18</name>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>CV580</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <x>898</x>
     <y>43</y>
     <width>50</width>
@@ -5100,12 +5098,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_19</name>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>CV581</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <x>947</x>
     <y>81</y>
     <width>50</width>
@@ -5113,12 +5111,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_20</name>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>CV582</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-lu-pv.bob</file>
     <x>913</x>
     <y>143</y>
     <width>50</width>
@@ -5126,12 +5124,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_21</name>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>RHtr</S>
       <V>CV583</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <x>927</x>
     <y>191</y>
     <width>50</width>
@@ -5139,19 +5137,19 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_23</name>
-    <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
     <macros>
       <MULTI_HTR></MULTI_HTR>
       <P>CstatV</P>
       <S>LHe</S>
       <V>EH601</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
     <x>687</x>
     <y>368</y>
     <width>130</width>
     <height>95</height>
   </widget>
-  <widget type="meter" version="2.0.0">
+  <widget type="meter" version="3.0.0">
     <name>Meter</name>
     <x>920</x>
     <y>720</y>
@@ -5160,13 +5158,13 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_28</name>
-    <file>../../freia-symbols/display-builder/CstatV-Heater1-ll-pv.bob</file>
     <macros>
       <MULTI_HTR>AC</MULTI_HTR>
       <P>CstatV</P>
       <S>LHe</S>
       <V>EH641</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-Heater1-ll-pv.bob</file>
     <x>1226</x>
     <y>690</y>
     <width>130</width>
@@ -5174,11 +5172,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_30</name>
-    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <macros>
       <L>FIC583</L>
       <S>RHtr</S>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <x>115</x>
     <y>341</y>
     <width>77</width>
@@ -5186,11 +5184,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_31</name>
-    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <macros>
       <L>LIC682</L>
       <S>LHe</S>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <x>256</x>
     <y>430</y>
     <width>77</width>
@@ -5198,11 +5196,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_32</name>
-    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <macros>
       <L>LIC660</L>
       <S>LHe</S>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <x>256</x>
     <y>505</y>
     <width>77</width>
@@ -5210,11 +5208,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_33</name>
-    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <macros>
       <L>LIC670</L>
       <S>LHe</S>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <x>257</x>
     <y>577</y>
     <width>77</width>
@@ -5222,11 +5220,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_34</name>
-    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <macros>
       <L>LIC660A</L>
       <S>LHe</S>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <x>419</x>
     <y>533</y>
     <width>77</width>
@@ -5234,11 +5232,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_35</name>
-    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <macros>
       <L>LIC670A</L>
       <S>LHe</S>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <x>419</x>
     <y>606</y>
     <width>77</width>
@@ -5306,13 +5304,13 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_27</name>
-    <file>../../freia-symbols/display-builder/CstatV-Heater1-ll-pv.bob</file>
     <macros>
       <MULTI_HTR>AC</MULTI_HTR>
       <P>CstatV</P>
       <S>LHe</S>
       <V>EH660</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-Heater1-ll-pv.bob</file>
     <x>1227</x>
     <y>628</y>
     <width>130</width>
@@ -5378,5 +5376,39 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template_17</name>
+    <x>332</x>
+    <width>1</width>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="19.84">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
+    <arrow_length>14</arrow_length>
+    <actions>
+    </actions>
+    <tooltip>To interconnection box</tooltip>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline Template_29</name>
+    <x>403</x>
+    <width>1</width>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="19.84">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
+    <arrow_length>14</arrow_length>
+    <actions>
+    </actions>
+    <tooltip>To interconnection box</tooltip>
   </widget>
 </display>

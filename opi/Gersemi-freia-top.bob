@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
+  <name>Gersemi</name>
   <macros>
     <C>CstatV</C>
     <P>$(C)</P>
@@ -21,7 +22,7 @@ sequences</text>
     <x>41</x>
     <y>87</y>
     <width>72</width>
-    <height>39</height>
+    <height>41</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="15.0">
       </font>
@@ -3139,10 +3140,10 @@ Conditioning He circuits</tooltip>
           <children>
             <widget type="embedded" version="2.0.0">
               <name>Linking Container Template</name>
-              <file>helper-opi-files/GlobOpView.bob</file>
               <macros>
                 <P>$(C)</P>
               </macros>
+              <file>helper-opi-files/GlobOpView.bob</file>
               <width>1594</width>
               <height>967</height>
               <actions>
@@ -3176,10 +3177,10 @@ Conditioning He circuits</tooltip>
           <children>
             <widget type="embedded" version="2.0.0">
               <name>Linking Container Template</name>
-              <file>helper-opi-files/ReheatSys.bob</file>
               <macros>
                 <P>CstatV</P>
               </macros>
+              <file>helper-opi-files/ReheatSys.bob</file>
               <width>1594</width>
               <height>967</height>
               <actions>
@@ -3196,10 +3197,10 @@ Conditioning He circuits</tooltip>
           <children>
             <widget type="embedded" version="2.0.0">
               <name>Linking Container Template</name>
-              <file>helper-opi-files/ScHeSystem.bob</file>
               <macros>
                 <P>$(C)</P>
               </macros>
+              <file>helper-opi-files/ScHeSystem.bob</file>
               <width>1594</width>
               <height>967</height>
               <actions>
@@ -3317,34 +3318,25 @@ Conditioning He circuits</tooltip>
               <border_alarm_sensitive>false</border_alarm_sensitive>
               <border_width>2</border_width>
             </widget>
-            <widget type="meter" version="2.0.0">
+            <widget type="meter" version="3.0.0">
               <name>LP:PI2240</name>
               <pv_name>Cryo-Cmp:LP:PI2240</pv_name>
-              <skin>0</skin>
-              <knob_position>3</knob_position>
               <x>24</x>
               <y>70</y>
               <width>136</width>
               <height>136</height>
-              <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
-                </color>
-              </background_color>
               <foreground_color>
                 <color name="IO InputPV Fg" red="0" green="32" blue="92">
                 </color>
               </foreground_color>
-              <transparent>false</transparent>
-              <level_hihi>1.8</level_hihi>
-              <level_high>1.5</level_high>
-              <level_low>0.0</level_low>
-              <level_lolo>0.0</level_lolo>
+              <background_color>
+                <color name="IO InputPV Bg" red="255" green="255" blue="255">
+                </color>
+              </background_color>
               <actions>
               </actions>
-              <maximum>2.0</maximum>
               <limits_from_pv>false</limits_from_pv>
-              <highligh_zones>false</highligh_zones>
-              <lcd_visible>false</lcd_visible>
+              <maximum>2.0</maximum>
               <needle_color>
                 <color name="IO Stick" red="0" green="32" blue="92">
                 </color>
