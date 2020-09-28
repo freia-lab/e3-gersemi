@@ -335,7 +335,7 @@ $(pv_value)</tooltip>
     <x>943</x>
     <y>21</y>
     <width>371</width>
-    <height>28</height>
+    <height>29</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="22.0">
       </font>
@@ -878,7 +878,7 @@ circuit</text>
       <x>85</x>
       <y>1</y>
       <width>57</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -906,7 +906,7 @@ circuit</text>
       <x>87</x>
       <y>117</y>
       <width>68</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1053,7 +1053,7 @@ circuit</text>
       <x>87</x>
       <y>237</y>
       <width>62</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1609,7 +1609,7 @@ $(pv_value)</tooltip>
       <x>107</x>
       <y>266</y>
       <width>32</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1765,7 +1765,7 @@ $(pv_value)</tooltip>
       <x>11</x>
       <y>271</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2527,7 +2527,7 @@ $(pv_value)</tooltip>
     <x>401</x>
     <y>785</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2555,7 +2555,7 @@ $(pv_value)</tooltip>
     <x>399</x>
     <y>869</y>
     <width>86</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2777,7 +2777,7 @@ $(pv_value)</tooltip>
     <x>401</x>
     <y>660</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2805,7 +2805,7 @@ $(pv_value)</tooltip>
     <x>399</x>
     <y>744</y>
     <width>86</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3028,7 +3028,7 @@ $(pv_value)</tooltip>
     <x>401</x>
     <y>533</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3056,7 +3056,7 @@ $(pv_value)</tooltip>
     <x>399</x>
     <y>618</y>
     <width>86</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3139,7 +3139,7 @@ $(pv_value)</tooltip>
     <x>672</x>
     <y>472</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3279,7 +3279,7 @@ $(pv_value)</tooltip>
     <x>401</x>
     <y>404</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3307,7 +3307,7 @@ $(pv_value)</tooltip>
     <x>399</x>
     <y>491</y>
     <width>86</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -4291,41 +4291,6 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="label" version="2.0.0">
-    <name>Text Update</name>
-    <text>###</text>
-    <x>1237</x>
-    <y>534</y>
-    <width>50</width>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <transparent>false</transparent>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="Text" prop_id="text" out_exp="false">
-        <exp bool_exp="true">
-          <value>(200-pv0)/2.0</value>
-        </exp>
-        <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
-      </rule>
-    </rules>
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_27</name>
     <x>582</x>
@@ -4855,7 +4820,7 @@ related to the Gas Bag</tooltip>
     <x>337</x>
     <y>145</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -4946,7 +4911,7 @@ related to the Gas Bag</tooltip>
     <x>1108</x>
     <y>441</y>
     <width>30</width>
-    <height>14</height>
+    <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="11.0">
       </font>
@@ -4974,7 +4939,7 @@ related to the Gas Bag</tooltip>
     <x>1105</x>
     <y>471</y>
     <width>41</width>
-    <height>14</height>
+    <height>15</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="11.0">
       </font>
@@ -5256,30 +5221,6 @@ related to the Gas Bag</tooltip>
     <width>51</width>
     <height>28</height>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_3</name>
-    <pv_name>Cryo-Rec:LP:GasBagSonar</pv_name>
-    <x>1163</x>
-    <y>531</y>
-    <width>50</width>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
     <macros>
@@ -5461,7 +5402,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update_22</name>
     <pv_name>Cryo-Rec:LP:GasBagLidar</pv_name>
-    <x>1330</x>
+    <x>1350</x>
     <y>510</y>
     <width>90</width>
     <height>15</height>

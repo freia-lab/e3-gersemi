@@ -51,7 +51,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_15</name>
     <text>CV602</text>
-    <x>30</x>
+    <x>20</x>
     <y>286</y>
     <width>42</width>
     <height>21</height>
@@ -67,7 +67,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI680</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -133,7 +132,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_17</name>
     <text>SP PIC660</text>
-    <x>29</x>
+    <x>20</x>
     <y>331</y>
     <width>68</width>
     <height>21</height>
@@ -149,7 +148,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT682</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -214,10 +212,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_18</name>
-    <text>SP FT581</text>
-    <x>31</x>
+    <text>FT581 Limit</text>
+    <x>20</x>
     <y>370</y>
-    <width>62</width>
+    <width>78</width>
     <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -231,7 +229,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT682</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -418,7 +415,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -500,7 +496,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -582,7 +577,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -664,7 +658,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -746,7 +739,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -828,7 +820,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -897,17 +888,17 @@
     <y>247</y>
     <width>1</width>
     <height>228</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="227.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1182,5 +1173,41 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>$(C)-LHe:LIC670:sRegOn</pv_name>
+    <x>432</x>
+    <y>283</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_3</name>
+    <pv_name>$(C)-LHe:LIC670:sRegOn</pv_name>
+    <x>431</x>
+    <y>400</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_4</name>
+    <pv_name>$(C)-LHe:PIC660:sRegOn</pv_name>
+    <x>93</x>
+    <y>335</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
   </widget>
 </display>

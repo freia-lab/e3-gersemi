@@ -3804,6 +3804,38 @@ $(pv_value)</tooltip>
       <width>95</width>
       <height>95</height>
     </widget>
+    <widget type="tank" version="2.0.0">
+      <name>Progress Bar Template</name>
+      <pv_name>$(system):LI670:sRdV</pv_name>
+      <x>451</x>
+      <y>100</y>
+      <width>25</width>
+      <height>320</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <fill_color>
+        <color red="0" green="203" blue="255">
+        </color>
+      </fill_color>
+      <empty_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </empty_color>
+      <scale_visible>false</scale_visible>
+      <actions>
+      </actions>
+      <limits_from_pv>false</limits_from_pv>
+    </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_4</name>
@@ -4902,7 +4934,7 @@ $(pv_value)</tooltip>
       <V>FV640</V>
     </macros>
     <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
-    <x>856</x>
+    <x>855</x>
     <y>789</y>
     <width>35</width>
     <height>35</height>
@@ -5345,38 +5377,6 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Progress Bar Template</name>
-    <pv_name>$(system):LT600:sRdV</pv_name>
-    <x>123</x>
-    <y>144</y>
-    <width>25</width>
-    <height>108</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="10.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <fill_color>
-      <color red="0" green="203" blue="255">
-      </color>
-    </fill_color>
-    <empty_color>
-      <color name="GRAY" red="169" green="169" blue="169">
-      </color>
-    </empty_color>
-    <scale_visible>false</scale_visible>
-    <actions>
-    </actions>
-    <limits_from_pv>false</limits_from_pv>
-  </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline Template_17</name>
     <x>332</x>
@@ -5410,5 +5410,50 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <tooltip>To interconnection box</tooltip>
+  </widget>
+  <widget type="tank" version="2.0.0">
+    <name>Progress Bar Template_1</name>
+    <pv_name>$(system):LT600:sRdV</pv_name>
+    <x>120</x>
+    <y>130</y>
+    <width>29</width>
+    <height>132</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <fill_color>
+      <color red="0" green="203" blue="255">
+      </color>
+    </fill_color>
+    <empty_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </empty_color>
+    <scale_visible>false</scale_visible>
+    <actions>
+    </actions>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_36</name>
+    <macros>
+      <P>CstatV</P>
+      <S>LHe</S>
+      <V>FV642</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
+    <x>855</x>
+    <y>663</y>
+    <width>35</width>
+    <height>35</height>
   </widget>
 </display>

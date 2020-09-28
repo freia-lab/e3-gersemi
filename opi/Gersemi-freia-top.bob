@@ -50,7 +50,7 @@ sequences</text>
     <x>14</x>
     <y>2</y>
     <width>130</width>
-    <height>47</height>
+    <height>50</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
       </font>
@@ -2423,7 +2423,7 @@ shield cooling</tooltip>
               <step10>End of cool-down - wait for CV601 to close</step10>
               <step12>Intermittent mode - wait for reaching LI660/LI670 Min</step12>
               <step14>Regulating (PID mode)</step14>
-              <step15>Go to step 14</step15>
+              <step15>Intermittent mode - wait for reaching LI660/LI670 Min</step15>
               <step16>Cryostat filling - wait for reaching LI660/LI670 Max</step16>
               <step18>Intermittent mode - wait for reaching LI660/LI670 Min</step18>
               <step2>Checking parameters</step2>
@@ -2431,7 +2431,7 @@ shield cooling</tooltip>
               <step4>Waiting for Yes</step4>
               <step8>Cooling cavity - wait for reaching LI660/LI670 Max</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ10</text>

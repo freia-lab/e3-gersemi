@@ -532,6 +532,7 @@ Ignored in PID mode.</tooltip>
     <auto_size>true</auto_size>
     <actions>
     </actions>
+    <tooltip>FT580 range: 0-70m3/h</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -1584,5 +1585,17 @@ $(pv_value)</tooltip>
         <pv_name>Cryo-Dwr:Dwr:StCV5203_Slctd</pv_name>
       </rule>
     </rules>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>$(C)-LHe:LIC600:sRegOn</pv_name>
+    <x>110</x>
+    <y>342</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
   </widget>
 </display>
