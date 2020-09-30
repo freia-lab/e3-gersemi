@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>table-entry</name>
+  <width>260</width>
+  <height>28</height>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <width>249</width>
+    <height>25</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_33</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):cP_CV582_Pt$(pStep)</pv_name>
+      <width>56</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_38</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sP_CV582_Pt$(pStep)</pv_name>
+      <x>62</x>
+      <y>5</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>0</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_34</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):cP_CV582_Csg$(pStep)</pv_name>
+      <x>135</x>
+      <width>56</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_39</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sP_CV582_Csg$(pStep)</pv_name>
+      <x>197</x>
+      <y>5</y>
+      <width>52</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <x>117</x>
+      <width>16</width>
+      <height>28</height>
+      <off_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </off_color>
+      <line_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </line_color>
+      <square>true</square>
+      <rules>
+        <rule name="OffColor" prop_id="off_color" out_exp="true">
+          <exp bool_exp="((pvInt0==18)&amp;&amp;(pv2&gt;pv1))">
+            <expression>WidgetColor(70, 255, 70, 255)</expression>
+          </exp>
+          <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
+          <pv_name>$(C)-Ctrl:$(seq_no):sP_CV582_Pt$(pStep)</pv_name>
+          <pv_name>$(C)-LHe:PT660L:sRdV</pv_name>
+        </rule>
+      </rules>
+      <tooltip></tooltip>
+    </widget>
+  </widget>
+</display>
