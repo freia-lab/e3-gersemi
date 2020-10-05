@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Seq13</name>
   <width>780</width>
-  <height>700</height>
+  <height>800</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -875,7 +875,7 @@
       <x>20</x>
       <y>29</y>
       <width>35</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -903,7 +903,7 @@
       <x>320</x>
       <y>29</y>
       <width>82</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2523,5 +2523,39 @@ $(pv_value)</tooltip>
       </color>
     </line_color>
     <line_style>1</line_style>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_file">
+        <file>../plots/SQ13-PIC660A-regulation.plt</file>
+        <description>PIC660A regulation</description>
+      </action>
+    </actions>
+    <x>20</x>
+    <y>740</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_1</name>
+    <actions>
+      <action type="open_file">
+        <file>../plots/SQ13-watch-list.plt</file>
+        <description>On Watch</description>
+      </action>
+    </actions>
+    <x>130</x>
+    <y>740</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Plots</text>
+    <x>20</x>
+    <y>710</y>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
   </widget>
 </display>
