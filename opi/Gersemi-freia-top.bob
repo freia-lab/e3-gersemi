@@ -1309,13 +1309,13 @@ connected to He recovery</tooltip>
               <seq_title>Sequence 21: Valve box warm-up</seq_title>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
-              <step10>Waiting for starting EH703</step10>
+              <step10>Waiting for starting EH701-EH703</step10>
               <step12>Waiting for LT600 to go below min.</step12>
               <step14>Waiting for starting EH600</step14>
               <step16>Warming-up and waiting for stop.</step16>
               <step2>Checking parameters</step2>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ21</text>
@@ -1412,16 +1412,16 @@ connected to He recovery</tooltip>
               <seq_title>Sequence 22: Cryostat warm-up</seq_title>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
-              <step10>Waiting for starting EH473</step10>
-              <step12>Waiting for LT600 to go below min.</step12>
-              <step14>Waiting for starting EH600</step14>
+              <step10>Waiting for starting EH741-EH743</step10>
+              <step12>Waiting for LI670 to go below min.</step12>
+              <step14>Warming up, checking that the flow is below FT581 min</step14>
               <step16>Stopping</step16>
               <step2>Checking parameters</step2>
               <step4>Waiting for Yes/No</step4>
               <step6>Waiting for stopping SQ10-SQ20</step6>
               <step8>Waiting for stopping SQ6</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ22</text>
@@ -1518,15 +1518,15 @@ connected to He recovery</tooltip>
               <seq_title>Sequence 23: Insert warm-up</seq_title>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
-              <step10>Waiting for starting EH765</step10>
+              <step10>Vacuum insert: starting EH761, EH763 and EH765</step10>
               <step12>Waiting for LI660/LI670/LI680 to go below min.</step12>
-              <step14>Stopping</step14>
+              <step14>Warming up. Checking that flow is below FT581 max</step14>
               <step2>Checking parameters</step2>
               <step4>Waiting for Yes/No</step4>
               <step6>Waiting for stopping S10-SQ20</step6>
               <step8>Waiting for stopping SQ7</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ23</text>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>Seq_top4+</name>
+  <name>Seq_top4plus</name>
   <macros>
     <W>freia.physics.uu.se</W>
   </macros>
@@ -119,7 +119,7 @@
     <x>14</x>
     <y>154</y>
     <width>35</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -147,7 +147,7 @@
     <x>327</x>
     <y>154</y>
     <width>82</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -446,6 +446,14 @@
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pvInt0!=0)">
+          <value>false</value>
+        </exp>
+        <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
+      </rule>
+    </rules>
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">

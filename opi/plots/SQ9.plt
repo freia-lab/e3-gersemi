@@ -51,8 +51,8 @@
         <green>0</green>
         <blue>0</blue>
       </color>
-      <min>-88.0</min>
-      <max>161.0</max>
+      <min>-93.0</min>
+      <max>164.0</max>
       <grid>false</grid>
       <autoscale>false</autoscale>
       <log_scale>false</log_scale>
@@ -68,8 +68,8 @@
         <green>0</green>
         <blue>0</blue>
       </color>
-      <min>1015.0</min>
-      <max>1775.0</max>
+      <min>1032.0</min>
+      <max>1606.0</max>
       <grid>false</grid>
       <autoscale>false</autoscale>
       <log_scale>false</log_scale>
@@ -109,12 +109,12 @@
       <name>CstatV-LHe:LT600:sRdV</name>
       <axis>0</axis>
       <color>
-        <red>0</red>
-        <green>255</green>
-        <blue>0</blue>
+        <red>255</red>
+        <green>0</green>
+        <blue>255</blue>
       </color>
       <trace_type>AREA</trace_type>
-      <linewidth>2</linewidth>
+      <linewidth>4</linewidth>
       <line_style>SOLID</line_style>
       <point_type>NONE</point_type>
       <point_size>2</point_size>
