@@ -26,8 +26,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_15</name>
     <text>CV580</text>
-    <x>49</x>
-    <y>206</y>
+    <x>50</x>
+    <y>231</y>
     <width>42</width>
     <height>21</height>
     <foreground_color>
@@ -51,8 +51,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_8</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV580</pv_name>
-    <x>189</x>
-    <y>205</y>
+    <x>180</x>
+    <y>225</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -78,9 +78,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_13</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV580</pv_name>
-    <x>251</x>
-    <y>209</y>
-    <width>67</width>
+    <x>250</x>
+    <y>230</y>
+    <width>46</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -106,8 +106,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_27</name>
     <text>LT600 min</text>
-    <x>49</x>
-    <y>235</y>
+    <x>50</x>
+    <y>260</y>
     <width>70</width>
     <height>21</height>
     <foreground_color>
@@ -131,8 +131,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_20</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_LT600_min</pv_name>
-    <x>189</x>
-    <y>235</y>
+    <x>180</x>
+    <y>255</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -158,9 +158,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_32</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_LT600_min</pv_name>
-    <x>251</x>
-    <y>239</y>
-    <width>67</width>
+    <x>250</x>
+    <y>260</y>
+    <width>46</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -185,9 +185,157 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
-    <x>320</x>
-    <y>230</y>
+    <x>321</x>
+    <y>255</y>
     <width>10</width>
     <height>1</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_6</name>
+    <text>cP</text>
+    <x>190</x>
+    <y>200</y>
+    <width>18</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>sP</text>
+    <x>249</x>
+    <y>200</y>
+    <width>17</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>sRdV</text>
+    <x>310</x>
+    <y>200</y>
+    <width>35</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_14</name>
+    <pv_name>$(C)-RHtr:CV580:sRdV</pv_name>
+    <x>310</x>
+    <y>230</y>
+    <width>67</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_33</name>
+    <pv_name>$(C)-LHe:LT600:sRdV</pv_name>
+    <x>310</x>
+    <y>260</y>
+    <width>67</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
 </display>

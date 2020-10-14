@@ -86,8 +86,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_15</name>
     <text>CV740</text>
-    <x>30</x>
-    <y>217</y>
+    <x>40</x>
+    <y>220</y>
     <width>42</width>
     <height>21</height>
     <foreground_color>
@@ -111,8 +111,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_8</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV740</pv_name>
-    <x>125</x>
-    <y>217</y>
+    <x>100</x>
+    <y>220</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -138,9 +138,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_13</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV740</pv_name>
-    <x>187</x>
-    <y>221</y>
-    <width>67</width>
+    <x>162</x>
+    <y>224</y>
+    <width>46</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -191,7 +191,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_15</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_LI670_min</pv_name>
-    <x>435</x>
+    <x>400</x>
     <y>239</y>
     <width>56</width>
     <height>30</height>
@@ -218,9 +218,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_20</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_LI670_min</pv_name>
-    <x>497</x>
+    <x>465</x>
     <y>243</y>
-    <width>67</width>
+    <width>46</width>
     <height>23</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -271,7 +271,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_22</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_LI680_min</pv_name>
-    <x>435</x>
+    <x>400</x>
     <y>325</y>
     <width>56</width>
     <height>30</height>
@@ -298,9 +298,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_34</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_LI680_min</pv_name>
-    <x>497</x>
+    <x>465</x>
     <y>327</y>
-    <width>67</width>
+    <width>46</width>
     <height>23</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -351,7 +351,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_23</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV583</pv_name>
-    <x>435</x>
+    <x>400</x>
     <y>298</y>
     <width>56</width>
     <height>30</height>
@@ -378,9 +378,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_35</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV583</pv_name>
-    <x>497</x>
+    <x>465</x>
     <y>302</y>
-    <width>67</width>
+    <width>46</width>
     <height>23</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -461,7 +461,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_24</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV581</pv_name>
-    <x>435</x>
+    <x>400</x>
     <y>393</y>
     <width>56</width>
     <height>30</height>
@@ -488,7 +488,122 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_36</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV581</pv_name>
-    <x>497</x>
+    <x>465</x>
+    <y>397</y>
+    <width>46</width>
+    <height>23</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_21</name>
+    <pv_name>$(C)-LHe:LI670:sRdV</pv_name>
+    <x>520</x>
+    <y>243</y>
+    <width>67</width>
+    <height>23</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_37</name>
+    <pv_name>$(C)-LHe:LI680:sRdV</pv_name>
+    <x>520</x>
+    <y>327</y>
+    <width>67</width>
+    <height>23</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_38</name>
+    <pv_name>$(C)-RHtr:CV583:sRdV</pv_name>
+    <x>520</x>
+    <y>302</y>
+    <width>67</width>
+    <height>23</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_39</name>
+    <pv_name>$(C)-RHtr:CV581:sRdV</pv_name>
+    <x>520</x>
     <y>397</y>
     <width>67</width>
     <height>23</height>
@@ -504,6 +619,36 @@
       <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_40</name>
+    <pv_name>$(C)-LN2:CV740:sRdV</pv_name>
+    <x>215</x>
+    <y>223</y>
+    <width>67</width>
+    <height>23</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>1</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
