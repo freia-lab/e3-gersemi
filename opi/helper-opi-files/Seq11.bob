@@ -42,7 +42,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT600</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -51,7 +50,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_14</name>
     <text>CV380</text>
-    <x>321</x>
+    <x>315</x>
     <y>339</y>
     <width>42</width>
     <height>21</height>
@@ -67,7 +66,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI680</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -149,7 +147,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI680</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -215,7 +212,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_17</name>
     <text>SP TIC372</text>
-    <x>321</x>
+    <x>315</x>
     <y>277</y>
     <width>67</width>
     <height>21</height>
@@ -231,7 +228,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT682</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -297,7 +293,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_18</name>
     <text>SP FIC380</text>
-    <x>321</x>
+    <x>315</x>
     <y>302</y>
     <width>66</width>
     <height>21</height>
@@ -313,7 +309,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT682</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -440,7 +435,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI680</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -506,7 +500,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_20</name>
     <text>SP TIC371</text>
-    <x>321</x>
+    <x>315</x>
     <y>251</y>
     <width>67</width>
     <height>21</height>
@@ -522,7 +516,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT682</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -794,5 +787,41 @@
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(C)-SHe:TIC371:sRegOn</pv_name>
+    <x>383</x>
+    <y>252</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>$(C)-SHe:TIC372:sRegOn</pv_name>
+    <x>383</x>
+    <y>280</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_3</name>
+    <pv_name>$(C)-SHe:FIC380:sRegOn</pv_name>
+    <x>383</x>
+    <y>303</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
   </widget>
 </display>

@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Seq9</name>
   <width>640</width>
-  <height>660</height>
+  <height>750</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -135,7 +135,7 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_7</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV580</pv_name>
-    <x>123</x>
+    <x>122</x>
     <y>274</y>
     <width>56</width>
     <height>25</height>
@@ -217,7 +217,7 @@ Ignored in PID mode.</tooltip>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_8</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV600</pv_name>
-    <x>123</x>
+    <x>122</x>
     <y>299</y>
     <width>56</width>
     <height>25</height>
@@ -325,7 +325,7 @@ Ignored in PID mode.</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_15</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_LIC600</pv_name>
-    <x>184</x>
+    <x>185</x>
     <y>343</y>
     <width>51</width>
     <height>18</height>
@@ -354,8 +354,8 @@ Ignored in PID mode.</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_18</name>
     <text>LT600 Min</text>
-    <x>21</x>
-    <y>365</y>
+    <x>20</x>
+    <y>401</y>
     <width>68</width>
     <height>21</height>
     <foreground_color>
@@ -380,7 +380,7 @@ Ignored in PID mode.</tooltip>
     <name>Text Input Template_11</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_LT600_min</pv_name>
     <x>122</x>
-    <y>364</y>
+    <y>400</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -406,8 +406,8 @@ Ignored in PID mode.</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_16</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_LT600_min</pv_name>
-    <x>184</x>
-    <y>368</y>
+    <x>185</x>
+    <y>404</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -435,8 +435,8 @@ Ignored in PID mode.</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_19</name>
     <text>LT600 Max</text>
-    <x>22</x>
-    <y>388</y>
+    <x>21</x>
+    <y>426</y>
     <width>71</width>
     <height>21</height>
     <foreground_color>
@@ -460,8 +460,8 @@ Ignored in PID mode.</tooltip>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_12</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_LT600_max</pv_name>
-    <x>123</x>
-    <y>387</y>
+    <x>122</x>
+    <y>425</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -488,7 +488,7 @@ Ignored in PID mode.</tooltip>
     <name>Text Update Template_17</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_LT600_max</pv_name>
     <x>185</x>
-    <y>391</y>
+    <y>428</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -516,8 +516,8 @@ Ignored in PID mode.</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_20</name>
     <text>FT580 Limit</text>
-    <x>22</x>
-    <y>423</y>
+    <x>20</x>
+    <y>461</y>
     <width>78</width>
     <height>21</height>
     <foreground_color>
@@ -532,6 +532,7 @@ Ignored in PID mode.</tooltip>
     <auto_size>true</auto_size>
     <actions>
     </actions>
+    <tooltip>FT580 range: 0-70m3/h</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -540,8 +541,8 @@ Ignored in PID mode.</tooltip>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_13</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_Warn_FT580</pv_name>
-    <x>123</x>
-    <y>422</y>
+    <x>122</x>
+    <y>460</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -568,87 +569,7 @@ Ignored in PID mode.</tooltip>
     <name>Text Update Template_18</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_Warn_FT580</pv_name>
     <x>185</x>
-    <y>426</y>
-    <width>51</width>
-    <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>1</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_21</name>
-    <text>SP PIC600</text>
-    <x>22</x>
-    <y>448</y>
-    <width>68</width>
-    <height>21</height>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Input Template_14</name>
-    <pv_name>$(C)-Ctrl:$(seq_no):cP_SP_PIC600</pv_name>
-    <x>123</x>
-    <y>447</y>
-    <width>56</width>
-    <height>25</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <show_units>false</show_units>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_19</name>
-    <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_PIC600</pv_name>
-    <x>185</x>
-    <y>451</y>
+    <y>464</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -676,8 +597,8 @@ Ignored in PID mode.</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_22</name>
     <text>TT Cool-down</text>
-    <x>25</x>
-    <y>492</y>
+    <x>20</x>
+    <y>570</y>
     <width>94</width>
     <height>21</height>
     <foreground_color>
@@ -702,8 +623,8 @@ closing FV601</tooltip>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_15</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CoolD_Tt</pv_name>
-    <x>126</x>
-    <y>491</y>
+    <x>122</x>
+    <y>569</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -729,8 +650,8 @@ closing FV601</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_20</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CoolD_Tt</pv_name>
-    <x>188</x>
-    <y>495</y>
+    <x>185</x>
+    <y>573</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -1156,7 +1077,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_28</name>
     <pv_name>$(C)-RHtr:CV580:sRdV</pv_name>
-    <x>252</x>
+    <x>250</x>
     <y>278</y>
     <width>51</width>
     <height>18</height>
@@ -1186,7 +1107,7 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_29</name>
     <pv_name>$(C)-LHe:CV600:sRdV</pv_name>
-    <x>252</x>
+    <x>250</x>
     <y>303</y>
     <width>51</width>
     <height>18</height>
@@ -1216,8 +1137,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_30</name>
     <pv_name>$(C)-LHe:LT600:sRdV</pv_name>
-    <x>252</x>
-    <y>369</y>
+    <x>250</x>
+    <y>417</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -1246,8 +1167,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_31</name>
     <pv_name>$(C)-RHtr:FT580:sRdV</pv_name>
-    <x>252</x>
-    <y>426</y>
+    <x>250</x>
+    <y>464</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -1276,8 +1197,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_32</name>
     <pv_name>$(C)-LHe:TT602:sRdV</pv_name>
-    <x>252</x>
-    <y>479</y>
+    <x>250</x>
+    <y>557</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -1306,8 +1227,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_33</name>
     <pv_name>$(C)-LHe:TT614:sRdV</pv_name>
-    <x>252</x>
-    <y>504</y>
+    <x>250</x>
+    <y>582</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -1448,109 +1369,6 @@ $(pv_value)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_34</name>
-    <pv_name>$(C)-LHe:PT600:sRdV</pv_name>
-    <x>252</x>
-    <y>451</y>
-    <width>51</width>
-    <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>1</precision>
-    <show_units>false</show_units>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_1</name>
-    <pv_name>$(C)-LHe:PIC600:sRegOn</pv_name>
-    <x>110</x>
-    <y>450</y>
-    <width>10</width>
-    <height>10</height>
-    <square>true</square>
-    <tooltip>PID On/Off status
-$(pv_name)
-$(pv_value)</tooltip>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label_6</name>
-    <text>FV601 special operation mode</text>
-    <x>150</x>
-    <y>540</y>
-    <width>212</width>
-    <height>21</height>
-    <font>
-      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="bool_button" version="2.0.0">
-    <name>Boolean Button_1</name>
-    <pv_name>$(C)-Ctrl:SQ9:cFV601-SpecMode</pv_name>
-    <x>50</x>
-    <y>572</y>
-    <width>140</width>
-    <off_label>SpecMode Off</off_label>
-    <on_label>SpecMode On</on_label>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_3</name>
-    <pv_name>$(C)-Ctrl:SQ9:cFV601-SpecMode</pv_name>
-    <x>210</x>
-    <y>572</y>
-    <width>210</width>
-    <height>30</height>
-    <vertical_alignment>1</vertical_alignment>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_3</name>
-    <macros>
-      <P>$(C)</P>
-      <S>LHe</S>
-      <V>FV601</V>
-    </macros>
-    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
-    <x>450</x>
-    <y>570</y>
-    <width>35</width>
-    <height>35</height>
-  </widget>
   <widget type="action_button" version="3.0.0">
     <name>Button Template</name>
     <actions>
@@ -1584,5 +1402,337 @@ $(pv_value)</tooltip>
         <pv_name>Cryo-Dwr:Dwr:StCV5203_Slctd</pv_name>
       </rule>
     </rules>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_2</name>
+    <pv_name>$(C)-LHe:LIC600:sRegOn</pv_name>
+    <x>110</x>
+    <y>342</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>50</x>
+    <y>620</y>
+    <width>435</width>
+    <height>65</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>FV601 special operation mode</text>
+      <x>100</x>
+      <width>212</width>
+      <height>21</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_1</name>
+      <pv_name>$(C)-Ctrl:SQ9:cFV601-SpecMode</pv_name>
+      <y>32</y>
+      <width>140</width>
+      <off_label>SpecMode Off</off_label>
+      <on_label>SpecMode On</on_label>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>$(C)-Ctrl:SQ9:cFV601-SpecMode</pv_name>
+      <x>160</x>
+      <y>32</y>
+      <width>210</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_3</name>
+      <macros>
+        <P>$(C)</P>
+        <S>LHe</S>
+        <V>FV601</V>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
+      <x>400</x>
+      <y>30</y>
+      <width>35</width>
+      <height>35</height>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_24</name>
+    <text>CV600</text>
+    <x>122</x>
+    <y>365</y>
+    <width>42</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <tooltip>LT682</tooltip>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_35</name>
+    <pv_name>$(C)-RHtr:CV580:sAutoRdV</pv_name>
+    <x>185</x>
+    <y>367</y>
+    <width>51</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions>
+      <action type="open_file">
+        <file>../plots/SQ9.plt</file>
+        <description>Open File</description>
+      </action>
+    </actions>
+    <text>Open Plot</text>
+    <x>450</x>
+    <y>550</y>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>20</x>
+    <y>495</y>
+    <width>281</width>
+    <height>47</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_34</name>
+      <pv_name>$(C)-LHe:PT600:sRdV</pv_name>
+      <x>230</x>
+      <y>4</y>
+      <width>51</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>$(C)-LHe:PIC600:sRegOn</pv_name>
+      <x>88</x>
+      <y>3</y>
+      <width>10</width>
+      <height>10</height>
+      <square>true</square>
+      <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_25</name>
+      <text>CV580</text>
+      <x>102</x>
+      <y>26</y>
+      <width>42</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>LT682</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_36</name>
+      <pv_name>$(C)-RHtr:CV580:sAutoRdV</pv_name>
+      <x>165</x>
+      <y>28</y>
+      <width>51</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_21</name>
+      <text>SP PIC600</text>
+      <y>1</y>
+      <width>68</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_14</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):cP_SP_PIC600</pv_name>
+      <x>101</x>
+      <width>56</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_19</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_PIC600</pv_name>
+      <x>165</x>
+      <y>4</y>
+      <width>51</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
   </widget>
 </display>

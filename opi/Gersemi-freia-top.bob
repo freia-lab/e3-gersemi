@@ -50,7 +50,7 @@ sequences</text>
     <x>14</x>
     <y>2</y>
     <width>130</width>
-    <height>47</height>
+    <height>50</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
       </font>
@@ -1309,13 +1309,13 @@ connected to He recovery</tooltip>
               <seq_title>Sequence 21: Valve box warm-up</seq_title>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
-              <step10>Waiting for starting EH703</step10>
+              <step10>Waiting for starting EH701-EH703</step10>
               <step12>Waiting for LT600 to go below min.</step12>
               <step14>Waiting for starting EH600</step14>
               <step16>Warming-up and waiting for stop.</step16>
               <step2>Checking parameters</step2>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ21</text>
@@ -1412,16 +1412,16 @@ connected to He recovery</tooltip>
               <seq_title>Sequence 22: Cryostat warm-up</seq_title>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
-              <step10>Waiting for starting EH473</step10>
-              <step12>Waiting for LT600 to go below min.</step12>
-              <step14>Waiting for starting EH600</step14>
+              <step10>Waiting for starting EH741-EH743</step10>
+              <step12>Waiting for LI670 to go below min.</step12>
+              <step14>Warming up, checking that the flow is below FT581 min</step14>
               <step16>Stopping</step16>
               <step2>Checking parameters</step2>
               <step4>Waiting for Yes/No</step4>
               <step6>Waiting for stopping SQ10-SQ20</step6>
               <step8>Waiting for stopping SQ6</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ22</text>
@@ -1518,15 +1518,15 @@ connected to He recovery</tooltip>
               <seq_title>Sequence 23: Insert warm-up</seq_title>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
-              <step10>Waiting for starting EH765</step10>
+              <step10>Vacuum insert: starting EH761, EH763 and EH765</step10>
               <step12>Waiting for LI660/LI670/LI680 to go below min.</step12>
-              <step14>Stopping</step14>
+              <step14>Warming up. Checking that flow is below FT581 max</step14>
               <step2>Checking parameters</step2>
               <step4>Waiting for Yes/No</step4>
               <step6>Waiting for stopping S10-SQ20</step6>
               <step8>Waiting for stopping SQ7</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ23</text>
@@ -2423,7 +2423,7 @@ shield cooling</tooltip>
               <step10>End of cool-down - wait for CV601 to close</step10>
               <step12>Intermittent mode - wait for reaching LI660/LI670 Min</step12>
               <step14>Regulating (PID mode)</step14>
-              <step15>Go to step 14</step15>
+              <step15>Intermittent mode - wait for reaching LI660/LI670 Min</step15>
               <step16>Cryostat filling - wait for reaching LI660/LI670 Max</step16>
               <step18>Intermittent mode - wait for reaching LI660/LI670 Min</step18>
               <step2>Checking parameters</step2>
@@ -2431,7 +2431,7 @@ shield cooling</tooltip>
               <step4>Waiting for Yes</step4>
               <step8>Cooling cavity - wait for reaching LI660/LI670 Max</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ10</text>
@@ -2935,7 +2935,7 @@ Conditioning He circuits</tooltip>
     <name>Label</name>
     <text>Detected insert:</text>
     <x>8</x>
-    <y>775</y>
+    <y>770</y>
     <width>162</width>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -2958,7 +2958,7 @@ Conditioning He circuits</tooltip>
   <widget type="group" version="2.0.0">
     <name>Grouping Container</name>
     <x>8</x>
-    <y>801</y>
+    <y>795</y>
     <width>153</width>
     <height>20</height>
     <style>3</style>
@@ -3826,5 +3826,65 @@ Alarms</text>
       </color>
     </foreground_color>
     <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED (Multi State)_1</name>
+    <pv_name>Cryo-System:Operation:VisuState</pv_name>
+    <x>10</x>
+    <y>850</y>
+    <width>150</width>
+    <height>22</height>
+    <square>true</square>
+    <states>
+      <state>
+        <value>1</value>
+        <label>OFF</label>
+        <color>
+          <color name="RED" red="252" green="13" blue="27">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>2</value>
+        <label>STANDBY</label>
+        <color>
+          <color name="BLUE" red="79" green="228" blue="250">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>3</value>
+        <label>ON</label>
+        <color>
+          <color name="ON" red="70" green="255" blue="70">
+          </color>
+        </color>
+      </state>
+    </states>
+    <fallback_label>Invalid</fallback_label>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>Liquifier status:</text>
+    <x>8</x>
+    <y>825</y>
+    <width>162</width>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
   </widget>
 </display>

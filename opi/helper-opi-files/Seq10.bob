@@ -111,7 +111,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_14</name>
     <text>CV601 [%]</text>
-    <x>20</x>
+    <x>10</x>
     <y>286</y>
     <width>68</width>
     <height>21</height>
@@ -127,7 +127,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI680</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -193,7 +192,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_15</name>
     <text>CV602 [%]</text>
-    <x>20</x>
+    <x>10</x>
     <y>311</y>
     <width>68</width>
     <height>21</height>
@@ -209,7 +208,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LI680</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -275,7 +273,7 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_17</name>
     <text>SP PIC660 [mbar]</text>
-    <x>20</x>
+    <x>10</x>
     <y>368</y>
     <width>116</width>
     <height>21</height>
@@ -291,7 +289,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT682</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -356,10 +353,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_18</name>
-    <text>SP FIC581 [m3/h]</text>
-    <x>20</x>
+    <text>FT581 Limit [m3/h]</text>
+    <x>10</x>
     <y>415</y>
-    <width>115</width>
+    <width>127</width>
     <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -373,7 +370,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT682</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -455,7 +451,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -537,7 +532,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -619,7 +613,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -746,7 +739,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -828,7 +820,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -910,7 +901,6 @@
     <auto_size>true</auto_size>
     <actions>
     </actions>
-    <tooltip>LT683</tooltip>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
@@ -979,17 +969,17 @@
     <y>247</y>
     <width>1</width>
     <height>228</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="227.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -1147,7 +1137,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_36</name>
-    <pv_name>$(C)-LHe:LT670:sRdV</pv_name>
+    <pv_name>$(C)-LHe:LI670:sRdV</pv_name>
     <x>562</x>
     <y>310</y>
     <width>51</width>
@@ -1177,7 +1167,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_37</name>
-    <pv_name>$(C)-LHe:LT660:sRdV</pv_name>
+    <pv_name>$(C)-LHe:LI660:sRdV</pv_name>
     <x>562</x>
     <y>427</y>
     <width>51</width>
@@ -1294,5 +1284,41 @@ $(pv_value)</tooltip>
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>$(C)-LHe:PIC660:sRegOn</pv_name>
+    <x>125</x>
+    <y>367</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_3</name>
+    <pv_name>$(C)-LHe:LIC670:sRegOn</pv_name>
+    <x>430</x>
+    <y>283</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_4</name>
+    <pv_name>$(C)-LHe:LIC660:sRegOn</pv_name>
+    <x>430</x>
+    <y>400</y>
+    <width>10</width>
+    <height>10</height>
+    <square>true</square>
+    <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
   </widget>
 </display>

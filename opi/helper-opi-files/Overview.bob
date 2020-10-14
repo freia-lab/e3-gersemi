@@ -13,6 +13,23 @@
   </actions>
   <grid_visible>false</grid_visible>
   <widget type="polyline" version="2.0.0">
+    <name>Polyline_6</name>
+    <x>810</x>
+    <y>330</y>
+    <width>1</width>
+    <height>30</height>
+    <points>
+      <point x="0.0" y="30.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="IO 300K GHe" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
     <name>Polyline Template_1</name>
     <x>916</x>
     <y>537</y>
@@ -80,7 +97,7 @@ $(pv_value)</tooltip>
       <x>42</x>
       <y>137</y>
       <width>35</width>
-      <height>26</height>
+      <height>27</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="20.0">
         </font>
@@ -169,7 +186,7 @@ $(pv_value)</tooltip>
       <x>152</x>
       <y>137</y>
       <width>35</width>
-      <height>26</height>
+      <height>27</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="20.0">
         </font>
@@ -270,7 +287,7 @@ $(pv_value)</tooltip>
       <x>300</x>
       <y>165</y>
       <width>78</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="18.0">
         </font>
@@ -295,10 +312,10 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_29</name>
       <text>PT050</text>
-      <x>305</x>
+      <x>325</x>
       <y>188</y>
       <width>37</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -323,7 +340,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_30</name>
       <pv_name>CstatV-Vac:PT050:sRdV</pv_name>
-      <x>307</x>
+      <x>327</x>
       <y>207</y>
       <width>86</width>
       <height>16</height>
@@ -353,10 +370,10 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_29</name>
       <text>PT051</text>
-      <x>305</x>
+      <x>325</x>
       <y>233</y>
       <width>37</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -381,7 +398,7 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_30</name>
       <pv_name>CstatV-Vac:PT051:sRdV</pv_name>
-      <x>307</x>
+      <x>327</x>
       <y>252</y>
       <width>86</width>
       <height>16</height>
@@ -509,137 +526,25 @@ $(pv_value)</tooltip>
         </rules>
       </widget>
     </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>2K Pumps</name>
-    <x>880</x>
-    <y>135</y>
-    <width>196</width>
-    <height>128</height>
-    <style>2</style>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="label" version="2.0.0">
-      <name>Label Template</name>
-      <text>2K Pumps</text>
-      <x>60</x>
-      <width>66</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="15.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Boolean Switch Template</name>
-      <pv_name>CstatH-2Kpumps:Ctrl:cOn</pv_name>
-      <x>19</x>
-      <y>24</y>
-      <width>72</width>
-      <height>63</height>
-      <off_label>OFF</off_label>
-      <off_color>
-        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
-        </color>
-      </off_color>
-      <on_label>ON</on_label>
-      <on_color>
-        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <show_confirm_dialog>1</show_confirm_dialog>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED Template_19</name>
-      <pv_name>CstatH-2Kpumps:Ctrl:sRdy2Start</pv_name>
-      <bit>0</bit>
-      <x>24</x>
-      <y>96</y>
-      <width>141</width>
-      <height>26</height>
-      <off_label>Start Disabled</off_label>
-      <off_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>Ready To Start</on_label>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-    </widget>
-    <widget type="symbol" version="2.0.0">
-      <name>Boolean Symbol Image Control Template</name>
-      <pv_name>CstatH-2Kpumps:Ctrl:sOn</pv_name>
-      <symbols>
-        <symbol>../../freia-symbols/cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
-        <symbol>../../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
-      </symbols>
-      <x>101</x>
-      <y>33</y>
+    <widget type="tank" version="2.0.0">
+      <name>Tank_1</name>
+      <pv_name>$(system):LT600:sRdV</pv_name>
+      <x>265</x>
+      <y>188</y>
       <width>50</width>
-      <height>50</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
+      <height>110</height>
+      <fill_color>
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
         </color>
-      </background_color>
-      <actions>
-      </actions>
-      <preserve_ratio>false</preserve_ratio>
+      </fill_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>Cryo-CBox:LP:PI3290</pv_name>
+      <x>35</x>
+      <y>118</y>
+      <width>75</width>
+      <precision>2</precision>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -759,10 +664,10 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Rehater Output</name>
-    <x>840</x>
-    <y>295</y>
-    <width>237</width>
-    <height>127</height>
+    <x>620</x>
+    <y>120</y>
+    <width>140</width>
+    <height>150</height>
     <style>1</style>
     <foreground_color>
       <color name="GRAY-BORDER" red="121" green="121" blue="121">
@@ -777,8 +682,9 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_5</name>
       <pv_name>$(C)-RHtr:VBox:opMode</pv_name>
+      <x>55</x>
       <y>5</y>
-      <width>233</width>
+      <width>75</width>
       <height>28</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
@@ -801,8 +707,9 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_6</name>
       <pv_name>$(C)-RHtr:Cstat4K:opMode</pv_name>
-      <y>39</y>
-      <width>234</width>
+      <x>55</x>
+      <y>48</y>
+      <width>75</width>
       <height>28</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
@@ -825,8 +732,9 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_7</name>
       <pv_name>$(C)-RHtr:Mag4K:opMode</pv_name>
-      <y>72</y>
-      <width>234</width>
+      <x>55</x>
+      <y>88</y>
+      <width>75</width>
       <height>28</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
@@ -845,6 +753,47 @@ $(pv_value)</tooltip>
         <color red="0" green="128" blue="255">
         </color>
       </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>VBox</text>
+      <x>5</x>
+      <y>8</y>
+      <width>30</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>Liquid
+Insert</text>
+      <x>5</x>
+      <y>38</y>
+      <width>37</width>
+      <height>39</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>Magnet
+Insert</text>
+      <x>5</x>
+      <y>78</y>
+      <width>44</width>
+      <height>39</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <auto_size>true</auto_size>
     </widget>
   </widget>
   <widget type="led" version="2.0.0">
@@ -908,7 +857,7 @@ $(pv_value)</tooltip>
     <x>560</x>
     <y>506</y>
     <width>69</width>
-    <height>23</height>
+    <height>24</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="18.0">
       </font>
@@ -998,7 +947,7 @@ $(pv_value)</tooltip>
     <x>546</x>
     <y>170</y>
     <width>12</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1035,7 +984,7 @@ $(pv_value)</tooltip>
     <x>546</x>
     <y>193</y>
     <width>15</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1069,8 +1018,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template</name>
     <pv_name>CstatV-Vac:PT046:sRdV</pv_name>
-    <x>568</x>
-    <y>256</y>
+    <x>550</x>
+    <y>240</y>
     <width>49</width>
     <height>16</height>
     <font>
@@ -1100,10 +1049,10 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_6</name>
     <text>Pi</text>
-    <x>624</x>
-    <y>255</y>
+    <x>605</x>
+    <y>240</y>
     <width>12</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1262,7 +1211,7 @@ $(pv_value)</tooltip>
     <x>1036</x>
     <y>465</y>
     <width>12</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1299,7 +1248,7 @@ $(pv_value)</tooltip>
     <x>1036</x>
     <y>485</y>
     <width>15</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1367,7 +1316,7 @@ $(pv_value)</tooltip>
     <x>1126</x>
     <y>548</y>
     <width>12</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -1672,7 +1621,7 @@ $(pv_value)</tooltip>
     <macros>
       <pv>CstatV-Vac:TP050</pv>
     </macros>
-    <x>532</x>
+    <x>515</x>
     <y>226</y>
     <width>30</width>
     <height>30</height>
@@ -1924,7 +1873,7 @@ Click for details</tooltip>
       <x>69</x>
       <y>109</y>
       <width>32</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1981,7 +1930,7 @@ Click for details</tooltip>
       <x>26</x>
       <y>216</y>
       <width>43</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2023,7 +1972,7 @@ Click for details</tooltip>
         </color>
       </background_color>
       <fill_color>
-        <color red="0" green="64" blue="255">
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
         </color>
       </fill_color>
       <empty_color>
@@ -2135,7 +2084,7 @@ Click for details</tooltip>
       <x>69</x>
       <y>109</y>
       <width>32</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2234,7 +2183,7 @@ Click for details</tooltip>
         </color>
       </background_color>
       <fill_color>
-        <color red="0" green="64" blue="255">
+        <color name="IO Liquid Helium" red="51" green="102" blue="255">
         </color>
       </fill_color>
       <empty_color>
@@ -2390,5 +2339,358 @@ $(pv_value)</tooltip>
       <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <file>../../freia-symbols/display-builder/CmdPanels/2KpumpsAndGasBag.bob</file>
+    <x>839</x>
+    <y>130</y>
+    <width>590</width>
+    <height>240</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>620</x>
+    <y>280</y>
+    <width>140</width>
+    <height>190</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rounded Rectangle Template_2</name>
+      <width>140</width>
+      <height>190</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+      <corner_width>16</corner_width>
+      <corner_height>16</corner_height>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_128</name>
+      <text>TT580</text>
+      <x>43</x>
+      <y>37</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_129</name>
+      <text>Reheater</text>
+      <x>30</x>
+      <y>10</y>
+      <width>61</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>CstatV-RHtr:TT580</name>
+      <macros>
+        <pv>CstatV-RHtr:TT580</pv>
+      </macros>
+      <x>31</x>
+      <y>57</y>
+      <width>66</width>
+      <height>19</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_35</name>
+        <pv_name>CstatV-RHtr:TT580:sRdV</pv_name>
+        <width>66</width>
+        <height>19</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+          <action type="open_display">
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.bob</file>
+            <macros>
+              <AI>$(P)-RHtr:TT580</AI>
+            </macros>
+            <target>standalone</target>
+          </action>
+        </actions>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_29</name>
+        <actions>
+          <action type="open_display">
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-AI.bob</file>
+            <macros>
+              <AI>$(pv)</AI>
+            </macros>
+            <target>standalone</target>
+            <description>AI Control</description>
+          </action>
+        </actions>
+        <text></text>
+        <width>66</width>
+        <height>18</height>
+        <transparent>true</transparent>
+        <tooltip>$(pv)</tooltip>
+      </widget>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_27</name>
+      <macros>
+        <MULTI_HTR>AC</MULTI_HTR>
+        <P>CstatV</P>
+        <S>RHtr</S>
+        <V>EH580</V>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatV-Heater2flip-lne-pv.bob</file>
+      <x>10</x>
+      <y>76</y>
+      <width>110</width>
+      <height>95</height>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>CstatV-RHtr:TS580</name>
+      <macros>
+        <pv>CstatV-RHtr:TS580</pv>
+      </macros>
+      <x>91</x>
+      <y>127</y>
+      <width>36</width>
+      <height>16</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="led" version="2.0.0">
+        <name>TS370</name>
+        <pv_name>$(P)-RHtr:TS580:sProcInp</pv_name>
+        <width>36</width>
+        <height>16</height>
+        <off_color>
+          <color name="RED" red="252" green="13" blue="27">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color red="192" green="192" blue="192">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color name="GRAY" red="169" green="169" blue="169">
+          </color>
+        </line_color>
+        <square>true</square>
+        <actions>
+          <action type="open_display">
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
+            <macros>
+              <DI>CstatV-SHe:TS370</DI>
+            </macros>
+            <target>standalone</target>
+          </action>
+        </actions>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_37</name>
+        <actions>
+          <action type="open_display">
+            <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
+            <macros>
+              <DI>$(pv)</DI>
+            </macros>
+            <target>standalone</target>
+            <description>DI Control</description>
+          </action>
+        </actions>
+        <text></text>
+        <y>1</y>
+        <width>36</width>
+        <height>15</height>
+        <transparent>true</transparent>
+        <tooltip>$(pv)</tooltip>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_127</name>
+      <text>TS580</text>
+      <x>90</x>
+      <y>110</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_2</name>
+    <x>440</x>
+    <y>330</y>
+    <width>175</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="48.61111111111111" y="0.0">
+      </point>
+      <point x="175.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_3</name>
+    <x>565</x>
+    <y>360</y>
+    <width>50</width>
+    <height>130</height>
+    <points>
+      <point x="0.0" y="130.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="50.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_4</name>
+    <x>760</x>
+    <y>360</y>
+    <width>90</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="90.0" y="0.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_5</name>
+    <x>760</x>
+    <y>110</y>
+    <width>440</width>
+    <height>220</height>
+    <points>
+      <point x="0.0" y="220.0">
+      </point>
+      <point x="50.0" y="220.0">
+      </point>
+      <point x="50.0" y="0.0">
+      </point>
+      <point x="440.0" y="0.0">
+      </point>
+      <point x="440.0" y="20.0">
+      </point>
+    </points>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_30</name>
+    <macros>
+      <P>CstatV</P>
+      <S>RHtr</S>
+      <V>FV584</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
+    <x>772</x>
+    <y>333</y>
+    <width>51</width>
+    <height>28</height>
   </widget>
 </display>
