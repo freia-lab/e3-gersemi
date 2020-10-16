@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Seq8</name>
   <width>590</width>
-  <height>720</height>
+  <height>725</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -2723,16 +2723,27 @@ LT600 can be switched off.
       </tab>
     </tabs>
     <x>16</x>
-    <y>305</y>
+    <y>335</y>
     <width>570</width>
     <height>385</height>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <active_tab>1</active_tab>
     <tab_height>10</tab_height>
     <actions>
     </actions>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_12</name>
+    <macros>
+      <HtrNr>670</HtrNr>
+      <S>LHe</S>
+    </macros>
+    <file>../Embedded/heater3T.bob</file>
+    <x>15</x>
+    <y>300</y>
+    <width>300</width>
+    <height>25</height>
   </widget>
 </display>

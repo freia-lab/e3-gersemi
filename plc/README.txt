@@ -40,4 +40,5 @@ GERSEMI_PLC_2020_10_15 - KG, Added the missing parameters in SQ22 and SQ23 (the 
 		placement of TT644 its temperature is up to 120K even if there is a LHe in the cryostat (and pt100 sensors are
 		not operational). Change in FC413.
 
+GERSEMI_PLC_2020_10_16 - KG, Updated initial values of the COMM_PARAM (DB410) data block according to the last settings.
 
