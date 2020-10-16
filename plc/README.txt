@@ -35,6 +35,9 @@ GERSEMI_PLC_2020_03_04 - KG, Renamed TIC690-TIC693 to TIC654-TIC657 accordingly.
 		from TT690-TT693 to TT654-657. Updated Sysmbol table, DB100 and DB101 in the source files and compiled them,
 		DB312, FC123, FC411, FC557 and FC562.
 
-
+GERSEMI_PLC_2020_10_15 - KG, Added the missing parameters in SQ22 and SQ23 (the flow limits). Changes in FC563, FC117, FC118,
+		DB222, DB223. Changed the threshols for TT644 for ext command for the heaters from 50 to 120K. Due to the
+		placement of TT644 its temperature is up to 120K even if there is a LHe in the cryostat (and pt100 sensors are
+		not operational). Change in FC413.
 
 
