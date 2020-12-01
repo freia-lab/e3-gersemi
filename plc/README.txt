@@ -41,4 +41,9 @@ GERSEMI_PLC_2020_10_15 - KG, Added the missing parameters in SQ22 and SQ23 (the 
 		not operational). Change in FC413.
 
 GERSEMI_PLC_2020_10_16 - KG, Updated initial values of the COMM_PARAM (DB410) data block according to the last settings.
+GERSEMI_PLC_2020_12_01 - KG, Fixed an error in handling the end switches of FV681 (FC405). 
+		Added condition for ignoring the Quench_detect signal when the current from the magnet PS is less then a 
+		theshold (FC218). In this version the threshold is saved in COMM_PARAM (DB410). The PS current is sent from 
+		HNOSS PLC in Datas_PLC_Horizontal (DB130).
+		Added conditions on current leads temperature sent to the magLPS PLC (FC132). 
 
