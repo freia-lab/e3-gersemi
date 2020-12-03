@@ -774,6 +774,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ18,	cP_SP_LIC683,   5360, FLOAT, sP_SP_LIC683, 7654, "%"}
 {SQ18,	cP_CV583,       5364, FLOAT, sP_CV583,     7658, "%"}
 {SQ18,	cP_CV602,       5368, FLOAT, sP_CV602,     7662, "%"}
+{SQ18,	cP_QuenchI_min, 5372, FLOAT, sP_QuenchI_min,7666, "A"}
 
 {SQ19,	cP_SP_TT654,   	5430, FLOAT, sP_SP_TT654,  7742, "K"}
 {SQ19,	cP_SP_FT650,   	5434, FLOAT, sP_SP_FT650,  7746, "m3/h"}
@@ -833,10 +834,11 @@ file "gersemi-SQbinPar.template" { pattern
 {SQ25,	 P_Isolated,   5926,  0,    8346, 0}
 }
 
-file "gersemi-SQfault.template" { pattern
-{SUBS,	 SIG,          OFFS, BIT}
-{SQ24,	 FltPre,       5410,  0}
-{SQ25,	 FltPre,       5410,  0}
+file "gersemi-SQbinStat.template" { pattern
+{SUBS,	 SIG,          OFFS, BIT, ZNAM,		ONAM}
+{SQ24,	 FltPre,       5410,  0,  "OK",		"Fault"}
+{SQ25,	 FltPre,       5410,  0,  "OK",		"Fault"}
+{SQ18,	 QuenchIgnore, 7599,  2,  "No",		"Yes"}
 }
 
 file "gersemi-SQ1-3.template" { pattern
