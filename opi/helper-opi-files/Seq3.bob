@@ -28,7 +28,7 @@
     <x>13</x>
     <y>217</y>
     <width>148</width>
-    <height>26</height>
+    <height>27</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="20.0">
       </font>
@@ -56,7 +56,7 @@
     <x>317</x>
     <y>217</y>
     <width>82</width>
-    <height>26</height>
+    <height>27</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="20.0">
       </font>
@@ -84,7 +84,7 @@
     <x>10</x>
     <y>248</y>
     <width>82</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -113,7 +113,7 @@
     <x>10</x>
     <y>273</y>
     <width>79</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -142,7 +142,7 @@
     <x>10</x>
     <y>298</y>
     <width>70</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -171,7 +171,7 @@
     <x>10</x>
     <y>323</y>
     <width>67</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -200,7 +200,7 @@
     <x>272</x>
     <y>248</y>
     <width>79</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -228,7 +228,7 @@
     <x>272</x>
     <y>273</y>
     <width>83</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -256,7 +256,7 @@
     <x>272</x>
     <y>298</y>
     <width>129</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -284,7 +284,7 @@
     <x>271</x>
     <y>323</y>
     <width>119</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -526,9 +526,9 @@
     <name>Label Template_19</name>
     <text>Valves [%]:</text>
     <x>10</x>
-    <y>354</y>
+    <y>360</y>
     <width>96</width>
-    <height>26</height>
+    <height>27</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="20.0">
       </font>
@@ -874,10 +874,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_27</name>
     <text>StartDelay [s]:</text>
-    <x>378</x>
-    <y>354</y>
+    <x>250</x>
+    <y>360</y>
     <width>125</width>
-    <height>26</height>
+    <height>27</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="20.0">
       </font>
@@ -902,8 +902,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_15</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cStartDly</pv_name>
-    <x>400</x>
-    <y>392</y>
+    <x>272</x>
+    <y>388</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -930,8 +930,8 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_22</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sStartDly</pv_name>
-    <x>462</x>
-    <y>396</y>
+    <x>334</x>
+    <y>392</y>
     <width>47</width>
     <height>18</height>
     <font>
@@ -1031,6 +1031,53 @@
         <color name="IO Border" red="215" green="215" blue="215">
         </color>
       </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>400</x>
+    <y>360</y>
+    <width>140</width>
+    <height>26</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_31</name>
+      <text>P090 Status:</text>
+      <width>108</width>
+      <height>27</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>This pump is manually controlled.
+Status ON is needed for this sequence.</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(C)-Vac:P090-sOn:sProcInp</pv_name>
+      <x>120</x>
+      <y>3</y>
+      <off_color>
+        <color name="STOP" red="222" green="33" blue="22">
+        </color>
+      </off_color>
     </widget>
   </widget>
 </display>

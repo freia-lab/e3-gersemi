@@ -15,7 +15,6 @@
     <y>150</y>
     <width>195</width>
     <height>196</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="195.0">
       </point>
@@ -28,6 +27,7 @@
       <point x="145.0" y="1.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -39,7 +39,6 @@ $(pv_value)</tooltip>
     <y>149</y>
     <width>370</width>
     <height>197</height>
-    <line_width>2</line_width>
     <points>
       <point x="369.0" y="0.0">
       </point>
@@ -52,6 +51,7 @@ $(pv_value)</tooltip>
       <point x="369.0" y="196.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -63,13 +63,13 @@ $(pv_value)</tooltip>
     <y>235</y>
     <width>312</width>
     <height>1</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="311.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -109,39 +109,29 @@ $(pv_value)</tooltip>
     <y>150</y>
     <width>146</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
     <points>
       <point x="145.0" y="0.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
     <actions>
     </actions>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
   </widget>
-  <widget type="picture" version="2.0.0">
-    <name>Image Template</name>
-    <file>../../freia-symbols/cryogenics/PV_Vacuum_Pump.svg</file>
-    <x>150</x>
-    <y>126</y>
-    <width>36</width>
-    <height>46</height>
-    <actions>
-    </actions>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
     <text>Vacuum pump</text>
     <x>110</x>
-    <y>112</y>
+    <y>100</y>
     <width>86</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -169,7 +159,7 @@ $(pv_value)</tooltip>
     <x>23</x>
     <y>139</y>
     <width>104</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -197,13 +187,13 @@ $(pv_value)</tooltip>
     <y>112</y>
     <width>1</width>
     <height>39</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="38.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -264,7 +254,7 @@ $(pv_value)</tooltip>
     <x>117</x>
     <y>317</y>
     <width>74</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -320,7 +310,7 @@ $(pv_value)</tooltip>
     <x>290</x>
     <y>15</y>
     <width>147</width>
-    <height>28</height>
+    <height>29</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="22.0">
       </font>
@@ -377,7 +367,7 @@ $(pv_value)</tooltip>
     <x>232</x>
     <y>248</y>
     <width>37</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -434,18 +424,18 @@ $(pv_value)</tooltip>
     <y>288</y>
     <width>1</width>
     <height>58</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <line_style>1</line_style>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="0.0" y="57.0">
       </point>
     </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <line_style>1</line_style>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -514,7 +504,7 @@ $(pv_value)</tooltip>
     <x>573</x>
     <y>303</y>
     <width>37</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -571,7 +561,7 @@ $(pv_value)</tooltip>
     <x>805</x>
     <y>139</y>
     <width>50</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -599,7 +589,7 @@ $(pv_value)</tooltip>
     <x>806</x>
     <y>213</y>
     <width>74</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -627,7 +617,7 @@ $(pv_value)</tooltip>
     <x>634</x>
     <y>252</y>
     <width>37</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -741,7 +731,7 @@ $(pv_value)</tooltip>
     <x>728</x>
     <y>252</y>
     <width>37</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -798,7 +788,6 @@ $(pv_value)</tooltip>
     <y>223</y>
     <width>162</width>
     <height>26</height>
-    <line_width>2</line_width>
     <points>
       <point x="161.0" y="0.0">
       </point>
@@ -815,6 +804,7 @@ $(pv_value)</tooltip>
       <point x="161.0" y="25.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -826,7 +816,7 @@ $(pv_value)</tooltip>
     <x>806</x>
     <y>239</y>
     <width>81</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -854,7 +844,7 @@ $(pv_value)</tooltip>
     <x>675</x>
     <y>303</y>
     <width>37</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -943,7 +933,7 @@ $(pv_value)</tooltip>
       <name>Label Template_155</name>
       <text>Supercritical</text>
       <width>75</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -970,7 +960,7 @@ $(pv_value)</tooltip>
       <text>Helium</text>
       <y>16</y>
       <width>43</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -995,12 +985,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_32</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV600</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>485</x>
     <y>128</y>
     <width>35</width>
@@ -1008,12 +998,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_33</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV660</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>485</x>
     <y>213</y>
     <width>35</width>
@@ -1021,12 +1011,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_34</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>SHe</S>
       <V>FV380</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>485</x>
     <y>323</y>
     <width>35</width>
@@ -1034,12 +1024,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_35</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>Vac</S>
       <V>FV090</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>261</x>
     <y>129</y>
     <width>35</width>
@@ -1047,12 +1037,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_36</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>Vac</S>
       <V>FV092</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <x>284</x>
     <y>334</y>
     <width>35</width>
@@ -1060,15 +1050,90 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_28</name>
-    <file>../../freia-symbols/display-builder/CstatValveNO-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>Vac</S>
       <V>FV091</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValveNO-v-lr-pv.bob</file>
     <x>204</x>
     <y>89</y>
     <width>51</width>
     <height>28</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>CstatV-Vac:P090</name>
+    <macros>
+      <pv>CstatV-Vac:P090</pv>
+    </macros>
+    <x>150</x>
+    <y>135</y>
+    <width>30</width>
+    <height>30</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="symbol" version="2.0.0">
+      <name>CstatV-Vac:P090</name>
+      <pv_name>$(pv)-sOn:sProcInp</pv_name>
+      <symbols>
+        <symbol>../../freia-symbols/cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
+        <symbol>../../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+      </symbols>
+      <width>30</width>
+      <height>30</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <rotation>180.0</rotation>
+      <actions execute_as_one="true">
+        <action type="open_display">
+          <file>TP_TD20.bob</file>
+          <macros>
+            <P>CstatV-Vac:TP060</P>
+          </macros>
+          <target>standalone</target>
+        </action>
+      </actions>
+      <tooltip>$(pv_name)
+Click for details</tooltip>
+      <preserve_ratio>false</preserve_ratio>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_71</name>
+      <actions>
+        <action type="open_display">
+          <file>../../freia-symbols/display-builder/CmdPanels/CstatV-DI.bob</file>
+          <macros>
+            <DI>$(pv)-sOn</DI>
+            <P>$(pv)</P>
+          </macros>
+          <target>window</target>
+          <description>Pump Control</description>
+        </action>
+      </actions>
+      <text></text>
+      <x>3</x>
+      <y>3</y>
+      <width>25</width>
+      <height>25</height>
+      <transparent>true</transparent>
+      <tooltip>$(pv)</tooltip>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>P090</text>
+    <x>145</x>
+    <y>115</y>
+    <width>33</width>
+    <height>21</height>
+    <font>
+      <font name="SMALL-SANS-PLAIN" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
   </widget>
 </display>
