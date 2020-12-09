@@ -316,3 +316,57 @@ record (bo, "CstatV-RHtr:opMode:cmdRstM4KtoBaloon") {
   field (UDFS, "NO_ALARM")
   field (SDIS, "CstatV-Ctrl:opMode:sLocal")
 }
+
+# SQ15 related data
+# Magnets dT/dL (TT665M-TT662M)/SQ15:sP_DeltaL
+
+record (calcout, "CstatV-Ctrl:SQ15:dT/dL-HIGH") {
+  field (SCAN, "10 second")
+  field (INPA, "CstatV-Ctrl:SQ15:sP_dT_o_dL_max")
+  field (CALC, "A")
+  field (OUT, "CstatV-Ctrl:SQ15:dT/dL.HIGH PP")
+  field (FLNK, "CstatV-Ctrl:SQ15:dT/dL-LOW")
+}
+record (calcout, "CstatV-Ctrl:SQ15:dT/dL-LOW") {
+  field (INPA, "CstatV-Ctrl:SQ15:sP_dT_o_dL_max")
+  field (CALC, "-A")
+  field (OUT, "CstatV-Ctrl:SQ15:dT/dL.LOW PP")
+}
+
+record (calc, "CstatV-Ctrl:SQ15:dT/dL") {
+  field (INPA, "CstatV-LHe:TT665M:sRdV")
+  field (INPB, "CstatV-LHe:TT662M:sRdV")
+  field (INPC, "CstatV-Ctrl:SQ15:sP_DeltaL")
+  field (CALC, "(A-B)/C")
+  field (PREC, "1")
+  field (HSV, "MAJOR")
+  field (LSV, "MAJOR")
+  field (EGU, "K/m")
+}
+
+record (calcout, "CstatV-Ctrl:SQ15:dT/dt-HIGH") {
+  field (SCAN, "10 second")
+  field (INPA, "CstatV-Ctrl:SQ15:sP_dT_o_dt_max")
+  field (CALC, "A")
+  field (OUT, "CstatV-Ctrl:SQ15:dT/dt.HIGH")
+  field (FLNK, "CstatV-Ctrl:SQ15:dT/dt-LOW")
+}
+
+record (calcout, "CstatV-Ctrl:SQ15:dT/dt-LOW") {
+  field (INPA, "CstatV-Ctrl:SQ15:sP_dT_o_dt_max")
+  field (CALC, "-A")
+  field (OUT, "CstatV-Ctrl:SQ15:dT/dt.LOW PP")
+}
+
+record (calc, "CstatV-Ctrl:SQ15:dT/dt") {
+  field (INPA, "CstatV-LHe:TT662M:sRdV")
+  field (INPB, "CstatV-Ctrl:SQ15:dT/dt.LA")
+  field (INPC, "CstatV-Ctrl:SQ15:dT/dt")
+  field (INPD, "CstatV-Ctrl:SQ15:dT/dt.LC")
+  field (INPE, "0.9")
+  field (CALC, "6*(A-B)*(1-E)+E*C")
+  field (PREC, "1")
+  field (HSV, "MAJOR")
+  field (LSV, "MAJOR")
+  field (EGU, "K/min")
+}

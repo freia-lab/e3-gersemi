@@ -188,7 +188,7 @@ sequences</text>
           <file>helper-opi-files/Seq$(nr).bob</file>
           <macros>
             <seq_no>SQ$(nr)</seq_no>
-            <seq_title>Seq 20: Emptying the cryostat</seq_title>
+            <seq_title>Seq 20: Emptying the cryostat to the extra dewar</seq_title>
             <step0>Not running</step0>
             <step1>Checking parameters</step1>
             <step10>Isolate VB tank - waiting for CV601 to close</step10>
@@ -205,7 +205,7 @@ sequences</text>
             <step6>Waiting for Yes/No</step6>
             <step8>Waiting for Yes/No</step8>
           </macros>
-          <target>standalone</target>
+          <target>window</target>
         </action>
       </actions>
       <text>SQ$(nr)</text>

@@ -28,7 +28,7 @@
     <name>Label Template_15</name>
     <text>CV581</text>
     <x>30</x>
-    <y>217</y>
+    <y>225</y>
     <width>42</width>
     <height>21</height>
     <foreground_color>
@@ -52,8 +52,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_8</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV581</pv_name>
-    <x>160</x>
-    <y>217</y>
+    <x>100</x>
+    <y>223</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -79,9 +79,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_13</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV581</pv_name>
-    <x>222</x>
-    <y>221</y>
-    <width>67</width>
+    <x>162</x>
+    <y>226</y>
+    <width>60</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -108,7 +108,7 @@
     <name>Label Template_1</name>
     <text>CV583</text>
     <x>30</x>
-    <y>250</y>
+    <y>257</y>
     <width>42</width>
     <height>21</height>
     <foreground_color>
@@ -132,8 +132,8 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_1</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV583</pv_name>
-    <x>160</x>
-    <y>250</y>
+    <x>100</x>
+    <y>255</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -159,9 +159,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_1</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV583</pv_name>
-    <x>222</x>
-    <y>254</y>
-    <width>67</width>
+    <x>162</x>
+    <y>258</y>
+    <width>60</width>
     <height>18</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="13.0">
@@ -188,7 +188,7 @@
     <name>Label Template_2</name>
     <text>Max pressure</text>
     <x>30</x>
-    <y>295</y>
+    <y>309</y>
     <width>88</width>
     <height>21</height>
     <foreground_color>
@@ -213,7 +213,7 @@
     <name>Text Input Template_2</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_P_max</pv_name>
     <x>160</x>
-    <y>295</y>
+    <y>309</y>
     <width>56</width>
     <height>25</height>
     <font>
@@ -240,7 +240,7 @@
     <name>Text Update Template_2</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_P_max</pv_name>
     <x>222</x>
-    <y>299</y>
+    <y>313</y>
     <width>67</width>
     <height>18</height>
     <font>
@@ -309,7 +309,7 @@
     <name>Text Update Template_34</name>
     <pv_name>$(C)-LHe:PT660L:sRdV</pv_name>
     <x>312</x>
-    <y>299</y>
+    <y>313</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -339,7 +339,7 @@
     <name>Text Update Template_35</name>
     <pv_name>$(C)-LHe:PT660V:sRdV</pv_name>
     <x>437</x>
-    <y>300</y>
+    <y>314</y>
     <width>50</width>
     <height>15</height>
     <font>
@@ -369,7 +369,7 @@
     <name>Text Update Template_36</name>
     <pv_name>$(C)-LHe:PT660M:sRdV</pv_name>
     <x>375</x>
-    <y>286</y>
+    <y>300</y>
     <width>51</width>
     <height>18</height>
     <font>
@@ -399,7 +399,7 @@
     <name>Text Update Template_37</name>
     <pv_name>$(C)-LHe:PT681:sRdV</pv_name>
     <x>376</x>
-    <y>310</y>
+    <y>324</y>
     <width>50</width>
     <height>15</height>
     <font>
@@ -422,6 +422,214 @@
     <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_14</name>
+    <pv_name>$(C)-RHtr:CV581:sRdV</pv_name>
+    <x>240</x>
+    <y>226</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_15</name>
+    <pv_name>$(C)-RHtr:CV583:sRdV</pv_name>
+    <x>240</x>
+    <y>258</y>
+    <width>60</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_9</name>
+    <text>cP</text>
+    <x>120</x>
+    <y>200</y>
+    <width>18</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_10</name>
+    <text>sP</text>
+    <x>180</x>
+    <y>200</y>
+    <width>17</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_11</name>
+    <text>sRdV</text>
+    <x>250</x>
+    <y>200</y>
+    <width>35</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_12</name>
+    <text>cP</text>
+    <x>180</x>
+    <y>290</y>
+    <width>18</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_13</name>
+    <text>sP</text>
+    <x>240</x>
+    <y>290</y>
+    <width>17</width>
+    <height>21</height>
+    <font>
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
       </color>
     </border_color>
   </widget>
