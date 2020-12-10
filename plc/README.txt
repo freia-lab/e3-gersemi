@@ -49,4 +49,6 @@ GERSEMI_PLC_2020_12_01 - KG, Fixed an error in handling the end switches of FV68
 GERSEMI_PLC_2020_12_03 - KG, Added some fields to the genearal part of Epics buffers (V9). Compiled the sources for DB100/DB101.
 		Removed old (not working) CV5203 related stuff and added a CstatV-Ctrl:CV5203:sOpenReq PV for use of the 
 		Linde IOC sequencer program (steeing of this variable on Gersemi PLC is not done yet).
-		Added PV indicating the status of the Quench ignore git in SQ18.
+		Added PV indicating the status of the Quench ignore bit in SQ18.
+GERSEMI_PLC_2020_12_09 - KG, Moved the Magnet current threshold for the qunech ignore condition from COMM_PARAM to SQ18 parameters.
+		Added possibility to switch between Local (WinCC) and Remote (Epics) modes of operation from Epics.

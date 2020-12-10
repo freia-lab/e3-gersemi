@@ -17,12 +17,11 @@
   <grid_visible>false</grid_visible>
   <widget type="label" version="2.0.0">
     <name>Label Template_3</name>
-    <text>Automatic 
-sequences</text>
-    <x>41</x>
-    <y>87</y>
-    <width>72</width>
-    <height>41</height>
+    <text>Automatic sequences</text>
+    <x>10</x>
+    <y>120</y>
+    <width>142</width>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="15.0">
       </font>
@@ -71,40 +70,6 @@ sequences</text>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
     </border_color>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED Template</name>
-    <pv_name>$(C)-Ctrl:opMode:sLocal</pv_name>
-    <bit>0</bit>
-    <x>12</x>
-    <y>56</y>
-    <width>136</width>
-    <height>32</height>
-    <off_label>Remote / Epics</off_label>
-    <off_color>
-      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-      </color>
-    </off_color>
-    <on_label>Local / WinCC</on_label>
-    <on_color>
-      <color name="RED" red="252" green="13" blue="27">
-      </color>
-    </on_color>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <line_color>
-      <color name="GRAY" red="169" green="169" blue="169">
-      </color>
-    </line_color>
-    <square>true</square>
-    <actions>
-    </actions>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Grouping Container_7</name>
@@ -2556,7 +2521,7 @@ shield cooling</tooltip>
   <widget type="group" version="2.0.0">
     <name>Circuits conditioning</name>
     <x>4</x>
-    <y>140</y>
+    <y>145</y>
     <width>164</width>
     <height>75</height>
     <style>2</style>
@@ -3886,5 +3851,100 @@ Alarms</text>
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>4</x>
+    <y>49</y>
+    <width>166</width>
+    <height>68</height>
+    <style>2</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <transparent>true</transparent>
+    <widget type="led" version="2.0.0">
+      <name>LED Template</name>
+      <pv_name>$(C)-Ctrl:opMode:sLocal</pv_name>
+      <bit>0</bit>
+      <x>15</x>
+      <y>2</y>
+      <width>136</width>
+      <height>32</height>
+      <off_label>Remote / Epics</off_label>
+      <off_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </off_color>
+      <on_label>Local / WinCC</on_label>
+      <on_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color name="GRAY" red="169" green="169" blue="169">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Give control to WinCC</description>
+        </action>
+      </actions>
+      <pv_name>CstatV-Ctrl:opMode:cmdLocal</pv_name>
+      <text>WinCC</text>
+      <x>15</x>
+      <y>38</y>
+      <width>61</width>
+      <height>26</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_2</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Take control</description>
+        </action>
+      </actions>
+      <pv_name>CstatV-Ctrl:opMode:cmdRemote</pv_name>
+      <text>Epics</text>
+      <x>90</x>
+      <y>38</y>
+      <width>61</width>
+      <height>26</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
   </widget>
 </display>
