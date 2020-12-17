@@ -370,3 +370,117 @@ record (calc, "CstatV-Ctrl:SQ15:dT/dt") {
   field (LSV, "MAJOR")
   field (EGU, "K/min")
 }
+
+#####################################################################
+#
+# PVs for the sequencer program for automatic 2K pumps start-up
+#
+#####################################################################
+
+record (bo, "$(P)-Ctrl:SQ13:c2KpumpsAuto") {
+  field(DESC, "2K Pumps automatic start-up")
+  field(ZNAM, "Manual")
+  field(ONAM, "Automatic")
+  field(VAL, "0")
+  field(PINI, "YES")
+}
+
+record (ao, "$(P)-Ctrl:SQ13:cP_2KpumpsStep") {
+  field(DESC, "2K Pumps step at start-up")
+  field(VAL, 10)
+  field(PINI, "YES")
+  field(EGU, "%")
+}
+
+record (ao, "$(P)-Ctrl:SQ13:cP_FT551forStartUp") {
+  field(DESC, "Flow limit at start-up")
+  field(VAL, 60)
+  field(PINI, "YES")
+  field(EGU, "m3/h")
+}
+
+record (ao, "$(P)-Ctrl:SQ13:cP_WHfinal") {
+  field(DESC, "WH Pumps final value at start-up")
+  field(VAL, 50)
+  field(PINI, "YES")
+  field(EGU, "%")
+}
+
+record (bo, "$(P)-Ctrl:SQ17:c2KpumpsAuto") {
+  field(DESC, "2K Pumps automatic start-up")
+  field(ZNAM, "Manual")
+  field(ONAM, "Automatic")
+  field(VAL, "0")
+  field(PINI, "YES")
+}
+
+record (ao, "$(P)-Ctrl:SQ17:cP_2KpumpsStep") {
+  field(DESC, "2K Pumps step at start-up")
+  field(VAL, 10)
+  field(PINI, "YES")
+  field(EGU, "%")
+}
+
+record (ao, "$(P)-Ctrl:SQ17:cP_FT551forStartUp") {
+  field(DESC, "Flow limit at start-up")
+  field(VAL, 60)
+  field(PINI, "YES")
+  field(EGU, "m3/h")
+}
+
+record (ao, "$(P)-Ctrl:SQ17:cP_WHfinal") {
+  field(DESC, "WH Pumps final value at start-up")
+  field(VAL, 50)
+  field(PINI, "YES")
+  field(EGU, "%")
+}
+
+record (bo, "$(P)-Ctrl:SQ13/17:c2KpumpsHold") {
+  field(DESC, "Hold 2K Pumps warm-up")
+  field(ZNAM, "Auto")
+  field(ONAM, "Hold")
+  field(VAL, "0")
+  field(PINI, "YES")
+}
+
+record (stringin, "$(P)-Ctrl:SQ13/17:sStep2KstartUpStr") {
+  field(DESC, "2K Pumps start-up state")
+}
+
+record (longout, "$(P)-Ctrl:SQ13/17:cStep2KstartUp") {
+  field(DESC, "2K pumps start-up step")
+}
+
+record (calc, "$(P)-Ctrl:SQ13/17:2KSeq-timer") {
+  field(SCAN, "1 second")
+  field(EGU, "s")
+  field(INPA, "$(P)-Ctrl:SQ13/17:2KSeq-timer")
+  field(INPB, "$(P)-Ctrl:SQ13/17:cStep2KstartUp")
+  field(INPC, "$(P)-Ctrl:SQ13/17:2KSeq-timer.LB")
+  field(CALC, "(B#C)||(B==0)?0:A+1")
+  field(VAL, "0")
+  field(PINI, "YES")
+  field(HIGH, "2700")
+  field(HIHI, "3600")
+  field(HSV, "MINOR")
+  field(HHSV, "MAJOR")
+}
+
+#####################################################################
+#
+# PVs for the sequencer program for special mode of operation for FV601
+#
+#####################################################################
+
+record (bo, "$(P)-Ctrl:SQ9:cFV601-SpecMode") {
+  field(DESC, "Special operation of FV601")
+  field(ZNAM, "Normal Operation")
+  field(ONAM, "FV601 open when filling")
+  field(VAL, "0")
+  field(PINI, "YES")
+}
+
+record (stringin, "$(P)-Ctrl:SQ9:cFV601-SpecModState") {
+  field(DESC, "FV601-SpecMode state")
+}
+

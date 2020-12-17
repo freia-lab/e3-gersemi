@@ -10,7 +10,7 @@ EXCLUDE_ARCHS += eldk
 #EPICSVERSION = 3.14.15.2
 #EPICS_VERSION = 3.14.15.2
 
-SOURCES = -none-
+#SOURCES = -none-
 
 #STARTUPS = $(wildcard startup/*.cmd)
 
