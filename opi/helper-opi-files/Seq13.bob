@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Seq13</name>
   <width>780</width>
-  <height>800</height>
+  <height>1000</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -1997,60 +1997,6 @@ $(pv_value)</tooltip>
     </actions>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label Template_24</name>
-    <text>2K Pumps speed [%]</text>
-    <x>302</x>
-    <y>387</y>
-    <width>137</width>
-    <height>21</height>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_50</name>
-    <pv_name>CstatH-2Kpumps:AllPumps:sFreq</pv_name>
-    <x>448</x>
-    <y>388</y>
-    <width>51</width>
-    <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>1</precision>
-    <show_units>false</show_units>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>Label_6</name>
     <text>cP</text>
     <x>65</x>
@@ -2504,7 +2450,7 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <x>20</x>
-    <y>740</y>
+    <y>960</y>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
@@ -2516,14 +2462,14 @@ $(pv_value)</tooltip>
       </action>
     </actions>
     <x>130</x>
-    <y>740</y>
+    <y>960</y>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>Plots</text>
     <x>20</x>
-    <y>710</y>
+    <y>930</y>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2535,5 +2481,14 @@ $(pv_value)</tooltip>
     <x>455</x>
     <y>250</y>
     <width>30</width>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_13</name>
+    <file>../Embedded/2Kpumps-sq-param.bob</file>
+    <x>10</x>
+    <y>700</y>
+    <width>760</width>
+    <height>220</height>
+    <border_width>1</border_width>
   </widget>
 </display>

@@ -21,7 +21,6 @@
     <x>10</x>
     <y>120</y>
     <width>142</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="15.0">
       </font>
@@ -606,7 +605,7 @@
             <file>helper-opi-files/Seq$(nr).bob</file>
             <macros>
               <seq_no>SQ$(nr)</seq_no>
-              <seq_title>Seq. 17: Magnet - operation at 2.K</seq_title>
+              <seq_title>Seq. 17: Magnet - operation at 2 K</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
               <step10>Keeping overpressure</step10>
@@ -617,7 +616,7 @@
               <step6>Keeping vacuum</step6>
               <step8>Filling up with GHe</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
