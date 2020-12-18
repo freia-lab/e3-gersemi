@@ -1,25 +1,4 @@
-program FV601_SpecMode
-
-int specMode;
-int SQ9_state;
-int FV601cmdAuto, FV601cmdMan, FV601cmdOpen, FV601cmdClose;
-string seq_state;
-
-assign seq_state to "{p1}-Ctrl:SQ9:cFV601-SpecModState";
-assign specMode to "{p1}-Ctrl:SQ9:cFV601-SpecMode";
-assign SQ9_state to "{p1}-Ctrl:SQ9:sStep";
-assign FV601cmdAuto to "{p1}-LHe:FV601:cmdAuto";
-assign FV601cmdMan to "{p1}-LHe:FV601:cmdMan";
-assign FV601cmdOpen to "{p1}-LHe:FV601:cmdSet";
-assign FV601cmdClose to "{p1}-LHe:FV601:cmdRst";
-
-monitor SQ9_state;
-monitor seq_state;
-monitor specMode;
-monitor FV601cmdAuto;
-monitor FV601cmdMan;
-monitor FV601cmdOpen;
-monitor FV601cmdClose;
+program AutoStart2KPumps
 
 // Variables for 2K pumps startup sequence
 int startupStep;
@@ -85,64 +64,6 @@ monitor rampStep_SQ13;
 monitor rampStep_SQ17;
 monitor final_WH_SQ13;
 monitor final_WH_SQ17;
-
-ss FV601_sm {
-
-  state init {
-    entry {
-      sprintf (seq_state, "Init");
-      pvPut (seq_state);
-      FV601cmdAuto = 0;
-      FV601cmdMan = 0;
-      FV601cmdOpen = 0;
-      FV601cmdClose = 0;
-    }
-    when (pvConnectCount() == pvAssignCount()) {
-      printf ("In state init - all pvs connected\n");
-    } state iddle
-    when (delay(5) || (pvConnectCount() != pvAssignCount())) {
-    } state connect_timeout
-  }
-
-  state connect_timeout {
-    entry {
-      sprintf (seq_state, "Connect time-out");
-      pvPut (seq_state);
-    }
-    when (pvConnectCount() == pvAssignCount()) {} state iddle
-    when (delay (3600)) {
-      printf ("Leaving state connect_timeout\n");
-    } state init
-  }
-
-  state iddle {
-    entry { 
-      sprintf (seq_state, "Iddle");
-      pvPut (seq_state);
-      printf ("Iddle - Will put FV601 in Auto mode\n");
-      FV601cmdAuto = 1;
-      pvPut (FV601cmdAuto);     
-    }
-    when (pvConnectCount() != pvAssignCount()) {} state connect_timeout
-    when ((SQ9_state == 18) &&  (specMode != 0)) {} state filling
-  }
-
-  state filling {
-    entry { 
-      sprintf (seq_state, "Filling");
-      pvPut (seq_state);
-      printf ("Will put FV601 in Manuual and open it\n");
-      FV601cmdMan = 1;
-      pvPut (FV601cmdMan);
-      FV601cmdOpen = 1;
-      pvPut (FV601cmdOpen);
-    }
-    when (pvConnectCount() != pvAssignCount()) { } state connect_timeout
-    when ((SQ9_state != 18) ||  (specMode == 0)) {
-      printf ("Leaving filling state\n");
-    } state iddle
-  }
-}
 
 ss Pumps_startup {
 

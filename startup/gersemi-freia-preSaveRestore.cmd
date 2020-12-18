@@ -37,6 +37,6 @@ set_pass1_restoreFile("ioc-gersemi-freia.sav")
 
 # specify directories in which to to search for included request files
 #set_requestfile_path("./")
-set_requestfile_path("$(REQUIRE_ioc-gersemi-freia_PATH)/misc/")
+set_requestfile_path("$(REQUIRE_ioc_gersemi_freia_PATH)/misc/")
 
 dbLoadRecords("save_restoreStatus.db"), "P=$(AUTOSAVE_SYSM_PV_PREFIX)")

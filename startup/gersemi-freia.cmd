@@ -20,3 +20,5 @@ iocInit
 requireSnippet(gersemi-freia-postSaveRestore.cmd)
 requireSnippet(userPostDriverConf-gersemi-freia.cmd)
 
+seq AutoStart2KPumps, "p1=CstatV"
+
