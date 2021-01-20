@@ -75,6 +75,9 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Panel 2</name>
+    <macros>
+      <V>5203</V>
+    </macros>
     <x>15</x>
     <y>62</y>
     <width>429</width>
@@ -287,7 +290,7 @@ $(pv_value)</tooltip>
       <x>300</x>
       <y>165</y>
       <width>78</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="18.0">
         </font>
@@ -315,7 +318,7 @@ $(pv_value)</tooltip>
       <x>325</x>
       <y>188</y>
       <width>37</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -373,7 +376,7 @@ $(pv_value)</tooltip>
       <x>325</x>
       <y>233</y>
       <width>37</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -452,80 +455,6 @@ $(pv_value)</tooltip>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     </widget>
-    <widget type="group" version="2.0.0">
-      <name>CryoButtons</name>
-      <x>49</x>
-      <y>37</y>
-      <width>223</width>
-      <height>50</height>
-      <style>2</style>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <widget type="radio" version="2.0.0">
-        <name>Choice Button</name>
-        <pv_name>Cryo-Dwr:CV-5203:OpenClsCmd.OMSL</pv_name>
-        <x>4</x>
-        <y>6</y>
-        <width>117</width>
-        <height>38</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="11.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <horizontal>false</horizontal>
-        <actions>
-        </actions>
-        <items>
-          <item>Item 1</item>
-          <item>Item 2</item>
-        </items>
-      </widget>
-      <widget type="action_button" version="3.0.0">
-        <name>Button Template</name>
-        <actions>
-          <action type="write_pv">
-            <pv_name>$(pv_name)</pv_name>
-            <value>1</value>
-            <description>Open/Close the valve</description>
-          </action>
-        </actions>
-        <pv_name>Cryo-Dwr:CV-5203:OpenClsCmd</pv_name>
-        <text>Open/close</text>
-        <x>110</x>
-        <y>6</y>
-        <width>102</width>
-        <height>36</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <rules>
-          <rule name="ButtonTxt" prop_id="text" out_exp="false">
-            <exp bool_exp="pv0==0">
-              <value>Open</value>
-            </exp>
-            <exp bool_exp="pv0==1">
-              <value>Close</value>
-            </exp>
-            <pv_name>Cryo-Dwr:Dwr:StCV5203_Slctd</pv_name>
-          </rule>
-        </rules>
-      </widget>
-    </widget>
     <widget type="tank" version="2.0.0">
       <name>Tank_1</name>
       <pv_name>$(system):LT600:sRdV</pv_name>
@@ -545,6 +474,55 @@ $(pv_value)</tooltip>
       <y>118</y>
       <width>75</width>
       <precision>2</precision>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_12</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Open/Close</description>
+        </action>
+      </actions>
+      <pv_name>Cryo-Dwr:CV-$(V):OpenClsCmd</pv_name>
+      <x>205</x>
+      <y>8</y>
+      <tooltip>Toggle between Open and Close
+of UY$(V).</tooltip>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_4</name>
+      <pv_name>Cryo-Dwr:CV$(V):cAuto</pv_name>
+      <x>205</x>
+      <y>40</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>Automatic control</text>
+      <x>65</x>
+      <y>40</y>
+      <width>122</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <class>COMMENT</class>
+      <text>Request to open</text>
+      <x>60</x>
+      <y>68</y>
+      <width>106</width>
+      <font>
+        <font name="Comment" family="Source Sans Pro" style="ITALIC" size="16.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_5</name>
+      <pv_name>$(P)-Ctrl:CV$(V):sOpenReq</pv_name>
+      <x>175</x>
+      <y>68</y>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -760,7 +738,7 @@ $(pv_value)</tooltip>
       <x>5</x>
       <y>8</y>
       <width>30</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -857,7 +835,7 @@ $(pv_value)</tooltip>
     <x>560</x>
     <y>506</y>
     <width>69</width>
-    <height>23</height>
+    <height>24</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="18.0">
       </font>
@@ -1855,7 +1833,7 @@ Click for details</tooltip>
       <x>69</x>
       <y>109</y>
       <width>32</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1912,7 +1890,7 @@ Click for details</tooltip>
       <x>26</x>
       <y>216</y>
       <width>43</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2066,7 +2044,7 @@ Click for details</tooltip>
       <x>69</x>
       <y>109</y>
       <width>32</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2123,7 +2101,7 @@ Click for details</tooltip>
       <x>26</x>
       <y>216</y>
       <width>47</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2364,7 +2342,7 @@ $(pv_value)</tooltip>
       <x>43</x>
       <y>37</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2557,7 +2535,7 @@ $(pv_value)</tooltip>
       <x>90</x>
       <y>110</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
