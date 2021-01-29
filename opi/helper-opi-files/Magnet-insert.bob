@@ -11,7 +11,6 @@
   </background_color>
   <actions>
   </actions>
-  <grid_visible>false</grid_visible>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_12</name>
     <x>666</x>
@@ -751,7 +750,7 @@ $(pv_value)</tooltip>
           <x>10</x>
           <y>71</y>
           <width>44</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -1218,63 +1217,6 @@ $(pv_value)</tooltip>
         </border_color>
       </widget>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_146</name>
-      <text>LT683</text>
-      <x>70</x>
-      <y>282</y>
-      <width>36</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_155</name>
-      <pv_name>$(system):LT683:sRdV</pv_name>
-      <x>67</x>
-      <y>300</y>
-      <width>39</width>
-      <height>16</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <precision>2</precision>
-      <show_units>false</show_units>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="GRAY-BORDER" red="121" green="121" blue="121">
-        </color>
-      </border_color>
-    </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_2</name>
       <pv_name>CstatV-LHe:TT667M:sRdV</pv_name>
@@ -1367,7 +1309,7 @@ $(pv_value)</tooltip>
       <macros>
         <NR>660</NR>
       </macros>
-      <x>289</x>
+      <x>320</x>
       <y>146</y>
       <width>223</width>
       <height>111</height>
@@ -2787,6 +2729,61 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_146</name>
+      <text>LT683</text>
+      <y>362</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_155</name>
+      <pv_name>$(system):LT683:sRdV</pv_name>
+      <y>380</y>
+      <width>39</width>
+      <height>16</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_8</name>
@@ -3170,7 +3167,7 @@ $(pv_value)</tooltip>
     <x>346</x>
     <y>501</y>
     <width>36</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -4341,7 +4338,7 @@ $(pv_value)</tooltip>
       <x>20</x>
       <y>69</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -4657,7 +4654,7 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_174</name>
       <text>TT$(CERNOX_NR)</text>
-      <x>95</x>
+      <x>10</x>
       <y>180</y>
       <width>36</width>
       <height>18</height>
@@ -4712,7 +4709,6 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_175</name>
       <pv_name>$(system):TT$(CERNOX_NR):sRdV</pv_name>
-      <x>81</x>
       <y>197</y>
       <width>66</width>
       <height>17</height>
@@ -4824,7 +4820,7 @@ $(pv_value)</tooltip>
       <x>20</x>
       <y>69</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5164,7 +5160,7 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_174</name>
       <text>TT$(CERNOX_NR)</text>
-      <x>95</x>
+      <x>10</x>
       <y>180</y>
       <width>36</width>
       <height>18</height>
@@ -5275,7 +5271,6 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_175</name>
       <pv_name>$(system):TT$(CERNOX_NR):sRdV</pv_name>
-      <x>81</x>
       <y>197</y>
       <width>66</width>
       <height>17</height>
@@ -5636,7 +5631,7 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_174</name>
       <text>TT$(CERNOX_NR)</text>
-      <x>95</x>
+      <x>10</x>
       <y>180</y>
       <width>36</width>
       <height>18</height>
@@ -5694,7 +5689,7 @@ $(pv_value)</tooltip>
       <x>20</x>
       <y>69</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -5775,7 +5770,6 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_175</name>
       <pv_name>$(system):TT$(CERNOX_NR):sRdV</pv_name>
-      <x>81</x>
       <y>197</y>
       <width>66</width>
       <height>17</height>
@@ -5831,7 +5825,7 @@ $(pv_value)</tooltip>
       <x>20</x>
       <y>69</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6163,7 +6157,7 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label Template_174</name>
       <text>TT$(CERNOX_NR)</text>
-      <x>95</x>
+      <x>10</x>
       <y>180</y>
       <width>36</width>
       <height>18</height>
@@ -6274,7 +6268,6 @@ $(pv_value)</tooltip>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update Template_175</name>
       <pv_name>$(system):TT$(CERNOX_NR):sRdV</pv_name>
-      <x>81</x>
       <y>198</y>
       <width>66</width>
       <height>17</height>
@@ -8866,7 +8859,7 @@ Gas Bag</text>
       <x>1</x>
       <y>15</y>
       <width>54</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>

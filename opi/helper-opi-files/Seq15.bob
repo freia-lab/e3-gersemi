@@ -2238,4 +2238,10 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>=(`CstatV-LHe:TT665M:sRdV`-`CstatV-LHe:TT663M:sRdV`)/`$(C)-Ctrl:$(seq_no):sP_DeltaL`</pv_name>
+    <x>350</x>
+    <y>613</y>
+  </widget>
 </display>
