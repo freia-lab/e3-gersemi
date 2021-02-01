@@ -4,7 +4,7 @@ GERSEMI_PLC_2019_10_21_End - AJ, 2019-10-21, Changed FC313, FC404, FC556, DB313.
 		- Show correct level for LI760 (LT670+LT671)
 		- Keep valves FV640, FV641, FV642 and FV643 open when operating one sequence after another. Example:
 			start sequence 10 (FV640 opens), stop sequence 10 (FV640 closes) but when starting sequence
- 			12 open FV640 again.
+ 			12 open FV640 again<<<<.15
 		- When cooling the 4K tank have CV600 regulating with FT580
 		- VAT valves to show warning in GUI if there is an error 
 
@@ -52,3 +52,7 @@ GERSEMI_PLC_2020_12_03 - KG, Added some fields to the genearal part of Epics buf
 		Added PV indicating the status of the Quench ignore bit in SQ18.
 GERSEMI_PLC_2020_12_09 - KG, Moved the Magnet current threshold for the qunech ignore condition from COMM_PARAM to SQ18 parameters.
 		Added possibility to switch between Local (WinCC) and Remote (Epics) modes of operation from Epics.
+GERSEMI_PLC_20221_01_27 - KG, TEMPORARY change substituted TT662M with TT663M in FC215 (G7_SQ15)
+GERSEMI_PLC_20221_01_30 - KG, Changed only in FC562 (Manage_PID) NW99 - added condition that the FIC581 regulator can be on only
+		when switching sequence for 4K circuit is in step 0, 10 or 20.
+

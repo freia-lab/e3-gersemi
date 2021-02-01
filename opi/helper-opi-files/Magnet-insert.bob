@@ -248,35 +248,6 @@ $(pv_value)</tooltip>
         </border_color>
       </widget>
       <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template_67</name>
-        <pv_name>$(system):TT665M:sRdV</pv_name>
-        <x>318</x>
-        <y>17</y>
-        <width>66</width>
-        <height>17</height>
-        <font>
-          <font family="Source Sans Pro" style="BOLD" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <precision>2</precision>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_width>2</border_width>
-        <border_color>
-          <color name="GRAY-BORDER" red="121" green="121" blue="121">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
         <name>Text Update Template_68</name>
         <pv_name>$(system):TT662M:sRdV</pv_name>
         <x>202</x>
@@ -829,6 +800,35 @@ $(pv_value)</tooltip>
         <y>31</y>
         <width>95</width>
         <height>95</height>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_67</name>
+        <pv_name>$(system):TT665M:sRdV</pv_name>
+        <x>318</x>
+        <y>17</y>
+        <width>66</width>
+        <height>17</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <precision>2</precision>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </border_color>
       </widget>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -4062,62 +4062,6 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <transparent>true</transparent>
-    <precision>2</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_167</name>
-    <text>TT641A</text>
-    <x>810</x>
-    <y>888</y>
-    <width>44</width>
-    <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_171</name>
-    <pv_name>$(system):TT641A:sRdV</pv_name>
-    <x>803</x>
-    <y>907</y>
-    <width>66</width>
-    <height>17</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
     <precision>2</precision>
     <wrap_words>false</wrap_words>
     <actions>
@@ -8463,33 +8407,6 @@ Gas Bag</text>
     </border_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label Template_91</name>
-    <text>TT665M</text>
-    <x>933</x>
-    <y>590</y>
-    <width>47</width>
-    <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>Label Template_170</name>
     <text>TT661A</text>
     <x>1041</x>
@@ -9238,6 +9155,89 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_167</name>
+    <text>TT641A</text>
+    <x>810</x>
+    <y>888</y>
+    <width>44</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_171</name>
+    <pv_name>$(system):TT641A:sRdV</pv_name>
+    <x>803</x>
+    <y>907</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_91</name>
+    <text>TT665M</text>
+    <x>933</x>
+    <y>590</y>
+    <width>47</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
     <vertical_alignment>1</vertical_alignment>
     <actions>
     </actions>
