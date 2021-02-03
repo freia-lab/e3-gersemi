@@ -6315,34 +6315,6 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>$(system):FIC$(NR):sRegOn</pv_name>
-      <x>57</x>
-      <y>4</y>
-      <width>10</width>
-      <height>9</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Grouping Container_24</name>
@@ -6420,34 +6392,6 @@ $(pv_value)</tooltip>
         <color name="GRAY-BORDER" red="121" green="121" blue="121">
         </color>
       </border_color>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_1</name>
-      <pv_name>$(system):FIC$(NR):sRegOn</pv_name>
-      <x>57</x>
-      <y>4</y>
-      <width>10</width>
-      <height>9</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -6527,34 +6471,6 @@ $(pv_value)</tooltip>
         </color>
       </border_color>
     </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_2</name>
-      <pv_name>$(system):FIC$(NR):sRegOn</pv_name>
-      <x>57</x>
-      <y>4</y>
-      <width>10</width>
-      <height>9</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>$(pv)</name>
@@ -6632,34 +6548,6 @@ $(pv_value)</tooltip>
         <color name="GRAY-BORDER" red="121" green="121" blue="121">
         </color>
       </border_color>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_3</name>
-      <pv_name>$(system):FIC$(NR):sRegOn</pv_name>
-      <x>57</x>
-      <y>4</y>
-      <width>10</width>
-      <height>9</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color red="0" green="255" blue="0">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="192" green="192" blue="192">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color red="150" green="150" blue="150">
-        </color>
-      </line_color>
-      <square>true</square>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
@@ -8598,7 +8486,7 @@ Gas Bag</text>
       <S>LHe</S>
       <V>CV650</V>
     </macros>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-FlowCtrlValve-h-pv.bob</file>
     <x>1010</x>
     <y>60</y>
     <width>50</width>
@@ -8611,7 +8499,7 @@ Gas Bag</text>
       <S>LHe</S>
       <V>CV651</V>
     </macros>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-FlowCtrlValve-h-pv.bob</file>
     <x>1127</x>
     <y>105</y>
     <width>50</width>
@@ -8624,7 +8512,7 @@ Gas Bag</text>
       <S>LHe</S>
       <V>CV652</V>
     </macros>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-FlowCtrlValve-h-pv.bob</file>
     <x>1240</x>
     <y>150</y>
     <width>50</width>
@@ -8637,7 +8525,7 @@ Gas Bag</text>
       <S>LHe</S>
       <V>CV653</V>
     </macros>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
+    <file>../../freia-symbols/display-builder/CstatV-FlowCtrlValve-h-pv.bob</file>
     <x>1369</x>
     <y>195</y>
     <width>50</width>

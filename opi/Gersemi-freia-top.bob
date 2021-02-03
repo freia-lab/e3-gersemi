@@ -826,15 +826,13 @@ level and pressure at 2 K</tooltip>
               <seq_title>Seq 19: Magnet - current leads cooling</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack</step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step10>Closing the cooling circuit (FV587)</step10>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
+              <step4>Opening FV587</step4>
+              <step6>Controlling the current leads temperatures</step6>
+              <step8>Decreasing the flows</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
@@ -3236,7 +3234,7 @@ Conditioning He circuits</tooltip>
               <x>40</x>
               <y>30</y>
               <width>90</width>
-              <height>12</height>
+              <height>13</height>
               <font>
                 <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
                 </font>

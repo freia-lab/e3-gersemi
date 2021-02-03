@@ -55,4 +55,18 @@ GERSEMI_PLC_2020_12_09 - KG, Moved the Magnet current threshold for the qunech i
 GERSEMI_PLC_20221_01_27 - KG, TEMPORARY change substituted TT662M with TT663M in FC215 (G7_SQ15)
 GERSEMI_PLC_20221_01_30 - KG, Changed only in FC562 (Manage_PID) NW99 - added condition that the FIC581 regulator can be on only
 		when switching sequence for 4K circuit is in step 0, 10 or 20.
+GERSEMI_PLC_20221_02_03 - KG, Changed control of the current leads heating. In the original version there were PID controllers 
+		FIC650-FIC653 used for this purpose (completely wrong - it didn't work). In fact the valves CV650-653 are not 
+		controlled directly but via an internal PID controller. The set point for the controller is tha gas flow flow
+		(from 0 to 3 m3/h). Removed completely PID controllers FIC650-FIC653 (left the data block unchanged but in the 
+		future if we would need more PID controllers we can rename them and use for other purpose).
+		Moved all control logic from the Manage_PID function block to Manage_analog_valves. Changed blocks: FC411, FC557
+		and FC562).
+		Changed the scaling of FT650-FT653: was 10 m3/h, real value is 3 m3/h - 50 slm (stanadard litre per minute). Changed
+		blocks DB321 and FC404
+		Changed the logic of SQ19 - transition from step 8 to 10. The old logic made that ususally set point for FT653 was
+		not ready with ramping to 0 before the sequence stopped. This logic can be changede and the ramping down removed 
+		completely. Changed block: FC219.
 
+		
+		
