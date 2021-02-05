@@ -1,0 +1,2467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>magnet-insert</name>
+  <width>520</width>
+  <height>700</height>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon_1</name>
+    <x>20</x>
+    <y>144</y>
+    <width>499</width>
+    <height>520</height>
+    <points>
+      <point x="87.0" y="0.0">
+      </point>
+      <point x="498.0" y="0.0">
+      </point>
+      <point x="498.0" y="225.0">
+      </point>
+      <point x="448.0" y="225.0">
+      </point>
+      <point x="448.0" y="520.0">
+      </point>
+      <point x="48.0" y="520.0">
+      </point>
+      <point x="48.0" y="225.0">
+      </point>
+      <point x="0.0" y="225.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>0</line_width>
+    <line_color>
+      <color red="128" green="0" blue="255">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="BLUE-BACKGROUND" red="195" green="226" blue="225">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_151</name>
+    <text>PT660M</text>
+    <x>203</x>
+    <y>20</y>
+    <width>47</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_163</name>
+    <pv_name>CstatV-LHe:PT660M:sRdV</pv_name>
+    <x>190</x>
+    <y>40</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_152</name>
+    <text>PT661M</text>
+    <x>207</x>
+    <y>57</y>
+    <width>47</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_159</name>
+    <text>LI680</text>
+    <x>423</x>
+    <y>380</y>
+    <width>32</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="meter" version="3.0.0">
+    <name>Meter</name>
+    <x>22</x>
+    <y>624</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_164</name>
+    <pv_name>$(system):TT647:sRdV</pv_name>
+    <x>297</x>
+    <y>680</y>
+    <width>66</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <x>10</x>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_162</name>
+    <text>TT647</text>
+    <x>295</x>
+    <y>663</y>
+    <width>36</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_163</name>
+    <text>TT644</text>
+    <x>216</x>
+    <y>663</y>
+    <width>36</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_165</name>
+    <pv_name>$(system):TT644:sRdV</pv_name>
+    <x>207</x>
+    <y>679</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_9</name>
+    <x>310</x>
+    <width>1</width>
+    <height>245</height>
+    <points>
+      <point x="0.0" y="245.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_166</name>
+    <pv_name>CstatV-LHe:PT681:sRdV</pv_name>
+    <x>440</x>
+    <y>59</y>
+    <width>75</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_166</name>
+    <text>PT680</text>
+    <x>465</x>
+    <y>40</y>
+    <width>37</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_167</name>
+    <text>PT681</text>
+    <x>465</x>
+    <y>77</y>
+    <width>37</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_45</name>
+    <macros>
+      <P>CstatV</P>
+      <S>RHtr</S>
+      <V>FV587</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
+    <x>272</x>
+    <y>5</y>
+    <width>50</width>
+    <height>28</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_171</name>
+    <pv_name>CstatV-LHe:FT650:sRdV</pv_name>
+    <x>360</x>
+    <y>60</y>
+    <width>65</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_172</name>
+    <pv_name>CstatV-LHe:FT651:sRdV</pv_name>
+    <x>360</x>
+    <y>80</y>
+    <width>65</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_173</name>
+    <pv_name>CstatV-LHe:FT652:sRdV</pv_name>
+    <x>360</x>
+    <y>100</y>
+    <width>65</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_174</name>
+    <pv_name>CstatV-LHe:FT653:sRdV</pv_name>
+    <x>360</x>
+    <y>120</y>
+    <width>65</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_171</name>
+    <text>FT650</text>
+    <x>320</x>
+    <y>60</y>
+    <width>36</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_172</name>
+    <text>FT651</text>
+    <x>320</x>
+    <y>80</y>
+    <width>36</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_173</name>
+    <text>FT652</text>
+    <x>320</x>
+    <y>100</y>
+    <width>36</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_174</name>
+    <text>FT653</text>
+    <x>320</x>
+    <y>120</y>
+    <width>36</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_160</name>
+    <pv_name>CstatV-LHe:PT661M:sRdV</pv_name>
+    <x>190</x>
+    <y>76</y>
+    <width>80</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_64</name>
+    <text></text>
+    <x>51</x>
+    <y>342</y>
+    <width>0</width>
+    <height>12</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_48</name>
+    <pv_name>CstatV-LHe:TT691:sRdV</pv_name>
+    <x>360</x>
+    <y>290</y>
+    <width>55</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_130</name>
+    <pv_name>CstatV-LHe:TT693:sRdV</pv_name>
+    <x>360</x>
+    <y>330</y>
+    <width>55</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_133</name>
+    <pv_name>CstatV-LHe:TT692:sRdV</pv_name>
+    <x>360</x>
+    <y>310</y>
+    <width>55</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_155</name>
+    <pv_name>$(system):LI680:sRdV</pv_name>
+    <x>410</x>
+    <y>400</y>
+    <width>61</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="tank" version="2.0.0">
+    <name>Progress Bar Template</name>
+    <pv_name>$(system):LI680:sRdV</pv_name>
+    <x>472</x>
+    <y>384</y>
+    <width>25</width>
+    <height>280</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <fill_color>
+      <color red="0" green="203" blue="255">
+      </color>
+    </fill_color>
+    <empty_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </empty_color>
+    <scale_visible>false</scale_visible>
+    <actions>
+    </actions>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>magnet</name>
+    <x>221</x>
+    <y>454</y>
+    <width>242</width>
+    <height>210</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle Template</name>
+      <width>171</width>
+      <height>171</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BLUE-GROUP-BACKGROUND" red="179" green="209" blue="209">
+        </color>
+      </background_color>
+      <corner_width>5</corner_width>
+      <corner_height>10</corner_height>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_65</name>
+      <text>Magnet</text>
+      <x>60</x>
+      <y>70</y>
+      <width>62</width>
+      <height>25</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_134</name>
+      <pv_name>$(system):TT664M:sRdV</pv_name>
+      <x>175</x>
+      <y>78</y>
+      <width>60</width>
+      <height>16</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_135</name>
+      <pv_name>$(system):TT665M:sRdV</pv_name>
+      <x>175</x>
+      <y>18</y>
+      <width>60</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_136</name>
+      <pv_name>$(system):TT663M:sRdV</pv_name>
+      <x>175</x>
+      <y>152</y>
+      <width>60</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_66</name>
+      <text>TT664M</text>
+      <x>174</x>
+      <y>60</y>
+      <width>47</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_160</name>
+      <text>TT665M</text>
+      <x>177</x>
+      <width>47</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_161</name>
+      <text>TT663M</text>
+      <x>177</x>
+      <y>134</y>
+      <width>47</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_165</name>
+      <text>TT662M</text>
+      <x>107</x>
+      <y>170</y>
+      <width>47</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_137</name>
+      <pv_name>$(system):TT662M:sRdV</pv_name>
+      <x>105</x>
+      <y>188</y>
+      <width>60</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_170</name>
+      <text>dT/dL</text>
+      <x>20</x>
+      <y>137</y>
+      <width>35</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_170</name>
+      <pv_name>$(C)-Ctrl:SQ15:dT/dL</pv_name>
+      <x>60</x>
+      <y>137</y>
+      <width>60</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>1</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_153</name>
+    <text>TT691</text>
+    <x>320</x>
+    <y>290</y>
+    <width>36</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_154</name>
+    <text>TT692</text>
+    <x>320</x>
+    <y>310</y>
+    <width>36</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_155</name>
+    <text>TT693</text>
+    <x>320</x>
+    <y>330</y>
+    <width>36</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>71</x>
+    <y>381</y>
+    <width>400</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="400.0" y="0.0">
+      </point>
+    </points>
+    <line_width>5</line_width>
+    <line_color>
+      <color red="139" green="105" blue="20">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_168</name>
+    <text>LT682</text>
+    <x>455</x>
+    <y>200</y>
+    <width>36</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_168</name>
+    <pv_name>$(system):LT682:sRdV</pv_name>
+    <x>450</x>
+    <y>220</y>
+    <width>61</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <show_units>false</show_units>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="tank" version="2.0.0">
+    <name>Progress Bar Template_1</name>
+    <pv_name>$(system):LT682:sRdV</pv_name>
+    <x>436</x>
+    <y>195</y>
+    <width>10</width>
+    <height>180</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="10.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <fill_color>
+      <color red="0" green="203" blue="255">
+      </color>
+    </fill_color>
+    <empty_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </empty_color>
+    <scale_visible>false</scale_visible>
+    <actions>
+    </actions>
+    <limits_from_pv>false</limits_from_pv>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_167</name>
+    <pv_name>CstatV-LHe:PT680:sRdV</pv_name>
+    <x>440</x>
+    <y>96</y>
+    <width>75</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>1</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_169</name>
+    <pv_name>CstatV-LHe:TT690:sRdV</pv_name>
+    <x>360</x>
+    <y>270</y>
+    <width>55</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_169</name>
+    <text>TT690</text>
+    <x>320</x>
+    <y>270</y>
+    <width>36</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_10</name>
+    <x>311</x>
+    <y>244</y>
+    <width>1</width>
+    <height>120</height>
+    <points>
+      <point x="0.0" y="119.99999999999999">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>10</line_width>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>FV680</name>
+    <macros>
+      <P>CstatV</P>
+      <S>LHe</S>
+      <V>FV680</V>
+    </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
+    <x>55</x>
+    <y>355</y>
+    <width>51</width>
+    <height>28</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>30</x>
+    <y>100</y>
+    <width>220</width>
+    <height>410</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rounded Rectangle</name>
+      <y>11</y>
+      <width>210</width>
+      <height>233</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="210" green="210" blue="208">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_17</name>
+      <x>7</x>
+      <y>41</y>
+      <width>36</width>
+      <height>222</height>
+      <points>
+        <point x="0.0" y="221.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="35.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <arrows>2</arrows>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_18</name>
+      <x>83</x>
+      <y>175</y>
+      <width>1</width>
+      <height>130</height>
+      <points>
+        <point x="0.0" y="129.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_19</name>
+      <x>135</x>
+      <width>1</width>
+      <height>305</height>
+      <points>
+        <point x="0.0" y="304.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_176</name>
+      <text>TT686</text>
+      <x>137</x>
+      <y>12</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_177</name>
+      <pv_name>CstatV-LHe:TT686:sRdV</pv_name>
+      <x>139</x>
+      <y>30</y>
+      <width>55</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_177</name>
+      <text>TT685</text>
+      <x>138</x>
+      <y>127</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_178</name>
+      <pv_name>CstatV-LHe:TT685:sRdV</pv_name>
+      <x>141</x>
+      <y>144</y>
+      <width>55</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_178</name>
+      <text>TT683</text>
+      <x>39</x>
+      <y>200</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_11</name>
+      <x>62</x>
+      <y>304</y>
+      <width>95</width>
+      <height>31</height>
+      <points>
+        <point x="21.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="21.0" y="15.0">
+        </point>
+        <point x="0.0" y="30.0">
+        </point>
+        <point x="94.0" y="30.0">
+        </point>
+        <point x="73.0" y="15.0">
+        </point>
+        <point x="94.0" y="0.0">
+        </point>
+        <point x="73.0" y="0.0">
+        </point>
+      </points>
+      <line_width>2</line_width>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_180</name>
+      <text>HX683</text>
+      <x>90</x>
+      <y>306</y>
+      <width>38</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_181</name>
+      <text>TT684</text>
+      <x>95</x>
+      <y>284</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_181</name>
+      <pv_name>CstatV-LHe:TT684:sRdV</pv_name>
+      <x>139</x>
+      <y>285</y>
+      <width>65</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_17</name>
+      <x>88</x>
+      <y>333</y>
+      <width>12</width>
+      <height>26</height>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="12.0" y="26.33333333333337">
+        </point>
+      </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="IO Foreground" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <arrow_length>10</arrow_length>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <x>39</x>
+      <y>40</y>
+      <width>45</width>
+      <height>135</height>
+      <line_width>2</line_width>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_HX</name>
+      <x>60</x>
+      <y>75</y>
+      <width>91</width>
+      <height>52</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="rectangle" version="2.0.0">
+        <name>Rounded Rectangle Template</name>
+        <width>90</width>
+        <height>50</height>
+        <line_width>1</line_width>
+        <background_color>
+          <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+          </color>
+        </background_color>
+        <corner_width>16</corner_width>
+        <corner_height>16</corner_height>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline Template_20</name>
+        <x>9</x>
+        <width>67</width>
+        <height>51</height>
+        <points>
+          <point x="66.0" y="0.0">
+          </point>
+          <point x="66.0" y="5.0">
+          </point>
+          <point x="1.0" y="5.0">
+          </point>
+          <point x="1.0" y="13.0">
+          </point>
+          <point x="26.0" y="13.0">
+          </point>
+          <point x="26.0" y="21.0">
+          </point>
+          <point x="1.0" y="21.0">
+          </point>
+          <point x="1.0" y="29.0">
+          </point>
+          <point x="26.0" y="29.0">
+          </point>
+          <point x="26.0" y="37.0">
+          </point>
+          <point x="1.0" y="37.0">
+          </point>
+          <point x="0.0" y="45.0">
+          </point>
+          <point x="66.0" y="45.0">
+          </point>
+          <point x="66.0" y="50.0">
+          </point>
+        </points>
+        <line_width>2</line_width>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_182</name>
+        <text>HX680</text>
+        <x>37</x>
+        <y>16</y>
+        <width>38</width>
+        <height>19</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_183</name>
+      <pv_name>CstatV-LHe:TT683:sRdV</pv_name>
+      <x>41</x>
+      <y>218</y>
+      <width>70</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_184</name>
+      <pv_name>CstatV-LHe:TT687:sRdV</pv_name>
+      <x>59</x>
+      <y>142</y>
+      <width>70</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_185</name>
+      <pv_name>CstatV-LHe:TT688:sRdV</pv_name>
+      <x>51</x>
+      <y>50</y>
+      <width>70</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_183</name>
+      <text>TT688</text>
+      <x>87</x>
+      <y>33</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_184</name>
+      <text>TT687</text>
+      <x>90</x>
+      <y>125</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_47</name>
+      <macros>
+        <P>CstatV</P>
+        <S>LHe</S>
+        <V>FV681</V>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatValve-v-ll-pv.bob</file>
+      <x>2</x>
+      <y>132</y>
+      <width>51</width>
+      <height>28</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_48</name>
+      <macros>
+        <P>CstatV</P>
+        <S>LHe</S>
+        <V>CV680</V>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatV-CtrlValve-v-lr-pv.bob</file>
+      <x>69</x>
+      <y>173</y>
+      <width>55</width>
+      <height>55</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_186</name>
+      <text>LT683</text>
+      <x>150</x>
+      <y>200</y>
+      <width>36</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_186</name>
+      <pv_name>$(system):LT683:sRdV</pv_name>
+      <x>150</x>
+      <y>218</y>
+      <width>39</width>
+      <height>16</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_187</name>
+      <pv_name>CstatV-LHe:TT671M:sRdV</pv_name>
+      <x>90</x>
+      <y>384</y>
+      <width>66</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_188</name>
+      <pv_name>CstatV-LHe:TT666M:sRdV</pv_name>
+      <x>90</x>
+      <y>362</y>
+      <width>66</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_187</name>
+      <text>TT666M</text>
+      <x>40</x>
+      <y>360</y>
+      <width>47</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_188</name>
+      <text>TT671M</text>
+      <x>41</x>
+      <y>381</y>
+      <width>47</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_20</name>
+    <x>93</x>
+    <y>380</y>
+    <width>1</width>
+    <height>15</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="15.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_21</name>
+    <x>165</x>
+    <y>60</y>
+    <width>1</width>
+    <height>40</height>
+    <points>
+      <point x="0.0" y="40.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_189</name>
+    <text>L016</text>
+    <x>125</x>
+    <y>60</y>
+    <width>30</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_190</name>
+    <text>To the</text>
+    <x>130</x>
+    <y>25</y>
+    <width>38</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_191</name>
+    <text>Valve Box</text>
+    <x>120</x>
+    <y>40</y>
+    <width>57</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_22</name>
+    <x>230</x>
+    <y>93</y>
+    <width>1</width>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="20.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_23</name>
+    <x>480</x>
+    <y>115</y>
+    <width>1</width>
+    <height>30</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="30.0">
+      </point>
+    </points>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+  </widget>
+</display>
