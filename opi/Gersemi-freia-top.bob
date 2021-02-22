@@ -21,7 +21,6 @@
     <x>10</x>
     <y>120</y>
     <width>142</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="15.0">
       </font>
@@ -49,7 +48,7 @@
     <x>14</x>
     <y>2</y>
     <width>130</width>
-    <height>47</height>
+    <height>50</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
       </font>
@@ -609,13 +608,20 @@
               <seq_title>Seq. 17: Magnet - operation at 2 K</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack</step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step10>Waiting for closing FV554 and opening FV555</step10>
+              <step12>Waiting for 2K pumps to be ready. When 2K pumps are set to Auto mode do nothing</step12>
+              <step14>Closing CV581. Waiting for CV581 to close</step14>
+              <step16>Waiting for FV581 and FV584 to close</step16>
+              <step18>Pumping down according to the table until reaching the SP PIC660A</step18>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
+              <step20>Reached SP PIC660A. Regulating the pressure. Waiting for stop or change of the SP PIC660A</step20>
+              <step22>Waiting for FV582 to close</step22>
+              <step24>Wait for PT660 &gt; PT660 sequence parameter and CV581 to be opened and 2K pumps stopped</step24>
+              <step26>Ventilating 2K pumps. Waiting for PT584 &gt;= PT584 sequence parameter</step26>
+              <step28>Waiting for FV556 to close</step28>
+              <step4>Make sure FV551 is closed. Press Yes to continue or No to stop</step4>
+              <step6>Waiting for "Yes" or "No" (No to stop the sequence)</step6>
+              <step8>Starting SQ18. Opening  CV581 - waiting for CV681 &gt;= P_CV681</step8>
             </macros>
             <target>window</target>
           </action>
@@ -3944,5 +3950,12 @@ Alarms</text>
         </color>
       </background_color>
     </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>sys://time</pv_name>
+    <x>1680</x>
+    <y>10</y>
+    <width>140</width>
   </widget>
 </display>

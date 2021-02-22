@@ -2496,4 +2496,141 @@ $(pv_value)</tooltip>
       </color>
     </line_color>
   </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_24</name>
+    <x>290</x>
+    <y>60</y>
+    <width>1</width>
+    <height>85</height>
+    <points>
+      <point x="0.0" y="85.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO 4.8K ≈ vapor return to LHe plant and primary loop return" red="0" green="204" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+    <arrow_length>15</arrow_length>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_192</name>
+    <text>L020</text>
+    <x>275</x>
+    <y>100</y>
+    <width>30</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_189</name>
+    <pv_name>CstatV-LHe:TT667M:sRdV</pv_name>
+    <x>320</x>
+    <y>390</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_193</name>
+    <text>TT667M</text>
+    <x>270</x>
+    <y>390</y>
+    <width>47</width>
+    <height>19</height>
+    <font>
+      <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_194</name>
+    <text>Current leads</text>
+    <x>330</x>
+    <y>240</y>
+    <width>79</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
 </display>
