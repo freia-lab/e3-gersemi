@@ -173,8 +173,8 @@ $(pv_value)</tooltip>
       </actions>
       <widget type="rectangle" version="2.0.0">
         <name>Rounded Rectangle</name>
-        <x>145</x>
-        <width>241</width>
+        <x>155</x>
+        <width>230</width>
         <height>266</height>
         <line_width>0</line_width>
         <line_color>
@@ -607,7 +607,7 @@ $(pv_value)</tooltip>
           <text>TT$(NR)A</text>
           <x>10</x>
           <width>44</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -664,7 +664,7 @@ $(pv_value)</tooltip>
           <x>10</x>
           <y>35</y>
           <width>45</width>
-          <height>19</height>
+          <height>18</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -1871,6 +1871,15 @@ $(pv_value)</tooltip>
     <actions>
     </actions>
     <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_9</name>
+      <x>52</x>
+      <y>322</y>
+      <width>116</width>
+      <height>86</height>
+      <line_style>2</line_style>
+      <transparent>true</transparent>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
       <name>Rounded Rectangle 2K</name>
       <y>75</y>
       <width>200</width>
@@ -1892,9 +1901,10 @@ $(pv_value)</tooltip>
     <widget type="tank" version="2.0.0">
       <name>LT683</name>
       <pv_name>$(system):LT683:sRdV</pv_name>
-      <x>2</x>
-      <y>105</y>
-      <width>196</width>
+      <x>55</x>
+      <y>325</y>
+      <width>110</width>
+      <height>80</height>
       <fill_color>
         <color name="BLUE" red="79" green="228" blue="250">
         </color>
@@ -2733,7 +2743,7 @@ $(pv_value)</tooltip>
       <x>80</x>
       <y>29</y>
       <width>38</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6629,7 +6639,7 @@ Gas Bag</text>
       <text>TT$(NR)A</text>
       <x>84</x>
       <width>44</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6687,7 +6697,7 @@ Gas Bag</text>
       <x>85</x>
       <y>42</y>
       <width>45</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
