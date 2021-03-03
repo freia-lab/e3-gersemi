@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>Turbo Pump TD20 Controller</name>
-  <width>550</width>
-  <height>520</height>
+  <width>530</width>
+  <height>430</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -43,10 +43,6 @@
         <color name="LED-BLUE-ON" red="81" green="232" blue="255">
         </color>
       </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -71,10 +67,6 @@
         <color name="LED-GREEN-ON" red="70" green="255" blue="70">
         </color>
       </on_color>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -96,40 +88,29 @@
       <y>58</y>
       <width>116</width>
       <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
     </widget>
   </widget>
-  <widget type="meter" version="2.0.0">
+  <widget type="meter" version="3.0.0">
     <name>Gauge Template</name>
     <pv_name>$(P):sFreq</pv_name>
-    <skin>0</skin>
-    <knob_position>3</knob_position>
-    <x>35</x>
-    <y>255</y>
-    <width>138</width>
+    <x>30</x>
+    <y>240</y>
+    <width>245</width>
     <height>138</height>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <transparent>false</transparent>
+    <background_color>
+      <color name="WHITE" red="255" green="255" blue="255">
+      </color>
+    </background_color>
     <actions>
     </actions>
-    <highligh_zones>false</highligh_zones>
-    <major_tick_space>100.0</major_tick_space>
-    <minor_tick_space>10.0</minor_tick_space>
-    <lcd_visible>false</lcd_visible>
     <needle_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -139,13 +120,9 @@
     <name>Label Template</name>
     <text>Speed</text>
     <x>80</x>
-    <y>229</y>
-    <width>37</width>
-    <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
+    <y>210</y>
+    <width>60</width>
+    <height>28</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
