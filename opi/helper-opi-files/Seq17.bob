@@ -540,7 +540,7 @@
     <x>630</x>
     <y>244</y>
     <width>80</width>
-    <height>15</height>
+    <height>18</height>
     <precision>1</precision>
     <wrap_words>false</wrap_words>
     <actions>
@@ -845,6 +845,47 @@ $(pv_value)</tooltip>
     </actions>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_34</name>
+    <text>HI</text>
+    <x>720</x>
+    <y>220</y>
+    <width>15</width>
+    <height>21</height>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_35</name>
+    <text>LO</text>
+    <x>720</x>
+    <y>244</y>
+    <width>19</width>
+    <height>21</height>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <tooltip>In range &lt; 155 mbar</tooltip>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
       </color>
     </border_color>
   </widget>

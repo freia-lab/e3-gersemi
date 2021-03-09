@@ -509,11 +509,11 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Panel 2_15</name>
-    <x>890</x>
+    <name>2Kpumps</name>
+    <x>870</x>
     <y>573</y>
-    <width>86</width>
-    <height>107</height>
+    <width>106</width>
+    <height>97</height>
     <style>3</style>
     <foreground_color>
       <color red="0" green="128" blue="255">
@@ -526,13 +526,23 @@ $(pv_value)</tooltip>
     <transparent>true</transparent>
     <actions>
     </actions>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>CstatH-2Kpumps:Ctrl:sOn</pv_name>
+      <x>13</x>
+      <y>17</y>
+      <width>80</width>
+      <height>70</height>
+      <square>true</square>
+    </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_57</name>
       <text>Helium
 Pumping
 System</text>
+      <x>20</x>
       <y>14</y>
-      <width>74</width>
+      <width>80</width>
       <height>67</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
