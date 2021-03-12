@@ -21,6 +21,7 @@
     <x>10</x>
     <y>120</y>
     <width>142</width>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="15.0">
       </font>
@@ -48,7 +49,7 @@
     <x>14</x>
     <y>2</y>
     <width>130</width>
-    <height>50</height>
+    <height>47</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
       </font>
@@ -723,15 +724,15 @@
               <seq_title>Magnet - control of level and pressure at 2 K</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
-              <step10>Keeping overpressure</step10>
-              <step12>Vacuum leak - waiting for Ack</step12>
-              <step14>Overpressure leak -waiting for Ack</step14>
+              <step10>LI680 &gt; LT680 max. Waiting for LT682 &gt; LT682 min</step10>
+              <step12>Stop - waiting for CV602 to close</step12>
+              <step14>LI680 &lt; LT680 max. Waiting for LT682 &gt; LT682 min</step14>
               <step2>Checking equipment</step2>
-              <step4>Pumping down</step4>
-              <step6>Keeping vacuum</step6>
-              <step8>Filling up with GHe</step8>
+              <step4>LT682, PT681, LT683 regulated. Waiting for start of cool-down of lower bath.</step4>
+              <step6>2K operation until stop or quench</step6>
+              <step8>Quench! Waiting for "Normal state"</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
