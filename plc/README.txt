@@ -67,7 +67,9 @@ GERSEMI_PLC_20221_02_03 - KG, Changed control of the current leads heating. In t
 		Changed the logic of SQ19 - transition from step 8 to 10. The old logic made that ususally set point for FT653 was
 		not ready with ramping to 0 before the sequence stopped. This logic can be changed and the ramping down removed 
 		completely. Changed block: FC219.
-GERSEMI_PLC_20221_02_03 - KG, Fixed the bug in managing valve CV581 in SQ17 step 14 (closing the valve). The action of this step was
+GERSEMI_PLC_20221_02_25 - KG, Fixed the bug in managing valve CV581 in SQ17 step 14 (closing the valve). The action of this step was
 		overwritten by action in the sequence for switching the 2K circuit exhaust (it was blocked in SQ13 but not SQ17).
+GERSEMI_PLC_20221_03_15 - KG, Changed the status sent to Epics (FC118): The G7_SQ_ChgCir state (0-3) is substituted with the SQ step 0-22.
+		Added step of the subSeq in SQ13 and SQ17.
 
 		
