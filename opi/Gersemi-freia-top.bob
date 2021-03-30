@@ -21,7 +21,6 @@
     <x>10</x>
     <y>120</y>
     <width>142</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="15.0">
       </font>
@@ -49,7 +48,7 @@
     <x>14</x>
     <y>2</y>
     <width>130</width>
-    <height>47</height>
+    <height>50</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
       </font>
@@ -392,7 +391,7 @@
               <seq_title>Seq. 15: Magnet - cooling down</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
-              <step10>Wait for CV602 to close</step10>
+              <step10>Wait for CV601 to close</step10>
               <step12>Regulation</step12>
               <step14>Stop - waiting for FV642 and FV680 to close</step14>
               <step2>Checking equipment</step2>
@@ -400,7 +399,7 @@
               <step6>Cooling HX680 and HX683</step6>
               <step8>Stop cooling</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>

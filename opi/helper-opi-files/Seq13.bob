@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Seq13</name>
   <width>780</width>
-  <height>1000</height>
+  <height>1030</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -12,10 +12,10 @@
   <grid_visible>false</grid_visible>
   <widget type="embedded" version="2.0.0">
     <name>Linking Container Template</name>
-    <file>Seq_top4plus.bob</file>
+    <file>Seq_top13and17.bob</file>
     <x>111</x>
     <width>550</width>
-    <height>195</height>
+    <height>220</height>
     <actions>
     </actions>
     <border_color>
@@ -26,8 +26,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_10</name>
     <text>Mode</text>
-    <x>257</x>
-    <y>247</y>
+    <x>258</x>
+    <y>274</y>
     <width>38</width>
     <height>21</height>
     <foreground_color>
@@ -50,8 +50,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_14</name>
     <text>CV603</text>
-    <x>247</x>
-    <y>324</y>
+    <x>248</x>
+    <y>351</y>
     <width>42</width>
     <height>21</height>
     <foreground_color>
@@ -74,18 +74,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_17</name>
     <text>PT584</text>
-    <x>11</x>
-    <y>368</y>
+    <x>12</x>
+    <y>395</y>
     <width>42</width>
     <height>21</height>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
     <vertical_alignment>1</vertical_alignment>
     <auto_size>true</auto_size>
     <actions>
@@ -98,22 +90,10 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_10</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_PT584</pv_name>
-    <x>61</x>
-    <y>365</y>
+    <x>62</x>
+    <y>392</y>
     <width>56</width>
     <height>25</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
@@ -125,20 +105,12 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_15</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_PT584</pv_name>
-    <x>123</x>
-    <y>369</y>
+    <x>124</x>
+    <y>396</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
+      <color name="Background" red="220" green="225" blue="221">
       </color>
     </background_color>
     <precision>0</precision>
@@ -146,7 +118,6 @@
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -155,8 +126,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_18</name>
     <text>SP PIC660A</text>
-    <x>480</x>
-    <y>220</y>
+    <x>481</x>
+    <y>247</y>
     <width>76</width>
     <height>21</height>
     <foreground_color>
@@ -179,22 +150,10 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_11</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_SP_PIC660</pv_name>
-    <x>570</x>
-    <y>217</y>
+    <x>571</x>
+    <y>244</y>
     <width>56</width>
     <height>25</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
@@ -206,27 +165,14 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_16</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_PIC660</pv_name>
-    <x>632</x>
-    <y>221</y>
+    <x>633</x>
+    <y>248</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -235,8 +181,8 @@
   <widget type="combo" version="2.0.0">
     <name>Menu Button_1</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_RegMode</pv_name>
-    <x>309</x>
-    <y>245</y>
+    <x>310</x>
+    <y>272</y>
     <width>140</width>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -251,18 +197,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_20</name>
     <text>PT660</text>
-    <x>11</x>
-    <y>324</y>
+    <x>12</x>
+    <y>351</y>
     <width>42</width>
     <height>21</height>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
     <vertical_alignment>1</vertical_alignment>
     <auto_size>true</auto_size>
     <actions>
@@ -275,22 +213,10 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_13</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_PT660</pv_name>
-    <x>61</x>
-    <y>323</y>
+    <x>62</x>
+    <y>350</y>
     <width>56</width>
     <height>25</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
@@ -302,20 +228,12 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_29</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_PT660</pv_name>
-    <x>123</x>
-    <y>327</y>
+    <x>124</x>
+    <y>354</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
+      <color name="Background" red="220" green="225" blue="221">
       </color>
     </background_color>
     <precision>0</precision>
@@ -323,7 +241,6 @@
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -332,8 +249,8 @@
   <widget type="label" version="2.0.0">
     <name>Label_1</name>
     <text>Sequence parameters</text>
-    <x>35</x>
-    <y>203</y>
+    <x>36</x>
+    <y>230</y>
     <width>155</width>
     <height>21</height>
     <font>
@@ -362,18 +279,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_21</name>
     <text>CV581</text>
-    <x>9</x>
-    <y>250</y>
+    <x>10</x>
+    <y>277</y>
     <width>42</width>
     <height>21</height>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
     <vertical_alignment>1</vertical_alignment>
     <auto_size>true</auto_size>
     <actions>
@@ -386,22 +295,10 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_14</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV581</pv_name>
-    <x>60</x>
-    <y>250</y>
+    <x>61</x>
+    <y>277</y>
     <width>56</width>
     <height>25</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
@@ -413,20 +310,12 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_30</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV581</pv_name>
-    <x>122</x>
-    <y>254</y>
+    <x>123</x>
+    <y>281</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
+      <color name="Background" red="220" green="225" blue="221">
       </color>
     </background_color>
     <precision>0</precision>
@@ -434,7 +323,6 @@
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -443,18 +331,10 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_22</name>
     <text>CV582</text>
-    <x>10</x>
-    <y>275</y>
+    <x>11</x>
+    <y>302</y>
     <width>42</width>
     <height>21</height>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
     <vertical_alignment>1</vertical_alignment>
     <auto_size>true</auto_size>
     <actions>
@@ -467,22 +347,10 @@
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_15</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cP_CV582</pv_name>
-    <x>61</x>
-    <y>275</y>
+    <x>62</x>
+    <y>302</y>
     <width>56</width>
     <height>25</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
@@ -494,20 +362,12 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_31</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_CV582</pv_name>
-    <x>123</x>
-    <y>279</y>
+    <x>124</x>
+    <y>306</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
+      <color name="Background" red="220" green="225" blue="221">
       </color>
     </background_color>
     <precision>0</precision>
@@ -515,7 +375,6 @@
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -523,8 +382,8 @@
   </widget>
   <widget type="group" version="2.0.0">
     <name>Panel 2</name>
-    <x>494</x>
-    <y>290</y>
+    <x>495</x>
+    <y>317</y>
     <width>280</width>
     <height>391</height>
     <style>2</style>
@@ -731,10 +590,10 @@
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_1</name>
-    <text>Sub-sequence parameters</text>
-    <x>251</x>
-    <y>203</y>
-    <width>185</width>
+    <text>Sub-sequence 13L parameters</text>
+    <x>252</x>
+    <y>230</y>
+    <width>214</width>
     <height>21</height>
     <font>
       <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
@@ -762,8 +621,8 @@
   <widget type="label" version="2.0.0">
     <name>Label Template_23</name>
     <text>FT551 Limit</text>
-    <x>247</x>
-    <y>354</y>
+    <x>248</x>
+    <y>381</y>
     <width>78</width>
     <height>21</height>
     <foreground_color>
@@ -795,8 +654,8 @@
       <step6>Filling - waiting for LHe level to reach LI660/670 max</step6>
       <step8>Intermittent mode - waiting for LHe level to drop to LI660/67 min</step8>
     </macros>
-    <x>9</x>
-    <y>585</y>
+    <x>10</x>
+    <y>612</y>
     <width>481</width>
     <height>96</height>
     <style>2</style>
@@ -874,7 +733,7 @@
       <x>320</x>
       <y>29</y>
       <width>82</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -903,18 +762,6 @@
       <y>30</y>
       <width>21</width>
       <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <precision>0</precision>
       <wrap_words>false</wrap_words>
       <actions>
@@ -927,7 +774,6 @@
         </script>
       </scripts>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -940,23 +786,10 @@
       <y>30</y>
       <width>52</width>
       <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <precision>0</precision>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -969,16 +802,8 @@
       <y>30</y>
       <width>202</width>
       <height>54</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
       <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
+        <color name="Read_Background" red="230" green="235" blue="232">
         </color>
       </background_color>
       <transparent>false</transparent>
@@ -1015,7 +840,6 @@
       </rules>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1025,28 +849,15 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_41</name>
     <pv_name>$(C)-LHe:PT660L:sRdV</pv_name>
-    <x>697</x>
-    <y>209</y>
+    <x>698</x>
+    <y>236</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>1</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -1055,28 +866,15 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_42</name>
     <pv_name>$(C)-LHe:PT661L:sRdV</pv_name>
-    <x>698</x>
-    <y>233</y>
+    <x>699</x>
+    <y>260</y>
     <width>50</width>
-    <height>15</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
+    <height>18</height>
     <precision>1</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -1085,20 +883,12 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_40</name>
     <pv_name>$(C)-RHtr:CV581:sRdV</pv_name>
-    <x>187</x>
-    <y>254</y>
+    <x>188</x>
+    <y>281</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
+      <color name="Background" red="220" green="225" blue="221">
       </color>
     </background_color>
     <precision>1</precision>
@@ -1106,7 +896,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -1115,20 +904,12 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_44</name>
     <pv_name>$(C)-RHtr:CV582:sRdV</pv_name>
-    <x>187</x>
-    <y>279</y>
+    <x>188</x>
+    <y>306</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
+      <color name="Background" red="220" green="225" blue="221">
       </color>
     </background_color>
     <precision>1</precision>
@@ -1136,7 +917,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -1145,20 +925,12 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_45</name>
     <pv_name>$(C)-RHtr:PT584:sRdV</pv_name>
-    <x>188</x>
-    <y>369</y>
+    <x>189</x>
+    <y>396</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
+      <color name="Background" red="220" green="225" blue="221">
       </color>
     </background_color>
     <precision>1</precision>
@@ -1166,7 +938,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -1175,20 +946,12 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_34</name>
     <pv_name>$(C)-LHe:PT660L:sRdV</pv_name>
-    <x>187</x>
-    <y>316</y>
+    <x>188</x>
+    <y>343</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
+      <color name="Background" red="220" green="225" blue="221">
       </color>
     </background_color>
     <precision>1</precision>
@@ -1196,7 +959,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -1205,20 +967,12 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_35</name>
     <pv_name>$(C)-LHe:PT660V:sRdV</pv_name>
-    <x>188</x>
-    <y>340</y>
+    <x>189</x>
+    <y>367</y>
     <width>50</width>
-    <height>15</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
+    <height>18</height>
     <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
+      <color name="Background" red="220" green="225" blue="221">
       </color>
     </background_color>
     <precision>1</precision>
@@ -1226,7 +980,6 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -1245,18 +998,6 @@ $(pv_value)</tooltip>
             <y>34</y>
             <width>56</width>
             <height>25</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <show_units>false</show_units>
             <actions>
             </actions>
@@ -1272,22 +1013,9 @@ $(pv_value)</tooltip>
             <y>86</y>
             <width>67</width>
             <height>18</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <wrap_words>false</wrap_words>
             <actions>
             </actions>
-            <border_width>2</border_width>
             <border_color>
               <color name="BLACK" red="0" green="0" blue="0">
               </color>
@@ -1300,22 +1028,9 @@ $(pv_value)</tooltip>
             <y>38</y>
             <width>67</width>
             <height>18</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <wrap_words>false</wrap_words>
             <actions>
             </actions>
-            <border_width>2</border_width>
             <border_color>
               <color name="BLACK" red="0" green="0" blue="0">
               </color>
@@ -1328,18 +1043,6 @@ $(pv_value)</tooltip>
             <y>59</y>
             <width>56</width>
             <height>25</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <show_units>false</show_units>
             <actions>
             </actions>
@@ -1355,18 +1058,6 @@ $(pv_value)</tooltip>
             <y>82</y>
             <width>56</width>
             <height>25</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <show_units>false</show_units>
             <actions>
             </actions>
@@ -1454,24 +1145,11 @@ $(pv_value)</tooltip>
             <y>63</y>
             <width>51</width>
             <height>18</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <precision>1</precision>
             <show_units>false</show_units>
             <wrap_words>false</wrap_words>
             <actions>
             </actions>
-            <border_width>2</border_width>
             <border_color>
               <color name="BLACK" red="0" green="0" blue="0">
               </color>
@@ -1484,22 +1162,9 @@ $(pv_value)</tooltip>
             <y>63</y>
             <width>67</width>
             <height>18</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <wrap_words>false</wrap_words>
             <actions>
             </actions>
-            <border_width>2</border_width>
             <border_color>
               <color name="BLACK" red="0" green="0" blue="0">
               </color>
@@ -1619,22 +1284,9 @@ $(pv_value)</tooltip>
             <y>86</y>
             <width>67</width>
             <height>18</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <wrap_words>false</wrap_words>
             <actions>
             </actions>
-            <border_width>2</border_width>
             <border_color>
               <color name="BLACK" red="0" green="0" blue="0">
               </color>
@@ -1647,18 +1299,6 @@ $(pv_value)</tooltip>
             <y>59</y>
             <width>56</width>
             <height>25</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <show_units>false</show_units>
             <actions>
             </actions>
@@ -1674,24 +1314,11 @@ $(pv_value)</tooltip>
             <y>63</y>
             <width>51</width>
             <height>18</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <precision>1</precision>
             <show_units>false</show_units>
             <wrap_words>false</wrap_words>
             <actions>
             </actions>
-            <border_width>2</border_width>
             <border_color>
               <color name="BLACK" red="0" green="0" blue="0">
               </color>
@@ -1752,18 +1379,6 @@ $(pv_value)</tooltip>
             <y>34</y>
             <width>56</width>
             <height>25</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <show_units>false</show_units>
             <actions>
             </actions>
@@ -1779,22 +1394,9 @@ $(pv_value)</tooltip>
             <y>38</y>
             <width>67</width>
             <height>18</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <wrap_words>false</wrap_words>
             <actions>
             </actions>
-            <border_width>2</border_width>
             <border_color>
               <color name="BLACK" red="0" green="0" blue="0">
               </color>
@@ -1831,18 +1433,6 @@ $(pv_value)</tooltip>
             <y>82</y>
             <width>56</width>
             <height>25</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <show_units>false</show_units>
             <actions>
             </actions>
@@ -1858,22 +1448,9 @@ $(pv_value)</tooltip>
             <y>63</y>
             <width>67</width>
             <height>18</height>
-            <font>
-              <font family="Source Sans Pro" style="BOLD" size="13.0">
-              </font>
-            </font>
-            <foreground_color>
-              <color name="BLACK" red="0" green="0" blue="0">
-              </color>
-            </foreground_color>
-            <background_color>
-              <color name="WHITE" red="255" green="255" blue="255">
-              </color>
-            </background_color>
             <wrap_words>false</wrap_words>
             <actions>
             </actions>
-            <border_width>2</border_width>
             <border_color>
               <color name="BLACK" red="0" green="0" blue="0">
               </color>
@@ -1984,8 +1561,8 @@ $(pv_value)</tooltip>
         </children>
       </tab>
     </tabs>
-    <x>24</x>
-    <y>415</y>
+    <x>25</x>
+    <y>442</y>
     <width>438</width>
     <height>156</height>
     <background_color>
@@ -1999,8 +1576,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label_6</name>
     <text>cP</text>
-    <x>65</x>
-    <y>226</y>
+    <x>66</x>
+    <y>253</y>
     <width>18</width>
     <height>21</height>
     <font>
@@ -2029,8 +1606,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label_7</name>
     <text>sP</text>
-    <x>124</x>
-    <y>226</y>
+    <x>125</x>
+    <y>253</y>
     <width>17</width>
     <height>21</height>
     <font>
@@ -2059,8 +1636,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label_8</name>
     <text>sRdV</text>
-    <x>187</x>
-    <y>226</y>
+    <x>188</x>
+    <y>253</y>
     <width>35</width>
     <height>21</height>
     <font>
@@ -2089,8 +1666,8 @@ $(pv_value)</tooltip>
   <widget type="led" version="2.0.0">
     <name>LED_4</name>
     <pv_name>$(C)-LHe:PIC660A:sRegOn</pv_name>
-    <x>559</x>
-    <y>220</y>
+    <x>560</x>
+    <y>247</y>
     <width>10</width>
     <height>10</height>
     <square>true</square>
@@ -2100,8 +1677,8 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Group</name>
-    <x>330</x>
-    <y>297</y>
+    <x>331</x>
+    <y>324</y>
     <width>169</width>
     <height>79</height>
     <style>3</style>
@@ -2112,18 +1689,6 @@ $(pv_value)</tooltip>
       <y>24</y>
       <width>56</width>
       <height>25</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
@@ -2139,24 +1704,11 @@ $(pv_value)</tooltip>
       <y>28</y>
       <width>46</width>
       <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <precision>1</precision>
       <show_units>false</show_units>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -2168,18 +1720,6 @@ $(pv_value)</tooltip>
       <y>54</y>
       <width>56</width>
       <height>25</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <show_units>false</show_units>
       <actions>
       </actions>
@@ -2195,24 +1735,11 @@ $(pv_value)</tooltip>
       <y>58</y>
       <width>46</width>
       <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <precision>1</precision>
       <show_units>false</show_units>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -2225,24 +1752,11 @@ $(pv_value)</tooltip>
       <y>28</y>
       <width>51</width>
       <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <precision>1</precision>
       <show_units>false</show_units>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -2255,24 +1769,11 @@ $(pv_value)</tooltip>
       <y>58</y>
       <width>51</width>
       <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <precision>1</precision>
       <show_units>false</show_units>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
-      <border_width>2</border_width>
       <border_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -2369,28 +1870,15 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_46</name>
     <pv_name>$(C)-RHtr:CV582:sAutoRdV</pv_name>
-    <x>632</x>
-    <y>250</y>
+    <x>633</x>
+    <y>277</y>
     <width>51</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>1</precision>
     <show_units>false</show_units>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -2399,16 +1887,12 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_29</name>
     <text>CV582</text>
-    <x>580</x>
-    <y>250</y>
+    <x>581</x>
+    <y>277</y>
     <width>42</width>
     <height>21</height>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
     <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
+      <color name="Write_Background" red="224" green="217" blue="202">
       </color>
     </background_color>
     <vertical_alignment>1</vertical_alignment>
@@ -2422,8 +1906,8 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline</name>
-    <x>530</x>
-    <y>240</y>
+    <x>531</x>
+    <y>267</y>
     <width>1</width>
     <height>1</height>
     <points>
@@ -2449,8 +1933,8 @@ $(pv_value)</tooltip>
         <description>PIC660A regulation</description>
       </action>
     </actions>
-    <x>20</x>
-    <y>960</y>
+    <x>21</x>
+    <y>987</y>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="action_button" version="3.0.0">
@@ -2461,15 +1945,15 @@ $(pv_value)</tooltip>
         <description>On Watch</description>
       </action>
     </actions>
-    <x>130</x>
-    <y>960</y>
+    <x>131</x>
+    <y>987</y>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>Plots</text>
-    <x>20</x>
-    <y>930</y>
+    <x>21</x>
+    <y>957</y>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2478,15 +1962,15 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
     <pv_name>$(C)-Ctrl:$(seq_no):sP_RegModeS</pv_name>
-    <x>455</x>
-    <y>250</y>
+    <x>456</x>
+    <y>277</y>
     <width>30</width>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_13</name>
     <file>../Embedded/2Kpumps-sq-param.bob</file>
-    <x>10</x>
-    <y>700</y>
+    <x>11</x>
+    <y>727</y>
     <width>760</width>
     <height>220</height>
     <border_width>1</border_width>
