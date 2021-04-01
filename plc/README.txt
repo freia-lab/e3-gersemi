@@ -71,5 +71,8 @@ GERSEMI_PLC_20221_02_25 - KG, Fixed the bug in managing valve CV581 in SQ17 step
 		overwritten by action in the sequence for switching the 2K circuit exhaust (it was blocked in SQ13 but not SQ17).
 GERSEMI_PLC_20221_03_15 - KG, Changed the status sent to Epics (FC118): The G7_SQ_ChgCir state (0-3) is substituted with the SQ step 0-22.
 		Added step of the subSeq in SQ13 and SQ17.
+GERSEMI_PLC_20221_04_01 - KG, Prepared db100/db101 for setting the PID parameters (no code that does it yet). Updated the blocks
+		from the source files *_V10.
+
 
 		
