@@ -446,6 +446,35 @@ file "gersemi-Heater2.template" { pattern
 {RHtr,	EH580,     5418,    3466}
 }
 
+file "gersemi-PID_param.template" { pattern
+{SUBS,	DEV,      OFFS2}
+{LHe,    LIC600,  3326}
+{LHe,    LIC660,  3340}
+{LHe,    PIC600,  3354}
+{LHe,    PIC660,  3368}
+{LHe,    LIC670,  3382}
+{SHe,    FIC380,  3396}
+{SHe,    TIC371,  3410}
+{SHe,    TIC372,  3424}
+{LHe,    PIC660A, 3438}
+{LHe,    LIC660A, 3452}
+{LHe,    LIC670A, 3564}
+{LHe,    LIC682,  3578}
+{LHe,    PIC681,  3592}
+{LHe,    LIC683,  3606}
+{LHe,    TIC654,  3620}
+{LHe,    TIC655,  3634}
+{LHe,    TIC656,  3648}
+{LHe,    TIC657,  3662}
+{LHe,    FIC650,  3676}
+{LHe,    FIC651,  3690}
+{LHe,    FIC652,  3704}
+{LHe,    FIC653,  3718}
+{EDwr,   PIC590,  3732}
+{RHtr,   FIC583,  3746}
+{RHtr,   FIC581,  3760}
+}
+
 file "gersemi-SQbinary.template" { pattern
 {SUBS, OFFS2, OFFS, ONVL, ONST, TWVL, TWST, THVL, THST, FRVL, FRST, FVVL, FVST}
 {SQ1,   3860, 5830, 1,"SQ5-20 must NOT run", 0,"", 0,"", 0,"", 0,""}

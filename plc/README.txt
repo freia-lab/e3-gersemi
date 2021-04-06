@@ -73,6 +73,9 @@ GERSEMI_PLC_20221_03_15 - KG, Changed the status sent to Epics (FC118): The G7_S
 		Added step of the subSeq in SQ13 and SQ17.
 GERSEMI_PLC_20221_04_01 - KG, Prepared db100/db101 for setting the PID parameters (no code that does it yet). Updated the blocks
 		from the source files *_V10.
+GERSEMI_PLC_20221_04_06 - KG, Finished support for setting PID parameters from Epics. 
+		NOTE: FIC590-FIG593 are not set in F117 (Epics_commands). They are free to use.
+
 
 
 		
