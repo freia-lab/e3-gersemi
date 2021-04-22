@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>heaterIL</name>
+  <width>180</width>
+  <height>25</height>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>Byte Monitor</name>
+    <x>210</x>
+    <y>70</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>TT_1</name>
+    <pv_name>$(C)-$(S):TT$(TTNr):sRdV</pv_name>
+    <x>110</x>
+    <y>2</y>
+    <width>60</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED-sCmd_1</name>
+    <pv_name>$(C)-$(S):EH$(HtrNr):sCmd</pv_name>
+    <x>60</x>
+    <y>2</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED-sHtrOn_1</name>
+    <pv_name>$(C)-$(S):EH$(HtrNr):sHtrOn</pv_name>
+    <x>85</x>
+    <y>2</y>
+    <off_color>
+      <color name="LED-RED-OFF" red="110" green="101" blue="90">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-RED-ON" red="255" green="60" blue="46">
+      </color>
+    </on_color>
+  </widget>
+  <widget type="byte_monitor" version="2.0.0">
+    <name>Byte Monitor_1</name>
+    <x>310</x>
+    <y>130</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(C)-$(S):EH$(HtrNr):sAuto</pv_name>
+    <y>2</y>
+    <width>60</width>
+    <off_label>EH$(HtrNr):</off_label>
+    <off_color>
+      <color name="MINOR" red="252" green="242" blue="17">
+      </color>
+    </off_color>
+    <on_label>EH$(HtrNr):</on_label>
+    <on_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </on_color>
+    <line_color>
+      <color red="50" green="50" blue="50" alpha="0">
+      </color>
+    </line_color>
+    <square>true</square>
+    <actions>
+      <action type="open_display">
+        <file>../../freia-symbols/display-builder/CmdPanels/CstatV-Heater1.bob</file>
+        <macros>
+          <Heater1>$(C)-$(S):EH$(HtrNr)</Heater1>
+        </macros>
+        <target>replace</target>
+        <description>Open Heater Cmd Panel</description>
+      </action>
+    </actions>
+    <tooltip>Right click to open cmd panel</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+</display>

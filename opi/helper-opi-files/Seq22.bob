@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Seq22</name>
   <width>630</width>
-  <height>530</height>
+  <height>650</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -55,18 +55,6 @@
     <y>210</y>
     <width>56</width>
     <height>25</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
@@ -82,22 +70,10 @@
     <y>213</y>
     <width>46</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
+    <border_width></border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -135,18 +111,6 @@
     <y>210</y>
     <width>56</width>
     <height>25</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <show_units>false</show_units>
     <actions>
     </actions>
@@ -162,22 +126,10 @@
     <y>213</y>
     <width>46</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
+    <border_width></border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -190,23 +142,11 @@
     <y>213</y>
     <width>67</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>1</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
+    <border_width></border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -219,705 +159,627 @@
     <y>213</y>
     <width>67</width>
     <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="WHITE" red="255" green="255" blue="255">
-      </color>
-    </background_color>
     <precision>1</precision>
     <wrap_words>false</wrap_words>
     <actions>
     </actions>
-    <border_width>2</border_width>
+    <border_width></border_width>
     <border_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </border_color>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <x>20</x>
-    <y>390</y>
-    <width>490</width>
-    <height>130</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_1</name>
-      <macros>
-        <HtrNr>741</HtrNr>
-        <S>LN2</S>
-      </macros>
-      <file>../Embedded/heater3T.bob</file>
-      <width>295</width>
-      <height>25</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_2</name>
-      <macros>
-        <HtrNr>742</HtrNr>
-        <S>LN2</S>
-      </macros>
-      <file>../Embedded/heater3T.bob</file>
-      <y>25</y>
-      <width>295</width>
-      <height>25</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_5</name>
-      <macros>
-        <HtrNr>641</HtrNr>
-        <S>LHe</S>
-      </macros>
-      <file>../Embedded/heater3T.bob</file>
-      <y>105</y>
-      <width>300</width>
-      <height>25</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_6</name>
-      <macros>
-        <HtrNr>640</HtrNr>
-        <S>LHe</S>
-      </macros>
-      <file>../Embedded/heater6T.bob</file>
-      <y>80</y>
-      <width>490</width>
-      <height>25</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_7</name>
-      <macros>
-        <HtrNr>743</HtrNr>
-        <S>LN2</S>
-      </macros>
-      <file>../Embedded/heater6T.bob</file>
-      <y>50</y>
-      <width>490</width>
-      <height>25</height>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <x>20</x>
-    <y>260</y>
-    <width>262</width>
-    <height>96</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>Label_1</name>
-      <text>Liquid insert parameters</text>
-      <x>37</x>
-      <width>175</width>
-      <height>21</height>
-      <font>
-        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_22</name>
-      <text>LI670 min</text>
-      <y>35</y>
-      <width>65</width>
-      <height>21</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>LT683</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_15</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):cP_LI670_min</pv_name>
-      <x>75</x>
-      <y>30</y>
-      <width>56</width>
-      <height>30</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_20</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sP_LI670_min</pv_name>
-      <x>140</x>
-      <y>34</y>
-      <width>46</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_21</name>
-      <pv_name>$(C)-LHe:LI670:sRdV</pv_name>
-      <x>195</x>
-      <y>34</y>
-      <width>67</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>1</precision>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_23</name>
-      <text>FT581 max</text>
-      <y>71</y>
-      <width>72</width>
-      <height>21</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>LT683</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_16</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):cP_FT581_max</pv_name>
-      <x>75</x>
-      <y>66</y>
-      <width>56</width>
-      <height>30</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_22</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sP_FT581_max</pv_name>
-      <x>140</x>
-      <y>70</y>
-      <width>46</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_23</name>
-      <pv_name>$(C)-RHtr:FT581:sRdV</pv_name>
-      <x>195</x>
-      <y>70</y>
-      <width>67</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>1</precision>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Group</name>
-    <x>320</x>
-    <y>260</y>
-    <width>262</width>
-    <height>115</height>
-    <style>3</style>
-    <transparent>true</transparent>
-    <widget type="label" version="2.0.0">
-      <name>Label_2</name>
-      <text>Magnet insert parameters</text>
-      <x>32</x>
-      <width>183</width>
-      <height>21</height>
-      <font>
-        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_29</name>
-      <text>LI680 min</text>
-      <y>59</y>
-      <width>65</width>
-      <height>21</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>LT683</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_22</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):cP_LI680_min</pv_name>
-      <x>75</x>
-      <y>54</y>
-      <width>56</width>
-      <height>30</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_34</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sP_LI680_min</pv_name>
-      <x>140</x>
-      <y>58</y>
-      <width>46</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_30</name>
-      <text>CV583</text>
-      <y>30</y>
-      <width>42</width>
-      <height>21</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>LI680</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_23</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):cP_CV583</pv_name>
-      <x>75</x>
-      <y>25</y>
-      <width>56</width>
-      <height>30</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_35</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sP_CV583</pv_name>
-      <x>140</x>
-      <y>29</y>
-      <width>46</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_37</name>
-      <pv_name>$(C)-LHe:LI680:sRdV</pv_name>
-      <x>195</x>
-      <y>58</y>
-      <width>67</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>1</precision>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_38</name>
-      <pv_name>$(C)-RHtr:CV583:sRdV</pv_name>
-      <x>195</x>
-      <y>29</y>
-      <width>67</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>1</precision>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_24</name>
-      <text>FT583 max</text>
-      <y>90</y>
-      <width>72</width>
-      <height>21</height>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>LT683</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Input Template_17</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):cP_FT583_max</pv_name>
-      <x>75</x>
-      <y>85</y>
-      <width>56</width>
-      <height>30</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <show_units>false</show_units>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_24</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sP_FT583_max</pv_name>
-      <x>140</x>
-      <y>89</y>
-      <width>46</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_25</name>
-      <pv_name>$(C)-RHtr:FT583:sRdV</pv_name>
-      <x>195</x>
-      <y>89</y>
-      <width>67</width>
-      <height>23</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="WHITE" red="255" green="255" blue="255">
-        </color>
-      </background_color>
-      <precision>1</precision>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </border_color>
-    </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <tabs>
+      <tab>
+        <name>Liquid Insert</name>
+        <children>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_22</name>
+            <text>LI670 min</text>
+            <x>18</x>
+            <y>17</y>
+            <width>65</width>
+            <height>21</height>
+            <foreground_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <tooltip>LT683</tooltip>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Input Template_15</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):cP_LI670_min</pv_name>
+            <x>93</x>
+            <y>12</y>
+            <width>56</width>
+            <height>30</height>
+            <show_units>false</show_units>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_20</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):sP_LI670_min</pv_name>
+            <x>158</x>
+            <y>16</y>
+            <width>67</width>
+            <height>23</height>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_21</name>
+            <pv_name>$(C)-LHe:LI670:sRdV</pv_name>
+            <x>240</x>
+            <y>16</y>
+            <width>67</width>
+            <height>23</height>
+            <precision>1</precision>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_23</name>
+            <text>FT581 max</text>
+            <x>18</x>
+            <y>53</y>
+            <width>72</width>
+            <height>21</height>
+            <foreground_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <tooltip>LT683</tooltip>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Input Template_16</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):cP_FT581_max</pv_name>
+            <x>93</x>
+            <y>48</y>
+            <width>56</width>
+            <height>30</height>
+            <show_units>false</show_units>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_22</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):sP_FT581_max</pv_name>
+            <x>158</x>
+            <y>52</y>
+            <width>67</width>
+            <height>23</height>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_23</name>
+            <pv_name>$(C)-RHtr:FT581:sRdV</pv_name>
+            <x>240</x>
+            <y>52</y>
+            <width>67</width>
+            <height>23</height>
+            <precision>1</precision>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="group" version="2.0.0">
+            <name>Group_1</name>
+            <x>18</x>
+            <y>92</y>
+            <width>490</width>
+            <height>130</height>
+            <style>3</style>
+            <transparent>true</transparent>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_3</name>
+              <macros>
+                <HtrNr>741</HtrNr>
+                <S>LN2</S>
+              </macros>
+              <file>../Embedded/heater3T.bob</file>
+              <width>295</width>
+              <height>25</height>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_4</name>
+              <macros>
+                <HtrNr>742</HtrNr>
+                <S>LN2</S>
+              </macros>
+              <file>../Embedded/heater3T.bob</file>
+              <y>25</y>
+              <width>295</width>
+              <height>25</height>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_8</name>
+              <macros>
+                <HtrNr>641</HtrNr>
+                <S>LHe</S>
+              </macros>
+              <file>../Embedded/heater3T.bob</file>
+              <y>105</y>
+              <width>300</width>
+              <height>25</height>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_9</name>
+              <macros>
+                <HtrNr>640</HtrNr>
+                <S>LHe</S>
+              </macros>
+              <file>../Embedded/heater6T.bob</file>
+              <y>80</y>
+              <width>490</width>
+              <height>25</height>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_10</name>
+              <macros>
+                <HtrNr>743</HtrNr>
+                <S>LN2</S>
+              </macros>
+              <file>../Embedded/heater6T.bob</file>
+              <y>50</y>
+              <width>490</width>
+              <height>25</height>
+            </widget>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Magnet Insert</name>
+        <children>
+          <widget type="group" version="2.0.0">
+            <name>Group</name>
+            <x>18</x>
+            <y>112</y>
+            <width>490</width>
+            <height>130</height>
+            <style>3</style>
+            <transparent>true</transparent>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_1</name>
+              <macros>
+                <HtrNr>741</HtrNr>
+                <S>LN2</S>
+              </macros>
+              <file>../Embedded/heater3T.bob</file>
+              <width>295</width>
+              <height>25</height>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_2</name>
+              <macros>
+                <HtrNr>742</HtrNr>
+                <S>LN2</S>
+              </macros>
+              <file>../Embedded/heater3T.bob</file>
+              <y>25</y>
+              <width>295</width>
+              <height>25</height>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_5</name>
+              <macros>
+                <HtrNr>641</HtrNr>
+                <S>LHe</S>
+              </macros>
+              <file>../Embedded/heater3T.bob</file>
+              <y>105</y>
+              <width>300</width>
+              <height>25</height>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_6</name>
+              <macros>
+                <HtrNr>640</HtrNr>
+                <S>LHe</S>
+              </macros>
+              <file>../Embedded/heater6T.bob</file>
+              <y>80</y>
+              <width>490</width>
+              <height>25</height>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display_7</name>
+              <macros>
+                <HtrNr>743</HtrNr>
+                <S>LN2</S>
+              </macros>
+              <file>../Embedded/heater6T.bob</file>
+              <y>50</y>
+              <width>490</width>
+              <height>25</height>
+            </widget>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_29</name>
+            <text>LI680 min</text>
+            <x>18</x>
+            <y>46</y>
+            <width>65</width>
+            <height>21</height>
+            <foreground_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <tooltip>LT683</tooltip>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Input Template_22</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):cP_LI680_min</pv_name>
+            <x>93</x>
+            <y>41</y>
+            <width>56</width>
+            <height>30</height>
+            <show_units>false</show_units>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_34</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):sP_LI680_min</pv_name>
+            <x>158</x>
+            <y>45</y>
+            <width>67</width>
+            <height>23</height>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_30</name>
+            <text>CV583</text>
+            <x>18</x>
+            <y>17</y>
+            <width>42</width>
+            <height>21</height>
+            <foreground_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <tooltip>LI680</tooltip>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Input Template_23</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):cP_CV583</pv_name>
+            <x>93</x>
+            <y>12</y>
+            <width>56</width>
+            <height>30</height>
+            <show_units>false</show_units>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_35</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):sP_CV583</pv_name>
+            <x>158</x>
+            <y>16</y>
+            <width>67</width>
+            <height>23</height>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_37</name>
+            <pv_name>$(C)-LHe:LI680:sRdV</pv_name>
+            <x>240</x>
+            <y>45</y>
+            <width>67</width>
+            <height>23</height>
+            <precision>1</precision>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_38</name>
+            <pv_name>$(C)-RHtr:CV583:sRdV</pv_name>
+            <x>240</x>
+            <y>16</y>
+            <width>67</width>
+            <height>23</height>
+            <precision>1</precision>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_24</name>
+            <text>FT583 max</text>
+            <x>18</x>
+            <y>77</y>
+            <width>72</width>
+            <height>21</height>
+            <foreground_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <tooltip>LT683</tooltip>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Input Template_17</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):cP_FT583_max</pv_name>
+            <x>93</x>
+            <y>72</y>
+            <width>56</width>
+            <height>30</height>
+            <show_units>false</show_units>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_24</name>
+            <pv_name>$(C)-Ctrl:$(seq_no):sP_FT583_max</pv_name>
+            <x>158</x>
+            <y>76</y>
+            <width>67</width>
+            <height>23</height>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update Template_25</name>
+            <pv_name>$(C)-RHtr:FT583:sRdV</pv_name>
+            <x>240</x>
+            <y>76</y>
+            <width>67</width>
+            <height>23</height>
+            <precision>1</precision>
+            <wrap_words>false</wrap_words>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_2</name>
+            <text>&lt;&lt;&lt; Used only in step 14</text>
+            <x>318</x>
+            <y>77</y>
+            <width>220</width>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_20</name>
+            <macros>
+              <HtrNr>650A</HtrNr>
+              <S>LHe</S>
+              <TTNr>650</TTNr>
+            </macros>
+            <file>../Embedded/heaterIL.bob</file>
+            <x>18</x>
+            <y>252</y>
+            <width>190</width>
+            <height>25</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_21</name>
+            <macros>
+              <HtrNr>650B</HtrNr>
+              <S>LHe</S>
+              <TTNr>650</TTNr>
+            </macros>
+            <file>../Embedded/heaterIL.bob</file>
+            <x>208</x>
+            <y>252</y>
+            <width>190</width>
+            <height>25</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_22</name>
+            <macros>
+              <HtrNr>651A</HtrNr>
+              <S>LHe</S>
+              <TTNr>651</TTNr>
+            </macros>
+            <file>../Embedded/heaterIL.bob</file>
+            <x>18</x>
+            <y>277</y>
+            <width>190</width>
+            <height>25</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_24</name>
+            <macros>
+              <HtrNr>651B</HtrNr>
+              <S>LHe</S>
+              <TTNr>651</TTNr>
+            </macros>
+            <file>../Embedded/heaterIL.bob</file>
+            <x>208</x>
+            <y>277</y>
+            <width>190</width>
+            <height>25</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_25</name>
+            <macros>
+              <HtrNr>652A</HtrNr>
+              <S>LHe</S>
+              <TTNr>652</TTNr>
+            </macros>
+            <file>../Embedded/heaterIL.bob</file>
+            <x>18</x>
+            <y>302</y>
+            <width>190</width>
+            <height>25</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_26</name>
+            <macros>
+              <HtrNr>652B</HtrNr>
+              <S>LHe</S>
+              <TTNr>652</TTNr>
+            </macros>
+            <file>../Embedded/heaterIL.bob</file>
+            <x>208</x>
+            <y>302</y>
+            <width>190</width>
+            <height>25</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_27</name>
+            <macros>
+              <HtrNr>653A</HtrNr>
+              <S>LHe</S>
+              <TTNr>653</TTNr>
+            </macros>
+            <file>../Embedded/heaterIL.bob</file>
+            <x>18</x>
+            <y>327</y>
+            <width>190</width>
+            <height>25</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_28</name>
+            <macros>
+              <HtrNr>653B</HtrNr>
+              <S>LHe</S>
+              <TTNr>653</TTNr>
+            </macros>
+            <file>../Embedded/heaterIL.bob</file>
+            <x>208</x>
+            <y>327</y>
+            <width>190</width>
+            <height>25</height>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>30</x>
+    <y>250</y>
+    <width>570</width>
+    <height>400</height>
+    <active_tab>1</active_tab>
   </widget>
 </display>
