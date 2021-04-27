@@ -1687,13 +1687,6 @@ $(pv_value)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update</name>
-    <pv_name>=(`CstatV-LHe:TT665M:sRdV`-`CstatV-LHe:TT663M:sRdV`)/`$(C)-Ctrl:$(seq_no):sP_DeltaL`</pv_name>
-    <x>180</x>
-    <y>570</y>
-    <width>70</width>
-  </widget>
   <widget type="led" version="2.0.0">
     <name>LED_1</name>
     <pv_name>$(C)-RHtr:FIC581:sRegOn</pv_name>
@@ -2033,7 +2026,7 @@ $(pv_value)</tooltip>
   <widget type="group" version="2.0.0">
     <name>Group</name>
     <x>9</x>
-    <y>604</y>
+    <y>590</y>
     <width>352</width>
     <height>114</height>
     <style>2</style>

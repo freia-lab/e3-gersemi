@@ -79,4 +79,6 @@ GERSEMI_PLC_20221_04_21 - KG, Fixed bug in SQ9 - it was not possible to stop the
 GERSEMI_PLC_20221_04_22 - KG, Hopefully fixed the bug in SQ18 - CV680 remained open at the last position set by LIC683 regulator.
 		Change done in FC562 (Manage_PID), the PID regulator was kept on in step 12 of SQ18.
 GERSEMI_PLC_20221_04_23 - KG, Added current leads heating when SQ22 or SQ23 is active and the magnet insert is in the cryostat.
+GERSEMI_PLC_20221_04_27 - KG, Added use of the FT581/FT583 limits instead of setpoints in SQ15. Changes in DB215 and FC215.
+		Restored original use of TT662 in SQ15 (change done temporary in GERSEMI_PLC_20221_01_27.
 		

@@ -168,17 +168,17 @@ file "gersemi-AI.template" { pattern
 {LHe,   LT681,    1520,    972,   0,    100,   "%",   "1"}
 {LHe,   LT682,    1530,    978,   0,    100,   "%",   "1"}
 {LHe,   LT683,    1540,    984,   0,    100,   "%",   "1"}
-{SHe,   FT380,    1550,    990,   0,    500,   m3/h,  "2"}
-{RHtr,  FT580,    1560,    996,   0,    500,   m3/h,  "2"}
-{RHtr,  FT581,    1570,    1002,   0,    500,   m3/h,  "2"}
-{RHtr,  FT583,    1580,    1008,   0,    500,   m3/h,  "2"}
-{LHe,   FT650,    1590,    1014,   0,    500,   m3/h,  "2"}
-{LHe,   FT651,    1600,    1020,   0,    500,   m3/h,  "2"}
-{LHe,   FT652,    1610,    1026,   0,    500,   m3/h,  "2"}
-{LHe,   FT653,    1620,    1032,   0,    500,   m3/h,  "2"}
-{LN2,   FT700,    1630,    1038,   0,    500,   m3/h,  "2"}
-{LN2,   FT740,    1640,    1044,   0,    500,   m3/h,  "2"}
-{LN2,   FT760,    1650,    1050,   0,    500,   m3/h,  "2"}
+{SHe,   FT380,    1550,    990,   0,    500,   "m³/h",  "2"}
+{RHtr,  FT580,    1560,    996,   0,    500,   "m³/h",  "2"}
+{RHtr,  FT581,    1570,    1002,   0,    500,   "m³/h",  "2"}
+{RHtr,  FT583,    1580,    1008,   0,    500,   "m³/h",  "2"}
+{LHe,   FT650,    1590,    1014,   0,    500,   "m³/h",  "2"}
+{LHe,   FT651,    1600,    1020,   0,    500,   "m³/h",  "2"}
+{LHe,   FT652,    1610,    1026,   0,    500,   "m³/h",  "2"}
+{LHe,   FT653,    1620,    1032,   0,    500,   "m³/h",  "2"}
+{LN2,   FT700,    1630,    1038,   0,    500,   "m³/h",  "2"}
+{LN2,   FT740,    1640,    1044,   0,    500,   "m³/h",  "2"}
+{LN2,   FT760,    1650,    1050,   0,    500,   "m³/h",  "2"}
 {LHe,   LI660,    1660,    1056,   0,    100,   "%",   "1"}
 {LHe,   LI670,    1670,    1062,   0,    100,   "%",   "1"}
 {LHe,   LI680,    1680,    1068,   0,    100,   "%",   "1"}
@@ -377,7 +377,7 @@ file "gersemi-PID.template" { pattern
 {LHe,    PIC600,  3926,   2466,    "%",	      "mbar"}
 {LHe,    PIC660,  3948,   2476,    "%",	      "mbar"}
 {LHe,    LIC670,  3970,   2486,    "%",	      "%"}
-{SHe,    FIC380,  3992,   2496,    "%",	      "m3/h"}
+{SHe,    FIC380,  3992,   2496,    "%",	      "m³/h"}
 {SHe,    TIC371,  4014,   2506,    "%",	      "K"}
 {SHe,    TIC372,  4036,   2516,    "%",	      "K"}
 {LHe,    PIC660A, 4058,   2526,    "%",	      "mbar"}
@@ -390,13 +390,13 @@ file "gersemi-PID.template" { pattern
 {LHe,    TIC655,  4212,   2596,    "%",	      "K"}
 {LHe,    TIC656,  4234,   2606,    "%",	      "K"}
 {LHe,    TIC657,  4256,   2616,    "%",	      "K"}
-{LHe,    FIC650,  4278,   2626,    "%",	      "m3/h"}
-{LHe,    FIC651,  4300,   2636,    "%",	      "m3/h"}
-{LHe,    FIC652,  4322,   2646,    "%",	      "m3/h"}
-{LHe,    FIC653,  4344,   2656,    "%",	      "m3/h"}
+{LHe,    FIC650,  4278,   2626,    "%",	      "m³/h"}
+{LHe,    FIC651,  4300,   2636,    "%",	      "m³/h"}
+{LHe,    FIC652,  4322,   2646,    "%",	      "m³/h"}
+{LHe,    FIC653,  4344,   2656,    "%",	      "m³/h"}
 {EDwr,   PIC590,  4366,   2666,    "%",	      "mbar"}
-{RHtr,   FIC583,  4388,   2676,    "%",	      "m3/h"}
-{RHtr,   FIC581,  4410,   2686,    "%",	      "m3/h"}
+{RHtr,   FIC583,  4388,   2676,    "%",	      "m³/h"}
+{RHtr,   FIC581,  4410,   2686,    "%",	      "m³/h"}
 }
 
 file "gersemi-Heater1.template" { pattern
@@ -656,7 +656,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ9,	cP_LT600_min,   4586, FLOAT, sP_LT600_min, 6718, "%"}
 {SQ9,	cP_LT600_max,   4590, FLOAT, sP_LT600_max, 6722, "%"}
 {SQ9,	cP_SP_LIC600,   4594, FLOAT, sP_SP_LIC600, 6726, "%"}
-{SQ9,	cP_Warn_FT580,  4598, FLOAT, sP_Warn_FT580,6730, "m3/h"}
+{SQ9,	cP_Warn_FT580,  4598, FLOAT, sP_Warn_FT580,6730, "m³/h"}
 {SQ9,	cP_SP_PIC600,   4602, FLOAT, sP_SP_PIC600, 6734, "mbar"}
 {SQ9,	cP_CoolD_Tt,   	4606, FLOAT, sP_CoolD_Tt,  6738, "K"}
 
@@ -667,7 +667,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ10,	cP_LI660_min,   4672, FLOAT, sP_LI660_min, 6822, "%"}
 {SQ10,	cP_SP_LIC660,   4676, FLOAT, sP_SP_LIC660, 6826, "%"}
 {SQ10,	cP_SP_PIC660,   4680, FLOAT, sP_SP_PIC660, 6830, "mbar"}
-{SQ10,	cP_SP_FIC581,   4684, FLOAT, sP_SP_FIC581, 6834, "m3/h"}
+{SQ10,	cP_SP_FIC581,   4684, FLOAT, sP_SP_FIC581, 6834, "m³/h"}
 {SQ10,	cP_CV601,       4688, FLOAT, sP_CV601,     6838, "%"}
 {SQ10,	cP_CV602,       4692, FLOAT, sP_CV602,     6842, "%"}
 
@@ -675,11 +675,11 @@ file "gersemi-SQanalog.template" { pattern
 {SQ11,	cP_TstartCmp,   4726, INT16, sP_TstartCmp, 6894, "s"}
 {SQ11,	cP_SP_TIC371,   4742, FLOAT, sP_SP_TIC371, 6910, "K"}
 {SQ11,	cP_SP_TIC372,   4746, FLOAT, sP_SP_TIC372, 6914, "K"}
-{SQ11,	cP_SP_FIC380,   4750, FLOAT, sP_SP_FIC380, 6918, "m3/h"}
+{SQ11,	cP_SP_FIC380,   4750, FLOAT, sP_SP_FIC380, 6918, "m³/h"}
 {SQ11,	cP_CV380,       4754, FLOAT, sP_CV380,     6922, "%"}
 
 {SQ12	cP_CV602,       4828, FLOAT, sP_CV602,     7014, "%"}
-{SQ12,	cP_SP_FT581,    4836, FLOAT, sP_SP_FT581,  7022, "m3/h"}
+{SQ12,	cP_SP_FT581,    4836, FLOAT, sP_SP_FT581,  7022, "m³/h"}
 {SQ12,	cP_SP_PIC660,   4840, FLOAT, sP_SP_PIC660, 7026, "mbar"}
 {SQ12,	cP_SP_LIC660,   4844, FLOAT, sP_SP_LIC660, 7030, "%"}
 {SQ12,	cP_SP_LIC670,   4848, FLOAT, sP_SP_LIC670, 7034, "%"}
@@ -692,7 +692,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ13	cP_CV581,       4918, FLOAT, sP_CV581,     7122, "%"}
 {SQ13	cP_CV582,       4922, FLOAT, sP_CV582,     7126, "%"}
 {SQ13	cP_SP_PIC660,   4926, FLOAT, sP_SP_PIC660, 7130, "mbar"}
-{SQ13	cP_FT551,   	4930, FLOAT, sP_FT551, 	   7134, "m3/h"}
+{SQ13	cP_FT551,   	4930, FLOAT, sP_FT551, 	   7134, "m³/h"}
 {SQ13,	cP_SP_LIC660,   4934, FLOAT, sP_SP_LIC660, 7138, "%"}
 {SQ13,	cP_SP_LIC670,   4938, FLOAT, sP_SP_LIC670, 7142, "%"}
 {SQ13,	cP_LI660_max,   4942, FLOAT, sP_LI660_max, 7146, "%"}
@@ -734,7 +734,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ14,	cP_TT665_max,   5012, FLOAT, sP_TT665_max, 7234, "K"}
 {SQ14,	cP_TT665_min,   5016, FLOAT, sP_TT665_min, 7238, "K"}
 {SQ14,	cP_SP_PIC660,   5020, FLOAT, sP_SP_PIC660, 7242, "mbar"}
-{SQ14,	cP_SP_FT581,    5024, FLOAT, sP_SP_FT581,  7246, "m3/h"}
+{SQ14,	cP_SP_FT581,    5024, FLOAT, sP_SP_FT581,  7246, "m³/h"}
 {SQ14,	cP_LI660_min,   5028, FLOAT, sP_LI660_min, 7250, "%"}
 {SQ14,	cP_LI670_min,   5032, FLOAT, sP_LI670_min, 7254, "%"}
 
@@ -749,16 +749,16 @@ file "gersemi-SQanalog.template" { pattern
 {SQ15,	cP_TT685_max,   5118, FLOAT, sP_TT685_max, 7358, "K"}
 {SQ15,	cP_SP_PT660,    5122, FLOAT, sP_SP_PT660,  7362, "mbar"}
 {SQ15,	cP_SP_PT681,    5126, FLOAT, sP_SP_PT681,  7366, "mbar"}
-{SQ15,	cP_SP_FT581,    5130, FLOAT, sP_SP_FT581,  7370, "m3/h"}
-{SQ15,	cP_SP_FT583,    5134, FLOAT, sP_SP_FT583,  7374, "m3/h"}
+{SQ15,	cP_SP_FT581,    5130, FLOAT, sP_SP_FT581,  7370, "m³/h"}
+{SQ15,	cP_SP_FT583,    5134, FLOAT, sP_SP_FT583,  7374, "m³/h"}
 {SQ15,	cP_DeltaL,    	5138, FLOAT, sP_DeltaL,    7378, "m"}
 {SQ15,	cP_dT_o_dL_max,	5142, FLOAT, sP_dT_o_dL_max,7382, "K/m"}
 {SQ15,	cP_dT_o_dt_max,	5146, FLOAT, sP_dT_o_dt_max,7386, "K/min"}
 {SQ15,	cP_SP_TT680,    6718, FLOAT, sP_SP_TT680,  9246, "K"}
 {SQ15,	cP_SP_LT683,    6722, FLOAT, sP_SP_LT683,  9250, "%"}
 {SQ15,	cP_SP_LT682,    6726, FLOAT, sP_SP_LT682,  9254, "%"}
-{SQ15,	cP_FT581_max,   6730, FLOAT, sP_FT581_max, 9258, "m3/h"}
-{SQ15,	cP_FT583_max,   6734, FLOAT, sP_FT583_max, 9262, "m3/h"}
+{SQ15,	cP_FT581_max,   6730, FLOAT, sP_FT581_max, 9258, "m³/h"}
+{SQ15,	cP_FT583_max,   6734, FLOAT, sP_FT583_max, 9262, "m³/h"}
 
 {SQ16,	cP_SP_LIC682,   5172, FLOAT, sP_SP_LIC682, 7430, "%"}
 {SQ16,	cP_SP_PIC681,   5176, FLOAT, sP_SP_PIC681, 7434, "mbar"}
@@ -808,13 +808,13 @@ file "gersemi-SQanalog.template" { pattern
 {SQ18,	cP_QuenchI_min, 5372, FLOAT, sP_QuenchI_min,7666, "A"}
 
 {SQ19,	cP_SP_TT654,   	5430, FLOAT, sP_SP_TT654,  7742, "K"}
-{SQ19,	cP_SP_FT650,   	5434, FLOAT, sP_SP_FT650,  7746, "m3/h"}
+{SQ19,	cP_SP_FT650,   	5434, FLOAT, sP_SP_FT650,  7746, "m³/h"}
 {SQ19,	cP_SP_TT655,   	5438, FLOAT, sP_SP_TT655,  7750, "K"}
-{SQ19,	cP_SP_FT651,   	5442, FLOAT, sP_SP_FT651,  7754, "m3/h"}
+{SQ19,	cP_SP_FT651,   	5442, FLOAT, sP_SP_FT651,  7754, "m³/h"}
 {SQ19,	cP_SP_TT656,   	5446, FLOAT, sP_SP_TT656,  7758, "K"}
-{SQ19,	cP_SP_FT652,   	5450, FLOAT, sP_SP_FT652,  7762, "m3/h"}
+{SQ19,	cP_SP_FT652,   	5450, FLOAT, sP_SP_FT652,  7762, "m³/h"}
 {SQ19,	cP_SP_TT657,   	5454, FLOAT, sP_SP_TT657,  7766, "K"}
-{SQ19,	cP_SP_FT653,   	5458, FLOAT, sP_SP_FT653,  7770, "m3/h"}
+{SQ19,	cP_SP_FT653,   	5458, FLOAT, sP_SP_FT653,  7770, "m³/h"}
 
 {SQ20,	cP_SP_TT645,   	5516, FLOAT, sP_SP_TT645,  7846, "K"}
 {SQ20,	cP_SP_LI670,    5520, FLOAT, sP_SP_LI670,  7850, "%"}
@@ -834,16 +834,16 @@ file "gersemi-SQanalog.template" { pattern
 {SQ22,	cP_CV740,       5696, FLOAT, sP_CV740,     8062, "%"}
 {SQ22,	cP_LI670_min,   5700, FLOAT, sP_LI670_min, 8066, "%"}
 {SQ22,	cP_LI680_min,   5704, FLOAT, sP_LI680_min, 8070, "%"}
-{SQ22,	cP_FT581_max,   5708, FLOAT, sP_FT581_max, 8074, "m3/h"}
-{SQ22,	cP_FT583_max,   5712, FLOAT, sP_FT583_max, 8078, "m3/h"}
+{SQ22,	cP_FT581_max,   5708, FLOAT, sP_FT581_max, 8074, "m³/h"}
+{SQ22,	cP_FT583_max,   5712, FLOAT, sP_FT583_max, 8078, "m³/h"}
 
 {SQ23,	cP_CV581,       5774, FLOAT, sP_CV581,     8158, "%"}
 {SQ23,	cP_CV583,       5778, FLOAT, sP_CV583,     8162, "%"}
 {SQ23,	cP_LI660_min,   5782, FLOAT, sP_LI660_min, 8166, "%"}
 {SQ23,	cP_LI670_min,   5786, FLOAT, sP_LI670_min, 8170, "%"}
 {SQ23,	cP_LI680_min,   5790, FLOAT, sP_LI680_min, 8174, "%"}
-{SQ23,	cP_FT581_max,   5794, FLOAT, sP_FT581_max, 8178, "m3/h"}
-{SQ23,	cP_FT583_max,   5798, FLOAT, sP_FT583_max, 8182, "m3/h"}
+{SQ23,	cP_FT581_max,   5794, FLOAT, sP_FT581_max, 8178, "m³/h"}
+{SQ23,	cP_FT583_max,   5798, FLOAT, sP_FT583_max, 8182, "m³/h"}
 
 {SQ24,	cP_CV581,       5860, FLOAT, sP_CV581,     8262, "%"}
 {SQ24,	cP_CV583,       5864, FLOAT, sP_CV583,     8266, "%"}
