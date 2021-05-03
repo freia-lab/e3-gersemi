@@ -607,7 +607,7 @@ $(pv_value)</tooltip>
           <text>TT$(NR)A</text>
           <x>10</x>
           <width>44</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -664,7 +664,7 @@ $(pv_value)</tooltip>
           <x>10</x>
           <y>35</y>
           <width>45</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -721,7 +721,7 @@ $(pv_value)</tooltip>
           <x>10</x>
           <y>71</y>
           <width>44</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -1539,19 +1539,119 @@ $(pv_value)</tooltip>
       <scale_visible>false</scale_visible>
       <limits_from_pv>false</limits_from_pv>
     </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded EH660AC</name>
-      <macros>
-        <MULTI_HTR>AC</MULTI_HTR>
-        <P>CstatV</P>
-        <S>LHe</S>
-        <V>EH660</V>
-      </macros>
-      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
-      <x>341</x>
-      <y>138</y>
-      <width>95</width>
-      <height>95</height>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_146</name>
+      <text>LT682</text>
+      <x>815</x>
+      <y>194</y>
+      <width>36</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_155</name>
+      <pv_name>$(system):LT682:sRdV</pv_name>
+      <x>816</x>
+      <y>212</y>
+      <width>39</width>
+      <height>16</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_197</name>
+      <text>TT668M</text>
+      <x>620</x>
+      <y>230</y>
+      <width>47</width>
+      <height>18</height>
+      <font>
+        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_192</name>
+      <pv_name>CstatV-LHe:TT668M:sRdV</pv_name>
+      <x>670</x>
+      <y>230</y>
+      <width>66</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <precision>2</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="GRAY-BORDER" red="121" green="121" blue="121">
+        </color>
+      </border_color>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Grouping Container_10</name>
@@ -1746,119 +1846,19 @@ $(pv_value)</tooltip>
         </border_color>
       </widget>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_146</name>
-      <text>LT682</text>
-      <x>815</x>
-      <y>194</y>
-      <width>36</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_155</name>
-      <pv_name>$(system):LT682:sRdV</pv_name>
-      <x>816</x>
-      <y>212</y>
-      <width>39</width>
-      <height>16</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <precision>2</precision>
-      <show_units>false</show_units>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="GRAY-BORDER" red="121" green="121" blue="121">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_197</name>
-      <text>TT668M</text>
-      <x>620</x>
-      <y>230</y>
-      <width>47</width>
-      <height>19</height>
-      <font>
-        <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update Template_192</name>
-      <pv_name>CstatV-LHe:TT668M:sRdV</pv_name>
-      <x>670</x>
-      <y>230</y>
-      <width>66</width>
-      <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <precision>2</precision>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_width>2</border_width>
-      <border_color>
-        <color name="GRAY-BORDER" red="121" green="121" blue="121">
-        </color>
-      </border_color>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded EH660AC</name>
+      <macros>
+        <MULTI_HTR>AC</MULTI_HTR>
+        <P>CstatV</P>
+        <S>LHe</S>
+        <V>EH660</V>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
+      <x>341</x>
+      <y>138</y>
+      <width>95</width>
+      <height>95</height>
     </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
@@ -2800,7 +2800,7 @@ $(pv_value)</tooltip>
       <x>80</x>
       <y>29</y>
       <width>38</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -2883,7 +2883,7 @@ $(pv_value)</tooltip>
       <x>210</x>
       <y>169</y>
       <width>47</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font name="Fine Print" family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6753,7 +6753,7 @@ Gas Bag</text>
       <text>TT$(NR)A</text>
       <x>84</x>
       <width>44</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6811,7 +6811,7 @@ Gas Bag</text>
       <x>85</x>
       <y>42</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6869,7 +6869,7 @@ Gas Bag</text>
       <x>84</x>
       <y>81</y>
       <width>44</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
