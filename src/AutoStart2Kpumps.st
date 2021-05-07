@@ -203,7 +203,9 @@ float DV_SP, WH_SP;
      when ((SQ13_state != 0) && (WH_SP >= final_WH_SQ13)) {} state idle_2K
      when ((SQ17_state != 0) && (WH_SP >= final_WH_SQ17)) {} state idle_2K
      when (holdState) {} state ramping_up
-     when (delay (60) && (flow < flowLimit_SQ13)) {
+     when (delay (60) && 
+     	  (((SQ13_state != 0) && (flow < flowLimit_SQ13)) || 
+	  ((SQ17_state != 0) && (flow < flowLimit_SQ17)))) {
      	  if (DV_SP < 100) {
 	     if (SQ13_state != 0) {
 	       DV_SP = DV_SP + rampStep_SQ13;
@@ -227,7 +229,6 @@ float DV_SP, WH_SP;
 	     pvPut (cSetV_WH);
 	  }
 	  printf ("WH = %f\tDV = %f\n", WH_SP, DV_SP);
-
      } state ramping_up
    }
 

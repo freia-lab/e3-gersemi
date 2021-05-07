@@ -81,4 +81,6 @@ GERSEMI_PLC_20221_04_22 - KG, Hopefully fixed the bug in SQ18 - CV680 remained o
 GERSEMI_PLC_20221_04_23 - KG, Added current leads heating when SQ22 or SQ23 is active and the magnet insert is in the cryostat.
 GERSEMI_PLC_20221_04_27 - KG, Added use of the FT581/FT583 limits instead of setpoints in SQ15. Changes in DB215 and FC215.
 		Restored original use of TT662 in SQ15 (change done temporary in GERSEMI_PLC_20221_01_27.
+GERSEMI_PLC_20221_05_07 - KG, Fixed bugs in SQ9 - stopping the sequence was not correct programs and in some steps missing altogether.
+		It was not possible to stop the sequence in step 44. Changed only in FC209 (G7_SQ9).
 		
