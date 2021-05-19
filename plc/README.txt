@@ -83,4 +83,5 @@ GERSEMI_PLC_20221_04_27 - KG, Added use of the FT581/FT583 limits instead of set
 		Restored original use of TT662 in SQ15 (change done temporary in GERSEMI_PLC_20221_01_27.
 GERSEMI_PLC_20221_05_07 - KG, Fixed bugs in SQ9 - stopping the sequence was not correct programs and in some steps missing altogether.
 		It was not possible to stop the sequence in step 44. Changed only in FC209 (G7_SQ9).
+GERSEMI_PLC_20221_05_18 - KG, Changed the scaling factor of PT681 (from SCA_0_1800 to SCA_0_1333) (FC404).
 		
