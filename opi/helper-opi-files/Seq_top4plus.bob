@@ -18,7 +18,7 @@
     <text>$(seq_title)</text>
     <x>10</x>
     <y>4</y>
-    <width>493</width>
+    <width>430</width>
     <height>32</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="19.0">
@@ -34,6 +34,7 @@
     </background_color>
     <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
     <actions>
     </actions>
     <border_color>
@@ -162,8 +163,8 @@ grafcet:</text>
     <name>LED Template</name>
     <pv_name>$(C)-Ctrl:$(seq_no):cmdSetParam</pv_name>
     <bit>0</bit>
-    <x>517</x>
-    <y>11</y>
+    <x>520</x>
+    <y>10</y>
     <width>16</width>
     <height>16</height>
     <off_color>
@@ -718,5 +719,86 @@ $(pv_value)</tooltip>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </border_color>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_3</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):sActivate</pv_name>
+    <bit>0</bit>
+    <x>450</x>
+    <y>10</y>
+    <width>16</width>
+    <height>16</height>
+    <off_color>
+      <color name="LED-GREEN-OFF" red="90" green="110" blue="90">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_4</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):sStopping</pv_name>
+    <bit>0</bit>
+    <x>490</x>
+    <y>10</y>
+    <width>16</width>
+    <height>16</height>
+    <off_color>
+      <color name="LED-ORANGE-OFF" red="110" green="105" blue="90">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-ORANGE-ON" red="255" green="175" blue="81">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED Template_5</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):sRun</pv_name>
+    <bit>0</bit>
+    <x>470</x>
+    <y>10</y>
+    <width>16</width>
+    <height>16</height>
+    <off_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </off_color>
+    <on_color>
+      <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+      </color>
+    </on_color>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <line_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </line_color>
+    <actions>
+    </actions>
   </widget>
 </display>

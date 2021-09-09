@@ -480,7 +480,7 @@ file "gersemi-SQbinary.template" { pattern
 {SQ1,   3860, 5830, 1,"SQ5-20 must NOT run", 0,"", 0,"", 0,"", 0,""}
 {SQ2,   3946, 5934, 1,"SQ5-20 must NOT run", 0,"", 0,"", 0,"", 0,""}
 {SQ3,   4032, 6038, 1,"SQ5-20 must NOT run", 0,"", 0,"", 0,"", 0,""}
-{SQ4,   4118, 6142, 0,"", 0,"", 0,"", 0,"", 0,""}
+{SQ4,   4118, 6142, 26,"SQ16(4)|SQ17(20) running", 0,"", 0,"", 0,"", 0,""}
 {SQ5,   4204, 6246, 2,"SQ21 must NOT run", 21,"SQ1 must NOT run", 0,"", 0,"", 0,""}
 {SQ6,   4290, 6350, 3,"SQ22 must NOT run", 22,"SQ2-3 must NOT run", 30,"Liq/Mag insert missing", 0,"", 0,""}
 {SQ7,   4376, 6454, 4,"SQ23 must NOT run", 22,"SQ2-3 must NOT run", 31,"Vacuum insert missing", 0,"", 0,""}
@@ -510,7 +510,7 @@ file "gersemi-SQmessages.template" { pattern
 {SQ1,  5830, "Stop the conditioning?", "Keep under vacuum?", "Stop the conditioning?", "Can not pressurize", "", "", ""}
 {SQ2,  5934, "Stop the conditioning?", "Keep under vacuum?", "Stop the conditioning?", "Can not pressurize", "", "", ""}
 {SQ3,  6038, "Stop the conditioning?", "Keep under vacuum?", "Stop the conditioning?", "Can not pressurize", "", "", ""}
-{SQ4, 6142,"", "", "", "", "", "", ""}
+{SQ4, 6142,"Continue?", "Cables disconnected?", "Reconnect cables and Stop", "", "", "", ""}
 {SQ5, 6246,"", "", "", "", "", "", ""}
 {SQ6, 6350,"", "", "", "", "", "", ""}
 {SQ7, 6454,"", "", "", "", "", "", ""}

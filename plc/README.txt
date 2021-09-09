@@ -84,4 +84,11 @@ GERSEMI_PLC_20221_04_27 - KG, Added use of the FT581/FT583 limits instead of set
 GERSEMI_PLC_20221_05_07 - KG, Fixed bugs in SQ9 - stopping the sequence was not correct programs and in some steps missing altogether.
 		It was not possible to stop the sequence in step 44. Changed only in FC209 (G7_SQ9).
 GERSEMI_PLC_20221_05_18 - KG, Changed the scaling factor of PT681 (from SCA_0_1800 to SCA_0_1333) (FC404).
+GERSEMI_PLC_20221_09_08 - KG, Modified the conditions for the current leads temp ok (sent to MagLPS): added checking ove/underrange 
+		and set it to FALSE when SQ4 is running.(FC132).
+		Added bypassing the hardware magnet_insert bit in SQ4 step 6 and 8 (when the cables to the insert are 
+		disconnected) (FC298)
+GERSEMI_PLC_20221_09_09 - KG, Added setting the temperature sensors in simulation mode and back in SQ4. SQ4 sequences nad messages
+		done. Modified DB204, FC404, FC204, FC461, FC118
+
 		

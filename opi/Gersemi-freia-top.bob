@@ -937,10 +937,13 @@ cooling</tooltip>
               <seq_title>Sequence 4: High voltage insulation tests</seq_title>
               <step0>Not running</step0>
               <step1>Checking equipment</step1>
+              <step10>Going back to normal operation.</step10>
               <step2>Checking parameters</step2>
-              <step4>Warming up</step4>
+              <step4>Waiting for confirmation...</step4>
+              <step6>Waiting for disconnection of the cables and confirmation by the operator</step6>
+              <step8>HV tests going on. When ready, reconnect the cables and Stop the sequence.</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ4</text>
@@ -2943,7 +2946,7 @@ Conditioning He circuits</tooltip>
     </actions>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update</name>
-      <pv_name>$(C)-Ctrl:VacIns:sInp</pv_name>
+      <pv_name>$(C)-Ctrl:VacIns:sProcInp</pv_name>
       <width>150</width>
       <visible>false</visible>
       <font>
@@ -2979,7 +2982,7 @@ Conditioning He circuits</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_1</name>
-      <pv_name>$(C)-Ctrl:LiqIns:sInp</pv_name>
+      <pv_name>$(C)-Ctrl:LiqIns:sProcInp</pv_name>
       <width>150</width>
       <visible>false</visible>
       <font>
@@ -3015,7 +3018,7 @@ Conditioning He circuits</tooltip>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_2</name>
-      <pv_name>$(C)-Ctrl:MagIns:sInp</pv_name>
+      <pv_name>$(C)-Ctrl:MagIns:sProcInp</pv_name>
       <width>150</width>
       <visible>false</visible>
       <font>
