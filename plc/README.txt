@@ -90,5 +90,9 @@ GERSEMI_PLC_20221_09_08 - KG, Modified the conditions for the current leads temp
 		disconnected) (FC298)
 GERSEMI_PLC_20221_09_09 - KG, Added setting the temperature sensors in simulation mode and back in SQ4. SQ4 sequences nad messages
 		done. Modified DB204, FC404, FC204, FC461, FC118
+GERSEMI_PLC_20221_09_10 - KG, Removed the necessity/possibility to select the type of insert from the GUI. This feature was only
+		implemented in WinCC and porting it to Epics seems to be unnecessary. Therefore the variable used to select the insert
+		from the GUI is now set automatically in the PLC program based on the hardware bits indicating which insert is connected.
+		(FC298).
 
 		

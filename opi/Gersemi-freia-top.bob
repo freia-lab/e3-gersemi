@@ -3760,7 +3760,7 @@ Open/Close</text>
     <text>Simulate
 Analog Input</text>
     <x>15</x>
-    <y>955</y>
+    <y>940</y>
     <width>146</width>
     <height>50</height>
     <font>
@@ -3788,7 +3788,7 @@ Alarms</text>
     <x>15</x>
     <y>885</y>
     <width>146</width>
-    <height>56</height>
+    <height>50</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="14.0">
       </font>
@@ -3960,5 +3960,30 @@ Alarms</text>
     <x>1680</x>
     <y>10</y>
     <width>140</width>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_3</name>
+    <actions>
+      <action type="open_display">
+        <file>../freia-symbols/display-builder/CmdPanels/Cstat-DI-sim-top.bob</file>
+        <target>window</target>
+        <description>Simulate Digital Input</description>
+      </action>
+    </actions>
+    <text>Simulate
+Digital Input</text>
+    <x>15</x>
+    <y>995</y>
+    <width>146</width>
+    <height>50</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <tooltip>$(actions)</tooltip>
   </widget>
 </display>
