@@ -94,5 +94,9 @@ GERSEMI_PLC_20221_09_10 - KG, Removed the necessity/possibility to select the ty
 		implemented in WinCC and porting it to Epics seems to be unnecessary. Therefore the variable used to select the insert
 		from the GUI is now set automatically in the PLC program based on the hardware bits indicating which insert is connected.
 		(FC298).
-
-		
+GERSEMI_PLC_20221_09_13 - KG, Added TT670A-C to the list of simulated temperatures. (DB204, FC404).
+		Turned EH650A/B-653A/B and 670AC during steps 6 and 8 of SQ4 (FC563).
+		Closed (reset actuation) FV680 during steps 6 and 8 of SQ4 (FC556).
+		Turned off LIC683 in SQ4 steps 6,8,10 (FC562)
+		Set CV680 to 0 in SQ4 step 6. Opened CV680 with ramp in SQ4 step 10. (FC557).
+		Added parameters for SQ4 in DB410.
