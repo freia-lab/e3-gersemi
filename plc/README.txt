@@ -100,3 +100,6 @@ GERSEMI_PLC_20221_09_13 - KG, Added TT670A-C to the list of simulated temperatur
 		Turned off LIC683 in SQ4 steps 6,8,10 (FC562)
 		Set CV680 to 0 in SQ4 step 6. Opened CV680 with ramp in SQ4 step 10. (FC557).
 		Added parameters for SQ4 in DB410.
+GERSEMI_PLC_20221_09_22 - KG, Added handling of the current leads cooling during SQ4. Saved initial regulatiom mode of CV650-653 and
+		restored in in step 10. Added parameters for the setting of CV650-653 (flow) during steps 6 and 8. The valves will
+		be set to these parameters in steps 6 and 8.
