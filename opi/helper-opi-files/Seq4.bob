@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Seq4</name>
   <width>555</width>
-  <height>400</height>
+  <height>700</height>
   <background_color>
     <color name="BACKGROUND" red="220" green="225" blue="221">
     </color>
@@ -517,5 +517,922 @@
         </font>
       </font>
     </widget>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <tabs>
+      <tab>
+        <name>4K Operation (SQ16)</name>
+        <children>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_33</name>
+            <text>Position</text>
+            <x>278</x>
+            <width>49</width>
+            <height>19</height>
+            <font>
+              <font family="Source Sans Pro" style="REGULAR" size="14.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_31</name>
+            <text>Auto pos.</text>
+            <x>358</x>
+            <width>56</width>
+            <height>19</height>
+            <font>
+              <font family="Source Sans Pro" style="REGULAR" size="14.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="group" version="2.0.0">
+            <name>Group</name>
+            <x>20</x>
+            <y>22</y>
+            <width>410</width>
+            <height>150</height>
+            <style>3</style>
+            <transparent>true</transparent>
+            <widget type="group" version="2.0.0">
+              <name>Group</name>
+              <macros>
+                <Cvalve>$(C)-RHtr:$(V)</Cvalve>
+                <V>CV583</V>
+              </macros>
+              <width>410</width>
+              <height>30</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="action_button" version="3.0.0">
+                <name>Menu Button Template</name>
+                <actions>
+                  <action type="write_pv">
+                    <pv_name>$(Cvalve):cmdAuto</pv_name>
+                    <value>1</value>
+                    <description>Auto</description>
+                  </action>
+                  <action type="write_pv">
+                    <pv_name>$(Cvalve):cmdMan</pv_name>
+                    <value>1</value>
+                    <description>Manual</description>
+                  </action>
+                </actions>
+                <pv_name>$(Cvalve):sAuto</pv_name>
+                <text>Ctrl Mode</text>
+                <x>90</x>
+                <font>
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
+                  </font>
+                </font>
+                <foreground_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </foreground_color>
+              </widget>
+              <widget type="textentry" version="3.0.0">
+                <name>Text Input Template_21</name>
+                <pv_name>$(Cvalve):cSetV</pv_name>
+                <x>200</x>
+                <y>5</y>
+                <width>44</width>
+                <precision>1</precision>
+                <show_units>false</show_units>
+                <actions>
+                </actions>
+                <rules>
+                  <rule name="Visibility rule" prop_id="visible" out_exp="false">
+                    <exp bool_exp="pv0">
+                      <value>false</value>
+                    </exp>
+                    <pv_name>$(Cvalve):sAuto</pv_name>
+                  </rule>
+                </rules>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update Template_37</name>
+                <pv_name>$(Cvalve):sRdV</pv_name>
+                <x>260</x>
+                <y>5</y>
+                <width>55</width>
+                <precision>1</precision>
+                <wrap_words>false</wrap_words>
+                <actions>
+                </actions>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update Template_38</name>
+                <pv_name>$(Cvalve):sAutoRdV</pv_name>
+                <x>340</x>
+                <y>5</y>
+                <width>55</width>
+                <precision>1</precision>
+                <wrap_words>false</wrap_words>
+                <actions>
+                </actions>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="led" version="2.0.0">
+                <name>LED Template</name>
+                <pv_name>$(Cvalve):sAuto</pv_name>
+                <bit>0</bit>
+                <width>80</width>
+                <height>30</height>
+                <off_label>$(V)</off_label>
+                <off_color>
+                  <color name="MINOR" red="252" green="242" blue="17">
+                  </color>
+                </off_color>
+                <on_label>$(V)</on_label>
+                <on_color>
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
+                  </color>
+                </on_color>
+                <font>
+                  <font family="Source Sans Pro" style="REGULAR" size="14.0">
+                  </font>
+                </font>
+                <foreground_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </foreground_color>
+                <line_color>
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
+                  </color>
+                </line_color>
+                <square>true</square>
+                <actions>
+                </actions>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group</name>
+              <macros>
+                <D>PT583</D>
+                <S>RHtr</S>
+              </macros>
+              <y>30</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_6</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update</name>
+                <pv_name>$(C)-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_1</name>
+              <macros>
+                <D>FT583</D>
+                <S>RHtr</S>
+              </macros>
+              <y>50</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_7</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update_1</name>
+                <pv_name>$(C)-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_2</name>
+              <macros>
+                <Cvalve>$(C)-RHtr:$(V)</Cvalve>
+                <V>CV581</V>
+              </macros>
+              <y>80</y>
+              <width>410</width>
+              <height>30</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="action_button" version="3.0.0">
+                <name>Menu Button Template_1</name>
+                <actions>
+                  <action type="write_pv">
+                    <pv_name>$(Cvalve):cmdAuto</pv_name>
+                    <value>1</value>
+                    <description>Auto</description>
+                  </action>
+                  <action type="write_pv">
+                    <pv_name>$(Cvalve):cmdMan</pv_name>
+                    <value>1</value>
+                    <description>Manual</description>
+                  </action>
+                </actions>
+                <pv_name>$(Cvalve):sAuto</pv_name>
+                <text>Ctrl Mode</text>
+                <x>90</x>
+                <font>
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
+                  </font>
+                </font>
+                <foreground_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </foreground_color>
+              </widget>
+              <widget type="textentry" version="3.0.0">
+                <name>Text Input Template_22</name>
+                <pv_name>$(Cvalve):cSetV</pv_name>
+                <x>200</x>
+                <y>5</y>
+                <width>44</width>
+                <precision>1</precision>
+                <show_units>false</show_units>
+                <actions>
+                </actions>
+                <rules>
+                  <rule name="Visibility rule" prop_id="visible" out_exp="false">
+                    <exp bool_exp="pv0">
+                      <value>false</value>
+                    </exp>
+                    <pv_name>$(Cvalve):sAuto</pv_name>
+                  </rule>
+                </rules>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update Template_39</name>
+                <pv_name>$(Cvalve):sRdV</pv_name>
+                <x>260</x>
+                <y>5</y>
+                <width>55</width>
+                <precision>1</precision>
+                <wrap_words>false</wrap_words>
+                <actions>
+                </actions>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update Template_40</name>
+                <pv_name>$(Cvalve):sAutoRdV</pv_name>
+                <x>340</x>
+                <y>5</y>
+                <width>55</width>
+                <precision>1</precision>
+                <wrap_words>false</wrap_words>
+                <actions>
+                </actions>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="led" version="2.0.0">
+                <name>LED Template_1</name>
+                <pv_name>$(Cvalve):sAuto</pv_name>
+                <bit>0</bit>
+                <width>80</width>
+                <height>30</height>
+                <off_label>$(V)</off_label>
+                <off_color>
+                  <color name="MINOR" red="252" green="242" blue="17">
+                  </color>
+                </off_color>
+                <on_label>$(V)</on_label>
+                <on_color>
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
+                  </color>
+                </on_color>
+                <font>
+                  <font family="Source Sans Pro" style="REGULAR" size="14.0">
+                  </font>
+                </font>
+                <foreground_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </foreground_color>
+                <line_color>
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
+                  </color>
+                </line_color>
+                <square>true</square>
+                <actions>
+                </actions>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_3</name>
+              <macros>
+                <D>PT581</D>
+                <S>RHtr</S>
+              </macros>
+              <y>110</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_8</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update_2</name>
+                <pv_name>$(C)-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_4</name>
+              <macros>
+                <D>FT581</D>
+                <S>RHtr</S>
+              </macros>
+              <y>130</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_9</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update_3</name>
+                <pv_name>$(C)-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+              </widget>
+            </widget>
+          </widget>
+          <widget type="action_button" version="3.0.0">
+            <name>Action Button</name>
+            <actions>
+              <action type="open_file">
+                <file>../plots/SQ4-4K.plt</file>
+                <description>Open Plot</description>
+              </action>
+            </actions>
+            <x>388</x>
+            <y>192</y>
+            <tooltip>$(actions)</tooltip>
+          </widget>
+          <widget type="action_button" version="3.0.0">
+            <name>Action Button_2</name>
+            <actions>
+              <action type="open_file">
+                <file>../pvtabs/SQ4-4K.pvs</file>
+                <description>Open PV Table</description>
+              </action>
+            </actions>
+            <x>268</x>
+            <y>192</y>
+            <width>120</width>
+            <tooltip>$(actions)</tooltip>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>2K Operation (SQ17)</name>
+        <children>
+          <widget type="group" version="2.0.0">
+            <name>Group_5</name>
+            <x>20</x>
+            <y>22</y>
+            <width>410</width>
+            <height>210</height>
+            <style>3</style>
+            <transparent>true</transparent>
+            <widget type="group" version="2.0.0">
+              <name>Group_6</name>
+              <macros>
+                <Cvalve>$(C)-RHtr:$(V)</Cvalve>
+                <V>CV583</V>
+              </macros>
+              <width>410</width>
+              <height>30</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="action_button" version="3.0.0">
+                <name>Menu Button Template_2</name>
+                <actions>
+                  <action type="write_pv">
+                    <pv_name>$(Cvalve):cmdAuto</pv_name>
+                    <value>1</value>
+                    <description>Auto</description>
+                  </action>
+                  <action type="write_pv">
+                    <pv_name>$(Cvalve):cmdMan</pv_name>
+                    <value>1</value>
+                    <description>Manual</description>
+                  </action>
+                </actions>
+                <pv_name>$(Cvalve):sAuto</pv_name>
+                <text>Ctrl Mode</text>
+                <x>90</x>
+                <font>
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
+                  </font>
+                </font>
+                <foreground_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </foreground_color>
+              </widget>
+              <widget type="textentry" version="3.0.0">
+                <name>Text Input Template_23</name>
+                <pv_name>$(Cvalve):cSetV</pv_name>
+                <x>200</x>
+                <y>5</y>
+                <width>44</width>
+                <precision>1</precision>
+                <show_units>false</show_units>
+                <actions>
+                </actions>
+                <rules>
+                  <rule name="Visibility rule" prop_id="visible" out_exp="false">
+                    <exp bool_exp="pv0">
+                      <value>false</value>
+                    </exp>
+                    <pv_name>$(Cvalve):sAuto</pv_name>
+                  </rule>
+                </rules>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update Template_41</name>
+                <pv_name>$(Cvalve):sRdV</pv_name>
+                <x>260</x>
+                <y>5</y>
+                <width>55</width>
+                <precision>1</precision>
+                <wrap_words>false</wrap_words>
+                <actions>
+                </actions>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update Template_42</name>
+                <pv_name>$(Cvalve):sAutoRdV</pv_name>
+                <x>340</x>
+                <y>5</y>
+                <width>55</width>
+                <precision>1</precision>
+                <wrap_words>false</wrap_words>
+                <actions>
+                </actions>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="led" version="2.0.0">
+                <name>LED Template_2</name>
+                <pv_name>$(Cvalve):sAuto</pv_name>
+                <bit>0</bit>
+                <width>80</width>
+                <height>30</height>
+                <off_label>$(V)</off_label>
+                <off_color>
+                  <color name="MINOR" red="252" green="242" blue="17">
+                  </color>
+                </off_color>
+                <on_label>$(V)</on_label>
+                <on_color>
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
+                  </color>
+                </on_color>
+                <font>
+                  <font family="Source Sans Pro" style="REGULAR" size="14.0">
+                  </font>
+                </font>
+                <foreground_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </foreground_color>
+                <line_color>
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
+                  </color>
+                </line_color>
+                <square>true</square>
+                <actions>
+                </actions>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_7</name>
+              <macros>
+                <D>PT583</D>
+                <S>RHtr</S>
+              </macros>
+              <y>30</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_10</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update_4</name>
+                <pv_name>$(C)-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_8</name>
+              <macros>
+                <D>FT583</D>
+                <S>RHtr</S>
+              </macros>
+              <y>52</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_11</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update_5</name>
+                <pv_name>$(C)-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_9</name>
+              <macros>
+                <Cvalve>$(C)-RHtr:$(V)</Cvalve>
+                <V>CV582</V>
+              </macros>
+              <y>80</y>
+              <width>410</width>
+              <height>30</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="action_button" version="3.0.0">
+                <name>Menu Button Template_3</name>
+                <actions>
+                  <action type="write_pv">
+                    <pv_name>$(Cvalve):cmdAuto</pv_name>
+                    <value>1</value>
+                    <description>Auto</description>
+                  </action>
+                  <action type="write_pv">
+                    <pv_name>$(Cvalve):cmdMan</pv_name>
+                    <value>1</value>
+                    <description>Manual</description>
+                  </action>
+                </actions>
+                <pv_name>$(Cvalve):sAuto</pv_name>
+                <text>Ctrl Mode</text>
+                <x>90</x>
+                <font>
+                  <font family="Source Sans Pro" style="BOLD" size="13.0">
+                  </font>
+                </font>
+                <foreground_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </foreground_color>
+              </widget>
+              <widget type="textentry" version="3.0.0">
+                <name>Text Input Template_24</name>
+                <pv_name>$(Cvalve):cSetV</pv_name>
+                <x>200</x>
+                <y>5</y>
+                <width>44</width>
+                <precision>1</precision>
+                <show_units>false</show_units>
+                <actions>
+                </actions>
+                <rules>
+                  <rule name="Visibility rule" prop_id="visible" out_exp="false">
+                    <exp bool_exp="pv0">
+                      <value>false</value>
+                    </exp>
+                    <pv_name>$(Cvalve):sAuto</pv_name>
+                  </rule>
+                </rules>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update Template_43</name>
+                <pv_name>$(Cvalve):sRdV</pv_name>
+                <x>260</x>
+                <y>5</y>
+                <width>55</width>
+                <precision>1</precision>
+                <wrap_words>false</wrap_words>
+                <actions>
+                </actions>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update Template_44</name>
+                <pv_name>$(Cvalve):sAutoRdV</pv_name>
+                <x>340</x>
+                <y>5</y>
+                <width>55</width>
+                <precision>1</precision>
+                <wrap_words>false</wrap_words>
+                <actions>
+                </actions>
+                <border_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </border_color>
+              </widget>
+              <widget type="led" version="2.0.0">
+                <name>LED Template_3</name>
+                <pv_name>$(Cvalve):sAuto</pv_name>
+                <bit>0</bit>
+                <width>80</width>
+                <height>30</height>
+                <off_label>$(V)</off_label>
+                <off_color>
+                  <color name="MINOR" red="252" green="242" blue="17">
+                  </color>
+                </off_color>
+                <on_label>$(V)</on_label>
+                <on_color>
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
+                  </color>
+                </on_color>
+                <font>
+                  <font family="Source Sans Pro" style="REGULAR" size="14.0">
+                  </font>
+                </font>
+                <foreground_color>
+                  <color name="BLACK" red="0" green="0" blue="0">
+                  </color>
+                </foreground_color>
+                <line_color>
+                  <color name="BACKGROUND" red="220" green="225" blue="221">
+                  </color>
+                </line_color>
+                <square>true</square>
+                <actions>
+                </actions>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_10</name>
+              <macros>
+                <D>PT582</D>
+                <S>RHtr</S>
+              </macros>
+              <y>110</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_12</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update_6</name>
+                <pv_name>$(C)-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_11</name>
+              <macros>
+                <D>FT551</D>
+                <S>RHtr</S>
+              </macros>
+              <y>132</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_13</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update_7</name>
+                <pv_name>CstatH-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+                <precision>1</precision>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_13</name>
+              <macros>
+                <D>PT553</D>
+                <S>2Kpumps</S>
+              </macros>
+              <y>180</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_15</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update_9</name>
+                <pv_name>CstatH-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+              </widget>
+            </widget>
+            <widget type="group" version="2.0.0">
+              <name>Group_12</name>
+              <macros>
+                <D>PT584</D>
+                <S>RHtr</S>
+              </macros>
+              <y>158</y>
+              <width>170</width>
+              <height>20</height>
+              <style>3</style>
+              <transparent>true</transparent>
+              <widget type="label" version="2.0.0">
+                <name>Label_14</name>
+                <text>$(D)</text>
+                <width>68</width>
+                <horizontal_alignment>2</horizontal_alignment>
+              </widget>
+              <widget type="textupdate" version="2.0.0">
+                <name>Text Update_8</name>
+                <pv_name>$(C)-$(S):$(D):sRdV</pv_name>
+                <x>90</x>
+              </widget>
+            </widget>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_34</name>
+            <text>Position</text>
+            <x>278</x>
+            <width>49</width>
+            <height>18</height>
+            <font>
+              <font family="Source Sans Pro" style="REGULAR" size="14.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label Template_35</name>
+            <text>Auto pos.</text>
+            <x>358</x>
+            <width>56</width>
+            <height>18</height>
+            <font>
+              <font family="Source Sans Pro" style="REGULAR" size="14.0">
+              </font>
+            </font>
+            <foreground_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </foreground_color>
+            <background_color>
+              <color name="BACKGROUND" red="220" green="225" blue="221">
+              </color>
+            </background_color>
+            <vertical_alignment>1</vertical_alignment>
+            <auto_size>true</auto_size>
+            <actions>
+            </actions>
+            <border_color>
+              <color name="IO Border" red="215" green="215" blue="215">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="action_button" version="3.0.0">
+            <name>Action Button_1</name>
+            <actions>
+              <action type="open_file">
+                <file>../plots/SQ4-2K.plt</file>
+                <description>Open Plot</description>
+              </action>
+            </actions>
+            <x>388</x>
+            <y>192</y>
+            <tooltip>$(actions)</tooltip>
+          </widget>
+          <widget type="action_button" version="3.0.0">
+            <name>Action Button_3</name>
+            <actions>
+              <action type="open_file">
+                <file>../pvtabs/SQ4-2K.pvs</file>
+                <description>Open PV Table</description>
+              </action>
+            </actions>
+            <x>268</x>
+            <y>192</y>
+            <width>120</width>
+            <tooltip>$(actions)</tooltip>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>20</x>
+    <y>400</y>
+    <width>510</width>
+    <height>280</height>
+    <active_tab>1</active_tab>
   </widget>
 </display>

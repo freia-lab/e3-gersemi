@@ -103,3 +103,6 @@ GERSEMI_PLC_20221_09_13 - KG, Added TT670A-C to the list of simulated temperatur
 GERSEMI_PLC_20221_09_22 - KG, Added handling of the current leads cooling during SQ4. Saved initial regulatiom mode of CV650-653 and
 		restored in in step 10. Added parameters for the setting of CV650-653 (flow) during steps 6 and 8. The valves will
 		be set to these parameters in steps 6 and 8.
+GERSEMI_PLC_20221_09_27 - KG, Added handling of the CV581, CV582 and CV583 during SQ4. The PIC controllers (PIC660, PIC660A and PIC681)
+		are turned off during steps 6, 8 and 10 and the correcponding control valvae are frozen at the value at the moment of
+		entering step 6. Changes in FC557 and FC562.
