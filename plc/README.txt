@@ -106,3 +106,9 @@ GERSEMI_PLC_20221_09_22 - KG, Added handling of the current leads cooling during
 GERSEMI_PLC_20221_09_27 - KG, Added handling of the CV581, CV582 and CV583 during SQ4. The PIC controllers (PIC660, PIC660A and PIC681)
 		are turned off during steps 6, 8 and 10 and the correcponding control valvae are frozen at the value at the moment of
 		entering step 6. Changes in FC557 and FC562.
+GERSEMI_PLC_20221_09_29 - KG, Fixed check parameters condition for SQ4 (FC141).
+		Added quench related parameters in SQ16 (DB216, FC117, FC118). Added quench validation logic (FC216).
+		Added new states for dealing with quench at 4K (FC216).
+		Added control of FV642 and FV587 in SQ16 step 8 and 10 (FC556)
+		Added control of CV583 in SQ16 step 8 (FC557)
+
