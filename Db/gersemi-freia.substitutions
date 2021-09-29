@@ -522,7 +522,7 @@ file "gersemi-SQmessages.template" { pattern
 {SQ13, 7078,"Is FV551 closed?", "2K tank empty! Continue?", "", "Press Yes to continue", "", "", ""}
 {SQ14, 7182,"", "", "", "", "", "", ""}
 {SQ15, 7286,"Is recovery choosen?", "", "", "", "", "", ""}
-{SQ16, 7390,"", "", "", "", "", "", ""}
+{SQ16, 7390,"Resume normal operation?", "", "", "", "", "", ""}
 {SQ17, 7494,"Is FV551 closed?", "HX683 empty! Continue?", "2K pumps stopped?", "2K pumps ready?", "", "", ""}
 {SQ18, 7598,"", "", "", "", "", "", ""}
 {SQ19, 7702,"", "", "", "", "", "", ""}
@@ -769,6 +769,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ16,	cP_SP_PIC681,   5176, FLOAT, sP_SP_PIC681, 7434, "mbar"}
 {SQ16,	cP_SP_LIC683,   5180, FLOAT, sP_SP_LIC683, 7438, "%"}
 {SQ16,	cP_SP_PIC660,   5184, FLOAT, sP_SP_PIC660, 7442, "mbar"}
+{SQ16,	cP_QuenchI_min, 5188, FLOAT, sP_QuenchI_min,7446, "A"}
 
 {SQ17,	cP_LT683_min,   5258, FLOAT, sP_LT683_min, 7534, "%"}
 {SQ17,	cP_SP_PIC660,   5262, FLOAT, sP_SP_PIC660, 7538, "mbar"}
@@ -872,6 +873,7 @@ file "gersemi-SQbinPar.template" { pattern
 
 file "gersemi-SQbinStat.template" { pattern
 {SUBS,	 SIG,          OFFS, BIT, ZNAM,		ONAM}
+{SQ16,	 QuenchIgnore, 7391,  2,  "No",		"Yes"}
 {SQ24,	 FltPre,       5410,  0,  "OK",		"Fault"}
 {SQ25,	 FltPre,       5410,  0,  "OK",		"Fault"}
 {SQ18,	 QuenchIgnore, 7599,  2,  "No",		"Yes"}
