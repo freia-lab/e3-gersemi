@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>Seq_top4plus</name>
+  <name>Seq_top13and17</name>
   <macros>
     <W>freia.physics.uu.se</W>
   </macros>
@@ -475,14 +475,6 @@ in the web browser</tooltip>
       <x>56</x>
       <y>5</y>
       <width>33</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <actions>
@@ -498,18 +490,19 @@ in the web browser</tooltip>
       <x>98</x>
       <y>5</y>
       <width>222</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="255" green="255" blue="255">
-        </color>
-      </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
       <actions>
       </actions>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="(pvInt0==0) and (pvInt1==0)">
+            <value>false</value>
+          </exp>
+          <pv_name>$(C)-Ctrl:$(seq_no):sMsgDispl</pv_name>
+          <pv_name>$(C)-Ctrl:$(seq_no):sMsgQuery</pv_name>
+        </rule>
+      </rules>
       <border_color>
         <color red="0" green="128" blue="255">
         </color>
