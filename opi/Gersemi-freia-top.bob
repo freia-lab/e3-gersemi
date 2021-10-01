@@ -21,6 +21,7 @@
     <x>10</x>
     <y>120</y>
     <width>142</width>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="15.0">
       </font>
@@ -48,7 +49,7 @@
     <x>14</x>
     <y>2</y>
     <width>130</width>
-    <height>50</height>
+    <height>47</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
       </font>
@@ -503,11 +504,13 @@
               <seq_title>Seq. 16: Magnet - operation at 4.2.K</seq_title>
               <step0>Not running</step0>
               <step1>Checking parameters</step1>
+              <step10>Waiting for "Yes"</step10>
               <step2>Checking equipment</step2>
               <step4>Regulation</step4>
               <step6>Stop - waiting for CV602 and CV680 to close</step6>
+              <step8>Quench detected - waiting for PT681 &lt; SP PIC681</step8>
             </macros>
-            <target>standalone</target>
+            <target>window</target>
           </action>
         </actions>
         <text>SQ$(nr)</text>
