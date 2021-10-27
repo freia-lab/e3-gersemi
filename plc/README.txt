@@ -113,5 +113,6 @@ GERSEMI_PLC_2021_09_29 - KG, Fixed check parameters condition for SQ4 (FC141).
 		Added control of CV583 in SQ16 step 8 (FC557)
 GERSEMI_PLC_2021_10_13 - KG, Changed the EH580 control (FC414) - TS signal is taken from TOR data (process data Ls_c) instead directly 
 		from data inputs data block. (now it's possible to simulate the signal).
-
+GERSEMI_PLC_2021_10_27 - KG, Added support for a new control valve CV644 (manual mode only so far). Changed in DB100/DB101 
+		(source files *V10), DB307, DB401 and FC407.
 
