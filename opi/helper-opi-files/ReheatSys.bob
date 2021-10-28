@@ -308,14 +308,14 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_5</name>
-    <x>559</x>
+    <x>561</x>
     <y>435</y>
-    <width>59</width>
+    <width>20</width>
     <height>1</height>
     <points>
       <point x="0.0" y="0.0">
       </point>
-      <point x="58.0" y="0.0">
+      <point x="20.0" y="0.0">
       </point>
     </points>
     <line_width>1</line_width>
@@ -543,7 +543,7 @@ System</text>
       <x>20</x>
       <y>14</y>
       <width>61</width>
-      <height>67</height>
+      <height>69</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1015,7 +1015,7 @@ circuit</text>
       <text>Magnet Bath (via CV583)</text>
       <y>250</y>
       <width>190</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -3165,37 +3165,6 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_152</name>
-    <pv_name>$(P)-LHe:FIC650:sOutV</pv_name>
-    <x>608</x>
-    <y>455</y>
-    <width>61</width>
-    <height>16</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <precision>2</precision>
-    <show_units>false</show_units>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_153</name>
     <pv_name>$(P)-LHe:TT654:sRdV</pv_name>
     <x>403</x>
@@ -5240,18 +5209,6 @@ related to the Gas Bag</tooltip>
     </macros>
     <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
     <x>484</x>
-    <y>417</y>
-    <width>77</width>
-    <height>37</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_8</name>
-    <macros>
-      <L>FIC650</L>
-      <S>LHe</S>
-    </macros>
-    <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
-    <x>596</x>
     <y>417</y>
     <width>77</width>
     <height>37</height>

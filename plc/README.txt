@@ -115,4 +115,7 @@ GERSEMI_PLC_2021_10_13 - KG, Changed the EH580 control (FC414) - TS signal is ta
 		from data inputs data block. (now it's possible to simulate the signal).
 GERSEMI_PLC_2021_10_27 - KG, Added support for a new control valve CV644 (manual mode only so far). Changed in DB100/DB101 
 		(source files *V10), DB307, DB401 and FC407.
+GERSEMI_PLC_2021_10_28 - KG, Added support TIC644 PID. (needs to be tested). Used the previous FIC650 PID. Changed the souces for 
+		DB100/DB101 (*_V10), DB312, renamed DB518, modified FC411, FC557, FC562 and FC117.
+
 
