@@ -117,5 +117,8 @@ GERSEMI_PLC_2021_10_27 - KG, Added support for a new control valve CV644 (manual
 		(source files *V10), DB307, DB401 and FC407.
 GERSEMI_PLC_2021_10_28 - KG, Added support TIC644 PID. (needs to be tested). Used the previous FIC650 PID. Changed the souces for 
 		DB100/DB101 (*_V10), DB312, renamed DB518, modified FC411, FC557, FC562 and FC117.
+GERSEMI_PLC_2021_11_01 - KG, Finished adding support for TIC644 PID and CV644 (needs to be tested). Added display of P_SEL, I_SEL and 
+		D_SEL arguments to CONT_C function (New version of db100/db101 data blocks (V12). Added possibility to turn D_SEL on 
+		and off from Epics interface. Changes in FC562, FC557, FC312, DB100 and DB101.
 
 

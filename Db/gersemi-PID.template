@@ -18,6 +18,30 @@ record(bi, "CstatV-$(SUBS):$(DEV):sRegOn") {
   field(FLNK, "CstatV-$(SUBS):$(DEV):sOutV-cOutput-manInitLink")
 }
 
+record(bi, "CstatV-$(SUBS):$(DEV):sPSEL") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=2")
+  field(ONAM, "P_SEL On")
+  field(ZNAM, "P_SEL Off")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-$(SUBS):$(DEV):sISEL") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=3")
+  field(ONAM, "I_SEL On")
+  field(ZNAM, "I_SEL Off")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "CstatV-$(SUBS):$(DEV):sDSEL") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/$(OFFS) T=BYTE B=4")
+  field(ONAM, "D_SEL On")
+  field(ZNAM, "D_SEL Off")
+  field(SCAN, "I/O Intr")
+}
+
 record(ai, "CstatV-$(SUBS):$(DEV):sSetP") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:GERSEMI/$(OFFS)+2 T=FLOAT")
@@ -149,6 +173,28 @@ record(bo, "CstatV-$(SUBS):$(DEV):cmdRegOff") {
   field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=3")
   field(ZNAM, "Iddle")
   field(ONAM, "CmdRegOff")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdSetDSEL") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=6")
+  field(ZNAM, "Iddle")
+  field(ONAM, "Set D_SEL")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
+  field(SDIS, "CstatV-Ctrl:opMode:sLocal")
+}
+
+record(bo, "CstatV-$(SUBS):$(DEV):cmdRstDSEL") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:GERSEMI/$(OFFS2) T=BYTE B=7")
+  field(ZNAM, "Iddle")
+  field(ONAM, "Reset D_SEL")
   field(PINI, "NO")
   field(HIGH, "0.5")
   field(UDFS, "NO_ALARM")
