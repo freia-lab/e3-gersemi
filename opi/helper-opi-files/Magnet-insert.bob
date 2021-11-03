@@ -12,10 +12,47 @@
   <actions>
   </actions>
   <widget type="polyline" version="2.0.0">
+    <name>Polyline_18</name>
+    <x>30</x>
+    <y>290</y>
+    <width>1</width>
+    <height>30</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="30.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_16</name>
+    <x>30</x>
+    <y>290</y>
+    <width>1</width>
+    <height>250</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="250.0">
+      </point>
+    </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+      </color>
+    </line_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
     <name>Polyline_2</name>
     <x>90</x>
     <y>650</y>
-    <width>0</width>
+    <width>1</width>
     <height>280</height>
     <points>
       <point x="0.0" y="280.0">
@@ -33,7 +70,7 @@
     <name>Polyline_15</name>
     <x>90</x>
     <y>620</y>
-    <width>0</width>
+    <width>1</width>
     <height>30</height>
     <points>
       <point x="0.0" y="0.0">
@@ -50,18 +87,18 @@
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_3</name>
-    <x>180</x>
+    <x>200</x>
     <y>80</y>
     <width>40</width>
     <height>80</height>
     <points>
+      <point x="40.0" y="0.0">
+      </point>
       <point x="0.0" y="0.0">
       </point>
-      <point x="20.0" y="0.0">
+      <point x="0.0" y="80.0">
       </point>
       <point x="20.0" y="80.0">
-      </point>
-      <point x="40.0" y="80.0">
       </point>
     </points>
     <line_width>1</line_width>
@@ -3097,7 +3134,7 @@ $(pv_value)</tooltip>
     <x>70</x>
     <y>490</y>
     <width>450</width>
-    <height>0</height>
+    <height>1</height>
     <points>
       <point x="0.0" y="0.0">
       </point>
@@ -3523,7 +3560,7 @@ $(pv_value)</tooltip>
     <x>130</x>
     <y>330</y>
     <width>390</width>
-    <height>0</height>
+    <height>1</height>
     <points>
       <point x="390.0" y="0.0">
       </point>
@@ -9571,8 +9608,8 @@ $(pv_value)</tooltip>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_153</name>
     <pv_name>$(P)-LHe:TT644:sRdV</pv_name>
-    <x>22</x>
-    <y>70</y>
+    <x>322</x>
+    <y>90</y>
     <width>66</width>
     <height>19</height>
     <font>
@@ -9600,8 +9637,8 @@ $(pv_value)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_93</name>
     <text>TT644</text>
-    <x>20</x>
-    <y>50</y>
+    <x>320</x>
+    <y>70</y>
     <width>36</width>
     <height>18</height>
     <font>
@@ -9632,16 +9669,16 @@ $(pv_value)</tooltip>
       <S>LHe</S>
     </macros>
     <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
-    <x>103</x>
-    <y>63</y>
+    <x>230</x>
+    <y>60</y>
     <width>77</width>
     <height>37</height>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_154</name>
     <pv_name>$(P)-LHe:TIC644:sOutV</pv_name>
-    <x>115</x>
-    <y>101</y>
+    <x>242</x>
+    <y>98</y>
     <width>61</width>
     <height>16</height>
     <font>
@@ -9759,7 +9796,7 @@ $(pv_value)</tooltip>
     <x>21</x>
     <y>856</y>
     <width>36</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -9889,41 +9926,61 @@ $(pv_value)</tooltip>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
   </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline_16</name>
-    <x>30</x>
-    <y>290</y>
-    <width>0</width>
-    <height>250</height>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-      <point x="0.0" y="250.0">
-      </point>
-    </points>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_156</name>
+    <pv_name>$(P)-LHe:FT644:sRdV</pv_name>
+    <x>102</x>
+    <y>100</y>
+    <width>66</width>
+    <height>19</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
-    </line_color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
   </widget>
-  <widget type="polyline" version="2.0.0">
-    <name>Polyline_18</name>
-    <x>30</x>
-    <y>290</y>
-    <width>1</width>
-    <height>30</height>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-      <point x="0.0" y="30.0">
-      </point>
-    </points>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="IO Liquid Helium" red="51" green="102" blue="255">
+  <widget type="label" version="2.0.0">
+    <name>Label Template_94</name>
+    <text>FT644</text>
+    <x>100</x>
+    <y>80</y>
+    <width>36</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
-    </line_color>
-    <arrows>2</arrows>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
   </widget>
 </display>

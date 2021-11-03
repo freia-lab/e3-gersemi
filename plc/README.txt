@@ -121,6 +121,9 @@ GERSEMI_PLC_2021_11_01 - KG, Finished adding support for TIC644 PID and CV644 (n
 		D_SEL arguments to CONT_C function (New version of db100/db101 data blocks (V12). Added possibility to turn D_SEL on 
 		and off from Epics interface. Changes in FC562, FC557, FC312, DB100 and DB101.
 GERSEMI_PLC_2021_11_02 - KG, Set TIC644.XH_API also in step 8 of SQ15 (FC562 NW59)
+GERSEMI_PLC_2021_11_03 - KG, Added support for FT644 (DB100/101 source files *_V12, DB304, DB321, DB400, FC404).
+		Changed the condition for "Underrange" error from <=Min to <Min (FC304 NW9).
+
 
 
 
