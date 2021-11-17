@@ -123,6 +123,8 @@ GERSEMI_PLC_2021_11_01 - KG, Finished adding support for TIC644 PID and CV644 (n
 GERSEMI_PLC_2021_11_02 - KG, Set TIC644.XH_API also in step 8 of SQ15 (FC562 NW59)
 GERSEMI_PLC_2021_11_03 - KG, Added support for FT644 (DB100/101 source files *_V12, DB304, DB321, DB400, FC404).
 		Changed the condition for "Underrange" error from <=Min to <Min (FC304 NW9).
+GERSEMI_PLC_2021_11_16 - KG, Added CV644 to SQ1 (FC557).
+
 
 
 
