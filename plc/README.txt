@@ -124,7 +124,9 @@ GERSEMI_PLC_2021_11_02 - KG, Set TIC644.XH_API also in step 8 of SQ15 (FC562 NW5
 GERSEMI_PLC_2021_11_03 - KG, Added support for FT644 (DB100/101 source files *_V12, DB304, DB321, DB400, FC404).
 		Changed the condition for "Underrange" error from <=Min to <Min (FC304 NW9).
 GERSEMI_PLC_2021_11_16 - KG, Added CV644 to SQ1 (FC557).
-
+GERSEMI_PLC_2021_11_17 - KG, Fixed a bug: creating the sHtrOn status (#RR in FC414). It was a logical AND instead of OR of the 
+		3 heaters' status.
+GERSEMI_PLC_2021_11_22 - Fixed opening of FV641 in SQ15 step 6 amnd 8 (FC556).
 
 
 

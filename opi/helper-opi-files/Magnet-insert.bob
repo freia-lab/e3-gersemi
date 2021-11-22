@@ -729,7 +729,7 @@ $(pv_value)</tooltip>
           <text>TT$(NR)A</text>
           <x>10</x>
           <width>44</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -786,7 +786,7 @@ $(pv_value)</tooltip>
           <x>10</x>
           <y>35</y>
           <width>45</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -843,7 +843,7 @@ $(pv_value)</tooltip>
           <x>10</x>
           <y>71</y>
           <width>44</width>
-          <height>18</height>
+          <height>19</height>
           <font>
             <font family="Source Sans Pro" style="REGULAR" size="14.0">
             </font>
@@ -951,6 +951,40 @@ $(pv_value)</tooltip>
           <color name="GRAY-BORDER" red="121" green="121" blue="121">
           </color>
         </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_3</name>
+        <text>ΔT</text>
+        <x>204</x>
+        <y>108</y>
+        <width>66</width>
+        <height>26</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD_ITALIC" size="20.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update</name>
+        <pv_name>=`$(system):TT665M:sRdV`-`$(system):TT662M:sRdV`</pv_name>
+        <x>234</x>
+        <y>111</y>
+        <width>65</width>
       </widget>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -2922,7 +2956,7 @@ $(pv_value)</tooltip>
       <x>80</x>
       <y>29</y>
       <width>38</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6883,7 +6917,7 @@ Gas Bag</text>
       <text>TT$(NR)A</text>
       <x>84</x>
       <width>44</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6941,7 +6975,7 @@ Gas Bag</text>
       <x>85</x>
       <y>42</y>
       <width>45</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -6999,7 +7033,7 @@ Gas Bag</text>
       <x>84</x>
       <y>81</y>
       <width>44</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -9437,19 +9471,6 @@ $(pv_value)</tooltip>
     <width>51</width>
     <height>28</height>
   </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_10</name>
-    <x>210</x>
-    <y>250</y>
-    <width>20</width>
-    <height>50</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <transparent>true</transparent>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_150</name>
     <text>TT645</text>
@@ -9980,6 +10001,63 @@ $(pv_value)</tooltip>
     </actions>
     <border_color>
       <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_138</name>
+    <text>FT583</text>
+    <x>783</x>
+    <y>30</y>
+    <width>36</width>
+    <height>18</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_151</name>
+    <pv_name>CstatV-RHtr:FT583:sRdV</pv_name>
+    <x>780</x>
+    <y>48</y>
+    <width>66</width>
+    <height>17</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
       </color>
     </border_color>
   </widget>
