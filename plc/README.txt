@@ -127,6 +127,10 @@ GERSEMI_PLC_2021_11_16 - KG, Added CV644 to SQ1 (FC557).
 GERSEMI_PLC_2021_11_17 - KG, Fixed a bug: creating the sHtrOn status (#RR in FC414). It was a logical AND instead of OR of the 
 		3 heaters' status.
 GERSEMI_PLC_2021_11_22 - Fixed opening of FV641 in SQ15 step 6 amnd 8 (FC556).
+GERSEMI_PLC_2021_11_29 - Updated commissioning parameters for SQ15 (db410). Added turning EH641 in SQ15 steps 6-8 when TT665M > 80K. Set
+		The High and Low temperature to 60 and 50 K (values defined in db410) when entering state 6 and restoring the previous
+		settings when entering state 10 or stopping SQ15 (FC563).
+
 
 
 
