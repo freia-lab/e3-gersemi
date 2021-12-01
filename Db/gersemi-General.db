@@ -550,3 +550,17 @@ record (stringin, "$(P)-Ctrl:SQ9:cFV601-SpecModState") {
   field(DESC, "FV601-SpecMode state")
 }
 
+#####################################################################
+#
+# PVs for general data from the PLC
+#
+#####################################################################
+
+
+record(ai, "$(P)-RHtr:FTtotMagIns4K:sRdV") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:GERSEMI/20 T=FLOAT")
+  field(PREC, "1")
+  field(SCAN, "I/O Intr")
+  field(EGU, "m³/h")
+}

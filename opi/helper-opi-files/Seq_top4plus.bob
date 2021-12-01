@@ -108,7 +108,7 @@
     <x>20</x>
     <y>140</y>
     <width>35</width>
-    <height>19</height>
+    <height>18</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -702,6 +702,9 @@ in the web browser</tooltip>
         </exp>
         <exp bool_exp="pv0== 41">
           <value>$(step41)</value>
+        </exp>
+        <exp bool_exp="pv0==5">
+          <value>$(step5)</value>
         </exp>
         <pv_name>$(C)-Ctrl:$(seq_no):sStep</pv_name>
       </rule>

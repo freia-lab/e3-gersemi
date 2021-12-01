@@ -9626,67 +9626,10 @@ $(pv_value)</tooltip>
       </color>
     </line_color>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_153</name>
-    <pv_name>$(P)-LHe:TT644:sRdV</pv_name>
-    <x>322</x>
-    <y>90</y>
-    <width>66</width>
-    <height>19</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="13.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <precision>2</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_width>2</border_width>
-    <border_color>
-      <color name="GRAY-BORDER" red="121" green="121" blue="121">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Label Template_93</name>
-    <text>TT644</text>
-    <x>320</x>
-    <y>70</y>
-    <width>36</width>
-    <height>18</height>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="14.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_6</name>
     <macros>
-      <L>TIC644</L>
+      <L>FIC644</L>
       <S>LHe</S>
     </macros>
     <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
@@ -9697,7 +9640,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_154</name>
-    <pv_name>$(P)-LHe:TIC644:sOutV</pv_name>
+    <pv_name>$(P)-LHe:FIC644:sOutV</pv_name>
     <x>242</x>
     <y>98</y>
     <width>61</width>

@@ -2292,7 +2292,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_79</name>
-    <pv_name>$(C)-LHe:TT644:sRdV</pv_name>
+    <pv_name>$(C)-LHe:FT644:sRdV</pv_name>
     <x>270</x>
     <y>574</y>
     <width>90</width>
@@ -2355,10 +2355,10 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_55</name>
-    <text>SP TIC644</text>
+    <text>SP FIC644</text>
     <x>10</x>
     <y>571</y>
-    <width>67</width>
+    <width>66</width>
     <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -2379,7 +2379,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>Text Input Template_39</name>
-    <pv_name>$(C)-LHe:TIC644:cSetP</pv_name>
+    <pv_name>$(C)-LHe:FIC644:cSetP</pv_name>
     <x>100</x>
     <y>570</y>
     <width>56</width>
@@ -2397,8 +2397,8 @@ $(pv_value)</tooltip>
         <exp bool_exp="pvInt0 or !pvInt1">
           <expression>False</expression>
         </exp>
-        <pv_name>CstatV-LHe:TIC644:sAuto</pv_name>
-        <pv_name>CstatV-LHe:TIC644:sRegOn</pv_name>
+        <pv_name>CstatV-LHe:FIC644:sAuto</pv_name>
+        <pv_name>CstatV-LHe:FIC644:sRegOn</pv_name>
       </rule>
     </rules>
     <border_color>
@@ -2408,7 +2408,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_81</name>
-    <pv_name>$(C)-LHe:TIC644:sSetP</pv_name>
+    <pv_name>$(C)-LHe:FIC644:sSetP</pv_name>
     <x>165</x>
     <y>574</y>
     <width>90</width>
@@ -2429,7 +2429,7 @@ $(pv_value)</tooltip>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_6</name>
     <macros>
-      <L>TIC644</L>
+      <L>FIC644</L>
       <S>LHe</S>
     </macros>
     <file>../../freia-symbols/display-builder/CstatV-PID-buttonLED.bob</file>
@@ -2437,5 +2437,106 @@ $(pv_value)</tooltip>
     <y>590</y>
     <width>77</width>
     <height>37</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_56</name>
+    <text>DeltaT</text>
+    <x>10</x>
+    <y>631</y>
+    <width>44</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Input Template_40</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):cP_deltaT</pv_name>
+    <x>100</x>
+    <y>630</y>
+    <width>56</width>
+    <height>25</height>
+    <show_units>false</show_units>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_82</name>
+    <pv_name>$(C)-Ctrl:$(seq_no):sP_deltaT</pv_name>
+    <x>165</x>
+    <y>634</y>
+    <width>90</width>
+    <height>18</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_57</name>
+    <text>FT Insert total</text>
+    <x>10</x>
+    <y>660</y>
+    <width>110</width>
+    <height>21</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_83</name>
+    <pv_name>$(C)-RHtr:FTtotMagIns4K:sRdV</pv_name>
+    <x>165</x>
+    <y>663</y>
+    <width>90</width>
+    <height>18</height>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </border_color>
   </widget>
 </display>

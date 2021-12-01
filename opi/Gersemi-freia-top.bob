@@ -21,6 +21,7 @@
     <x>10</x>
     <y>120</y>
     <width>142</width>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="15.0">
       </font>
@@ -48,7 +49,7 @@
     <x>14</x>
     <y>2</y>
     <width>130</width>
-    <height>50</height>
+    <height>47</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
       </font>
@@ -396,7 +397,9 @@
               <step14>Stop - waiting for FV642 and FV680 to close</step14>
               <step2>Checking equipment</step2>
               <step4>Waiting for Yes</step4>
+              <step5>Waiting for transition to state 7</step5>
               <step6>Cooling HX680 and HX683</step6>
+              <step7>Cooling the magnet with mixture of cold and warm GHe</step7>
               <step8>Stop cooling</step8>
             </macros>
             <target>window</target>
@@ -3246,7 +3249,7 @@ Conditioning He circuits</tooltip>
               <x>40</x>
               <y>30</y>
               <width>90</width>
-              <height>13</height>
+              <height>12</height>
               <font>
                 <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
                 </font>

@@ -392,7 +392,7 @@ file "gersemi-PID.template" { pattern
 {LHe,    TIC655,  4212,   2596,    "%",	      "K"}
 {LHe,    TIC656,  4234,   2606,    "%",	      "K"}
 {LHe,    TIC657,  4256,   2616,    "%",	      "K"}
-{LHe,    TIC644,  4278,   2626,    "%",	      "K"}
+{LHe,    FIC644,  4278,   2626,    "%",	      "m³/h"}
 {LHe,    FIC651,  4300,   2636,    "%",	      "m³/h"}
 {LHe,    FIC652,  4322,   2646,    "%",	      "m³/h"}
 {LHe,    FIC653,  4344,   2656,    "%",	      "m³/h"}
@@ -468,7 +468,7 @@ file "gersemi-PID_param.template" { pattern
 {LHe,    TIC655,  3634}
 {LHe,    TIC656,  3648}
 {LHe,    TIC657,  3662}
-{LHe,    TIC644,  3676}
+{LHe,    FIC644,  3676}
 {LHe,    FIC651,  3690}
 {LHe,    FIC652,  3704}
 {LHe,    FIC653,  3718}
@@ -766,6 +766,7 @@ file "gersemi-SQanalog.template" { pattern
 {SQ15,	cP_SP_LT682,    6726, FLOAT, sP_SP_LT682,  9254, "%"}
 {SQ15,	cP_FT581_max,   6730, FLOAT, sP_FT581_max, 9258, "m³/h"}
 {SQ15,	cP_FT583_max,   6734, FLOAT, sP_FT583_max, 9262, "m³/h"}
+{SQ15,	cP_deltaT,   	6738, FLOAT, sP_deltaT,    9266, "K"}
 
 {SQ16,	cP_SP_LIC682,   5172, FLOAT, sP_SP_LIC682, 7430, "%"}
 {SQ16,	cP_SP_PIC681,   5176, FLOAT, sP_SP_PIC681, 7434, "mbar"}

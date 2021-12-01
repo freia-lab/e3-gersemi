@@ -126,11 +126,11 @@ GERSEMI_PLC_2021_11_03 - KG, Added support for FT644 (DB100/101 source files *_V
 GERSEMI_PLC_2021_11_16 - KG, Added CV644 to SQ1 (FC557).
 GERSEMI_PLC_2021_11_17 - KG, Fixed a bug: creating the sHtrOn status (#RR in FC414). It was a logical AND instead of OR of the 
 		3 heaters' status.
-GERSEMI_PLC_2021_11_22 - Fixed opening of FV641 in SQ15 step 6 amnd 8 (FC556).
-GERSEMI_PLC_2021_11_29 - Updated commissioning parameters for SQ15 (db410). Added turning EH641 in SQ15 steps 6-8 when TT665M > 80K. Set
-		The High and Low temperature to 60 and 50 K (values defined in db410) when entering state 6 and restoring the previous
+GERSEMI_PLC_2021_11_22 - KG, Fixed opening of FV641 in SQ15 step 6 amnd 8 (FC556).
+GERSEMI_PLC_2021_11_29 - KG, Updated commissioning parameters for SQ15 (db410). Added turning EH641 in SQ15 steps 6-8 when TT665M > 80K. 
+		Set the High and Low temperature to 60 and 50 K (values defined in db410) when entering state 6 and restoring the previous
 		settings when entering state 10 or stopping SQ15 (FC563).
-GERSEMI_PLC_2021_11_29 - Introduced a new states in SQ15: 6 and 7. State5: doing the same as in state 6 - just waiting 180s before 
+GERSEMI_PLC_2021_11_30 - KG, Introduced a new states in SQ15: 6 and 7. State5: doing the same as in state 6 - just waiting 180s before 
 		proceeding to state 7 after TT608 dropped below 5K. State 7: starting the PID for keeping keepin the ratio between 
 		the cold and war GHe at a given level depending of the requested temperature of the mixed gas. The new state transitions
 		are ready (not tested). The control of all the valves but CV641 are updated to be the same in the new states 5 and 7 as 
@@ -140,8 +140,9 @@ GERSEMI_PLC_2021_11_29 - Introduced a new states in SQ15: 6 and 7. State5: doing
 		Introduced a new SQ15 parameter - deltaT that defines the temperature difference between the TT665 and the requested
 		temperature of the mixed He gas. Requires update in the protocol definition.
 		Changes made in db215, db201, fc117, fc118, fc556, fc557, fc563, fc562.
+GERSEMI_PLC_2021_12_01 - KG, Made a new version of EPICS protocol (defined new fields). Recompiled the sources *V13.
+		Changes in db100, db101, db215, fc117, fc118, fc215. Added calculation of FT total for magnet insert in 4K mode.
 
-		
 
 
 
