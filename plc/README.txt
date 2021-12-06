@@ -142,8 +142,9 @@ GERSEMI_PLC_2021_11_30 - KG, Introduced a new states in SQ15: 6 and 7. State5: d
 		Changes made in db215, db201, fc117, fc118, fc556, fc557, fc563, fc562.
 GERSEMI_PLC_2021_12_01 - KG, Made a new version of EPICS protocol (defined new fields). Recompiled the sources *V13.
 		Changes in db100, db101, db215, fc117, fc118, fc215. Added calculation of FT total for magnet insert in 4K mode.
-
-
+GERSEMI_PLC_2021_12_02 - KG, Continued to work on the new magnet cooling algorithm. Calculated warm GHe flow rate to be used for CV644 
+		control. Prepared scaling factors for the new flow meter. Changes in db215,db321, fc215, fc404 and fc562.
+GERSEMI_PLC_2021_12_02 - KG, Renamed TIC644 to FIC644. Changes in Mnemonics, db312, db100, db101, fc411 and fc562.
 
 
 
