@@ -144,7 +144,10 @@ GERSEMI_PLC_2021_12_01 - KG, Made a new version of EPICS protocol (defined new f
 		Changes in db100, db101, db215, fc117, fc118, fc215. Added calculation of FT total for magnet insert in 4K mode.
 GERSEMI_PLC_2021_12_02 - KG, Continued to work on the new magnet cooling algorithm. Calculated warm GHe flow rate to be used for CV644 
 		control. Prepared scaling factors for the new flow meter. Changes in db215,db321, fc215, fc404 and fc562.
-GERSEMI_PLC_2021_12_02 - KG, Renamed TIC644 to FIC644. Changes in Mnemonics, db312, db100, db101, fc411 and fc562.
-GERSEMI_PLC_2021_12_02 - KG, Made changes to connect P090 pump. Changes in fc402 and fc552.
+GERSEMI_PLC_2021_12_06 - KG, Renamed TIC644 to FIC644. Changes in Mnemonics, db312, db100, db101, fc411 and fc562.
+GERSEMI_PLC_2021_12_07 - KG, Made changes to connect P090 pump. Changes in fc402 and fc552.
+GERSEMI_PLC_2021_12_08 - KG, Finished modifications needed for the new algorithm of cooling the magnet (SQ15). Modified fc411, fc215, fc557
+		and fc562.
+
 
 
