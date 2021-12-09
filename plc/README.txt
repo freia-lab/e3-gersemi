@@ -148,6 +148,8 @@ GERSEMI_PLC_2021_12_06 - KG, Renamed TIC644 to FIC644. Changes in Mnemonics, db3
 GERSEMI_PLC_2021_12_07 - KG, Made changes to connect P090 pump. Changes in fc402 and fc552.
 GERSEMI_PLC_2021_12_08 - KG, Finished modifications needed for the new algorithm of cooling the magnet (SQ15). Modified fc411, fc215, fc557
 		and fc562.
+GERSEMI_PLC_2021_12_09 - KG, Fixed some misses in SQ15. Modified fc556 and fc215.
+
 
 
 
