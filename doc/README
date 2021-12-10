@@ -1,2 +1,15 @@
 To start the module on your local DM go to directory above modules directory and start the IOC with the following command:
 rm require.lock-*; iocsh -r ioc-gersemi-freia,local -c 'requireSnippet(gersemi-freia.cmd, "PLC_IPADDR=<actual-ip-addr>")'
+
+When loading the data blocks in the PLC the XH bits are set to 0 (meaning Manual mode for outputs and Forced (Simulated) on inputs.
+
+To fix it use the following command to set all sForced bits to Normal:
+
+1. Create a list off all *:sForced PVs
+2. Use the following command to create a list of commands that will put the PV to Normal:
+
+grep :sForced$ /tmp/all_pvs |awk 'sub(/sForced/,"cmdNorm 1") { printf "caput %s\n", $0 }'
+
+For the outputs use the command:
+
+grep :sAuto$ /tmp/all_pvs |awk 'sub(/sAuto/,"cmdAuto 1") { printf "caput %s\n", $0 }'
