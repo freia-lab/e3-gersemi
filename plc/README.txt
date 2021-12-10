@@ -149,7 +149,7 @@ GERSEMI_PLC_2021_12_07 - KG, Made changes to connect P090 pump. Changes in fc402
 GERSEMI_PLC_2021_12_08 - KG, Finished modifications needed for the new algorithm of cooling the magnet (SQ15). Modified fc411, fc215, fc557
 		and fc562.
 GERSEMI_PLC_2021_12_09 - KG, Fixed some misses in SQ15. Modified fc556 and fc215.
-GERSEMI_PLC_2021_12_09 - KG, Fixed yest another miss connected to SQ15 (FC557).
+GERSEMI_PLC_2021_12_10 - KG, Fixed yest another miss connected to SQ15 (FC557).
 		Added support for the vacuum pumps P050 and P060 (FC401, DB100, DB101, DB302, DB401, DB402)
 
 
