@@ -151,6 +151,10 @@ GERSEMI_PLC_2021_12_08 - KG, Finished modifications needed for the new algorithm
 GERSEMI_PLC_2021_12_09 - KG, Fixed some misses in SQ15. Modified fc556 and fc215.
 GERSEMI_PLC_2021_12_10 - KG, Fixed yest another miss connected to SQ15 (FC557).
 		Added support for the vacuum pumps P050 and P060 (FC401, DB100, DB101, DB302, DB401, DB402)
+GERSEMI_PLC_2021_12_14 - KG, Fixed a bug in a status read-back of P090 (removed code temporary added to long time ago to simulate the status
+		based on the state of SQ1-3.
+		Initialized DATA_SCALES (db321) - forgot to do it after changing the scaling factor for FC644.
+ 
 
 
 
