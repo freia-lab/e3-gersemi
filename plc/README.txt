@@ -154,6 +154,9 @@ GERSEMI_PLC_2021_12_10 - KG, Fixed yest another miss connected to SQ15 (FC557).
 GERSEMI_PLC_2021_12_14 - KG, Fixed a bug in a status read-back of P090 (removed code temporary added to long time ago to simulate the status
 		based on the state of SQ1-3.
 		Initialized DATA_SCALES (db321) - forgot to do it after changing the scaling factor for FC644.
+GERSEMI_PLC_2021_12_16 - KG, Fixed a bug in a control of EH641 (the heating element was  forced to be on if TT644 < 120 K. I have added the
+		additional condition that SQ15 is not active. Change in FC413.
+
  
 
 
