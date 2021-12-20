@@ -156,6 +156,11 @@ GERSEMI_PLC_2021_12_14 - KG, Fixed a bug in a status read-back of P090 (removed 
 		Initialized DATA_SCALES (db321) - forgot to do it after changing the scaling factor for FC644.
 GERSEMI_PLC_2021_12_16 - KG, Fixed a bug in a control of EH641 (the heating element was  forced to be on if TT644 < 120 K. I have added the
 		additional condition that SQ15 is not active. Change in FC413.
+GERSEMI_PLC_2021_12_16 - KG, Changed the way of cooling the magnet - now instead of trying to regulate the temperature of cooling GHe (FIC644)
+		it is cooled based on the max dT/dL - it is cooled down until the max gradient is reached and the CV601 is closed. At the 
+		same time CV644 is fully open and kept open until the dT/dL reaches 2 K/m below then the max value. When this value is reached
+		CV644 closes and normal cooling sequence continues.
+
 
  
 
