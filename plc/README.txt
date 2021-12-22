@@ -164,3 +164,6 @@ GERSEMI_PLC_2021_12_21 - KG, Fixed a bug in setting saving the heater limints fo
 		Added condition for blowing warm GHe in SQ15 when the TT698 < 5K. (FC215). NOTE - this is not finished - it will not work
 		when the temperature of the magnet will drop < 80K. The whole steps 5,6 and 7 of SQ15 must be rewritten.
 		Set the limits for EH641 in SQ15 to 60 and 70 K (from 50 and 60) (DB410).
+GERSEMI_PLC_2021_12_22 - KG, Fixed a baug in handling the restoring the EH641 levels when exiting SQ15.
+		Added possibility to stop SQ15 in state 6.
+
