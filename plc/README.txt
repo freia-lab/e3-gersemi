@@ -166,4 +166,9 @@ GERSEMI_PLC_2021_12_21 - KG, Fixed a bug in setting saving the heater limints fo
 		Set the limits for EH641 in SQ15 to 60 and 70 K (from 50 and 60) (DB410).
 GERSEMI_PLC_2021_12_22 - KG, Fixed a baug in handling the restoring the EH641 levels when exiting SQ15.
 		Added possibility to stop SQ15 in state 6.
+GERSEMI_PLC_2021_12_23 - KG, Code clean-up of SQ15 and related blocks. Removed state 5, state 7 is now used to blow the warm He gas. The
+		old sequence parameter deltaT has been changed to SP_FIC644 (set point for FIC644 during state 7). Removed unused code
+		ans variables for calculating and controlling the ratio between the warm He gas and the total flow from the insert.
+		Changes in FC117, FC118, FC215, FC556, FC557, FC562, FC563 & DB215.
+
 
