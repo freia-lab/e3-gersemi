@@ -170,5 +170,9 @@ GERSEMI_PLC_2021_12_23 - KG, Code clean-up of SQ15 and related blocks. Removed s
 		old sequence parameter deltaT has been changed to SP_FIC644 (set point for FIC644 during state 7). Removed unused code
 		ans variables for calculating and controlling the ratio between the warm He gas and the total flow from the insert.
 		Changes in FC117, FC118, FC215, FC556, FC557, FC562, FC563 & DB215.
+GERSEMI_PLC_2022_04_01 - KG, Fixed an error in the design - transition in SQ15 state 6 -> 8 was based on TT680 which was a pt100 sensor.
+		Changed to TT686. TODO - change the names of the corresponding variables for the sequence paramiters from TT680 to TT686_min.
+		Changed the condition for transition in SQ15 state 7 -> 6: decreased the deltaT hystheresis from 2K to 1K.
+
 
 
