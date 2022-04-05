@@ -173,6 +173,7 @@ GERSEMI_PLC_2021_12_23 - KG, Code clean-up of SQ15 and related blocks. Removed s
 GERSEMI_PLC_2022_04_01 - KG, Fixed an error in the design - transition in SQ15 state 6 -> 8 was based on TT680 which was a pt100 sensor.
 		Changed to TT686. TODO - change the names of the corresponding variables for the sequence paramiters from TT680 to TT686_min.
 		Changed the condition for transition in SQ15 state 7 -> 6: decreased the deltaT hystheresis from 2K to 1K.
-
+GERSEMI_PLC_2022_04_05 - KG, Changed the condition for using EH641 hetater in SQ15 step6 (FC563). Bybassed the condition for the maximum
+		temperature gradient in SQ15 step 6 when the TT665 < 80K (FC215).
 
 
