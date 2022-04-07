@@ -1133,7 +1133,6 @@ $(pv_value)</tooltip>
       <x>20</x>
       <y>137</y>
       <width>35</width>
-      <height>21</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1832,14 +1831,14 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_17</name>
-      <x>88</x>
-      <y>333</y>
-      <width>12</width>
-      <height>26</height>
+      <x>94</x>
+      <y>297</y>
+      <width>10</width>
+      <height>59</height>
       <points>
         <point x="0.0" y="0.0">
         </point>
-        <point x="12.0" y="26.33333333333337">
+        <point x="10.0" y="59.33333333333337">
         </point>
       </points>
       <line_width>1</line_width>
@@ -2305,9 +2304,9 @@ $(pv_value)</tooltip>
       <name>Progress Bar Template_2</name>
       <pv_name>$(system):LT683:sRdV</pv_name>
       <x>120</x>
-      <y>255</y>
-      <width>10</width>
-      <height>80</height>
+      <y>295</y>
+      <width>15</width>
+      <height>45</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="10.0">
         </font>
@@ -2333,17 +2332,26 @@ $(pv_value)</tooltip>
       </actions>
       <limits_from_pv>false</limits_from_pv>
     </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_9</name>
+      <x>58</x>
+      <y>295</y>
+      <width>99</width>
+      <height>45</height>
+      <line_style>2</line_style>
+      <transparent>true</transparent>
+    </widget>
   </widget>
   <widget type="polyline" version="2.0.0">
     <name>Polyline_20</name>
     <x>93</x>
     <y>380</y>
     <width>1</width>
-    <height>15</height>
+    <height>10</height>
     <points>
       <point x="0.0" y="0.0">
       </point>
-      <point x="0.0" y="15.0">
+      <point x="0.0" y="10.0">
       </point>
     </points>
   </widget>
@@ -2769,6 +2777,7 @@ $(pv_value)</tooltip>
     <x>447</x>
     <y>663</y>
     <width>47</width>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>

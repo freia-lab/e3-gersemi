@@ -175,5 +175,9 @@ GERSEMI_PLC_2022_04_01 - KG, Fixed an error in the design - transition in SQ15 s
 		Changed the condition for transition in SQ15 state 7 -> 6: decreased the deltaT hystheresis from 2K to 1K.
 GERSEMI_PLC_2022_04_05 - KG, Changed the condition for using EH641 hetater in SQ15 step6 (FC563). Bybassed the condition for the maximum
 		temperature gradient in SQ15 step 6 when the TT665 < 80K (FC215).
+GERSEMI_PLC_2022_04_07 - KG, Fixed a bug in managing the valves CV581-583 in SQ4 (they should stay constant but the setting have been changed 
+		by the code related to switching between the gas bag and Kaeser compressor. Disabled to start the change when SQ4 is active.
+		Removed the conditions for SQ4 parameters to be not equal zero - in fact we want them to be zero (current leads flows) to
+		avoid cooling current leads too much when the heaters are disconnected during SQ4.
 
 
