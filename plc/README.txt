@@ -179,5 +179,5 @@ GERSEMI_PLC_2022_04_07 - KG, Fixed a bug in managing the valves CV581-583 in SQ4
 		by the code related to switching between the gas bag and Kaeser compressor. Disabled to start the change when SQ4 is active.
 		Removed the conditions for SQ4 parameters to be not equal zero - in fact we want them to be zero (current leads flows) to
 		avoid cooling current leads too much when the heaters are disconnected during SQ4.
-
+GERSEMI_PLC_2022_04_08 - KG, Fixed the set-up of quench detection signal - set the negative logic and minimized the delays (FC402).
 
