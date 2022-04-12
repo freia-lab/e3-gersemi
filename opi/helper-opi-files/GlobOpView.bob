@@ -5109,12 +5109,42 @@ $(pv_value)</tooltip>
       <text>Insert:</text>
       <y>59</y>
     </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_3</name>
-      <pv_name>CstatV-RHtr:FTtotMagIns4K:sRdV</pv_name>
+    <widget type="group" version="2.0.0">
+      <name>FTtotMagIns</name>
       <x>50</x>
       <y>59</y>
       <width>90</width>
+      <height>20</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_4K</name>
+        <pv_name>CstatV-RHtr:FTtotMagIns4K:sRdV</pv_name>
+        <width>90</width>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="(pvInt0 = 0) and (pvInt1 =0)">
+              <value>false</value>
+            </exp>
+            <pv_name>CstatV-Ctrl:SQ15:sActivate</pv_name>
+            <pv_name>CstatV-Ctrl:SQ16:sActivate</pv_name>
+          </rule>
+        </rules>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_2K</name>
+        <pv_name>CstatV-RHtr:FTtotMagIns2K:sRdV</pv_name>
+        <width>90</width>
+        <rules>
+          <rule name="Visible" prop_id="visible" out_exp="false">
+            <exp bool_exp="(pvInt0 = 0) and (pvInt1 =0)">
+              <value>false</value>
+            </exp>
+            <pv_name>CstatV-Ctrl:SQ17:sActivate</pv_name>
+            <pv_name>CstatV-Ctrl:SQ18:sActivate</pv_name>
+          </rule>
+        </rules>
+      </widget>
     </widget>
   </widget>
 </display>
