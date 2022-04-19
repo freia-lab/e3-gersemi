@@ -5122,11 +5122,12 @@ $(pv_value)</tooltip>
         <width>90</width>
         <rules>
           <rule name="Visible" prop_id="visible" out_exp="false">
-            <exp bool_exp="(pvInt0 = 0) and (pvInt1 =0)">
+            <exp bool_exp="(pvInt0 = 0) and (pvInt1 =0) and (not (((pvInt2&gt;0) and (pvInt2&lt;17)) or (pvInt2&gt;23)))">
               <value>false</value>
             </exp>
             <pv_name>CstatV-Ctrl:SQ15:sActivate</pv_name>
             <pv_name>CstatV-Ctrl:SQ16:sActivate</pv_name>
+            <pv_name>CstatV-Ctrl:SQ17:sSubStep</pv_name>
           </rule>
         </rules>
       </widget>
@@ -5136,11 +5137,10 @@ $(pv_value)</tooltip>
         <width>90</width>
         <rules>
           <rule name="Visible" prop_id="visible" out_exp="false">
-            <exp bool_exp="(pvInt0 = 0) and (pvInt1 =0)">
+            <exp bool_exp="(pvInt0 &lt; 17) or  (pvInt1 &gt;23)">
               <value>false</value>
             </exp>
-            <pv_name>CstatV-Ctrl:SQ17:sActivate</pv_name>
-            <pv_name>CstatV-Ctrl:SQ18:sActivate</pv_name>
+            <pv_name>CstatV-Ctrl:SQ17:sSubStep</pv_name>
           </rule>
         </rules>
       </widget>
