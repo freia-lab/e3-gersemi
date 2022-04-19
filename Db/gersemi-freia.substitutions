@@ -892,3 +892,21 @@ file "gersemi-SQ1-3.template" { pattern
 {SQ2, 5935}
 {SQ3, 6039}
 }
+
+file "gersemi-PT-combined.template" { pattern
+{P       SUBS   DEVCOMP DEV0    DEV1}
+{CstatV	 LHe	PI660M	PT660M	PT661M}
+{CstatV	 LHe	PI660L	PT660L	PT661L}
+{CstatV	 LHe	PI680M	PT680M	PT681M}
+{CstatV	 LHe	PI680	PT680	PT681}
+{CstatV	 RHtr	PI581	PT581	PT582}
+}
+
+file "gersemi-tpg300-combined.template" { pattern
+{P       DEVCOMP DEVLO        DEVHI}
+{CstatV	 PT040	 PT040:PrsR   PT041:PrsR}
+{CstatV	 PT042	 PT042:PrsR   PT043:PrsR}
+{CstatV	 PT050	 PT050:sRdV   PT051:sRdV}
+{CstatV	 PT060	 PT060:sRdV   PT061:sRdV}
+{CstatV	 PT070	 PT070:sRdV   PT071:sRdV}
+}

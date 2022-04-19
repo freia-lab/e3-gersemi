@@ -736,7 +736,7 @@ circuit</text>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_39</name>
-    <pv_name>CstatV-RHtr:PT581:sRdV</pv_name>
+    <pv_name>CstatV-RHtr:PI581:sRdV</pv_name>
     <x>401</x>
     <y>160</y>
     <width>76</width>
@@ -1065,10 +1065,10 @@ circuit</text>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_43</name>
-    <text>PT581</text>
+    <text>PI581</text>
     <x>421</x>
     <y>139</y>
-    <width>37</width>
+    <width>33</width>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2578,7 +2578,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_149</name>
-    <pv_name>CstatV-LHe:FT653:sRdV</pv_name>
+    <pv_name>CstatV-LHe:FT652:sRdV</pv_name>
     <x>626</x>
     <y>746</y>
     <width>88</width>
@@ -2796,7 +2796,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_149</name>
-    <pv_name>CstatV-LHe:FT653:sRdV</pv_name>
+    <pv_name>CstatV-LHe:FT651:sRdV</pv_name>
     <x>626</x>
     <y>619</y>
     <width>88</width>
@@ -3013,7 +3013,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_149</name>
-    <pv_name>CstatV-LHe:FT653:sRdV</pv_name>
+    <pv_name>CstatV-LHe:FT650:sRdV</pv_name>
     <x>626</x>
     <y>490</y>
     <width>88</width>
@@ -4928,5 +4928,35 @@ related to the Gas Bag</tooltip>
     <y>560</y>
     <width>150</width>
     <height>210</height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template_181</name>
+    <pv_name>Cryo-Cmp:LP:PI2240</pv_name>
+    <x>808</x>
+    <y>184</y>
+    <width>76</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="13.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <precision>2</precision>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_width>2</border_width>
+    <border_color>
+      <color name="GRAY-BORDER" red="121" green="121" blue="121">
+      </color>
+    </border_color>
   </widget>
 </display>

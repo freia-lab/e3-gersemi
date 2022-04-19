@@ -1,0 +1,9 @@
+record (calc, "$(P)-Vac:$(DEVCOMP):sRdV") {
+    field(SCAN, "1 second")
+    field(EGU, "mbar")
+    field(PREC, "1")
+    field(INPA, "$(P)-Vac:$(DEVLO)")
+    field(INPB, "$(P)-Vac:$(DEVHI)")
+    field(INPC, "1e-3")
+    field(CALC, "B<C?A:B")
+}

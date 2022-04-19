@@ -1,0 +1,10 @@
+record (calc, "$(P)-$(SUBS):$(DEVCOMP):sRdV") {
+    field(SCAN, ".5 second")
+    field(EGU, "mbar")
+    field(PREC, "1")
+    field(INPA, "$(P)-$(SUBS):$(DEV0):sRdV")
+    field(INPB, "$(P)-$(SUBS):$(DEV0):sRdV-stat")
+    field(INPC, "$(P)-$(SUBS):$(DEV1):sRdV")
+    field(INPD, "$(P)-$(SUBS):$(DEV1):sRdV-stat")
+    field(CALC, "D#0?A:C")
+}

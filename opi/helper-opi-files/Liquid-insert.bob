@@ -18,14 +18,14 @@
     <y>410</y>
     <width>383</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="382.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -37,7 +37,6 @@ $(pv_value)</tooltip>
     <x>471</x>
     <y>590</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -65,8 +64,6 @@ $(pv_value)</tooltip>
     <y>760</y>
     <width>497</width>
     <height>41</height>
-    <line_width>2</line_width>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="40.0">
       </point>
@@ -77,6 +74,8 @@ $(pv_value)</tooltip>
       <point x="496.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -88,7 +87,7 @@ $(pv_value)</tooltip>
     <x>947</x>
     <y>44</y>
     <width>85</width>
-    <height>21</height>
+    <height>25</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -112,7 +111,7 @@ $(pv_value)</tooltip>
     <x>122</x>
     <y>300</y>
     <width>36</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -140,13 +139,13 @@ $(pv_value)</tooltip>
     <y>157</y>
     <width>1</width>
     <height>23</height>
-    <line_width>2</line_width>
     <points>
       <point x="0.0" y="22.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -158,7 +157,6 @@ $(pv_value)</tooltip>
     <x>251</x>
     <y>259</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -186,7 +184,6 @@ $(pv_value)</tooltip>
     <x>371</x>
     <y>300</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -214,7 +211,7 @@ $(pv_value)</tooltip>
     <x>990</x>
     <y>121</y>
     <width>30</width>
-    <height>19</height>
+    <height>22</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="15.0">
       </font>
@@ -243,7 +240,7 @@ $(pv_value)</tooltip>
     <x>880</x>
     <y>470</y>
     <width>44</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -417,7 +414,6 @@ $(pv_value)</tooltip>
     <x>1066</x>
     <y>760</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -445,7 +441,6 @@ $(pv_value)</tooltip>
     <x>980</x>
     <y>759</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -473,7 +468,6 @@ $(pv_value)</tooltip>
     <x>390</x>
     <y>589</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -559,7 +553,6 @@ $(pv_value)</tooltip>
     <x>378</x>
     <y>469</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -616,7 +609,6 @@ $(pv_value)</tooltip>
     <x>378</x>
     <y>509</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -703,7 +695,6 @@ $(pv_value)</tooltip>
     <x>252</x>
     <y>300</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -747,15 +738,6 @@ $(pv_value)</tooltip>
       <name>Polygon</name>
       <width>499</width>
       <height>580</height>
-      <line_width>0</line_width>
-      <line_color>
-        <color red="128" green="0" blue="255">
-        </color>
-      </line_color>
-      <background_color>
-        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
-        </color>
-      </background_color>
       <points>
         <point x="85.0" y="0.0">
         </point>
@@ -780,6 +762,15 @@ $(pv_value)</tooltip>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>0</line_width>
+      <line_color>
+        <color red="128" green="0" blue="255">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -1527,13 +1518,13 @@ $(pv_value)</tooltip>
       </widget>
       <widget type="embedded" version="2.0.0">
         <name>Embedded Display_25</name>
-        <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
         <macros>
           <MULTI_HTR>AC</MULTI_HTR>
           <P>CstatV</P>
           <S>LHe</S>
           <V>EH661</V>
         </macros>
+        <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
         <x>120</x>
         <y>32</y>
         <width>95</width>
@@ -1546,7 +1537,7 @@ $(pv_value)</tooltip>
       <x>458</x>
       <y>264</y>
       <width>36</width>
-      <height>18</height>
+      <height>21</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1604,7 +1595,7 @@ $(pv_value)</tooltip>
       <x>455</x>
       <y>532</y>
       <width>36</width>
-      <height>18</height>
+      <height>21</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1662,7 +1653,6 @@ $(pv_value)</tooltip>
       <x>451</x>
       <y>215</y>
       <width>32</width>
-      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1720,7 +1710,7 @@ $(pv_value)</tooltip>
       <x>371</x>
       <y>298</y>
       <width>44</width>
-      <height>19</height>
+      <height>21</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1748,7 +1738,7 @@ $(pv_value)</tooltip>
       <x>372</x>
       <y>340</y>
       <width>45</width>
-      <height>19</height>
+      <height>21</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1776,7 +1766,7 @@ $(pv_value)</tooltip>
       <x>371</x>
       <y>379</y>
       <width>44</width>
-      <height>19</height>
+      <height>21</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1804,7 +1794,7 @@ $(pv_value)</tooltip>
       <x>361</x>
       <y>451</y>
       <width>44</width>
-      <height>19</height>
+      <height>21</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1832,7 +1822,7 @@ $(pv_value)</tooltip>
       <x>362</x>
       <y>493</y>
       <width>45</width>
-      <height>19</height>
+      <height>21</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1860,7 +1850,7 @@ $(pv_value)</tooltip>
       <x>361</x>
       <y>532</y>
       <width>44</width>
-      <height>19</height>
+      <height>21</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1884,13 +1874,13 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_24</name>
-      <file>../../freia-symbols/display-builder/CstatV-Heater1-ld-pv.bob</file>
       <macros>
         <MULTI_HTR>AC</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH670</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-ld-pv.bob</file>
       <x>302</x>
       <y>86</y>
       <width>95</width>
@@ -1898,13 +1888,13 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_27</name>
-      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <macros>
         <MULTI_HTR>AC</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH660</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
       <x>264</x>
       <y>469</y>
       <width>95</width>
@@ -1912,13 +1902,13 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_29</name>
-      <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
       <macros>
         <MULTI_HTR>AF</MULTI_HTR>
         <P>CstatV</P>
         <S>LHe</S>
         <V>EH640</V>
       </macros>
+      <file>../../freia-symbols/display-builder/CstatV-Heater1-lr-pv.bob</file>
       <x>6</x>
       <y>358</y>
       <width>130</width>
@@ -2037,18 +2027,18 @@ $(pv_value)</tooltip>
     <y>67</y>
     <width>1</width>
     <height>114</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="113.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2060,7 +2050,6 @@ $(pv_value)</tooltip>
     <x>756</x>
     <y>370</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2117,7 +2106,6 @@ $(pv_value)</tooltip>
     <x>838</x>
     <y>370</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2174,18 +2162,18 @@ $(pv_value)</tooltip>
     <y>355</y>
     <width>396</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="395.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="GREEN" red="61" green="216" blue="61">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2197,18 +2185,18 @@ $(pv_value)</tooltip>
     <y>195</y>
     <width>264</width>
     <height>3</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
     <points>
       <point x="263.0" y="0.0">
       </point>
       <point x="0.0" y="2.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="GREEN" red="61" green="216" blue="61">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2220,18 +2208,18 @@ $(pv_value)</tooltip>
     <y>311</y>
     <width>383</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color red="255" green="153" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="0.0">
       </point>
       <point x="382.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="255" green="153" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2243,7 +2231,7 @@ $(pv_value)</tooltip>
     <x>822</x>
     <y>272</y>
     <width>36</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2296,7 +2284,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Text Update Template_159</name>
-    <pv_name>CstatV-LHe:PT660L:sRdV</pv_name>
+    <pv_name>CstatV-LHe:PI660L:sRdV</pv_name>
     <x>1094</x>
     <y>104</y>
     <width>87</width>
@@ -2329,7 +2317,6 @@ $(pv_value)</tooltip>
     <x>1116</x>
     <y>122</y>
     <width>44</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2382,11 +2369,10 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_151</name>
-    <text>PT660L</text>
+    <text>PI660L</text>
     <x>1115</x>
     <y>86</y>
-    <width>44</width>
-    <height>19</height>
+    <width>40</width>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2414,7 +2400,6 @@ $(pv_value)</tooltip>
     <x>826</x>
     <y>316</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2442,7 +2427,6 @@ $(pv_value)</tooltip>
     <x>744</x>
     <y>155</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2528,7 +2512,6 @@ $(pv_value)</tooltip>
     <x>822</x>
     <y>155</y>
     <width>36</width>
-    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2585,18 +2568,18 @@ $(pv_value)</tooltip>
     <y>266</y>
     <width>383</width>
     <height>1</height>
-    <line_width>2</line_width>
-    <line_color>
-      <color red="255" green="153" blue="0">
-      </color>
-    </line_color>
-    <arrows>2</arrows>
     <points>
       <point x="382.0" y="0.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <line_color>
+      <color red="255" green="153" blue="0">
+      </color>
+    </line_color>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2608,7 +2591,7 @@ $(pv_value)</tooltip>
     <x>679</x>
     <y>227</y>
     <width>36</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2665,14 +2648,14 @@ $(pv_value)</tooltip>
     <y>67</y>
     <width>1</width>
     <height>114</height>
-    <line_width>2</line_width>
-    <arrows>2</arrows>
     <points>
       <point x="0.0" y="113.0">
       </point>
       <point x="0.0" y="0.0">
       </point>
     </points>
+    <line_width>2</line_width>
+    <arrows>2</arrows>
     <actions>
     </actions>
     <tooltip>$(pv_name)
@@ -2684,6 +2667,7 @@ $(pv_value)</tooltip>
     <x>607</x>
     <y>214</y>
     <width>30</width>
+    <height>22</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="15.0">
       </font>
@@ -2729,7 +2713,7 @@ $(pv_value)</tooltip>
     <x>879</x>
     <y>515</y>
     <width>45</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2786,7 +2770,7 @@ $(pv_value)</tooltip>
     <x>878</x>
     <y>555</y>
     <width>44</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2843,7 +2827,7 @@ $(pv_value)</tooltip>
     <x>879</x>
     <y>600</y>
     <width>45</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2900,7 +2884,7 @@ $(pv_value)</tooltip>
     <x>877</x>
     <y>645</y>
     <width>44</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -2957,7 +2941,7 @@ $(pv_value)</tooltip>
     <x>876</x>
     <y>690</y>
     <width>43</width>
-    <height>19</height>
+    <height>21</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -3182,7 +3166,7 @@ $(pv_value)</tooltip>
     <x>1209</x>
     <y>44</y>
     <width>105</width>
-    <height>21</height>
+    <height>25</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -3202,12 +3186,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_34</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>SHe</S>
       <V>FV382</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>684</x>
     <y>174</y>
     <width>35</width>
@@ -3215,12 +3199,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_35</name>
-    <file>../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LN2</S>
       <V>EV748</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
     <x>761</x>
     <y>243</y>
     <width>35</width>
@@ -3228,12 +3212,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_36</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>SHe</S>
       <V>FV381</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-ld-pv.bob</file>
     <x>530</x>
     <y>344</y>
     <width>35</width>
@@ -3241,12 +3225,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_37</name>
-    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LN2</S>
       <V>CV700</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-CtrlValve-h-pv.bob</file>
     <x>532</x>
     <y>288</y>
     <width>50</width>
@@ -3254,12 +3238,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_38</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV642</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>678</x>
     <y>388</y>
     <width>35</width>
@@ -3267,12 +3251,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_39</name>
-    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV640</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-h-lu-pv.bob</file>
     <x>834</x>
     <y>778</y>
     <width>35</width>
@@ -3280,12 +3264,12 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_40</name>
-    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <macros>
       <P>CstatV</P>
       <S>LHe</S>
       <V>FV660</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatValve-v-lr-pv.bob</file>
     <x>1251</x>
     <y>133</y>
     <width>51</width>
@@ -3293,13 +3277,13 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_28</name>
-    <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
     <macros>
       <MULTI_HTR>AC</MULTI_HTR>
       <P>CstatV</P>
       <S>LHe</S>
       <V>EH641</V>
     </macros>
+    <file>../../freia-symbols/display-builder/CstatV-Heater1-lu-pv.bob</file>
     <x>1110</x>
     <y>706</y>
     <width>95</width>
