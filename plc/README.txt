@@ -181,4 +181,6 @@ GERSEMI_PLC_2022_04_07 - KG, Fixed a bug in managing the valves CV581-583 in SQ4
 		avoid cooling current leads too much when the heaters are disconnected during SQ4.
 GERSEMI_PLC_2022_04_08 - KG, Fixed the set-up of quench detection signal - set the negative logic and minimized the delays (FC402).
 GERSEMI_PLC_2022_04_11 - KG, Added calculating the total flow from the insert mafnet @4K also in SQ16.
+GERSEMI_PLC_2022_04_20 - KG, Changed conditions for the current leads interlock signals sent to maglps PLC (FC132). Changed conditions
+		for calculating the total flow from magnet insert @4K - it's also calculated in relevant steps of SQ17 (FC215).
 
