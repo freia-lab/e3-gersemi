@@ -617,14 +617,14 @@
               <step12>Waiting for 2K pumps to be ready. When 2K pumps are set to Auto mode do nothing</step12>
               <step14>Closing CV581. Waiting for CV581 to close</step14>
               <step16>Waiting for FV581 and FV584 to close</step16>
-              <step18>Pumping down according to the table until reaching the SP PIC660A</step18>
+              <step18>Pumping down according to the table until reaching\n the SP PIC660A</step18>
               <step2>Checking equipment</step2>
               <step20>Reached SP PIC660A. Regulating the pressure. Waiting for stop or change of the SP PIC660A</step20>
               <step22>Waiting for FV582 to close</step22>
               <step24>Wait for PT660 &gt; PT660 sequence parameter and CV581 to be opened and 2K pumps stopped</step24>
               <step26>Ventilating 2K pumps. Waiting for PT584 &gt;= PT584 sequence parameter</step26>
               <step28>Waiting for FV556 to close</step28>
-              <step4>Make sure FV551 is closed. Press Yes to continue or No to stop</step4>
+              <step4>Make sure FV551 is closed and valve for the 2K pumps water cooling is open. Press Yes to continue or No to stop</step4>
               <step6>Waiting for "Yes" or "No" (No to stop the sequence)</step6>
               <step8>Starting SQ18. Opening  CV581 - waiting for CV681 &gt;= P_CV681</step8>
             </macros>
@@ -734,7 +734,7 @@
               <step2>Checking equipment</step2>
               <step4>LT682, PT681, LT683 regulated. Waiting for start of cool-down of lower bath.</step4>
               <step6>2K operation until stop or quench</step6>
-              <step8>Quench! Waiting for "Normal state"</step8>
+              <step8>Quench! Waiting for "Normal state" or "Yes"</step8>
             </macros>
             <target>window</target>
           </action>
