@@ -183,4 +183,8 @@ GERSEMI_PLC_2022_04_08 - KG, Fixed the set-up of quench detection signal - set t
 GERSEMI_PLC_2022_04_11 - KG, Added calculating the total flow from the insert mafnet @4K also in SQ16.
 GERSEMI_PLC_2022_04_20 - KG, Changed conditions for the current leads interlock signals sent to maglps PLC (FC132). Changed conditions
 		for calculating the total flow from magnet insert @4K - it's also calculated in relevant steps of SQ17 (FC215).
+GERSEMI_PLC_2022_04_26 - KG, Changed SQ18 transition from quench detection (step 8) to step 10/14 - now it's possible to proceed when 
+		operatore presses "Yes" (it still enables the transition on "Normal state" digital signal high (I9.7) but his signal does not
+		exist now.
+		Added information about the SQ4 running state to the maglps PLC in order to turn on HV lamp when SQ4 is running (FC132).
 
