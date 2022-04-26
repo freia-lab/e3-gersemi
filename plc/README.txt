@@ -187,4 +187,5 @@ GERSEMI_PLC_2022_04_26 - KG, Changed SQ18 transition from quench detection (step
 		operatore presses "Yes" (it still enables the transition on "Normal state" digital signal high (I9.7) but his signal does not
 		exist now.
 		Added information about the SQ4 running state to the maglps PLC in order to turn on HV lamp when SQ4 is running (FC132).
+GERSEMI_PLC_2022_04_26_1 - KG, Fixed an error in condition for calculating total flow from the magnet insert @4K.(FC215).
 

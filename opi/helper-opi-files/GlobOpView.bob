@@ -5138,7 +5138,7 @@ $(pv_value)</tooltip>
         <width>90</width>
         <rules>
           <rule name="Visible" prop_id="visible" out_exp="false">
-            <exp bool_exp="(pvInt0 &lt; 17) or  (pvInt1 &gt;23)">
+            <exp bool_exp="(pvInt0 &lt; 17) or  (pvInt0 &gt;23)">
               <value>false</value>
             </exp>
             <pv_name>CstatV-Ctrl:SQ17:sStep</pv_name>
