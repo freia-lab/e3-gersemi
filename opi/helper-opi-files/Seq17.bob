@@ -23,63 +23,12 @@
     </border_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label Template_19</name>
-    <text>PT584</text>
-    <x>39</x>
-    <y>482</y>
-    <width>42</width>
-    <height>21</height>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Input Template_12</name>
-    <pv_name>$(C)-Ctrl:$(seq_no):cP_PT584</pv_name>
-    <x>120</x>
-    <y>476</y>
-    <width>56</width>
-    <height>25</height>
-    <show_units>false</show_units>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_17</name>
-    <pv_name>$(C)-Ctrl:$(seq_no):sP_PT584</pv_name>
-    <x>182</x>
-    <y>480</y>
-    <width>80</width>
-    <height>18</height>
-    <precision>0</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>Label Template_23</name>
     <text>SP PIC660A</text>
     <x>379</x>
     <y>241</y>
     <width>76</width>
-    <height>21</height>
+    <height>25</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -128,63 +77,12 @@
     </border_color>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label Template_24</name>
-    <text>PT660</text>
-    <x>39</x>
-    <y>447</y>
-    <width>42</width>
-    <height>21</height>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <vertical_alignment>1</vertical_alignment>
-    <auto_size>true</auto_size>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Input Template_17</name>
-    <pv_name>$(C)-Ctrl:$(seq_no):cP_PT660</pv_name>
-    <x>120</x>
-    <y>443</y>
-    <width>56</width>
-    <height>25</height>
-    <show_units>false</show_units>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="IO Border" red="215" green="215" blue="215">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_32</name>
-    <pv_name>$(C)-Ctrl:$(seq_no):sP_PT660</pv_name>
-    <x>182</x>
-    <y>447</y>
-    <width>80</width>
-    <height>18</height>
-    <precision>0</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="label" version="2.0.0">
     <name>Label_2</name>
     <text>Sequence parameters</text>
     <x>79</x>
     <y>280</y>
-    <width>155</width>
-    <height>21</height>
+    <width>156</width>
+    <height>23</height>
     <font>
       <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
       </font>
@@ -214,7 +112,7 @@
     <x>39</x>
     <y>383</y>
     <width>42</width>
-    <height>21</height>
+    <height>25</height>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
@@ -265,7 +163,7 @@
     <x>39</x>
     <y>408</y>
     <width>42</width>
-    <height>21</height>
+    <height>25</height>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
@@ -333,7 +231,7 @@
       <text>Pressure [mbar]</text>
       <x>15</x>
       <width>107</width>
-      <height>21</height>
+      <height>25</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -356,7 +254,7 @@
       <text>CV582 [%]</text>
       <x>175</x>
       <width>68</width>
-      <height>21</height>
+      <height>25</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -582,45 +480,13 @@
       </color>
     </border_color>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_45</name>
-    <pv_name>$(C)-RHtr:PT584:sRdV</pv_name>
-    <x>279</x>
-    <y>480</y>
-    <width>80</width>
-    <height>18</height>
-    <precision>0</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update Template_46</name>
-    <pv_name>$(C)-LHe:PT660M:sRdV</pv_name>
-    <x>279</x>
-    <y>447</y>
-    <width>80</width>
-    <height>18</height>
-    <precision>0</precision>
-    <wrap_words>false</wrap_words>
-    <actions>
-    </actions>
-    <border_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </border_color>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label_6</name>
     <text>cP</text>
     <x>124</x>
     <y>310</y>
     <width>18</width>
-    <height>21</height>
+    <height>25</height>
     <font>
       <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
       </font>
@@ -650,7 +516,7 @@
     <x>183</x>
     <y>310</y>
     <width>17</width>
-    <height>21</height>
+    <height>23</height>
     <font>
       <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
       </font>
@@ -679,8 +545,8 @@
     <text>sRdV</text>
     <x>279</x>
     <y>310</y>
-    <width>35</width>
-    <height>21</height>
+    <width>36</width>
+    <height>23</height>
     <font>
       <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
       </font>
@@ -738,7 +604,7 @@ $(pv_value)</tooltip>
     <x>479</x>
     <y>271</y>
     <width>42</width>
-    <height>21</height>
+    <height>25</height>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
@@ -788,7 +654,7 @@ $(pv_value)</tooltip>
     <x>39</x>
     <y>340</y>
     <width>70</width>
-    <height>21</height>
+    <height>25</height>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
@@ -854,7 +720,7 @@ $(pv_value)</tooltip>
     <x>719</x>
     <y>230</y>
     <width>15</width>
-    <height>21</height>
+    <height>25</height>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
@@ -874,7 +740,7 @@ $(pv_value)</tooltip>
     <x>719</x>
     <y>254</y>
     <width>19</width>
-    <height>21</height>
+    <height>25</height>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
@@ -888,5 +754,145 @@ $(pv_value)</tooltip>
       <color name="IO Border" red="215" green="215" blue="215">
       </color>
     </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  Sequence stopping parameters  </name>
+    <x>20</x>
+    <y>433</y>
+    <width>362</width>
+    <height>124</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_19</name>
+      <text>PT584</text>
+      <y>50</y>
+      <width>42</width>
+      <height>25</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_12</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):cP_PT584</pv_name>
+      <x>70</x>
+      <y>50</y>
+      <width>56</width>
+      <height>25</height>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_17</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sP_PT584</pv_name>
+      <x>135</x>
+      <y>50</y>
+      <width>80</width>
+      <height>25</height>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_24</name>
+      <text>PT660</text>
+      <y>10</y>
+      <width>42</width>
+      <height>25</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_17</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):cP_PT660</pv_name>
+      <x>70</x>
+      <y>10</y>
+      <width>56</width>
+      <height>25</height>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_32</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sP_PT660</pv_name>
+      <x>135</x>
+      <y>10</y>
+      <width>80</width>
+      <height>25</height>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_45</name>
+      <pv_name>$(C)-RHtr:PT584:sRdV</pv_name>
+      <x>230</x>
+      <y>50</y>
+      <width>80</width>
+      <height>25</height>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_46</name>
+      <pv_name>$(C)-LHe:PT660M:sRdV</pv_name>
+      <x>230</x>
+      <y>10</y>
+      <width>80</width>
+      <height>25</height>
+      <precision>0</precision>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
   </widget>
 </display>

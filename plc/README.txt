@@ -188,4 +188,12 @@ GERSEMI_PLC_2022_04_26 - KG, Changed SQ18 transition from quench detection (step
 		exist now.
 		Added information about the SQ4 running state to the maglps PLC in order to turn on HV lamp when SQ4 is running (FC132).
 GERSEMI_PLC_2022_04_26_1 - KG, Fixed an error in condition for calculating total flow from the magnet insert @4K.(FC215).
+GERSEMI_PLC_2022_04_26_1 - KG, Changed commisioning parameter in SQ17 High_Tol_PT660 from 5 to 0.2 in order to avoid too big oscillations
+		when turning the PIC660A regulator.
+GERSEMI_PLC_2022_04_27 - KG, Modified SQ23:
+		Changed threshold on Ext command for EH354 from TT355 < 100 K to TT355 < 50 K (FC413)
+		The max flow condition is checked also in step 12 (until now it was checked only in step 14)
+		Added turning on all magnet heaters (EH661, EH681, EH682 and EH 689) in step 12 (before it was only EH661) (FC563)
+		SQ22: The max flow condition is checked also in step 12 (until now it was checked only in step 14)
+
 
