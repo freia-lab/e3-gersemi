@@ -194,6 +194,8 @@ GERSEMI_PLC_2022_04_27 - KG, Modified SQ23:
 		Changed threshold on Ext command for EH354 from TT355 < 100 K to TT355 < 50 K (FC413)
 		The max flow condition is checked also in step 12 (until now it was checked only in step 14)
 		Added turning on all magnet heaters (EH661, EH681, EH682 and EH 689) in step 12 (before it was only EH661) (FC563)
-GERSEMI_PLC_2022_04_27 - KG, Added calculating total flow at 2K from the magnet insert and sending it to Epics. Compiled the sources
+GERSEMI_PLC_2022_04_28 - KG, Added calculating total flow at 2K from the magnet insert and sending it to Epics. Compiled the sources
 		_EPICS_EPICS_To_PLC_V14 and _EPICS_PLC_To_EPICS_V14.
-
+GERSEMI_PLC_2022_05_02 - KG, Added delay 0f 500 ms before comparing the magnet currents for checking if the quench should be ignored.
+		It is to avoid a possible (although very unlikely) race condition that the power supply will be shut down before 
+		the comparison in the PLC will be done (FC130, FC216, FC218).
