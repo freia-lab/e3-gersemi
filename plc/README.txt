@@ -199,3 +199,4 @@ GERSEMI_PLC_2022_04_28 - KG, Added calculating total flow at 2K from the magnet 
 GERSEMI_PLC_2022_05_02 - KG, Added delay 0f 500 ms before comparing the magnet currents for checking if the quench should be ignored.
 		It is to avoid a possible (although very unlikely) race condition that the power supply will be shut down before 
 		the comparison in the PLC will be done (FC130, FC216, FC218).
+GERSEMI_PLC_2022_05_03 - KG, Changed the name of the parameter in SQ15 from P_SP_TT680 to P_TT686_min (see GERSEMI_PLC_2022_04_01)
