@@ -3,7 +3,7 @@
 file "gersemi-DI.template" { pattern
 
 #PSL SUBS?
-{SUBS,	DEV,       OFFS,   OFFS2}
+{SUBS,	DEV,       OFFS,   OFFS2   ONAM}
 {RHtr,	LS580,     84,	    84}
 {SHe,	TS370,     86,      86}
 {RHtr,	TS580,     88,	    88}
@@ -13,9 +13,9 @@ file "gersemi-DI.template" { pattern
 {LN2,	TS748,     96,	    96}
 {LN2,	TS760,     98,	    98}
 {LN2,	TS762,     100,	    100}
-{Ctrl,	LiqIns,    102,	    102}
-{Ctrl,	VacIns,    104,	    104}
-{Ctrl,	MagIns,    106,	    106}
+{Ctrl,	LiqIns,    102,	    102,   "Liquid Insert"}
+{Ctrl,	VacIns,    104,	    104,   "Vacuum Insert"}
+{Ctrl,	MagIns,    106,	    106,   "Magnet Insert"}
 {Vac,	P090-sOn,  108,	    108}
 {Vac,	P090-sCmdOn, 110,   110}
 {SHe,	Comp-sOn,  112,	    112}

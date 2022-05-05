@@ -1,0 +1,46 @@
+# This should be the included snippet to configure and run the deployed IOC. It should be loaded with
+#
+#   iocshLoad("$(gersemi_DIR)/gersemi.iocsh", "PLC_IP=xxx.yyy.zzz.nnn")
+
+#- ###                gersemi iocsh                   ###
+#- ####################################################
+#- >> Mandatory
+#- PLC_IP         - PLC's controller IP address
+#-
+#var s7plcDebug <level>
+#level=-1:  no output
+#level=0:   errors only
+#level=1:   startup messages
+#level=2: + output record processing
+#level=3: + inputput record processing
+#level=4: + driver calls
+#level=5: + io printout
+#be careful using level>1 since many messages may introduce delays
+
+#var s7plcDebug 2
+#s7plcConfigure name,IPaddr,port,inSize,outSize,bigEndian,recvTimeout,sendIntervall
+#connects to PLC <name> on address <IPaddr> port <port>
+#<inSize>        : size of data block PLC -> IOC [bytes]
+#<outSize>       : size of data block IOC -> PLC [bytes]
+#<bigEndian>=1   : motorola format data (MSB first)
+#<bigEndian>=0   : intel format data (LSB first)
+#<recvTimeout>   : time to wait for input before disconnecting [ms]
+#<sendIntervall> : time to wait before sending new data to PLC [ms]
+
+s7plcConfigure PLC:GERSEMI,$(PLC_IP),2000,9448,6910,1,1000,500
+
+dbLoadRecords("gersemi-General.db", "P=CstatV")
+dbLoadRecords("gersemi-freia.db")
+
+iocshLoad("$(autosave_DIR)/autosave.iocsh", "AS_TOP=$(TOP),IOCNAME=$(IOCNAME),IOCDIR=gersemi")
+
+afterInit(dbpf CstatV-Ctrl:SQ19:cP_SP_FT650.DRVH 3.0)
+afterInit(dbpf CstatV-Ctrl:SQ19:cP_SP_FT651.DRVH 3.0)
+afterInit(dbpf CstatV-Ctrl:SQ19:cP_SP_FT652.DRVH 3.0)
+afterInit(dbpf CstatV-Ctrl:SQ19:cP_SP_FT653.DRVH 3.0)
+afterInit(dbpf CstatV-Ctrl:SQ4:cP_SP_FT650.DRVH 3.0)
+afterInit(dbpf CstatV-Ctrl:SQ4:cP_SP_FT651.DRVH 3.0)
+afterInit(dbpf CstatV-Ctrl:SQ4:cP_SP_FT652.DRVH 3.0)
+afterInit(dbpf CstatV-Ctrl:SQ4:cP_SP_FT653.DRVH 3.0)
+
+afterInit("seq AutoStart2KPumps", "p1=CstatV")

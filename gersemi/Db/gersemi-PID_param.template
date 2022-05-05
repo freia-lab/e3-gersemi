@@ -64,6 +64,7 @@ record(ao, "CstatV-$(SUBS):$(DEV):cKp") {
   field(PINI, "NO")
   field(PREC, "6")
   field(FLNK, "CstatV-$(SUBS):$(DEV):cmdKp-link")
+  info(autosaveFields,"VAL")
 }
 
 record(ao, "CstatV-$(SUBS):$(DEV):cTi") {
@@ -72,6 +73,7 @@ record(ao, "CstatV-$(SUBS):$(DEV):cTi") {
   field(PINI, "NO")
   field(PREC, "6")
   field(FLNK, "CstatV-$(SUBS):$(DEV):cmdTi-link")
+  info(autosaveFields,"VAL")
 }
 
 record(ao, "CstatV-$(SUBS):$(DEV):cTd") {
@@ -80,6 +82,7 @@ record(ao, "CstatV-$(SUBS):$(DEV):cTd") {
   field(PINI, "NO")
   field(PREC, "6")
   field(FLNK, "CstatV-$(SUBS):$(DEV):cmdTd-link")
+  info(autosaveFields,"VAL")
 }
 
 

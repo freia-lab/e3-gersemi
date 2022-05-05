@@ -316,6 +316,7 @@ record(bo, "CstatV-Ctrl:Archiving:On") {
   field(ONAM, "Archiving on")
   field(ZSV, "MINOR")
   field(PINI, "YES")
+  info(autosaveFields,"VAL")
 }
 
 # Return He2 gas path switching Compressor/Gas Bag
@@ -449,6 +450,7 @@ record (bo, "$(P)-Ctrl:SQ13:c2KpumpsAuto") {
   field(ONAM, "Automatic")
   field(VAL, "0")
   field(PINI, "YES")
+  info(autosaveFields,"VAL")
 }
 
 record (ao, "$(P)-Ctrl:SQ13:cP_2KpumpsStep") {
@@ -456,6 +458,7 @@ record (ao, "$(P)-Ctrl:SQ13:cP_2KpumpsStep") {
   field(VAL, 10)
   field(PINI, "YES")
   field(EGU, "%")
+  info(autosaveFields,"VAL")
 }
 
 record (ao, "$(P)-Ctrl:SQ13:cP_FT551forStartUp") {
@@ -463,6 +466,7 @@ record (ao, "$(P)-Ctrl:SQ13:cP_FT551forStartUp") {
   field(VAL, 60)
   field(PINI, "YES")
   field(EGU, "m³/h")
+  info(autosaveFields,"VAL")
 }
 
 record (ao, "$(P)-Ctrl:SQ13:cP_WHfinal") {
@@ -470,6 +474,7 @@ record (ao, "$(P)-Ctrl:SQ13:cP_WHfinal") {
   field(VAL, 50)
   field(PINI, "YES")
   field(EGU, "%")
+  info(autosaveFields,"VAL")
 }
 
 record (bo, "$(P)-Ctrl:SQ17:c2KpumpsAuto") {
@@ -478,6 +483,7 @@ record (bo, "$(P)-Ctrl:SQ17:c2KpumpsAuto") {
   field(ONAM, "Automatic")
   field(VAL, "0")
   field(PINI, "YES")
+  info(autosaveFields,"VAL")
 }
 
 record (ao, "$(P)-Ctrl:SQ17:cP_2KpumpsStep") {
@@ -485,6 +491,7 @@ record (ao, "$(P)-Ctrl:SQ17:cP_2KpumpsStep") {
   field(VAL, 10)
   field(PINI, "YES")
   field(EGU, "%")
+  info(autosaveFields,"VAL")
 }
 
 record (ao, "$(P)-Ctrl:SQ17:cP_FT551forStartUp") {
@@ -492,6 +499,7 @@ record (ao, "$(P)-Ctrl:SQ17:cP_FT551forStartUp") {
   field(VAL, 60)
   field(PINI, "YES")
   field(EGU, "m³/h")
+  info(autosaveFields,"VAL")
 }
 
 record (ao, "$(P)-Ctrl:SQ17:cP_WHfinal") {
@@ -499,6 +507,7 @@ record (ao, "$(P)-Ctrl:SQ17:cP_WHfinal") {
   field(VAL, 50)
   field(PINI, "YES")
   field(EGU, "%")
+  info(autosaveFields,"VAL")
 }
 
 record (bo, "$(P)-Ctrl:SQ13/17:c2KpumpsHold") {
