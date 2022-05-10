@@ -910,3 +910,9 @@ file "gersemi-tpg300-combined.template" { pattern
 {CstatV	 PI060	 PT060:sRdV   PT061:sRdV}
 {CstatV	 PI070	 PT070:sRdV   PT071:sRdV}
 }
+
+file "cernox-calibr.template" { pattern
+{P               D        PORT    DEST        A_SW   A_A    A_B    A_C    A_D   }
+{"CstatV-Ctrl:"  "TT352"  "G_S7"  "DB360.DBD" 36     48     68     88"    108   }
+{"CstatV-Ctrl:"  "TT353"  "G_S7"  "DB360.DBD" 172    184    204    224    244   }
+}

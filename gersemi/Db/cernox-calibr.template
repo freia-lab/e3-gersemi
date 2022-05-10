@@ -1,0 +1,92 @@
+record(aai, "$(P)$(D):sSwitchR") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(EGU, "Ω")
+  field(NELM, "3")
+  field(INP, "@$(PORT) $(DEST)$(A_SW) float")
+  field(PINI, "YES")
+}
+
+record(aai, "$(P)$(D):sPolyA") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(NELM, "5")
+  field(INP, "@$(PORT) $(DEST)$(A_A) float")
+  field(PINI, "YES")
+}
+
+record(aai, "$(P)$(D):sPolyB") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(NELM, "5")
+  field(INP, "@$(PORT) $(DEST)$(A_B) float")
+  field(PINI, "YES")
+}
+
+record(aai, "$(P)$(D):sPolyC") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(NELM, "5")
+  field(INP, "@$(PORT) $(DEST)$(A_C) float")
+  field(PINI, "YES")
+}
+
+record(aai, "$(P)$(D):sPolyD") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(NELM, "5")
+  field(INP, "@$(PORT) $(DEST)$(A_D) float")
+  field(PINI, "YES")
+}
+
+record(aao, "$(P)$(D):cSwitchR") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(EGU, "Ω")
+  field(NELM, "3")
+  field(OUT, "@$(PORT) $(DEST)$(A_SW) float")
+  field(FLNK, "$(P)$(D):sSwitchR")
+}
+
+record(aao, "$(P)$(D):cPolyA") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(NELM, "5")
+  field(OUT, "@$(PORT) $(DEST)$(A_A) float")
+  field(FLNK, "$(P)$(D):sPolyA")
+}
+
+record(aao, "$(P)$(D):cPolyB") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(NELM, "5")
+  field(OUT, "@$(PORT) $(DEST)$(A_B) float")
+  field(FLNK, "$(P)$(D):sPolyB")
+}
+
+record(aao, "$(P)$(D):cPolyC") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(NELM, "5")
+  field(OUT, "@$(PORT) $(DEST)$(A_C) float")
+  field(FLNK, "$(P)$(D):sPolyC")
+}
+
+record(aao, "$(P)$(D):cPolyD") {
+  field(DTYP, "s7nodave")
+  field(FTVL, "DOUBLE")
+  field(PREC, 8)
+  field(NELM, "5")
+  field(OUT, "@$(PORT) $(DEST)$(A_D) float")
+  field(FLNK, "$(P)$(D):sPolyD")
+}
+

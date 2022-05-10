@@ -28,6 +28,7 @@
 #<sendIntervall> : time to wait before sending new data to PLC [ms]
 
 s7plcConfigure PLC:GERSEMI,$(PLC_IP),2000,9448,6910,1,1000,500
+s7nodaveConfigureIsoTcpPort("G_S7", $(PLC_IP),0,0,0)
 
 dbLoadRecords("gersemi-General.db", "P=CstatV")
 dbLoadRecords("gersemi-freia.db")

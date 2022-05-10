@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>200</width>
+  <height>550</height>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <macros>
+      <X>A</X>
+    </macros>
+    <x>10</x>
+    <y>110</y>
+    <width>180</width>
+    <height>100</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_4</name>
+      <pv_name>$(P)$(T):sPoly$(X).[0]</pv_name>
+      <x>40</x>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_5</name>
+      <pv_name>$(P)$(T):sPoly$(X).[1]</pv_name>
+      <x>40</x>
+      <y>20</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_6</name>
+      <pv_name>$(P)$(T):sPoly$(X).[3]</pv_name>
+      <x>40</x>
+      <y>60</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_7</name>
+      <pv_name>$(P)$(T):sPoly$(X).[2]</pv_name>
+      <x>40</x>
+      <y>40</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_8</name>
+      <pv_name>$(P)$(T):sPoly$(X).[4]</pv_name>
+      <x>40</x>
+      <y>80</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>$(X)0</text>
+      <x>10</x>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>$(X)1</text>
+      <x>10</x>
+      <y>20</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>$(X)2</text>
+      <x>10</x>
+      <y>40</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>$(X)3</text>
+      <x>10</x>
+      <y>60</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>$(X)4</text>
+      <x>10</x>
+      <y>80</y>
+      <width>30</width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_1</name>
+    <macros>
+      <X>B</X>
+    </macros>
+    <x>10</x>
+    <y>220</y>
+    <width>180</width>
+    <height>100</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_9</name>
+      <pv_name>$(P)$(T):sPoly$(X).[0]</pv_name>
+      <x>40</x>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_10</name>
+      <pv_name>$(P)$(T):sPoly$(X).[1]</pv_name>
+      <x>40</x>
+      <y>20</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_11</name>
+      <pv_name>$(P)$(T):sPoly$(X).[3]</pv_name>
+      <x>40</x>
+      <y>60</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_12</name>
+      <pv_name>$(P)$(T):sPoly$(X).[2]</pv_name>
+      <x>40</x>
+      <y>40</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_13</name>
+      <pv_name>$(P)$(T):sPoly$(X).[4]</pv_name>
+      <x>40</x>
+      <y>80</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>$(X)0</text>
+      <x>10</x>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>$(X)1</text>
+      <x>10</x>
+      <y>20</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>$(X)2</text>
+      <x>10</x>
+      <y>40</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>$(X)3</text>
+      <x>10</x>
+      <y>60</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>$(X)4</text>
+      <x>10</x>
+      <y>80</y>
+      <width>30</width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_2</name>
+    <macros>
+      <X>C</X>
+    </macros>
+    <x>10</x>
+    <y>330</y>
+    <width>180</width>
+    <height>100</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_14</name>
+      <pv_name>$(P)$(T):sPoly$(X).[0]</pv_name>
+      <x>40</x>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_15</name>
+      <pv_name>$(P)$(T):sPoly$(X).[1]</pv_name>
+      <x>40</x>
+      <y>20</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_16</name>
+      <pv_name>$(P)$(T):sPoly$(X).[3]</pv_name>
+      <x>40</x>
+      <y>60</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_17</name>
+      <pv_name>$(P)$(T):sPoly$(X).[2]</pv_name>
+      <x>40</x>
+      <y>40</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_18</name>
+      <pv_name>$(P)$(T):sPoly$(X).[4]</pv_name>
+      <x>40</x>
+      <y>80</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>$(X)0</text>
+      <x>10</x>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>$(X)1</text>
+      <x>10</x>
+      <y>20</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_12</name>
+      <text>$(X)2</text>
+      <x>10</x>
+      <y>40</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>$(X)3</text>
+      <x>10</x>
+      <y>60</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text>$(X)4</text>
+      <x>10</x>
+      <y>80</y>
+      <width>30</width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_3</name>
+    <macros>
+      <X>D</X>
+    </macros>
+    <x>10</x>
+    <y>440</y>
+    <width>180</width>
+    <height>100</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_19</name>
+      <pv_name>$(P)$(T):sPoly$(X).[0]</pv_name>
+      <x>40</x>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_20</name>
+      <pv_name>$(P)$(T):sPoly$(X).[1]</pv_name>
+      <x>40</x>
+      <y>20</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_21</name>
+      <pv_name>$(P)$(T):sPoly$(X).[3]</pv_name>
+      <x>40</x>
+      <y>60</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_22</name>
+      <pv_name>$(P)$(T):sPoly$(X).[2]</pv_name>
+      <x>40</x>
+      <y>40</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_23</name>
+      <pv_name>$(P)$(T):sPoly$(X).[4]</pv_name>
+      <x>40</x>
+      <y>80</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>$(X)0</text>
+      <x>10</x>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>$(X)1</text>
+      <x>10</x>
+      <y>20</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_17</name>
+      <text>$(X)2</text>
+      <x>10</x>
+      <y>40</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_18</name>
+      <text>$(X)3</text>
+      <x>10</x>
+      <y>60</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_19</name>
+      <text>$(X)4</text>
+      <x>10</x>
+      <y>80</y>
+      <width>30</width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <y>40</y>
+    <width>190</width>
+    <height>60</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_1</name>
+      <pv_name>$(P)$(T):sSwitchR.[0]</pv_name>
+      <x>50</x>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_2</name>
+      <pv_name>$(P)$(T):sSwitchR.[1]</pv_name>
+      <x>50</x>
+      <y>20</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Array-textupdate-2_3</name>
+      <pv_name>$(P)$(T):sSwitchR.[2]</pv_name>
+      <x>50</x>
+      <y>40</y>
+      <width>130</width>
+      <tooltip>
+null</tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_20</name>
+      <text>Sw1</text>
+      <x>10</x>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_21</name>
+      <text>Sw2&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;display version="2.0.0"&gt;  &lt;widget type="label" version="2.0.0"&gt;    &lt;name&gt;Label_20&lt;/name&gt;    &lt;text&gt;Sw1&lt;/text&gt;    &lt;x&gt;360&lt;/x&gt;    &lt;y&gt;80&lt;/y&gt;    &lt;width&gt;30&lt;/width&gt;  &lt;/widget&gt;&lt;/display&gt;</text>
+      <x>10</x>
+      <y>20</y>
+      <width>30</width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_22</name>
+      <text>Sw3</text>
+      <x>10</x>
+      <y>40</y>
+      <width>30</width>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_23</name>
+    <text>$(P)$(T)</text>
+    <x>10</x>
+    <width>180</width>
+    <height>40</height>
+    <font>
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+</display>

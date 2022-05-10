@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <macros>
+    <P>CstatV-Ctrl:</P>
+  </macros>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>loc://gersemiCernoxTT("TT352")</pv_name>
+    <x>20</x>
+    <y>10</y>
+    <actions>
+      <action type="open_display">
+        <file></file>
+        <macros>
+          <T></T>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <items>
+      <item>TT352</item>
+      <item>TT353</item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <T>loc://gersemiCernoxTT</T>
+    </macros>
+    <file>helper-opi-files/cernox_calibr_data.bob</file>
+    <x>240</x>
+    <y>40</y>
+    <height>560</height>
+    <rules>
+      <rule name="clearOpiRule" prop_id="file" out_exp="false">
+        <exp bool_exp="true">
+          <value></value>
+        </exp>
+        <exp bool_exp="false">
+          <value></value>
+        </exp>
+        <pv_name>loc://gersemiCernoxTT</pv_name>
+      </rule>
+      <rule name="setOpiRule" prop_id="file" out_exp="false">
+        <exp bool_exp="true">
+          <value>helper-opi-files/cernox_calibr_data.bob</value>
+        </exp>
+        <pv_name>loc://gersemiCernoxTT</pv_name>
+      </rule>
+    </rules>
+    <scripts>
+      <script file="scripts/sgnl2Macro.py">
+        <pv_name>loc://gersemiCernoxTT</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>loc://gersemiCernoxTT("TT352")</pv_name>
+    <x>130</x>
+    <y>10</y>
+    <width>80</width>
+    <height>30</height>
+  </widget>
+</display>

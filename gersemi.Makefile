@@ -43,6 +43,10 @@ REQUIRED += sequencer
 ifneq ($(strip $(SEQ_DEP_VERSION)),)
   sequencer_VERSION=$(SEQ_DEP_VERSION)
 endif
+REQUIRED += s7nodave
+ifneq ($(strip $(S7NODAVE_DEP_VERSION)),)
+  s7nodave_VERSION=$(S7NODAVE_DEP_VERSION)
+endif
 
 # Since this file (gersemi.Makefile) is copied into
 # the module directory at build-time, these paths have to be relative
