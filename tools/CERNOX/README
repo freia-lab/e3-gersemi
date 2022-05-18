@@ -1,0 +1,24 @@
+To check if the calibration file exist for a sensor in the lookup_table run the following command 
+in e3-gersemi/doc/CERNOX directory:
+
+awk '{ if (system("grep -rq " $2 " calibrations") == 0) {printf "Calibration for %s found (%s)\n", $1, $2} else {printf "Calibration for %s NOT found (%s)\n", $1, $2}}' <lookup_table
+
+==========================================================================================
+Generate the caput commands to load the calibration data from Epics based on the file used by the Wincc
+program.
+
+Run the following command:
+
+awk -f generate_caput_list.awk < ../../doc/CERNOX/Para_Cernox.txt > output_file
+
+and then run "sh output_file" to download the calibration data to the PLC.
+==========================================================================================
+
+==========================================================================================
+Generate caput data calibration of one sensor.
+
+Run the following command:
+
+generate_calibr_cmds <sensor_name> <sensor_id>
+
+where sensor_name is TTxxx[M|L|V] and the sensor id is something like Xyyyyy
