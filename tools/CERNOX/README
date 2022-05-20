@@ -1,3 +1,27 @@
+==========================================================================================
+Create the Epics PVs file for the CERNOX caiibration coefficients and the switch points
+==========================================================================================
+The input file for creating the substitution file is the source code of DB360 (#DATA_CERNOX)
+and is called doc/CERNOX/cernox_list.txt
+It is creating from the souce file by taking out only the content of the STRUCT at the beginning 
+of the file and deleting the "_" between the sensor name and the letter L, M or V.
+
+The substitution file is then written to standard output by running the following command in 
+doc/CERNOX directory:
+
+awk -f ../../tools/CERNOX/generate_subst_file.awk < cernox_list.txt
+
+=================================================
+Create the lookup table (sensor name vs senosr id) 
+==================================================
+Use the original file on freia-drop Affectation_CERNOX_GERSEMI.xlsx (copied to doc/CERNOX directory).
+Export it as  tab delimited file (Affectation_CERNOX_GERSEMI.txt) and use it as in the command below
+when running it from doc/CERNOX directory:
+
+./create_lookup_table.sh > lookup_table
+
+=================================================
+
 To check if the calibration file exist for a sensor in the lookup_table run the following command 
 in e3-gersemi/doc/CERNOX directory:
 
@@ -7,29 +31,42 @@ awk '{ if (system("grep -rq " $2 " calibrations") == 0) {printf "Calibration for
 Generate the caput commands to load the calibration data from Epics based on the file used by the Wincc
 program.
 
-Run the following command:
+Run the following command in the doc/CERNOX directory:
 
-awk -f generate_caput_list.awk < ../../doc/CERNOX/Para_Cernox.txt > output_file
+awk -f ../../tools/CERNOX/generate_caput_list.awk < ../../doc/CERNOX/Para_Cernox.txt > output_file
 
 and then run "sh output_file" to download the calibration data to the PLC.
+
+Para_Cernox.txt file is converted from the D:\PROJECT\Vertical_Cryostat\Parameter\Para_Cernox.csv file on the Gersemi WinCC computer
+(decimal separator changed to dot from comma) and copied doc/CERNOX directory in this repository.
+
 ==========================================================================================
 
 ==========================================================================================
 Generate caput data calibration of one sensor.
 
-Run the following command:
+Run the following command in doc/CERNOX directory:
 
-generate_calibr_cmds <sensor_name> <sensor_id>
+../../tools/CERNOX/generate_calibr_cmds <sensor_name> <sensor_id>
+or
+../../tools/CERNOX/generate_calibr_cmds `grep <sensor name> lookup_table`
 
-where sensor_name is TTxxx[M|L|V] and the sensor id is something like Xyyyyy
+where <sensor_name> is TTxxx[M|L|V] and the <sensor id> is something like Xyyyyy
 
 ==========================================================================================
 
 ==========================================================================================
-Generate commands to load all sensors defined in lookup_table file
+Generate commands to load all sensors defined in lookup_table file extracted from the calibration files
 
 Run the following command in  e3-gersemi/doc/CERNOX directory:
 
 awk '{system("../../tools/CERNOX/generate_calibr_cmds.sh " $1 " " $2 " >> calibration_commands")}' <lookup_table
 
+and then load the values by running
+
+sh calibration_commands
+
+The switch points *.R_Switch3 are different then when in Para_Cernox.txt file. For an unknown reason 
+(probably a mistake) the switch point at ~100 K is taken not from the first row  of the calibration 
+file for 100-310 K range but from the second. 
 
