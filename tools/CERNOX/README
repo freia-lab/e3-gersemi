@@ -22,3 +22,14 @@ Run the following command:
 generate_calibr_cmds <sensor_name> <sensor_id>
 
 where sensor_name is TTxxx[M|L|V] and the sensor id is something like Xyyyyy
+
+==========================================================================================
+
+==========================================================================================
+Generate commands to load all sensors defined in lookup_table file
+
+Run the following command in  e3-gersemi/doc/CERNOX directory:
+
+awk '{system("../../tools/CERNOX/generate_calibr_cmds.sh " $1 " " $2 " >> calibration_commands")}' <lookup_table
+
+
