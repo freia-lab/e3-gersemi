@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <macros>
+    <P>CstatV-Ctrl:</P>
+  </macros>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>loc://gersemiCernoxTT("TT352")</pv_name>
+    <x>20</x>
+    <y>10</y>
+    <actions>
+      <action type="open_display">
+        <file></file>
+        <macros>
+          <T></T>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <items>
+      <item>TT352</item>
+      <item>TT353</item>
+      <item>TT355</item>
+      <item>TT371</item>
+      <item>TT372</item>
+      <item>TT373</item>
+      <item>TT602</item>
+      <item>TT603</item>
+      <item>TT604</item>
+      <item>TT605</item>
+      <item>TT606</item>
+      <item>TT607</item>
+      <item>TT608</item>
+      <item>TT609</item>
+      <item>TT610</item>
+      <item>TT611</item>
+      <item>TT612</item>
+      <item>TT613</item>
+      <item>TT614</item>
+      <item>TT615</item>
+      <item>TT616</item>
+      <item>TT617</item>
+      <item>TT618</item>
+      <item>TT642</item>
+      <item>TT643</item>
+      <item>TT644</item>
+      <item>TT645</item>
+      <item>TT646</item>
+      <item>TT647</item>
+      <item>TT662L</item>
+      <item>TT662M</item>
+      <item>TT663L</item>
+      <item>TT663M</item>
+      <item>TT664L</item>
+      <item>TT664M</item>
+      <item>TT665L</item>
+      <item>TT665M</item>
+      <item>TT666L</item>
+      <item>TT666M</item>
+      <item>TT667L</item>
+      <item>TT667M</item>
+      <item>TT668L</item>
+      <item>TT668M</item>
+      <item>TT669L</item>
+      <item>TT669M</item>
+      <item>TT671L</item>
+      <item>TT671M</item>
+      <item>TT672L</item>
+      <item>TT672M</item>
+      <item>TT672V</item>
+      <item>TT673L</item>
+      <item>TT673M</item>
+      <item>TT673V</item>
+      <item>TT674L</item>
+      <item>TT674M</item>
+      <item>TT674V</item>
+      <item>TT675L</item>
+      <item>TT675M</item>
+      <item>TT675V</item>
+      <item>TT676L</item>
+      <item>TT676M</item>
+      <item>TT676V</item>
+      <item>TT677L</item>
+      <item>TT677M</item>
+      <item>TT677V</item>
+      <item>TT678L</item>
+      <item>TT678M</item>
+      <item>TT678V</item>
+      <item>TT679L</item>
+      <item>TT679M</item>
+      <item>TT679V</item>
+      <item>TT683</item>
+      <item>TT684</item>
+      <item>TT685</item>
+      <item>TT686</item>
+      <item>TT687</item>
+      <item>TT688</item>
+      <item>TT690</item>
+      <item>TT691</item>
+      <item>TT692</item>
+      <item>TT693</item>
+      <item>TT694M</item>
+      <item>TT694L</item>
+      <item>TT695M</item>
+      <item>TT695L</item>
+      <item>TT696M</item>
+      <item>TT696L</item>
+      <item>TT697M</item>
+      <item>TT697L</item>
+      <item>TT698M</item>
+      <item>TT698L</item>
+      <item>TT699M</item>
+      <item>TT699L</item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <macros>
+      <T>loc://gersemiCernoxTT</T>
+    </macros>
+    <file>../../freia-symbols/display-builder/cernox_calibr_data.bob</file>
+    <x>20</x>
+    <y>50</y>
+    <height>560</height>
+    <rules>
+      <rule name="clearOpiRule" prop_id="file" out_exp="false">
+        <exp bool_exp="true">
+          <value></value>
+        </exp>
+        <exp bool_exp="false">
+          <value></value>
+        </exp>
+        <pv_name>loc://gersemiCernoxTT</pv_name>
+      </rule>
+      <rule name="setOpiRule" prop_id="file" out_exp="false">
+        <exp bool_exp="true">
+          <value>../../freia-symbols/display-builder/cernox_calibr_data.bob</value>
+        </exp>
+        <pv_name>loc://gersemiCernoxTT</pv_name>
+      </rule>
+    </rules>
+    <scripts>
+      <script file="../scripts/sgnl2Macro.py">
+        <pv_name>loc://gersemiCernoxTT</pv_name>
+      </script>
+    </scripts>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>loc://gersemiCernoxTT("TT352")</pv_name>
+    <x>130</x>
+    <y>10</y>
+    <width>80</width>
+    <height>30</height>
+  </widget>
+</display>

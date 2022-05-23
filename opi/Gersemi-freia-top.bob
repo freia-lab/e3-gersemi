@@ -3241,15 +3241,15 @@ Conditioning He circuits</tooltip>
           </children>
         </tab>
         <tab>
-          <name>Test</name>
+          <name>Set-up</name>
           <children>
             <widget type="label" version="2.0.0">
               <name>Label Template</name>
               <text># od disconnects:</text>
-              <x>40</x>
+              <x>718</x>
               <y>30</y>
               <width>90</width>
-              <height>12</height>
+              <height>13</height>
               <font>
                 <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
                 </font>
@@ -3274,7 +3274,7 @@ Conditioning He circuits</tooltip>
             <widget type="textupdate" version="2.0.0">
               <name>Text Update Template</name>
               <pv_name>$(C)-Ctrl:s7-disconnect-counter</pv_name>
-              <x>131</x>
+              <x>809</x>
               <y>28</y>
               <width>96</width>
               <height>17</height>
@@ -3294,6 +3294,27 @@ Conditioning He circuits</tooltip>
               </actions>
               <border_alarm_sensitive>false</border_alarm_sensitive>
               <border_width>2</border_width>
+            </widget>
+            <widget type="embedded" version="2.0.0">
+              <name>Embedded Display</name>
+              <file>helper-opi-files/cernox_calibr.bob</file>
+              <x>28</x>
+              <y>46</y>
+              <width>550</width>
+              <height>633</height>
+            </widget>
+            <widget type="label" version="2.0.0">
+              <name>Label_2</name>
+              <text>CERNOX Calibration</text>
+              <x>58</x>
+              <y>18</y>
+              <width>180</width>
+              <height>40</height>
+              <font>
+                <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+                </font>
+              </font>
+              <horizontal_alignment>1</horizontal_alignment>
             </widget>
           </children>
         </tab>
