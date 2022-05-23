@@ -49,7 +49,7 @@
     <x>14</x>
     <y>2</y>
     <width>131</width>
-    <height>54</height>
+    <height>53</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="37.0">
       </font>
@@ -3058,279 +3058,6 @@ Conditioning He circuits</tooltip>
       </border_color>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>Grouping Container_34</name>
-    <x>170</x>
-    <y>10</y>
-    <width>1600</width>
-    <height>1055</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color name="BACKGROUND" red="220" green="225" blue="221">
-      </color>
-    </background_color>
-    <actions>
-    </actions>
-    <widget type="tabs" version="2.0.0">
-      <name>tabcontainer</name>
-      <tabs>
-        <tab>
-          <name>Overview</name>
-          <children>
-            <widget type="embedded" version="2.0.0">
-              <name>Linking Container</name>
-              <file>helper-opi-files/Overview.bob</file>
-              <width>1594</width>
-              <height>967</height>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="128" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </children>
-        </tab>
-        <tab>
-          <name>2K Pumps</name>
-          <children>
-            <widget type="embedded" version="2.0.0">
-              <name>Linking Container</name>
-              <file>../freia-symbols/display-builder/CmdPanels/2Kpumps.bob</file>
-              <width>1594</width>
-              <height>967</height>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="128" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </children>
-        </tab>
-        <tab>
-          <name>Global Operation View</name>
-          <children>
-            <widget type="embedded" version="2.0.0">
-              <name>Linking Container Template</name>
-              <macros>
-                <P>$(C)</P>
-              </macros>
-              <file>helper-opi-files/GlobOpView.bob</file>
-              <width>1594</width>
-              <height>1015</height>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="64" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </children>
-        </tab>
-        <tab>
-          <name>Purging system</name>
-          <children>
-            <widget type="embedded" version="2.0.0">
-              <name>Linking Container Template</name>
-              <file>helper-opi-files/PurgSys.bob</file>
-              <width>1594</width>
-              <height>967</height>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="64" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </children>
-        </tab>
-        <tab>
-          <name>Helium Pumping and Reheating</name>
-          <children>
-            <widget type="embedded" version="2.0.0">
-              <name>Linking Container Template</name>
-              <macros>
-                <P>CstatV</P>
-              </macros>
-              <file>helper-opi-files/ReheatSys.bob</file>
-              <width>1594</width>
-              <height>967</height>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="64" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </children>
-        </tab>
-        <tab>
-          <name>Supercritical Helium</name>
-          <children>
-            <widget type="embedded" version="2.0.0">
-              <name>Linking Container Template</name>
-              <macros>
-                <P>$(C)</P>
-              </macros>
-              <file>helper-opi-files/ScHeSystem.bob</file>
-              <width>1594</width>
-              <height>967</height>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="64" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </children>
-        </tab>
-        <tab>
-          <name>Liquid Insert</name>
-          <children>
-            <widget type="embedded" version="2.0.0">
-              <name>Linking Container Template</name>
-              <file>helper-opi-files/Liquid-insert.bob</file>
-              <width>1594</width>
-              <height>967</height>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="64" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </children>
-        </tab>
-        <tab>
-          <name>Magnet Insert</name>
-          <children>
-            <widget type="embedded" version="2.0.0">
-              <name>Linking Container Template</name>
-              <file>helper-opi-files/Magnet-insert.bob</file>
-              <width>1594</width>
-              <height>967</height>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="64" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </children>
-        </tab>
-        <tab>
-          <name>Liquid Nitrogen</name>
-          <children>
-            <widget type="embedded" version="2.0.0">
-              <name>Linking Container Template</name>
-              <file>helper-opi-files/LiquidN2.bob</file>
-              <width>1594</width>
-              <height>967</height>
-              <actions>
-              </actions>
-              <border_color>
-                <color red="0" green="64" blue="255">
-                </color>
-              </border_color>
-            </widget>
-          </children>
-        </tab>
-        <tab>
-          <name>Set-up</name>
-          <children>
-            <widget type="label" version="2.0.0">
-              <name>Label Template</name>
-              <text># od disconnects:</text>
-              <x>718</x>
-              <y>30</y>
-              <width>90</width>
-              <height>13</height>
-              <font>
-                <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
-                </font>
-              </font>
-              <foreground_color>
-                <color name="IO Text Fg" red="0" green="32" blue="92">
-                </color>
-              </foreground_color>
-              <background_color>
-                <color name="IO Background" red="255" green="255" blue="205">
-                </color>
-              </background_color>
-              <vertical_alignment>1</vertical_alignment>
-              <auto_size>true</auto_size>
-              <actions>
-              </actions>
-              <border_color>
-                <color name="IO Border" red="215" green="215" blue="215">
-                </color>
-              </border_color>
-            </widget>
-            <widget type="textupdate" version="2.0.0">
-              <name>Text Update Template</name>
-              <pv_name>$(C)-Ctrl:s7-disconnect-counter</pv_name>
-              <x>809</x>
-              <y>28</y>
-              <width>96</width>
-              <height>17</height>
-              <font>
-                <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-                </font>
-              </font>
-              <foreground_color>
-                <color name="IO InputPV Fg" red="0" green="32" blue="92">
-                </color>
-              </foreground_color>
-              <background_color>
-                <color name="IO InputPV Bg" red="255" green="255" blue="255">
-                </color>
-              </background_color>
-              <actions>
-              </actions>
-              <border_alarm_sensitive>false</border_alarm_sensitive>
-              <border_width>2</border_width>
-            </widget>
-            <widget type="embedded" version="2.0.0">
-              <name>Embedded Display</name>
-              <file>helper-opi-files/cernox_calibr.bob</file>
-              <x>28</x>
-              <y>46</y>
-              <width>550</width>
-              <height>633</height>
-            </widget>
-            <widget type="label" version="2.0.0">
-              <name>Label_2</name>
-              <text>CERNOX Calibration</text>
-              <x>58</x>
-              <y>18</y>
-              <width>180</width>
-              <height>40</height>
-              <font>
-                <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-                </font>
-              </font>
-              <horizontal_alignment>1</horizontal_alignment>
-            </widget>
-          </children>
-        </tab>
-      </tabs>
-      <width>1650</width>
-      <height>1050</height>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <active_tab>2</active_tab>
-      <tab_height>10</tab_height>
-      <actions>
-      </actions>
-    </widget>
-  </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button</name>
     <actions>
@@ -3537,13 +3264,6 @@ Alarms</text>
       </background_color>
     </widget>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update_3</name>
-    <pv_name>sys://time</pv_name>
-    <x>1680</x>
-    <y>10</y>
-    <width>140</width>
-  </widget>
   <widget type="action_button" version="3.0.0">
     <name>Action Button_3</name>
     <actions>
@@ -3568,5 +3288,96 @@ Digital Input</text>
       </color>
     </foreground_color>
     <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="navtabs" version="2.0.0">
+    <name>Navigation Tabs</name>
+    <tabs>
+      <tab>
+        <name>Overview</name>
+        <file>helper-opi-files/Overview.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>2K Pumps</name>
+        <file>../freia-symbols/display-builder/CmdPanels/2Kpumps.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Global Oper. View</name>
+        <file>helper-opi-files/GlobOpView.bob</file>
+        <macros>
+          <P>$(C)</P>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Purging System</name>
+        <file>helper-opi-files/PurgSys.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>He Pumping and Reheating</name>
+        <file>helper-opi-files/ReheatSys.bob</file>
+        <macros>
+          <P>CstatV</P>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Supercritical Helium</name>
+        <file>helper-opi-files/ScHeSystem.bob</file>
+        <macros>
+          <P>$(C)</P>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Liquid Insert</name>
+        <file>helper-opi-files/Liquid-insert.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Magnet Insert</name>
+        <file>helper-opi-files/Magnet-insert.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Liquid Nitrogen</name>
+        <file>helper-opi-files/LiquidN2.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+      <tab>
+        <name>Set-up</name>
+        <file>helper-opi-files/set-up.bob</file>
+        <macros>
+        </macros>
+        <group_name></group_name>
+      </tab>
+    </tabs>
+    <x>180</x>
+    <width>1650</width>
+    <height>1065</height>
+    <direction>0</direction>
+    <tab_width>145</tab_width>
+    <active_tab>2</active_tab>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_3</name>
+    <pv_name>sys://time</pv_name>
+    <x>1680</x>
+    <y>5</y>
+    <width>140</width>
   </widget>
 </display>

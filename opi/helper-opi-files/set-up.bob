@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Display</name>
+  <width>1600</width>
+  <height>1000</height>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <text># od disconnects:</text>
+    <x>700</x>
+    <y>12</y>
+    <width>90</width>
+    <height>13</height>
+    <font>
+      <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Text Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update Template</name>
+    <pv_name>$(C)-Ctrl:s7-disconnect-counter</pv_name>
+    <x>791</x>
+    <y>10</y>
+    <width>96</width>
+    <height>17</height>
+    <font>
+      <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO InputPV Fg" red="0" green="32" blue="92">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_width>2</border_width>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <file>cernox_calibr.bob</file>
+    <x>10</x>
+    <y>28</y>
+    <width>550</width>
+    <height>633</height>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>CERNOX Calibration</text>
+    <x>40</x>
+    <width>180</width>
+    <height>40</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+</display>
