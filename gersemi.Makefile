@@ -81,6 +81,7 @@ SUBS = $(wildcard $(APPDB)/*.substitutions)
 USR_DBFLAGS += -I . -I ..
 USR_DBFLAGS += -I $(EPICS_BASE)/db
 USR_DBFLAGS += -I $(APPDB)
+USR_DBFLAGS += -I $(E3_SITEMODS_PATH)/s7nodave/$(S7NODAVE_DEP_VERSION)/db
 
 .PHONY: vlibs
 vlibs:

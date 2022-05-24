@@ -1023,3 +1023,140 @@ file "cernox-calibr.template" { pattern
 {CstatV-Ctrl:   TT671V    G_S7    DB360.DBD   14588 14600 14620 14640 14660 }
 }
 
+file "lo-update.template" { pattern
+{P             R         S                 DESC                 EGU       OUT                         SCAN,   EVNT}
+{CstatV-Ctrl:  SQ4-CP:   CV680-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW304 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ5-CP:   CV700-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW404 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ5-CP:   CV700-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW414 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ6-CP:   CV740-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW504 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ6-CP:   CV740-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW514 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ8-CP:   LT600-onDelay     "On delay" 		s	  "G_S7 DB410.DBW700 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ8-CP:   LT660-onDelay     "On delay" 		s	  "G_S7 DB410.DBW702 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ8-CP:   LT670-onDelay     "On delay" 		s	  "G_S7 DB410.DBW704 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ8-CP:   LT680-onDelay     "On delay" 		s	  "G_S7 DB410.DBW706 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ8-CP:   LT682-onDelay     "On delay" 		s	  "G_S7 DB410.DBW708 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ8-CP:   LT683-onDelay     "On delay" 		s	  "G_S7 DB410.DBW710 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ9-CP:   FT580-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW800 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ9-CP:   CV600-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW810 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ10-CP:  FT581-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW900 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ10-CP:  CV601-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW910 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ10-CP:  CV602-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW920 int16"   "Event" "1"}
+{CstatV-Ctrl:  SQ12-CP:  FT581-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW1100 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ12-CP:  CV602-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1110 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ13-CP:  CV581-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1216 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ13-CP:  CV603-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1226 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ14-CP:  FT581-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW1300 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ14-CP:  CV601-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW1310 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  PT660-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW1400 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  FT583-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW1402 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  FT583_1-WarnDelay "Warning delay" 	s	  "G_S7 DB410.DBW1424 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  FT583_2-WarnDelay "Warning delay" 	s	  "G_S7 DB410.DBW1426 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV601-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1412 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV581-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW1422 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV602-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1436 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV680-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1446 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ17-CP:  CV581-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1616 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  FT650-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW1800 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  FT651-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW1802 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  FT652-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW1804 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  FT653-WarnDelay   "Warning delay" 	s	  "G_S7 DB410.DBW1806 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV650-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1816 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV651-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1826 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV651-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1836 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV652-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW1846 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ20-CP:  CV590-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW1904 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ21-CP:  EH600-runTime     "Heater on"  	s	  "G_S7 DB410.DBW2000 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ21-CP:  EH600-offTime     "Heater off"  	s	  "G_S7 DB410.DBW2002 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ21-CP:  EH354-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2004 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ21-CP:  EH600-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2006 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ21-CP:  EH601-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2008 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ21-CP:  EH701-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2010 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ21-CP:  EH702-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2012 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ21-CP:  EH703-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2014 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ22-CP:  EH641-runTime     "Heater on"  	s	  "G_S7 DB410.DBW2100 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ22-CP:  EH641-offTime     "Heater off"  	s	  "G_S7 DB410.DBW2102 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ22-CP:  EH640-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2104 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ22-CP:  EH741-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2106 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ22-CP:  EH742-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2108 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ22-CP:  EH743-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2110 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH_Mag-runTime    "Heater on"  	s	  "G_S7 DB410.DBW2200 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH_Mag-offTime    "Heater off"  	s	  "G_S7 DB410.DBW2202 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH660-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2204 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH670-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2206 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH680-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2208 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH681-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2210 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH682-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2212 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH689-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2214 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH761-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2216 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH763-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2218 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ23-CP:  EH765-startDelay  "Start delay"  	s	  "G_S7 DB410.DBW2220 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV580-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW2508 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV580-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW2518 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV581-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW2528 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV581-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW2538 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV583-rampTime    "Ramping period"  	s	  "G_S7 DB410.DBW2548 int16"  "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV583-rampClTime  "Cl. ramping period" s	  "G_S7 DB410.DBW2558 int16"  "Event" "1"}
+}
+
+file "ao-update.template" { pattern
+{P             R         S                 DESC                EGU    OUT                            SCAN,   EVNT}
+{CstatV-Ctrl:  SQ4-CP:   CV680-rampStep    "Ramping step"      "%"	  "G_S7 DB410.DBD300 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ4-CP:   CV680-rampSP	   "Ramp SP"	       "%"	  "G_S7 DB410.DBD306 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ5-CP:   CV700-rampStep    "Ramping step"      "%"	  "G_S7 DB410.DBD400 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ5-CP:   CV700-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD406 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ5-CP:   CV700-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD410 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ6-CP:   CV740-rampStep    "Ramping step"      "%"	  "G_S7 DB410.DBD500 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ6-CP:   CV740-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD506 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ6-CP:   CV740-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD510 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ9-CP:   CV600-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD802 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ9-CP:   CV600-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD806 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ10-CP:  CV601-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD902 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ10-CP:  CV601-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD906 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ10-CP:  CV602-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD912 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ10-CP:  CV602-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD916 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ12-CP:  CV602-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1102 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ12-CP:  CV602-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1106 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ13-CP:  PT660-hiTol	   "High tolerance"     "mbar"	  "G_S7 DB410.DBD1200 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ13-CP:  PT660-loTol  	   "Low tolerance"  	"mbar"	  "G_S7 DB410.DBD1204 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ13-CP:  CV581-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1208 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ13-CP:  CV581-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1212 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ13-CP:  CV603-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1218 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ13-CP:  CV603-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1222 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ14-CP:  CV601-rampSP	   "Ramp SP"	       "%"	  "G_S7 DB410.DBD1302 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ14-CP:  CV601-rampStep    "Ramping step"      "%"	  "G_S7 DB410.DBD1306 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV601-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1404 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV601-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1408 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV581-rampSP	   "Ramp SP"	       "%"	  "G_S7 DB410.DBD1414 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV581-rampStep    "Ramping step"      "%"	  "G_S7 DB410.DBD1418 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV602-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1428 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV602-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1432 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV680-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1438 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  CV680-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1442 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  EH641-HL  "High Level above 80K"      "K"	  "G_S7 DB410.DBD1456 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ15-CP:  EH641-LL  "Low Level above 80K"       "K"	  "G_S7 DB410.DBD1460 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ17-CP:  PT660-hiTol	   "High tolerance"     "mbar"	  "G_S7 DB410.DBD1600 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ17-CP:  PT660-loTol  	   "Low tolerance"  	"mbar"	  "G_S7 DB410.DBD1604 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ17-CP:  CV581-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1608 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ17-CP:  CV581-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1612 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV650-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1808 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV650-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1812 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV651-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1818 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV651-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1822 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV652-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1828 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV652-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1832 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV653-rampClSP	   "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD1838 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ19-CP:  CV653-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD1842 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ20-CP:  CV590-rampStep    "Ramping step"      "%"	  "G_S7 DB410.DBD1900 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV580-rampSP	   "Ramp SP"	       "%"	  "G_S7 DB410.DBD2500 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV580-rampStep    "Ramping step"      "%"	  "G_S7 DB410.DBD2504 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV580-rampClSP    "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD2510 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV580-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD2514 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV581-rampSP	   "Ramp SP"	       "%"	  "G_S7 DB410.DBD2520 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV581-rampStep    "Ramping step"      "%"	  "G_S7 DB410.DBD2524 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV581-rampClSP    "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD2530 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV581-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD2534 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV583-rampSP	   "Ramp SP"	       "%"	  "G_S7 DB410.DBD2540 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV583-rampStep    "Ramping step"      "%"	  "G_S7 DB410.DBD2544 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV583-rampClSP    "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD2550 float"	 "Event" "1"}
+{CstatV-Ctrl:  SQ_CC-CP: CV583-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD2554 float"	 "Event" "1"}
+}
