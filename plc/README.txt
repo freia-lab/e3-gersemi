@@ -202,4 +202,6 @@ GERSEMI_PLC_2022_05_02 - KG, Added delay 0f 500 ms before comparing the magnet c
 GERSEMI_PLC_2022_05_03 - KG, Changed the name of the parameter in SQ15 from P_SP_TT680 to P_TT686_min (see GERSEMI_PLC_2022_04_01)
 GERSEMI_PLC_2022_06_13 - KG, Added closing CV5203 request reset when SQ9 is not running (when SQ9 is Reset (not stopped in the normal
 		way) the open CV5203 request remained active even if the cryostat was not supposed to be kept cold. (FC557)
+GERSEMI_PLC_2022_12_19 - KG, using the parameter P_CV602 in sequence 10 step 8 (it was previously used only in step 16).
+		Change only in FC557 NW24.
 
