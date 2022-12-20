@@ -136,7 +136,7 @@
     <x>20</x>
     <y>140</y>
     <width>290</width>
-    <height>120</height>
+    <height>180</height>
     <style>3</style>
     <transparent>true</transparent>
     <widget type="label" version="2.0.0">
@@ -153,7 +153,7 @@
       <name>Group_4</name>
       <macros>
         <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
-        <S>CV680-rampStep</S>
+        <S>CV700-rampStep</S>
       </macros>
       <y>30</y>
       <width>290</width>
@@ -188,7 +188,7 @@
       <name>Group_5</name>
       <macros>
         <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
-        <S>CV680-rampTime</S>
+        <S>CV700-rampTime</S>
       </macros>
       <y>60</y>
       <width>290</width>
@@ -220,12 +220,47 @@
       </widget>
     </widget>
     <widget type="group" version="2.0.0">
+      <name>Group_7</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>CV700-rampClStep</S>
+      </macros>
+      <y>90</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_12</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_6</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_13</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
       <name>Group_6</name>
       <macros>
         <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
-        <S>CV680-rampSP</S>
+        <S>CV700-rampClSP</S>
       </macros>
-      <y>90</y>
+      <y>150</y>
       <width>290</width>
       <height>30</height>
       <style>3</style>
@@ -248,6 +283,308 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_11</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_8</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>CV700-rampClTime</S>
+      </macros>
+      <y>120</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_14</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_7</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_15</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_9</name>
+    <macros>
+      <SQ>SQ10</SQ>
+    </macros>
+    <x>330</x>
+    <y>10</y>
+    <width>290</width>
+    <height>245</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>$(SQ)</text>
+      <x>100</x>
+      <height>30</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_10</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>CV601-rampClStep</S>
+      </macros>
+      <y>30</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_16</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_8</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_17</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_11</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>CV601-rampTime</S>
+      </macros>
+      <y>60</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_18</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_9</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_19</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_12</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>CV601-rampClSP</S>
+      </macros>
+      <y>90</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_20</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_10</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_21</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_13</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>CV602-rampClStep</S>
+      </macros>
+      <y>120</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_22</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_11</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_23</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_14</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>CV602-rampClTime</S>
+      </macros>
+      <y>150</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_24</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_12</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_25</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_15</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>CV602-rampClSP</S>
+      </macros>
+      <y>180</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_26</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_13</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_27</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_16</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>FT581-WarnDelay</S>
+      </macros>
+      <y>210</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_28</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_14</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_29</name>
         <pv_name>$(PV).DESC</pv_name>
         <width>120</width>
         <height>25</height>
