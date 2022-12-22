@@ -1,0 +1,80 @@
+record(mbbo, "$(P)-Ctrl:SQ10:Step8-state") {
+   field(ZRVL, 0)
+   field(ZRST, "Init")
+   field(ZRSV, "NO_ALARM")
+   field(ONVL, 1)
+   field(ONST, "Opening CV602")
+   field(ONSV, "NO_ALARM")
+   field(TWVL, 2)
+   field(TWST, "Regulating CV601")
+   field(TWSV, "NO_ALARM")
+   field(THVL, 3)
+   field(THST, "Limiting the flow")
+   field(THSV, "MINOR")
+   field(FRVL, 4)
+   field(FRST, "Done")
+   field(FRSV, "NO_ALARM")
+#   field(FVVL, 5)
+#   field(FVST, "In field update")
+#   field(FVSV, "MINOR")
+#   field(SXVL, 6)
+#   field(SXST, "Service")
+#   field(SXSV, "MINOR")
+#   field(SVVL, 7)
+#   field(SVST, "Failure")
+#   field(SVSV, "MAJOR")
+}
+
+record(bo, "$(P)-Ctrl:SQ10:CtrlPrg-WD") {
+    field(DESC, "Ctrl program watch-dog")
+    field(PINI, "YES")
+    field(VAL, "0")
+    field(ZNAM, "Not running")
+    field(HIGH, "65")
+    field(ZSV, "MAJOR")
+    field(ONAM, "Running")
+}
+
+
+record(ao, "$(P)-Ctrl:SQ10:P_CV602Max") {
+    field(DESC, "Max opening of CV602")
+    field(EGU, "%")
+    field(VAL, "100")
+    field(PREC, "0")
+}
+
+record(ao, "$(P)-Ctrl:SQ10:P_CV602Step") {
+    field(DESC, "Step of opening of CV602")
+    field(EGU, "%")
+    field(VAL, "10")
+    field(PREC, "0")
+}
+
+record(ao, "$(P)-Ctrl:SQ10:P_CV601Min") {
+    field(DESC, "Min opening of CV601")
+    field(EGU, "%")
+    field(VAL, "5")
+    field(PREC, "0")
+}
+
+record(ao, "$(P)-Ctrl:SQ10:P_CV601Step") {
+    field(DESC, "Step change of CV601")
+    field(EGU, "%")
+    field(VAL, "5")
+    field(PREC, "0")
+}
+
+record(ao, "$(P)-Ctrl:SQ10:P_dTmin") {
+    field(DESC, "Limit for closing CV601")
+    field(EGU, "K")
+    field(VAL, "10")
+    field(PREC, "0")
+}
+
+record(ao, "$(P)-Ctrl:SQ10:P_dTmax") {
+    field(DESC, "Limit for opening CV601")
+    field(EGU, "K")
+    field(VAL, "30")
+    field(PREC, "0")
+}
+

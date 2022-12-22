@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>cavity_cooldown</name>
+  <macros>
+    <P>CstatV-Ctrl:</P>
+    <S>SQ10:</S>
+  </macros>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>TITLE</class>
+    <text>SQ10, Step 8 - cavity cooling</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>550</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(P)$(S)Step8-state</pv_name>
+    <x>120</x>
+    <y>70</y>
+    <width>160</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_1</name>
+    <text>State:</text>
+    <x>30</x>
+    <y>70</y>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group</name>
+    <x>30</x>
+    <y>110</y>
+    <width>190</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>CV602 Max:</text>
+      <width>90</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>$(P)$(S)P_CV602Max</pv_name>
+      <x>90</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_1</name>
+    <x>30</x>
+    <y>140</y>
+    <width>190</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>CV602 Step:</text>
+      <width>90</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <pv_name>$(P)$(S)P_CV602Step</pv_name>
+      <x>90</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_2</name>
+    <x>250</x>
+    <y>110</y>
+    <width>190</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>CV601 Min:</text>
+      <width>90</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_2</name>
+      <pv_name>$(P)$(S)P_CV601Min</pv_name>
+      <x>90</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_3</name>
+    <x>250</x>
+    <y>140</y>
+    <width>190</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>CV601 Step:</text>
+      <width>90</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_3</name>
+      <pv_name>$(P)$(S)P_CV601Step</pv_name>
+      <x>90</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_4</name>
+    <x>480</x>
+    <y>110</y>
+    <width>190</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>DeltaT Min:</text>
+      <width>90</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_4</name>
+      <pv_name>$(P)$(S)P_dTmin</pv_name>
+      <x>90</x>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_5</name>
+    <x>480</x>
+    <y>140</y>
+    <width>190</width>
+    <height>20</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>DeltaT Max:</text>
+      <width>90</width>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_5</name>
+      <pv_name>$(P)$(S)P_dTmax</pv_name>
+      <x>90</x>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_8</name>
+    <text>Control program: </text>
+    <x>340</x>
+    <y>70</y>
+    <width>140</width>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>$(P)$(S)CtrlPrg-WD</pv_name>
+    <x>480</x>
+    <y>65</y>
+    <width>190</width>
+    <height>30</height>
+    <square>true</square>
+    <labels_from_pv>true</labels_from_pv>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  SQ10 Parameters  </name>
+    <macros>
+      <C>CstatV</C>
+      <seq_no>SQ10</seq_no>
+    </macros>
+    <x>20</x>
+    <y>190</y>
+    <width>342</width>
+    <height>221</height>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_14</name>
+      <text>CV601 [%]</text>
+      <y>28</y>
+      <width>68</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_7</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):cP_CV601</pv_name>
+      <x>126</x>
+      <y>25</y>
+      <width>56</width>
+      <height>25</height>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_12</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sP_CV601</pv_name>
+      <x>188</x>
+      <y>29</y>
+      <width>46</width>
+      <height>18</height>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_15</name>
+      <text>CV602 [%]</text>
+      <y>53</y>
+      <width>68</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_8</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):cP_CV602</pv_name>
+      <x>126</x>
+      <y>50</y>
+      <width>56</width>
+      <height>25</height>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_13</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sP_CV602</pv_name>
+      <x>188</x>
+      <y>54</y>
+      <width>46</width>
+      <height>18</height>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_17</name>
+      <text>SP PIC660 [mbar]</text>
+      <y>110</y>
+      <width>116</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_10</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):cP_SP_PIC660</pv_name>
+      <x>126</x>
+      <y>107</y>
+      <width>56</width>
+      <height>25</height>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_15</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_PIC660</pv_name>
+      <x>188</x>
+      <y>111</y>
+      <width>46</width>
+      <height>18</height>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_18</name>
+      <text>FT581 Limit [m3/h]</text>
+      <y>157</y>
+      <width>127</width>
+      <height>21</height>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_11</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):cP_SP_FIC581</pv_name>
+      <x>126</x>
+      <y>154</y>
+      <width>56</width>
+      <height>25</height>
+      <show_units>false</show_units>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_16</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sP_SP_FIC581</pv_name>
+      <x>188</x>
+      <y>158</y>
+      <width>46</width>
+      <height>18</height>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_31</name>
+      <pv_name>$(C)-LHe:CV601:sRdV</pv_name>
+      <x>248</x>
+      <y>29</y>
+      <width>51</width>
+      <height>18</height>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_32</name>
+      <pv_name>$(C)-LHe:CV602:sRdV</pv_name>
+      <x>248</x>
+      <y>56</y>
+      <width>51</width>
+      <height>18</height>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_33</name>
+      <pv_name>$(C)-RHtr:FT581:sRdV</pv_name>
+      <x>249</x>
+      <y>158</y>
+      <width>51</width>
+      <height>18</height>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_34</name>
+      <pv_name>$(C)-LHe:PT660L:sRdV</pv_name>
+      <x>248</x>
+      <y>100</y>
+      <width>51</width>
+      <height>18</height>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_35</name>
+      <pv_name>$(C)-LHe:PT660V:sRdV</pv_name>
+      <x>249</x>
+      <y>124</y>
+      <width>50</width>
+      <height>15</height>
+      <precision>1</precision>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>cP</text>
+      <x>130</x>
+      <width>18</width>
+      <height>21</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_10</name>
+      <text>sP</text>
+      <x>189</x>
+      <width>17</width>
+      <height>21</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_11</name>
+      <text>sRdV</text>
+      <x>249</x>
+      <width>35</width>
+      <height>21</height>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>$(C)-LHe:PIC660:sRegOn</pv_name>
+      <x>115</x>
+      <y>109</y>
+      <width>10</width>
+      <height>10</height>
+      <square>true</square>
+      <tooltip>PID On/Off status
+$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  Simulation  </name>
+    <x>359</x>
+    <y>190</y>
+    <width>332</width>
+    <height>221</height>
+    <transparent>true</transparent>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_6</name>
+      <pv_name>CstatV-LHe:TT665L:cSetV</pv_name>
+      <x>80</x>
+      <y>99</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_7</name>
+      <pv_name>CstatV-LHe:TT663L:cSetV</pv_name>
+      <x>80</x>
+      <y>129</y>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_8</name>
+      <pv_name>CstatV-RHtr:FT581:cSetV</pv_name>
+      <x>80</x>
+      <y>159</y>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Entry_9</name>
+      <pv_name>CstatV-LHe:TT665L:sRdV</pv_name>
+      <x>190</x>
+      <y>99</y>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Entry_10</name>
+      <pv_name>CstatV-LHe:TT663L:sRdV</pv_name>
+      <x>190</x>
+      <y>129</y>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Entry_11</name>
+      <pv_name>CstatV-RHtr:FT581:sRdV</pv_name>
+      <x>190</x>
+      <y>159</y>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_13</name>
+      <text>TT665L:</text>
+      <y>99</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_14</name>
+      <text>TT663L:</text>
+      <y>129</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_15</name>
+      <text>FT581:</text>
+      <y>159</y>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_16</name>
+      <text>Simulated Value</text>
+      <x>60</x>
+      <y>74</y>
+      <width>130</width>
+      <font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>CstatV-LHe:TT665L:cmdForced</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>CstatV-LHe:TT663L:cmdForced</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>CstatV-RHtr:FT581:cmdForced</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>CstatV-Ctrl:SQ10:sStep.SIMM</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>CstatV-Ctrl:SQ10:sStep.SVAL</pv_name>
+          <value>8</value>
+          <description>WritePV</description>
+        </action>
+      </actions>
+      <pv_name>CstatV-LHe:TT665L:sForced</pv_name>
+      <text>Simulation On</text>
+      <x>10</x>
+      <y>20</y>
+      <width>120</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_1</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>CstatV-LHe:TT665L:cmdNorm</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>CstatV-LHe:TT663L:cmdNorm</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>CstatV-RHtr:FT581:cmdNorm</pv_name>
+          <value>1</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>CstatV-Ctrl:SQ10:sStep.SIMM</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>CstatV-Ctrl:SQ10:sStep.SIMM</pv_name>
+          <value>0</value>
+          <description>WritePV</description>
+        </action>
+      </actions>
+      <text>Simulation Off</text>
+      <x>160</x>
+      <y>20</y>
+      <width>120</width>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+</display>
