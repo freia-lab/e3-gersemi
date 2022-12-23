@@ -11,7 +11,7 @@ def main():
     vc = ValveControl(2)
     while True:
         if run(vc):
-            time.sleep(2)
+            time.sleep(60)
         else:
             time.sleep(5)
             quit()

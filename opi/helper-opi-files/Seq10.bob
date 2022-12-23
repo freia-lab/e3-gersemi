@@ -958,4 +958,20 @@ $(pv_value)</tooltip>
     <y>205</y>
     <width>30</width>
   </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Cavity cooldown control</name>
+    <actions>
+      <action type="open_display">
+        <file>cavity-cooling.bob</file>
+        <target>tab</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>Cavity cooldown control...</text>
+    <x>469</x>
+    <y>225</y>
+    <width>144</width>
+    <height>45</height>
+    <tooltip>$(actions)</tooltip>
+  </widget>
 </display>

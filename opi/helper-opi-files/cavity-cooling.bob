@@ -5,6 +5,7 @@
     <P>CstatV-Ctrl:</P>
     <S>SQ10:</S>
   </macros>
+  <width>1600</width>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>TITLE</class>
@@ -733,5 +734,14 @@ $(pv_value)</tooltip>
       <width>120</width>
       <tooltip>$(actions)</tooltip>
     </widget>
+  </widget>
+  <widget type="databrowser" version="2.0.0">
+    <name>Data Browser</name>
+    <file>../plots/SQ10-step8.plt</file>
+    <x>730</x>
+    <y>30</y>
+    <width>840</width>
+    <height>550</height>
+    <show_toolbar>true</show_toolbar>
   </widget>
 </display>
