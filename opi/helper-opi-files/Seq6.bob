@@ -31,7 +31,7 @@
     <x>20</x>
     <y>220</y>
     <width>186</width>
-    <height>25</height>
+    <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -104,7 +104,7 @@
       <text>$(T2) warm [K]:</text>
       <y>50</y>
       <width>109</width>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -127,7 +127,7 @@
       <text>High temperature cooling [K]:</text>
       <y>25</y>
       <width>198</width>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -150,7 +150,7 @@
       <name>Label Template_9</name>
       <text>Low temperature cooling [K]:</text>
       <width>195</width>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -255,7 +255,7 @@
       <name>Label Template_12</name>
       <text>$(T2) cold [K]:</text>
       <y>75</y>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -300,62 +300,6 @@
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </border_color>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Grouping Container_4</name>
-      <x>430</x>
-      <y>2</y>
-      <width>71</width>
-      <height>41</height>
-      <style>3</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_13</name>
-        <text>$(T1)</text>
-        <width>71</width>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template_11</name>
-        <pv_name>$(C)-LN2:$(T1):sRdV</pv_name>
-        <x>2</x>
-        <y>21</y>
-        <width>67</width>
-        <height>18</height>
-        <precision>1</precision>
-        <horizontal_alignment>1</horizontal_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </border_color>
-      </widget>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Grouping Container_4</name>
@@ -413,6 +357,137 @@
         </border_color>
       </widget>
     </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_8</name>
+      <x>385</x>
+      <width>161</width>
+      <height>41</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_19</name>
+        <text>TT7745</text>
+        <width>71</width>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_17</name>
+        <pv_name>$(C)-LN2:TT745:sRdV</pv_name>
+        <x>2</x>
+        <y>21</y>
+        <width>67</width>
+        <height>18</height>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_20</name>
+        <text>TT753</text>
+        <x>90</x>
+        <width>71</width>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_18</name>
+        <pv_name>$(C)-LN2:TT753:sRdV</pv_name>
+        <x>92</x>
+        <y>21</y>
+        <width>67</width>
+        <height>18</height>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_2</name>
+        <x>75</x>
+        <y>25</y>
+        <width>11</width>
+        <height>11</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="5.0" y="10.0">
+          </point>
+          <point x="10.0" y="0.0">
+          </point>
+        </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="IO Foreground" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_40</name>
+      <macros>
+        <P>CstatV</P>
+        <S>LN2</S>
+        <V>EV740</V>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
+      <x>501</x>
+      <y>60</y>
+      <width>35</width>
+      <height>35</height>
+    </widget>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template_1</name>
@@ -420,7 +495,7 @@
     <x>20</x>
     <y>195</y>
     <width>72</width>
-    <height>25</height>
+    <height>21</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
@@ -612,7 +687,7 @@ $(pv_value)</tooltip>
       <text>$(T2) warm [K]:</text>
       <y>50</y>
       <width>109</width>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -635,7 +710,7 @@ $(pv_value)</tooltip>
       <text>High temperature cooling [K]:</text>
       <y>25</y>
       <width>198</width>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -658,7 +733,7 @@ $(pv_value)</tooltip>
       <name>Label Template_9</name>
       <text>Low temperature cooling [K]:</text>
       <width>195</width>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -763,7 +838,7 @@ $(pv_value)</tooltip>
       <name>Label Template_12</name>
       <text>$(T2) cold [K]:</text>
       <y>75</y>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -808,62 +883,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </border_color>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Grouping Container_4</name>
-      <x>430</x>
-      <y>2</y>
-      <width>71</width>
-      <height>41</height>
-      <style>3</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_13</name>
-        <text>$(T1)</text>
-        <width>71</width>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template_11</name>
-        <pv_name>$(C)-LN2:$(T1):sRdV</pv_name>
-        <x>2</x>
-        <y>21</y>
-        <width>67</width>
-        <height>18</height>
-        <precision>1</precision>
-        <horizontal_alignment>1</horizontal_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </border_color>
-      </widget>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Grouping Container_4</name>
@@ -920,6 +939,137 @@ $(pv_value)</tooltip>
           </color>
         </border_color>
       </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_9</name>
+      <x>385</x>
+      <width>161</width>
+      <height>41</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_21</name>
+        <text>TT7747</text>
+        <width>71</width>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_19</name>
+        <pv_name>$(C)-LN2:TT747:sRdV</pv_name>
+        <x>2</x>
+        <y>21</y>
+        <width>67</width>
+        <height>18</height>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_22</name>
+        <text>TT754</text>
+        <x>90</x>
+        <width>71</width>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_20</name>
+        <pv_name>$(C)-LN2:TT754:sRdV</pv_name>
+        <x>92</x>
+        <y>21</y>
+        <width>67</width>
+        <height>18</height>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_3</name>
+        <x>75</x>
+        <y>25</y>
+        <width>11</width>
+        <height>11</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="5.0" y="10.0">
+          </point>
+          <point x="10.0" y="0.0">
+          </point>
+        </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="IO Foreground" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_41</name>
+      <macros>
+        <P>CstatV</P>
+        <S>LN2</S>
+        <V>EV744</V>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
+      <x>502</x>
+      <y>60</y>
+      <width>35</width>
+      <height>35</height>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -949,7 +1099,7 @@ $(pv_value)</tooltip>
       <text>$(T2) warm [K]:</text>
       <y>50</y>
       <width>109</width>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -972,7 +1122,7 @@ $(pv_value)</tooltip>
       <text>High temperature cooling [K]:</text>
       <y>25</y>
       <width>198</width>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -995,7 +1145,7 @@ $(pv_value)</tooltip>
       <name>Label Template_9</name>
       <text>Low temperature cooling [K]:</text>
       <width>195</width>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1100,7 +1250,7 @@ $(pv_value)</tooltip>
       <name>Label Template_12</name>
       <text>$(T2) cold [K]:</text>
       <y>75</y>
-      <height>25</height>
+      <height>21</height>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
@@ -1145,62 +1295,6 @@ $(pv_value)</tooltip>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </border_color>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Grouping Container_4</name>
-      <x>430</x>
-      <y>2</y>
-      <width>71</width>
-      <height>41</height>
-      <style>3</style>
-      <foreground_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_13</name>
-        <text>$(T1)</text>
-        <width>71</width>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <horizontal_alignment>1</horizontal_alignment>
-        <vertical_alignment>1</vertical_alignment>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="textupdate" version="2.0.0">
-        <name>Text Update Template_11</name>
-        <pv_name>$(C)-LN2:$(T1):sRdV</pv_name>
-        <x>2</x>
-        <y>21</y>
-        <width>67</width>
-        <height>18</height>
-        <precision>1</precision>
-        <horizontal_alignment>1</horizontal_alignment>
-        <wrap_words>false</wrap_words>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </border_color>
-      </widget>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Grouping Container_4</name>
@@ -1257,6 +1351,137 @@ $(pv_value)</tooltip>
           </color>
         </border_color>
       </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container_6</name>
+      <x>385</x>
+      <width>161</width>
+      <height>41</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_16</name>
+        <text>TT7750</text>
+        <width>71</width>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_13</name>
+        <pv_name>$(C)-LN2:TT750:sRdV</pv_name>
+        <x>2</x>
+        <y>21</y>
+        <width>67</width>
+        <height>18</height>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_17</name>
+        <text>TT755</text>
+        <x>90</x>
+        <width>71</width>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <horizontal_alignment>1</horizontal_alignment>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template_15</name>
+        <pv_name>$(C)-LN2:TT755:sRdV</pv_name>
+        <x>92</x>
+        <y>21</y>
+        <width>67</width>
+        <height>18</height>
+        <precision>1</precision>
+        <horizontal_alignment>1</horizontal_alignment>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="polyline" version="2.0.0">
+        <name>Polyline_1</name>
+        <x>75</x>
+        <y>25</y>
+        <width>11</width>
+        <height>11</height>
+        <points>
+          <point x="0.0" y="0.0">
+          </point>
+          <point x="5.0" y="10.0">
+          </point>
+          <point x="10.0" y="0.0">
+          </point>
+        </points>
+        <line_width>2</line_width>
+        <line_color>
+          <color name="IO Foreground" red="0" green="0" blue="0">
+          </color>
+        </line_color>
+        <actions>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+      </widget>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_42</name>
+      <macros>
+        <P>CstatV</P>
+        <S>LN2</S>
+        <V>EV748</V>
+      </macros>
+      <file>../../freia-symbols/display-builder/CstatEvalve-h-lu-pv.bob</file>
+      <x>502</x>
+      <y>60</y>
+      <width>35</width>
+      <height>35</height>
     </widget>
   </widget>
 </display>
