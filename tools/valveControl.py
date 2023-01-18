@@ -57,7 +57,8 @@ The control is done in  SQ10 step 8 using valves CV601 and CV602.
 When the sequence enters step 8 the CV602 is fully closed.
 When the deltaT becomes bigger then CstatV-Ctrl:SQ10:P_dTmin the 
 program will open CV602 to the value specfied in CstatV-Ctrl:SQ10:P_CV602Max
-in steps of CstatV-Ctrl:SQ10:P_CV602Step. CV602 will be kept at the same value 
+in steps of CstatV-Ctrl:SQ10:P_CV602Step. CV602 will be kept at 
+CstatV-Ctrl:SQ10:P_CV602Max (can be changed during the state of regulating CV601)
 until the temperature of the top part of the cavity drops below 50 K. At this 
 time the CV602 will be completely closed and CV601 completely open. 
 
@@ -112,18 +113,16 @@ CstatV-Ctrl:SQ10:P_CV601Step until deltaT reaches CstatV-Ctrl:SQ10:P_dTmin
     #
     def openingCV602(self):
         newSP = self.cv602.value + self.cv602step.value
-        if newSP >= 100.0:
-            self.cv602.value = 100.0
+        if newSP >= self.cv602max.value:
+            self.cv602.value = self.cv602max.value
             self.state.value = self.CONTROLLING_CV601
         else:
             self.cv602.value = newSP
 
-    # Regulating CV601
+    # Regulating CV601 and keeping CV602 at cv602max
     #
     def regulatingCV01(self):
-        if self.ft581.value > self.ft581max.value:
-            self.state.value = self.LIMITING_FLOW
-            return
+        self.cv602.value = self.cv602max.value
         if self.ttop.value < 50:
             self.state.value = self.DONE
             self.cv601.value = 100
@@ -136,14 +135,14 @@ CstatV-Ctrl:SQ10:P_CV601Step until deltaT reaches CstatV-Ctrl:SQ10:P_dTmin
                 self.cv601.value = 100.0
             else:
                 self.cv601.value = newSP
-            return
-        if deltaT > self.dTmax.value:
-           newSP = self.cv601.value - self.cv601step.value
-           if newSP < self.cv601min.value:
-               self.cv601.value =  self.cv601min.value
-           else:
-               self.cv601.value = newSP
-        return
+        elif deltaT > self.dTmax.value:
+            newSP = self.cv601.value - self.cv601step.value
+            if newSP < self.cv601min.value:
+                self.cv601.value =  self.cv601min.value
+            else:
+                self.cv601.value = newSP
+        if self.ft581.value > self.ft581max.value:
+            self.state.value = self.LIMITING_FLOW
 
     # Flow too high - pausing
     #
