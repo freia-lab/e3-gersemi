@@ -5147,5 +5147,20 @@ $(pv_value)</tooltip>
         </rules>
       </widget>
     </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2K_1</name>
+      <pv_name>= `CstatV-RHtr:FT581:sRdV`+ `CstatH-RHtr:FT551:sRdV`</pv_name>
+      <x>50</x>
+      <y>59</y>
+      <width>90</width>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pvInt0 != 1">
+            <value>false</value>
+          </exp>
+          <pv_name>CstatV-Ctrl:LiqIns:sProcInp</pv_name>
+        </rule>
+      </rules>
+    </widget>
   </widget>
 </display>
