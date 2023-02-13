@@ -14,15 +14,8 @@ record(mbbo, "$(P)-Ctrl:SQ10:Step8-state") {
    field(FRVL, 4)
    field(FRST, "Done")
    field(FRSV, "NO_ALARM")
-#   field(FVVL, 5)
-#   field(FVST, "In field update")
-#   field(FVSV, "MINOR")
-#   field(SXVL, 6)
-#   field(SXST, "Service")
-#   field(SXSV, "MINOR")
-#   field(SVVL, 7)
-#   field(SVST, "Failure")
-#   field(SVSV, "MAJOR")
+   field(PINI, "YES")
+   info(autosaveFields,"VAL")
 }
 
 record(bo, "$(P)-Ctrl:SQ10:CtrlPrg-WD") {
@@ -32,6 +25,7 @@ record(bo, "$(P)-Ctrl:SQ10:CtrlPrg-WD") {
     field(ZNAM, "Not running")
     field(HIGH, "65")
     field(ZSV, "MAJOR")
+    field(PINI, "YES")
     field(ONAM, "Running")
 }
 
@@ -41,6 +35,8 @@ record(ao, "$(P)-Ctrl:SQ10:P_CV602Max") {
     field(EGU, "%")
     field(VAL, "100")
     field(PREC, "0")
+    field(PINI, "YES")
+    info(autosaveFields,"VAL")
 }
 
 record(ao, "$(P)-Ctrl:SQ10:P_CV602Step") {
@@ -48,6 +44,8 @@ record(ao, "$(P)-Ctrl:SQ10:P_CV602Step") {
     field(EGU, "%")
     field(VAL, "10")
     field(PREC, "0")
+    field(PINI, "YES")
+    info(autosaveFields,"VAL")
 }
 
 record(ao, "$(P)-Ctrl:SQ10:P_CV601Min") {
@@ -55,6 +53,8 @@ record(ao, "$(P)-Ctrl:SQ10:P_CV601Min") {
     field(EGU, "%")
     field(VAL, "5")
     field(PREC, "0")
+    field(PINI, "YES")
+    info(autosaveFields,"VAL")
 }
 
 record(ao, "$(P)-Ctrl:SQ10:P_CV601Step") {
@@ -62,6 +62,8 @@ record(ao, "$(P)-Ctrl:SQ10:P_CV601Step") {
     field(EGU, "%")
     field(VAL, "5")
     field(PREC, "0")
+    field(PINI, "YES")
+    info(autosaveFields,"VAL")
 }
 
 record(ao, "$(P)-Ctrl:SQ10:P_dTmin") {
@@ -69,6 +71,8 @@ record(ao, "$(P)-Ctrl:SQ10:P_dTmin") {
     field(EGU, "K")
     field(VAL, "10")
     field(PREC, "0")
+    field(PINI, "YES")
+    info(autosaveFields,"VAL")
 }
 
 record(ao, "$(P)-Ctrl:SQ10:P_dTmax") {
@@ -76,5 +80,6 @@ record(ao, "$(P)-Ctrl:SQ10:P_dTmax") {
     field(EGU, "K")
     field(VAL, "30")
     field(PREC, "0")
+    field(PINI, "YES")
+    info(autosaveFields,"VAL")
 }
-

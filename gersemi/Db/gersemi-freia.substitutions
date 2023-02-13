@@ -1160,3 +1160,9 @@ file "ao-update.template" { pattern
 {CstatV-Ctrl:  SQ_CC-CP: CV583-rampClSP    "Cl. ramp SP"       "%"	  "G_S7 DB410.DBD2550 float"	 "Event" "1"}
 {CstatV-Ctrl:  SQ_CC-CP: CV583-rampClStep  "Cl. ramping step"  "%"	  "G_S7 DB410.DBD2554 float"	 "Event" "1"}
 }
+
+file "gersemi-cavity-cooldown.template" { pattern
+{P}
+{CstatV}
+}
+
