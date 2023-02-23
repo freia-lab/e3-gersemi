@@ -9,11 +9,8 @@ record(mbbo, "$(P)-Ctrl:SQ10:Step8-state") {
    field(TWST, "Regulating CV601")
    field(TWSV, "NO_ALARM")
    field(THVL, 3)
-   field(THST, "Limiting the flow")
-   field(THSV, "MINOR")
-   field(FRVL, 4)
-   field(FRST, "Done")
-   field(FRSV, "NO_ALARM")
+   field(THST, "Waiting for SQ10 st. 10")
+   field(THSV, "NO_ALARM")
    field(PINI, "YES")
    info(autosaveFields,"VAL")
 }
@@ -27,6 +24,21 @@ record(bo, "$(P)-Ctrl:SQ10:CtrlPrg-WD") {
     field(ZSV, "MAJOR")
     field(PINI, "YES")
     field(ONAM, "Running")
+    field(FLNK, "$(P)-Ctrl:SQ10:CtrlPrg-Golink")
+}
+
+record(bo, "$(P)-Ctrl:SQ10:CtrlPrg-Golink") {
+    field(DESC, "Help PV")
+    field(DOL, "1")
+    field(OMSL, "closed_loop")
+    field(OUT, "$(P)-Ctrl:SQ10:CtrlPrg-Go.VAL PP NMS") 
+}
+record(bo, "$(P)-Ctrl:SQ10:CtrlPrg-Go") {
+    field(DESC, "Ctrl program scan")
+    field(VAL, "0")
+    field(HIGH, "1")
+    field(ZNAM, "Idle")
+    field(ONAM, "Scan")
 }
 
 
@@ -79,6 +91,15 @@ record(ao, "$(P)-Ctrl:SQ10:P_dTmax") {
     field(DESC, "Limit for opening CV601")
     field(EGU, "K")
     field(VAL, "30")
+    field(PREC, "0")
+    field(PINI, "YES")
+    info(autosaveFields,"VAL")
+}
+
+record(ao, "$(P)-Ctrl:SQ10:P_ctrlPeriod") {
+    field(DESC, "Period for CV601 control")
+    field(EGU, "s")
+    field(VAL, "60")
     field(PREC, "0")
     field(PINI, "YES")
     info(autosaveFields,"VAL")
