@@ -204,4 +204,5 @@ GERSEMI_PLC_2022_06_13 - KG, Added closing CV5203 request reset when SQ9 is not 
 		way) the open CV5203 request remained active even if the cryostat was not supposed to be kept cold. (FC557)
 GERSEMI_PLC_2022_12_19 - KG, using the parameter P_CV602 in sequence 10 step 8 (it was previously used only in step 16).
 		Change only in FC557 NW24.
-
+GERSEMI_PLC_2023_03_14 - KG, Modified FC209 (SQ9) to be able to staop it in step 10 (as shown in the grafcet) and 12. Added parallel to
+		State_Run the State_Stopping condition to proceed to the next step. (changes in NW12 and NW14).
