@@ -21,8 +21,10 @@ function polyData(line)
     a1 =  substr(arr[1],0, length(arr[1])-2)
     a2 =  substr(arr[3],0, length(arr[3])-2)
     a3 =  substr(arr[5],0, length(arr[5])-2)
-    a4 =  substr(arr[7],0, length(arr[7])-2)
-    data = sprintf ("%s %s%s %s%s %s%s %s%s", a1,arr[2],a2,arr[4],a3,arr[6],a4,arr[8],arr[9])
+    a4 =  substr(arr[7],0, length(arr[7])-1)
+    a5 =  substr(arr[9],0, length(arr[9])-1)
+#    data = sprintf ("%s %s%s %s%s %s%s %s%s", a1,arr[2],a2,arr[4],a3,arr[6],a4,arr[8],arr[9])
+    data = sprintf ("%s%s %s%s %s%s %s%s %s",  arr[8],a5,arr[6],a4,arr[4],a3,arr[2],a2,a1)
     return data
 }
 
