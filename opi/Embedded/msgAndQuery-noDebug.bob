@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>msgAndQuery-noDebug</name>
+  <width>530</width>
+  <height>30</height>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container</name>
+    <width>524</width>
+    <height>30</height>
+    <visible>false</visible>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="ATTENTION" red="252" green="242" blue="17">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="Visibility" prop_id="visible" out_exp="false">
+        <exp bool_exp="(pvInt0!=0) or (pvInt1!=0)">
+          <value>true</value>
+        </exp>
+        <pv_name>$(C)-Ctrl:$(seq_no):sMsgDispl</pv_name>
+        <pv_name>$(C)-Ctrl:$(seq_no):sMsgQuery</pv_name>
+      </rule>
+    </rules>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_4</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Accept the nonstandard conditions</description>
+        </action>
+      </actions>
+      <pv_name>$(C)-Ctrl:opMode:cmdSetAck</pv_name>
+      <text>Ackn</text>
+      <x>449</x>
+      <width>75</width>
+      <visible>false</visible>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="(pvInt0!=0)">
+            <value>true</value>
+          </exp>
+          <pv_name>$(C)-Ctrl:$(seq_no):sMsgDispl</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>$(C)-Ctrl:$(seq_no):sMsgS</pv_name>
+      <x>10</x>
+      <y>5</y>
+      <width>398</width>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <x>408</x>
+      <width>116</width>
+      <height>30</height>
+      <visible>false</visible>
+      <style>3</style>
+      <transparent>true</transparent>
+      <rules>
+        <rule name="Visibility" prop_id="visible" out_exp="false">
+          <exp bool_exp="(pvInt0!=0)">
+            <value>true</value>
+          </exp>
+          <pv_name>$(C)-Ctrl:$(seq_no):sMsgQuery</pv_name>
+        </rule>
+      </rules>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_4</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+          </action>
+        </actions>
+        <pv_name>$(C)-Ctrl:$(seq_no):cmdYes</pv_name>
+        <text>Yes</text>
+        <width>55</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button_5</name>
+        <actions>
+          <action type="write_pv">
+            <pv_name>$(pv_name)</pv_name>
+            <value>1</value>
+          </action>
+        </actions>
+        <pv_name>$(C)-Ctrl:$(seq_no):cmdNo</pv_name>
+        <text>No</text>
+        <x>61</x>
+        <width>55</width>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+      </widget>
+    </widget>
+  </widget>
+</display>

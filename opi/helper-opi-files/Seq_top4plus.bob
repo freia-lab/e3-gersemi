@@ -108,7 +108,7 @@
     <x>20</x>
     <y>140</y>
     <width>35</width>
-    <height>18</height>
+    <height>19</height>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
       </font>
@@ -426,168 +426,6 @@ grafcet:</text>
     <tooltip>Opens Grafcet diagram
 in the web browser</tooltip>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>Grouping Container_1</name>
-    <x>12</x>
-    <y>110</y>
-    <width>524</width>
-    <height>30</height>
-    <style>3</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="led" version="2.0.0">
-      <name>Text Update_13</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sMsgDispl</pv_name>
-      <x>2</x>
-      <y>4</y>
-      <width>21</width>
-      <height>21</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="0" green="216" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <actions>
-      </actions>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_14</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sMsgNo</pv_name>
-      <x>56</x>
-      <y>5</y>
-      <width>33</width>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_15</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sMsgS</pv_name>
-      <x>98</x>
-      <y>5</y>
-      <width>222</width>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-      <actions>
-      </actions>
-      <rules>
-        <rule name="Visibility" prop_id="visible" out_exp="false">
-          <exp bool_exp="(pvInt0==0) and (pvInt1==0)">
-            <value>false</value>
-          </exp>
-          <pv_name>$(C)-Ctrl:$(seq_no):sMsgDispl</pv_name>
-          <pv_name>$(C)-Ctrl:$(seq_no):sMsgQuery</pv_name>
-        </rule>
-      </rules>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>Text Update_16</name>
-      <pv_name>$(C)-Ctrl:$(seq_no):sMsgQuery</pv_name>
-      <x>24</x>
-      <y>4</y>
-      <width>21</width>
-      <height>21</height>
-      <off_color>
-        <color red="0" green="100" blue="0">
-        </color>
-      </off_color>
-      <on_color>
-        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-        </color>
-      </on_color>
-      <foreground_color>
-        <color red="0" green="216" blue="0">
-        </color>
-      </foreground_color>
-      <line_color>
-        <color name="GRAY" red="169" green="169" blue="169">
-        </color>
-      </line_color>
-      <actions>
-      </actions>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_4</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-        </action>
-      </actions>
-      <pv_name>$(C)-Ctrl:$(seq_no):cmdYes</pv_name>
-      <text>Yes</text>
-      <x>328</x>
-      <width>55</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_5</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-        </action>
-      </actions>
-      <pv_name>$(C)-Ctrl:$(seq_no):cmdNo</pv_name>
-      <text>No</text>
-      <x>389</x>
-      <width>55</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template_4</name>
-      <actions>
-        <action type="write_pv">
-          <pv_name>$(pv_name)</pv_name>
-          <value>1</value>
-          <description>Accept the nonstandard conditions</description>
-        </action>
-      </actions>
-      <pv_name>$(C)-Ctrl:opMode:cmdSetAck</pv_name>
-      <text>Ackn</text>
-      <x>449</x>
-      <width>75</width>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-    </widget>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <text>####</text>
@@ -796,5 +634,13 @@ $(pv_value)</tooltip>
     </line_color>
     <actions>
     </actions>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <file>../Embedded/msgAndQuery.bob</file>
+    <x>12</x>
+    <y>110</y>
+    <width>532</width>
+    <height>30</height>
   </widget>
 </display>
