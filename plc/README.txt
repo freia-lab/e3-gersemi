@@ -209,3 +209,4 @@ GERSEMI_PLC_2023_03_14 - KG, Modified FC209 (SQ9) to be able to staop it in step
 GERSEMI_PLC_2023_03_21 - KG, Modified FC216 (SQ16) Added 5 seconds delay before transition from state 8 to state 10 in order to have time
 		to measure the pressure. Without this delay the transition could be immidiate because we read the "old" (before the quench)
 		pressure.
+GERSEMI_PLC_2023_03_23 - KG, Modified FC556 (Manage_VALVES) Added logic that keeps FV680 open after quench (states 8 and 10).
