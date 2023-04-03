@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>comm-param</name>
+  <width>1200</width>
   <widget type="group" version="2.0.0">
     <name>Group</name>
     <macros>
@@ -585,6 +586,98 @@
       </widget>
       <widget type="textupdate" version="2.0.0">
         <name>Text Update_29</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Group_17</name>
+    <macros>
+      <SQ>SQ22</SQ>
+    </macros>
+    <x>640</x>
+    <y>10</y>
+    <width>290</width>
+    <height>100</height>
+    <style>3</style>
+    <transparent>true</transparent>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>$(SQ)</text>
+      <x>100</x>
+      <height>30</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_18</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>EH641-offTime</S>
+      </macros>
+      <y>30</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_30</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_15</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_31</name>
+        <pv_name>$(PV).DESC</pv_name>
+        <width>120</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group_19</name>
+      <macros>
+        <PV>$(P)-Ctrl:$(SQ)-CP:$(S)</PV>
+        <S>EH641-runTime</S>
+      </macros>
+      <y>60</y>
+      <width>290</width>
+      <height>30</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_32</name>
+        <pv_name>$(PV)-RBK</pv_name>
+        <x>190</x>
+        <width>60</width>
+        <height>25</height>
+        <vertical_alignment>1</vertical_alignment>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Entry_16</name>
+        <pv_name>$(PV)</pv_name>
+        <x>130</x>
+        <width>50</width>
+        <height>25</height>
+        <show_units>false</show_units>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update_33</name>
         <pv_name>$(PV).DESC</pv_name>
         <width>120</width>
         <height>25</height>
